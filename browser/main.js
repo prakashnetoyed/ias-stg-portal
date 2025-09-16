@@ -36,7 +36,7 @@ import {
   provideClientHydration,
   provideRouter,
   withInMemoryScrolling
-} from "./chunk-OWY7W7RG.js";
+} from "./chunk-HLKJWW3L.js";
 import {
   environment
 } from "./chunk-WYW2S4QW.js";
@@ -2676,12 +2676,12 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-XNPUILDZ.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-J22EWL3Z.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-GDY7J5G6.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-P4WKHKOS.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
@@ -2691,12 +2691,12 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-D57IZOSF.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-LK2H3MPD.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TUDXLYN2.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-SFQD4GYZ.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2710,7 +2710,7 @@ var routes = [
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-MYPOYRHJ.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-KKLGQJ5Q.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2730,17 +2730,17 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-S4VRH7UI.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-QKAJFDLI.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-EZKLBW5E.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-MFIHB5E3.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-EOQGM5GD.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-IGZ6IDAG.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -2778,7 +2778,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-CZXHI4XQ.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-2QCE6ZER.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -2826,11 +2826,11 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-HWFJCWEW.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-3RN4FN45.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-AKDHLFCQ.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-TZ6RXR4V.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
@@ -2854,19 +2854,19 @@ var routes = [
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-U54OKKKZ.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-DIDLEZW3.js").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-R3FPTTZX.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-24DLR6SM.js").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-YV66BLZK.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-BUZW335Q.js").then((m) => m.RouteErrorComponent)
   }
 ];
 
