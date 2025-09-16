@@ -61,6 +61,7 @@ import {
   PLATFORM_ID,
   RendererFactory2,
   RuntimeError,
+  Subject,
   catchError,
   from,
   inject,
@@ -86,6 +87,7 @@ import {
   ɵɵgetCurrentView,
   ɵɵinvalidFactory,
   ɵɵlistener,
+  ɵɵloadQuery,
   ɵɵnamespaceHTML,
   ɵɵnamespaceSVG,
   ɵɵnextContext,
@@ -94,6 +96,7 @@ import {
   ɵɵpipeBind3,
   ɵɵproperty,
   ɵɵpureFunction0,
+  ɵɵqueryRefresh,
   ɵɵreference,
   ɵɵrepeater,
   ɵɵrepeaterCreate,
@@ -105,7 +108,8 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵtextInterpolate1
+  ɵɵtextInterpolate1,
+  ɵɵviewQuery
 } from "./chunk-TPVSKZNW.js";
 import "./chunk-ASLTLD6L.js";
 
@@ -2604,6 +2608,25 @@ var IasSignupComponent = class _IasSignupComponent {
   (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasSignupComponent, { className: "IasSignupComponent", filePath: "src/app/authmodule/ias-signup/ias-signup.component.ts", lineNumber: 18 });
 })();
 
+// src/app/common/toast.service.ts
+var ToastService = class _ToastService {
+  constructor() {
+    this.toastMessageSource = new Subject();
+    this.toastMessage$ = this.toastMessageSource.asObservable();
+  }
+  showToast(message, type = "danger") {
+    this.toastMessageSource.next({ message, type });
+  }
+  static {
+    this.\u0275fac = function ToastService_Factory(t) {
+      return new (t || _ToastService)();
+    };
+  }
+  static {
+    this.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({ token: _ToastService, factory: _ToastService.\u0275fac, providedIn: "root" });
+  }
+};
+
 // src/app/authmodule/auth.guard.ts
 var authGuard = (route, state) => {
   const router = inject(Router);
@@ -2612,12 +2635,13 @@ var authGuard = (route, state) => {
     const token = localStorage.getItem("authToken");
     const role = localStorage.getItem("userRole") ? atob(localStorage.getItem("userRole")) : "";
     const status = localStorage.getItem("userStatus") ? atob(localStorage.getItem("userStatus")) : "";
+    const toastService = inject(ToastService);
     if (token) {
       const expectedRoles = route.data?.["roles"];
       const expectedStatuses = route.data?.["statuses"];
       if (expectedRoles && !expectedRoles.includes(role)) {
         if (role === "admin" && expectedRoles.includes("user")) {
-          alert("You are logged in as admin. To visit this page, login with member credentials.");
+          toastService.showToast("You are logged in as admin. To visit this page, login with member credentials.", "danger");
         } else {
           router.navigateByUrl("/unauthorized", { replaceUrl: true });
         }
@@ -3137,6 +3161,58 @@ var appConfig = {
   ]
 };
 
+// src/app/common/common-toast/common-toast.component.ts
+var _c02 = ["errorToast"];
+var CommonToastComponent = class _CommonToastComponent {
+  constructor(toastService) {
+    this.toastService = toastService;
+    this.toastMessage = "";
+    this.toastType = "danger";
+  }
+  ngOnInit() {
+    this.toastService.toastMessage$.subscribe(({ message, type }) => {
+      this.toastMessage = message;
+      this.toastType = type || "danger";
+      const toastEl = this.errorToast.nativeElement;
+      const toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    });
+  }
+  static {
+    this.\u0275fac = function CommonToastComponent_Factory(t) {
+      return new (t || _CommonToastComponent)(\u0275\u0275directiveInject(ToastService));
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _CommonToastComponent, selectors: [["app-common-toast"]], viewQuery: function CommonToastComponent_Query(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275viewQuery(_c02, 7);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.errorToast = _t.first);
+      }
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 7, vars: 4, consts: [["errorToast", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"]], template: function CommonToastComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 1)(1, "div", 2, 0)(3, "div", 3)(4, "div", 4);
+        \u0275\u0275text(5);
+        \u0275\u0275elementEnd();
+        \u0275\u0275element(6, "button", 5);
+        \u0275\u0275elementEnd()()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance();
+        \u0275\u0275classMapInterpolate1("toast align-items-center text-bg-", ctx.toastType, " border-0");
+        \u0275\u0275advance(4);
+        \u0275\u0275textInterpolate1(" ", ctx.toastMessage, " ");
+      }
+    } });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(CommonToastComponent, { className: "CommonToastComponent", filePath: "src/app/common/common-toast/common-toast.component.ts", lineNumber: 12 });
+})();
+
 // src/app/app.component.ts
 var AppComponent = class _AppComponent {
   constructor() {
@@ -3148,15 +3224,15 @@ var AppComponent = class _AppComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 1, vars: 0, template: function AppComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 2, vars: 0, template: function AppComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275element(0, "router-outlet");
+        \u0275\u0275element(0, "router-outlet")(1, "app-common-toast");
       }
-    }, dependencies: [RouterOutlet] });
+    }, dependencies: [RouterOutlet, CommonToastComponent] });
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppComponent, { className: "AppComponent", filePath: "src/app/app.component.ts", lineNumber: 11 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppComponent, { className: "AppComponent", filePath: "src/app/app.component.ts", lineNumber: 12 });
 })();
 
 // src/main.ts
