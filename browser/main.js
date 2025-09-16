@@ -2671,7 +2671,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SOAUAALY.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-CX7RFWYH.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2705,7 +2705,7 @@ var routes = [
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-N363RIOH.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-MYPOYRHJ.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2725,7 +2725,7 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-UCIUEIWB.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-S4VRH7UI.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
@@ -2773,7 +2773,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-746K66GT.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-DHW23PHG.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -2837,15 +2837,15 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-KKXE7HC2.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-ZDECEBE5.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-CCIRFS42.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-VRGJC5JM.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-CJX7ZPXN.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-ECPQDHIW.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
