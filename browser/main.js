@@ -2691,7 +2691,7 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-PYK6X5FO.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-D57IZOSF.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
