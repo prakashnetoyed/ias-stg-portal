@@ -228,9 +228,10 @@ function IasHeaderComponent_ng_container_52_Template(rf, ctx) {
   }
 }
 var IasHeaderComponent = class _IasHeaderComponent {
-  constructor(router, userService, platformId) {
+  constructor(router, userService, toastService, platformId) {
     this.router = router;
     this.userService = userService;
+    this.toastService = toastService;
     this.platformId = platformId;
     this.dropdownOpen = false;
     this.user = null;
@@ -275,15 +276,25 @@ var IasHeaderComponent = class _IasHeaderComponent {
     const last = names[names.length - 1].charAt(0).toUpperCase();
     return first + last;
   }
+  goHome() {
+    if (this.router.url === "/") {
+      this.toastService.showToast("You are already on Home page", "success");
+    } else {
+      this.router.navigateByUrl("/");
+    }
+  }
   static {
     this.\u0275fac = function IasHeaderComponent_Factory(t) {
-      return new (t || _IasHeaderComponent)(\u0275\u0275directiveInject(Router), \u0275\u0275directiveInject(UserService), \u0275\u0275directiveInject(PLATFORM_ID));
+      return new (t || _IasHeaderComponent)(\u0275\u0275directiveInject(Router), \u0275\u0275directiveInject(UserService), \u0275\u0275directiveInject(ToastService), \u0275\u0275directiveInject(PLATFORM_ID));
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 53, vars: 31, consts: [["initials", ""], ["userMenu", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "routerLink"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [1, "nav-item", "dropdown"], ["data-bs-toggle", "dropdown", "aria-expanded", "false", "id", "dropdownMenuButton", 1, "d-flex", "align-items-center", "text-decoration-none", "nav-link"], [1, "me-2"], [1, "arrow-icon"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "10", "fill", "none"], ["d", "M12.6 0.8L14 2.2 7 9.2 0 2.2 1.4 0.8 7 6.375 12.6 0.8Z", "fill", "#222"], ["aria-labelledby", "dropdownMenuButton", 1, "dropdown-menu", "dropdown-menu-dark"], [1, "dropdown-item", 3, "routerLink"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], ["class", "dropdown", 4, "ngIf"], [1, "dropdown"], ["type", "button", "id", "profileDropdown", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "dropdown-toggle", "user-profile", "d-flex", "align-items-center", "p-0"], [1, "avatar"], [4, "ngIf", "ngIfElse"], ["aria-labelledby", "profileDropdown", 1, "dropdown-menu", "dropdown-menu-end"], [1, "dropdown-divider"], [1, "dropdown-item", "text-danger", 2, "cursor", "pointer", 3, "click"], ["alt", "User Avatar", 3, "src"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 53, vars: 30, consts: [["initials", ""], ["userMenu", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [1, "nav-item", "dropdown"], ["data-bs-toggle", "dropdown", "aria-expanded", "false", "id", "dropdownMenuButton", 1, "d-flex", "align-items-center", "text-decoration-none", "nav-link"], [1, "me-2"], [1, "arrow-icon"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "10", "fill", "none"], ["d", "M12.6 0.8L14 2.2 7 9.2 0 2.2 1.4 0.8 7 6.375 12.6 0.8Z", "fill", "#222"], ["aria-labelledby", "dropdownMenuButton", 1, "dropdown-menu", "dropdown-menu-dark"], [1, "dropdown-item", 3, "routerLink"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], ["class", "dropdown", 4, "ngIf"], [1, "dropdown"], ["type", "button", "id", "profileDropdown", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "dropdown-toggle", "user-profile", "d-flex", "align-items-center", "p-0"], [1, "avatar"], [4, "ngIf", "ngIfElse"], ["aria-labelledby", "profileDropdown", 1, "dropdown-menu", "dropdown-menu-end"], [1, "dropdown-divider"], [1, "dropdown-item", "text-danger", 2, "cursor", "pointer", 3, "click"], ["alt", "User Avatar", 3, "src"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 2)(1, "div", 3)(2, "div", 4);
+        \u0275\u0275listener("click", function IasHeaderComponent_Template_div_click_2_listener() {
+          return ctx.goHome();
+        });
         \u0275\u0275element(3, "img", 5);
         \u0275\u0275elementStart(4, "h1");
         \u0275\u0275text(5, "Indian Administrative Service ");
@@ -341,28 +352,26 @@ var IasHeaderComponent = class _IasHeaderComponent {
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
+        \u0275\u0275advance(15);
+        \u0275\u0275property("routerLink", "/about-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "");
-        \u0275\u0275advance(13);
-        \u0275\u0275property("routerLink", "/about-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c0));
+        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(23, _c0));
-        \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(24, _c0));
+        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(23, _c0));
         \u0275\u0275advance(11);
         \u0275\u0275property("routerLink", "news-blogs");
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(25, _c0));
+        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(24, _c0));
         \u0275\u0275advance(9);
-        \u0275\u0275property("routerLink", "/about-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(26, _c0));
+        \u0275\u0275property("routerLink", "/about-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(25, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(27, _c0));
+        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(26, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(28, _c0));
+        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(27, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(29, _c0));
+        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(28, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(30, _c0));
+        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(29, _c0));
         \u0275\u0275advance(2);
         \u0275\u0275property("ngIf", ctx.isLoggedIn && ctx.isLoggedIn !== null);
         \u0275\u0275advance();
@@ -372,7 +381,7 @@ var IasHeaderComponent = class _IasHeaderComponent {
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasHeaderComponent, { className: "IasHeaderComponent", filePath: "src/app/common/ias-header/ias-header.component.ts", lineNumber: 13 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasHeaderComponent, { className: "IasHeaderComponent", filePath: "src/app/common/ias-header/ias-header.component.ts", lineNumber: 14 });
 })();
 
 // src/app/common/ias-footer/ias-footer.component.ts
@@ -501,65 +510,54 @@ var AccessibilityHeaderComponent = class _AccessibilityHeaderComponent {
   toggleDarkMode() {
     this.isMirrored = !this.isMirrored;
   }
+  sendMail() {
+    window.location.href = "mailto:association.ias@gmail.com?subject=Help%20Desk%20Support&body=Hello,%0D%0A%0D%0AI am contacting the Help Desk for assistance.%0D%0A%0D%0ARegards,";
+  }
+  scrollToContent() {
+    const element = document.getElementById("mainContent");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }
   static {
     this.\u0275fac = function AccessibilityHeaderComponent_Factory(t) {
       return new (t || _AccessibilityHeaderComponent)();
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AccessibilityHeaderComponent, selectors: [["app-accessibility-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 33, vars: 2, consts: [[1, "main-access-header-div"], [1, "inner-access", "container", "d-flex", "align-items-center", "justify-content-end"], [1, "right-access-div", "d-flex", "align-items-center", "justify-content-between", "gap-4"], [1, "skip-text"], [1, "screen-reader-div", "d-flex", "align-items-center", "gap-1"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "20", "viewBox", "0 0 21 20", "fill", "none"], ["id", "mask0_2008_3252", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "21", "height", "20", 2, "mask-type", "alpha"], ["x", "0.266602", "width", "20", "height", "20", "fill", "#D9D9D9"], ["mask", "url(#mask0_2008_3252)"], ["d", "M3.85639 17.9166C3.4408 17.9166 3.08583 17.7695 2.7915 17.4751C2.49715 17.1808 2.34998 16.8258 2.34998 16.4102V3.58975C2.34998 3.17415 2.49715 2.81919 2.7915 2.52486C3.08583 2.23051 3.4408 2.08333 3.85639 2.08333H10.7554L9.50541 3.33331H3.85639C3.7816 3.33331 3.72016 3.35736 3.67208 3.40544C3.624 3.45352 3.59995 3.51496 3.59995 3.58975V16.4102C3.59995 16.485 3.624 16.5464 3.67208 16.5945C3.72016 16.6426 3.7816 16.6666 3.85639 16.6666H12.5102C12.585 16.6666 12.6464 16.6426 12.6945 16.5945C12.7426 16.5464 12.7666 16.485 12.7666 16.4102V14.375H14.0166V16.4102C14.0166 16.8258 13.8694 17.1808 13.5751 17.4751C13.2807 17.7695 12.9258 17.9166 12.5102 17.9166H3.85639ZM5.47498 14.7916V13.5417H10.8916V14.7916H5.47498ZM5.47498 12.3878V11.1378H9.22493V12.3878H5.47498ZM12.5583 12.0753L9.52143 9.03844H7.14164V5.28846H9.52143L12.5583 2.25163V12.0753ZM14.2249 9.82209V4.50481C14.6875 4.79113 15.0463 5.17227 15.3011 5.64823C15.5559 6.12419 15.6833 6.62926 15.6833 7.16344C15.6833 7.69762 15.5545 8.2027 15.297 8.67867C15.0396 9.15463 14.6822 9.53577 14.2249 9.82209ZM14.2249 13.2532V11.9359C15.1384 11.5566 15.8876 10.9319 16.4725 10.0617C17.0575 9.1915 17.3499 8.22541 17.3499 7.16344C17.3499 6.10148 17.0575 5.13541 16.4725 4.26521C15.8876 3.39502 15.1384 2.77028 14.2249 2.391V1.07373C15.4877 1.47544 16.5326 2.23666 17.3595 3.35738C18.1864 4.4781 18.5999 5.74679 18.5999 7.16344C18.5999 8.58011 18.1864 9.8488 17.3595 10.9695C16.5326 12.0902 15.4877 12.8515 14.2249 13.2532Z", "fill", "white"], [1, "font-inc-dec", "d-flex", "align-items-center"], [1, "inc-div", "d-flex", "align-items-center"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "16", "viewBox", "0 0 17 16", "fill", "none"], ["clip-path", "url(#clip0_2008_3264)"], ["d", "M7.92941 2.13395C7.77645 2.14222 7.62909 2.19422 7.50481 2.28377C7.38054 2.37333 7.2846 2.49668 7.22836 2.63916L3.21691 12.7996H2.93253C2.86186 12.7986 2.79169 12.8116 2.72611 12.838C2.66052 12.8643 2.60083 12.9035 2.5505 12.9531C2.50017 13.0027 2.46021 13.0618 2.43293 13.127C2.40565 13.1923 2.3916 13.2622 2.3916 13.3329C2.3916 13.4036 2.40565 13.4736 2.43293 13.5388C2.46021 13.604 2.50017 13.6631 2.5505 13.7127C2.60083 13.7624 2.66052 13.8015 2.72611 13.8278C2.79169 13.8542 2.86186 13.8672 2.93253 13.8662H5.06586C5.13654 13.8672 5.2067 13.8542 5.27229 13.8278C5.33787 13.8015 5.39756 13.7624 5.44789 13.7127C5.49822 13.6631 5.53819 13.604 5.56547 13.5388C5.59275 13.4736 5.60679 13.4036 5.60679 13.3329C5.60679 13.2622 5.59275 13.1923 5.56547 13.127C5.53819 13.0618 5.49822 13.0027 5.44789 12.9531C5.39756 12.9035 5.33787 12.8643 5.27229 12.838C5.2067 12.8116 5.13654 12.7986 5.06586 12.7996H4.9367L5.78045 10.661C5.80873 10.6651 5.8373 10.6668 5.86586 10.6662H10.5846L11.5471 12.7996H11.4659C11.3952 12.7986 11.325 12.8116 11.2594 12.838C11.1939 12.8643 11.1342 12.9035 11.0838 12.9531C11.0335 13.0027 10.9935 13.0618 10.9663 13.127C10.939 13.1923 10.9249 13.2622 10.9249 13.3329C10.9249 13.4036 10.939 13.4736 10.9663 13.5388C10.9935 13.604 11.0335 13.6631 11.0838 13.7127C11.1342 13.7624 11.1939 13.8015 11.2594 13.8278C11.325 13.8542 11.3952 13.8672 11.4659 13.8662H13.5992C13.6699 13.8672 13.74 13.8542 13.8056 13.8278C13.8712 13.8015 13.9309 13.7624 13.9812 13.7127C14.0316 13.6631 14.0715 13.604 14.0988 13.5388C14.1261 13.4736 14.1401 13.4036 14.1401 13.3329C14.1401 13.2622 14.1261 13.1923 14.0988 13.127C14.0715 13.0618 14.0316 13.0027 13.9812 12.9531C13.9309 12.9035 13.8712 12.8643 13.8056 12.838C13.74 12.8116 13.6699 12.7986 13.5992 12.7996H13.3034L8.70128 2.60374C8.63494 2.45677 8.52575 2.33328 8.38801 2.24945C8.25027 2.16562 8.09042 2.12536 7.92941 2.13395ZM11.4659 3.19957C11.3952 3.19858 11.325 3.21163 11.2594 3.23799C11.1939 3.26434 11.1342 3.30347 11.0838 3.35309C11.0335 3.40271 10.9935 3.46184 10.9663 3.52705C10.939 3.59225 10.9249 3.66223 10.9249 3.73291C10.9249 3.80359 10.939 3.87356 10.9663 3.93877C10.9935 4.00397 11.0335 4.0631 11.0838 4.11273C11.1342 4.16235 11.1939 4.20148 11.2594 4.22783C11.325 4.25418 11.3952 4.26724 11.4659 4.26624H15.7325C15.8032 4.26724 15.8734 4.25418 15.939 4.22783C16.0045 4.20148 16.0642 4.16235 16.1146 4.11273C16.1649 4.0631 16.2049 4.00397 16.2321 3.93877C16.2594 3.87356 16.2735 3.80359 16.2735 3.73291C16.2735 3.66223 16.2594 3.59225 16.2321 3.52705C16.2049 3.46184 16.1649 3.40271 16.1146 3.35309C16.0642 3.30347 16.0045 3.26434 15.939 3.23799C15.8734 3.21163 15.8032 3.19858 15.7325 3.19957H11.4659ZM8.02107 4.98707L10.1034 9.59957H6.20024L8.02107 4.98707Z", "fill", "white"], ["id", "clip0_2008_3264"], ["width", "16", "height", "16", "fill", "white", "transform", "translate(0.266602)"], ["d", "M7.92941 2.13395C7.77645 2.14222 7.62909 2.19422 7.50481 2.28377C7.38054 2.37333 7.2846 2.49668 7.22836 2.63916L3.21691 12.7996H2.93253C2.86186 12.7986 2.79169 12.8116 2.72611 12.838C2.66052 12.8643 2.60083 12.9035 2.5505 12.9531C2.50017 13.0027 2.46021 13.0618 2.43293 13.127C2.40565 13.1923 2.3916 13.2622 2.3916 13.3329C2.3916 13.4036 2.40565 13.4736 2.43293 13.5388C2.46021 13.604 2.50017 13.6631 2.5505 13.7127C2.60083 13.7624 2.66052 13.8015 2.72611 13.8278C2.79169 13.8542 2.86186 13.8672 2.93253 13.8662H5.06586C5.13654 13.8672 5.2067 13.8542 5.27229 13.8278C5.33787 13.8015 5.39756 13.7624 5.44789 13.7127C5.49822 13.6631 5.53819 13.604 5.56547 13.5388C5.59275 13.4736 5.60679 13.4036 5.60679 13.3329C5.60679 13.2622 5.59275 13.1923 5.56547 13.127C5.53819 13.0618 5.49822 13.0027 5.44789 12.9531C5.39756 12.9035 5.33787 12.8643 5.27229 12.838C5.2067 12.8116 5.13654 12.7986 5.06586 12.7996H4.9367L5.78045 10.661C5.80873 10.6651 5.8373 10.6668 5.86586 10.6662H10.5846L11.5471 12.7996H11.4659C11.3952 12.7986 11.325 12.8116 11.2594 12.838C11.1939 12.8643 11.1342 12.9035 11.0838 12.9531C11.0335 13.0027 10.9935 13.0618 10.9663 13.127C10.939 13.1923 10.9249 13.2622 10.9249 13.3329C10.9249 13.4036 10.939 13.4736 10.9663 13.5388C10.9935 13.604 11.0335 13.6631 11.0838 13.7127C11.1342 13.7624 11.1939 13.8015 11.2594 13.8278C11.325 13.8542 11.3952 13.8672 11.4659 13.8662H13.5992C13.6699 13.8672 13.74 13.8542 13.8056 13.8278C13.8712 13.8015 13.9309 13.7624 13.9812 13.7127C14.0316 13.6631 14.0715 13.604 14.0988 13.5388C14.1261 13.4736 14.1401 13.4036 14.1401 13.3329C14.1401 13.2622 14.1261 13.1923 14.0988 13.127C14.0715 13.0618 14.0316 13.0027 13.9812 12.9531C13.9309 12.9035 13.8712 12.8643 13.8056 12.838C13.74 12.8116 13.6699 12.7986 13.5992 12.7996H13.3034L8.70128 2.60374C8.63494 2.45677 8.52575 2.33328 8.38801 2.24945C8.25027 2.16562 8.09042 2.12536 7.92941 2.13395ZM8.02107 4.98707L10.1034 9.59957H6.20024L8.02107 4.98707Z", "fill", "white"], ["clip-path", "url(#clip0_2008_3260)"], ["d", "M13.5909 1.05866C13.4496 1.06087 13.315 1.11903 13.2165 1.22039C13.1181 1.32175 13.0639 1.45801 13.0659 1.59928V3.19928H11.4659C11.3952 3.19828 11.325 3.21134 11.2594 3.2377C11.1939 3.26405 11.1342 3.30317 11.0838 3.3528C11.0335 3.40242 10.9935 3.46155 10.9663 3.52676C10.939 3.59196 10.9249 3.66194 10.9249 3.73262C10.9249 3.8033 10.939 3.87327 10.9663 3.93848C10.9935 4.00368 11.0335 4.06281 11.0838 4.11244C11.1342 4.16206 11.1939 4.20119 11.2594 4.22754C11.325 4.25389 11.3952 4.26695 11.4659 4.26595H13.0659V5.86595C13.0649 5.93662 13.0779 6.00679 13.1043 6.07237C13.1306 6.13796 13.1698 6.19765 13.2194 6.24798C13.269 6.29831 13.3281 6.33827 13.3933 6.36555C13.4585 6.39283 13.5285 6.40688 13.5992 6.40688C13.6699 6.40688 13.7399 6.39283 13.8051 6.36555C13.8703 6.33827 13.9294 6.29831 13.979 6.24798C14.0286 6.19765 14.0678 6.13796 14.0941 6.07237C14.1205 6.00679 14.1335 5.93662 14.1325 5.86595V4.26595H15.7325C15.8032 4.26695 15.8734 4.25389 15.939 4.22754C16.0045 4.20119 16.0642 4.16206 16.1146 4.11244C16.1649 4.06281 16.2049 4.00368 16.2321 3.93848C16.2594 3.87327 16.2735 3.8033 16.2735 3.73262C16.2735 3.66194 16.2594 3.59196 16.2321 3.52676C16.2049 3.46155 16.1649 3.40242 16.1146 3.3528C16.0642 3.30317 16.0045 3.26405 15.939 3.2377C15.8734 3.21134 15.8032 3.19828 15.7325 3.19928H14.1325V1.59928C14.1335 1.52793 14.1202 1.4571 14.0933 1.391C14.0664 1.3249 14.0265 1.26487 13.976 1.21446C13.9255 1.16404 13.8654 1.12428 13.7992 1.09752C13.7331 1.07076 13.6622 1.05754 13.5909 1.05866ZM7.92941 2.13366C7.77645 2.14193 7.62909 2.19393 7.50481 2.28348C7.38054 2.37304 7.2846 2.49638 7.22836 2.63887L3.21691 12.7993H2.93253C2.86186 12.7983 2.79169 12.8113 2.72611 12.8377C2.66052 12.864 2.60083 12.9032 2.5505 12.9528C2.50017 13.0024 2.46021 13.0616 2.43293 13.1268C2.40565 13.192 2.3916 13.2619 2.3916 13.3326C2.3916 13.4033 2.40565 13.4733 2.43293 13.5385C2.46021 13.6037 2.50017 13.6628 2.5505 13.7124C2.60083 13.7621 2.66052 13.8012 2.72611 13.8275C2.79169 13.8539 2.86186 13.867 2.93253 13.866H5.06586C5.13654 13.867 5.2067 13.8539 5.27229 13.8275C5.33787 13.8012 5.39756 13.7621 5.44789 13.7124C5.49822 13.6628 5.53819 13.6037 5.56547 13.5385C5.59275 13.4733 5.60679 13.4033 5.60679 13.3326C5.60679 13.2619 5.59275 13.192 5.56547 13.1268C5.53819 13.0616 5.49822 13.0024 5.44789 12.9528C5.39756 12.9032 5.33787 12.864 5.27229 12.8377C5.2067 12.8113 5.13654 12.7983 5.06586 12.7993H4.9367L5.78045 10.6607C5.80873 10.6648 5.8373 10.6665 5.86586 10.666H10.5846L11.5471 12.7993H11.4659C11.3952 12.7983 11.325 12.8113 11.2594 12.8377C11.1939 12.864 11.1342 12.9032 11.0838 12.9528C11.0335 13.0024 10.9935 13.0616 10.9663 13.1268C10.939 13.192 10.9249 13.2619 10.9249 13.3326C10.9249 13.4033 10.939 13.4733 10.9663 13.5385C10.9935 13.6037 11.0335 13.6628 11.0838 13.7124C11.1342 13.7621 11.1939 13.8012 11.2594 13.8275C11.325 13.8539 11.3952 13.867 11.4659 13.866H13.5992C13.6699 13.867 13.74 13.8539 13.8056 13.8275C13.8712 13.8012 13.9309 13.7621 13.9812 13.7124C14.0316 13.6628 14.0715 13.6037 14.0988 13.5385C14.1261 13.4733 14.1401 13.4033 14.1401 13.3326C14.1401 13.2619 14.1261 13.192 14.0988 13.1268C14.0715 13.0616 14.0316 13.0024 13.9812 12.9528C13.9309 12.9032 13.8712 12.864 13.8056 12.8377C13.74 12.8113 13.6699 12.7983 13.5992 12.7993H13.3034L8.70128 2.60345C8.63494 2.45648 8.52575 2.33299 8.38801 2.24916C8.25027 2.16532 8.09042 2.12507 7.92941 2.13366ZM8.02107 4.98678L10.1034 9.59928H6.20024L8.02107 4.98678Z", "fill", "white"], ["id", "clip0_2008_3260"], ["xmlns", "http://www.w3.org/2000/svg", "width", "25", "height", "24", "viewBox", "0 0 25 24", "fill", "none", 1, "dark-mode"], ["d", "M12.2666 20.3334C16.869 20.3334 20.6 16.6025 20.6 12.0001C20.6 7.39771 16.869 3.66675 12.2666 3.66675C7.66425 3.66675 3.93329 7.39771 3.93329 12.0001C3.93329 16.6025 7.66425 20.3334 12.2666 20.3334ZM12.2666 19.0834V4.91675C16.1786 4.91675 19.35 8.08806 19.35 12.0001C19.35 15.9121 16.1786 19.0834 12.2666 19.0834Z", "fill", "white"]], template: function AccessibilityHeaderComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AccessibilityHeaderComponent, selectors: [["app-accessibility-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 17, vars: 0, consts: [[1, "main-access-header-div"], [1, "inner-access", "container", "d-flex", "align-items-center", "justify-content-end"], [1, "right-access-div", "d-flex", "align-items-center", "justify-content-between", "gap-4"], [1, "skip-text", 3, "click"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "skip-text", "d-flex", "align-items-center", "gap-2", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["_ngcontent-ng-c2485631207", "", "id", "mask0_8942_12501", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["_ngcontent-ng-c2485631207", "", "width", "18", "height", "18", "fill", "white"], ["_ngcontent-ng-c2485631207", "", "mask", "url(#mask0_8942_12501)"], ["_ngcontent-ng-c2485631207", "", "d", "M14.9625 15.75C13.4 15.75 11.8563 15.4094 10.3313 14.7281C8.80625 14.0469 7.41875 13.0813 6.16875 11.8313C4.91875 10.5813 3.95312 9.19375 3.27188 7.66875C2.59063 6.14375 2.25 4.6 2.25 3.0375C2.25 2.8125 2.325 2.625 2.475 2.475C2.625 2.325 2.8125 2.25 3.0375 2.25H6.075C6.25 2.25 6.40625 2.30937 6.54375 2.42812C6.68125 2.54688 6.7625 2.6875 6.7875 2.85L7.275 5.475C7.3 5.675 7.29375 5.84375 7.25625 5.98125C7.21875 6.11875 7.15 6.2375 7.05 6.3375L5.23125 8.175C5.48125 8.6375 5.77812 9.08437 6.12187 9.51562C6.46562 9.94688 6.84375 10.3625 7.25625 10.7625C7.64375 11.15 8.05 11.5094 8.475 11.8406C8.9 12.1719 9.35 12.475 9.825 12.75L11.5875 10.9875C11.7 10.875 11.8469 10.7906 12.0281 10.7344C12.2094 10.6781 12.3875 10.6625 12.5625 10.6875L15.15 11.2125C15.325 11.2625 15.4688 11.3531 15.5812 11.4844C15.6937 11.6156 15.75 11.7625 15.75 11.925V14.9625C15.75 15.1875 15.675 15.375 15.525 15.525C15.375 15.675 15.1875 15.75 14.9625 15.75Z", "fill", "white"]], template: function AccessibilityHeaderComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
+        \u0275\u0275listener("click", function AccessibilityHeaderComponent_Template_h1_click_3_listener() {
+          return ctx.scrollToContent();
+        });
         \u0275\u0275text(4, "Skip to Main Content ");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(5, "div", 4);
-        \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(6, "svg", 5)(7, "mask", 6);
-        \u0275\u0275element(8, "rect", 7);
+        \u0275\u0275elementStart(5, "div", 4)(6, "a", 5);
+        \u0275\u0275element(7, "i", 6);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(9, "g", 8);
-        \u0275\u0275element(10, "path", 9);
+        \u0275\u0275elementStart(8, "a", 7);
+        \u0275\u0275element(9, "i", 8);
         \u0275\u0275elementEnd()();
-        \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(11, "h1", 3);
-        \u0275\u0275text(12, "Screen Reader");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(13, "div", 10)(14, "div", 11);
+        \u0275\u0275elementStart(10, "h1", 9);
+        \u0275\u0275listener("click", function AccessibilityHeaderComponent_Template_h1_click_10_listener() {
+          return ctx.sendMail();
+        });
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(15, "svg", 12)(16, "g", 13);
-        \u0275\u0275element(17, "path", 14);
+        \u0275\u0275elementStart(11, "svg", 10)(12, "mask", 11);
+        \u0275\u0275element(13, "rect", 12);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(18, "defs")(19, "clipPath", 15);
-        \u0275\u0275element(20, "rect", 16);
-        \u0275\u0275elementEnd()()()();
-        \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(21, "div", 11);
-        \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(22, "svg", 12);
-        \u0275\u0275element(23, "path", 17);
+        \u0275\u0275elementStart(14, "g", 13);
+        \u0275\u0275element(15, "path", 14);
         \u0275\u0275elementEnd()();
-        \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(24, "div", 11);
-        \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(25, "svg", 12)(26, "g", 18);
-        \u0275\u0275element(27, "path", 19);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(28, "defs")(29, "clipPath", 20);
-        \u0275\u0275element(30, "rect", 16);
-        \u0275\u0275elementEnd()()()()();
-        \u0275\u0275elementStart(31, "svg", 21);
-        \u0275\u0275element(32, "path", 22);
+        \u0275\u0275text(16, " Contact Help Desk");
         \u0275\u0275elementEnd()()()();
       }
-      if (rf & 2) {
-        \u0275\u0275advance(31);
-        \u0275\u0275classProp("mirrored", ctx.isMirrored);
-      }
-    }, styles: ["\n\n.main-access-header-div[_ngcontent-%COMP%] {\n  background: var(--material-theme-sys-light-on-background, #1F1F1F);\n  padding: 5px 0px;\n}\n.gov-text[_ngcontent-%COMP%] {\n  color: #EBEBEB;\n  font-family: var(--roboto-font);\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n.skip-text[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Roboto;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n  margin: 0px;\n  cursor: pointer;\n}\n.screen-reader-div[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.dark-mode[_ngcontent-%COMP%] {\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.inc-div[_ngcontent-%COMP%] {\n  padding: 8px;\n  transition: all 0.3s ease-in-out;\n  cursor: pointer;\n}\n.inc-div[_ngcontent-%COMP%]:hover {\n  border-radius: 4px;\n  background: rgba(255, 255, 255, 0.15);\n}\n.accessibility-header[_ngcontent-%COMP%] {\n  text-align: center;\n  padding: 20px;\n}\n.language-selector[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-top: 20px;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  padding: 10px 15px;\n  border: 1px solid #ccc;\n  background: #f1f1f1;\n  cursor: povar(--roboto-font);\n  transition: 0.3s;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n}\n.text-content[_ngcontent-%COMP%] {\n  text-align: center;\n  transition: font-size 0.3s;\n}\n.text-content[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  transition: font-size 0.3s;\n}\n.level-popup[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 40px;\n  left: 50%;\n  transform: translateX(-50%);\n  z-index: 9999;\n  background: rgba(0, 0, 0, 0.631372549);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n  border-radius: 12px;\n  padding: 30px;\n  transition: opacity 0.3s ease;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation: _ngcontent-%COMP%_fadeIn 0.5s ease;\n}\n.popup-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.text-icon-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 20px;\n}\n.text-icon-container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 100px;\n  height: 100px;\n}\n.text-icon-container[_ngcontent-%COMP%]   .bigger-text-label[_ngcontent-%COMP%] {\n  font-size: 18px;\n  font-weight: bold;\n  color: var(--primary-white);\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 6px;\n  background: var(--brand-color);\n  border-radius: 4px;\n  transition: background 0.3s ease;\n}\n.level-indicator[_ngcontent-%COMP%]   span.active[_ngcontent-%COMP%] {\n  background: var(--primary-white);\n}\n@keyframes _ngcontent-%COMP%_fadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-60%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%);\n  }\n}\n.mirrored[_ngcontent-%COMP%] {\n  transform: scaleX(-1);\n}\n@media screen and (max-width: 768px) {\n  .skip-text[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .screen-reader-div[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n  .font-inc-dec[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n}\n/*# sourceMappingURL=accessibility-header.component.css.map */"] });
+    }, dependencies: [RouterModule], styles: ["\n\n.main-access-header-div[_ngcontent-%COMP%] {\n  background: var(--material-theme-sys-light-on-background, #1F1F1F);\n  padding: 5px 0px;\n}\n.gov-text[_ngcontent-%COMP%] {\n  color: #EBEBEB;\n  font-family: var(--roboto-font);\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n.skip-text[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Roboto;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n  margin: 0px;\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.skip-text[_ngcontent-%COMP%]:hover {\n  color: #fff;\n  text-decoration: underline;\n}\n.screen-reader-div[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.dark-mode[_ngcontent-%COMP%] {\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.inc-div[_ngcontent-%COMP%] {\n  padding: 8px;\n  transition: all 0.3s ease-in-out;\n  cursor: pointer;\n}\n.inc-div[_ngcontent-%COMP%]:hover {\n  border-radius: 4px;\n  background: rgba(255, 255, 255, 0.15);\n}\n.accessibility-header[_ngcontent-%COMP%] {\n  text-align: center;\n  padding: 20px;\n}\n.language-selector[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-top: 20px;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  padding: 10px 15px;\n  border: 1px solid #ccc;\n  background: #f1f1f1;\n  cursor: povar(--roboto-font);\n  transition: 0.3s;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n}\n.text-content[_ngcontent-%COMP%] {\n  text-align: center;\n  transition: font-size 0.3s;\n}\n.text-content[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  transition: font-size 0.3s;\n}\n.level-popup[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 40px;\n  left: 50%;\n  transform: translateX(-50%);\n  z-index: 9999;\n  background: rgba(0, 0, 0, 0.631372549);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n  border-radius: 12px;\n  padding: 30px;\n  transition: opacity 0.3s ease;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation: _ngcontent-%COMP%_fadeIn 0.5s ease;\n}\n.popup-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.text-icon-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 20px;\n}\n.text-icon-container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 100px;\n  height: 100px;\n}\n.text-icon-container[_ngcontent-%COMP%]   .bigger-text-label[_ngcontent-%COMP%] {\n  font-size: 18px;\n  font-weight: bold;\n  color: var(--primary-white);\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 6px;\n  background: var(--brand-color);\n  border-radius: 4px;\n  transition: background 0.3s ease;\n}\n.level-indicator[_ngcontent-%COMP%]   span.active[_ngcontent-%COMP%] {\n  background: var(--primary-white);\n}\n@keyframes _ngcontent-%COMP%_fadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-60%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%);\n  }\n}\n.mirrored[_ngcontent-%COMP%] {\n  transform: scaleX(-1);\n}\n.social-icons[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n}\n@media (max-width: 600px) {\n  .social-icons[_ngcontent-%COMP%] {\n    justify-content: start;\n  }\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  background: #ffffff;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #000;\n  font-size: 14px;\n  transition: 0.2s;\n  text-decoration: none;\n  opacity: 0.7;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n  opacity: 1;\n}\n@media screen and (max-width: 768px) {\n  .skip-text[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .screen-reader-div[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n  .font-inc-dec[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n}\n/*# sourceMappingURL=accessibility-header.component.css.map */"] });
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AccessibilityHeaderComponent, { className: "AccessibilityHeaderComponent", filePath: "src/app/common/accessibility-header/accessibility-header.component.ts", lineNumber: 10 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AccessibilityHeaderComponent, { className: "AccessibilityHeaderComponent", filePath: "src/app/common/accessibility-header/accessibility-header.component.ts", lineNumber: 11 });
 })();
 
 // src/app/website/pages/main-page/main-page.component.ts
@@ -2678,7 +2676,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-CX7RFWYH.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-XNPUILDZ.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
