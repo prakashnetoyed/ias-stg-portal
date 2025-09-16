@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/environments/environment.ts"],
+  "sourcesContent": ["export const environment: { production: boolean; apiUrl: string; s3Url:string } = {\n  production: false,\n  apiUrl: 'https://stg.iasca.netoyed.com/api',\n  s3Url: 'https://iascaportal.s3.ap-south-1.amazonaws.com/'\n};\n"],
+  "mappings": ";;;AAAO,IAAM,cAAqE;EAChF,YAAY;EACZ,QAAQ;EACR,OAAO;;",
+  "names": []
+}

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/user-portal/pages/payment-status/payment-status.component.scss"],
+  "sourcesContent": [".card {\n  border-radius: 12px;\npadding: 3vw;\n  max-width: 600px;\n  margin:60px auto 0;\n  .card-body {\n    font-size: 16px;\n    line-height: 1.6;\n  }\n}\n"],
+  "mappings": ";AAAA,CAAA;AACE,iBAAA;AACF,WAAA;AACE,aAAA;AACA,UAAA,KAAA,KAAA;;AACA,CALF,KAKE,CAAA;AACE,aAAA;AACA,eAAA;;",
+  "names": []
+}

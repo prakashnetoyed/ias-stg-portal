@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/user-portal/user-dashboard/user-dashboard.component.scss"],
+  "sourcesContent": [".main-after-login-layout{\n    background: #F4F1FF;\n    display: flex;\n    width: 100%;\n}\n.side-bar-div {\n    position: sticky;\n    top: 0;\n    align-self: flex-start; /* important in flex layout */\n    height: 100vh;\n  }\n  "],
+  "mappings": ";AAAA,CAAA;AACI,cAAA;AACA,WAAA;AACA,SAAA;;AAEJ,CAAA;AACI,YAAA;AACA,OAAA;AACA,cAAA;AACA,UAAA;;",
+  "names": []
+}

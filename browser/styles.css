@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Georama:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Marcellus&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap";
+
+/* src/styles.scss */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: transparent;
+  transition: background 0.3s ease-in-out;
+  position: absolute;
+  z-index: 9999;
+  width: 0px;
+}
+html.scrolling ::-webkit-scrollbar-thumb {
+  background: var(--brand-color);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.ias-title {
+  color: #fff;
+  font-family: "Urbanist";
+  font-size: 40px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 900px) {
+  .ias-title {
+    font-size: 30px !important;
+    margin: 15px 0px !important;
+  }
+}
+.btn-prime {
+  border: 2px solid #523AB1;
+  border-radius: 4px;
+  background: #523AB1;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--Text-Alternative, #FFF);
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-prime:hover {
+  border-radius: 4px;
+  background: rgba(82, 58, 177, 0);
+  border: 2px solid #523AB1;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #523AB1;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.btn-black {
+  border: 2px solid #222;
+  border-radius: 4px;
+  background: #222;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--Text-Alternative, #FFF);
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-black:hover {
+  border-radius: 4px;
+  background: rgba(82, 58, 177, 0);
+  border: 2px solid #222;
+  display: flex;
+  padding: 10px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #222;
+  text-align: center;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.btn-donate {
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #492FB2;
+  padding: 12px 24px;
+  background: transparent;
+  color: #FFF;
+  font-family: Urbanist, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.3s ease-in-out;
+}
+.btn-donate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      130deg,
+      #492FB2 -1.74%,
+      rgba(73, 47, 178, 0.61) 125.81%);
+  z-index: -1;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+.btn-donate:hover {
+  color: #492FB2;
+  border: 1px solid #492FB2;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #492FB2;
+}
+.btn-donate:hover::before {
+  opacity: 0;
+}
+.btn-donate svg path {
+  transition: fill 0.3s ease-in-out;
+}
+.btn-donate:hover svg path {
+  fill: #492FB2;
+}
+.like-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+.like-button svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  fill: none;
+  transition: 0.3s ease;
+}
+.like-button.liked svg path {
+  fill: #e0245e;
+  stroke: #e0245e;
+}
+.like-button.animate svg {
+  animation: pop 0.3s forwards;
+}
+.like-button .like-count {
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.like-button.liked .like-count {
+  color: #e0245e;
+}
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.breadcrumb-item a {
+  color: #8D8D8D;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  color: #FFF;
+  font-family: Urbanist;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  display: inline-block;
+  color: #8D8D8D;
+}
+@media (max-width: 768px) {
+  .btn-prime,
+  .btn-black,
+  .btn-donate {
+    font-size: 14px;
+    padding: 8px 8px;
+    gap: 6px;
+  }
+}
+@media (max-width: 480px) {
+  .btn-prime,
+  .btn-black,
+  .btn-donate {
+    font-size: 13px;
+    padding: 6px 8px;
+    gap: 4px;
+  }
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family:
+    Roboto,
+    "Helvetica Neue",
+    sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.modern-pagination .page-item {
+  margin: 0 3px;
+}
+.modern-pagination .page-link {
+  border-radius: 8px !important;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  color: #444;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.modern-pagination .page-link.active {
+  background-color: #f5f0ff;
+  border: 1px solid #7c3aed;
+  color: #7c3aed;
+  font-weight: 600;
+}
+.modern-pagination .page-link:hover {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.modern-pagination .page-item.disabled .page-link {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* angular:styles/global:styles */
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/website/pages/refund-cancellation-policy/refund-cancellation-policy.component.scss"],
+  "sourcesContent": ["section {\n  background: #f4f7fa;\n}\n.policy-card {\n  background: #fff;\n  border-radius: 0.75rem;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);\n  padding: 2rem;\n}\nh1,\nh2 {\n  color: #523AB1;\n}"],
+  "mappings": ";AAAA;AACE,cAAA;;AAEF,CAAA;AACE,cAAA;AACA,iBAAA;AACA,cAAA,EAAA,IAAA,KAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;AACA,WAAA;;AAEF;AAAA;AAEE,SAAA;;",
+  "names": []
+}
