@@ -2790,7 +2790,7 @@ var routes = [
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-N2SOEXG5.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-E35ICFEF.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
