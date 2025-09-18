@@ -148,7 +148,7 @@ html.scrolling ::-webkit-scrollbar-thumb {
   fill: #492FB2;
 }
 .like-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   cursor: pointer;
   -webkit-user-select: none;
@@ -161,7 +161,10 @@ html.scrolling ::-webkit-scrollbar-thumb {
   height: 20px;
   margin-right: 5px;
   fill: none;
-  transition: 0.3s ease;
+  display: inline-block;
+  transform-origin: center;
+  transform-box: fill-box;
+  transition: transform 0.3s;
 }
 .like-button.liked svg path {
   fill: #e0245e;
@@ -177,12 +180,18 @@ html.scrolling ::-webkit-scrollbar-thumb {
 .like-button.liked .like-count {
   color: #e0245e;
 }
+.like-button.animate svg {
+  animation: pop 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
 @keyframes pop {
   0% {
-    transform: scale(0);
+    transform: scale(1);
   }
-  50% {
-    transform: scale(1.2);
+  40% {
+    transform: scale(1.45);
+  }
+  65% {
+    transform: scale(0.95);
   }
   100% {
     transform: scale(1);

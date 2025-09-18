@@ -1,7 +1,4 @@
 import {
-  ToastService
-} from "./chunk-SHX5MJZM.js";
-import {
   IasLoaderComponent
 } from "./chunk-BPMHA6KW.js";
 import {
@@ -28,6 +25,9 @@ import {
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
 } from "./chunk-W36CPE6Z.js";
+import {
+  ToastService
+} from "./chunk-SHX5MJZM.js";
 import {
   DomRendererFactory2,
   Router,
@@ -2697,12 +2697,12 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7EAVK4WU.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-2LL355IZ.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-VYOWOVWD.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-F4QE5O2L.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2746,7 +2746,7 @@ var routes = [
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-O2URWRVS.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-TQALCMX2.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -2784,7 +2784,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-MA6ZMU2Q.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-GBR3GX6A.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -2832,31 +2832,31 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-OQZMMAIN.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-ZL2WSR6U.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-TCZ5LPAT.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-IOBKJIP2.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-ZZ4BIEJS.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-KQ6N2IDU.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-667LMSSB.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-KDU232RF.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-3B6G45EJ.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-WUKS7KFU.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-SOVTOCTA.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-2I7YXF7Q.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-4OAQPVM4.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-QDM72KYP.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
