@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/services/auth.service.ts"],
+  "sourcesContent": ["import { Injectable, inject, PLATFORM_ID, signal } from '@angular/core';\nimport { isPlatformBrowser } from '@angular/common';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class AuthService {\n  // null = not checked yet, true/false = login state\n  isLoggedIn = signal<boolean | null>(null);\n  private platformId = inject(PLATFORM_ID);\n\n  constructor() {\n    this.checkAuth();\n  }\n  \n  checkAuth() {\n    if (isPlatformBrowser(this.platformId)) {\n      const token = localStorage.getItem('authToken');\n      this.isLoggedIn.set(!!token); // true if token exists, false if not\n      console.log('login value', this.isLoggedIn()); // prints updated value\n    } else {\n      this.isLoggedIn.set(null); // fallback for server\n    }\n  }\n}\n"],
+  "mappings": ";;;;;;;;;;;AAMM,IAAO,cAAP,MAAO,aAAW;EAKtB,cAAA;AAHA,SAAA,aAAa,OAAuB,IAAI;AAChC,SAAA,aAAa,OAAO,WAAW;AAGrC,SAAK,UAAS;EAChB;EAEA,YAAS;AACP,QAAI,kBAAkB,KAAK,UAAU,GAAG;AACtC,YAAM,QAAQ,aAAa,QAAQ,WAAW;AAC9C,WAAK,WAAW,IAAI,CAAC,CAAC,KAAK;AAC3B,cAAQ,IAAI,eAAe,KAAK,WAAU,CAAE;IAC9C,OAAO;AACL,WAAK,WAAW,IAAI,IAAI;IAC1B;EACF;;;uBAjBW,cAAW;IAAA;EAAA;;4EAAX,cAAW,SAAX,aAAW,WAAA,YAFV,OAAM,CAAA;EAAA;;",
+  "names": []
+}
