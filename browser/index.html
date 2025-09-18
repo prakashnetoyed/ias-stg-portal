@@ -200,6 +200,7 @@
   top: 0px;
   z-index: 10;
   display: block;
+  box-shadow: 10px 2px 26px -6px black;
 }
 .logo-div[_ngcontent-ng-c2924506504] {
   display: flex;
@@ -1907,9 +1908,9 @@
   transition: transform 0.6s ease-in-out;
 }
 .state-slider-container[_ngcontent-ng-c2636701546]   .slide[_ngcontent-ng-c2636701546] {
-  display: flex;
+  display: grid;
   flex: 0 0 100%;
-  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 .state-slider-container[_ngcontent-ng-c2636701546]   .state-card[_ngcontent-ng-c2636701546] {
@@ -1953,9 +1954,23 @@
 .state-slider-container[_ngcontent-ng-c2636701546]   .pagination[_ngcontent-ng-c2636701546]   span.active[_ngcontent-ng-c2636701546] {
   background: #fff;
 }
+@media (max-width: 1380px) {
+  .state-slider-container[_ngcontent-ng-c2636701546]   .slide[_ngcontent-ng-c2636701546] {
+    gap: 16px;
+    display: flex !important;
+  }
+  .state-slider-container[_ngcontent-ng-c2636701546]   .state-card[_ngcontent-ng-c2636701546] {
+    padding: 20px 24px;
+    flex: 1 1 45%;
+  }
+  .state-slider-container[_ngcontent-ng-c2636701546]   h2[_ngcontent-ng-c2636701546] {
+    font-size: 16px;
+  }
+}
 @media (max-width: 1200px) {
   .state-slider-container[_ngcontent-ng-c2636701546]   .slide[_ngcontent-ng-c2636701546] {
     gap: 16px;
+    display: flex !important;
   }
   .state-slider-container[_ngcontent-ng-c2636701546]   .state-card[_ngcontent-ng-c2636701546] {
     padding: 20px 24px;
