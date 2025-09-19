@@ -5,9 +5,6 @@ import {
   UserService
 } from "./chunk-6NFBHM2A.js";
 import {
-  AuthService
-} from "./chunk-FHYHZA4K.js";
-import {
   DefaultValueAccessor,
   FormBuilder,
   FormControl,
@@ -25,6 +22,9 @@ import {
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
 } from "./chunk-W36CPE6Z.js";
+import {
+  AuthService
+} from "./chunk-FHYHZA4K.js";
 import {
   ToastService
 } from "./chunk-SHX5MJZM.js";
@@ -1011,7 +1011,7 @@ var IasLoginComponent = class _IasLoginComponent {
       RouterLink,
       HttpClientModule,
       IasLoaderComponent
-    ], styles: ['@charset "UTF-8";\n\n\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492FB2 -1.74%, #ADADAD 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n  padding: 20px;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.inneradjustment[_ngcontent-%COMP%], .second-step[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 500px;\n}\nform[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  margin-top: 48px;\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #FFF);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #A16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.second-step[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.second-step[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7E838B);\n  font-family: Inter;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.password-strength[_ngcontent-%COMP%] {\n  margin-right: 8px;\n  font-weight: 600;\n  font-size: 0.85rem;\n  text-transform: uppercase;\n}\n.password-strength.poor[_ngcontent-%COMP%] {\n  color: red;\n}\n.password-strength.good[_ngcontent-%COMP%] {\n  color: #b8860b;\n}\n.password-strength.best[_ngcontent-%COMP%] {\n  color: green;\n}\n@media (max-width: 992px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 50%;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 50%;\n    padding: 40px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n}\n@media (max-width: 768px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n    justify-content: flex-start;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 520px;\n    border-radius: 0 0 20px 20px;\n    background-position: center;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    line-height: 120%;\n    text-align: center;\n  }\n  form[_ngcontent-%COMP%] {\n    margin-top: 32px;\n    gap: 12px;\n  }\n  form[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  form[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 14px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 10px;\n  }\n  .signup-text[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 12px;\n    align-items: flex-start;\n  }\n  .warning-box[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    flex-shrink: 0;\n    margin-top: 2px;\n  }\n}\n@media (max-width: 480px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 520px;\n    border-radius: 0;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 42px;\n    height: 42px;\n    font-size: 1.2rem;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 8px;\n  }\n}\n/*# sourceMappingURL=ias-login.component.css.map */'] });
+    ], styles: ['@charset "UTF-8";\n\n\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492FB2 -1.74%, #ADADAD 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n  padding: 20px;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.inneradjustment[_ngcontent-%COMP%], .second-step[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 500px;\n}\nform[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  margin-top: 48px;\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #FFF);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #A16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.second-step[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.second-step[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7E838B);\n  font-family: Inter;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.password-strength[_ngcontent-%COMP%] {\n  margin-right: 8px;\n  font-weight: 600;\n  font-size: 0.85rem;\n  text-transform: uppercase;\n}\n.password-strength.poor[_ngcontent-%COMP%] {\n  color: red;\n}\n.password-strength.good[_ngcontent-%COMP%] {\n  color: #b8860b;\n}\n.password-strength.best[_ngcontent-%COMP%] {\n  color: green;\n}\n.resend-text[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.resend-text.disabled[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7E838B);\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n  cursor: progress;\n  pointer-events: none;\n}\n.timer[_ngcontent-%COMP%] {\n  color: #492FB2;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n}\n@media (max-width: 992px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 50%;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 50%;\n    padding: 40px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n}\n@media (max-width: 768px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n    justify-content: flex-start;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 520px;\n    border-radius: 0 0 20px 20px;\n    background-position: center;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    line-height: 120%;\n    text-align: center;\n  }\n  form[_ngcontent-%COMP%] {\n    margin-top: 32px;\n    gap: 12px;\n  }\n  form[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  form[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 14px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 10px;\n  }\n  .signup-text[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 12px;\n    align-items: flex-start;\n  }\n  .warning-box[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    flex-shrink: 0;\n    margin-top: 2px;\n  }\n}\n@media (max-width: 480px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 520px;\n    border-radius: 0;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 42px;\n    height: 42px;\n    font-size: 1.2rem;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 8px;\n  }\n}\n/*# sourceMappingURL=ias-login.component.css.map */'] });
   }
 };
 (() => {
@@ -2682,7 +2682,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-E6MSY6CS.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-MD2ZQVLQ.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2697,12 +2697,12 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-2LL355IZ.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-NVXEXGGP.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-F4QE5O2L.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-F7ANYVUR.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2816,15 +2816,15 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-REYNPCXD.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-KP6ZHP4K.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-ESEFVVNO.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-RCX3RA5V.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-MLIRA5HZ.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-JSMFNG3O.js").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -2832,11 +2832,11 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-ZL2WSR6U.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-Z67UDOGI.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-IOBKJIP2.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-OXWE2KAA.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
@@ -2844,7 +2844,7 @@ var routes = [
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-KDU232RF.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-I26GBMLM.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
