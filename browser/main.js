@@ -26,9 +26,6 @@ import {
   AuthService
 } from "./chunk-FHYHZA4K.js";
 import {
-  ToastService
-} from "./chunk-SHX5MJZM.js";
-import {
   DomRendererFactory2,
   Router,
   RouterLink,
@@ -40,6 +37,9 @@ import {
   provideRouter,
   withInMemoryScrolling
 } from "./chunk-7ZIVIMRB.js";
+import {
+  ToastService
+} from "./chunk-SHX5MJZM.js";
 import {
   environment
 } from "./chunk-WYW2S4QW.js";
@@ -97,7 +97,6 @@ import {
   ɵɵnamespaceSVG,
   ɵɵnextContext,
   ɵɵpipe,
-  ɵɵpipeBind2,
   ɵɵpipeBind3,
   ɵɵproperty,
   ɵɵpureFunction0,
@@ -397,7 +396,7 @@ var IasFooterComponent = class _IasFooterComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 73, vars: 6, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:association.ias@gmail.com", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "/Refund-Cancellation-Policy"], ["routerLink", "/Terms-Conditions"], ["routerLink", "/Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 71, vars: 5, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:association.ias@gmail.com", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "/Refund-Cancellation-Policy"], ["routerLink", "/Terms-Conditions"], ["routerLink", "/Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "footer", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
         \u0275\u0275element(5, "img", 5);
@@ -428,62 +427,59 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275text(25, "Resources");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(26, "a", 9);
-        \u0275\u0275text(27, "In the News");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(28, "a", 9);
-        \u0275\u0275text(29, "Blogs");
+        \u0275\u0275text(27, "News & Blogs");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(30, "div", 10)(31, "div", 11)(32, "a", 12);
-        \u0275\u0275element(33, "i", 13);
+        \u0275\u0275elementStart(28, "div", 10)(29, "div", 11)(30, "a", 12);
+        \u0275\u0275element(31, "i", 13);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(34, "a", 14);
-        \u0275\u0275element(35, "i", 15);
+        \u0275\u0275elementStart(32, "a", 14);
+        \u0275\u0275element(33, "i", 15);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(36, "div", 16)(37, "p", 17);
+        \u0275\u0275elementStart(34, "div", 16)(35, "p", 17);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(38, "svg", 18)(39, "mask", 19);
-        \u0275\u0275element(40, "rect", 20);
+        \u0275\u0275elementStart(36, "svg", 18)(37, "mask", 19);
+        \u0275\u0275element(38, "rect", 20);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(41, "g", 21);
-        \u0275\u0275element(42, "path", 22);
+        \u0275\u0275elementStart(39, "g", 21);
+        \u0275\u0275element(40, "path", 22);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(43, "span");
-        \u0275\u0275text(44, "Indian Administrative Service ");
-        \u0275\u0275element(45, "br");
-        \u0275\u0275text(46, "Central Association, New Delhi");
+        \u0275\u0275elementStart(41, "span");
+        \u0275\u0275text(42, "Indian Administrative Service ");
+        \u0275\u0275element(43, "br");
+        \u0275\u0275text(44, "Central Association, New Delhi");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(47, "div", 17);
+        \u0275\u0275elementStart(45, "div", 17);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(48, "svg", 23)(49, "mask", 24);
-        \u0275\u0275element(50, "rect", 25);
+        \u0275\u0275elementStart(46, "svg", 23)(47, "mask", 24);
+        \u0275\u0275element(48, "rect", 25);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(51, "g", 26);
-        \u0275\u0275element(52, "path", 27);
+        \u0275\u0275elementStart(49, "g", 26);
+        \u0275\u0275element(50, "path", 27);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(53, "div");
-        \u0275\u0275text(54, " Need help?");
-        \u0275\u0275elementStart(55, "span", 28);
-        \u0275\u0275text(56, " Contact Help Desk:");
+        \u0275\u0275elementStart(51, "div");
+        \u0275\u0275text(52, " Need help?");
+        \u0275\u0275elementStart(53, "span", 28);
+        \u0275\u0275text(54, " Contact Help Desk:");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(57, "div", 29)(58, "a", 30);
-        \u0275\u0275text(59, "[+91 9910659965]");
+        \u0275\u0275elementStart(55, "div", 29)(56, "a", 30);
+        \u0275\u0275text(57, "[+91 9910659965]");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(60, "a", 31);
-        \u0275\u0275text(61, "[association.ias@gmail.com]");
+        \u0275\u0275elementStart(58, "a", 31);
+        \u0275\u0275text(59, "[association.ias@gmail.com]");
         \u0275\u0275elementEnd()()()()()()()();
-        \u0275\u0275elementStart(62, "div", 32)(63, "div", 33)(64, "p", 34);
-        \u0275\u0275text(65, "\xA9 2024 - Copyright Ministry of Electronics and Information Technology. All rights reserved.");
+        \u0275\u0275elementStart(60, "div", 32)(61, "div", 33)(62, "p", 34);
+        \u0275\u0275text(63, "\xA9 2024 - Copyright Ministry of Electronics and Information Technology. All rights reserved.");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(66, "div", 35)(67, "a", 36);
-        \u0275\u0275text(68, "Refund & Cancellation Policy");
+        \u0275\u0275elementStart(64, "div", 35)(65, "a", 36);
+        \u0275\u0275text(66, "Refund & Cancellation Policy");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(69, "a", 37);
-        \u0275\u0275text(70, "Terms & Conditions");
+        \u0275\u0275elementStart(67, "a", 37);
+        \u0275\u0275text(68, "Terms & Conditions");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(71, "a", 38);
-        \u0275\u0275text(72, "Privacy Policy");
+        \u0275\u0275elementStart(69, "a", 38);
+        \u0275\u0275text(70, "Privacy Policy");
         \u0275\u0275elementEnd()()()()();
       }
       if (rf & 2) {
@@ -496,8 +492,6 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275advance(2);
         \u0275\u0275property("routerLink", "contact-us");
         \u0275\u0275advance(5);
-        \u0275\u0275property("routerLink", "/news-blogs");
-        \u0275\u0275advance(2);
         \u0275\u0275property("routerLink", "/news-blogs");
       }
     }, dependencies: [RouterLink], styles: ['\n\n.footer[_ngcontent-%COMP%] {\n  background: #ffffff;\n  color: #000;\n  font-family: "Urbanist", sans-serif;\n}\n.footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;\n  gap: 30px;\n  padding: 40px 0px;\n}\n@media (max-width: 1024px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: 1fr;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 80px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .org-name[_ngcontent-%COMP%] {\n  font-weight: 600;\n  margin-top: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .last-updated[_ngcontent-%COMP%] {\n  display: inline-block;\n  background: #f0f0f0;\n  border-radius: 20px;\n  padding: 10px 20px;\n  font-size: 12px;\n  margin-top: 28px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  font-size: 16px;\n  font-weight: 600;\n  margin-bottom: 10px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  display: block;\n  color: inherit;\n  text-decoration: none;\n  margin-bottom: 8px;\n  font-size: 14px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n    justify-content: start;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  background: #f5f5f5;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #000;\n  font-size: 14px;\n  transition: 0.2s;\n  text-decoration: none;\n  opacity: 0.7;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n  opacity: 1;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%] {\n  margin-top: 15px;\n  font-size: 14px;\n  line-height: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  margin-right: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n  background: #000;\n  color: #fff;\n  font-size: 12px;\n  padding: 10px 0px;\n  flex-wrap: wrap;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n    flex-direction: column;\n    gap: 8px;\n    text-align: center;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #fff;\n  text-decoration: none;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .needlink[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: rgba(0, 97, 188, 0.92);\n}\n/*# sourceMappingURL=ias-footer.component.css.map */'] });
@@ -966,7 +960,7 @@ var IasLoginComponent = class _IasLoginComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasLoginComponent, selectors: [["app-ias-login"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 8, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center"], ["class", "inneradjustment", 4, "ngIf"], ["class", "second-step", 4, "ngIf"], [1, "inneradjustment"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id"], ["class", "error-message", 4, "ngIf"], ["for", "password"], [1, "password-input"], ["id", "password", "formControlName", "password", "placeholder", "Enter your password", 3, "type"], ["type", "button", 1, "eye-button", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], [1, "forgot"], [3, "routerLink"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "signup-text"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M6.33325 10.3333H7.66658V6.33331H6.33325V10.3333ZM6.99992 4.99998C7.18881 4.99998 7.34714 4.93609 7.47492 4.80831C7.6027 4.68053 7.66658 4.5222 7.66658 4.33331C7.66658 4.14442 7.6027 3.98609 7.47492 3.85831C7.34714 3.73054 7.18881 3.66665 6.99992 3.66665C6.81103 3.66665 6.6527 3.73054 6.52492 3.85831C6.39714 3.98609 6.33325 4.14442 6.33325 4.33331C6.33325 4.5222 6.39714 4.68053 6.52492 4.80831C6.6527 4.93609 6.81103 4.99998 6.99992 4.99998ZM6.99992 13.6666C6.0777 13.6666 5.21103 13.4916 4.39992 13.1416C3.58881 12.7916 2.88325 12.3166 2.28325 11.7166C1.68325 11.1166 1.20825 10.4111 0.858252 9.59998C0.508252 8.78887 0.333252 7.9222 0.333252 6.99998C0.333252 6.07776 0.508252 5.21109 0.858252 4.39998C1.20825 3.58887 1.68325 2.88331 2.28325 2.28331C2.88325 1.68331 3.58881 1.20831 4.39992 0.858313C5.21103 0.508313 6.0777 0.333313 6.99992 0.333313C7.92214 0.333313 8.78881 0.508313 9.59992 0.858313C10.411 1.20831 11.1166 1.68331 11.7166 2.28331C12.3166 2.88331 12.7916 3.58887 13.1416 4.39998C13.4916 5.21109 13.6666 6.07776 13.6666 6.99998C13.6666 7.9222 13.4916 8.78887 13.1416 9.59998C12.7916 10.4111 12.3166 11.1166 11.7166 11.7166C11.1166 12.3166 10.411 12.7916 9.59992 13.1416C8.78881 13.4916 7.92214 13.6666 6.99992 13.6666ZM6.99992 12.3333C8.48881 12.3333 9.74992 11.8166 10.7833 10.7833C11.8166 9.74998 12.3333 8.48887 12.3333 6.99998C12.3333 5.51109 11.8166 4.24998 10.7833 3.21665C9.74992 2.18331 8.48881 1.66665 6.99992 1.66665C5.51103 1.66665 4.24992 2.18331 3.21659 3.21665C2.18325 4.24998 1.66659 5.51109 1.66659 6.99998C1.66659 8.48887 2.18325 9.74998 3.21659 10.7833C4.24992 11.8166 5.51103 12.3333 6.99992 12.3333Z", "fill", "#A16800"], [1, "error-message"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "second-step"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"]], template: function IasLoginComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasLoginComponent, selectors: [["app-ias-login"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 8, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 2, "cursor", "pointer", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center"], ["class", "inneradjustment", 4, "ngIf"], ["class", "second-step", 4, "ngIf"], [1, "inneradjustment"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id"], ["class", "error-message", 4, "ngIf"], ["for", "password"], [1, "password-input"], ["id", "password", "formControlName", "password", "placeholder", "Enter your password", 3, "type"], ["type", "button", 1, "eye-button", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], [1, "forgot"], [3, "routerLink"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "signup-text"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M6.33325 10.3333H7.66658V6.33331H6.33325V10.3333ZM6.99992 4.99998C7.18881 4.99998 7.34714 4.93609 7.47492 4.80831C7.6027 4.68053 7.66658 4.5222 7.66658 4.33331C7.66658 4.14442 7.6027 3.98609 7.47492 3.85831C7.34714 3.73054 7.18881 3.66665 6.99992 3.66665C6.81103 3.66665 6.6527 3.73054 6.52492 3.85831C6.39714 3.98609 6.33325 4.14442 6.33325 4.33331C6.33325 4.5222 6.39714 4.68053 6.52492 4.80831C6.6527 4.93609 6.81103 4.99998 6.99992 4.99998ZM6.99992 13.6666C6.0777 13.6666 5.21103 13.4916 4.39992 13.1416C3.58881 12.7916 2.88325 12.3166 2.28325 11.7166C1.68325 11.1166 1.20825 10.4111 0.858252 9.59998C0.508252 8.78887 0.333252 7.9222 0.333252 6.99998C0.333252 6.07776 0.508252 5.21109 0.858252 4.39998C1.20825 3.58887 1.68325 2.88331 2.28325 2.28331C2.88325 1.68331 3.58881 1.20831 4.39992 0.858313C5.21103 0.508313 6.0777 0.333313 6.99992 0.333313C7.92214 0.333313 8.78881 0.508313 9.59992 0.858313C10.411 1.20831 11.1166 1.68331 11.7166 2.28331C12.3166 2.88331 12.7916 3.58887 13.1416 4.39998C13.4916 5.21109 13.6666 6.07776 13.6666 6.99998C13.6666 7.9222 13.4916 8.78887 13.1416 9.59998C12.7916 10.4111 12.3166 11.1166 11.7166 11.7166C11.1166 12.3166 10.411 12.7916 9.59992 13.1416C8.78881 13.4916 7.92214 13.6666 6.99992 13.6666ZM6.99992 12.3333C8.48881 12.3333 9.74992 11.8166 10.7833 10.7833C11.8166 9.74998 12.3333 8.48887 12.3333 6.99998C12.3333 5.51109 11.8166 4.24998 10.7833 3.21665C9.74992 2.18331 8.48881 1.66665 6.99992 1.66665C5.51103 1.66665 4.24992 2.18331 3.21659 3.21665C2.18325 4.24998 1.66659 5.51109 1.66659 6.99998C1.66659 8.48887 2.18325 9.74998 3.21659 10.7833C4.24992 11.8166 5.51103 12.3333 6.99992 12.3333Z", "fill", "#A16800"], [1, "error-message"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "second-step"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"]], template: function IasLoginComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, IasLoginComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 0);
         \u0275\u0275elementStart(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
@@ -1011,7 +1005,7 @@ var IasLoginComponent = class _IasLoginComponent {
       RouterLink,
       HttpClientModule,
       IasLoaderComponent
-    ], styles: ['@charset "UTF-8";\n\n\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492FB2 -1.74%, #ADADAD 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n  padding: 20px;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.inneradjustment[_ngcontent-%COMP%], .second-step[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 500px;\n}\nform[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  margin-top: 48px;\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #FFF);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #A16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.second-step[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.second-step[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7E838B);\n  font-family: Inter;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.password-strength[_ngcontent-%COMP%] {\n  margin-right: 8px;\n  font-weight: 600;\n  font-size: 0.85rem;\n  text-transform: uppercase;\n}\n.password-strength.poor[_ngcontent-%COMP%] {\n  color: red;\n}\n.password-strength.good[_ngcontent-%COMP%] {\n  color: #b8860b;\n}\n.password-strength.best[_ngcontent-%COMP%] {\n  color: green;\n}\n.resend-text[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.resend-text.disabled[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7E838B);\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n  cursor: progress;\n  pointer-events: none;\n}\n.timer[_ngcontent-%COMP%] {\n  color: #492FB2;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n}\n@media (max-width: 992px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 50%;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 50%;\n    padding: 40px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n}\n@media (max-width: 768px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n    justify-content: flex-start;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 520px;\n    border-radius: 0 0 20px 20px;\n    background-position: center;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    line-height: 120%;\n    text-align: center;\n  }\n  form[_ngcontent-%COMP%] {\n    margin-top: 32px;\n    gap: 12px;\n  }\n  form[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  form[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 14px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 10px;\n  }\n  .signup-text[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 12px;\n    align-items: flex-start;\n  }\n  .warning-box[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    flex-shrink: 0;\n    margin-top: 2px;\n  }\n}\n@media (max-width: 480px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 520px;\n    border-radius: 0;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 42px;\n    height: 42px;\n    font-size: 1.2rem;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 8px;\n  }\n}\n/*# sourceMappingURL=ias-login.component.css.map */'] });
+    ], styles: ['@charset "UTF-8";\n\n\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492FB2 -1.74%, #ADADAD 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n  padding: 20px;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.inneradjustment[_ngcontent-%COMP%], .second-step[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 500px;\n}\nform[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  margin-top: 48px;\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #FFF);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #A16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.second-step[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.second-step[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7E838B);\n  font-family: Inter;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.password-strength[_ngcontent-%COMP%] {\n  margin-right: 8px;\n  font-weight: 600;\n  font-size: 0.85rem;\n  text-transform: uppercase;\n}\n.password-strength.poor[_ngcontent-%COMP%] {\n  color: red;\n}\n.password-strength.good[_ngcontent-%COMP%] {\n  color: #b8860b;\n}\n.password-strength.best[_ngcontent-%COMP%] {\n  color: green;\n}\n.resend-text[_ngcontent-%COMP%] {\n  cursor: pointer;\n  color: #715CC3;\n  text-decoration: underline;\n  font-weight: 600;\n}\n.resend-text.disabled[_ngcontent-%COMP%] {\n  pointer-events: none;\n  color: #aaa;\n}\n.timer[_ngcontent-%COMP%] {\n  color: #492FB2;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n}\n@media (max-width: 992px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 50%;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 50%;\n    padding: 40px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n}\n@media (max-width: 768px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n    justify-content: flex-start;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 520px;\n    border-radius: 0 0 20px 20px;\n    background-position: center;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    line-height: 120%;\n    text-align: center;\n  }\n  form[_ngcontent-%COMP%] {\n    margin-top: 32px;\n    gap: 12px;\n  }\n  form[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  form[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 14px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 10px;\n  }\n  .signup-text[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 12px;\n    align-items: flex-start;\n  }\n  .warning-box[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    flex-shrink: 0;\n    margin-top: 2px;\n  }\n}\n@media (max-width: 480px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 520px;\n    border-radius: 0;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 42px;\n    height: 42px;\n    font-size: 1.2rem;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 8px;\n  }\n}\n/*# sourceMappingURL=ias-login.component.css.map */'] });
   }
 };
 (() => {
@@ -1098,11 +1092,15 @@ function IasForgotpasswordComponent_div_8_Template(rf, ctx) {
 function IasForgotpasswordComponent_div_9_input_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "input", 27);
+    \u0275\u0275elementStart(0, "input", 29);
     \u0275\u0275listener("input", function IasForgotpasswordComponent_div_9_input_7_Template_input_input_0_listener($event) {
       const i_r5 = \u0275\u0275restoreView(_r4).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.onOtpInput($event, i_r5));
+    })("keydown", function IasForgotpasswordComponent_div_9_input_7_Template_input_keydown_0_listener($event) {
+      const i_r5 = \u0275\u0275restoreView(_r4).index;
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.handleKeyDown($event, i_r5));
     });
     \u0275\u0275elementEnd();
   }
@@ -1129,16 +1127,24 @@ function IasForgotpasswordComponent_div_9_Template(rf, ctx) {
     \u0275\u0275elementStart(6, "div", 22);
     \u0275\u0275template(7, IasForgotpasswordComponent_div_9_input_7_Template, 1, 1, "input", 23);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "button", 17);
+    \u0275\u0275elementStart(8, "button", 24);
     \u0275\u0275text(9, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "span", 24)(11, "p", 25);
+    \u0275\u0275elementStart(10, "span", 25)(11, "p", 26);
     \u0275\u0275text(12, "Did not get the OTP?");
     \u0275\u0275elementEnd();
-    \u0275\u0275text(13, " Resend OTP in ");
-    \u0275\u0275elementStart(14, "span", 26);
-    \u0275\u0275text(15);
-    \u0275\u0275pipe(16, "date");
+    \u0275\u0275elementStart(13, "span", 27);
+    \u0275\u0275listener("click", function IasForgotpasswordComponent_div_9_Template_span_click_13_listener() {
+      \u0275\u0275restoreView(_r3);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(!ctx_r1.isResendDisabled && ctx_r1.onResendOtp());
+    });
+    \u0275\u0275text(14, " Resend OTP ");
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(15, " in ");
+    \u0275\u0275elementStart(16, "span", 28);
+    \u0275\u0275text(17);
+    \u0275\u0275pipe(18, "date");
     \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
@@ -1149,58 +1155,62 @@ function IasForgotpasswordComponent_div_9_Template(rf, ctx) {
     \u0275\u0275property("formGroup", ctx_r1.otpForm);
     \u0275\u0275advance(2);
     \u0275\u0275property("ngForOf", ctx_r1.otpControls);
-    \u0275\u0275advance(8);
-    \u0275\u0275textInterpolate(\u0275\u0275pipeBind2(16, 4, ctx_r1.countdown, "mm:ss"));
+    \u0275\u0275advance();
+    \u0275\u0275property("disabled", ctx_r1.otpForm.invalid);
+    \u0275\u0275advance(5);
+    \u0275\u0275classProp("disabled", ctx_r1.isResendDisabled);
+    \u0275\u0275advance(4);
+    \u0275\u0275textInterpolate1(" ", \u0275\u0275pipeBind3(18, 7, ctx_r1.countdown * 1e3, "mm:ss", "UTC"), "");
   }
 }
 function IasForgotpasswordComponent_div_10__svg_svg_9_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 36)(1, "g", 37);
-    \u0275\u0275element(2, "path", 38);
+    \u0275\u0275elementStart(0, "svg", 38)(1, "g", 39);
+    \u0275\u0275element(2, "path", 40);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 39);
-    \u0275\u0275element(5, "rect", 40);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 41);
+    \u0275\u0275element(5, "rect", 42);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasForgotpasswordComponent_div_10__svg_svg_10_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 36)(1, "g", 41);
-    \u0275\u0275element(2, "path", 42);
+    \u0275\u0275elementStart(0, "svg", 38)(1, "g", 43);
+    \u0275\u0275element(2, "path", 44);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 43);
-    \u0275\u0275element(5, "rect", 40);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 45);
+    \u0275\u0275element(5, "rect", 42);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasForgotpasswordComponent_div_10__svg_svg_16_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 36)(1, "g", 37);
-    \u0275\u0275element(2, "path", 38);
+    \u0275\u0275elementStart(0, "svg", 38)(1, "g", 39);
+    \u0275\u0275element(2, "path", 40);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 39);
-    \u0275\u0275element(5, "rect", 40);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 41);
+    \u0275\u0275element(5, "rect", 42);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasForgotpasswordComponent_div_10__svg_svg_17_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 36)(1, "g", 41);
-    \u0275\u0275element(2, "path", 42);
+    \u0275\u0275elementStart(0, "svg", 38)(1, "g", 43);
+    \u0275\u0275element(2, "path", 44);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 43);
-    \u0275\u0275element(5, "rect", 40);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 45);
+    \u0275\u0275element(5, "rect", 42);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasForgotpasswordComponent_div_10_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 28)(1, "h1");
+    \u0275\u0275elementStart(0, "div", 30)(1, "h1");
     \u0275\u0275text(2, "Reset Password");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "form", 13);
@@ -1209,31 +1219,31 @@ function IasForgotpasswordComponent_div_10_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitPassword());
     });
-    \u0275\u0275elementStart(4, "label", 29);
+    \u0275\u0275elementStart(4, "label", 31);
     \u0275\u0275text(5, "New Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(6, "div", 30);
-    \u0275\u0275element(7, "input", 31);
-    \u0275\u0275elementStart(8, "button", 32);
+    \u0275\u0275elementStart(6, "div", 32);
+    \u0275\u0275element(7, "input", 33);
+    \u0275\u0275elementStart(8, "button", 34);
     \u0275\u0275listener("click", function IasForgotpasswordComponent_div_10_Template_button_click_8_listener() {
       \u0275\u0275restoreView(_r7);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.togglePassword("new"));
     });
-    \u0275\u0275template(9, IasForgotpasswordComponent_div_10__svg_svg_9_Template, 6, 0, "svg", 33)(10, IasForgotpasswordComponent_div_10__svg_svg_10_Template, 6, 0, "svg", 33);
+    \u0275\u0275template(9, IasForgotpasswordComponent_div_10__svg_svg_9_Template, 6, 0, "svg", 35)(10, IasForgotpasswordComponent_div_10__svg_svg_10_Template, 6, 0, "svg", 35);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(11, "label", 34);
+    \u0275\u0275elementStart(11, "label", 36);
     \u0275\u0275text(12, "Confirm Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "div", 30);
-    \u0275\u0275element(14, "input", 35);
-    \u0275\u0275elementStart(15, "button", 32);
+    \u0275\u0275elementStart(13, "div", 32);
+    \u0275\u0275element(14, "input", 37);
+    \u0275\u0275elementStart(15, "button", 34);
     \u0275\u0275listener("click", function IasForgotpasswordComponent_div_10_Template_button_click_15_listener() {
       \u0275\u0275restoreView(_r7);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.togglePassword("confirm"));
     });
-    \u0275\u0275template(16, IasForgotpasswordComponent_div_10__svg_svg_16_Template, 6, 0, "svg", 33)(17, IasForgotpasswordComponent_div_10__svg_svg_17_Template, 6, 0, "svg", 33);
+    \u0275\u0275template(16, IasForgotpasswordComponent_div_10__svg_svg_16_Template, 6, 0, "svg", 35)(17, IasForgotpasswordComponent_div_10__svg_svg_17_Template, 6, 0, "svg", 35);
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(18, "button", 17);
     \u0275\u0275text(19, "Reset password");
@@ -1259,19 +1269,19 @@ function IasForgotpasswordComponent_div_10_Template(rf, ctx) {
 }
 function IasForgotpasswordComponent_div_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 44);
+    \u0275\u0275elementStart(0, "div", 46);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(1, "svg", 45);
-    \u0275\u0275element(2, "circle", 46)(3, "circle", 47)(4, "circle", 48)(5, "path", 49);
+    \u0275\u0275elementStart(1, "svg", 47);
+    \u0275\u0275element(2, "circle", 48)(3, "circle", 49)(4, "circle", 50)(5, "path", 51);
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(6, "h1", 50);
+    \u0275\u0275elementStart(6, "h1", 52);
     \u0275\u0275text(7, "Your password has been successfully reset.");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "h4", 51);
+    \u0275\u0275elementStart(8, "h4", 53);
     \u0275\u0275text(9, "You can now login using your IAS email and new password.");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "button", 52);
+    \u0275\u0275elementStart(10, "button", 54);
     \u0275\u0275text(11, "Return to Login");
     \u0275\u0275elementEnd()();
   }
@@ -1286,9 +1296,9 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
     this.http = http;
     this.currentStep = 1;
     this.otpControls = ["d1", "d2", "d3", "d4", "d5", "d6"];
-    this.countdown = new Date(0, 0, 0, 0, 0, 53);
     this.showNewPassword = false;
     this.showConfirmPassword = false;
+    this.isResendDisabled = false;
     this.emailForm = this.fb.group({
       email: ["", [Validators.required, Validators.email, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]]
     });
@@ -1322,6 +1332,7 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
             this.token = res.data.token;
             this.action = res.data.action;
             this.currentStep = 2;
+            this.startCountdown(59);
             this.showToast("\u2705 Email sent successfully!", "success");
           }
         },
@@ -1337,6 +1348,36 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
     if (input.value && index < this.otpControls.length - 1) {
       const next = input.parentElement?.children[index + 1];
       next?.focus();
+    }
+  }
+  startCountdown(seconds) {
+    this.countdown = seconds;
+    this.isResendDisabled = true;
+    clearInterval(this.intervalId);
+    this.intervalId = setInterval(() => {
+      if (this.countdown > 0) {
+        this.countdown--;
+      } else {
+        this.isResendDisabled = false;
+        clearInterval(this.intervalId);
+      }
+    }, 1e3);
+  }
+  onResendOtp() {
+    this.startCountdown(59);
+  }
+  handleKeyDown(event, index) {
+    const input = event.target;
+    const allowedKeys = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "Tab"];
+    if (allowedKeys.includes(event.key)) {
+      if (event.key === "Backspace" && !input.value && index > 0) {
+        const prev = input.parentElement?.children[index - 1];
+        prev?.focus();
+      }
+      return;
+    }
+    if (!/^[0-9]$/.test(event.key)) {
+      event.preventDefault();
     }
   }
   submitOtp() {
@@ -1414,7 +1455,7 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasForgotpasswordComponent, selectors: [["app-ias-forgotpassword"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 5, consts: [[1, "toast-container", "position-fixed", "top-0", "end-0", "p-3", 2, "z-index", "1100"], ["id", "appToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true", 1, "toast", "align-items-center", "border-0"], [1, "d-flex"], ["id", "toastMessage", 1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "first-step w-75", 4, "ngIf"], ["class", "second-step w-75", 4, "ngIf"], ["class", "third-step w-75", 4, "ngIf"], ["class", "fourth-step w-75", 4, "ngIf"], [1, "first-step", "w-75"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn"], [1, "warning-box"], [1, "error-message"], [4, "ngIf"], [1, "second-step", "w-75"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center", "gap-2"], [1, "m-0"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "formControlName"], [1, "third-step", "w-75"], ["for", "newPassword"], [1, "password-wrapper"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "fourth-step", "w-75"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], [1, "mt-3"], [1, "my-4"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasForgotpasswordComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasForgotpasswordComponent, selectors: [["app-ias-forgotpassword"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 5, consts: [[1, "toast-container", "position-fixed", "top-0", "end-0", "p-3", 2, "z-index", "1100"], ["id", "appToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true", 1, "toast", "align-items-center", "border-0"], [1, "d-flex"], ["id", "toastMessage", 1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "first-step w-75", 4, "ngIf"], ["class", "second-step w-75", 4, "ngIf"], ["class", "third-step w-75", 4, "ngIf"], ["class", "fourth-step w-75", 4, "ngIf"], [1, "first-step", "w-75"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn"], [1, "warning-box"], [1, "error-message"], [4, "ngIf"], [1, "second-step", "w-75"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"], [1, "third-step", "w-75"], ["for", "newPassword"], [1, "password-wrapper"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "fourth-step", "w-75"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], [1, "mt-3"], [1, "my-4"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasForgotpasswordComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
         \u0275\u0275element(3, "div", 3)(4, "button", 4);
@@ -1422,7 +1463,7 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
         \u0275\u0275elementStart(5, "div", 5);
         \u0275\u0275element(6, "div", 6);
         \u0275\u0275elementStart(7, "div", 7);
-        \u0275\u0275template(8, IasForgotpasswordComponent_div_8_Template, 15, 2, "div", 8)(9, IasForgotpasswordComponent_div_9_Template, 17, 7, "div", 9)(10, IasForgotpasswordComponent_div_10_Template, 20, 7, "div", 10)(11, IasForgotpasswordComponent_div_11_Template, 12, 1, "div", 11);
+        \u0275\u0275template(8, IasForgotpasswordComponent_div_8_Template, 15, 2, "div", 8)(9, IasForgotpasswordComponent_div_9_Template, 19, 11, "div", 9)(10, IasForgotpasswordComponent_div_10_Template, 20, 7, "div", 10)(11, IasForgotpasswordComponent_div_11_Template, 12, 1, "div", 11);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -1437,7 +1478,7 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
         \u0275\u0275advance();
         \u0275\u0275property("ngIf", ctx.currentStep === 4);
       }
-    }, dependencies: [CommonModule, NgForOf, NgIf, DatePipe, ReactiveFormsModule, \u0275NgNoValidate, DefaultValueAccessor, NgControlStatus, NgControlStatusGroup, MaxLengthValidator, FormGroupDirective, FormControlName, RouterModule, RouterLink], styles: ['\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492fb2 -1.74%, #adadad 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7e838b);\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n  margin: 0;\n}\nform[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  margin-top: 20px;\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #fff);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #a16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.login-btn[_ngcontent-%COMP%] {\n  width: 100%;\n  background: black;\n  color: white;\n  padding: 10px;\n  border: none;\n  font-size: 1rem;\n  border-radius: 8px;\n  cursor: pointer;\n}\n.timer[_ngcontent-%COMP%] {\n  color: #3366ff;\n}\n.password-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n  display: flex;\n  align-items: center;\n}\n.password-wrapper[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  flex: 1;\n  padding-right: 40px;\n}\n.eye-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  background: none;\n  border: none;\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n@media (max-width: 991px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 60vh;\n    border-radius: 0 0 20px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 0px !important;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n  form[_ngcontent-%COMP%] {\n    gap: 12px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    font-size: 1.2rem;\n  }\n}\n@media (max-width: 576px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 60vh;\n    border-radius: 0 0 15px 15px;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    padding: 20px 0px !important;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    text-align: center;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    font-size: 13px;\n    text-align: center;\n  }\n  input[type=email][_ngcontent-%COMP%], input[type=password][_ngcontent-%COMP%], input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 13px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 10px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 30px;\n    height: 30px;\n    font-size: 1rem;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    font-size: 11px;\n    padding: 10px;\n  }\n  .password-wrapper[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    padding-right: 35px;\n  }\n  .eye-btn[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    width: 16px;\n    height: 16px;\n  }\n}\n/*# sourceMappingURL=ias-forgotpassword.component.css.map */'] });
+    }, dependencies: [CommonModule, NgForOf, NgIf, DatePipe, ReactiveFormsModule, \u0275NgNoValidate, DefaultValueAccessor, NgControlStatus, NgControlStatusGroup, MaxLengthValidator, FormGroupDirective, FormControlName, RouterModule, RouterLink], styles: ['\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492fb2 -1.74%, #adadad 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7e838b);\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n  margin: 0;\n}\nform[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 16px;\n  margin-top: 20px;\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #fff);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #a16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.resend-text[_ngcontent-%COMP%] {\n  cursor: pointer;\n  color: #715CC3;\n  text-decoration: underline;\n  font-weight: 600;\n}\n.resend-text.disabled[_ngcontent-%COMP%] {\n  pointer-events: none;\n  color: #aaa;\n}\n.login-btn[_ngcontent-%COMP%] {\n  width: 100%;\n  background: black;\n  color: white;\n  padding: 10px;\n  border: none;\n  font-size: 1rem;\n  border-radius: 8px;\n  cursor: pointer;\n}\n.timer[_ngcontent-%COMP%] {\n  color: #3366ff;\n}\n.password-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n  display: flex;\n  align-items: center;\n}\n.password-wrapper[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  flex: 1;\n  padding-right: 40px;\n}\n.eye-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  background: none;\n  border: none;\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n@media (max-width: 991px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 60vh;\n    border-radius: 0 0 20px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 0px !important;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n  form[_ngcontent-%COMP%] {\n    gap: 12px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 40px;\n    height: 40px;\n    font-size: 1.2rem;\n  }\n}\n@media (max-width: 576px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 60vh;\n    border-radius: 0 0 15px 15px;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    padding: 20px 0px !important;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    text-align: center;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    font-size: 13px;\n    text-align: center;\n  }\n  input[type=email][_ngcontent-%COMP%], input[type=password][_ngcontent-%COMP%], input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 13px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 10px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 30px;\n    height: 30px;\n    font-size: 1rem;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    font-size: 11px;\n    padding: 10px;\n  }\n  .password-wrapper[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    padding-right: 35px;\n  }\n  .eye-btn[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    width: 16px;\n    height: 16px;\n  }\n}\n/*# sourceMappingURL=ias-forgotpassword.component.css.map */'] });
   }
 };
 (() => {
@@ -2607,7 +2648,7 @@ var IasSignupComponent = class _IasSignupComponent {
         \u0275\u0275advance();
         \u0275\u0275property("ngIf", ctx.currentStep === 8);
       }
-    }, dependencies: [CommonModule, NgForOf, NgIf, DatePipe, ReactiveFormsModule, \u0275NgNoValidate, NgSelectOption, \u0275NgSelectMultipleOption, DefaultValueAccessor, NumberValueAccessor, SelectControlValueAccessor, NgControlStatus, NgControlStatusGroup, MaxLengthValidator, FormGroupDirective, FormControlName, RouterModule, RouterLink, IasLoaderComponent], styles: ['@charset "UTF-8";\n\n\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n#Warning[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  color: #C82F2F;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 32px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 51.189px;\n  letter-spacing: 0.32px;\n}\n#Warning[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #000;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 31px;\n  letter-spacing: 0.32px;\n}\n#Warning[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.61);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 31px;\n  letter-spacing: 0.32px;\n}\n@media (min-width: 576px) {\n  .modal-dialog[_ngcontent-%COMP%] {\n    max-width: 640px;\n  }\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492fb2 -1.74%, #adadad 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7e838b);\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n  margin: 0;\n}\n.stepcontainer[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 600px;\n}\nform[_ngcontent-%COMP%] {\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=date][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .redstar[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%]::-webkit-outer-spin-button, form[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%]::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\nform[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%] {\n  -moz-appearance: textfield;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #fff);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .resend-text[_ngcontent-%COMP%] {\n  cursor: pointer;\n  color: #715CC3;\n  text-decoration: underline;\n}\nform[_ngcontent-%COMP%]   .resend-text.disabled[_ngcontent-%COMP%] {\n  pointer-events: none;\n  color: #aaa;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n  font-size: 13px;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: start;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #a16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.cursor-pointer[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.white-btn[_ngcontent-%COMP%] {\n  width: 100%;\n  border-radius: 8px;\n  border: 1px solid #000;\n  color: #222;\n  background: #fff;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.login-btn[_ngcontent-%COMP%] {\n  width: 100%;\n  background: black;\n  color: white;\n  padding: 10px;\n  border: none;\n  font-size: 1rem;\n  border-radius: 8px;\n  cursor: pointer;\n}\n.timer[_ngcontent-%COMP%] {\n  color: #3366ff;\n}\n.password-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n  display: flex;\n  align-items: center;\n}\n.password-wrapper[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  flex: 1;\n  padding-right: 40px;\n}\n.eye-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  background: none;\n  border: none;\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n.detailscard[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid #c6c6c6;\n  padding: 10px;\n}\n.detailscard[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #211b3a;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.detailscard[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  color: #211B3A;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n@media (max-width: 992px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 50%;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 50%;\n    padding: 40px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n}\n@media (max-width: 768px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n    justify-content: flex-start;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 520px;\n    border-radius: 0 0 20px 20px;\n    background-position: center;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    line-height: 120%;\n    text-align: center;\n  }\n  form[_ngcontent-%COMP%] {\n    margin-top: 32px;\n    gap: 12px;\n  }\n  form[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  form[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 14px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 10px;\n  }\n  .signup-text[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 12px;\n    align-items: flex-start;\n  }\n  .warning-box[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    flex-shrink: 0;\n    margin-top: 2px;\n  }\n}\n@media (max-width: 480px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 350px;\n    border-radius: 0;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 42px;\n    height: 42px;\n    font-size: 1.2rem;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 8px;\n  }\n}\n/*# sourceMappingURL=ias-signup.component.css.map */'] });
+    }, dependencies: [CommonModule, NgForOf, NgIf, DatePipe, ReactiveFormsModule, \u0275NgNoValidate, NgSelectOption, \u0275NgSelectMultipleOption, DefaultValueAccessor, NumberValueAccessor, SelectControlValueAccessor, NgControlStatus, NgControlStatusGroup, MaxLengthValidator, FormGroupDirective, FormControlName, RouterModule, RouterLink, IasLoaderComponent], styles: ['@charset "UTF-8";\n\n\n\n.main-login-component[_ngcontent-%COMP%] {\n  height: 100%;\n  min-height: 100vh;\n}\n#Warning[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  color: #C82F2F;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 32px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 51.189px;\n  letter-spacing: 0.32px;\n}\n#Warning[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #000;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 31px;\n  letter-spacing: 0.32px;\n}\n#Warning[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.61);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 31px;\n  letter-spacing: 0.32px;\n}\n@media (min-width: 576px) {\n  .modal-dialog[_ngcontent-%COMP%] {\n    max-width: 640px;\n  }\n}\n.intro-image-div[_ngcontent-%COMP%] {\n  border-radius: 0px 20px 20px 0px;\n  background: var(--new, linear-gradient(130deg, #492fb2 -1.74%, #adadad 108.02%));\n  background-image: url("./media/new-banner.png");\n  background-repeat: no-repeat;\n  background-size: cover;\n  height: 100vh;\n  width: 40%;\n}\n.login-form-div[_ngcontent-%COMP%] {\n  width: 60%;\n}\n.login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 130%;\n  background: var(--2, linear-gradient(90deg, #222 0%, #424242 100%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.login-form-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: var(--Neutral-700, #7e838b);\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: normal;\n  margin: 0;\n}\n.stepcontainer[_ngcontent-%COMP%] {\n  width: 100%;\n  max-width: 600px;\n}\nform[_ngcontent-%COMP%] {\n}\nform[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n  margin-bottom: 4px;\n}\nform[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=date][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   select[_ngcontent-%COMP%] {\n  padding: 12px;\n  border-radius: 8px;\n  border: 1px solid #ccc;\n  font-size: 14px;\n  width: 100%;\n  box-sizing: border-box;\n}\nform[_ngcontent-%COMP%]   .redstar[_ngcontent-%COMP%] {\n  color: red;\n}\nform[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%]::-webkit-outer-spin-button, form[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%]::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\nform[_ngcontent-%COMP%]   input[type=number][_ngcontent-%COMP%] {\n  -moz-appearance: textfield;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\nform[_ngcontent-%COMP%]   .password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%] {\n  text-align: right;\n  margin-top: -8px;\n}\nform[_ngcontent-%COMP%]   .forgot[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  font-size: 14px;\n  text-decoration: none;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid;\n  background: #222;\n  color: var(--Text-Light, #fff);\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\nform[_ngcontent-%COMP%]   .resend-text[_ngcontent-%COMP%] {\n  cursor: pointer;\n  color: #715CC3;\n  text-decoration: underline;\n  font-weight: 600;\n}\nform[_ngcontent-%COMP%]   .resend-text.disabled[_ngcontent-%COMP%] {\n  pointer-events: none;\n  color: #aaa;\n}\nform[_ngcontent-%COMP%]   .error-message[_ngcontent-%COMP%] {\n  color: red;\n  font-size: 13px;\n}\nform[_ngcontent-%COMP%]   .login-btn[_ngcontent-%COMP%]:disabled {\n  padding: 12px;\n  border: none;\n  border-radius: 8px;\n  background-color: #a0a0a0 !important;\n  color: #fff;\n  font-size: 16px;\n  cursor: not-allowed;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%] {\n  font-size: 14px;\n  text-align: center;\n}\nform[_ngcontent-%COMP%]   .signup-text[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #3b27b9;\n  text-decoration: none;\n  font-weight: 500;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: start;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\nform[_ngcontent-%COMP%]   .warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #a16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.cursor-pointer[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.white-btn[_ngcontent-%COMP%] {\n  width: 100%;\n  border-radius: 8px;\n  border: 1px solid #000;\n  color: #222;\n  background: #fff;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: var(--Font-Size-3, 16px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-9, 24px);\n  letter-spacing: var(--Letter-Spacing-1, 0.15px);\n  padding: 12px;\n}\n.otp-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n.otp-inputs[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n  margin: 20px 0;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 50px;\n  height: 50px;\n  font-size: 1.5rem;\n  text-align: center;\n  border: 2px solid #ccc;\n  border-radius: 8px;\n  outline: none;\n  transition: border-color 0.2s;\n}\n.otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%]:focus {\n  border-color: black;\n}\n.login-btn[_ngcontent-%COMP%] {\n  width: 100%;\n  background: black;\n  color: white;\n  padding: 10px;\n  border: none;\n  font-size: 1rem;\n  border-radius: 8px;\n  cursor: pointer;\n}\n.timer[_ngcontent-%COMP%] {\n  color: #3366ff;\n}\n.password-wrapper[_ngcontent-%COMP%] {\n  position: relative;\n  display: flex;\n  align-items: center;\n}\n.password-wrapper[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  flex: 1;\n  padding-right: 40px;\n}\n.eye-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  background: none;\n  border: none;\n  font-size: 1.2rem;\n  cursor: pointer;\n}\n.detailscard[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  border: 1px solid #c6c6c6;\n  padding: 10px;\n}\n.detailscard[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #211b3a;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.detailscard[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  color: #211B3A;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n@media (max-width: 992px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 50%;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 50%;\n    padding: 40px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 32px;\n  }\n}\n@media (max-width: 768px) {\n  .main-login-component[_ngcontent-%COMP%] {\n    flex-direction: column;\n    justify-content: flex-start;\n  }\n  .intro-image-div[_ngcontent-%COMP%] {\n    width: 100%;\n    height: 520px;\n    border-radius: 0 0 20px 20px;\n    background-position: center;\n  }\n  .login-form-div[_ngcontent-%COMP%] {\n    width: 100%;\n    padding: 30px 20px;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    line-height: 120%;\n    text-align: center;\n  }\n  form[_ngcontent-%COMP%] {\n    margin-top: 32px;\n    gap: 12px;\n  }\n  form[_ngcontent-%COMP%]   label[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  form[_ngcontent-%COMP%]   input[type=email][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=password][_ngcontent-%COMP%], form[_ngcontent-%COMP%]   input[type=text][_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 14px;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 15px;\n    padding: 10px;\n  }\n  .signup-text[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n  .warning-box[_ngcontent-%COMP%] {\n    padding: 10px;\n    font-size: 12px;\n    align-items: flex-start;\n  }\n  .warning-box[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n    flex-shrink: 0;\n    margin-top: 2px;\n  }\n}\n@media (max-width: 480px) {\n  .intro-image-div[_ngcontent-%COMP%] {\n    height: 350px;\n    border-radius: 0;\n  }\n  .login-form-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .otp-inputs[_ngcontent-%COMP%] {\n    gap: 6px;\n  }\n  .otp-inputs[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n    width: 42px;\n    height: 42px;\n    font-size: 1.2rem;\n  }\n  .login-btn[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 8px;\n  }\n}\n/*# sourceMappingURL=ias-signup.component.css.map */'] });
   }
 };
 (() => {
@@ -2682,7 +2723,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-MD2ZQVLQ.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-NLHQJIZA.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2692,17 +2733,17 @@ var routes = [
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-2RW5TRJL.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-WOFOOVBJ.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-NVXEXGGP.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-6DYXGHIL.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-F7ANYVUR.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-YHXRASRL.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2784,15 +2825,15 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-GBR3GX6A.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-GYJ5N4NB.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-5L5ZOUKU.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-GYPLJ3ZI.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-VMHDEOBF.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-VSNRYCW2.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
@@ -2804,27 +2845,27 @@ var routes = [
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-E4UQMBFQ.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-2ZDTNAAS.js").then((m) => m.NewsComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-R54Q65AF.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-6MYG5J6R.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-EBBCUKTZ.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-BSYPAL6O.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-KP6ZHP4K.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-2X3S3MPN.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-RCX3RA5V.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-H5BVLC57.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-JSMFNG3O.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-GMA5HRIZ.js").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -2832,15 +2873,15 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-Z67UDOGI.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-6OY7P73B.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-OXWE2KAA.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-K326UPW4.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-KQ6N2IDU.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-ZK573PLK.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
@@ -2848,15 +2889,15 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-WUKS7KFU.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-MBY3PC2C.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-2I7YXF7Q.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-KJXR5IWN.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-QDM72KYP.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-Z4TTL6LP.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",

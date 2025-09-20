@@ -284,6 +284,9 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+.Camelcase {
+  text-transform: capitalize;
+}
 
 /* angular:styles/global:styles */
 /*# sourceMappingURL=styles.css.map */
