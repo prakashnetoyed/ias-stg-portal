@@ -3,7 +3,7 @@ import {
 } from "./chunk-BPMHA6KW.js";
 import {
   UserService
-} from "./chunk-6NFBHM2A.js";
+} from "./chunk-355F23O5.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -21,10 +21,10 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-W36CPE6Z.js";
+} from "./chunk-O7KRW67G.js";
 import {
   AuthService
-} from "./chunk-FHYHZA4K.js";
+} from "./chunk-KS6VKFHK.js";
 import {
   DomRendererFactory2,
   Router,
@@ -36,7 +36,7 @@ import {
   provideClientHydration,
   provideRouter,
   withInMemoryScrolling
-} from "./chunk-7ZIVIMRB.js";
+} from "./chunk-SNZVCUF6.js";
 import {
   ToastService
 } from "./chunk-SHX5MJZM.js";
@@ -50,7 +50,7 @@ import {
   provideHttpClient,
   withFetch,
   withInterceptors
-} from "./chunk-X4DCRH7W.js";
+} from "./chunk-BK4FBNP4.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -58,7 +58,7 @@ import {
   NgForOf,
   NgIf,
   isPlatformBrowser
-} from "./chunk-HMLSYQRE.js";
+} from "./chunk-OG7DO3XM.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
@@ -406,7 +406,7 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275text(9, "Central Association");
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(10, "div", 7);
-        \u0275\u0275text(11, "Last updated: 22-08-2025");
+        \u0275\u0275text(11, "Last updated: 22-09-2025");
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(12, "div", 8)(13, "h4");
         \u0275\u0275text(14, "Important Links");
@@ -524,7 +524,7 @@ var AccessibilityHeaderComponent = class _AccessibilityHeaderComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AccessibilityHeaderComponent, selectors: [["app-accessibility-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 17, vars: 0, consts: [[1, "main-access-header-div"], [1, "inner-access", "container", "d-flex", "align-items-center", "justify-content-end"], [1, "right-access-div", "d-flex", "align-items-center", "justify-content-between", "gap-4"], [1, "skip-text", 3, "click"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "skip-text", "d-flex", "align-items-center", "gap-2", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["_ngcontent-ng-c2485631207", "", "id", "mask0_8942_12501", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["_ngcontent-ng-c2485631207", "", "width", "18", "height", "18", "fill", "white"], ["_ngcontent-ng-c2485631207", "", "mask", "url(#mask0_8942_12501)"], ["_ngcontent-ng-c2485631207", "", "d", "M14.9625 15.75C13.4 15.75 11.8563 15.4094 10.3313 14.7281C8.80625 14.0469 7.41875 13.0813 6.16875 11.8313C4.91875 10.5813 3.95312 9.19375 3.27188 7.66875C2.59063 6.14375 2.25 4.6 2.25 3.0375C2.25 2.8125 2.325 2.625 2.475 2.475C2.625 2.325 2.8125 2.25 3.0375 2.25H6.075C6.25 2.25 6.40625 2.30937 6.54375 2.42812C6.68125 2.54688 6.7625 2.6875 6.7875 2.85L7.275 5.475C7.3 5.675 7.29375 5.84375 7.25625 5.98125C7.21875 6.11875 7.15 6.2375 7.05 6.3375L5.23125 8.175C5.48125 8.6375 5.77812 9.08437 6.12187 9.51562C6.46562 9.94688 6.84375 10.3625 7.25625 10.7625C7.64375 11.15 8.05 11.5094 8.475 11.8406C8.9 12.1719 9.35 12.475 9.825 12.75L11.5875 10.9875C11.7 10.875 11.8469 10.7906 12.0281 10.7344C12.2094 10.6781 12.3875 10.6625 12.5625 10.6875L15.15 11.2125C15.325 11.2625 15.4688 11.3531 15.5812 11.4844C15.6937 11.6156 15.75 11.7625 15.75 11.925V14.9625C15.75 15.1875 15.675 15.375 15.525 15.525C15.375 15.675 15.1875 15.75 14.9625 15.75Z", "fill", "white"]], template: function AccessibilityHeaderComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AccessibilityHeaderComponent, selectors: [["app-accessibility-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 25, vars: 0, consts: [[1, "main-access-header-div"], [1, "inner-access", "container", "d-flex", "align-items-center", "justify-content-end"], [1, "right-access-div", "d-flex", "align-items-center", "justify-content-between", "gap-4"], [1, "skip-text", 3, "click"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "skip-text", "d-flex", "align-items-center", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["_ngcontent-ng-c2485631207", "", "id", "mask0_8942_12501", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["_ngcontent-ng-c2485631207", "", "width", "18", "height", "18", "fill", "white"], ["_ngcontent-ng-c2485631207", "", "mask", "url(#mask0_8942_12501)"], ["_ngcontent-ng-c2485631207", "", "d", "M14.9625 15.75C13.4 15.75 11.8563 15.4094 10.3313 14.7281C8.80625 14.0469 7.41875 13.0813 6.16875 11.8313C4.91875 10.5813 3.95312 9.19375 3.27188 7.66875C2.59063 6.14375 2.25 4.6 2.25 3.0375C2.25 2.8125 2.325 2.625 2.475 2.475C2.625 2.325 2.8125 2.25 3.0375 2.25H6.075C6.25 2.25 6.40625 2.30937 6.54375 2.42812C6.68125 2.54688 6.7625 2.6875 6.7875 2.85L7.275 5.475C7.3 5.675 7.29375 5.84375 7.25625 5.98125C7.21875 6.11875 7.15 6.2375 7.05 6.3375L5.23125 8.175C5.48125 8.6375 5.77812 9.08437 6.12187 9.51562C6.46562 9.94688 6.84375 10.3625 7.25625 10.7625C7.64375 11.15 8.05 11.5094 8.475 11.8406C8.9 12.1719 9.35 12.475 9.825 12.75L11.5875 10.9875C11.7 10.875 11.8469 10.7906 12.0281 10.7344C12.2094 10.6781 12.3875 10.6625 12.5625 10.6875L15.15 11.2125C15.325 11.2625 15.4688 11.3531 15.5812 11.4844C15.6937 11.6156 15.75 11.7625 15.75 11.925V14.9625C15.75 15.1875 15.675 15.375 15.525 15.525C15.375 15.675 15.1875 15.75 14.9625 15.75Z", "fill", "white"], ["href", "tel:+919910659965", 1, "text-white", "text-decoration-none"], [1, "skip-text", "d-flex", "align-items-center", "gap-2", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "25", "height", "24", "viewBox", "0 0 25 24", "fill", "none"], ["id", "mask0_52583_330", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "25", "height", "24", 2, "mask-type", "alpha"], ["x", "0.5", "width", "24", "height", "24", "fill", "#fff"], ["mask", "url(#mask0_52583_330)"], ["d", "M12.5 1L21.55 6.4C21.85 6.58333 22.0833 6.83333 22.25 7.15C22.4167 7.46667 22.5 7.8 22.5 8.15V19C22.5 19.55 22.3042 20.0208 21.9125 20.4125C21.5208 20.8042 21.05 21 20.5 21H4.5C3.95 21 3.47917 20.8042 3.0875 20.4125C2.69583 20.0208 2.5 19.55 2.5 19V8.15C2.5 7.8 2.58333 7.46667 2.75 7.15C2.91667 6.83333 3.15 6.58333 3.45 6.4L12.5 1ZM12.5 12.65L20.3 8L12.5 3.35L4.7 8L12.5 12.65ZM12.5 15L4.5 10.2V19H20.5V10.2L12.5 15Z", "fill", "#1C1B1F"]], template: function AccessibilityHeaderComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "h1", 3);
         \u0275\u0275listener("click", function AccessibilityHeaderComponent_Template_h1_click_3_listener() {
@@ -539,9 +539,6 @@ var AccessibilityHeaderComponent = class _AccessibilityHeaderComponent {
         \u0275\u0275element(9, "i", 8);
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(10, "h1", 9);
-        \u0275\u0275listener("click", function AccessibilityHeaderComponent_Template_h1_click_10_listener() {
-          return ctx.sendMail();
-        });
         \u0275\u0275namespaceSVG();
         \u0275\u0275elementStart(11, "svg", 10)(12, "mask", 11);
         \u0275\u0275element(13, "rect", 12);
@@ -549,10 +546,25 @@ var AccessibilityHeaderComponent = class _AccessibilityHeaderComponent {
         \u0275\u0275elementStart(14, "g", 13);
         \u0275\u0275element(15, "path", 14);
         \u0275\u0275elementEnd()();
-        \u0275\u0275text(16, " Contact Help Desk");
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(16, "a", 15);
+        \u0275\u0275text(17, " +91\xA09910659965 ");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(18, "h1", 16);
+        \u0275\u0275listener("click", function AccessibilityHeaderComponent_Template_h1_click_18_listener() {
+          return ctx.sendMail();
+        });
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(19, "svg", 17)(20, "mask", 18);
+        \u0275\u0275element(21, "rect", 19);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(22, "g", 20);
+        \u0275\u0275element(23, "path", 21);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275text(24, "Contact Help Desk");
         \u0275\u0275elementEnd()()()();
       }
-    }, dependencies: [RouterModule], styles: ["\n\n.main-access-header-div[_ngcontent-%COMP%] {\n  background: var(--material-theme-sys-light-on-background, #1F1F1F);\n  padding: 5px 0px;\n}\n.gov-text[_ngcontent-%COMP%] {\n  color: #EBEBEB;\n  font-family: var(--roboto-font);\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n.skip-text[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Roboto;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n  margin: 0px;\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.skip-text[_ngcontent-%COMP%]:hover {\n  color: #fff;\n  text-decoration: underline;\n}\n.screen-reader-div[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.dark-mode[_ngcontent-%COMP%] {\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.inc-div[_ngcontent-%COMP%] {\n  padding: 8px;\n  transition: all 0.3s ease-in-out;\n  cursor: pointer;\n}\n.inc-div[_ngcontent-%COMP%]:hover {\n  border-radius: 4px;\n  background: rgba(255, 255, 255, 0.15);\n}\n.accessibility-header[_ngcontent-%COMP%] {\n  text-align: center;\n  padding: 20px;\n}\n.language-selector[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-top: 20px;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  padding: 10px 15px;\n  border: 1px solid #ccc;\n  background: #f1f1f1;\n  cursor: povar(--roboto-font);\n  transition: 0.3s;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n}\n.text-content[_ngcontent-%COMP%] {\n  text-align: center;\n  transition: font-size 0.3s;\n}\n.text-content[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  transition: font-size 0.3s;\n}\n.level-popup[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 40px;\n  left: 50%;\n  transform: translateX(-50%);\n  z-index: 9999;\n  background: rgba(0, 0, 0, 0.631372549);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n  border-radius: 12px;\n  padding: 30px;\n  transition: opacity 0.3s ease;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation: _ngcontent-%COMP%_fadeIn 0.5s ease;\n}\n.popup-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.text-icon-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 20px;\n}\n.text-icon-container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 100px;\n  height: 100px;\n}\n.text-icon-container[_ngcontent-%COMP%]   .bigger-text-label[_ngcontent-%COMP%] {\n  font-size: 18px;\n  font-weight: bold;\n  color: var(--primary-white);\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 6px;\n  background: var(--brand-color);\n  border-radius: 4px;\n  transition: background 0.3s ease;\n}\n.level-indicator[_ngcontent-%COMP%]   span.active[_ngcontent-%COMP%] {\n  background: var(--primary-white);\n}\n@keyframes _ngcontent-%COMP%_fadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-60%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%);\n  }\n}\n.mirrored[_ngcontent-%COMP%] {\n  transform: scaleX(-1);\n}\n.social-icons[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n}\n@media (max-width: 600px) {\n  .social-icons[_ngcontent-%COMP%] {\n    justify-content: start;\n  }\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  background: #ffffff;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #000;\n  font-size: 14px;\n  transition: 0.2s;\n  text-decoration: none;\n  opacity: 0.7;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n  opacity: 1;\n}\n@media screen and (max-width: 768px) {\n  .skip-text[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .screen-reader-div[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n  .font-inc-dec[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n}\n/*# sourceMappingURL=accessibility-header.component.css.map */"] });
+    }, dependencies: [RouterModule], styles: ["\n\n.main-access-header-div[_ngcontent-%COMP%] {\n  background: var(--material-theme-sys-light-on-background, #1F1F1F);\n  padding: 5px 0px;\n}\n.gov-text[_ngcontent-%COMP%] {\n  color: #EBEBEB;\n  font-family: var(--roboto-font);\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n.skip-text[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Roboto;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n  margin: 0px;\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.skip-text[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%]   path[_ngcontent-%COMP%] {\n  fill: #fff;\n}\n.skip-text[_ngcontent-%COMP%]:hover {\n  color: #fff;\n  text-decoration: underline;\n}\n.screen-reader-div[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.dark-mode[_ngcontent-%COMP%] {\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.inc-div[_ngcontent-%COMP%] {\n  padding: 8px;\n  transition: all 0.3s ease-in-out;\n  cursor: pointer;\n}\n.inc-div[_ngcontent-%COMP%]:hover {\n  border-radius: 4px;\n  background: rgba(255, 255, 255, 0.15);\n}\n.accessibility-header[_ngcontent-%COMP%] {\n  text-align: center;\n  padding: 20px;\n}\n.language-selector[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  gap: 10px;\n  margin-top: 20px;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%] {\n  padding: 10px 15px;\n  border: 1px solid #ccc;\n  background: #f1f1f1;\n  cursor: povar(--roboto-font);\n  transition: 0.3s;\n}\n.language-selector[_ngcontent-%COMP%]   button[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n}\n.text-content[_ngcontent-%COMP%] {\n  text-align: center;\n  transition: font-size 0.3s;\n}\n.text-content[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   p[_ngcontent-%COMP%], .text-content[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  transition: font-size 0.3s;\n}\n.level-popup[_ngcontent-%COMP%] {\n  position: fixed;\n  bottom: 40px;\n  left: 50%;\n  transform: translateX(-50%);\n  z-index: 9999;\n  background: rgba(0, 0, 0, 0.631372549);\n  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);\n  border-radius: 12px;\n  padding: 30px;\n  transition: opacity 0.3s ease;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  animation: _ngcontent-%COMP%_fadeIn 0.5s ease;\n}\n.popup-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n.text-icon-container[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin-bottom: 20px;\n}\n.text-icon-container[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 100px;\n  height: 100px;\n}\n.text-icon-container[_ngcontent-%COMP%]   .bigger-text-label[_ngcontent-%COMP%] {\n  font-size: 18px;\n  font-weight: bold;\n  color: var(--primary-white);\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  margin-top: 10px;\n}\n.level-indicator[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 6px;\n  background: var(--brand-color);\n  border-radius: 4px;\n  transition: background 0.3s ease;\n}\n.level-indicator[_ngcontent-%COMP%]   span.active[_ngcontent-%COMP%] {\n  background: var(--primary-white);\n}\n@keyframes _ngcontent-%COMP%_fadeIn {\n  from {\n    opacity: 0;\n    transform: translateX(-60%);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(-50%);\n  }\n}\n.mirrored[_ngcontent-%COMP%] {\n  transform: scaleX(-1);\n}\n.social-icons[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n}\n@media (max-width: 600px) {\n  .social-icons[_ngcontent-%COMP%] {\n    justify-content: start;\n  }\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  background: #ffffff;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #000;\n  font-size: 14px;\n  transition: 0.2s;\n  text-decoration: none;\n  opacity: 0.7;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n  opacity: 1;\n}\n@media screen and (max-width: 768px) {\n  .skip-text[_ngcontent-%COMP%] {\n    display: none;\n  }\n  .screen-reader-div[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n  .font-inc-dec[_ngcontent-%COMP%] {\n    display: none !important;\n  }\n}\n/*# sourceMappingURL=accessibility-header.component.css.map */"] });
   }
 };
 (() => {
@@ -1491,24 +1503,24 @@ function IasSignupComponent_app_ias_loader_0_Template(rf, ctx) {
     \u0275\u0275element(0, "app-ias-loader");
   }
 }
-function IasSignupComponent_div_27_div_7_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_10_div_7_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, "Email is required.");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_27_div_7_small_2_Template(rf, ctx) {
+function IasSignupComponent_div_10_div_7_small_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, "Enter a Valid Email Id");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_27_div_7_Template(rf, ctx) {
+function IasSignupComponent_div_10_div_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
-    \u0275\u0275template(1, IasSignupComponent_div_27_div_7_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_27_div_7_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 20);
+    \u0275\u0275template(1, IasSignupComponent_div_10_div_7_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_10_div_7_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1521,30 +1533,30 @@ function IasSignupComponent_div_27_div_7_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.emailForm.get("email")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_27_Template(rf, ctx) {
+function IasSignupComponent_div_10_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "h1", 23);
+    \u0275\u0275elementStart(0, "div", 10)(1, "h1", 11);
     \u0275\u0275text(2, "Create Account");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "form", 24);
-    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_27_Template_form_ngSubmit_3_listener() {
+    \u0275\u0275elementStart(3, "form", 12);
+    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_10_Template_form_ngSubmit_3_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitEmail());
     });
-    \u0275\u0275elementStart(4, "label", 25);
+    \u0275\u0275elementStart(4, "label", 13);
     \u0275\u0275text(5, "Email ID");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(6, "input", 26);
-    \u0275\u0275template(7, IasSignupComponent_div_27_div_7_Template, 3, 2, "div", 27);
-    \u0275\u0275elementStart(8, "button", 28);
+    \u0275\u0275element(6, "input", 14);
+    \u0275\u0275template(7, IasSignupComponent_div_10_div_7_Template, 3, 2, "div", 15);
+    \u0275\u0275elementStart(8, "button", 16);
     \u0275\u0275text(9, "Sign up");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "div", 29)(11, "span");
+    \u0275\u0275elementStart(10, "div", 17)(11, "span");
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(12, "svg", 30);
-    \u0275\u0275element(13, "path", 31);
+    \u0275\u0275elementStart(12, "svg", 18);
+    \u0275\u0275element(13, "path", 19);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
     \u0275\u0275elementStart(14, "p");
@@ -1562,15 +1574,15 @@ function IasSignupComponent_div_27_Template(rf, ctx) {
     \u0275\u0275property("disabled", ctx_r1.emailForm.invalid);
   }
 }
-function IasSignupComponent_div_28_input_7_Template(rf, ctx) {
+function IasSignupComponent_div_11_input_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "input", 40);
-    \u0275\u0275listener("input", function IasSignupComponent_div_28_input_7_Template_input_input_0_listener($event) {
+    \u0275\u0275elementStart(0, "input", 28);
+    \u0275\u0275listener("input", function IasSignupComponent_div_11_input_7_Template_input_input_0_listener($event) {
       const i_r5 = \u0275\u0275restoreView(_r4).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.onOtpInput($event, i_r5));
-    })("keydown", function IasSignupComponent_div_28_input_7_Template_input_keydown_0_listener($event) {
+    })("keydown", function IasSignupComponent_div_11_input_7_Template_input_keydown_0_listener($event) {
       const i_r5 = \u0275\u0275restoreView(_r4).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.handleKeyDown($event, i_r5));
@@ -1582,32 +1594,32 @@ function IasSignupComponent_div_28_input_7_Template(rf, ctx) {
     \u0275\u0275property("formControlName", ctrl_r6);
   }
 }
-function IasSignupComponent_div_28_Template(rf, ctx) {
+function IasSignupComponent_div_11_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "h1");
+    \u0275\u0275elementStart(0, "div", 10)(1, "h1");
     \u0275\u0275text(2, "Enter OTP to Verify");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "h4");
     \u0275\u0275text(4);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "form", 24);
-    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_28_Template_form_ngSubmit_5_listener() {
+    \u0275\u0275elementStart(5, "form", 12);
+    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_11_Template_form_ngSubmit_5_listener() {
       \u0275\u0275restoreView(_r3);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitOtp());
     });
-    \u0275\u0275elementStart(6, "div", 33);
-    \u0275\u0275template(7, IasSignupComponent_div_28_input_7_Template, 1, 1, "input", 34);
+    \u0275\u0275elementStart(6, "div", 21);
+    \u0275\u0275template(7, IasSignupComponent_div_11_input_7_Template, 1, 1, "input", 22);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "button", 35);
+    \u0275\u0275elementStart(8, "button", 23);
     \u0275\u0275text(9, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "span", 36)(11, "p", 37);
+    \u0275\u0275elementStart(10, "span", 24)(11, "p", 25);
     \u0275\u0275text(12, "Did not get the OTP?");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "span", 38);
-    \u0275\u0275listener("click", function IasSignupComponent_div_28_Template_span_click_13_listener() {
+    \u0275\u0275elementStart(13, "span", 26);
+    \u0275\u0275listener("click", function IasSignupComponent_div_11_Template_span_click_13_listener() {
       \u0275\u0275restoreView(_r3);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(!ctx_r1.isResendDisabled && ctx_r1.onResendOtp());
@@ -1615,7 +1627,7 @@ function IasSignupComponent_div_28_Template(rf, ctx) {
     \u0275\u0275text(14, " Resend OTP ");
     \u0275\u0275elementEnd();
     \u0275\u0275text(15, " in ");
-    \u0275\u0275elementStart(16, "span", 39);
+    \u0275\u0275elementStart(16, "span", 27);
     \u0275\u0275text(17);
     \u0275\u0275pipe(18, "date");
     \u0275\u0275elementEnd()()()();
@@ -1636,25 +1648,25 @@ function IasSignupComponent_div_28_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", \u0275\u0275pipeBind3(18, 7, ctx_r1.countdown * 1e3, "mm:ss", "UTC"), "");
   }
 }
-function IasSignupComponent_div_29_Template(rf, ctx) {
+function IasSignupComponent_div_12_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "h1", 23);
+    \u0275\u0275elementStart(0, "div", 10)(1, "h1", 11);
     \u0275\u0275text(2, "Sign up your account");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "button", 41);
-    \u0275\u0275listener("click", function IasSignupComponent_div_29_Template_button_click_3_listener() {
+    \u0275\u0275elementStart(3, "button", 29);
+    \u0275\u0275listener("click", function IasSignupComponent_div_12_Template_button_click_3_listener() {
       \u0275\u0275restoreView(_r7);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 4);
     });
     \u0275\u0275text(4, "Get Details from DOPT");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "p", 42);
+    \u0275\u0275elementStart(5, "p", 30);
     \u0275\u0275text(6, "or");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "button", 43);
-    \u0275\u0275listener("click", function IasSignupComponent_div_29_Template_button_click_7_listener() {
+    \u0275\u0275elementStart(7, "button", 31);
+    \u0275\u0275listener("click", function IasSignupComponent_div_12_Template_button_click_7_listener() {
       \u0275\u0275restoreView(_r7);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 5);
@@ -1663,17 +1675,17 @@ function IasSignupComponent_div_29_Template(rf, ctx) {
     \u0275\u0275elementEnd()();
   }
 }
-function IasSignupComponent_div_30_div_11_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_13_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Only letters are allowed. ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_11_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_13_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_11_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 20);
+    \u0275\u0275template(1, IasSignupComponent_div_13_div_13_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1683,17 +1695,17 @@ function IasSignupComponent_div_30_div_11_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("name")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_30_div_17_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_19_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Identity Number is required. ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_17_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_17_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 20);
+    \u0275\u0275template(1, IasSignupComponent_div_13_div_19_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1703,17 +1715,17 @@ function IasSignupComponent_div_30_div_17_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["required"]);
   }
 }
-function IasSignupComponent_div_30_div_23_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_25_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid email ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_23_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_25_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_23_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 20);
+    \u0275\u0275template(1, IasSignupComponent_div_13_div_25_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1723,17 +1735,17 @@ function IasSignupComponent_div_30_div_23_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_30_div_28_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_30_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid Mobile Number ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_28_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_30_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_28_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 20);
+    \u0275\u0275template(1, IasSignupComponent_div_13_div_30_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1743,65 +1755,67 @@ function IasSignupComponent_div_30_div_28_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_30_Template(rf, ctx) {
+function IasSignupComponent_div_13_Template(rf, ctx) {
   if (rf & 1) {
     const _r8 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "p")(2, "span", 44);
-    \u0275\u0275listener("click", function IasSignupComponent_div_30_Template_span_click_2_listener() {
+    \u0275\u0275elementStart(0, "div", 10)(1, "p")(2, "span", 32);
+    \u0275\u0275listener("click", function IasSignupComponent_div_13_Template_span_click_2_listener() {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 3);
     });
-    \u0275\u0275element(3, "i", 45);
+    \u0275\u0275element(3, "i", 33);
     \u0275\u0275text(4, " back");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(5, "h1", 23);
+    \u0275\u0275elementStart(5, "h1", 11);
     \u0275\u0275text(6, "Get Details from DOPT");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "form", 24);
-    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_30_Template_form_ngSubmit_7_listener() {
+    \u0275\u0275elementStart(7, "form", 12);
+    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_13_Template_form_ngSubmit_7_listener() {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitMemberId());
     });
-    \u0275\u0275elementStart(8, "label", 46);
+    \u0275\u0275elementStart(8, "label", 34);
     \u0275\u0275text(9, "Full Name");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "input", 47);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_30_Template_input_keypress_10_listener($event) {
+    \u0275\u0275elementStart(10, "span", 35);
+    \u0275\u0275text(11, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(12, "input", 36);
+    \u0275\u0275listener("keypress", function IasSignupComponent_div_13_Template_input_keypress_12_listener($event) {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allowOnlyLetters($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275template(11, IasSignupComponent_div_30_div_11_Template, 2, 1, "div", 27);
-    \u0275\u0275elementStart(12, "label", 48);
-    \u0275\u0275text(13, "Identity No.");
-    \u0275\u0275elementStart(14, "span", 49);
-    \u0275\u0275text(15, "*");
+    \u0275\u0275template(13, IasSignupComponent_div_13_div_13_Template, 2, 1, "div", 15);
+    \u0275\u0275elementStart(14, "label", 37);
+    \u0275\u0275text(15, "Identity No.");
+    \u0275\u0275elementStart(16, "span", 35);
+    \u0275\u0275text(17, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(16, "input", 50);
-    \u0275\u0275template(17, IasSignupComponent_div_30_div_17_Template, 2, 1, "div", 27);
-    \u0275\u0275elementStart(18, "div", 51)(19, "div", 52)(20, "label", 53);
-    \u0275\u0275text(21, "Alternate Email ID ");
+    \u0275\u0275element(18, "input", 38);
+    \u0275\u0275template(19, IasSignupComponent_div_13_div_19_Template, 2, 1, "div", 15);
+    \u0275\u0275elementStart(20, "div", 39)(21, "div", 40)(22, "label", 41);
+    \u0275\u0275text(23, "Alternate Email ID ");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(22, "input", 54);
-    \u0275\u0275template(23, IasSignupComponent_div_30_div_23_Template, 2, 1, "div", 27);
+    \u0275\u0275element(24, "input", 42);
+    \u0275\u0275template(25, IasSignupComponent_div_13_div_25_Template, 2, 1, "div", 15);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(24, "div", 52)(25, "label", 55);
-    \u0275\u0275text(26, " Mobile Number");
+    \u0275\u0275elementStart(26, "div", 40)(27, "label", 43);
+    \u0275\u0275text(28, " Mobile Number");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(27, "input", 56);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_30_Template_input_keypress_27_listener($event) {
+    \u0275\u0275elementStart(29, "input", 44);
+    \u0275\u0275listener("keypress", function IasSignupComponent_div_13_Template_input_keypress_29_listener($event) {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allow10Numbers($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275template(28, IasSignupComponent_div_30_div_28_Template, 2, 1, "div", 27);
+    \u0275\u0275template(30, IasSignupComponent_div_13_div_30_Template, 2, 1, "div", 15);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(29, "button", 57);
-    \u0275\u0275text(30, "Continue");
+    \u0275\u0275elementStart(31, "button", 45);
+    \u0275\u0275text(32, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -1812,7 +1826,7 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(7);
     \u0275\u0275property("formGroup", ctx_r1.memberidForm);
-    \u0275\u0275advance(4);
+    \u0275\u0275advance(6);
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("name")) == null ? null : tmp_2_0.invalid);
     \u0275\u0275advance(6);
     \u0275\u0275property("ngIf", ((tmp_3_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_3_0.touched) && ((tmp_3_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_3_0.invalid));
@@ -1824,9 +1838,9 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     \u0275\u0275property("disabled", ctx_r1.memberidForm.invalid);
   }
 }
-function IasSignupComponent_div_31_For_21_Template(rf, ctx) {
+function IasSignupComponent_div_14_For_23_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 64);
+    \u0275\u0275elementStart(0, "option", 52);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -1837,17 +1851,17 @@ function IasSignupComponent_div_31_For_21_Template(rf, ctx) {
     \u0275\u0275textInterpolate(cadre_r10.name);
   }
 }
-function IasSignupComponent_div_31_div_70_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_14_div_72_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid email ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_31_div_70_Template(rf, ctx) {
+function IasSignupComponent_div_14_div_72_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
-    \u0275\u0275template(1, IasSignupComponent_div_31_div_70_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 20);
+    \u0275\u0275template(1, IasSignupComponent_div_14_div_72_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1857,17 +1871,17 @@ function IasSignupComponent_div_31_div_70_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_31_div_75_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_14_div_77_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid Mobile Number ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_31_div_75_Template(rf, ctx) {
+function IasSignupComponent_div_14_div_77_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
-    \u0275\u0275template(1, IasSignupComponent_div_31_div_75_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 20);
+    \u0275\u0275template(1, IasSignupComponent_div_14_div_77_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1877,129 +1891,131 @@ function IasSignupComponent_div_31_div_75_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_31_Template(rf, ctx) {
+function IasSignupComponent_div_14_Template(rf, ctx) {
   if (rf & 1) {
     const _r9 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "p")(2, "span", 44);
-    \u0275\u0275listener("click", function IasSignupComponent_div_31_Template_span_click_2_listener() {
+    \u0275\u0275elementStart(0, "div", 10)(1, "p")(2, "span", 32);
+    \u0275\u0275listener("click", function IasSignupComponent_div_14_Template_span_click_2_listener() {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 3);
     });
-    \u0275\u0275element(3, "i", 45);
+    \u0275\u0275element(3, "i", 33);
     \u0275\u0275text(4, " back");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(5, "h1", 23);
+    \u0275\u0275elementStart(5, "h1", 11);
     \u0275\u0275text(6, "Fill You Details Manually");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "form", 24);
-    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_31_Template_form_ngSubmit_7_listener() {
+    \u0275\u0275elementStart(7, "form", 12);
+    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_14_Template_form_ngSubmit_7_listener() {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitmemberdetails());
     });
-    \u0275\u0275elementStart(8, "label", 58);
+    \u0275\u0275elementStart(8, "label", 46);
     \u0275\u0275text(9, "Full Name");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "input", 59);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_31_Template_input_keypress_10_listener($event) {
+    \u0275\u0275elementStart(10, "span", 35);
+    \u0275\u0275text(11, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(12, "input", 47);
+    \u0275\u0275listener("keypress", function IasSignupComponent_div_14_Template_input_keypress_12_listener($event) {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allowOnlyLetters($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(11, "div", 60)(12, "div", 52)(13, "label", 61);
-    \u0275\u0275text(14, "Cadre");
-    \u0275\u0275elementStart(15, "span", 49);
-    \u0275\u0275text(16, "*");
+    \u0275\u0275elementStart(13, "div", 48)(14, "div", 40)(15, "label", 49);
+    \u0275\u0275text(16, "Cadre");
+    \u0275\u0275elementStart(17, "span", 35);
+    \u0275\u0275text(18, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(17, "select", 62)(18, "option", 63);
-    \u0275\u0275text(19, "Enter Cadre");
+    \u0275\u0275elementStart(19, "select", 50)(20, "option", 51);
+    \u0275\u0275text(21, "Enter Cadre");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(20, IasSignupComponent_div_31_For_21_Template, 2, 2, "option", 64, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275repeaterCreate(22, IasSignupComponent_div_14_For_23_Template, 2, 2, "option", 52, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(22, "div", 52)(23, "label", 65);
-    \u0275\u0275text(24, "Allotment Year");
-    \u0275\u0275elementStart(25, "span", 49);
-    \u0275\u0275text(26, "*");
+    \u0275\u0275elementStart(24, "div", 40)(25, "label", 53);
+    \u0275\u0275text(26, "Allotment Year");
+    \u0275\u0275elementStart(27, "span", 35);
+    \u0275\u0275text(28, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(27, "input", 66);
-    \u0275\u0275listener("input", function IasSignupComponent_div_31_Template_input_input_27_listener($event) {
+    \u0275\u0275elementStart(29, "input", 54);
+    \u0275\u0275listener("input", function IasSignupComponent_div_14_Template_input_input_29_listener($event) {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.validateYear($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(28, "div", 52)(29, "label", 67);
-    \u0275\u0275text(30, "Gender");
-    \u0275\u0275elementStart(31, "span", 49);
-    \u0275\u0275text(32, "*");
+    \u0275\u0275elementStart(30, "div", 40)(31, "label", 55);
+    \u0275\u0275text(32, "Gender");
+    \u0275\u0275elementStart(33, "span", 35);
+    \u0275\u0275text(34, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(33, "select", 68)(34, "option", 69);
-    \u0275\u0275text(35, "Select Gender");
+    \u0275\u0275elementStart(35, "select", 56)(36, "option", 57);
+    \u0275\u0275text(37, "Select Gender");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(36, "option", 70);
-    \u0275\u0275text(37, "Male");
+    \u0275\u0275elementStart(38, "option", 58);
+    \u0275\u0275text(39, "Male");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(38, "option", 71);
-    \u0275\u0275text(39, "Female");
+    \u0275\u0275elementStart(40, "option", 59);
+    \u0275\u0275text(41, "Female");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(40, "option", 72);
-    \u0275\u0275text(41, "Other");
+    \u0275\u0275elementStart(42, "option", 60);
+    \u0275\u0275text(43, "Other");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(42, "div", 52)(43, "label", 73);
-    \u0275\u0275text(44, "Date of Birth");
-    \u0275\u0275elementStart(45, "span", 49);
-    \u0275\u0275text(46, "*");
+    \u0275\u0275elementStart(44, "div", 40)(45, "label", 61);
+    \u0275\u0275text(46, "Date of Birth");
+    \u0275\u0275elementStart(47, "span", 35);
+    \u0275\u0275text(48, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(47, "input", 74);
+    \u0275\u0275element(49, "input", 62);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(48, "div", 52)(49, "label", 75);
-    \u0275\u0275text(50, "Mother Tongue");
-    \u0275\u0275elementStart(51, "span", 49);
-    \u0275\u0275text(52, "*");
+    \u0275\u0275elementStart(50, "div", 40)(51, "label", 63);
+    \u0275\u0275text(52, "Mother Tongue");
+    \u0275\u0275elementStart(53, "span", 35);
+    \u0275\u0275text(54, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(53, "input", 76);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_31_Template_input_keypress_53_listener($event) {
+    \u0275\u0275elementStart(55, "input", 64);
+    \u0275\u0275listener("keypress", function IasSignupComponent_div_14_Template_input_keypress_55_listener($event) {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allowOnlyLetters($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(54, "div", 52)(55, "label", 77);
-    \u0275\u0275text(56, "Retirement Status");
-    \u0275\u0275elementStart(57, "span", 49);
-    \u0275\u0275text(58, "*");
+    \u0275\u0275elementStart(56, "div", 40)(57, "label", 65);
+    \u0275\u0275text(58, "Retirement Status");
+    \u0275\u0275elementStart(59, "span", 35);
+    \u0275\u0275text(60, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(59, "select", 78)(60, "option", 69);
-    \u0275\u0275text(61, "Select Reason");
+    \u0275\u0275elementStart(61, "select", 66)(62, "option", 57);
+    \u0275\u0275text(63, "Select Reason");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(62, "option", 79);
-    \u0275\u0275text(63, "Serving");
+    \u0275\u0275elementStart(64, "option", 67);
+    \u0275\u0275text(65, "Serving");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(64, "option", 80);
-    \u0275\u0275text(65, "Superannuated");
+    \u0275\u0275elementStart(66, "option", 68);
+    \u0275\u0275text(67, "Superannuated");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(66, "div", 52)(67, "label", 81);
-    \u0275\u0275text(68, "Alternate Email ID");
+    \u0275\u0275elementStart(68, "div", 40)(69, "label", 69);
+    \u0275\u0275text(70, "Alternate Email ID");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(69, "input", 82);
-    \u0275\u0275template(70, IasSignupComponent_div_31_div_70_Template, 2, 1, "div", 27);
+    \u0275\u0275element(71, "input", 70);
+    \u0275\u0275template(72, IasSignupComponent_div_14_div_72_Template, 2, 1, "div", 15);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(71, "div", 52)(72, "label", 83);
-    \u0275\u0275text(73, "Mobile Number");
+    \u0275\u0275elementStart(73, "div", 40)(74, "label", 71);
+    \u0275\u0275text(75, "Mobile Number");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(74, "input", 84);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_31_Template_input_keypress_74_listener($event) {
+    \u0275\u0275elementStart(76, "input", 72);
+    \u0275\u0275listener("keypress", function IasSignupComponent_div_14_Template_input_keypress_76_listener($event) {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allow10Numbers($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275template(75, IasSignupComponent_div_31_div_75_Template, 2, 1, "div", 27);
+    \u0275\u0275template(77, IasSignupComponent_div_14_div_77_Template, 2, 1, "div", 15);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(76, "button", 85);
-    \u0275\u0275text(77, "Continue");
+    \u0275\u0275elementStart(78, "button", 73);
+    \u0275\u0275text(79, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -2008,7 +2024,7 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(7);
     \u0275\u0275property("formGroup", ctx_r1.memberdetailsForm);
-    \u0275\u0275advance(13);
+    \u0275\u0275advance(15);
     \u0275\u0275repeater(ctx_r1.cadrelist);
     \u0275\u0275advance(27);
     \u0275\u0275property("max", ctx_r1.maxDOB);
@@ -2020,23 +2036,23 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     \u0275\u0275property("disabled", ctx_r1.memberdetailsForm.invalid);
   }
 }
-function IasSignupComponent_div_32_Template(rf, ctx) {
+function IasSignupComponent_div_15_Template(rf, ctx) {
   if (rf & 1) {
     const _r11 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "h1", 23);
+    \u0275\u0275elementStart(0, "div", 10)(1, "h1", 11);
     \u0275\u0275text(2, "Your Details");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "div", 86)(4, "div", 87);
-    \u0275\u0275element(5, "img", 88);
-    \u0275\u0275elementStart(6, "div")(7, "h3", 10);
+    \u0275\u0275elementStart(3, "div", 74)(4, "div", 75);
+    \u0275\u0275element(5, "img", 76);
+    \u0275\u0275elementStart(6, "div")(7, "h3", 77);
     \u0275\u0275text(8);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(9, "div", 89)(10, "span");
+    \u0275\u0275elementStart(9, "div", 78)(10, "span");
     \u0275\u0275text(11, "IAS Batch Year:");
     \u0275\u0275elementStart(12, "strong");
     \u0275\u0275text(13);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(14, "span", 90);
+    \u0275\u0275elementStart(14, "span", 79);
     \u0275\u0275text(15, "|");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(16, "span");
@@ -2044,18 +2060,18 @@ function IasSignupComponent_div_32_Template(rf, ctx) {
     \u0275\u0275elementStart(18, "strong");
     \u0275\u0275text(19);
     \u0275\u0275elementEnd()()()()()();
-    \u0275\u0275elementStart(20, "button", 91);
-    \u0275\u0275listener("click", function IasSignupComponent_div_32_Template_button_click_20_listener() {
+    \u0275\u0275elementStart(20, "button", 80);
+    \u0275\u0275listener("click", function IasSignupComponent_div_15_Template_button_click_20_listener() {
       \u0275\u0275restoreView(_r11);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitdetails());
     });
     \u0275\u0275text(21, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(22, "p", 92);
+    \u0275\u0275elementStart(22, "p", 81);
     \u0275\u0275text(23, "Wrong profile or incorrect information? ");
-    \u0275\u0275elementStart(24, "span", 93);
-    \u0275\u0275listener("click", function IasSignupComponent_div_32_Template_span_click_24_listener() {
+    \u0275\u0275elementStart(24, "span", 82);
+    \u0275\u0275listener("click", function IasSignupComponent_div_15_Template_span_click_24_listener() {
       \u0275\u0275restoreView(_r11);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 3);
@@ -2075,105 +2091,105 @@ function IasSignupComponent_div_32_Template(rf, ctx) {
     \u0275\u0275textInterpolate(ctx_r1.iascadre);
   }
 }
-function IasSignupComponent_div_33__svg_svg_9_Template(rf, ctx) {
+function IasSignupComponent_div_16__svg_svg_9_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 102)(1, "g", 103);
-    \u0275\u0275element(2, "path", 104);
+    \u0275\u0275elementStart(0, "svg", 91)(1, "g", 92);
+    \u0275\u0275element(2, "path", 93);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 105);
-    \u0275\u0275element(5, "rect", 106);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 94);
+    \u0275\u0275element(5, "rect", 95);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasSignupComponent_div_33__svg_svg_10_Template(rf, ctx) {
+function IasSignupComponent_div_16__svg_svg_10_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 102)(1, "g", 107);
-    \u0275\u0275element(2, "path", 108);
+    \u0275\u0275elementStart(0, "svg", 91)(1, "g", 96);
+    \u0275\u0275element(2, "path", 97);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 109);
-    \u0275\u0275element(5, "rect", 106);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 98);
+    \u0275\u0275element(5, "rect", 95);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasSignupComponent_div_33_div_11_Template(rf, ctx) {
+function IasSignupComponent_div_16_div_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
+    \u0275\u0275elementStart(0, "div", 20);
     \u0275\u0275text(1, " Password must have 8 characters, contain at least one uppercase letter, one lowercase letter, one number, and one special character. ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_33__svg_svg_17_Template(rf, ctx) {
+function IasSignupComponent_div_16__svg_svg_17_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 102)(1, "g", 103);
-    \u0275\u0275element(2, "path", 104);
+    \u0275\u0275elementStart(0, "svg", 91)(1, "g", 92);
+    \u0275\u0275element(2, "path", 93);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 105);
-    \u0275\u0275element(5, "rect", 106);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 94);
+    \u0275\u0275element(5, "rect", 95);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasSignupComponent_div_33__svg_svg_18_Template(rf, ctx) {
+function IasSignupComponent_div_16__svg_svg_18_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 102)(1, "g", 107);
-    \u0275\u0275element(2, "path", 108);
+    \u0275\u0275elementStart(0, "svg", 91)(1, "g", 96);
+    \u0275\u0275element(2, "path", 97);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 109);
-    \u0275\u0275element(5, "rect", 106);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 98);
+    \u0275\u0275element(5, "rect", 95);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasSignupComponent_div_33_div_19_Template(rf, ctx) {
+function IasSignupComponent_div_16_div_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 32);
+    \u0275\u0275elementStart(0, "div", 20);
     \u0275\u0275text(1, " Passwords do not match. ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_33_Template(rf, ctx) {
+function IasSignupComponent_div_16_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "h1", 23);
+    \u0275\u0275elementStart(0, "div", 10)(1, "h1", 11);
     \u0275\u0275text(2, "Create Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "form", 24);
-    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_33_Template_form_ngSubmit_3_listener() {
+    \u0275\u0275elementStart(3, "form", 12);
+    \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_16_Template_form_ngSubmit_3_listener() {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitPassword());
     });
-    \u0275\u0275elementStart(4, "label", 94);
+    \u0275\u0275elementStart(4, "label", 83);
     \u0275\u0275text(5, "Create Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(6, "div", 95);
-    \u0275\u0275element(7, "input", 96);
-    \u0275\u0275elementStart(8, "button", 97);
-    \u0275\u0275listener("click", function IasSignupComponent_div_33_Template_button_click_8_listener() {
+    \u0275\u0275elementStart(6, "div", 84);
+    \u0275\u0275element(7, "input", 85);
+    \u0275\u0275elementStart(8, "button", 86);
+    \u0275\u0275listener("click", function IasSignupComponent_div_16_Template_button_click_8_listener() {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.togglePassword("new"));
     });
-    \u0275\u0275template(9, IasSignupComponent_div_33__svg_svg_9_Template, 6, 0, "svg", 98)(10, IasSignupComponent_div_33__svg_svg_10_Template, 6, 0, "svg", 98);
+    \u0275\u0275template(9, IasSignupComponent_div_16__svg_svg_9_Template, 6, 0, "svg", 87)(10, IasSignupComponent_div_16__svg_svg_10_Template, 6, 0, "svg", 87);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(11, IasSignupComponent_div_33_div_11_Template, 2, 0, "div", 27);
-    \u0275\u0275elementStart(12, "label", 99);
+    \u0275\u0275template(11, IasSignupComponent_div_16_div_11_Template, 2, 0, "div", 15);
+    \u0275\u0275elementStart(12, "label", 88);
     \u0275\u0275text(13, "Confirm Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(14, "div", 95);
-    \u0275\u0275element(15, "input", 100);
-    \u0275\u0275elementStart(16, "button", 97);
-    \u0275\u0275listener("click", function IasSignupComponent_div_33_Template_button_click_16_listener() {
+    \u0275\u0275elementStart(14, "div", 84);
+    \u0275\u0275element(15, "input", 89);
+    \u0275\u0275elementStart(16, "button", 86);
+    \u0275\u0275listener("click", function IasSignupComponent_div_16_Template_button_click_16_listener() {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.togglePassword("confirm"));
     });
-    \u0275\u0275template(17, IasSignupComponent_div_33__svg_svg_17_Template, 6, 0, "svg", 98)(18, IasSignupComponent_div_33__svg_svg_18_Template, 6, 0, "svg", 98);
+    \u0275\u0275template(17, IasSignupComponent_div_16__svg_svg_17_Template, 6, 0, "svg", 87)(18, IasSignupComponent_div_16__svg_svg_18_Template, 6, 0, "svg", 87);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(19, IasSignupComponent_div_33_div_19_Template, 2, 0, "div", 27);
-    \u0275\u0275elementStart(20, "button", 101);
+    \u0275\u0275template(19, IasSignupComponent_div_16_div_19_Template, 2, 0, "div", 15);
+    \u0275\u0275elementStart(20, "button", 90);
     \u0275\u0275text(21, "Create password");
     \u0275\u0275elementEnd()()();
   }
@@ -2200,21 +2216,21 @@ function IasSignupComponent_div_33_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ctx_r1.passwordnotmatch);
   }
 }
-function IasSignupComponent_div_34_Template(rf, ctx) {
+function IasSignupComponent_div_17_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 22);
+    \u0275\u0275elementStart(0, "div", 10);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(1, "svg", 110);
-    \u0275\u0275element(2, "circle", 111)(3, "circle", 112)(4, "circle", 113)(5, "path", 114);
+    \u0275\u0275elementStart(1, "svg", 99);
+    \u0275\u0275element(2, "circle", 100)(3, "circle", 101)(4, "circle", 102)(5, "path", 103);
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(6, "h1", 92);
+    \u0275\u0275elementStart(6, "h1", 81);
     \u0275\u0275text(7, "You have successfully signed up");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "h4", 23);
+    \u0275\u0275elementStart(8, "h4", 11);
     \u0275\u0275text(9, "You can now login using your IAS email and password.");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "button", 115);
+    \u0275\u0275elementStart(10, "button", 104);
     \u0275\u0275text(11, "Return to Login");
     \u0275\u0275elementEnd()();
   }
@@ -2315,16 +2331,16 @@ var IasSignupComponent = class _IasSignupComponent {
     today.setFullYear(today.getFullYear() - 21);
     this.maxDOB = today.toISOString().split("T")[0];
   }
-  ngAfterViewInit() {
-    const modalEl = document.getElementById("Warning");
-    if (modalEl) {
-      this.myModal = new bootstrap.Modal(modalEl, {
-        backdrop: "static",
-        keyboard: false
-      });
-      this.myModal.show();
-    }
-  }
+  // ngAfterViewInit(): void {
+  //   const modalEl = document.getElementById('Warning');
+  //   if (modalEl) {
+  //     this.myModal = new bootstrap.Modal(modalEl, {
+  //       backdrop: 'static',
+  //       keyboard: false
+  //     });
+  //     this.myModal.show();
+  //   }
+  // }
   ngOnDestroy() {
     if (this.myModal) {
       this.myModal.hide();
@@ -2589,7 +2605,7 @@ var IasSignupComponent = class _IasSignupComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSignupComponent, selectors: [["app-ias-signup"]], standalone: true, features: [\u0275\u0275ProvidersFeature([DatePipe]), \u0275\u0275StandaloneFeature], decls: 35, vars: 14, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "Warning", "tabindex", "-1", "aria-labelledby", "WarningLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered"], [1, "modal-content", "p-4", "text-center"], [1, "modal-body"], [1, "mb-3"], ["xmlns", "http://www.w3.org/2000/svg", "width", "44", "height", "43", "viewBox", "0 0 44 43", "fill", "none"], ["id", "mask0_51050_5200", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "44", "height", "43", 2, "mask-type", "alpha"], ["x", "0.5", "width", "43", "height", "43", "fill", "#D9D9D9"], ["mask", "url(#mask0_51050_5200)"], ["d", "M22.0002 30.4584C22.5078 30.4584 22.9333 30.2867 23.2767 29.9433C23.6201 29.5999 23.7918 29.1743 23.7918 28.6667C23.7918 28.1591 23.6201 27.7335 23.2767 27.3901C22.9333 27.0467 22.5078 26.875 22.0002 26.875C21.4925 26.875 21.067 27.0467 20.7236 27.3901C20.3802 27.7335 20.2085 28.1591 20.2085 28.6667C20.2085 29.1743 20.3802 29.5999 20.7236 29.9433C21.067 30.2867 21.4925 30.4584 22.0002 30.4584ZM20.2085 23.2917H23.7918V12.5417H20.2085V23.2917ZM22.0002 39.4167C19.5217 39.4167 17.1925 38.9464 15.0127 38.0058C12.8328 37.0651 10.9366 35.7886 9.32412 34.1761C7.71162 32.5636 6.43506 30.6674 5.49443 28.4875C4.55381 26.3077 4.0835 23.9785 4.0835 21.5C4.0835 19.0216 4.55381 16.6924 5.49443 14.5125C6.43506 12.3327 7.71162 10.4365 9.32412 8.824C10.9366 7.2115 12.8328 5.93494 15.0127 4.99431C17.1925 4.05369 19.5217 3.58337 22.0002 3.58337C24.4786 3.58337 26.8078 4.05369 28.9877 4.99431C31.1675 5.93494 33.0637 7.2115 34.6762 8.824C36.2887 10.4365 37.5653 12.3327 38.5059 14.5125C39.4465 16.6924 39.9168 19.0216 39.9168 21.5C39.9168 23.9785 39.4465 26.3077 38.5059 28.4875C37.5653 30.6674 36.2887 32.5636 34.6762 34.1761C33.0637 35.7886 31.1675 37.0651 28.9877 38.0058C26.8078 38.9464 24.4786 39.4167 22.0002 39.4167ZM22.0002 35.8334C26.0016 35.8334 29.3908 34.4448 32.1679 31.6677C34.945 28.8907 36.3335 25.5014 36.3335 21.5C36.3335 17.4987 34.945 14.1094 32.1679 11.3323C29.3908 8.55525 26.0016 7.16671 22.0002 7.16671C17.9988 7.16671 14.6095 8.55525 11.8325 11.3323C9.05537 14.1094 7.66683 17.4987 7.66683 21.5C7.66683 25.5014 9.05537 28.8907 11.8325 31.6677C14.6095 34.4448 17.9988 35.8334 22.0002 35.8334Z", "fill", "#C82F2F"], [1, "mb-2"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "login-btn", "w-75", "mx-auto", "mb-4"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "stepcontainer", 4, "ngIf"], [1, "stepcontainer"], [1, "mb-4"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id", 1, "mb-1"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn", "my-4", 3, "disabled"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "viewBox", "0 0 16 16", "fill", "none"], ["d", "M7.3335 11.3333H8.66683V7.33331H7.3335V11.3333ZM8.00016 5.99998C8.18905 5.99998 8.34738 5.93609 8.47516 5.80831C8.60294 5.68053 8.66683 5.5222 8.66683 5.33331C8.66683 5.14442 8.60294 4.98609 8.47516 4.85831C8.34738 4.73054 8.18905 4.66665 8.00016 4.66665C7.81127 4.66665 7.65294 4.73054 7.52516 4.85831C7.39738 4.98609 7.3335 5.14442 7.3335 5.33331C7.3335 5.5222 7.39738 5.68053 7.52516 5.80831C7.65294 5.93609 7.81127 5.99998 8.00016 5.99998ZM8.00016 14.6666C7.07794 14.6666 6.21127 14.4916 5.40016 14.1416C4.58905 13.7916 3.8835 13.3166 3.2835 12.7166C2.6835 12.1166 2.2085 11.4111 1.8585 10.6C1.5085 9.78887 1.3335 8.9222 1.3335 7.99998C1.3335 7.07776 1.5085 6.21109 1.8585 5.39998C2.2085 4.58887 2.6835 3.88331 3.2835 3.28331C3.8835 2.68331 4.58905 2.20831 5.40016 1.85831C6.21127 1.50831 7.07794 1.33331 8.00016 1.33331C8.92238 1.33331 9.78905 1.50831 10.6002 1.85831C11.4113 2.20831 12.1168 2.68331 12.7168 3.28331C13.3168 3.88331 13.7918 4.58887 14.1418 5.39998C14.4918 6.21109 14.6668 7.07776 14.6668 7.99998C14.6668 8.9222 14.4918 9.78887 14.1418 10.6C13.7918 11.4111 13.3168 12.1166 12.7168 12.7166C12.1168 13.3166 11.4113 13.7916 10.6002 14.1416C9.78905 14.4916 8.92238 14.6666 8.00016 14.6666ZM8.00016 13.3333C9.48905 13.3333 10.7502 12.8166 11.7835 11.7833C12.8168 10.75 13.3335 9.48887 13.3335 7.99998C13.3335 6.51109 12.8168 5.24998 11.7835 4.21665C10.7502 3.18331 9.48905 2.66665 8.00016 2.66665C6.51127 2.66665 5.25016 3.18331 4.21683 4.21665C3.1835 5.24998 2.66683 6.51109 2.66683 7.99998C2.66683 9.48887 3.1835 10.75 4.21683 11.7833C5.25016 12.8166 6.51127 13.3333 8.00016 13.3333Z", "fill", "#A16800"], [1, "error-message"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"], ["type", "submit", 1, "login-btn", "mt-4", 3, "click"], [1, "text-center", "my-3"], ["type", "button", 1, "white-btn", 3, "click"], [1, "cursor-pointer", "fs-5", "fw-bold", 3, "click"], [1, "fas", "fa-arrow-left"], ["for", "name"], ["type", "text", "id", "name", "formControlName", "name", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], ["for", "identityNumber", 1, "mt-3"], [1, "redstar"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "placeholder", "Enter Your Identity No."], [1, "row"], [1, "col-md-6"], ["for", "alternateEmail", 1, "mt-3"], ["type", "email", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter Email ID", "maxlength", "100"], ["for", "mobilenumber ", 1, "mt-3"], ["type", "number", "id", "mobilenumber", "formControlName", "mobilenumber", "placeholder", "Enter Mobile Number", 3, "keypress"], ["type", "submit", 1, "login-btn", "my-3", "mt-4", 3, "disabled"], ["for", "FullName"], ["type", "text", "id", "FullName", "formControlName", "fullname", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], [1, "row", "mt-3"], ["for", "Cadre"], ["id", "Cadre", "aria-label", "Default select example", "formControlName", "cadre", 1, "form-select"], ["value", "0", "disabled", ""], [3, "value"], ["for", "allotmentyear"], ["type", "number", "id", "allotmentyear", "formControlName", "allotmentyear", "placeholder", "Enter Allotment Year", 1, "mb-3", 3, "input"], ["for", "Gender"], ["id", "Gender", "formControlName", "gender", 1, "form-select"], ["value", "", "disabled", ""], ["value", "Male"], ["value", "Female"], ["value", ""], ["for", "dob"], ["type", "date", "id", "dob", "formControlName", "dateofbirth", "placeholder", "Select Date of Birth", 1, "mb-3", 3, "max"], ["for", "mothertongue"], ["type", "text", "id", "mothertongue", "formControlName", "mothertongue", "placeholder", "Enter Language", "maxlength", "40", 1, "mb-3", 3, "keypress"], ["for", "retirementreason"], ["id", "retirementreason", "formControlName", "retirementreason", 1, "form-select"], ["value", "Serving"], ["value", "Superannuated"], ["for", "alternateEmail"], ["type", "text", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter your Email ID", "maxlength", "100", 1, "mb-1"], ["for", "mobilenumber"], ["type", "number", "id", "mobilenumber", "formControlName", "mobilenumber", "placeholder", "Enter Your Number", 1, "mb-1", 3, "keypress"], ["type", "submit", 1, "login-btn", "mt-4", 3, "disabled"], [1, "detailscard", "shadow-sm", "border", "rounded-4"], [1, "d-flex", "align-items-center"], ["alt", "Profile Image", 1, "rounded-circle", "me-4", 2, "width", "80px", "height", "80px", "object-fit", "cover", "object-position", "center", 3, "src"], [1, "d-flex", "flex-wrap", "gap-2", "text-muted"], [1, "mx-2"], [1, "login-btn", "mt-4", 3, "click"], [1, "mt-3"], [1, "text-danger", "cursor-pointer", 3, "click"], ["for", "newPassword"], [1, "password-wrapper", "my-1"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword", 1, "mt-3"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["type", "submit", 1, "login-btn", "mt-4"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasSignupComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSignupComponent, selectors: [["app-ias-signup"]], standalone: true, features: [\u0275\u0275ProvidersFeature([DatePipe]), \u0275\u0275StandaloneFeature], decls: 18, vars: 14, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "stepcontainer", 4, "ngIf"], [1, "stepcontainer"], [1, "mb-4"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id", 1, "mb-1"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn", "my-4", 3, "disabled"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "viewBox", "0 0 16 16", "fill", "none"], ["d", "M7.3335 11.3333H8.66683V7.33331H7.3335V11.3333ZM8.00016 5.99998C8.18905 5.99998 8.34738 5.93609 8.47516 5.80831C8.60294 5.68053 8.66683 5.5222 8.66683 5.33331C8.66683 5.14442 8.60294 4.98609 8.47516 4.85831C8.34738 4.73054 8.18905 4.66665 8.00016 4.66665C7.81127 4.66665 7.65294 4.73054 7.52516 4.85831C7.39738 4.98609 7.3335 5.14442 7.3335 5.33331C7.3335 5.5222 7.39738 5.68053 7.52516 5.80831C7.65294 5.93609 7.81127 5.99998 8.00016 5.99998ZM8.00016 14.6666C7.07794 14.6666 6.21127 14.4916 5.40016 14.1416C4.58905 13.7916 3.8835 13.3166 3.2835 12.7166C2.6835 12.1166 2.2085 11.4111 1.8585 10.6C1.5085 9.78887 1.3335 8.9222 1.3335 7.99998C1.3335 7.07776 1.5085 6.21109 1.8585 5.39998C2.2085 4.58887 2.6835 3.88331 3.2835 3.28331C3.8835 2.68331 4.58905 2.20831 5.40016 1.85831C6.21127 1.50831 7.07794 1.33331 8.00016 1.33331C8.92238 1.33331 9.78905 1.50831 10.6002 1.85831C11.4113 2.20831 12.1168 2.68331 12.7168 3.28331C13.3168 3.88331 13.7918 4.58887 14.1418 5.39998C14.4918 6.21109 14.6668 7.07776 14.6668 7.99998C14.6668 8.9222 14.4918 9.78887 14.1418 10.6C13.7918 11.4111 13.3168 12.1166 12.7168 12.7166C12.1168 13.3166 11.4113 13.7916 10.6002 14.1416C9.78905 14.4916 8.92238 14.6666 8.00016 14.6666ZM8.00016 13.3333C9.48905 13.3333 10.7502 12.8166 11.7835 11.7833C12.8168 10.75 13.3335 9.48887 13.3335 7.99998C13.3335 6.51109 12.8168 5.24998 11.7835 4.21665C10.7502 3.18331 9.48905 2.66665 8.00016 2.66665C6.51127 2.66665 5.25016 3.18331 4.21683 4.21665C3.1835 5.24998 2.66683 6.51109 2.66683 7.99998C2.66683 9.48887 3.1835 10.75 4.21683 11.7833C5.25016 12.8166 6.51127 13.3333 8.00016 13.3333Z", "fill", "#A16800"], [1, "error-message"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"], ["type", "submit", 1, "login-btn", "mt-4", 3, "click"], [1, "text-center", "my-3"], ["type", "button", 1, "white-btn", 3, "click"], [1, "cursor-pointer", "fs-5", "fw-bold", 3, "click"], [1, "fas", "fa-arrow-left"], ["for", "name"], [1, "redstar"], ["type", "text", "id", "name", "formControlName", "name", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], ["for", "identityNumber", 1, "mt-3"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "placeholder", "Enter Your Identity No."], [1, "row"], [1, "col-md-6"], ["for", "alternateEmail", 1, "mt-3"], ["type", "email", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter Email ID", "maxlength", "100"], ["for", "mobilenumber ", 1, "mt-3"], ["type", "number", "id", "mobilenumber", "formControlName", "mobilenumber", "placeholder", "Enter Mobile Number", 3, "keypress"], ["type", "submit", 1, "login-btn", "my-3", "mt-4", 3, "disabled"], ["for", "FullName"], ["type", "text", "id", "FullName", "formControlName", "fullname", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], [1, "row", "mt-3"], ["for", "Cadre"], ["id", "Cadre", "aria-label", "Default select example", "formControlName", "cadre", 1, "form-select"], ["value", "0", "disabled", ""], [3, "value"], ["for", "allotmentyear"], ["type", "number", "id", "allotmentyear", "formControlName", "allotmentyear", "placeholder", "Enter Allotment Year", 1, "mb-3", 3, "input"], ["for", "Gender"], ["id", "Gender", "formControlName", "gender", 1, "form-select"], ["value", "", "disabled", ""], ["value", "Male"], ["value", "Female"], ["value", ""], ["for", "dob"], ["type", "date", "id", "dob", "formControlName", "dateofbirth", "placeholder", "Select Date of Birth", 1, "mb-3", 3, "max"], ["for", "mothertongue"], ["type", "text", "id", "mothertongue", "formControlName", "mothertongue", "placeholder", "Enter Language", "maxlength", "40", 1, "mb-3", 3, "keypress"], ["for", "retirementreason"], ["id", "retirementreason", "formControlName", "retirementreason", 1, "form-select"], ["value", "Serving"], ["value", "Superannuated"], ["for", "alternateEmail"], ["type", "text", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter your Email ID", "maxlength", "100", 1, "mb-1"], ["for", "mobilenumber"], ["type", "number", "id", "mobilenumber", "formControlName", "mobilenumber", "placeholder", "Enter Your Number", 1, "mb-1", 3, "keypress"], ["type", "submit", 1, "login-btn", "mt-4", 3, "disabled"], [1, "detailscard", "shadow-sm", "border", "rounded-4"], [1, "d-flex", "align-items-center"], ["alt", "Profile Image", 1, "rounded-circle", "me-4", 2, "width", "80px", "height", "80px", "object-fit", "cover", "object-position", "center", 3, "src"], [1, "mb-3"], [1, "d-flex", "flex-wrap", "gap-2", "text-muted"], [1, "mx-2"], [1, "login-btn", "mt-4", 3, "click"], [1, "mt-3"], [1, "text-danger", "cursor-pointer", 3, "click"], ["for", "newPassword"], [1, "password-wrapper", "my-1"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword", 1, "mt-3"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["type", "submit", 1, "login-btn", "mt-4"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasSignupComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, IasSignupComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 0);
         \u0275\u0275elementStart(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
@@ -2597,30 +2613,10 @@ var IasSignupComponent = class _IasSignupComponent {
         \u0275\u0275elementEnd();
         \u0275\u0275element(6, "button", 5);
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(7, "div", 6)(8, "div", 7)(9, "div", 8)(10, "div", 9)(11, "h5", 10);
-        \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(12, "svg", 11)(13, "mask", 12);
-        \u0275\u0275element(14, "rect", 13);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(15, "g", 14);
-        \u0275\u0275element(16, "path", 15);
-        \u0275\u0275elementEnd()();
-        \u0275\u0275text(17, " Impersonation Warning");
-        \u0275\u0275elementEnd();
-        \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(18, "h6", 16);
-        \u0275\u0275text(19, " Impersonating an IAS officer or providing false information to obtain IAS Association membership is a criminal offence under: ");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(20, "p");
-        \u0275\u0275text(21, " Section 170 of the Indian Penal Code (IPC) - Personating a public servant ");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(22, "button", 17);
-        \u0275\u0275text(23, "Continue");
-        \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(24, "div", 18);
-        \u0275\u0275element(25, "div", 19);
-        \u0275\u0275elementStart(26, "div", 20);
-        \u0275\u0275template(27, IasSignupComponent_div_27_Template, 16, 3, "div", 21)(28, IasSignupComponent_div_28_Template, 19, 11, "div", 21)(29, IasSignupComponent_div_29_Template, 9, 0, "div", 21)(30, IasSignupComponent_div_30_Template, 31, 6, "div", 21)(31, IasSignupComponent_div_31_Template, 78, 5, "div", 21)(32, IasSignupComponent_div_32_Template, 26, 4, "div", 21)(33, IasSignupComponent_div_33_Template, 22, 9, "div", 21)(34, IasSignupComponent_div_34_Template, 12, 1, "div", 21);
+        \u0275\u0275elementStart(7, "div", 6);
+        \u0275\u0275element(8, "div", 7);
+        \u0275\u0275elementStart(9, "div", 8);
+        \u0275\u0275template(10, IasSignupComponent_div_10_Template, 16, 3, "div", 9)(11, IasSignupComponent_div_11_Template, 19, 11, "div", 9)(12, IasSignupComponent_div_12_Template, 9, 0, "div", 9)(13, IasSignupComponent_div_13_Template, 33, 6, "div", 9)(14, IasSignupComponent_div_14_Template, 80, 5, "div", 9)(15, IasSignupComponent_div_15_Template, 26, 4, "div", 9)(16, IasSignupComponent_div_16_Template, 22, 9, "div", 9)(17, IasSignupComponent_div_17_Template, 12, 1, "div", 9);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -2629,7 +2625,7 @@ var IasSignupComponent = class _IasSignupComponent {
         \u0275\u0275classMapInterpolate1("toast align-items-center text-bg-", ctx.toastType, " border-0");
         \u0275\u0275advance(3);
         \u0275\u0275textInterpolate1(" ", ctx.toastMessage, " ");
-        \u0275\u0275advance(20);
+        \u0275\u0275advance(3);
         \u0275\u0275property("routerLink", "");
         \u0275\u0275advance(2);
         \u0275\u0275property("ngIf", ctx.currentStep === 1);
@@ -2723,27 +2719,27 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-K6WD5BHC.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-CJMWZE5P.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-BV2WUP4J.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-M23BSIGU.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-3YAG3PZY.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-DMOMZZMQ.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6DYXGHIL.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-7IKYICNF.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-YHXRASRL.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-BEOKGACP.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2752,12 +2748,12 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-QTGTQ32S.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-WZRYJHPA.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-KLA4RDXK.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-2JOWBHOD.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2777,17 +2773,17 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SRTWKOWD.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-CJV3KOAE.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-3W3YS7NK.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-HLSHXMDX.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TQALCMX2.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-SCPJYMOK.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -2825,47 +2821,47 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-GYJ5N4NB.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-VR7GKF6O.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-ONZPOYS7.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-VRT6FIJQ.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-VSNRYCW2.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-UG3U7WNJ.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-LRMDXBCE.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-KK6MECBF.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-MEKNZEHY.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-QLWQ24W7.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-2ZDTNAAS.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-F7ZMTRIW.js").then((m) => m.NewsComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-MVZNVBW7.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-FDFOPJQI.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-BSYPAL6O.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-OCEIRLGK.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-HHEOLGUQ.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-SYP75TMD.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-L4UH7VOT.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-CTLTVCSL.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-RBYQVSOU.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-XHGAVKPC.js").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -2873,47 +2869,47 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-6OY7P73B.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-XFWW5KDT.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-K326UPW4.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-VGJJGZDE.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-ZK573PLK.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-C7FVKQQA.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-I26GBMLM.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-G5DB3MP7.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-MBY3PC2C.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-BWWNIIB6.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-KJXR5IWN.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-FBRWKFMJ.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-Z4TTL6LP.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-JLRCSPF7.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-LLQH6GLP.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-HCHO456P.js").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-4PUM7FVW.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-3XJ64LQP.js").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-23GRJNLX.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-5R6PPRRW.js").then((m) => m.RouteErrorComponent)
   }
 ];
 
@@ -2991,7 +2987,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const moduleImpl = this.moduleImpl ?? import("./chunk-NYKM6X4L.js");
+    const moduleImpl = this.moduleImpl ?? import("./chunk-PFN4AS66.js");
     return moduleImpl.catch((e) => {
       throw new RuntimeError(5300, (typeof ngDevMode === "undefined" || ngDevMode) && "Async loading for animations package was enabled, but loading failed. Angular falls back to using regular rendering. No animations will be displayed and their styles won't be applied.");
     }).then(({
