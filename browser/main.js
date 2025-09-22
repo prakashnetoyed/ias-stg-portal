@@ -2733,7 +2733,7 @@ var routes = [
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-WOFOOVBJ.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-3YAG3PZY.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
