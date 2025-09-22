@@ -2723,7 +2723,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-NLHQJIZA.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-K6WD5BHC.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2829,7 +2829,7 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-GYPLJ3ZI.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-ONZPOYS7.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
@@ -2849,7 +2849,7 @@ var routes = [
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-6MYG5J6R.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-MVZNVBW7.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
@@ -2857,15 +2857,15 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-2X3S3MPN.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-HHEOLGUQ.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-H5BVLC57.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-L4UH7VOT.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-GMA5HRIZ.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-RBYQVSOU.js").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
