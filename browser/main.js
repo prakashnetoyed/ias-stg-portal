@@ -2719,7 +2719,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-CJMWZE5P.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-U7BIYYKN.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",

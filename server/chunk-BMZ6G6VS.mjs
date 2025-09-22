@@ -164,14 +164,14 @@ function IasCommunityMembersComponent_div_10_span_2_Template(rf, ctx) {
 function IasCommunityMembersComponent_div_10_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 27);
+    \u0275\u0275elementStart(0, "div", 23);
     \u0275\u0275listener("click", function IasCommunityMembersComponent_div_10_Template_div_click_0_listener() {
       const member_r2 = \u0275\u0275restoreView(_r1).$implicit;
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.selectMember(member_r2));
     });
     \u0275\u0275elementStart(1, "h4");
-    \u0275\u0275template(2, IasCommunityMembersComponent_div_10_span_2_Template, 2, 1, "span", 28);
+    \u0275\u0275template(2, IasCommunityMembersComponent_div_10_span_2_Template, 2, 1, "span", 24);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "h1")(4, "span");
     \u0275\u0275text(5);
@@ -189,6 +189,26 @@ function IasCommunityMembersComponent_div_10_Template(rf, ctx) {
     \u0275\u0275property("@listSlide", \u0275\u0275pureFunction2(13, _c1, ctx_r2.startIndex, \u0275\u0275pureFunction1(11, _c0, ctx_r2.direction === "down" ? 100 : -100)));
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(member_r2.name);
+  }
+}
+function IasCommunityMembersComponent_div_27_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r4 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 18);
+    \u0275\u0275listener("click", function IasCommunityMembersComponent_div_27_Template_div_click_0_listener() {
+      \u0275\u0275restoreView(_r4);
+      const ctx_r2 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r2.openLink(ctx_r2.selectedMember.linkedin));
+    });
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(1, "svg", 25)(2, "mask", 26);
+    \u0275\u0275element(3, "rect", 27);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(4, "g", 28);
+    \u0275\u0275element(5, "path", 29);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275text(6, "LinkedIn ");
+    \u0275\u0275elementEnd();
   }
 }
 var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
@@ -227,7 +247,7 @@ var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
         name: "Aditi Singh",
         image: "assets/members/aditi-singh.png",
         email: "treasurericas@gmail.com",
-        linkedin: "https://linkedin.com/in/aditi-singh"
+        linkedin: ""
       },
       {
         title: "JT Secretary 1",
@@ -255,49 +275,49 @@ var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
         name: "Sanjay Bhosreddy",
         image: "assets/members/sanjay-bhoosreddy.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/sanjay-bhoosreddy"
+        linkedin: ""
       },
       {
         title: "Member",
         name: "D Thara",
         image: "assets/members/d-thara.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/d-thara"
+        linkedin: ""
       },
       {
         title: "Member",
         name: "Rahul Singh",
         image: "assets/members/rahul-singh.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/rahul-singh"
+        linkedin: ""
       },
       {
         title: "Member",
         name: "Prasanna R",
         image: "assets/members/prasanna.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/prasanna-r"
+        linkedin: ""
       },
       {
         title: "Member",
         name: "Nitin Khade",
         image: "assets/members/nitin-khade.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/nitin-khade"
+        linkedin: ""
       },
       {
         title: "Member",
         name: "Dinesh Kumar",
         image: "assets/members/dinesh-kumar.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/dinesh-kumar"
+        linkedin: ""
       },
       {
         title: "Member",
         name: "Rohan Chand Thakur",
         image: "assets/members/rohan-chand-thakur.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/rohan-chand-thakur"
+        linkedin: ""
       },
       {
         title: "Member",
@@ -311,7 +331,7 @@ var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
         name: "Shah Faesal",
         image: "assets/members/shah-faesal.png",
         email: "membericas@gmail.com",
-        linkedin: "https://linkedin.com/in/shah-faesal"
+        linkedin: ""
       },
       {
         title: "Member",
@@ -359,7 +379,7 @@ I would like to connect with you.`);
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasCommunityMembersComponent, selectors: [["app-ias-community-members"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 36, vars: 5, consts: [[1, "main-ias-community-div"], [1, "container"], [1, "component-heading-div"], [1, "head-button"], [1, "btn", "btn-mem", 3, "routerLink"], [1, "name-image", "d-flex", "align-items-center", "justify-content-between"], [1, "left-name-designation-div", "d-flex", "flex-column"], ["class", "innerdiv", 3, "click", 4, "ngFor", "ngForOf"], [1, "right-image-div", "d-flex", "align-items-center", "justify-content-end", "gap-3"], [1, "navigation-div", "d-flex", "align-items-center", "flex-column", "gap-4"], [1, "arrow-btn", 3, "click", "disabled"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "13", "viewBox", "0 0 21 13", "fill", "none"], ["d", "M0.912109 10.8791L10.9669 0.934268L20.9118 10.9891L19.1271 12.7543L10.9474 4.48421L2.67732 12.6639L0.912109 10.8791Z", "fill", "#1C1B1F", "fill-opacity", "0.8"], ["d", "M19.1278 0.263842L10.9563 8.52472L10.9475 8.53356L2.67781 0.354302L0.929687 2.12078L10.9669 12.0482L20.8942 2.01099L19.1278 0.263842Z", "fill", "#1C1B1F", "fill-opacity", "0.8", "stroke", "#5D48B3", "stroke-width", "0.025"], [1, "imagecontact-div"], [1, "inneremail-contttt", "position-relative"], ["alt", "member photo", "draggable", "false", 3, "src"], [1, "email-cont-div", "d-flex", "align-items-center", "justify-content-evenly", "w-100"], [1, "linkdln", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "20", "viewBox", "0 0 21 20", "fill", "none"], ["d", "M10.5 0L19.55 5.4C19.85 5.58333 20.0833 5.83333 20.25 6.15C20.4167 6.46667 20.5 6.8 20.5 7.15V18C20.5 18.55 20.3042 19.0208 19.9125 19.4125C19.5208 19.8042 19.05 20 18.5 20H2.5C1.95 20 1.47917 19.8042 1.0875 19.4125C0.695833 19.0208 0.5 18.55 0.5 18V7.15C0.5 6.8 0.583333 6.46667 0.75 6.15C0.916667 5.83333 1.15 5.58333 1.45 5.4L10.5 0ZM10.5 11.65L18.3 7L10.5 2.35L2.7 7L10.5 11.65ZM10.5 14L2.5 9.2V18H18.5V9.2L10.5 14Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none"], ["id", "mask0_50787_86", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_50787_86)"], ["d", "M11 17H7C5.61667 17 4.4375 16.5125 3.4625 15.5375C2.4875 14.5625 2 13.3833 2 12C2 10.6167 2.4875 9.4375 3.4625 8.4625C4.4375 7.4875 5.61667 7 7 7H11V9H7C6.16667 9 5.45833 9.29167 4.875 9.875C4.29167 10.4583 4 11.1667 4 12C4 12.8333 4.29167 13.5417 4.875 14.125C5.45833 14.7083 6.16667 15 7 15H11V17ZM8 13V11H16V13H8ZM13 17V15H17C17.8333 15 18.5417 14.7083 19.125 14.125C19.7083 13.5417 20 12.8333 20 12C20 11.1667 19.7083 10.4583 19.125 9.875C18.5417 9.29167 17.8333 9 17 9H13V7H17C18.3833 7 19.5625 7.4875 20.5375 8.4625C21.5125 9.4375 22 10.6167 22 12C22 13.3833 21.5125 14.5625 20.5375 15.5375C19.5625 16.5125 18.3833 17 17 17H13Z", "fill", "#1C1B1F"], [1, "btn", "btn-connect", "w-100", "mt-3", 3, "click"], [1, "innerdiv", 3, "click"], [4, "ngIf"]], template: function IasCommunityMembersComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasCommunityMembersComponent, selectors: [["app-ias-community-members"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 30, vars: 6, consts: [[1, "main-ias-community-div"], [1, "container"], [1, "component-heading-div"], [1, "head-button"], [1, "btn", "btn-mem", 3, "routerLink"], [1, "name-image", "d-flex", "align-items-center", "justify-content-between"], [1, "left-name-designation-div", "d-flex", "flex-column"], ["class", "innerdiv", 3, "click", 4, "ngFor", "ngForOf"], [1, "right-image-div", "d-flex", "align-items-center", "justify-content-end", "gap-3"], [1, "navigation-div", "d-flex", "align-items-center", "flex-column", "gap-4"], [1, "arrow-btn", 3, "click", "disabled"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "13", "viewBox", "0 0 21 13", "fill", "none"], ["d", "M0.912109 10.8791L10.9669 0.934268L20.9118 10.9891L19.1271 12.7543L10.9474 4.48421L2.67732 12.6639L0.912109 10.8791Z", "fill", "#1C1B1F", "fill-opacity", "0.8"], ["d", "M19.1278 0.263842L10.9563 8.52472L10.9475 8.53356L2.67781 0.354302L0.929687 2.12078L10.9669 12.0482L20.8942 2.01099L19.1278 0.263842Z", "fill", "#1C1B1F", "fill-opacity", "0.8", "stroke", "#5D48B3", "stroke-width", "0.025"], [1, "imagecontact-div"], [1, "inneremail-contttt", "position-relative"], ["alt", "member photo", "draggable", "false", 3, "src"], [1, "email-cont-div", "d-flex", "align-items-center", "justify-content-evenly", "w-100"], [1, "linkdln", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "20", "viewBox", "0 0 21 20", "fill", "none"], ["d", "M10.5 0L19.55 5.4C19.85 5.58333 20.0833 5.83333 20.25 6.15C20.4167 6.46667 20.5 6.8 20.5 7.15V18C20.5 18.55 20.3042 19.0208 19.9125 19.4125C19.5208 19.8042 19.05 20 18.5 20H2.5C1.95 20 1.47917 19.8042 1.0875 19.4125C0.695833 19.0208 0.5 18.55 0.5 18V7.15C0.5 6.8 0.583333 6.46667 0.75 6.15C0.916667 5.83333 1.15 5.58333 1.45 5.4L10.5 0ZM10.5 11.65L18.3 7L10.5 2.35L2.7 7L10.5 11.65ZM10.5 14L2.5 9.2V18H18.5V9.2L10.5 14Z", "fill", "#1C1B1F"], ["class", "linkdln", 3, "click", 4, "ngIf"], [1, "btn", "btn-connect", "w-100", "mt-3", 3, "click"], [1, "innerdiv", 3, "click"], [4, "ngIf"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none"], ["id", "mask0_50787_86", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_50787_86)"], ["d", "M11 17H7C5.61667 17 4.4375 16.5125 3.4625 15.5375C2.4875 14.5625 2 13.3833 2 12C2 10.6167 2.4875 9.4375 3.4625 8.4625C4.4375 7.4875 5.61667 7 7 7H11V9H7C6.16667 9 5.45833 9.29167 4.875 9.875C4.29167 10.4583 4 11.1667 4 12C4 12.8333 4.29167 13.5417 4.875 14.125C5.45833 14.7083 6.16667 15 7 15H11V17ZM8 13V11H16V13H8ZM13 17V15H17C17.8333 15 18.5417 14.7083 19.125 14.125C19.7083 13.5417 20 12.8333 20 12C20 11.1667 19.7083 10.4583 19.125 9.875C18.5417 9.29167 17.8333 9 17 9H13V7H17C18.3833 7 19.5625 7.4875 20.5375 8.4625C21.5125 9.4375 22 10.6167 22 12C22 13.3833 21.5125 14.5625 20.5375 15.5375C19.5625 16.5125 18.3833 17 17 17H13Z", "fill", "#1C1B1F"]], template: function IasCommunityMembersComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1");
         \u0275\u0275text(5, "Our Members");
@@ -400,26 +420,14 @@ I would like to connect with you.`);
         \u0275\u0275elementEnd();
         \u0275\u0275text(26, "Email ");
         \u0275\u0275elementEnd();
-        \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(27, "div", 18);
-        \u0275\u0275listener("click", function IasCommunityMembersComponent_Template_div_click_27_listener() {
-          return ctx.openLink(ctx.selectedMember.linkedin);
-        });
-        \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(28, "svg", 21)(29, "mask", 22);
-        \u0275\u0275element(30, "rect", 23);
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(31, "g", 24);
-        \u0275\u0275element(32, "path", 25);
+        \u0275\u0275template(27, IasCommunityMembersComponent_div_27_Template, 7, 0, "div", 21);
         \u0275\u0275elementEnd()();
-        \u0275\u0275text(33, "LinkedIn ");
-        \u0275\u0275elementEnd()()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(34, "button", 26);
-        \u0275\u0275listener("click", function IasCommunityMembersComponent_Template_button_click_34_listener() {
+        \u0275\u0275elementStart(28, "button", 22);
+        \u0275\u0275listener("click", function IasCommunityMembersComponent_Template_button_click_28_listener() {
           return ctx.sendMail(ctx.selectedMember);
         });
-        \u0275\u0275text(35, "Connect");
+        \u0275\u0275text(29, "Connect");
         \u0275\u0275elementEnd()()()()()();
       }
       if (rf & 2) {
@@ -433,6 +441,8 @@ I would like to connect with you.`);
         \u0275\u0275property("disabled", ctx.startIndex + ctx.visibleCount >= ctx.members.length);
         \u0275\u0275advance(5);
         \u0275\u0275property("src", ctx.selectedMember.image, \u0275\u0275sanitizeUrl);
+        \u0275\u0275advance(6);
+        \u0275\u0275property("ngIf", ctx.selectedMember.linkedin);
       }
     }, dependencies: [CommonModule, NgForOf, NgIf, RouterModule, RouterLink], styles: ["\n\n.main-ias-community-div[_ngcontent-%COMP%] {\n  padding: 90px 0px;\n}\n@media (max-width: 1024px) {\n  .main-ias-community-div[_ngcontent-%COMP%] {\n    padding: 60px 0px;\n  }\n}\n@media (max-width: 768px) {\n  .main-ias-community-div[_ngcontent-%COMP%] {\n    padding: 40px 0px;\n  }\n}\n@media (max-width: 480px) {\n  .main-ias-community-div[_ngcontent-%COMP%] {\n    padding: 30px 0px;\n  }\n}\n.component-heading-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: #211b3a;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-weight: 400;\n}\n@media (max-width: 768px) {\n  .component-heading-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    font-size: 11px;\n  }\n}\n@media (max-width: 480px) {\n  .component-heading-div[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    font-size: 10px;\n    text-align: center;\n  }\n}\n.head-button[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.head-button[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #211b3a;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-weight: 600;\n  margin: 0px;\n}\n@media (max-width: 768px) {\n  .head-button[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    margin-bottom: 10px;\n  }\n}\n@media (max-width: 480px) {\n  .head-button[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 22px;\n    text-align: center;\n    width: 100%;\n  }\n}\n.btn-mem[_ngcontent-%COMP%] {\n  border-radius: 4px;\n  border: 1px solid #000;\n  opacity: 0.71;\n  padding: 12px 24px;\n  font-size: 16px;\n  font-weight: 500;\n  display: inline-flex;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n}\n@media (max-width: 768px) {\n  .btn-mem[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 10px 20px;\n  }\n}\n@media (max-width: 480px) {\n  .btn-mem[_ngcontent-%COMP%] {\n    width: 100%;\n    justify-content: center;\n  }\n}\n.left-name-designation-div[_ngcontent-%COMP%] {\n  width: 60%;\n  overflow-y: auto;\n}\n@media (max-width: 1024px) {\n  .left-name-designation-div[_ngcontent-%COMP%] {\n    order: 2 !important;\n    width: 100% !important;\n    margin-top: 20px;\n    max-height: 220px;\n    overflow-y: auto;\n    scrollbar-width: thin;\n  }\n}\n@media (max-width: 480px) {\n  .left-name-designation-div[_ngcontent-%COMP%] {\n    max-height: 180px;\n  }\n}\n.right-image-div[_ngcontent-%COMP%] {\n  width: 40%;\n  justify-content: flex-end;\n}\n@media (max-width: 1024px) {\n  .right-image-div[_ngcontent-%COMP%] {\n    order: 1;\n    width: 100% !important;\n    justify-content: center !important;\n  }\n}\n.name-image[_ngcontent-%COMP%] {\n  margin-top: 62px;\n  height: 490px;\n  overflow: hidden;\n}\n@media (max-width: 768px) {\n  .name-image[_ngcontent-%COMP%] {\n    flex-direction: column;\n    margin-top: 40px;\n    height: auto;\n    align-items: center;\n    gap: 20px;\n  }\n}\n@media (max-width: 480px) {\n  .name-image[_ngcontent-%COMP%] {\n    margin-top: 20px;\n    gap: 15px;\n  }\n}\n.innerdiv[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  flex-wrap: wrap;\n}\n.innerdiv[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: #211b3a;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-weight: 400;\n  text-transform: uppercase;\n  width: 20%;\n}\n@media (max-width: 768px) {\n  .innerdiv[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n    width: 100%;\n    font-size: 13px;\n    margin-bottom: 5px;\n    text-align: center;\n  }\n}\n.innerdiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  font-family: Urbanist;\n  font-size: 42px;\n  font-weight: 500;\n  text-transform: uppercase;\n  color: #b8b6bf;\n  width: 70%;\n  cursor: pointer;\n  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);\n}\n@media (max-width: 1400px) {\n  .innerdiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 40px;\n  }\n}\n@media (max-width: 768px) {\n  .innerdiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 28px;\n    width: 100%;\n    text-align: center;\n  }\n}\n@media (max-width: 480px) {\n  .innerdiv[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 22px;\n  }\n}\n.innerdiv[_ngcontent-%COMP%]   h1.active[_ngcontent-%COMP%] {\n  font-weight: 600;\n  background:\n    linear-gradient(\n      130deg,\n      #492fb2 -1.74%,\n      rgba(73, 47, 178, 0.61) 125.81%);\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n.imagecontact-div[_ngcontent-%COMP%] {\n  max-width: 320px;\n  width: 100%;\n}\n.imagecontact-div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 100%;\n  height: auto;\n  border-radius: 6px;\n}\n@media (max-width: 480px) {\n  .imagecontact-div[_ngcontent-%COMP%] {\n    max-width: 100%;\n  }\n}\n.email-cont-div[_ngcontent-%COMP%] {\n  border-radius: 0 0 4px 4px;\n  background: #e3e3e3;\n  padding: 10px;\n  display: flex;\n  align-items: center;\n  justify-content: space-evenly;\n  flex-wrap: wrap;\n  gap: 10px;\n}\n.email-cont-div[_ngcontent-%COMP%]   .linkdln[_ngcontent-%COMP%] {\n  color: #000;\n  font-family: Urbanist;\n  font-size: 15px;\n  font-weight: 400;\n  display: flex;\n  align-items: center;\n  gap: 3px;\n  cursor: pointer;\n  flex: 1 1 45%;\n  justify-content: center;\n}\n@media (max-width: 768px) {\n  .email-cont-div[_ngcontent-%COMP%]   .linkdln[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n}\n@media (max-width: 480px) {\n  .email-cont-div[_ngcontent-%COMP%]   .linkdln[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n}\n.btn-connect[_ngcontent-%COMP%] {\n  border-radius: 4px;\n  border: 1px solid #5d48b3;\n  background: #5d48b3;\n  padding: 12px 24px;\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-weight: 600;\n  letter-spacing: 0.15px;\n  width: 100%;\n}\n@media (max-width: 768px) {\n  .btn-connect[_ngcontent-%COMP%] {\n    font-size: 14px;\n    padding: 10px 20px;\n  }\n}\n@media (max-width: 480px) {\n  .btn-connect[_ngcontent-%COMP%] {\n    width: 100%;\n  }\n}\n.arrow-btn[_ngcontent-%COMP%] {\n  background: none;\n  border: none;\n  font-size: 20px;\n  cursor: pointer;\n  padding: 8px 12px;\n  border-radius: 39px;\n  border: 0.5px solid #b3b3b3;\n  transition: color 0.2s;\n}\n.arrow-btn[_ngcontent-%COMP%]:hover:not(:disabled) {\n  color: #5d48b3;\n}\n.arrow-btn[_ngcontent-%COMP%]:disabled {\n  opacity: 0.3;\n  cursor: not-allowed;\n}\n@media (max-width: 480px) {\n  .arrow-btn[_ngcontent-%COMP%] {\n    padding: 5px 8px;\n    font-size: 16px;\n  }\n}\n/*# sourceMappingURL=ias-community-members.component.css.map */"], data: { animation: [
       trigger("listSlide", [
@@ -1400,4 +1410,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-FSHNMDYL.mjs.map
+//# sourceMappingURL=chunk-BMZ6G6VS.mjs.map

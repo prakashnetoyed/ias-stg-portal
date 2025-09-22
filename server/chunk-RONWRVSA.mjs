@@ -2797,7 +2797,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-FSHNMDYL.mjs").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-BMZ6G6VS.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -3287,4 +3287,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-6S7MAKP5.mjs.map
+//# sourceMappingURL=chunk-RONWRVSA.mjs.map
