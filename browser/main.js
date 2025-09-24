@@ -404,7 +404,7 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275advance(2);
         \u0275\u0275property("routerLink", "contact-us");
         \u0275\u0275advance(3);
-        \u0275\u0275property("routerLink", "/news-blogs");
+        \u0275\u0275property("routerLink", "news-blogs");
       }
     }, dependencies: [RouterLink], styles: ['\n\n.footer[_ngcontent-%COMP%] {\n  background: #ffffff;\n  color: #000;\n  font-family: "Urbanist", sans-serif;\n}\n.footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;\n  gap: 30px;\n  padding: 40px 0px;\n}\n@media (max-width: 1024px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: 1fr;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 80px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .org-name[_ngcontent-%COMP%] {\n  font-weight: 600;\n  margin-top: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .last-updated[_ngcontent-%COMP%] {\n  display: inline-block;\n  background: #f0f0f0;\n  border-radius: 20px;\n  padding: 10px 20px;\n  font-size: 12px;\n  margin-top: 28px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  font-size: 16px;\n  font-weight: 600;\n  margin-bottom: 10px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  display: block;\n  color: inherit;\n  text-decoration: none;\n  margin-bottom: 8px;\n  font-size: 14px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n    justify-content: start;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  background: #f5f5f5;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #000;\n  font-size: 14px;\n  transition: 0.2s;\n  text-decoration: none;\n  opacity: 0.7;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n  opacity: 1;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%] {\n  margin-top: 15px;\n  font-size: 14px;\n  line-height: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  margin-right: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n  background: #000;\n  color: #fff;\n  font-size: 12px;\n  padding: 10px 0px;\n  flex-wrap: wrap;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n    flex-direction: column;\n    gap: 8px;\n    text-align: center;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #fff;\n  text-decoration: none;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .needlink[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: rgba(0, 97, 188, 0.92);\n}\n/*# sourceMappingURL=ias-footer.component.css.map */'] });
   }
@@ -2136,7 +2136,7 @@ function IasSignupComponent_div_17_Template(rf, ctx) {
   }
   if (rf & 2) {
     \u0275\u0275advance(10);
-    \u0275\u0275property("routerLink", "/l");
+    \u0275\u0275property("routerLink", "");
   }
 }
 var IasSignupComponent = class _IasSignupComponent {
@@ -2722,7 +2722,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-MT4ZPBGP.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-5QNQZ2IU.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -2746,7 +2746,7 @@ var routes = [
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-CAKCFT43.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-LGPURU5U.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",

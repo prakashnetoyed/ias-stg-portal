@@ -1,13 +1,14 @@
+import './polyfills.server.mjs';
 import {
   UserService
-} from "./chunk-355F23O5.js";
+} from "./chunk-GBEGW3CQ.mjs";
 import {
   animate,
   state,
   style,
   transition,
   trigger
-} from "./chunk-P7PUSETJ.js";
+} from "./chunk-YRS5JI5B.mjs";
 import {
   NavigationEnd,
   Router,
@@ -15,19 +16,19 @@ import {
   RouterLinkActive,
   RouterModule,
   RouterOutlet
-} from "./chunk-SNZVCUF6.js";
+} from "./chunk-IHV4JKV6.mjs";
 import {
   ToastService
-} from "./chunk-SHX5MJZM.js";
-import "./chunk-WYW2S4QW.js";
-import "./chunk-BK4FBNP4.js";
+} from "./chunk-TUOTYXST.mjs";
+import "./chunk-SJMEGSB4.mjs";
+import "./chunk-PY5YUHCX.mjs";
 import {
   CommonModule,
   DOCUMENT,
   Location,
   NgIf,
   isPlatformBrowser
-} from "./chunk-OG7DO3XM.js";
+} from "./chunk-YQCUS5I7.mjs";
 import {
   ANIMATION_MODULE_TYPE,
   APP_ID,
@@ -140,11 +141,11 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-PY442ZFB.js";
+} from "./chunk-QKHTRG4V.mjs";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-ASLTLD6L.js";
+} from "./chunk-24VIC3GD.mjs";
 
 // src/app/common/ias-sidebar/ias-sidebar.component.ts
 var _c0 = () => ({ exact: true });
@@ -186,7 +187,7 @@ var IasSidebarComponent = class _IasSidebarComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSidebarComponent, selectors: [["app-ias-sidebar"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 76, vars: 23, consts: [[1, "main-side-bar-component", "d-flex", "flex-column", "justify-content-between"], [1, "top-div"], ["data-bs-toggle", "tooltip", "title", "Click to go Home", 1, "left-logo-div", "d-flex", "align-items-center", "gap-2", "mb-4", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "epfo-logo", 1, "ll"], [1, "epfo-name-text", "w-100"], [1, "epfo-text", "w-100"], [1, "navigation-div", "mt-2"], [1, "p-0"], ["routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "nav-option", 3, "routerLink", "routerLinkActiveOptions"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "dash"], ["d", "M10 3H3V10H10V3Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], ["d", "M21 3H14V10H21V3Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], ["d", "M21 14H14V21H21V14Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], ["d", "M10 14H3V21H10V14Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], [1, "navigation-text"], [1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", "justify-content-between", 3, "click"], [1, "nnn", "d-flex", "align-items-center", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "nav-svg"], ["clip-path", "url(#clip0_50872_3818)"], ["d", "M12 5.9C13.16 5.9 14.1 6.84 14.1 8C14.1 9.16 13.16 10.1 12 10.1C10.84 10.1 9.9 9.16 9.9 8C9.9 6.84 10.84 5.9 12 5.9ZM12 14.9C14.97 14.9 18.1 16.36 18.1 17V18.1H5.9V17C5.9 16.36 9.03 14.9 12 14.9ZM12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4ZM12 13C9.33 13 4 14.34 4 17V20H20V17C20 14.34 14.67 13 12 13Z", "fill", "#211B3A"], ["id", "clip0_50872_3818"], ["width", "24", "height", "24", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "8", "viewBox", "0 0 12 8", "fill", "none", 1, "arrow"], ["d", "M6 7.4L0 1.4L1.4 0L6 4.6L10.6 0L12 1.4L6 7.4Z", "fill", "#211B3A"], [1, "submenu"], ["routerLink", "approved-user", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["routerLink", "pending-approval-user", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["routerLink", "rejected-user", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["routerLink", "publications", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["clip-path", "url(#clip0_50872_3834)"], ["d", "M4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H8V4H20V16ZM10 9H18V11H10V9ZM10 12H14V14H10V12ZM10 6H18V8H10V6Z", "fill", "#211B3A"], ["id", "clip0_50872_3834"], ["routerLink", "news", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["clip-path", "url(#clip0_50872_3842)"], ["d", "M20 8.5H8C7.72614 8.5 7.5 8.27386 7.5 8C7.5 7.72614 7.72614 7.5 8 7.5H20C20.2739 7.5 20.5 7.72614 20.5 8C20.5 8.27386 20.2739 8.5 20 8.5ZM3.5 8.5V7.5H4.5V8.5H3.5ZM20 12.5H8C7.72614 12.5 7.5 12.2739 7.5 12C7.5 11.7261 7.72614 11.5 8 11.5H20C20.2739 11.5 20.5 11.7261 20.5 12C20.5 12.2739 20.2739 12.5 20 12.5ZM3.5 12.5V11.5H4.5V12.5H3.5ZM20 16.5H8C7.72614 16.5 7.5 16.2739 7.5 16C7.5 15.7261 7.72614 15.5 8 15.5H20C20.2739 15.5 20.5 15.7261 20.5 16C20.5 16.2739 20.2739 16.5 20 16.5ZM3.5 16.5V15.5H4.5V16.5H3.5Z", "fill", "#211B3A", "stroke", ""], ["id", "clip0_50872_3842"], ["width", "24", "height", "24", "fill", "", "transform", "matrix(-1 0 0 -1 24 24)"], ["routerLink", "feedbacks", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["clip-path", "url(#clip0_50872_3848)"], ["d", "M5.59961 4.5H18.4004C19.0039 4.50021 19.4998 4.99606 19.5 5.59961V15.2002C19.4999 15.8038 19.004 16.2996 18.4004 16.2998H6.99316L6.84668 16.4463L4.5 18.792L4.50781 5.60059V5.59961C4.50801 5.03078 4.93977 4.56245 5.48828 4.50586L5.59961 4.5ZM5.09961 17.3428L5.95312 16.4893L6.41797 16.0254L6.74316 15.7002H18.9004V5.09961H5.09961V17.3428ZM12.2998 12.5V13.0996H11.7002V12.5H12.2998ZM12.2998 7.7002V9.90039H11.7002V7.7002H12.2998Z", "fill", "black", "stroke", ""], ["id", "clip0_50872_3848"], ["width", "24", "height", "24", "fill", ""], ["routerLink", "my-transaction", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["id", "mask0_50872_3868", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_50872_3868)"], ["d", "M17.275 20.25L20.75 16.8L19.7 15.75L17.275 18.125L16.3 17.15L15.25 18.225L17.275 20.25ZM6 9H18V7H6V9ZM18 23C16.6167 23 15.4375 22.5125 14.4625 21.5375C13.4875 20.5625 13 19.3833 13 18C13 16.6167 13.4875 15.4375 14.4625 14.4625C15.4375 13.4875 16.6167 13 18 13C19.3833 13 20.5625 13.4875 21.5375 14.4625C22.5125 15.4375 23 16.6167 23 18C23 19.3833 22.5125 20.5625 21.5375 21.5375C20.5625 22.5125 19.3833 23 18 23ZM3 22V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V11.675C20.6833 11.525 20.3583 11.4 20.025 11.3C19.6917 11.2 19.35 11.125 19 11.075V5H5V19.05H11.075C11.1583 19.5667 11.2875 20.0583 11.4625 20.525C11.6375 20.9917 11.8667 21.4333 12.15 21.85L12 22L10.5 20.5L9 22L7.5 20.5L6 22L4.5 20.5L3 22ZM6 17H11.075C11.125 16.65 11.2 16.3083 11.3 15.975C11.4 15.6417 11.525 15.3167 11.675 15H6V17ZM6 13H13.1C13.7333 12.3833 14.4708 11.8958 15.3125 11.5375C16.1542 11.1792 17.05 11 18 11H6V13Z", "fill", "#211B3A"]], template: function IasSidebarComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSidebarComponent, selectors: [["app-ias-sidebar"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 84, vars: 25, consts: [[1, "main-side-bar-component", "d-flex", "flex-column", "justify-content-between"], [1, "top-div"], ["data-bs-toggle", "tooltip", "title", "Click to go Home", 1, "left-logo-div", "d-flex", "align-items-center", "gap-2", "mb-4", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "epfo-logo", 1, "ll"], [1, "epfo-name-text", "w-100"], [1, "epfo-text", "w-100"], [1, "navigation-div", "mt-2"], [1, "p-0"], ["routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "nav-option", 3, "routerLink", "routerLinkActiveOptions"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "dash"], ["d", "M10 3H3V10H10V3Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], ["d", "M21 3H14V10H21V3Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], ["d", "M21 14H14V21H21V14Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], ["d", "M10 14H3V21H10V14Z", "stroke", "#211B3A", "stroke-width", "1.5", "stroke-linecap", "round", "stroke-linejoin", "round"], [1, "navigation-text"], [1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", "justify-content-between", 3, "click"], [1, "nnn", "d-flex", "align-items-center", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "nav-svg"], ["clip-path", "url(#clip0_50872_3818)"], ["d", "M12 5.9C13.16 5.9 14.1 6.84 14.1 8C14.1 9.16 13.16 10.1 12 10.1C10.84 10.1 9.9 9.16 9.9 8C9.9 6.84 10.84 5.9 12 5.9ZM12 14.9C14.97 14.9 18.1 16.36 18.1 17V18.1H5.9V17C5.9 16.36 9.03 14.9 12 14.9ZM12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4ZM12 13C9.33 13 4 14.34 4 17V20H20V17C20 14.34 14.67 13 12 13Z", "fill", "#211B3A"], ["id", "clip0_50872_3818"], ["width", "24", "height", "24", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "8", "viewBox", "0 0 12 8", "fill", "none", 1, "arrow"], ["d", "M6 7.4L0 1.4L1.4 0L6 4.6L10.6 0L12 1.4L6 7.4Z", "fill", "#211B3A"], [1, "submenu"], ["routerLink", "approved-user", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["routerLink", "pending-approval-user", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["routerLink", "rejected-user", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["routerLink", "publications", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["clip-path", "url(#clip0_50872_3834)"], ["d", "M4 6H2V20C2 21.1 2.9 22 4 22H18V20H4V6ZM20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H8V4H20V16ZM10 9H18V11H10V9ZM10 12H14V14H10V12ZM10 6H18V8H10V6Z", "fill", "#211B3A"], ["id", "clip0_50872_3834"], ["routerLink", "news", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["clip-path", "url(#clip0_50872_3842)"], ["d", "M20 8.5H8C7.72614 8.5 7.5 8.27386 7.5 8C7.5 7.72614 7.72614 7.5 8 7.5H20C20.2739 7.5 20.5 7.72614 20.5 8C20.5 8.27386 20.2739 8.5 20 8.5ZM3.5 8.5V7.5H4.5V8.5H3.5ZM20 12.5H8C7.72614 12.5 7.5 12.2739 7.5 12C7.5 11.7261 7.72614 11.5 8 11.5H20C20.2739 11.5 20.5 11.7261 20.5 12C20.5 12.2739 20.2739 12.5 20 12.5ZM3.5 12.5V11.5H4.5V12.5H3.5ZM20 16.5H8C7.72614 16.5 7.5 16.2739 7.5 16C7.5 15.7261 7.72614 15.5 8 15.5H20C20.2739 15.5 20.5 15.7261 20.5 16C20.5 16.2739 20.2739 16.5 20 16.5ZM3.5 16.5V15.5H4.5V16.5H3.5Z", "fill", "#211B3A", "stroke", ""], ["id", "clip0_50872_3842"], ["width", "24", "height", "24", "fill", "", "transform", "matrix(-1 0 0 -1 24 24)"], ["routerLink", "mom", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["id", "mask0_50912_2844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_50912_2844)"], ["d", "M7 17C7.28333 17 7.52083 16.9042 7.7125 16.7125C7.90417 16.5208 8 16.2833 8 16C8 15.7167 7.90417 15.4792 7.7125 15.2875C7.52083 15.0958 7.28333 15 7 15C6.71667 15 6.47917 15.0958 6.2875 15.2875C6.09583 15.4792 6 15.7167 6 16C6 16.2833 6.09583 16.5208 6.2875 16.7125C6.47917 16.9042 6.71667 17 7 17ZM6 13H8V7H6V13ZM11 17H18V15H11V17ZM11 13H18V11H11V13ZM11 9H18V7H11V9ZM4 21C3.45 21 2.97917 20.8042 2.5875 20.4125C2.19583 20.0208 2 19.55 2 19V5C2 4.45 2.19583 3.97917 2.5875 3.5875C2.97917 3.19583 3.45 3 4 3H20C20.55 3 21.0208 3.19583 21.4125 3.5875C21.8042 3.97917 22 4.45 22 5V19C22 19.55 21.8042 20.0208 21.4125 20.4125C21.0208 20.8042 20.55 21 20 21H4ZM4 19H20V5H4V19Z", "fill", "#211B3A"], ["routerLink", "feedbacks", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["clip-path", "url(#clip0_50872_3848)"], ["d", "M5.59961 4.5H18.4004C19.0039 4.50021 19.4998 4.99606 19.5 5.59961V15.2002C19.4999 15.8038 19.004 16.2996 18.4004 16.2998H6.99316L6.84668 16.4463L4.5 18.792L4.50781 5.60059V5.59961C4.50801 5.03078 4.93977 4.56245 5.48828 4.50586L5.59961 4.5ZM5.09961 17.3428L5.95312 16.4893L6.41797 16.0254L6.74316 15.7002H18.9004V5.09961H5.09961V17.3428ZM12.2998 12.5V13.0996H11.7002V12.5H12.2998ZM12.2998 7.7002V9.90039H11.7002V7.7002H12.2998Z", "fill", "black", "stroke", ""], ["id", "clip0_50872_3848"], ["width", "24", "height", "24", "fill", ""], ["routerLink", "my-transaction", "routerLinkActive", "active", 1, "d-flex", "align-items-center", "gap-2", "mt-2", "nav-option", 3, "routerLinkActiveOptions"], ["id", "mask0_50872_3868", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["mask", "url(#mask0_50872_3868)"], ["d", "M17.275 20.25L20.75 16.8L19.7 15.75L17.275 18.125L16.3 17.15L15.25 18.225L17.275 20.25ZM6 9H18V7H6V9ZM18 23C16.6167 23 15.4375 22.5125 14.4625 21.5375C13.4875 20.5625 13 19.3833 13 18C13 16.6167 13.4875 15.4375 14.4625 14.4625C15.4375 13.4875 16.6167 13 18 13C19.3833 13 20.5625 13.4875 21.5375 14.4625C22.5125 15.4375 23 16.6167 23 18C23 19.3833 22.5125 20.5625 21.5375 21.5375C20.5625 22.5125 19.3833 23 18 23ZM3 22V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V11.675C20.6833 11.525 20.3583 11.4 20.025 11.3C19.6917 11.2 19.35 11.125 19 11.075V5H5V19.05H11.075C11.1583 19.5667 11.2875 20.0583 11.4625 20.525C11.6375 20.9917 11.8667 21.4333 12.15 21.85L12 22L10.5 20.5L9 22L7.5 20.5L6 22L4.5 20.5L3 22ZM6 17H11.075C11.125 16.65 11.2 16.3083 11.3 15.975C11.4 15.6417 11.525 15.3167 11.675 15H6V17ZM6 13H13.1C13.7333 12.3833 14.4708 11.8958 15.3125 11.5375C16.1542 11.1792 17.05 11 18 11H6V13Z", "fill", "#211B3A"]], template: function IasSidebarComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
         \u0275\u0275listener("click", function IasSidebarComponent_Template_div_click_2_listener() {
@@ -263,32 +264,44 @@ var IasSidebarComponent = class _IasSidebarComponent {
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(59, "li", 37);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(60, "svg", 17)(61, "g", 38);
-        \u0275\u0275element(62, "path", 39);
+        \u0275\u0275elementStart(60, "svg", 17)(61, "mask", 38);
+        \u0275\u0275element(62, "rect", 39);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(63, "defs")(64, "clipPath", 40);
-        \u0275\u0275element(65, "rect", 41);
+        \u0275\u0275elementStart(63, "g", 40);
+        \u0275\u0275element(64, "path", 41);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(65, "h1", 14);
+        \u0275\u0275text(66, "Minutes of Meeting");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(67, "li", 42);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(68, "svg", 17)(69, "g", 43);
+        \u0275\u0275element(70, "path", 44);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(71, "defs")(72, "clipPath", 45);
+        \u0275\u0275element(73, "rect", 46);
         \u0275\u0275elementEnd()()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(66, "h1", 14);
-        \u0275\u0275text(67, "Feedbacks");
+        \u0275\u0275elementStart(74, "h1", 14);
+        \u0275\u0275text(75, "Feedbacks");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(68, "li", 42);
+        \u0275\u0275elementStart(76, "li", 47);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(69, "svg", 17)(70, "mask", 43);
-        \u0275\u0275element(71, "rect", 44);
+        \u0275\u0275elementStart(77, "svg", 17)(78, "mask", 48);
+        \u0275\u0275element(79, "rect", 39);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(72, "g", 45);
-        \u0275\u0275element(73, "path", 46);
+        \u0275\u0275elementStart(80, "g", 49);
+        \u0275\u0275element(81, "path", 50);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(74, "h1", 14);
-        \u0275\u0275text(75, "Transactions");
+        \u0275\u0275elementStart(82, "h1", 14);
+        \u0275\u0275text(83, "Transactions");
         \u0275\u0275elementEnd()()()()()();
       }
       if (rf & 2) {
         \u0275\u0275advance(11);
-        \u0275\u0275property("routerLink", "/home")("routerLinkActiveOptions", \u0275\u0275pureFunction0(15, _c0));
+        \u0275\u0275property("routerLink", "/home")("routerLinkActiveOptions", \u0275\u0275pureFunction0(16, _c0));
         \u0275\u0275advance(8);
         \u0275\u0275classProp("active", ctx.isUserManagementOpen);
         \u0275\u0275advance(10);
@@ -296,19 +309,21 @@ var IasSidebarComponent = class _IasSidebarComponent {
         \u0275\u0275advance(2);
         \u0275\u0275classProp("open", ctx.isUserManagementOpen);
         \u0275\u0275advance();
-        \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(16, _c0));
-        \u0275\u0275advance(3);
         \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(17, _c0));
         \u0275\u0275advance(3);
         \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(18, _c0));
         \u0275\u0275advance(3);
         \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(19, _c0));
-        \u0275\u0275advance(9);
+        \u0275\u0275advance(3);
         \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(20, _c0));
         \u0275\u0275advance(9);
         \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c0));
         \u0275\u0275advance(9);
         \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c0));
+        \u0275\u0275advance(8);
+        \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(23, _c0));
+        \u0275\u0275advance(9);
+        \u0275\u0275property("routerLinkActiveOptions", \u0275\u0275pureFunction0(24, _c0));
       }
     }, dependencies: [RouterLink, RouterLinkActive, RouterModule, CommonModule], styles: ['\n\n.main-side-bar-component[_ngcontent-%COMP%] {\n  background: var(--White, #FFF);\n  padding: 15px 16px;\n  height: 100vh;\n  min-width: 300px;\n}\n.left-logo-div[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.navigation-text[_ngcontent-%COMP%] {\n  color: var(--Gray-700, #414651);\n  font-family: "Noto Sans";\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 24px;\n  margin-bottom: 0px;\n  transition: all 0.3s ease-in-out;\n}\n.name-text[_ngcontent-%COMP%] {\n  color: var(--Gray-900, #181D27);\n  font-family: Inter;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 20px;\n  margin: 0px;\n}\n.uan-number[_ngcontent-%COMP%] {\n  color: var(--Gray-600, #535862);\n  font-family: Inter;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 20px;\n  margin: 0px;\n}\n.epfo-text[_ngcontent-%COMP%] {\n  color: #000;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 22.393px;\n  margin: 0px;\n}\n.nav-option[_ngcontent-%COMP%] {\n  padding: 8px 12px;\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.nav-option[_ngcontent-%COMP%]:hover {\n  border-radius: 4px;\n  background:\n    linear-gradient(\n      130deg,\n      rgba(73, 47, 178, 0.12) -1.74%,\n      rgba(73, 47, 178, 0.07) 125.81%);\n}\n.nav-option[_ngcontent-%COMP%]:hover   .navigation-text[_ngcontent-%COMP%] {\n  background: var(--1, linear-gradient(130deg, #492FB2 -1.74%, rgba(73, 47, 178, 0.61) 125.81%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  font-weight: 600;\n}\n.nav-option[_ngcontent-%COMP%]:hover   .nav-svg[_ngcontent-%COMP%]   path[_ngcontent-%COMP%] {\n  fill: #492FB2;\n}\n.nav-option[_ngcontent-%COMP%]:hover   .dash[_ngcontent-%COMP%]   path[_ngcontent-%COMP%] {\n  stroke: #492FB2;\n}\n.active[_ngcontent-%COMP%] {\n  border-radius: 4px;\n  background:\n    linear-gradient(\n      130deg,\n      rgba(73, 47, 178, 0.12) -1.74%,\n      rgba(73, 47, 178, 0.07) 125.81%);\n}\n.active[_ngcontent-%COMP%]   .navigation-text[_ngcontent-%COMP%] {\n  background: var(--1, linear-gradient(130deg, #492FB2 -1.74%, rgba(73, 47, 178, 0.61) 125.81%));\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  font-weight: 600;\n}\n.active[_ngcontent-%COMP%]   .nav-svg[_ngcontent-%COMP%]   path[_ngcontent-%COMP%] {\n  fill: #492FB2;\n}\n.active[_ngcontent-%COMP%]   .dash[_ngcontent-%COMP%]   path[_ngcontent-%COMP%] {\n  stroke: #492FB2;\n}\n.arrow[_ngcontent-%COMP%] {\n  transition: transform 0.3s ease;\n  cursor: pointer;\n}\n.arrow.open[_ngcontent-%COMP%] {\n  transform: rotate(180deg);\n}\n.submenu[_ngcontent-%COMP%] {\n  max-height: 0;\n  overflow: hidden;\n  transition: max-height 0.3s ease, opacity 0.3s ease;\n  opacity: 0;\n  padding-left: 1rem;\n}\n.submenu.open[_ngcontent-%COMP%] {\n  max-height: 500px;\n  opacity: 1;\n}\n/*# sourceMappingURL=ias-sidebar.component.css.map */'] });
   }
@@ -12086,4 +12101,4 @@ var DashboardLayoutComponent = class _DashboardLayoutComponent {
 export {
   DashboardLayoutComponent
 };
-//# sourceMappingURL=chunk-MT4ZPBGP.js.map
+//# sourceMappingURL=chunk-AT3JRNKD.mjs.map
