@@ -1,20 +1,21 @@
+import './polyfills.server.mjs';
 import {
   ActivatedRoute,
   RouterLink
-} from "./chunk-SNZVCUF6.js";
+} from "./chunk-IHV4JKV6.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient,
   HttpClientModule
-} from "./chunk-BK4FBNP4.js";
+} from "./chunk-PY5YUHCX.mjs";
 import {
   CommonModule,
   DatePipe,
   NgForOf,
   NgIf
-} from "./chunk-OG7DO3XM.js";
+} from "./chunk-YQCUS5I7.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -37,8 +38,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-PY442ZFB.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-QKHTRG4V.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/website/pages/resources/readmore-news/readmore-news.component.ts
 function ReadmoreNewsComponent_div_21_div_6_Template(rf, ctx) {
@@ -187,7 +188,7 @@ var ReadmoreNewsComponent = class _ReadmoreNewsComponent {
         \u0275\u0275text(13, "News reader");
         \u0275\u0275elementEnd()()();
         \u0275\u0275elementStart(14, "h1");
-        \u0275\u0275text(15, "Latest News & Blogs");
+        \u0275\u0275text(15, "Latest News");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(16, "p");
         \u0275\u0275text(17, "Get the latest updates from IAS associations and official sources.");
@@ -212,4 +213,4 @@ var ReadmoreNewsComponent = class _ReadmoreNewsComponent {
 export {
   ReadmoreNewsComponent
 };
-//# sourceMappingURL=chunk-6USXPWEE.js.map
+//# sourceMappingURL=chunk-MGTBSL4J.mjs.map

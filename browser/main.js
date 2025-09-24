@@ -2620,7 +2620,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-UEGVGP3C.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-TUXL4IKW.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2674,7 +2674,7 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6USXPWEE.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-SWI7KTEF.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",

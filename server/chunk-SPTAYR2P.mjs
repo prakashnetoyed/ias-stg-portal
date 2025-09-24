@@ -113,7 +113,7 @@ var HeroSectionComponent = class _HeroSectionComponent {
         \u0275\u0275text(8, ".");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(9, "p");
-        \u0275\u0275text(10, "he Indian Administrative Service Central Association is dedicated to strengthening governance, empowering communities, and fostering trust between citizens and public institutions.");
+        \u0275\u0275text(10, "The Indian Administrative Service Central Association is dedicated to strengthening governance, empowering communities, and fostering trust between citizens and public institutions.");
         \u0275\u0275elementEnd();
         \u0275\u0275template(11, HeroSectionComponent_button_11_Template, 2, 1, "button", 3);
         \u0275\u0275elementEnd();
@@ -1343,4 +1343,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-LOSGOS2O.mjs.map
+//# sourceMappingURL=chunk-SPTAYR2P.mjs.map
