@@ -2732,7 +2732,7 @@ var routes = [
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-4XYILQ6C.mjs").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-5N4I3AQI.mjs").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2752,7 +2752,7 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-X2XPB4Y7.mjs").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-HPEJE46T.mjs").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
@@ -3192,4 +3192,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-66THJTK2.mjs.map
+//# sourceMappingURL=chunk-SF25IODH.mjs.map

@@ -2654,7 +2654,7 @@ var routes = [
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-3EDSHW3Z.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-HH2UD4B3.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2674,7 +2674,7 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-V74ICZSO.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-6USXPWEE.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",

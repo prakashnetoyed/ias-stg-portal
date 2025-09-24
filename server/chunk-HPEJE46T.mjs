@@ -200,7 +200,7 @@ var ReadmoreNewsComponent = class _ReadmoreNewsComponent {
       if (rf & 2) {
         const loadingTpl_r3 = \u0275\u0275reference(23);
         \u0275\u0275advance(10);
-        \u0275\u0275property("routerLink", "/news-blogs");
+        \u0275\u0275property("routerLink", "/homepage/news-blogs");
         \u0275\u0275advance(11);
         \u0275\u0275property("ngIf", !ctx.loading)("ngIfElse", loadingTpl_r3);
       }
@@ -213,4 +213,4 @@ var ReadmoreNewsComponent = class _ReadmoreNewsComponent {
 export {
   ReadmoreNewsComponent
 };
-//# sourceMappingURL=chunk-X2XPB4Y7.mjs.map
+//# sourceMappingURL=chunk-HPEJE46T.mjs.map
