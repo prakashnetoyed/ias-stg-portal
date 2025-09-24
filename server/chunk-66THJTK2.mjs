@@ -2708,12 +2708,12 @@ var routes = [
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-2HSBILRL.mjs").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-WEZJV4LQ.mjs").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-FAYQAKXI.mjs").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-ZXZ7LDKC.mjs").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
@@ -2727,12 +2727,12 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-ZHS4OY6W.mjs").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-PPLKO7P4.mjs").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-25GRO6TZ.mjs").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-4XYILQ6C.mjs").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2752,7 +2752,7 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-DITVTCL2.mjs").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-X2XPB4Y7.mjs").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
@@ -2762,7 +2762,7 @@ var routes = [
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-5FEC5NWR.mjs").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-3K2HGQRG.mjs").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -3192,4 +3192,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-CTBRNWAB.mjs.map
+//# sourceMappingURL=chunk-66THJTK2.mjs.map

@@ -1,20 +1,21 @@
+import './polyfills.server.mjs';
 import {
   RouterLink,
   RouterModule
-} from "./chunk-SNZVCUF6.js";
+} from "./chunk-IHV4JKV6.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient,
   HttpClientModule
-} from "./chunk-BK4FBNP4.js";
+} from "./chunk-PY5YUHCX.mjs";
 import {
   CommonModule,
   DatePipe,
   NgForOf,
   NgIf
-} from "./chunk-OG7DO3XM.js";
+} from "./chunk-YQCUS5I7.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -36,8 +37,8 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate1
-} from "./chunk-PY442ZFB.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-QKHTRG4V.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/website/pages/resources/news-blogs/news-blogs.component.ts
 var _c0 = () => ["readmorenews"];
@@ -223,7 +224,7 @@ var NewsBlogsComponent = class _NewsBlogsComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _NewsBlogsComponent, selectors: [["app-news-blogs"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 20, vars: 2, consts: [[1, "main-allmembers-section"], [1, "main-gradient"], [1, "container"], [1, "heading-div"], ["aria-label", "breadcrumb"], [1, "breadcrumb", "d-flex", "align-items-center"], [1, "breadcrumb-item", "m-0"], ["href", "/"], ["aria-current", "page", 1, "breadcrumb-item", "active", "m-0"], [1, "coming-soon-di"], [1, "container", "my-5"], ["class", "row margin-bottom-card", 4, "ngIf"], ["class", " mt-4", 4, "ngIf"], [1, "row", "margin-bottom-card"], [1, "col-md-7", "div-color", "left-div"], [1, "news-heading", "common-text-style"], [1, "news-second-heading", "common-text-style"], [1, "truncate", "news-heading", "mb-4"], [1, "truncate-link", "news-link"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "me-1"], ["d", "M11 17H7C5.61667 17 4.4375 16.5125 3.4625 15.5375C2.4875 14.5625 2 13.3833 2 12C2 10.6167 2.4875 9.4375 3.4625 8.4625C4.4375 7.4875 5.61667 7 7 7H11V9H7C6.16667 9 5.45833 9.29167 4.875 9.875C4.29167 10.4583 4 11.1667 4 12C4 12.8333 4.29167 13.5417 4.875 14.125C5.45833 14.7083 6.16667 15 7 15H11V17ZM8 13V11H16V13H8ZM13 17V15H17C17.8333 15 18.5417 14.7083 19.125 14.125C19.7083 13.5417 20 12.8333 20 12C20 11.1667 19.7083 10.4583 19.125 9.875C18.5417 9.29167 17.8333 9 17 9H13V7H17C18.3833 7 19.5625 7.4875 20.5375 8.4625C21.5125 9.4375 22 10.6167 22 12C22 13.3833 21.5125 14.5625 20.5375 15.5375C19.5625 16.5125 18.3833 17 17 17H13Z", "fill", "white"], [1, "read-more-btn", "mt-5", "mb-2", 3, "routerLink", "queryParams"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "12", "viewBox", "0 0 12 12"], ["d", "M6 0L4.9425 1.0575L9.1275 5.25H0V6.75H9.1275L4.9425 10.9425L6 12L12 6L6 0Z"], [1, "col-md-5"], [1, "news-video"], ["alt", "News Banner", "class", "w-100", 3, "src", 4, "ngIf"], ["class", "bg-image", 4, "ngIf"], ["alt", "News Banner", 1, "w-100", 3, "src"], [1, "bg-image"], [1, "svg-overlay"], ["xmlns", "http://www.w3.org/2000/svg", "width", "84", "height", "84", "viewBox", "0 0 84 84", "fill", "none"], ["d", "M33.25 57.75L57.75 42L33.25 26.25V57.75ZM42 77C37.1583 77 32.6083 76.0812 28.35 74.2438C24.0917 72.4062 20.3875 69.9125 17.2375 66.7625C14.0875 63.6125 11.5938 59.9083 9.75625 55.65C7.91875 51.3917 7 46.8417 7 42C7 37.1583 7.91875 32.6083 9.75625 28.35C11.5938 24.0917 14.0875 20.3875 17.2375 17.2375C20.3875 14.0875 24.0917 11.5938 28.35 9.75625C32.6083 7.91875 37.1583 7 42 7C46.8417 7 51.3917 7.91875 55.65 9.75625C59.9083 11.5938 63.6125 14.0875 66.7625 17.2375C69.9125 20.3875 72.4062 24.0917 74.2438 28.35C76.0812 32.6083 77 37.1583 77 42C77 46.8417 76.0812 51.3917 74.2438 55.65C72.4062 59.9083 69.9125 63.6125 66.7625 66.7625C63.6125 69.9125 59.9085 72.4062 55.65 74.2438C51.3917 76.0812 46.8417 77 42 77Z", "fill", "white"], [1, "mt-4"], [1, "row", "g-2"], ["class", "col-12 col-md-4", 4, "ngFor", "ngForOf"], [1, "col-12", "col-md-4"], [1, "card", "news-card", "h-100"], ["alt", "News Image", 1, "card-img-top", 3, "src"], [1, "card-body", "d-flex", "flex-column", "justify-content-between"], [1, "published-date", "common-text-style"], [1, "card-title", "common-text-style"], [1, "truncate", "common-text-style"], [1, "d-flex", "justify-content-between", "align-items-center", "card-top-margin"], ["target", "_blank", 1, "link", "flex-grow-1", "me-2", "text-truncate", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none"], ["id", "mask0_51271_503", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_51271_503)"], [1, "btn", "btn-outline-light", "btn-sm", "card-read-more", 3, "routerLink", "queryParams"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "12", "viewBox", "0 0 12 12", "fill", "none"], ["d", "M6 0L4.9425 1.0575L9.1275 5.25H0V6.75H9.1275L4.9425 10.9425L6 12L12 6L6 0Z", "fill", "white"]], template: function NewsBlogsComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _NewsBlogsComponent, selectors: [["app-news-blogs"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 20, vars: 2, consts: [[1, "main-allmembers-section"], [1, "main-gradient"], [1, "container"], [1, "heading-div"], ["aria-label", "breadcrumb"], [1, "breadcrumb", "d-flex", "align-items-center"], [1, "breadcrumb-item", "m-0"], ["href", "/homepage"], ["aria-current", "page", 1, "breadcrumb-item", "active", "m-0"], [1, "coming-soon-di"], [1, "container", "my-5"], ["class", "row margin-bottom-card", 4, "ngIf"], ["class", " mt-4", 4, "ngIf"], [1, "row", "margin-bottom-card"], [1, "col-md-7", "div-color", "left-div"], [1, "news-heading", "common-text-style"], [1, "news-second-heading", "common-text-style"], [1, "truncate", "news-heading", "mb-4"], [1, "truncate-link", "news-link"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "me-1"], ["d", "M11 17H7C5.61667 17 4.4375 16.5125 3.4625 15.5375C2.4875 14.5625 2 13.3833 2 12C2 10.6167 2.4875 9.4375 3.4625 8.4625C4.4375 7.4875 5.61667 7 7 7H11V9H7C6.16667 9 5.45833 9.29167 4.875 9.875C4.29167 10.4583 4 11.1667 4 12C4 12.8333 4.29167 13.5417 4.875 14.125C5.45833 14.7083 6.16667 15 7 15H11V17ZM8 13V11H16V13H8ZM13 17V15H17C17.8333 15 18.5417 14.7083 19.125 14.125C19.7083 13.5417 20 12.8333 20 12C20 11.1667 19.7083 10.4583 19.125 9.875C18.5417 9.29167 17.8333 9 17 9H13V7H17C18.3833 7 19.5625 7.4875 20.5375 8.4625C21.5125 9.4375 22 10.6167 22 12C22 13.3833 21.5125 14.5625 20.5375 15.5375C19.5625 16.5125 18.3833 17 17 17H13Z", "fill", "white"], [1, "read-more-btn", "mt-5", "mb-2", 3, "routerLink", "queryParams"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "12", "viewBox", "0 0 12 12"], ["d", "M6 0L4.9425 1.0575L9.1275 5.25H0V6.75H9.1275L4.9425 10.9425L6 12L12 6L6 0Z"], [1, "col-md-5"], [1, "news-video"], ["alt", "News Banner", "class", "w-100", 3, "src", 4, "ngIf"], ["class", "bg-image", 4, "ngIf"], ["alt", "News Banner", 1, "w-100", 3, "src"], [1, "bg-image"], [1, "svg-overlay"], ["xmlns", "http://www.w3.org/2000/svg", "width", "84", "height", "84", "viewBox", "0 0 84 84", "fill", "none"], ["d", "M33.25 57.75L57.75 42L33.25 26.25V57.75ZM42 77C37.1583 77 32.6083 76.0812 28.35 74.2438C24.0917 72.4062 20.3875 69.9125 17.2375 66.7625C14.0875 63.6125 11.5938 59.9083 9.75625 55.65C7.91875 51.3917 7 46.8417 7 42C7 37.1583 7.91875 32.6083 9.75625 28.35C11.5938 24.0917 14.0875 20.3875 17.2375 17.2375C20.3875 14.0875 24.0917 11.5938 28.35 9.75625C32.6083 7.91875 37.1583 7 42 7C46.8417 7 51.3917 7.91875 55.65 9.75625C59.9083 11.5938 63.6125 14.0875 66.7625 17.2375C69.9125 20.3875 72.4062 24.0917 74.2438 28.35C76.0812 32.6083 77 37.1583 77 42C77 46.8417 76.0812 51.3917 74.2438 55.65C72.4062 59.9083 69.9125 63.6125 66.7625 66.7625C63.6125 69.9125 59.9085 72.4062 55.65 74.2438C51.3917 76.0812 46.8417 77 42 77Z", "fill", "white"], [1, "mt-4"], [1, "row", "g-2"], ["class", "col-12 col-md-4", 4, "ngFor", "ngForOf"], [1, "col-12", "col-md-4"], [1, "card", "news-card", "h-100"], ["alt", "News Image", 1, "card-img-top", 3, "src"], [1, "card-body", "d-flex", "flex-column", "justify-content-between"], [1, "published-date", "common-text-style"], [1, "card-title", "common-text-style"], [1, "truncate", "common-text-style"], [1, "d-flex", "justify-content-between", "align-items-center", "card-top-margin"], ["target", "_blank", 1, "link", "flex-grow-1", "me-2", "text-truncate", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none"], ["id", "mask0_51271_503", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_51271_503)"], [1, "btn", "btn-outline-light", "btn-sm", "card-read-more", 3, "routerLink", "queryParams"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "12", "viewBox", "0 0 12 12", "fill", "none"], ["d", "M6 0L4.9425 1.0575L9.1275 5.25H0V6.75H9.1275L4.9425 10.9425L6 12L12 6L6 0Z", "fill", "white"]], template: function NewsBlogsComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "nav", 4)(5, "ol", 5)(6, "li", 6)(7, "a", 7);
         \u0275\u0275text(8, "Home");
@@ -256,4 +257,4 @@ var NewsBlogsComponent = class _NewsBlogsComponent {
 export {
   NewsBlogsComponent
 };
-//# sourceMappingURL=chunk-JMJI5TMP.js.map
+//# sourceMappingURL=chunk-4XYILQ6C.mjs.map

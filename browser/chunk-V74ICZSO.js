@@ -1,21 +1,20 @@
-import './polyfills.server.mjs';
 import {
   ActivatedRoute,
   RouterLink
-} from "./chunk-IHV4JKV6.mjs";
+} from "./chunk-SNZVCUF6.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient,
   HttpClientModule
-} from "./chunk-PY5YUHCX.mjs";
+} from "./chunk-BK4FBNP4.js";
 import {
   CommonModule,
   DatePipe,
   NgForOf,
   NgIf
-} from "./chunk-YQCUS5I7.mjs";
+} from "./chunk-OG7DO3XM.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -38,11 +37,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-QKHTRG4V.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-PY442ZFB.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/website/pages/resources/readmore-news/readmore-news.component.ts
-function ReadmoreNewsComponent_div_24_div_6_Template(rf, ctx) {
+function ReadmoreNewsComponent_div_21_div_6_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 22)(1, "p", 23);
     \u0275\u0275text(2);
@@ -62,7 +61,7 @@ function ReadmoreNewsComponent_div_24_div_6_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" Published On ", \u0275\u0275pipeBind2(5, 2, blog_r1.createdAt, "dd MMM, yyyy"), " ");
   }
 }
-function ReadmoreNewsComponent_div_24_main_7_a_7_Template(rf, ctx) {
+function ReadmoreNewsComponent_div_21_main_7_a_7_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "a", 32);
     \u0275\u0275namespaceSVG();
@@ -82,7 +81,7 @@ function ReadmoreNewsComponent_div_24_main_7_a_7_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", ctx_r1.mainBlog.newsLink, " ");
   }
 }
-function ReadmoreNewsComponent_div_24_main_7_Template(rf, ctx) {
+function ReadmoreNewsComponent_div_21_main_7_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "main", 26);
     \u0275\u0275element(1, "img", 27);
@@ -93,7 +92,7 @@ function ReadmoreNewsComponent_div_24_main_7_Template(rf, ctx) {
     \u0275\u0275elementStart(5, "h2", 29);
     \u0275\u0275text(6);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(7, ReadmoreNewsComponent_div_24_main_7_a_7_Template, 7, 2, "a", 30);
+    \u0275\u0275template(7, ReadmoreNewsComponent_div_21_main_7_a_7_Template, 7, 2, "a", 30);
     \u0275\u0275element(8, "p", 31);
     \u0275\u0275elementEnd();
   }
@@ -111,16 +110,16 @@ function ReadmoreNewsComponent_div_24_main_7_Template(rf, ctx) {
     \u0275\u0275property("innerHTML", ctx_r1.mainBlog.description || ctx_r1.mainBlog.content, \u0275\u0275sanitizeHtml);
   }
 }
-function ReadmoreNewsComponent_div_24_Template(rf, ctx) {
+function ReadmoreNewsComponent_div_21_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 15)(1, "aside", 16)(2, "div", 17)(3, "h5", 18);
     \u0275\u0275text(4, "Latest News");
     \u0275\u0275elementEnd();
     \u0275\u0275element(5, "div", 19);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(6, ReadmoreNewsComponent_div_24_div_6_Template, 7, 5, "div", 20);
+    \u0275\u0275template(6, ReadmoreNewsComponent_div_21_div_6_Template, 7, 5, "div", 20);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(7, ReadmoreNewsComponent_div_24_main_7_Template, 9, 8, "main", 21);
+    \u0275\u0275template(7, ReadmoreNewsComponent_div_21_main_7_Template, 9, 8, "main", 21);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -131,7 +130,7 @@ function ReadmoreNewsComponent_div_24_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ctx_r1.mainBlog);
   }
 }
-function ReadmoreNewsComponent_ng_template_25_Template(rf, ctx) {
+function ReadmoreNewsComponent_ng_template_22_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 38);
     \u0275\u0275text(1, "Loading news...");
@@ -176,33 +175,30 @@ var ReadmoreNewsComponent = class _ReadmoreNewsComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ReadmoreNewsComponent, selectors: [["app-readmore-news"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 27, vars: 3, consts: [["loadingTpl", ""], [1, "main-allmembers-section"], [1, "main-gradient"], [1, "container"], [1, "heading-div"], ["aria-label", "breadcrumb"], [1, "breadcrumb", "d-flex", "align-items-center"], [1, "breadcrumb-item", "m-0"], ["href", "/"], [3, "routerLink"], ["aria-current", "page", 1, "breadcrumb-item", "active", "m-0"], [1, "coming-soon-di"], [1, "container", "common-text-style"], [1, "py-4"], ["class", "row", 4, "ngIf", "ngIfElse"], [1, "row"], [1, "col-12", "col-lg-3", "order-1", "order-lg-2", "mb-4", "mb-lg-0"], [1, "d-flex", "align-items-center", "mb-3", "latest-news-header"], [1, "mb-0", "me-3", "read-more-heading"], [1, "latest-news-line", "flex-grow-1"], ["class", "mb-5", 4, "ngFor", "ngForOf"], ["class", "col-12 col-lg-9 order-2 order-lg-1", 4, "ngIf"], [1, "mb-5"], [1, "fw-medium", "font-size"], [1, "published-date", "common-text-style"], [1, "mt-4"], [1, "col-12", "col-lg-9", "order-2", "order-lg-1"], ["alt", "blog image", 1, "img-fluid", "rounded", "mb-3", "blog-img", 3, "src"], [1, "mb-1", "published-date", "card-text-news"], [1, "fw-bold", "mb-3", "heading-content", "mt-3"], ["target", "_blank", "class", "text-decoration-underline news-link truncate mb-5 link:hover", 3, "href", 4, "ngIf"], [1, "main-text-content", 3, "innerHTML"], ["target", "_blank", 1, "text-decoration-underline", "news-link", "truncate", "mb-5", "link:hover", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "me-1"], ["id", "mask0", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0)"], ["d", "M11 17H7C5.61667 17 4.4375 16.5125 3.4625 15.5375C2.4875 14.5625 2 13.3833 2 12C2 10.6167 2.4875 9.4375 3.4625 8.4625C4.4375 7.4875 5.61667 7 7 7H11V9H7C6.16667 9 5.45833 9.29167 4.875 9.875C4.29167 10.4583 4 11.1667 4 12C4 12.8333 4.29167 13.5417 4.875 14.125C5.45833 14.7083 6.16667 15 7 15H11V17ZM8 13V11H16V13H8ZM13 17V15H17C17.8333 15 18.5417 14.7083 19.125 14.125C19.7083 13.5417 20 12.8333 20 12C20 11.1667 19.7083 10.4583 19.125 9.875C18.5417 9.29167 17.8333 9 17 9H13V7H17C18.3833 7 19.5625 7.4875 20.5375 8.4625C21.5125 9.4375 22 10.6167 22 12C22 13.3833 21.5125 14.5625 20.5375 15.5375C19.5625 16.5125 18.3833 17 17 17H13Z", "fill", "white"], [1, "text-center", "py-5"]], template: function ReadmoreNewsComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ReadmoreNewsComponent, selectors: [["app-readmore-news"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 24, vars: 3, consts: [["loadingTpl", ""], [1, "main-allmembers-section"], [1, "main-gradient"], [1, "container"], [1, "heading-div"], ["aria-label", "breadcrumb"], [1, "breadcrumb", "d-flex", "align-items-center"], [1, "breadcrumb-item", "m-0"], ["href", "/homepage"], [3, "routerLink"], ["aria-current", "page", 1, "breadcrumb-item", "active", "m-0"], [1, "coming-soon-di"], [1, "container", "common-text-style"], [1, "py-4"], ["class", "row", 4, "ngIf", "ngIfElse"], [1, "row"], [1, "col-12", "col-lg-3", "order-1", "order-lg-2", "mb-4", "mb-lg-0"], [1, "d-flex", "align-items-center", "mb-3", "latest-news-header"], [1, "mb-0", "me-3", "read-more-heading"], [1, "latest-news-line", "flex-grow-1"], ["class", "mb-5", 4, "ngFor", "ngForOf"], ["class", "col-12 col-lg-9 order-2 order-lg-1", 4, "ngIf"], [1, "mb-5"], [1, "fw-medium", "font-size"], [1, "published-date", "common-text-style"], [1, "mt-4"], [1, "col-12", "col-lg-9", "order-2", "order-lg-1"], ["alt", "blog image", 1, "img-fluid", "rounded", "mb-3", "blog-img", 3, "src"], [1, "mb-1", "published-date", "card-text-news"], [1, "fw-bold", "mb-3", "heading-content", "mt-3"], ["target", "_blank", "class", "text-decoration-underline news-link truncate mb-5 link:hover", 3, "href", 4, "ngIf"], [1, "main-text-content", 3, "innerHTML"], ["target", "_blank", 1, "text-decoration-underline", "news-link", "truncate", "mb-5", "link:hover", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none", 1, "me-1"], ["id", "mask0", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0)"], ["d", "M11 17H7C5.61667 17 4.4375 16.5125 3.4625 15.5375C2.4875 14.5625 2 13.3833 2 12C2 10.6167 2.4875 9.4375 3.4625 8.4625C4.4375 7.4875 5.61667 7 7 7H11V9H7C6.16667 9 5.45833 9.29167 4.875 9.875C4.29167 10.4583 4 11.1667 4 12C4 12.8333 4.29167 13.5417 4.875 14.125C5.45833 14.7083 6.16667 15 7 15H11V17ZM8 13V11H16V13H8ZM13 17V15H17C17.8333 15 18.5417 14.7083 19.125 14.125C19.7083 13.5417 20 12.8333 20 12C20 11.1667 19.7083 10.4583 19.125 9.875C18.5417 9.29167 17.8333 9 17 9H13V7H17C18.3833 7 19.5625 7.4875 20.5375 8.4625C21.5125 9.4375 22 10.6167 22 12C22 13.3833 21.5125 14.5625 20.5375 15.5375C19.5625 16.5125 18.3833 17 17 17H13Z", "fill", "white"], [1, "text-center", "py-5"]], template: function ReadmoreNewsComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 1)(1, "div", 2)(2, "div", 3)(3, "div", 4)(4, "nav", 5)(5, "ol", 6)(6, "li", 7)(7, "a", 8);
         \u0275\u0275text(8, "Home");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(9, "li", 7)(10, "a", 8);
-        \u0275\u0275text(11, "Resources");
+        \u0275\u0275elementStart(9, "li", 7)(10, "a", 9);
+        \u0275\u0275text(11, "News");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(12, "li", 7)(13, "a", 9);
-        \u0275\u0275text(14, "News & Blogs");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(15, "li", 10);
-        \u0275\u0275text(16, "News reader");
+        \u0275\u0275elementStart(12, "li", 10);
+        \u0275\u0275text(13, "News reader");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(17, "h1");
-        \u0275\u0275text(18, "Latest News & Blogs");
+        \u0275\u0275elementStart(14, "h1");
+        \u0275\u0275text(15, "Latest News & Blogs");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(19, "p");
-        \u0275\u0275text(20, "Get the latest updates from IAS associations and official sources.");
+        \u0275\u0275elementStart(16, "p");
+        \u0275\u0275text(17, "Get the latest updates from IAS associations and official sources.");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(21, "div", 11)(22, "div", 12)(23, "div", 13);
-        \u0275\u0275template(24, ReadmoreNewsComponent_div_24_Template, 8, 2, "div", 14)(25, ReadmoreNewsComponent_ng_template_25_Template, 2, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+        \u0275\u0275elementStart(18, "div", 11)(19, "div", 12)(20, "div", 13);
+        \u0275\u0275template(21, ReadmoreNewsComponent_div_21_Template, 8, 2, "div", 14)(22, ReadmoreNewsComponent_ng_template_22_Template, 2, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
         \u0275\u0275elementEnd()()()();
       }
       if (rf & 2) {
-        const loadingTpl_r3 = \u0275\u0275reference(26);
-        \u0275\u0275advance(13);
+        const loadingTpl_r3 = \u0275\u0275reference(23);
+        \u0275\u0275advance(10);
         \u0275\u0275property("routerLink", "/news-blogs");
         \u0275\u0275advance(11);
         \u0275\u0275property("ngIf", !ctx.loading)("ngIfElse", loadingTpl_r3);
@@ -216,4 +212,4 @@ var ReadmoreNewsComponent = class _ReadmoreNewsComponent {
 export {
   ReadmoreNewsComponent
 };
-//# sourceMappingURL=chunk-DITVTCL2.mjs.map
+//# sourceMappingURL=chunk-V74ICZSO.js.map

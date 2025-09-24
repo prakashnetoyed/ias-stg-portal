@@ -2630,12 +2630,12 @@ var routes = [
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-DMOMZZMQ.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-JSKPSFIL.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7IKYICNF.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-OYZZYRLD.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
@@ -2649,12 +2649,12 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-2CT3F6LL.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-FHJVDS7N.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-JMJI5TMP.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-3EDSHW3Z.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2674,7 +2674,7 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-CJV3KOAE.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-V74ICZSO.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
@@ -2684,7 +2684,7 @@ var routes = [
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SCPJYMOK.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-VVDFMHHO.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
