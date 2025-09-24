@@ -1199,7 +1199,7 @@ function IasForgotpasswordComponent_div_11_Template(rf, ctx) {
   }
   if (rf & 2) {
     \u0275\u0275advance(10);
-    \u0275\u0275property("routerLink", "/login");
+    \u0275\u0275property("routerLink", "");
   }
 }
 var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
@@ -2136,7 +2136,7 @@ function IasSignupComponent_div_17_Template(rf, ctx) {
   }
   if (rf & 2) {
     \u0275\u0275advance(10);
-    \u0275\u0275property("routerLink", "/login");
+    \u0275\u0275property("routerLink", "/l");
   }
 }
 var IasSignupComponent = class _IasSignupComponent {
@@ -2582,7 +2582,7 @@ var authGuard = (route, state) => {
       return true;
     }
     localStorage.setItem("redirectUrl", state.url);
-    router.navigateByUrl("/login", { replaceUrl: true });
+    router.navigateByUrl("", { replaceUrl: true });
     return false;
   }
   return false;
@@ -2635,12 +2635,12 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-OYZZYRLD.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-CNHL72T7.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-BEOKGACP.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-E7Z65KRO.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2730,7 +2730,7 @@ var routes = [
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-UG3U7WNJ.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-Q7JJUP5D.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
@@ -2782,7 +2782,7 @@ var routes = [
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-C7FVKQQA.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-V47JEOHW.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
@@ -2848,19 +2848,19 @@ var authInterceptor = (req, next) => {
         return next(clonedReq);
       } else {
         localStorage.clear();
-        router.navigateByUrl("/login");
+        router.navigateByUrl("");
         return throwError(() => new Error("Refresh token failed"));
       }
     }), catchError(() => {
       localStorage.clear();
-      router.navigateByUrl("/login");
+      router.navigateByUrl("");
       return throwError(() => new Error("Refresh token failed"));
     }));
   }
   return next(req).pipe(catchError((error) => {
     if (error.status === 401) {
       localStorage.clear();
-      router.navigateByUrl("/login");
+      router.navigateByUrl("/logi");
     }
     return throwError(() => error);
   }));

@@ -1277,7 +1277,7 @@ function IasForgotpasswordComponent_div_11_Template(rf, ctx) {
   }
   if (rf & 2) {
     \u0275\u0275advance(10);
-    \u0275\u0275property("routerLink", "/login");
+    \u0275\u0275property("routerLink", "");
   }
 }
 var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
@@ -2214,7 +2214,7 @@ function IasSignupComponent_div_17_Template(rf, ctx) {
   }
   if (rf & 2) {
     \u0275\u0275advance(10);
-    \u0275\u0275property("routerLink", "/login");
+    \u0275\u0275property("routerLink", "/l");
   }
 }
 var IasSignupComponent = class _IasSignupComponent {
@@ -2660,7 +2660,7 @@ var authGuard = (route, state) => {
       return true;
     }
     localStorage.setItem("redirectUrl", state.url);
-    router.navigateByUrl("/login", { replaceUrl: true });
+    router.navigateByUrl("", { replaceUrl: true });
     return false;
   }
   return false;
@@ -2713,12 +2713,12 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-ZXZ7LDKC.mjs").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-V6XL2V6R.mjs").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-LK5JQQOX.mjs").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-N3ROP36S.mjs").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2808,7 +2808,7 @@ var routes = [
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-4ZKKVDTJ.mjs").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-O2AP33KR.mjs").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
@@ -2860,7 +2860,7 @@ var routes = [
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-BDLZQWY7.mjs").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-3TSPEMJC.mjs").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
@@ -2926,19 +2926,19 @@ var authInterceptor = (req, next) => {
         return next(clonedReq);
       } else {
         localStorage.clear();
-        router.navigateByUrl("/login");
+        router.navigateByUrl("");
         return throwError(() => new Error("Refresh token failed"));
       }
     }), catchError(() => {
       localStorage.clear();
-      router.navigateByUrl("/login");
+      router.navigateByUrl("");
       return throwError(() => new Error("Refresh token failed"));
     }));
   }
   return next(req).pipe(catchError((error) => {
     if (error.status === 401) {
       localStorage.clear();
-      router.navigateByUrl("/login");
+      router.navigateByUrl("/logi");
     }
     return throwError(() => error);
   }));
@@ -3192,4 +3192,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-SF25IODH.mjs.map
+//# sourceMappingURL=chunk-NX42WZO3.mjs.map

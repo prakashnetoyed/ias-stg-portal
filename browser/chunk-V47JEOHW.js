@@ -1,7 +1,6 @@
-import './polyfills.server.mjs';
 import {
   UserService
-} from "./chunk-GBEGW3CQ.mjs";
+} from "./chunk-355F23O5.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -12,18 +11,18 @@ import {
   ReactiveFormsModule,
   Validators,
   ɵNgNoValidate
-} from "./chunk-AXKU23Q2.mjs";
+} from "./chunk-O7KRW67G.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-PY5YUHCX.mjs";
+} from "./chunk-BK4FBNP4.js";
 import {
   CommonModule,
   NgIf
-} from "./chunk-YQCUS5I7.mjs";
+} from "./chunk-OG7DO3XM.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -47,8 +46,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-QKHTRG4V.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-PY442ZFB.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/user-portal/pages/user-profile/user-profile.component.ts
 var _c0 = ["successToast"];
@@ -362,7 +361,7 @@ var UserProfileComponent = class _UserProfileComponent {
         this.showSuccessToast();
         setTimeout(() => {
           localStorage.clear();
-          window.location.href = "/login";
+          window.location.href = "";
         }, 2e3);
       },
       error: (err) => {
@@ -420,4 +419,4 @@ var UserProfileComponent = class _UserProfileComponent {
 export {
   UserProfileComponent
 };
-//# sourceMappingURL=chunk-BDLZQWY7.mjs.map
+//# sourceMappingURL=chunk-V47JEOHW.js.map

@@ -1,28 +1,29 @@
+import './polyfills.server.mjs';
 import {
   TimeAgoPipe
-} from "./chunk-UIVVOATD.js";
+} from "./chunk-Z2EFOKLZ.mjs";
 import {
   AuthService
-} from "./chunk-KS6VKFHK.js";
+} from "./chunk-H545FIBJ.mjs";
 import {
   ActivatedRoute,
   RouterLink,
   RouterModule
-} from "./chunk-SNZVCUF6.js";
+} from "./chunk-IHV4JKV6.mjs";
 import {
   ToastService
-} from "./chunk-SHX5MJZM.js";
+} from "./chunk-TUOTYXST.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient
-} from "./chunk-BK4FBNP4.js";
+} from "./chunk-PY5YUHCX.mjs";
 import {
   CommonModule,
   NgForOf,
   NgIf
-} from "./chunk-OG7DO3XM.js";
+} from "./chunk-YQCUS5I7.mjs";
 import {
   inject,
   ɵsetClassDebugInfo,
@@ -52,8 +53,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-PY442ZFB.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-QKHTRG4V.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/website/pages/post/post.component.ts
 var _c0 = () => ["/community"];
@@ -266,7 +267,7 @@ var PostComponent = class _PostComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _PostComponent, selectors: [["app-post"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 21, vars: 4, consts: [[1, "singlepost-section"], [1, "container"], [1, "post-tabs-div", "mb-5"], [1, "cursor-pointer", "fs-5", "fw-bold", "text-white", 3, "routerLink"], [1, "fas", "fa-arrow-left"], [1, "featured-heade"], [1, "post-content-div", "d-flex", "align-items-start", "gap-5", "mt-4"], [1, "left-posts", "w-75"], [1, "allpost-div", "d-flex", "flex-column", "gap-5"], ["class", "post", 4, "ngIf"], ["class", "mb-2", 4, "ngIf"], [1, "right-addpost", "w-25"], ["routerLink", "/login", 1, "btn", "btn-light"], [1, "post"], [1, "image-name-div", "d-flex", "align-items-center", "gap-2", "mb-3", "z-1"], ["class", "rounded-circle me-2", "alt", "User", 3, "src", 4, "ngIf"], ["class", "position-relative imgcontainer overflow-auto d-flex gap-3 w-100 pb-2", 4, "ngIf"], [1, "post-title-desc", "my-4", "z-1"], [1, "divider", "z-1"], [1, "like-share-div", "my-3", "z-1", "d-flex", "align-items-center", "gap-3"], [1, "like-div", "d-flex", "align-items-center"], [1, "like-button", "overflow-visible", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "19", "viewBox", "0 0 21 19", "fill", "none"], ["d", "M10.293 19L8.84297 17.7C7.15964 16.1834 5.76797 14.875 4.66797 13.775C3.56797 12.675 2.69297 11.6875 2.04297 10.8125C1.39297 9.93752 0.938802 9.13336 0.680469 8.40002C0.422135 7.66669 0.292969 6.91669 0.292969 6.15002C0.292969 4.58336 0.817969 3.27502 1.86797 2.22502C2.91797 1.17502 4.2263 0.650024 5.79297 0.650024C6.65964 0.650024 7.48464 0.833358 8.26797 1.20002C9.0513 1.56669 9.7263 2.08336 10.293 2.75002C10.8596 2.08336 11.5346 1.56669 12.318 1.20002C13.1013 0.833358 13.9263 0.650024 14.793 0.650024C16.3596 0.650024 17.668 1.17502 18.718 2.22502C19.768 3.27502 20.293 4.58336 20.293 6.15002C20.293 6.91669 20.1638 7.66669 19.9055 8.40002C19.6471 9.13336 19.193 9.93752 18.543 10.8125C17.893 11.6875 17.018 12.675 15.918 13.775C14.818 14.875 13.4263 16.1834 11.743 17.7L10.293 19ZM10.293 16.3C11.893 14.8667 13.2096 13.6375 14.243 12.6125C15.2763 11.5875 16.093 10.6959 16.693 9.93752C17.293 9.17919 17.7096 8.50419 17.943 7.91252C18.1763 7.32086 18.293 6.73336 18.293 6.15002C18.293 5.15002 17.9596 4.31669 17.293 3.65002C16.6263 2.98336 15.793 2.65002 14.793 2.65002C14.0096 2.65002 13.2846 2.87086 12.618 3.31252C11.9513 3.75419 11.493 4.31669 11.243 5.00002H9.34297C9.09297 4.31669 8.63464 3.75419 7.96797 3.31252C7.3013 2.87086 6.5763 2.65002 5.79297 2.65002C4.79297 2.65002 3.95964 2.98336 3.29297 3.65002C2.6263 4.31669 2.29297 5.15002 2.29297 6.15002C2.29297 6.73336 2.40964 7.32086 2.64297 7.91252C2.8763 8.50419 3.29297 9.17919 3.89297 9.93752C4.49297 10.6959 5.30964 11.5875 6.34297 12.6125C7.3763 13.6375 8.69297 14.8667 10.293 16.3Z", "fill", "white"], [1, "like-count"], [1, "share-div", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "14", "viewBox", "0 0 19 14", "fill", "none"], ["d", "M2.29297 14V10C2.29297 9.16667 2.58464 8.45833 3.16797 7.875C3.7513 7.29167 4.45964 7 5.29297 7H14.468L10.868 10.6L12.293 12L18.293 6L12.293 0L10.868 1.4L14.468 5H5.29297C3.90964 5 2.73047 5.4875 1.75547 6.4625C0.780468 7.4375 0.292969 8.61667 0.292969 10V14H2.29297Z", "fill", "white"], [1, "gradient-div"], ["alt", "User", 1, "rounded-circle", "me-2", 3, "src"], [1, "position-relative", "imgcontainer", "overflow-auto", "d-flex", "gap-3", "w-100", "pb-2"], [4, "ngFor", "ngForOf"], ["class", "img-fluid rounded", "alt", "Post Image", 3, "src", 4, "ngIf"], ["class", "img-fluid rounded", "controls", "", 3, "src", 4, "ngIf"], ["alt", "Post Image", 1, "img-fluid", "rounded", 3, "src"], ["controls", "", 1, "img-fluid", "rounded", 3, "src"], [1, "mb-2"]], template: function PostComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _PostComponent, selectors: [["app-post"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 21, vars: 4, consts: [[1, "singlepost-section"], [1, "container"], [1, "post-tabs-div", "mb-5"], [1, "cursor-pointer", "fs-5", "fw-bold", "text-white", 3, "routerLink"], [1, "fas", "fa-arrow-left"], [1, "featured-heade"], [1, "post-content-div", "d-flex", "align-items-start", "gap-5", "mt-4"], [1, "left-posts", "w-75"], [1, "allpost-div", "d-flex", "flex-column", "gap-5"], ["class", "post", 4, "ngIf"], ["class", "mb-2", 4, "ngIf"], [1, "right-addpost", "w-25"], ["routerLink", "/", 1, "btn", "btn-light"], [1, "post"], [1, "image-name-div", "d-flex", "align-items-center", "gap-2", "mb-3", "z-1"], ["class", "rounded-circle me-2", "alt", "User", 3, "src", 4, "ngIf"], ["class", "position-relative imgcontainer overflow-auto d-flex gap-3 w-100 pb-2", 4, "ngIf"], [1, "post-title-desc", "my-4", "z-1"], [1, "divider", "z-1"], [1, "like-share-div", "my-3", "z-1", "d-flex", "align-items-center", "gap-3"], [1, "like-div", "d-flex", "align-items-center"], [1, "like-button", "overflow-visible", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "19", "viewBox", "0 0 21 19", "fill", "none"], ["d", "M10.293 19L8.84297 17.7C7.15964 16.1834 5.76797 14.875 4.66797 13.775C3.56797 12.675 2.69297 11.6875 2.04297 10.8125C1.39297 9.93752 0.938802 9.13336 0.680469 8.40002C0.422135 7.66669 0.292969 6.91669 0.292969 6.15002C0.292969 4.58336 0.817969 3.27502 1.86797 2.22502C2.91797 1.17502 4.2263 0.650024 5.79297 0.650024C6.65964 0.650024 7.48464 0.833358 8.26797 1.20002C9.0513 1.56669 9.7263 2.08336 10.293 2.75002C10.8596 2.08336 11.5346 1.56669 12.318 1.20002C13.1013 0.833358 13.9263 0.650024 14.793 0.650024C16.3596 0.650024 17.668 1.17502 18.718 2.22502C19.768 3.27502 20.293 4.58336 20.293 6.15002C20.293 6.91669 20.1638 7.66669 19.9055 8.40002C19.6471 9.13336 19.193 9.93752 18.543 10.8125C17.893 11.6875 17.018 12.675 15.918 13.775C14.818 14.875 13.4263 16.1834 11.743 17.7L10.293 19ZM10.293 16.3C11.893 14.8667 13.2096 13.6375 14.243 12.6125C15.2763 11.5875 16.093 10.6959 16.693 9.93752C17.293 9.17919 17.7096 8.50419 17.943 7.91252C18.1763 7.32086 18.293 6.73336 18.293 6.15002C18.293 5.15002 17.9596 4.31669 17.293 3.65002C16.6263 2.98336 15.793 2.65002 14.793 2.65002C14.0096 2.65002 13.2846 2.87086 12.618 3.31252C11.9513 3.75419 11.493 4.31669 11.243 5.00002H9.34297C9.09297 4.31669 8.63464 3.75419 7.96797 3.31252C7.3013 2.87086 6.5763 2.65002 5.79297 2.65002C4.79297 2.65002 3.95964 2.98336 3.29297 3.65002C2.6263 4.31669 2.29297 5.15002 2.29297 6.15002C2.29297 6.73336 2.40964 7.32086 2.64297 7.91252C2.8763 8.50419 3.29297 9.17919 3.89297 9.93752C4.49297 10.6959 5.30964 11.5875 6.34297 12.6125C7.3763 13.6375 8.69297 14.8667 10.293 16.3Z", "fill", "white"], [1, "like-count"], [1, "share-div", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "14", "viewBox", "0 0 19 14", "fill", "none"], ["d", "M2.29297 14V10C2.29297 9.16667 2.58464 8.45833 3.16797 7.875C3.7513 7.29167 4.45964 7 5.29297 7H14.468L10.868 10.6L12.293 12L18.293 6L12.293 0L10.868 1.4L14.468 5H5.29297C3.90964 5 2.73047 5.4875 1.75547 6.4625C0.780468 7.4375 0.292969 8.61667 0.292969 10V14H2.29297Z", "fill", "white"], [1, "gradient-div"], ["alt", "User", 1, "rounded-circle", "me-2", 3, "src"], [1, "position-relative", "imgcontainer", "overflow-auto", "d-flex", "gap-3", "w-100", "pb-2"], [4, "ngFor", "ngForOf"], ["class", "img-fluid rounded", "alt", "Post Image", 3, "src", 4, "ngIf"], ["class", "img-fluid rounded", "controls", "", 3, "src", 4, "ngIf"], ["alt", "Post Image", 1, "img-fluid", "rounded", 3, "src"], ["controls", "", 1, "img-fluid", "rounded", 3, "src"], [1, "mb-2"]], template: function PostComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "p")(4, "span", 3);
         \u0275\u0275element(5, "i", 4);
@@ -305,4 +306,4 @@ var PostComponent = class _PostComponent {
 export {
   PostComponent
 };
-//# sourceMappingURL=chunk-BEOKGACP.js.map
+//# sourceMappingURL=chunk-N3ROP36S.mjs.map
