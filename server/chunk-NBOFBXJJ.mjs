@@ -1,22 +1,23 @@
+import './polyfills.server.mjs';
 import {
   UserService
-} from "./chunk-355F23O5.js";
+} from "./chunk-GBEGW3CQ.mjs";
 import {
   Router,
   RouterLink,
   RouterLinkActive,
   RouterModule,
   RouterOutlet
-} from "./chunk-SNZVCUF6.js";
+} from "./chunk-IHV4JKV6.mjs";
 import {
   ToastService
-} from "./chunk-SHX5MJZM.js";
-import "./chunk-WYW2S4QW.js";
-import "./chunk-BK4FBNP4.js";
+} from "./chunk-TUOTYXST.mjs";
+import "./chunk-SJMEGSB4.mjs";
+import "./chunk-PY5YUHCX.mjs";
 import {
   CommonModule,
   NgIf
-} from "./chunk-OG7DO3XM.js";
+} from "./chunk-YQCUS5I7.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -44,8 +45,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-PY442ZFB.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-QKHTRG4V.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/common/user-sidebar/user-sidebar.component.ts
 var _c0 = () => ({ exact: true });
@@ -122,7 +123,7 @@ var UserSidebarComponent = class _UserSidebarComponent {
         \u0275\u0275elementEnd()()();
         \u0275\u0275namespaceHTML();
         \u0275\u0275elementStart(43, "h1", 14);
-        \u0275\u0275text(44, "Member's Directory");
+        \u0275\u0275text(44, "Members' Directory");
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(45, "li", 15);
         \u0275\u0275namespaceSVG();
@@ -319,4 +320,4 @@ var UserDashboardComponent = class _UserDashboardComponent {
 export {
   UserDashboardComponent
 };
-//# sourceMappingURL=chunk-BNW5FKAT.js.map
+//# sourceMappingURL=chunk-NBOFBXJJ.mjs.map

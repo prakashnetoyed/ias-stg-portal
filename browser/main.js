@@ -287,7 +287,7 @@ var IasHeaderComponent = class _IasHeaderComponent {
         \u0275\u0275advance(2);
         \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(20, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c0));
+        \u0275\u0275property("routerLink", "contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c0));
         \u0275\u0275advance(9);
         \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c0));
         \u0275\u0275advance(2);
@@ -2774,7 +2774,7 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-BNW5FKAT.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-JIFATLFV.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
@@ -2794,7 +2794,7 @@ var routes = [
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-4JC2W7AG.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-R6MWXJ4T.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
