@@ -1,9 +1,28 @@
+import './polyfills.server.mjs';
 import {
   IasLoaderComponent
-} from "./chunk-BPMHA6KW.js";
+} from "./chunk-3L4LSQZ6.mjs";
 import {
   UserService
-} from "./chunk-355F23O5.js";
+} from "./chunk-GBEGW3CQ.mjs";
+import {
+  provideServerRendering
+} from "./chunk-XGD7VPM2.mjs";
+import {
+  AuthService
+} from "./chunk-H545FIBJ.mjs";
+import {
+  DomRendererFactory2,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterModule,
+  RouterOutlet,
+  bootstrapApplication,
+  provideClientHydration,
+  provideRouter,
+  withInMemoryScrolling
+} from "./chunk-IHV4JKV6.mjs";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -21,28 +40,13 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-O7KRW67G.js";
-import {
-  AuthService
-} from "./chunk-KS6VKFHK.js";
-import {
-  DomRendererFactory2,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-  RouterModule,
-  RouterOutlet,
-  bootstrapApplication,
-  provideClientHydration,
-  provideRouter,
-  withInMemoryScrolling
-} from "./chunk-SNZVCUF6.js";
+} from "./chunk-AXKU23Q2.mjs";
 import {
   ToastService
-} from "./chunk-SHX5MJZM.js";
+} from "./chunk-TUOTYXST.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient,
   HttpClientModule,
@@ -50,7 +54,7 @@ import {
   provideHttpClient,
   withFetch,
   withInterceptors
-} from "./chunk-BK4FBNP4.js";
+} from "./chunk-PY5YUHCX.mjs";
 import {
   CommonModule,
   DOCUMENT,
@@ -58,7 +62,7 @@ import {
   NgForOf,
   NgIf,
   isPlatformBrowser
-} from "./chunk-OG7DO3XM.js";
+} from "./chunk-YQCUS5I7.mjs";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
@@ -71,6 +75,7 @@ import {
   from,
   inject,
   makeEnvironmentProviders,
+  mergeApplicationConfig,
   performanceMarkFeature,
   setClassMetadata,
   switchMap,
@@ -114,11 +119,84 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-PY442ZFB.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-QKHTRG4V.mjs";
+
+// src/app/common/common-toast/common-toast.component.ts
+var _c0 = ["errorToast"];
+var CommonToastComponent = class _CommonToastComponent {
+  constructor(toastService) {
+    this.toastService = toastService;
+    this.toastMessage = "";
+    this.toastType = "danger";
+  }
+  ngOnInit() {
+    this.toastService.toastMessage$.subscribe(({ message, type }) => {
+      this.toastMessage = message;
+      this.toastType = type || "danger";
+      const toastEl = this.errorToast.nativeElement;
+      const toast = new bootstrap.Toast(toastEl);
+      toast.show();
+    });
+  }
+  static {
+    this.\u0275fac = function CommonToastComponent_Factory(t) {
+      return new (t || _CommonToastComponent)(\u0275\u0275directiveInject(ToastService));
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _CommonToastComponent, selectors: [["app-common-toast"]], viewQuery: function CommonToastComponent_Query(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275viewQuery(_c0, 7);
+      }
+      if (rf & 2) {
+        let _t;
+        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.errorToast = _t.first);
+      }
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 7, vars: 4, consts: [["errorToast", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"]], template: function CommonToastComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 1)(1, "div", 2, 0)(3, "div", 3)(4, "div", 4);
+        \u0275\u0275text(5);
+        \u0275\u0275elementEnd();
+        \u0275\u0275element(6, "button", 5);
+        \u0275\u0275elementEnd()()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance();
+        \u0275\u0275classMapInterpolate1("toast align-items-center text-bg-", ctx.toastType, " border-0");
+        \u0275\u0275advance(4);
+        \u0275\u0275textInterpolate1(" ", ctx.toastMessage, " ");
+      }
+    } });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(CommonToastComponent, { className: "CommonToastComponent", filePath: "src/app/common/common-toast/common-toast.component.ts", lineNumber: 12 });
+})();
+
+// src/app/app.component.ts
+var AppComponent = class _AppComponent {
+  constructor() {
+    this.title = "ISDirectory";
+  }
+  static {
+    this.\u0275fac = function AppComponent_Factory(t) {
+      return new (t || _AppComponent)();
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 2, vars: 0, template: function AppComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275element(0, "router-outlet")(1, "app-common-toast");
+      }
+    }, dependencies: [RouterOutlet, CommonToastComponent] });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppComponent, { className: "AppComponent", filePath: "src/app/app.component.ts", lineNumber: 12 });
+})();
 
 // src/app/common/ias-header/ias-header.component.ts
-var _c0 = () => ({ exact: true });
+var _c02 = () => ({ exact: true });
 function IasHeaderComponent_ng_container_38_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
@@ -281,21 +359,21 @@ var IasHeaderComponent = class _IasHeaderComponent {
       }
       if (rf & 2) {
         \u0275\u0275advance(15);
-        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(18, _c0));
+        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(18, _c02));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(19, _c0));
+        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(19, _c02));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(20, _c0));
+        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(20, _c02));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c0));
+        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c02));
         \u0275\u0275advance(9);
-        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c0));
+        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c02));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(23, _c0));
+        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(23, _c02));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(24, _c0));
+        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(24, _c02));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(25, _c0));
+        \u0275\u0275property("routerLink", "/contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(25, _c02));
         \u0275\u0275advance(2);
         \u0275\u0275property("ngIf", ctx.isLoggedIn && ctx.isLoggedIn !== null);
         \u0275\u0275advance();
@@ -2620,86 +2698,86 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-DTCIYWSL.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-EVFVEV3H.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-M23BSIGU.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-S6RPR6HR.mjs").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-DMOMZZMQ.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-2HSBILRL.mjs").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7IKYICNF.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-FAYQAKXI.mjs").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-BEOKGACP.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-LK5JQQOX.mjs").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
-        loadComponent: () => import("./chunk-RL433KBJ.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-NVAXZKIB.mjs").then((m) => m.IasCarunaComponent)
       },
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-2CT3F6LL.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-ZHS4OY6W.mjs").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-JMJI5TMP.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-25GRO6TZ.mjs").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-RL433KBJ.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-NVAXZKIB.mjs").then((m) => m.IasCarunaComponent)
       },
       {
         path: "welfare-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SHLL64X3.js").then((m) => m.WelfareMembershipComponent)
+        loadComponent: () => import("./chunk-2WLY3EYE.mjs").then((m) => m.WelfareMembershipComponent)
       },
       {
         path: "lifetime-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-WQYMCIGE.js").then((m) => m.LifetimeMembershipComponent)
+        loadComponent: () => import("./chunk-AKTQ57PT.mjs").then((m) => m.LifetimeMembershipComponent)
       },
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-CJV3KOAE.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-DITVTCL2.mjs").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HLSHXMDX.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-6MRD4QEM.mjs").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SCPJYMOK.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-5FEC5NWR.mjs").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7MQIV3XH.js").then((m) => m.TermsConditionsComponent)
+        loadComponent: () => import("./chunk-YRJUHPM4.mjs").then((m) => m.TermsConditionsComponent)
       },
       {
         path: "Refund-Cancellation-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-4EZGEFSL.js").then((m) => m.RefundCancellationPolicyComponent)
+        loadComponent: () => import("./chunk-VOEOGXQC.mjs").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
         path: "Privacy-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-R2IMM4BI.js").then((m) => m.PrivacyPolicyComponent)
+        loadComponent: () => import("./chunk-XHIRW22M.mjs").then((m) => m.PrivacyPolicyComponent)
       }
     ]
   },
@@ -2722,51 +2800,51 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-MT4ZPBGP.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-WUKZVKAH.mjs").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-KIHZKJV2.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-TL2DLN6O.mjs").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-UG3U7WNJ.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-4ZKKVDTJ.mjs").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-KK6MECBF.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-F6CF5HV2.mjs").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-QLWQ24W7.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-NR64PVM7.mjs").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-F7ZMTRIW.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-O65RS76A.mjs").then((m) => m.NewsComponent)
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-CAKCFT43.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-V6HF7EIT.mjs").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-FDFOPJQI.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-A26UG5LN.mjs").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-OCEIRLGK.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-SPVLIIEH.mjs").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-WYAPZS42.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-4DYF7LIT.mjs").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-EK254JXO.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-FZRZI24X.mjs").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-PCOSZJEW.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-QFH3AKCY.mjs").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -2774,47 +2852,47 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-Q344HGJW.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-2J3UZ73L.mjs").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-VGJJGZDE.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-6OE5Q6RQ.mjs").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-C7FVKQQA.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-BDLZQWY7.mjs").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-G5DB3MP7.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-BTX46XSE.mjs").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-BWWNIIB6.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-B4PWXL23.mjs").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-DNMMQ4OH.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-EH4TTLQH.mjs").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-JLRCSPF7.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-DYJ7VZGL.mjs").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-HCHO456P.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-53RXSLDL.mjs").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-5A3JM3KX.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-FZ4LGY3K.mjs").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-5R6PPRRW.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-7RVYTLXV.mjs").then((m) => m.RouteErrorComponent)
   }
 ];
 
@@ -2892,7 +2970,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const moduleImpl = this.moduleImpl ?? import("./chunk-PFN4AS66.js");
+    const moduleImpl = this.moduleImpl ?? import("./chunk-JV4EQBC6.mjs");
     return moduleImpl.catch((e) => {
       throw new RuntimeError(5300, (typeof ngDevMode === "undefined" || ngDevMode) && "Async loading for animations package was enabled, but loading failed. Angular falls back to using regular rendering. No animations will be displayed and their styles won't be applied.");
     }).then(({
@@ -3090,82 +3168,21 @@ var appConfig = {
   ]
 };
 
-// src/app/common/common-toast/common-toast.component.ts
-var _c02 = ["errorToast"];
-var CommonToastComponent = class _CommonToastComponent {
-  constructor(toastService) {
-    this.toastService = toastService;
-    this.toastMessage = "";
-    this.toastType = "danger";
-  }
-  ngOnInit() {
-    this.toastService.toastMessage$.subscribe(({ message, type }) => {
-      this.toastMessage = message;
-      this.toastType = type || "danger";
-      const toastEl = this.errorToast.nativeElement;
-      const toast = new bootstrap.Toast(toastEl);
-      toast.show();
-    });
-  }
-  static {
-    this.\u0275fac = function CommonToastComponent_Factory(t) {
-      return new (t || _CommonToastComponent)(\u0275\u0275directiveInject(ToastService));
-    };
-  }
-  static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _CommonToastComponent, selectors: [["app-common-toast"]], viewQuery: function CommonToastComponent_Query(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275viewQuery(_c02, 7);
-      }
-      if (rf & 2) {
-        let _t;
-        \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.errorToast = _t.first);
-      }
-    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 7, vars: 4, consts: [["errorToast", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"]], template: function CommonToastComponent_Template(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 1)(1, "div", 2, 0)(3, "div", 3)(4, "div", 4);
-        \u0275\u0275text(5);
-        \u0275\u0275elementEnd();
-        \u0275\u0275element(6, "button", 5);
-        \u0275\u0275elementEnd()()();
-      }
-      if (rf & 2) {
-        \u0275\u0275advance();
-        \u0275\u0275classMapInterpolate1("toast align-items-center text-bg-", ctx.toastType, " border-0");
-        \u0275\u0275advance(4);
-        \u0275\u0275textInterpolate1(" ", ctx.toastMessage, " ");
-      }
-    } });
-  }
+// src/app/app.config.server.ts
+var serverConfig = {
+  providers: [
+    provideServerRendering()
+  ]
 };
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(CommonToastComponent, { className: "CommonToastComponent", filePath: "src/app/common/common-toast/common-toast.component.ts", lineNumber: 12 });
-})();
+var config = mergeApplicationConfig(appConfig, serverConfig);
 
-// src/app/app.component.ts
-var AppComponent = class _AppComponent {
-  constructor() {
-    this.title = "ISDirectory";
-  }
-  static {
-    this.\u0275fac = function AppComponent_Factory(t) {
-      return new (t || _AppComponent)();
-    };
-  }
-  static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _AppComponent, selectors: [["app-root"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 2, vars: 0, template: function AppComponent_Template(rf, ctx) {
-      if (rf & 1) {
-        \u0275\u0275element(0, "router-outlet")(1, "app-common-toast");
-      }
-    }, dependencies: [RouterOutlet, CommonToastComponent] });
-  }
+// src/main.server.ts
+var bootstrap2 = () => bootstrapApplication(AppComponent, config);
+var main_server_default = bootstrap2;
+
+export {
+  main_server_default
 };
-(() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(AppComponent, { className: "AppComponent", filePath: "src/app/app.component.ts", lineNumber: 12 });
-})();
-
-// src/main.ts
-bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
 /*! Bundled license information:
 
 @angular/platform-browser/fesm2022/animations/async.mjs:
@@ -3175,4 +3192,4 @@ bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err))
    * License: MIT
    *)
 */
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=chunk-OHL2KJDK.mjs.map
