@@ -1,9 +1,9 @@
 import {
   IasLoaderComponent
-} from "./chunk-BPMHA6KW.js";
+} from "./chunk-MZZN3IR2.js";
 import {
   UserService
-} from "./chunk-355F23O5.js";
+} from "./chunk-ERLUOR4Z.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -21,25 +21,27 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-O7KRW67G.js";
+} from "./chunk-I52XJJYQ.js";
 import {
   AuthService
-} from "./chunk-KS6VKFHK.js";
+} from "./chunk-F5R2LI5R.js";
 import {
-  DomRendererFactory2,
   Router,
   RouterLink,
   RouterLinkActive,
   RouterModule,
   RouterOutlet,
-  bootstrapApplication,
-  provideClientHydration,
   provideRouter,
   withInMemoryScrolling
-} from "./chunk-SNZVCUF6.js";
+} from "./chunk-TKFRT2UI.js";
+import {
+  DomRendererFactory2,
+  bootstrapApplication,
+  provideClientHydration
+} from "./chunk-SY4Y3KW5.js";
 import {
   ToastService
-} from "./chunk-SHX5MJZM.js";
+} from "./chunk-LWBJHTNQ.js";
 import {
   environment
 } from "./chunk-WYW2S4QW.js";
@@ -50,7 +52,7 @@ import {
   provideHttpClient,
   withFetch,
   withInterceptors
-} from "./chunk-BK4FBNP4.js";
+} from "./chunk-USTNBAGL.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -58,7 +60,7 @@ import {
   NgForOf,
   NgIf,
   isPlatformBrowser
-} from "./chunk-OG7DO3XM.js";
+} from "./chunk-UGBLWZFH.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
@@ -114,7 +116,7 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-PY442ZFB.js";
+} from "./chunk-J3GGQSN2.js";
 import "./chunk-ASLTLD6L.js";
 
 // src/app/common/ias-header/ias-header.component.ts
@@ -377,7 +379,7 @@ var IasFooterComponent = class _IasFooterComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 67, vars: 4, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:association.ias@gmail.com", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "Refund-Cancellation-Policy"], ["routerLink", "Terms-Conditions"], ["routerLink", "Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 67, vars: 4, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [2, "cursor", "pointer", 3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:association.ias@gmail.com", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "Refund-Cancellation-Policy"], ["routerLink", "Terms-Conditions"], ["routerLink", "Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "footer", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
         \u0275\u0275element(5, "img", 5);
@@ -401,22 +403,22 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275elementStart(19, "a", 9);
         \u0275\u0275text(20, "Contact Us");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(21, "div", 8)(22, "a", 9);
+        \u0275\u0275elementStart(21, "div", 8)(22, "h4", 10);
         \u0275\u0275text(23, "News");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(24, "div", 10)(25, "div", 11)(26, "a", 12);
-        \u0275\u0275element(27, "i", 13);
+        \u0275\u0275elementStart(24, "div", 11)(25, "div", 12)(26, "a", 13);
+        \u0275\u0275element(27, "i", 14);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(28, "a", 14);
-        \u0275\u0275element(29, "i", 15);
+        \u0275\u0275elementStart(28, "a", 15);
+        \u0275\u0275element(29, "i", 16);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(30, "div", 16)(31, "p", 17);
+        \u0275\u0275elementStart(30, "div", 17)(31, "p", 18);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(32, "svg", 18)(33, "mask", 19);
-        \u0275\u0275element(34, "rect", 20);
+        \u0275\u0275elementStart(32, "svg", 19)(33, "mask", 20);
+        \u0275\u0275element(34, "rect", 21);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(35, "g", 21);
-        \u0275\u0275element(36, "path", 22);
+        \u0275\u0275elementStart(35, "g", 22);
+        \u0275\u0275element(36, "path", 23);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
         \u0275\u0275elementStart(37, "span");
@@ -424,36 +426,36 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275element(39, "br");
         \u0275\u0275text(40, "Central Association, New Delhi");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(41, "div", 17);
+        \u0275\u0275elementStart(41, "div", 18);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(42, "svg", 23)(43, "mask", 24);
-        \u0275\u0275element(44, "rect", 25);
+        \u0275\u0275elementStart(42, "svg", 24)(43, "mask", 25);
+        \u0275\u0275element(44, "rect", 26);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(45, "g", 26);
-        \u0275\u0275element(46, "path", 27);
+        \u0275\u0275elementStart(45, "g", 27);
+        \u0275\u0275element(46, "path", 28);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
         \u0275\u0275elementStart(47, "div");
         \u0275\u0275text(48, " Need help?");
-        \u0275\u0275elementStart(49, "span", 28);
+        \u0275\u0275elementStart(49, "span", 29);
         \u0275\u0275text(50, " Contact Help Desk:");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(51, "div", 29)(52, "a", 30);
+        \u0275\u0275elementStart(51, "div", 30)(52, "a", 31);
         \u0275\u0275text(53, "[+91 9910659965]");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(54, "a", 31);
+        \u0275\u0275elementStart(54, "a", 32);
         \u0275\u0275text(55, "[association.ias@gmail.com]");
         \u0275\u0275elementEnd()()()()()()()();
-        \u0275\u0275elementStart(56, "div", 32)(57, "div", 33)(58, "p", 34);
-        \u0275\u0275text(59, "\xA9 2024 - Copyright Ministry of Electronics and Information Technology. All rights reserved.");
+        \u0275\u0275elementStart(56, "div", 33)(57, "div", 34)(58, "p", 35);
+        \u0275\u0275text(59, "\xA9 2024 - Indian Administrative Service Central Association. All rights reserved.");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(60, "div", 35)(61, "a", 36);
+        \u0275\u0275elementStart(60, "div", 36)(61, "a", 37);
         \u0275\u0275text(62, "Refund & Cancellation Policy");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(63, "a", 37);
+        \u0275\u0275elementStart(63, "a", 38);
         \u0275\u0275text(64, "Terms & Conditions");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(65, "a", 38);
+        \u0275\u0275elementStart(65, "a", 39);
         \u0275\u0275text(66, "Privacy Policy");
         \u0275\u0275elementEnd()()()()();
       }
@@ -2681,86 +2683,86 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TUXL4IKW.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-TD2MJCFN.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-M23BSIGU.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-WTVKPFOV.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-JSKPSFIL.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-7O4EO4YR.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-CNHL72T7.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-EINVNOZ3.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-E7Z65KRO.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-HI5EMDTE.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
-        loadComponent: () => import("./chunk-RL433KBJ.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-5YBUCMUU.js").then((m) => m.IasCarunaComponent)
       },
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-FHJVDS7N.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-EUZMNFKL.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HH2UD4B3.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-FOTAZTU7.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-RL433KBJ.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-5YBUCMUU.js").then((m) => m.IasCarunaComponent)
       },
       {
         path: "welfare-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SHLL64X3.js").then((m) => m.WelfareMembershipComponent)
+        loadComponent: () => import("./chunk-PAITD2EM.js").then((m) => m.WelfareMembershipComponent)
       },
       {
         path: "lifetime-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-WQYMCIGE.js").then((m) => m.LifetimeMembershipComponent)
+        loadComponent: () => import("./chunk-US4I6SAH.js").then((m) => m.LifetimeMembershipComponent)
       },
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SWI7KTEF.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-DU4N33BE.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HLSHXMDX.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-QDCC6CLD.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-5WGWZWHI.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-SRYPBNTY.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7MQIV3XH.js").then((m) => m.TermsConditionsComponent)
+        loadComponent: () => import("./chunk-RUZXIGD7.js").then((m) => m.TermsConditionsComponent)
       },
       {
         path: "Refund-Cancellation-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-4EZGEFSL.js").then((m) => m.RefundCancellationPolicyComponent)
+        loadComponent: () => import("./chunk-PJEPV5XJ.js").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
         path: "Privacy-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-R2IMM4BI.js").then((m) => m.PrivacyPolicyComponent)
+        loadComponent: () => import("./chunk-GOSJAWYH.js").then((m) => m.PrivacyPolicyComponent)
       }
     ]
   },
@@ -2783,51 +2785,51 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-65XF2NMB.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-7D6TSRPJ.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-FKSNL6GX.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-PFZVYF7F.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-Q7JJUP5D.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-FVYCBQNY.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-KK6MECBF.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-5EHEORLN.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-QLWQ24W7.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-XULTTZOB.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-F7ZMTRIW.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-BSVG2TMK.js").then((m) => m.NewsComponent)
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-LGPURU5U.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-ZUYRGVND.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-FDFOPJQI.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-7234UIAW.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-OCEIRLGK.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-GLN6HMTH.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-QIDVGM4V.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-LN234SA2.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-SNVGBH4V.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-ML2EPHRH.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-ODRVIR3H.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-I4ZCOP4C.js").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -2835,47 +2837,47 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-CSIL4HAG.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-XU2EHMLS.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-BEDW2BQE.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-ZHXRS5GL.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-V47JEOHW.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-6GNERD6K.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-HMD4NSUK.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-4GDMN7T3.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-BWWNIIB6.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-UZ7RXTOM.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-R6MWXJ4T.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-JNSAUFW2.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-JLRCSPF7.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-E6LWLZ6E.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-HCHO456P.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-UEG6SMYZ.js").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-5A3JM3KX.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-UGU6NNLE.js").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-5R6PPRRW.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-K3I5BUFM.js").then((m) => m.RouteErrorComponent)
   }
 ];
 
@@ -2953,7 +2955,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const moduleImpl = this.moduleImpl ?? import("./chunk-PFN4AS66.js");
+    const moduleImpl = this.moduleImpl ?? import("./chunk-5HBLGO3M.js");
     return moduleImpl.catch((e) => {
       throw new RuntimeError(5300, (typeof ngDevMode === "undefined" || ngDevMode) && "Async loading for animations package was enabled, but loading failed. Angular falls back to using regular rendering. No animations will be displayed and their styles won't be applied.");
     }).then(({
