@@ -285,7 +285,7 @@ var IasSidebarComponent = class _IasSidebarComponent {
         \u0275\u0275elementEnd()()();
         \u0275\u0275namespaceHTML();
         \u0275\u0275elementStart(74, "h1", 14);
-        \u0275\u0275text(75, "Feedbacks");
+        \u0275\u0275text(75, "Feedback");
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(76, "li", 47);
         \u0275\u0275namespaceSVG();
@@ -12102,4 +12102,4 @@ var DashboardLayoutComponent = class _DashboardLayoutComponent {
 export {
   DashboardLayoutComponent
 };
-//# sourceMappingURL=chunk-SILYXKAX.mjs.map
+//# sourceMappingURL=chunk-OC67GJC7.mjs.map

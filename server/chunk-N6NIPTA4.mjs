@@ -51,12 +51,12 @@ var AllMembersComponent = class _AllMembersComponent {
       },
       {
         img: "assets/members/sriram.png",
-        role: "Vice-President 1",
+        role: "Vice-President",
         name: "Sriram Taranikanti"
       },
       {
         img: "assets/members/anbarasu.png",
-        role: "Vice-President 2",
+        role: "Vice-President",
         name: "A Anbarasu"
       },
       {
@@ -71,12 +71,12 @@ var AllMembersComponent = class _AllMembersComponent {
       },
       {
         img: "assets/members/chinmay-gotmare.png",
-        role: "JT Secretary 1",
+        role: "Joint Secretary",
         name: "Chinmay Gotmare"
       },
       {
         img: "assets/members/shelesh-nawal.png",
-        role: "JT Secretary 2",
+        role: "Joint Secretary",
         name: "Shelesh Nawal"
       },
       {
@@ -173,4 +173,4 @@ var AllMembersComponent = class _AllMembersComponent {
 export {
   AllMembersComponent
 };
-//# sourceMappingURL=chunk-TL7GWURW.mjs.map
+//# sourceMappingURL=chunk-N6NIPTA4.mjs.map

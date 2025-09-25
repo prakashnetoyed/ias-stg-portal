@@ -1,4 +1,3 @@
-import './polyfills.server.mjs';
 import {
   DefaultValueAccessor,
   FormsModule,
@@ -7,18 +6,18 @@ import {
   NgSelectOption,
   SelectControlValueAccessor,
   ɵNgSelectMultipleOption
-} from "./chunk-R5BAAMIV.mjs";
+} from "./chunk-I52XJJYQ.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient
-} from "./chunk-LKXSFKPG.mjs";
+} from "./chunk-USTNBAGL.js";
 import {
   CommonModule,
   NgForOf,
   NgIf
-} from "./chunk-TCHJBQHP.mjs";
+} from "./chunk-UGBLWZFH.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -44,12 +43,11 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵtextInterpolate1,
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-VCJFYSIH.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-J3GGQSN2.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/user-portal/pages/user-members/user-members.component.ts
 var _c0 = () => [];
@@ -79,7 +77,7 @@ function UserMembersComponent_option_12_Template(rf, ctx) {
     \u0275\u0275textInterpolate(y_r3);
   }
 }
-function UserMembersComponent_tbody_36_tr_1_Template(rf, ctx) {
+function UserMembersComponent_tbody_34_tr_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "tr")(1, "td");
     \u0275\u0275text(2);
@@ -98,9 +96,6 @@ function UserMembersComponent_tbody_36_tr_1_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(11, "td");
     \u0275\u0275text(12);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "td");
-    \u0275\u0275text(14);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -119,14 +114,12 @@ function UserMembersComponent_tbody_36_tr_1_Template(rf, ctx) {
     \u0275\u0275property("src", user_r4.doptOfficer == null ? null : user_r4.doptOfficer.profilePic, \u0275\u0275sanitizeUrl);
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(user_r4 == null ? null : user_r4.email);
-    \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate1(" ", user_r4.mobileNumber ? user_r4.mobileNumber.slice(0, 4) + "****" + user_r4.mobileNumber.slice(-2) : "N/A", " ");
   }
 }
-function UserMembersComponent_tbody_36_Template(rf, ctx) {
+function UserMembersComponent_tbody_34_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "tbody");
-    \u0275\u0275template(1, UserMembersComponent_tbody_36_tr_1_Template, 15, 7, "tr", 27);
+    \u0275\u0275template(1, UserMembersComponent_tbody_34_tr_1_Template, 13, 6, "tr", 27);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -135,18 +128,18 @@ function UserMembersComponent_tbody_36_Template(rf, ctx) {
     \u0275\u0275property("ngForOf", ctx_r5.users);
   }
 }
-function UserMembersComponent_ng_template_37_Template(rf, ctx) {
+function UserMembersComponent_ng_template_35_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "tbody")(1, "tr")(2, "td", 29);
     \u0275\u0275text(3, "No members found.");
     \u0275\u0275elementEnd()()();
   }
 }
-function UserMembersComponent_li_45_Template(rf, ctx) {
+function UserMembersComponent_li_43_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "li", 18)(1, "a", 19);
-    \u0275\u0275listener("click", function UserMembersComponent_li_45_Template_a_click_1_listener() {
+    \u0275\u0275listener("click", function UserMembersComponent_li_43_Template_a_click_1_listener() {
       const i_r8 = \u0275\u0275restoreView(_r7).index;
       const ctx_r5 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r5.changePage(i_r8 + 1));
@@ -266,7 +259,7 @@ var UserMembersComponent = class _UserMembersComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _UserMembersComponent, selectors: [["app-user-members"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 57, vars: 18, consts: [["noData", ""], [1, "tableheading"], [1, "d-flex", "justify-content-between", "align-items-center", "flex-wrap", "mb-3"], [1, "mb-1"], [1, "filter-options", "d-flex", "align-items-center", "gap-2", "w-75"], [1, "form-select", 3, "ngModelChange", "change", "ngModel"], ["selected", "", 3, "ngValue"], [3, "value", 4, "ngFor", "ngForOf"], [1, "input-group", "w-100"], ["type", "text", "placeholder", "Search by name", 1, "form-control", "border-end-0", 3, "ngModelChange", "keyup", "ngModel"], [1, "input-group-text", "bg-transparent", "border-start-0"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "12", "viewBox", "0 0 12 12", "fill", "none"], ["d", "M10.2708 9.08333H9.64542L9.42375 8.86958C10.1996 7.96708 10.6667 6.79542 10.6667 5.52083C10.6667 2.67875 8.36292 0.375 5.52083 0.375C2.67875 0.375 0.375 2.67875 0.375 5.52083C0.375 8.36292 2.67875 10.6667 5.52083 10.6667C6.79542 10.6667 7.96708 10.1996 8.86958 9.42375L9.08333 9.64542V10.2708L13.0417 14.2213L14.2213 13.0417L10.2708 9.08333ZM5.52083 9.08333C3.54958 9.08333 1.95833 7.49208 1.95833 5.52083C1.95833 3.54958 3.54958 1.95833 5.52083 1.95833C7.49208 1.95833 9.08333 3.54958 9.08333 5.52083C9.08333 7.49208 7.49208 9.08333 5.52083 9.08333Z", "fill", "#727272"], [1, "table-responsive", "custom-table"], [1, "table", "align-middle", "mb-0"], [4, "ngIf", "ngIfElse"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-2", "mt-3"], [1, "pagination", "modern-pagination", "mb-0"], [1, "page-item"], [1, "page-link", 3, "click"], ["class", "page-item", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center"], [1, "form-select", "form-select-sm", "w-auto", 3, "change"], ["value", "15", 3, "selected"], ["value", "30", 3, "selected"], ["value", "50", 3, "selected"], [3, "value"], [4, "ngFor", "ngForOf"], ["alt", "profile pic", 1, "tableprofile", 3, "src"], ["colspan", "7", 1, "text-center", "fs-3", "py-4"]], template: function UserMembersComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _UserMembersComponent, selectors: [["app-user-members"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 55, vars: 18, consts: [["noData", ""], [1, "tableheading"], [1, "d-flex", "justify-content-between", "align-items-center", "flex-wrap", "mb-3"], [1, "mb-1"], [1, "filter-options", "d-flex", "align-items-center", "gap-2", "w-75"], [1, "form-select", 3, "ngModelChange", "change", "ngModel"], ["selected", "", 3, "ngValue"], [3, "value", 4, "ngFor", "ngForOf"], [1, "input-group", "w-100"], ["type", "text", "placeholder", "Search by name", 1, "form-control", "border-end-0", 3, "ngModelChange", "keyup", "ngModel"], [1, "input-group-text", "bg-transparent", "border-start-0"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "12", "viewBox", "0 0 12 12", "fill", "none"], ["d", "M10.2708 9.08333H9.64542L9.42375 8.86958C10.1996 7.96708 10.6667 6.79542 10.6667 5.52083C10.6667 2.67875 8.36292 0.375 5.52083 0.375C2.67875 0.375 0.375 2.67875 0.375 5.52083C0.375 8.36292 2.67875 10.6667 5.52083 10.6667C6.79542 10.6667 7.96708 10.1996 8.86958 9.42375L9.08333 9.64542V10.2708L13.0417 14.2213L14.2213 13.0417L10.2708 9.08333ZM5.52083 9.08333C3.54958 9.08333 1.95833 7.49208 1.95833 5.52083C1.95833 3.54958 3.54958 1.95833 5.52083 1.95833C7.49208 1.95833 9.08333 3.54958 9.08333 5.52083C9.08333 7.49208 7.49208 9.08333 5.52083 9.08333Z", "fill", "#727272"], [1, "table-responsive", "custom-table"], [1, "table", "align-middle", "mb-0"], [4, "ngIf", "ngIfElse"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-2", "mt-3"], [1, "pagination", "modern-pagination", "mb-0"], [1, "page-item"], [1, "page-link", 3, "click"], ["class", "page-item", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center"], [1, "form-select", "form-select-sm", "w-auto", 3, "change"], ["value", "15", 3, "selected"], ["value", "30", 3, "selected"], ["value", "50", 3, "selected"], [3, "value"], [4, "ngFor", "ngForOf"], ["alt", "profile pic", 1, "tableprofile", 3, "src"], ["colspan", "7", 1, "text-center", "fs-3", "py-4"]], template: function UserMembersComponent_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = \u0275\u0275getCurrentView();
         \u0275\u0275elementStart(0, "div", 1)(1, "div", 2)(2, "h5", 3);
@@ -336,44 +329,41 @@ var UserMembersComponent = class _UserMembersComponent {
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(32, "th");
         \u0275\u0275text(33, "Email");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(34, "th");
-        \u0275\u0275text(35, "Mobile");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275template(36, UserMembersComponent_tbody_36_Template, 2, 1, "tbody", 15)(37, UserMembersComponent_ng_template_37_Template, 4, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+        \u0275\u0275template(34, UserMembersComponent_tbody_34_Template, 2, 1, "tbody", 15)(35, UserMembersComponent_ng_template_35_Template, 4, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(39, "div", 16)(40, "nav")(41, "ul", 17)(42, "li", 18)(43, "a", 19);
-        \u0275\u0275listener("click", function UserMembersComponent_Template_a_click_43_listener() {
+        \u0275\u0275elementStart(37, "div", 16)(38, "nav")(39, "ul", 17)(40, "li", 18)(41, "a", 19);
+        \u0275\u0275listener("click", function UserMembersComponent_Template_a_click_41_listener() {
           \u0275\u0275restoreView(_r1);
           return \u0275\u0275resetView(ctx.goPrevious());
         });
-        \u0275\u0275text(44, "\u2039");
+        \u0275\u0275text(42, "\u2039");
         \u0275\u0275elementEnd()();
-        \u0275\u0275template(45, UserMembersComponent_li_45_Template, 3, 3, "li", 20);
-        \u0275\u0275elementStart(46, "li", 18)(47, "a", 19);
-        \u0275\u0275listener("click", function UserMembersComponent_Template_a_click_47_listener() {
+        \u0275\u0275template(43, UserMembersComponent_li_43_Template, 3, 3, "li", 20);
+        \u0275\u0275elementStart(44, "li", 18)(45, "a", 19);
+        \u0275\u0275listener("click", function UserMembersComponent_Template_a_click_45_listener() {
           \u0275\u0275restoreView(_r1);
           return \u0275\u0275resetView(ctx.goNext());
         });
-        \u0275\u0275text(48, "\u203A");
+        \u0275\u0275text(46, "\u203A");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(49, "div", 21)(50, "select", 22);
-        \u0275\u0275listener("change", function UserMembersComponent_Template_select_change_50_listener($event) {
+        \u0275\u0275elementStart(47, "div", 21)(48, "select", 22);
+        \u0275\u0275listener("change", function UserMembersComponent_Template_select_change_48_listener($event) {
           \u0275\u0275restoreView(_r1);
           return \u0275\u0275resetView(ctx.onPageSizeChange($event));
         });
-        \u0275\u0275elementStart(51, "option", 23);
-        \u0275\u0275text(52, "15 /Page");
+        \u0275\u0275elementStart(49, "option", 23);
+        \u0275\u0275text(50, "15 /Page");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(53, "option", 24);
-        \u0275\u0275text(54, "30 /Page");
+        \u0275\u0275elementStart(51, "option", 24);
+        \u0275\u0275text(52, "30 /Page");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(55, "option", 25);
-        \u0275\u0275text(56, "50 /Page");
+        \u0275\u0275elementStart(53, "option", 25);
+        \u0275\u0275text(54, "50 /Page");
         \u0275\u0275elementEnd()()()()();
       }
       if (rf & 2) {
-        const noData_r9 = \u0275\u0275reference(38);
+        const noData_r9 = \u0275\u0275reference(36);
         \u0275\u0275advance(5);
         \u0275\u0275twoWayProperty("ngModel", ctx.selectedCadreId);
         \u0275\u0275advance();
@@ -388,7 +378,7 @@ var UserMembersComponent = class _UserMembersComponent {
         \u0275\u0275property("ngForOf", ctx.years);
         \u0275\u0275advance(2);
         \u0275\u0275twoWayProperty("ngModel", ctx.searchText);
-        \u0275\u0275advance(22);
+        \u0275\u0275advance(20);
         \u0275\u0275property("ngIf", ctx.users && ctx.users.length > 0)("ngIfElse", noData_r9);
         \u0275\u0275advance(6);
         \u0275\u0275classProp("disabled", ctx.currentPage === 1);
@@ -412,4 +402,4 @@ var UserMembersComponent = class _UserMembersComponent {
 export {
   UserMembersComponent
 };
-//# sourceMappingURL=chunk-6OAZ734N.mjs.map
+//# sourceMappingURL=chunk-BI6TZDRG.js.map

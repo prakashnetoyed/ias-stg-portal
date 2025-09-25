@@ -1,3 +1,4 @@
+import './polyfills.server.mjs';
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -10,21 +11,21 @@ import {
   ReactiveFormsModule,
   Validators,
   ɵNgNoValidate
-} from "./chunk-I52XJJYQ.js";
+} from "./chunk-R5BAAMIV.mjs";
 import {
   ToastService
-} from "./chunk-LWBJHTNQ.js";
+} from "./chunk-AGRVUAWB.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient
-} from "./chunk-USTNBAGL.js";
+} from "./chunk-LKXSFKPG.mjs";
 import {
   CommonModule,
   NgIf,
   isPlatformBrowser
-} from "./chunk-UGBLWZFH.js";
+} from "./chunk-TCHJBQHP.mjs";
 import {
   BehaviorSubject,
   ChangeDetectionStrategy,
@@ -78,11 +79,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate1,
   ɵɵtrustConstantResourceUrl
-} from "./chunk-J3GGQSN2.js";
+} from "./chunk-VCJFYSIH.mjs";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-ASLTLD6L.js";
+} from "./chunk-24VIC3GD.mjs";
 
 // node_modules/@angular/google-maps/fesm2022/google-maps.mjs
 var _c0 = ["*"];
@@ -3944,7 +3945,7 @@ function IasContactusComponent_div_27_span_3_Template(rf, ctx) {
 function IasContactusComponent_div_27_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 14);
-    \u0275\u0275template(1, IasContactusComponent_div_27_span_1_Template, 2, 0, "span", 39)(2, IasContactusComponent_div_27_span_2_Template, 2, 0, "span", 39)(3, IasContactusComponent_div_27_span_3_Template, 2, 0, "span", 39);
+    \u0275\u0275template(1, IasContactusComponent_div_27_span_1_Template, 2, 0, "span", 42)(2, IasContactusComponent_div_27_span_2_Template, 2, 0, "span", 42)(3, IasContactusComponent_div_27_span_3_Template, 2, 0, "span", 42);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -3984,7 +3985,7 @@ function IasContactusComponent_div_34_span_3_Template(rf, ctx) {
 function IasContactusComponent_div_34_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 14);
-    \u0275\u0275template(1, IasContactusComponent_div_34_span_1_Template, 2, 0, "span", 39)(2, IasContactusComponent_div_34_span_2_Template, 2, 0, "span", 39)(3, IasContactusComponent_div_34_span_3_Template, 2, 0, "span", 39);
+    \u0275\u0275template(1, IasContactusComponent_div_34_span_1_Template, 2, 0, "span", 42)(2, IasContactusComponent_div_34_span_2_Template, 2, 0, "span", 42)(3, IasContactusComponent_div_34_span_3_Template, 2, 0, "span", 42);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -4017,7 +4018,7 @@ function IasContactusComponent_div_41_span_2_Template(rf, ctx) {
 function IasContactusComponent_div_41_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 14);
-    \u0275\u0275template(1, IasContactusComponent_div_41_span_1_Template, 2, 0, "span", 39)(2, IasContactusComponent_div_41_span_2_Template, 2, 0, "span", 39);
+    \u0275\u0275template(1, IasContactusComponent_div_41_span_1_Template, 2, 0, "span", 42)(2, IasContactusComponent_div_41_span_2_Template, 2, 0, "span", 42);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -4040,7 +4041,7 @@ function IasContactusComponent_div_48_span_1_Template(rf, ctx) {
 function IasContactusComponent_div_48_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 14);
-    \u0275\u0275template(1, IasContactusComponent_div_48_span_1_Template, 2, 0, "span", 39);
+    \u0275\u0275template(1, IasContactusComponent_div_48_span_1_Template, 2, 0, "span", 42);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -4080,7 +4081,7 @@ function IasContactusComponent_div_55_span_3_Template(rf, ctx) {
 function IasContactusComponent_div_55_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 14);
-    \u0275\u0275template(1, IasContactusComponent_div_55_span_1_Template, 2, 0, "span", 39)(2, IasContactusComponent_div_55_span_2_Template, 2, 0, "span", 39)(3, IasContactusComponent_div_55_span_3_Template, 2, 1, "span", 39);
+    \u0275\u0275template(1, IasContactusComponent_div_55_span_1_Template, 2, 0, "span", 42)(2, IasContactusComponent_div_55_span_2_Template, 2, 0, "span", 42)(3, IasContactusComponent_div_55_span_3_Template, 2, 1, "span", 42);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -4098,7 +4099,7 @@ function IasContactusComponent_div_55_Template(rf, ctx) {
 }
 function IasContactusComponent_div_58_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 40);
+    \u0275\u0275elementStart(0, "div", 43);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -4110,7 +4111,7 @@ function IasContactusComponent_div_58_Template(rf, ctx) {
 }
 function IasContactusComponent_div_59_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 41);
+    \u0275\u0275elementStart(0, "div", 44);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -4191,7 +4192,7 @@ var IasContactusComponent = class _IasContactusComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasContactusComponent, selectors: [["app-ias-contactus"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 95, vars: 11, consts: [[1, "main-aboutus-page", "pb-5"], [1, "main-gradient"], [1, "container"], [1, "heading-div"], ["aria-label", "breadcrumb"], [1, "breadcrumb", "d-flex", "align-items-center"], [1, "breadcrumb-item", "m-0"], ["href", "/homepage"], ["aria-current", "page", 1, "breadcrumb-item", "active", "m-0"], [1, "form-div", "mt-5", "d-flex", "container", "gap-5"], [1, "left-side-form", "w-50"], [1, "mt-5", 3, "ngSubmit", "formGroup"], [1, "inner-form-div"], [1, "form-label"], [1, "text-danger"], ["type", "text", "formControlName", "firstName", "placeholder", "Enter your first name", 1, "form-control"], ["class", "text-danger", 4, "ngIf"], ["type", "text", "formControlName", "lastName", "placeholder", "Enter your last name", 1, "form-control"], ["type", "email", "formControlName", "email", "placeholder", "Enter your email id", 1, "form-control"], ["type", "text", "formControlName", "mobileNumber", "placeholder", "Enter your phone number", "maxlength", "10", "pattern", "[0-9]{10}", 1, "form-control", 3, "keypress"], [1, "mt-3"], ["formControlName", "message", "rows", "3", "placeholder", "Please describe your concern or request in detail in below or upto 20 words", 1, "form-control", 3, "input"], ["type", "submit", 1, "btn", "btn-submit", "w-100", "mt-3", 3, "disabled"], ["class", "text-success mt-2", 4, "ngIf"], ["class", "text-danger mt-2", 4, "ngIf"], [1, "right-other-info", "w-50", "d-flex", "flex-column", "justify-content-between"], [1, "email-div", "d-flex", "align-items-start", "gap-3", "mt-3"], [1, "left-icon"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "25", "viewBox", "0 0 24 25", "fill", "none"], ["id", "mask0_470_1029", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "25", 2, "mask-type", "alpha"], ["y", "0.5", "width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_470_1029)"], ["d", "M4 20.5C3.45 20.5 2.97917 20.3042 2.5875 19.9125C2.19583 19.5208 2 19.05 2 18.5V6.5C2 5.95 2.19583 5.47917 2.5875 5.0875C2.97917 4.69583 3.45 4.5 4 4.5H20C20.55 4.5 21.0208 4.69583 21.4125 5.0875C21.8042 5.47917 22 5.95 22 6.5V18.5C22 19.05 21.8042 19.5208 21.4125 19.9125C21.0208 20.3042 20.55 20.5 20 20.5H4ZM12 13.5L4 8.5V18.5H20V8.5L12 13.5ZM12 11.5L20 6.5H4L12 11.5ZM4 8.5V6.5V18.5V8.5Z", "fill", "white"], [1, "right-email"], ["id", "mask0_470_1023", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "25", 2, "mask-type", "alpha"], ["mask", "url(#mask0_470_1023)"], ["d", "M12 22.5C10.2333 22.5 8.79167 22.2208 7.675 21.6625C6.55833 21.1042 6 20.3833 6 19.5C6 19.1 6.12083 18.7292 6.3625 18.3875C6.60417 18.0458 6.94167 17.75 7.375 17.5L8.95 18.975C8.8 19.0417 8.6375 19.1167 8.4625 19.2C8.2875 19.2833 8.15 19.3833 8.05 19.5C8.26667 19.7667 8.76667 20 9.55 20.2C10.3333 20.4 11.15 20.5 12 20.5C12.85 20.5 13.6708 20.4 14.4625 20.2C15.2542 20 15.7583 19.7667 15.975 19.5C15.8583 19.3667 15.7083 19.2583 15.525 19.175C15.3417 19.0917 15.1667 19.0167 15 18.95L16.55 17.45C17.0167 17.7167 17.375 18.0208 17.625 18.3625C17.875 18.7042 18 19.0833 18 19.5C18 20.3833 17.4417 21.1042 16.325 21.6625C15.2083 22.2208 13.7667 22.5 12 22.5ZM12.025 17C13.675 15.7833 14.9167 14.5625 15.75 13.3375C16.5833 12.1125 17 10.8833 17 9.65C17 7.95 16.4583 6.66667 15.375 5.8C14.2917 4.93333 13.1667 4.5 12 4.5C10.8333 4.5 9.70833 4.93333 8.625 5.8C7.54167 6.66667 7 7.95 7 9.65C7 10.7667 7.40833 11.9292 8.225 13.1375C9.04167 14.3458 10.3083 15.6333 12.025 17ZM12 19.5C9.65 17.7667 7.89583 16.0833 6.7375 14.45C5.57917 12.8167 5 11.2167 5 9.65C5 8.46667 5.2125 7.42917 5.6375 6.5375C6.0625 5.64583 6.60833 4.9 7.275 4.3C7.94167 3.7 8.69167 3.25 9.525 2.95C10.3583 2.65 11.1833 2.5 12 2.5C12.8167 2.5 13.6417 2.65 14.475 2.95C15.3083 3.25 16.0583 3.7 16.725 4.3C17.3917 4.9 17.9375 5.64583 18.3625 6.5375C18.7875 7.42917 19 8.46667 19 9.65C19 11.2167 18.4208 12.8167 17.2625 14.45C16.1042 16.0833 14.35 17.7667 12 19.5ZM12 11.5C12.55 11.5 13.0208 11.3042 13.4125 10.9125C13.8042 10.5208 14 10.05 14 9.5C14 8.95 13.8042 8.47917 13.4125 8.0875C13.0208 7.69583 12.55 7.5 12 7.5C11.45 7.5 10.9792 7.69583 10.5875 8.0875C10.1958 8.47917 10 8.95 10 9.5C10 10.05 10.1958 10.5208 10.5875 10.9125C10.9792 11.3042 11.45 11.5 12 11.5Z", "fill", "white"], [1, "map-container", "mt-3"], ["src", \u0275\u0275trustConstantResourceUrl`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4986441210623!2d77.22057807488798!3d28.6090565756725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd47da6cd9a9%3A0x7c5208bb07b5e3db!2sCivil%20Service%20Officer's%20Institute!5e0!3m2!1sen!2sin!4v1693839900000!5m2!1sen!2sin`, "allowfullscreen", "", "loading", "lazy", "referrerpolicy", "no-referrer-when-downgrade"], [4, "ngIf"], [1, "text-success", "mt-2"], [1, "text-danger", "mt-2"]], template: function IasContactusComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasContactusComponent, selectors: [["app-ias-contactus"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 95, vars: 11, consts: [[1, "main-aboutus-page", "pb-5"], [1, "main-gradient"], [1, "container"], [1, "heading-div"], ["aria-label", "breadcrumb"], [1, "breadcrumb", "d-flex", "align-items-center"], [1, "breadcrumb-item", "m-0"], ["href", "/homepage"], ["aria-current", "page", 1, "breadcrumb-item", "active", "m-0"], [1, "form-div", "mt-5", "d-flex", "container", "gap-5"], [1, "left-side-form", "w-50"], [1, "mt-5", 3, "ngSubmit", "formGroup"], [1, "inner-form-div"], [1, "form-label"], [1, "text-danger"], ["type", "text", "formControlName", "firstName", "placeholder", "Enter your first name", 1, "form-control"], ["class", "text-danger", 4, "ngIf"], ["type", "text", "formControlName", "lastName", "placeholder", "Enter your last name", 1, "form-control"], ["type", "email", "formControlName", "email", "placeholder", "Enter your email id", 1, "form-control"], ["type", "text", "formControlName", "mobileNumber", "placeholder", "Enter your phone number", "maxlength", "10", "pattern", "[0-9]{10}", 1, "form-control", 3, "keypress"], [1, "mt-3"], ["formControlName", "message", "rows", "3", "placeholder", "Please describe your concern or issue (up to 20 words)", 1, "form-control", 3, "input"], ["type", "submit", 1, "btn", "btn-submit", "w-100", "mt-3", 3, "disabled"], ["class", "text-success mt-2", 4, "ngIf"], ["class", "text-danger mt-2", 4, "ngIf"], [1, "right-other-info", "w-50", "d-flex", "flex-column", "justify-content-between"], [1, "email-div", "d-flex", "align-items-start", "gap-3", "mt-3"], [1, "left-icon"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "25", "viewBox", "0 0 24 25", "fill", "none"], ["id", "mask0_470_1029", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "25", 2, "mask-type", "alpha"], ["y", "0.5", "width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_470_1029)"], ["d", "M4 20.5C3.45 20.5 2.97917 20.3042 2.5875 19.9125C2.19583 19.5208 2 19.05 2 18.5V6.5C2 5.95 2.19583 5.47917 2.5875 5.0875C2.97917 4.69583 3.45 4.5 4 4.5H20C20.55 4.5 21.0208 4.69583 21.4125 5.0875C21.8042 5.47917 22 5.95 22 6.5V18.5C22 19.05 21.8042 19.5208 21.4125 19.9125C21.0208 20.3042 20.55 20.5 20 20.5H4ZM12 13.5L4 8.5V18.5H20V8.5L12 13.5ZM12 11.5L20 6.5H4L12 11.5ZM4 8.5V6.5V18.5V8.5Z", "fill", "white"], [1, "right-email"], ["href", "mailto:iascahelpdesk@gmail.com", 2, "cursor", "pointer"], [2, "cursor", "pointer"], ["href", "mailto:treasurericas2006@gmail.com", 2, "cursor", "pointer"], ["id", "mask0_470_1023", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "25", 2, "mask-type", "alpha"], ["mask", "url(#mask0_470_1023)"], ["d", "M12 22.5C10.2333 22.5 8.79167 22.2208 7.675 21.6625C6.55833 21.1042 6 20.3833 6 19.5C6 19.1 6.12083 18.7292 6.3625 18.3875C6.60417 18.0458 6.94167 17.75 7.375 17.5L8.95 18.975C8.8 19.0417 8.6375 19.1167 8.4625 19.2C8.2875 19.2833 8.15 19.3833 8.05 19.5C8.26667 19.7667 8.76667 20 9.55 20.2C10.3333 20.4 11.15 20.5 12 20.5C12.85 20.5 13.6708 20.4 14.4625 20.2C15.2542 20 15.7583 19.7667 15.975 19.5C15.8583 19.3667 15.7083 19.2583 15.525 19.175C15.3417 19.0917 15.1667 19.0167 15 18.95L16.55 17.45C17.0167 17.7167 17.375 18.0208 17.625 18.3625C17.875 18.7042 18 19.0833 18 19.5C18 20.3833 17.4417 21.1042 16.325 21.6625C15.2083 22.2208 13.7667 22.5 12 22.5ZM12.025 17C13.675 15.7833 14.9167 14.5625 15.75 13.3375C16.5833 12.1125 17 10.8833 17 9.65C17 7.95 16.4583 6.66667 15.375 5.8C14.2917 4.93333 13.1667 4.5 12 4.5C10.8333 4.5 9.70833 4.93333 8.625 5.8C7.54167 6.66667 7 7.95 7 9.65C7 10.7667 7.40833 11.9292 8.225 13.1375C9.04167 14.3458 10.3083 15.6333 12.025 17ZM12 19.5C9.65 17.7667 7.89583 16.0833 6.7375 14.45C5.57917 12.8167 5 11.2167 5 9.65C5 8.46667 5.2125 7.42917 5.6375 6.5375C6.0625 5.64583 6.60833 4.9 7.275 4.3C7.94167 3.7 8.69167 3.25 9.525 2.95C10.3583 2.65 11.1833 2.5 12 2.5C12.8167 2.5 13.6417 2.65 14.475 2.95C15.3083 3.25 16.0583 3.7 16.725 4.3C17.3917 4.9 17.9375 5.64583 18.3625 6.5375C18.7875 7.42917 19 8.46667 19 9.65C19 11.2167 18.4208 12.8167 17.2625 14.45C16.1042 16.0833 14.35 17.7667 12 19.5ZM12 11.5C12.55 11.5 13.0208 11.3042 13.4125 10.9125C13.8042 10.5208 14 10.05 14 9.5C14 8.95 13.8042 8.47917 13.4125 8.0875C13.0208 7.69583 12.55 7.5 12 7.5C11.45 7.5 10.9792 7.69583 10.5875 8.0875C10.1958 8.47917 10 8.95 10 9.5C10 10.05 10.1958 10.5208 10.5875 10.9125C10.9792 11.3042 11.45 11.5 12 11.5Z", "fill", "white"], [1, "map-container", "mt-3"], ["src", \u0275\u0275trustConstantResourceUrl`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4986441210623!2d77.22057807488798!3d28.6090565756725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd47da6cd9a9%3A0x7c5208bb07b5e3db!2sCivil%20Service%20Officer's%20Institute!5e0!3m2!1sen!2sin!4v1693839900000!5m2!1sen!2sin`, "allowfullscreen", "", "loading", "lazy", "referrerpolicy", "no-referrer-when-downgrade"], [4, "ngIf"], [1, "text-success", "mt-2"], [1, "text-danger", "mt-2"]], template: function IasContactusComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "nav", 4)(5, "ol", 5)(6, "li", 6)(7, "a", 7);
         \u0275\u0275text(8, "Home");
@@ -4280,25 +4281,25 @@ var IasContactusComponent = class _IasContactusComponent {
         \u0275\u0275elementStart(70, "div", 33)(71, "h3");
         \u0275\u0275text(72, "Email");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(73, "h4");
-        \u0275\u0275text(74, "association.ias@gmail.com");
+        \u0275\u0275elementStart(73, "h4", 34);
+        \u0275\u0275text(74, "iascahelpdesk@gmail.com");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(75, "h4");
+        \u0275\u0275elementStart(75, "h4", 35);
         \u0275\u0275text(76, "secretary.ias@gmail.com");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(77, "h4");
+        \u0275\u0275elementStart(77, "h4", 36);
         \u0275\u0275text(78, "treasurericas2006@gmail.com");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(79, "h4");
+        \u0275\u0275elementStart(79, "h4", 35);
         \u0275\u0275text(80, "president.ias@gmail.com");
         \u0275\u0275elementEnd()()();
         \u0275\u0275elementStart(81, "div", 26)(82, "div", 27);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(83, "svg", 28)(84, "mask", 34);
+        \u0275\u0275elementStart(83, "svg", 28)(84, "mask", 37);
         \u0275\u0275element(85, "rect", 30);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(86, "g", 35);
-        \u0275\u0275element(87, "path", 36);
+        \u0275\u0275elementStart(86, "g", 38);
+        \u0275\u0275element(87, "path", 39);
         \u0275\u0275elementEnd()()();
         \u0275\u0275namespaceHTML();
         \u0275\u0275elementStart(88, "div", 33)(89, "h3");
@@ -4307,8 +4308,8 @@ var IasContactusComponent = class _IasContactusComponent {
         \u0275\u0275elementStart(91, "h4");
         \u0275\u0275text(92, " Indian Civil and Administrative Service (Central) Association, New Delhi ");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(93, "div", 37);
-        \u0275\u0275element(94, "iframe", 38);
+        \u0275\u0275elementStart(93, "div", 40);
+        \u0275\u0275element(94, "iframe", 41);
         \u0275\u0275elementEnd()()()();
       }
       if (rf & 2) {
@@ -4347,4 +4348,4 @@ var IasContactusComponent = class _IasContactusComponent {
 export {
   IasContactusComponent
 };
-//# sourceMappingURL=chunk-7O4EO4YR.js.map
+//# sourceMappingURL=chunk-G7LVGZIF.mjs.map
