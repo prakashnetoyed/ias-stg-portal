@@ -174,10 +174,10 @@ var IasSidebarComponent = class _IasSidebarComponent {
     localStorage.setItem("isUserManagementOpen", this.isUserManagementOpen.toString());
   }
   goHome() {
-    if (this.router.url === "/home") {
+    if (this.router.url === "/homepage") {
       this.toastService.showToast("You are already on Home page", "success");
     } else {
-      this.router.navigateByUrl("/home");
+      this.router.navigateByUrl("/homepage");
     }
   }
   static {
@@ -12100,4 +12100,4 @@ var DashboardLayoutComponent = class _DashboardLayoutComponent {
 export {
   DashboardLayoutComponent
 };
-//# sourceMappingURL=chunk-5QNQZ2IU.js.map
+//# sourceMappingURL=chunk-65XF2NMB.js.map

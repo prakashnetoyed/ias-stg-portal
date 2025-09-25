@@ -119,46 +119,107 @@ import "./chunk-ASLTLD6L.js";
 
 // src/app/common/ias-header/ias-header.component.ts
 var _c0 = () => ({ exact: true });
-function IasHeaderComponent_ng_container_38_ng_container_1_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "button", 22);
-    \u0275\u0275text(2, "Admin Dashboard");
-    \u0275\u0275elementEnd();
+    \u0275\u0275element(1, "img", 30);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
+    \u0275\u0275property("src", ctx_r1.user == null ? null : ctx_r1.user.doptOfficer == null ? null : ctx_r1.user.doptOfficer.profilePic, \u0275\u0275sanitizeUrl);
+  }
+}
+function IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275text(0);
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275textInterpolate1(" ", ctx_r1.getUserInitials(), " ");
+  }
+}
+function IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275elementStart(1, "li")(2, "a", 31);
+    \u0275\u0275text(3, "Admin Profile");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(4, "li")(5, "a", 31);
+    \u0275\u0275text(6, "Admin Dashboard");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    \u0275\u0275advance(2);
+    \u0275\u0275property("routerLink", "/home/profile");
+    \u0275\u0275advance(3);
     \u0275\u0275property("routerLink", "/home");
   }
 }
-function IasHeaderComponent_ng_container_38_ng_template_2_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_38_div_1_ng_template_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "button", 22);
-    \u0275\u0275text(1, "Member Dashboard");
-    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(0, "li")(1, "a", 31);
+    \u0275\u0275text(2, "User Profile");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(3, "li")(4, "a", 31);
+    \u0275\u0275text(5, "User Dashboard");
+    \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
+    \u0275\u0275advance();
+    \u0275\u0275property("routerLink", "/user-home/user-profile");
+    \u0275\u0275advance(3);
     \u0275\u0275property("routerLink", "/user-home");
+  }
+}
+function IasHeaderComponent_ng_container_38_div_1_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 23)(1, "button", 24)(2, "div", 25);
+    \u0275\u0275template(3, IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template, 2, 1, "ng-container", 26)(4, IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template, 1, 1, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(6, "ul", 27);
+    \u0275\u0275template(7, IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template, 7, 2, "ng-container", 26)(8, IasHeaderComponent_ng_container_38_div_1_ng_template_8_Template, 6, 2, "ng-template", null, 1, \u0275\u0275templateRefExtractor);
+    \u0275\u0275elementStart(10, "li");
+    \u0275\u0275element(11, "hr", 28);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(12, "li")(13, "a", 29);
+    \u0275\u0275listener("click", function IasHeaderComponent_ng_container_38_div_1_Template_a_click_13_listener() {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.logout());
+    });
+    \u0275\u0275text(14, "Logout");
+    \u0275\u0275elementEnd()()()();
+  }
+  if (rf & 2) {
+    const initials_r3 = \u0275\u0275reference(5);
+    const userMenu_r4 = \u0275\u0275reference(9);
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(3);
+    \u0275\u0275property("ngIf", ctx_r1.user == null ? null : ctx_r1.user.doptOfficer == null ? null : ctx_r1.user.doptOfficer.profilePic)("ngIfElse", initials_r3);
+    \u0275\u0275advance(4);
+    \u0275\u0275property("ngIf", ctx_r1.userRole === "admin")("ngIfElse", userMenu_r4);
   }
 }
 function IasHeaderComponent_ng_container_38_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, IasHeaderComponent_ng_container_38_ng_container_1_Template, 3, 1, "ng-container", 21)(2, IasHeaderComponent_ng_container_38_ng_template_2_Template, 2, 1, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+    \u0275\u0275template(1, IasHeaderComponent_ng_container_38_div_1_Template, 15, 4, "div", 22);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
-    const userMenu_r1 = \u0275\u0275reference(3);
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r1.userRole === "admin")("ngIfElse", userMenu_r1);
+    \u0275\u0275property("ngIf", ctx_r1.isLoggedIn);
   }
 }
 function IasHeaderComponent_ng_container_39_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "button", 22);
+    \u0275\u0275elementStart(1, "button", 32);
     \u0275\u0275text(2, "Log in / Sign up");
     \u0275\u0275elementEnd();
     \u0275\u0275elementContainerEnd();
@@ -232,51 +293,51 @@ var IasHeaderComponent = class _IasHeaderComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 40, vars: 26, consts: [["userMenu", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], [4, "ngIf", "ngIfElse"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 40, vars: 26, consts: [["initials", ""], ["userMenu", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], ["class", "dropdown", 4, "ngIf"], [1, "dropdown"], ["type", "button", "id", "profileDropdown", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "dropdown-toggle", "user-profile", "d-flex", "align-items-center", "p-0"], [1, "avatar"], [4, "ngIf", "ngIfElse"], ["aria-labelledby", "profileDropdown", 1, "dropdown-menu", "dropdown-menu-end"], [1, "dropdown-divider"], [1, "dropdown-item", "text-danger", 2, "cursor", "pointer", 3, "click"], ["alt", "User Avatar", 3, "src"], [1, "dropdown-item", 3, "routerLink"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 1)(1, "div", 2)(2, "div", 3);
+        \u0275\u0275elementStart(0, "div", 2)(1, "div", 3)(2, "div", 4);
         \u0275\u0275listener("click", function IasHeaderComponent_Template_div_click_2_listener() {
           return ctx.goHome();
         });
-        \u0275\u0275element(3, "img", 4);
+        \u0275\u0275element(3, "img", 5);
         \u0275\u0275elementStart(4, "h1");
         \u0275\u0275text(5, "Indian Administrative Service ");
         \u0275\u0275element(6, "br");
         \u0275\u0275text(7, "Central Association");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(8, "div", 5)(9, "nav", 6)(10, "div", 7)(11, "button", 8);
-        \u0275\u0275element(12, "span", 9);
+        \u0275\u0275elementStart(8, "div", 6)(9, "nav", 7)(10, "div", 8)(11, "button", 9);
+        \u0275\u0275element(12, "span", 10);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(13, "div", 10)(14, "div", 11)(15, "a", 12);
+        \u0275\u0275elementStart(13, "div", 11)(14, "div", 12)(15, "a", 13);
         \u0275\u0275text(16, "Membership");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(17, "a", 12);
+        \u0275\u0275elementStart(17, "a", 13);
         \u0275\u0275text(18, "Community");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(19, "a", 12);
+        \u0275\u0275elementStart(19, "a", 13);
         \u0275\u0275text(20, "News");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(21, "a", 12);
+        \u0275\u0275elementStart(21, "a", 13);
         \u0275\u0275text(22, "Contact us");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(23, "div", 13)(24, "div", 14)(25, "h5", 15);
+        \u0275\u0275elementStart(23, "div", 14)(24, "div", 15)(25, "h5", 16);
         \u0275\u0275text(26, "Menu");
         \u0275\u0275elementEnd();
-        \u0275\u0275element(27, "button", 16);
+        \u0275\u0275element(27, "button", 17);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(28, "div", 17)(29, "div", 18)(30, "a", 19);
+        \u0275\u0275elementStart(28, "div", 18)(29, "div", 19)(30, "a", 20);
         \u0275\u0275text(31, "Membership");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(32, "a", 19);
+        \u0275\u0275elementStart(32, "a", 20);
         \u0275\u0275text(33, "Community");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(34, "a", 19);
+        \u0275\u0275elementStart(34, "a", 20);
         \u0275\u0275text(35, "News");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(36, "a", 19);
+        \u0275\u0275elementStart(36, "a", 20);
         \u0275\u0275text(37, "Contact us");
         \u0275\u0275elementEnd()()()()()();
-        \u0275\u0275template(38, IasHeaderComponent_ng_container_38_Template, 4, 2, "ng-container", 20)(39, IasHeaderComponent_ng_container_39_Template, 3, 1, "ng-container", 20);
+        \u0275\u0275template(38, IasHeaderComponent_ng_container_38_Template, 2, 1, "ng-container", 21)(39, IasHeaderComponent_ng_container_39_Template, 3, 1, "ng-container", 21);
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
@@ -2684,7 +2745,7 @@ var routes = [
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-VVDFMHHO.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-5WGWZWHI.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -2722,7 +2783,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-5QNQZ2IU.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-65XF2NMB.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -2774,11 +2835,11 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-JIFATLFV.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-CSIL4HAG.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-DURZO6D3.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-BEDW2BQE.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
