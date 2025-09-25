@@ -2683,7 +2683,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TD2MJCFN.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-JQMAIYXY.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2747,7 +2747,7 @@ var routes = [
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SRYPBNTY.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-7SQH5OLZ.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",

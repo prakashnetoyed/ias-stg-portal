@@ -1,30 +1,31 @@
+import './polyfills.server.mjs';
+import {
+  TimeAgoPipe
+} from "./chunk-WZTH4YIJ.mjs";
+import {
+  AuthService
+} from "./chunk-MNSYU6XL.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-FKYP46WN.js";
-import {
-  TimeAgoPipe
-} from "./chunk-HLJNXJZK.js";
-import {
-  AuthService
-} from "./chunk-F5R2LI5R.js";
+} from "./chunk-7VRJMX3P.mjs";
 import {
   Router,
   RouterLink,
   RouterModule
-} from "./chunk-TKFRT2UI.js";
-import "./chunk-SY4Y3KW5.js";
+} from "./chunk-6ATHX5LA.mjs";
+import "./chunk-7CCGWKBH.mjs";
 import {
   ToastService
-} from "./chunk-LWBJHTNQ.js";
+} from "./chunk-AGRVUAWB.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient
-} from "./chunk-USTNBAGL.js";
+} from "./chunk-LKXSFKPG.mjs";
 import {
   CommonModule,
   DatePipe,
@@ -33,7 +34,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-UGBLWZFH.js";
+} from "./chunk-TCHJBQHP.mjs";
 import {
   PLATFORM_ID,
   inject,
@@ -72,11 +73,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-J3GGQSN2.js";
+} from "./chunk-VCJFYSIH.mjs";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-ASLTLD6L.js";
+} from "./chunk-24VIC3GD.mjs";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -943,7 +944,7 @@ var _c03 = () => ["/user-home"];
 function IasCreateshareComponent_ng_container_27_ng_container_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275element(1, "img", 56);
+    \u0275\u0275element(1, "img", 55);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -954,12 +955,12 @@ function IasCreateshareComponent_ng_container_27_ng_container_2_Template(rf, ctx
 }
 function IasCreateshareComponent_ng_container_27_ng_template_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "div", 57);
+    \u0275\u0275element(0, "div", 56);
   }
 }
 function IasCreateshareComponent_ng_container_27_div_9_ng_container_1_img_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 62);
+    \u0275\u0275element(0, "img", 61);
   }
   if (rf & 2) {
     const file_r3 = \u0275\u0275nextContext().$implicit;
@@ -969,7 +970,7 @@ function IasCreateshareComponent_ng_container_27_div_9_ng_container_1_img_1_Temp
 }
 function IasCreateshareComponent_ng_container_27_div_9_ng_container_1_video_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "video", 63);
+    \u0275\u0275element(0, "video", 62);
   }
   if (rf & 2) {
     const file_r3 = \u0275\u0275nextContext().$implicit;
@@ -980,7 +981,7 @@ function IasCreateshareComponent_ng_container_27_div_9_ng_container_1_video_2_Te
 function IasCreateshareComponent_ng_container_27_div_9_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, IasCreateshareComponent_ng_container_27_div_9_ng_container_1_img_1_Template, 1, 1, "img", 60)(2, IasCreateshareComponent_ng_container_27_div_9_ng_container_1_video_2_Template, 1, 1, "video", 61);
+    \u0275\u0275template(1, IasCreateshareComponent_ng_container_27_div_9_ng_container_1_img_1_Template, 1, 1, "img", 59)(2, IasCreateshareComponent_ng_container_27_div_9_ng_container_1_video_2_Template, 1, 1, "video", 60);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -993,8 +994,8 @@ function IasCreateshareComponent_ng_container_27_div_9_ng_container_1_Template(r
 }
 function IasCreateshareComponent_ng_container_27_div_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 58);
-    \u0275\u0275template(1, IasCreateshareComponent_ng_container_27_div_9_ng_container_1_Template, 3, 2, "ng-container", 59);
+    \u0275\u0275elementStart(0, "div", 57);
+    \u0275\u0275template(1, IasCreateshareComponent_ng_container_27_div_9_ng_container_1_Template, 3, 2, "ng-container", 58);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1007,46 +1008,46 @@ function IasCreateshareComponent_ng_container_27_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "div", 43);
+    \u0275\u0275elementStart(1, "div", 42);
     \u0275\u0275template(2, IasCreateshareComponent_ng_container_27_ng_container_2_Template, 2, 1, "ng-container", 23)(3, IasCreateshareComponent_ng_container_27_ng_template_3_Template, 1, 0, "ng-template", null, 3, \u0275\u0275templateRefExtractor);
     \u0275\u0275text(5);
     \u0275\u0275elementStart(6, "span");
     \u0275\u0275text(7);
     \u0275\u0275pipe(8, "timeAgo");
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(9, IasCreateshareComponent_ng_container_27_div_9_Template, 2, 1, "div", 44);
+    \u0275\u0275template(9, IasCreateshareComponent_ng_container_27_div_9_Template, 2, 1, "div", 43);
     \u0275\u0275elementStart(10, "h5");
     \u0275\u0275text(11);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "p", 45);
+    \u0275\u0275elementStart(12, "p", 44);
     \u0275\u0275text(13);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(14, "div", 46)(15, "div", 47)(16, "div", 48);
+    \u0275\u0275elementStart(14, "div", 45)(15, "div", 46)(16, "div", 47);
     \u0275\u0275listener("click", function IasCreateshareComponent_ng_container_27_Template_div_click_16_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.toggleLike(ctx_r1.post));
     });
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(17, "svg", 49);
-    \u0275\u0275element(18, "path", 50);
+    \u0275\u0275elementStart(17, "svg", 48);
+    \u0275\u0275element(18, "path", 49);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(19, "span", 51);
+    \u0275\u0275elementStart(19, "span", 50);
     \u0275\u0275text(20);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(21, "div", 52);
+    \u0275\u0275elementStart(21, "div", 51);
     \u0275\u0275listener("click", function IasCreateshareComponent_ng_container_27_Template_div_click_21_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.copyPostLink(ctx_r1.post.id));
     });
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(22, "svg", 10)(23, "mask", 53);
+    \u0275\u0275elementStart(22, "svg", 10)(23, "mask", 52);
     \u0275\u0275element(24, "rect", 12);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(25, "g", 54);
-    \u0275\u0275element(26, "path", 55);
+    \u0275\u0275elementStart(25, "g", 53);
+    \u0275\u0275element(26, "path", 54);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(27, " Copy Link ");
     \u0275\u0275elementEnd()();
@@ -1075,7 +1076,7 @@ function IasCreateshareComponent_ng_container_27_Template(rf, ctx) {
 }
 function IasCreateshareComponent_ng_template_28_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 64)(1, "span", 21);
+    \u0275\u0275elementStart(0, "div", 63)(1, "span", 21);
     \u0275\u0275text(2, "No Featured Post Available");
     \u0275\u0275elementEnd()();
   }
@@ -1083,7 +1084,7 @@ function IasCreateshareComponent_ng_template_28_Template(rf, ctx) {
 function IasCreateshareComponent_div_44_ng_container_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275element(1, "img", 71);
+    \u0275\u0275element(1, "img", 70);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -1094,16 +1095,16 @@ function IasCreateshareComponent_div_44_ng_container_3_Template(rf, ctx) {
 }
 function IasCreateshareComponent_div_44_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 15)(1, "div", 65)(2, "div", 66);
-    \u0275\u0275template(3, IasCreateshareComponent_div_44_ng_container_3_Template, 2, 1, "ng-container", 67);
-    \u0275\u0275elementStart(4, "div", 68)(5, "h6");
+    \u0275\u0275elementStart(0, "div", 15)(1, "div", 64)(2, "div", 65);
+    \u0275\u0275template(3, IasCreateshareComponent_div_44_ng_container_3_Template, 2, 1, "ng-container", 66);
+    \u0275\u0275elementStart(4, "div", 67)(5, "h6");
     \u0275\u0275text(6);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(7, "p")(8, "small");
     \u0275\u0275text(9);
     \u0275\u0275pipe(10, "timeAgo");
     \u0275\u0275elementEnd()()()()();
-    \u0275\u0275elementStart(11, "div", 69)(12, "div", 70);
+    \u0275\u0275elementStart(11, "div", 68)(12, "div", 69);
     \u0275\u0275text(13);
     \u0275\u0275elementEnd()()();
   }
@@ -1121,17 +1122,17 @@ function IasCreateshareComponent_div_44_Template(rf, ctx) {
 }
 function IasCreateshareComponent_ng_template_45_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 72);
+    \u0275\u0275elementStart(0, "p", 71);
     \u0275\u0275text(1, "No featured profile Available.");
     \u0275\u0275elementEnd();
   }
 }
 function IasCreateshareComponent_ng_container_60_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 74)(1, "div")(2, "h5", 75);
+    \u0275\u0275elementStart(0, "div", 73)(1, "div")(2, "h5", 74);
     \u0275\u0275text(3);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(4, "p", 75);
+    \u0275\u0275elementStart(4, "p", 74);
     \u0275\u0275text(5, "Added a new Post.");
     \u0275\u0275elementEnd()()();
   }
@@ -1144,7 +1145,7 @@ function IasCreateshareComponent_ng_container_60_div_1_Template(rf, ctx) {
 function IasCreateshareComponent_ng_container_60_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, IasCreateshareComponent_ng_container_60_div_1_Template, 6, 1, "div", 73);
+    \u0275\u0275template(1, IasCreateshareComponent_ng_container_60_div_1_Template, 6, 1, "div", 72);
     \u0275\u0275pipe(2, "slice");
     \u0275\u0275elementContainerEnd();
   }
@@ -1156,7 +1157,7 @@ function IasCreateshareComponent_ng_container_60_Template(rf, ctx) {
 }
 function IasCreateshareComponent_ng_template_61_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "p", 72);
+    \u0275\u0275elementStart(0, "p", 71);
     \u0275\u0275text(1, "No Recent Activities Available.");
     \u0275\u0275elementEnd();
   }
@@ -1240,7 +1241,7 @@ var IasCreateshareComponent = class _IasCreateshareComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasCreateshareComponent, selectors: [["app-ias-createshare"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 63, vars: 8, consts: [["nopost", ""], ["noFeaturedPost", ""], ["noactivity", ""], ["avatarFallback", ""], [1, "ias-bg"], [1, "container"], [1, "d-flex", "flex-column", "flex-lg-row", "justify-content-start", "justify-content-lg-between", "align-items-start", "align-items-lg-end", "mb-4"], [1, "ias-label", "mb-1"], [1, "ias-title", "pe-5", "mb-3"], [1, "add-post-btn", 3, "routerLink"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none"], ["id", "mask0_329_447", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_329_447)"], ["d", "M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z", "fill", "#150F22"], [1, "row"], [1, "col-lg-6"], [1, "card-Featured", "h-100"], ["src", "../../../../assets/images/featurecardbg.png", "alt", "", "srcset", "", 1, "featurecardbg"], [1, "z-1"], [1, "d-flex", "justify-content-between", "align-items-center", "mb-2"], [1, "Featured-head"], [1, "badge-trending"], [4, "ngIf", "ngIfElse"], [1, "col-lg-6", "mt-3", "mt-lg-0"], [1, "row", "h-50"], [1, "col-12", "mb-3"], [1, "card-Featured", "p-3", "mb-3", "h-100"], ["src", "../../../../assets/images/featureprofilebg.png", "alt", "", "srcset", "", 1, "featureprofilebg"], [1, "d-flex", "align-items-center", "mb-4", "gap-2"], ["id", "mask0_199_674", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["mask", "url(#mask0_199_674)"], ["d", "M5.85 17.1C6.7 16.45 7.65 15.9375 8.7 15.5625C9.75 15.1875 10.85 15 12 15C13.15 15 14.25 15.1875 15.3 15.5625C16.35 15.9375 17.3 16.45 18.15 17.1C18.7333 16.4167 19.1875 15.6417 19.5125 14.775C19.8375 13.9083 20 12.9833 20 12C20 9.78333 19.2208 7.89583 17.6625 6.3375C16.1042 4.77917 14.2167 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 12.9833 4.1625 13.9083 4.4875 14.775C4.8125 15.6417 5.26667 16.4167 5.85 17.1ZM12 13C11.0167 13 10.1875 12.6625 9.5125 11.9875C8.8375 11.3125 8.5 10.4833 8.5 9.5C8.5 8.51667 8.8375 7.6875 9.5125 7.0125C10.1875 6.3375 11.0167 6 12 6C12.9833 6 13.8125 6.3375 14.4875 7.0125C15.1625 7.6875 15.5 8.51667 15.5 9.5C15.5 10.4833 15.1625 11.3125 14.4875 11.9875C13.8125 12.6625 12.9833 13 12 13ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C12.8833 20 13.7167 19.8708 14.5 19.6125C15.2833 19.3542 16 18.9833 16.65 18.5C16 18.0167 15.2833 17.6458 14.5 17.3875C13.7167 17.1292 12.8833 17 12 17C11.1167 17 10.2833 17.1292 9.5 17.3875C8.71667 17.6458 8 18.0167 7.35 18.5C8 18.9833 8.71667 19.3542 9.5 19.6125C10.2833 19.8708 11.1167 20 12 20ZM12 11C12.4333 11 12.7917 10.8583 13.075 10.575C13.3583 10.2917 13.5 9.93333 13.5 9.5C13.5 9.06667 13.3583 8.70833 13.075 8.425C12.7917 8.14167 12.4333 8 12 8C11.5667 8 11.2083 8.14167 10.925 8.425C10.6417 8.70833 10.5 9.06667 10.5 9.5C10.5 9.93333 10.6417 10.2917 10.925 10.575C11.2083 10.8583 11.5667 11 12 11Z", "fill", "white"], [1, "Featuredtitle"], ["class", "row", 4, "ngIf", "ngIfElse"], [1, "row", "gap-3", "gap-md-0", "h-50"], [1, "col"], [1, "card-Featured", "p-4", "pb-2", "h-100"], ["src", "../../../../assets/images/recentbg.png", "alt", "", "srcset", "", 1, "recentbg"], [1, "d-flex", "align-items-center", "mb-3", "gap-2"], ["id", "mask0_329_397", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["mask", "url(#mask0_329_397)"], ["d", "M11.0229 16.2L12.3997 14.8L9.25283 11.6V7H7.28606V12.4L11.0229 16.2ZM17.1199 20.5V18.3C18.3328 17.7167 19.2916 16.8583 19.9964 15.725C20.7011 14.5917 21.0535 13.35 21.0535 12C21.0535 10.65 20.7011 9.40833 19.9964 8.275C19.2916 7.14167 18.3328 6.28333 17.1199 5.7V3.5C18.9064 4.13333 20.3364 5.22917 21.41 6.7875C22.4835 8.34583 23.0203 10.0833 23.0203 12C23.0203 13.9167 22.4835 15.6542 21.41 17.2125C20.3364 18.7708 18.9064 19.8667 17.1199 20.5ZM8.26944 21C7.04021 21 5.88882 20.7625 4.81529 20.2875C3.74176 19.8125 2.80754 19.1708 2.01263 18.3625C1.21773 17.5542 0.586719 16.6042 0.11961 15.5125C-0.3475 14.4208 -0.581055 13.25 -0.581055 12C-0.581055 10.75 -0.3475 9.57917 0.11961 8.4875C0.586719 7.39583 1.21773 6.44583 2.01263 5.6375C2.80754 4.82917 3.74176 4.1875 4.81529 3.7125C5.88882 3.2375 7.04021 3 8.26944 3C9.49868 3 10.6501 3.2375 11.7236 3.7125C12.7971 4.1875 13.7313 4.82917 14.5263 5.6375C15.3212 6.44583 15.9522 7.39583 16.4193 8.4875C16.8864 9.57917 17.1199 10.75 17.1199 12C17.1199 13.25 16.8864 14.4208 16.4193 15.5125C15.9522 16.6042 15.3212 17.5542 14.5263 18.3625C13.7313 19.1708 12.7971 19.8125 11.7236 20.2875C10.6501 20.7625 9.49868 21 8.26944 21ZM8.26944 19C10.1871 19 11.8137 18.3208 13.1495 16.9625C14.4853 15.6042 15.1532 13.95 15.1532 12C15.1532 10.05 14.4853 8.39583 13.1495 7.0375C11.8137 5.67917 10.1871 5 8.26944 5C6.35184 5 4.72515 5.67917 3.38938 7.0375C2.05361 8.39583 1.38572 10.05 1.38572 12C1.38572 13.95 2.05361 15.6042 3.38938 16.9625C4.72515 18.3208 6.35184 19 8.26944 19Z", "fill", "white"], [1, "mb-3", "user"], ["class", "position-relative imgcontainer overflow-auto d-flex gap-3 w-100 pb-3", 4, "ngIf"], [1, "mb-3"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-3"], [1, "like-div", "d-flex", "align-items-center"], [1, "like-button", "overflow-visible", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "19", "viewBox", "0 0 21 19", "fill", "none"], ["d", "M10.293 19L8.84297 17.7C7.15964 16.1834 5.76797 14.875 4.66797 13.775C3.56797 12.675 2.69297 11.6875 2.04297 10.8125C1.39297 9.93752 0.938802 9.13336 0.680469 8.40002C0.422135 7.66669 0.292969 6.91669 0.292969 6.15002C0.292969 4.58336 0.817969 3.27502 1.86797 2.22502C2.91797 1.17502 4.2263 0.650024 5.79297 0.650024C6.65964 0.650024 7.48464 0.833358 8.26797 1.20002C9.0513 1.56669 9.7263 2.08336 10.293 2.75002C10.8596 2.08336 11.5346 1.56669 12.318 1.20002C13.1013 0.833358 13.9263 0.650024 14.793 0.650024C16.3596 0.650024 17.668 1.17502 18.718 2.22502C19.768 3.27502 20.293 4.58336 20.293 6.15002C20.293 6.91669 20.1638 7.66669 19.9055 8.40002C19.6471 9.13336 19.193 9.93752 18.543 10.8125C17.893 11.6875 17.018 12.675 15.918 13.775C14.818 14.875 13.4263 16.1834 11.743 17.7L10.293 19ZM10.293 16.3C11.893 14.8667 13.2096 13.6375 14.243 12.6125C15.2763 11.5875 16.093 10.6959 16.693 9.93752C17.293 9.17919 17.7096 8.50419 17.943 7.91252C18.1763 7.32086 18.293 6.73336 18.293 6.15002C18.293 5.15002 17.9596 4.31669 17.293 3.65002C16.6263 2.98336 15.793 2.65002 14.793 2.65002C14.0096 2.65002 13.2846 2.87086 12.618 3.31252C11.9513 3.75419 11.493 4.31669 11.243 5.00002H9.34297C9.09297 4.31669 8.63464 3.75419 7.96797 3.31252C7.3013 2.87086 6.5763 2.65002 5.79297 2.65002C4.79297 2.65002 3.95964 2.98336 3.29297 3.65002C2.6263 4.31669 2.29297 5.15002 2.29297 6.15002C2.29297 6.73336 2.40964 7.32086 2.64297 7.91252C2.8763 8.50419 3.29297 9.17919 3.89297 9.93752C4.49297 10.6959 5.30964 11.5875 6.34297 12.6125C7.3763 13.6375 8.69297 14.8667 10.293 16.3Z", "fill", "white"], [1, "like-count"], [1, "share-div", "cursor-pointer", 3, "click"], ["id", "mask0_329_442", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["mask", "url(#mask0_329_442)"], ["d", "M17 22C16.1667 22 15.4583 21.7083 14.875 21.125C14.2917 20.5417 14 19.8333 14 19C14 18.9 14.025 18.6667 14.075 18.3L7.05 14.2C6.78333 14.45 6.475 14.6458 6.125 14.7875C5.775 14.9292 5.4 15 5 15C4.16667 15 3.45833 14.7083 2.875 14.125C2.29167 13.5417 2 12.8333 2 12C2 11.1667 2.29167 10.4583 2.875 9.875C3.45833 9.29167 4.16667 9 5 9C5.4 9 5.775 9.07083 6.125 9.2125C6.475 9.35417 6.78333 9.55 7.05 9.8L14.075 5.7C14.0417 5.58333 14.0208 5.47083 14.0125 5.3625C14.0042 5.25417 14 5.13333 14 5C14 4.16667 14.2917 3.45833 14.875 2.875C15.4583 2.29167 16.1667 2 17 2C17.8333 2 18.5417 2.29167 19.125 2.875C19.7083 3.45833 20 4.16667 20 5C20 5.83333 19.7083 6.54167 19.125 7.125C18.5417 7.70833 17.8333 8 17 8C16.6 8 16.225 7.92917 15.875 7.7875C15.525 7.64583 15.2167 7.45 14.95 7.2L7.925 11.3C7.95833 11.4167 7.97917 11.5292 7.9875 11.6375C7.99583 11.7458 8 11.8667 8 12C8 12.1333 7.99583 12.2542 7.9875 12.3625C7.97917 12.4708 7.95833 12.5833 7.925 12.7L14.95 16.8C15.2167 16.55 15.525 16.3542 15.875 16.2125C16.225 16.0708 16.6 16 17 16C17.8333 16 18.5417 16.2917 19.125 16.875C19.7083 17.4583 20 18.1667 20 19C20 19.8333 19.7083 20.5417 19.125 21.125C18.5417 21.7083 17.8333 22 17 22ZM17 20C17.2833 20 17.5208 19.9042 17.7125 19.7125C17.9042 19.5208 18 19.2833 18 19C18 18.7167 17.9042 18.4792 17.7125 18.2875C17.5208 18.0958 17.2833 18 17 18C16.7167 18 16.4792 18.0958 16.2875 18.2875C16.0958 18.4792 16 18.7167 16 19C16 19.2833 16.0958 19.5208 16.2875 19.7125C16.4792 19.9042 16.7167 20 17 20ZM5 13C5.28333 13 5.52083 12.9042 5.7125 12.7125C5.90417 12.5208 6 12.2833 6 12C6 11.7167 5.90417 11.4792 5.7125 11.2875C5.52083 11.0958 5.28333 11 5 11C4.71667 11 4.47917 11.0958 4.2875 11.2875C4.09583 11.4792 4 11.7167 4 12C4 12.2833 4.09583 12.5208 4.2875 12.7125C4.47917 12.9042 4.71667 13 5 13ZM17 6C17.2833 6 17.5208 5.90417 17.7125 5.7125C17.9042 5.52083 18 5.28333 18 5C18 4.71667 17.9042 4.47917 17.7125 4.2875C17.5208 4.09583 17.2833 4 17 4C16.7167 4 16.4792 4.09583 16.2875 4.2875C16.0958 4.47917 16 4.71667 16 5C16 5.28333 16.0958 5.52083 16.2875 5.7125C16.4792 5.90417 16.7167 6 17 6Z", "fill", "white"], ["alt", "User", 1, "profile-imgg", "me-2", 3, "src"], [1, "profile-avatar", "rounded-circle", "me-2"], [1, "position-relative", "imgcontainer", "overflow-auto", "d-flex", "gap-3", "w-100", "pb-3"], [4, "ngFor", "ngForOf"], ["class", "img-fluid rounded", "alt", "Post Image", 3, "src", 4, "ngIf"], ["class", "img-fluid rounded", "controls", "", 3, "src", 4, "ngIf"], ["alt", "Post Image", 1, "img-fluid", "rounded", 3, "src"], ["controls", "", 1, "img-fluid", "rounded", 3, "src"], [1, "d-flex", "justify-content-center", "align-items-center", "mt-5", "pt-5"], [1, "col-4"], [1, "d-flex", "flex-column", "gap-2", "align-items-center"], [4, "ngIf"], [1, "profile-details"], [1, "col-8"], [1, "quote"], ["alt", "User", 1, "profile-pic", 3, "src"], [1, "text-center", "my-4"], ["class", "d-flex mb-3", 4, "ngFor", "ngForOf"], [1, "d-flex", "mb-3"], [1, "mb-1"]], template: function IasCreateshareComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasCreateshareComponent, selectors: [["app-ias-createshare"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 63, vars: 8, consts: [["nopost", ""], ["noFeaturedPost", ""], ["noactivity", ""], ["avatarFallback", ""], [1, "ias-bg"], [1, "container"], [1, "d-flex", "flex-column", "flex-lg-row", "justify-content-start", "justify-content-lg-between", "align-items-start", "align-items-lg-end", "mb-4"], [1, "ias-label", "mb-1"], [1, "ias-title", "pe-5", "mb-3"], [1, "add-post-btn", 3, "routerLink"], ["xmlns", "http://www.w3.org/2000/svg", "width", "24", "height", "24", "viewBox", "0 0 24 24", "fill", "none"], ["id", "mask0_329_447", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_329_447)"], ["d", "M11 13H5V11H11V5H13V11H19V13H13V19H11V13Z", "fill", "#150F22"], [1, "row"], [1, "col-lg-6"], [1, "card-Featured", "h-100"], ["src", "../../../../assets/images/featurecardbg.png", "alt", "", "srcset", "", 1, "featurecardbg"], [1, "z-1"], [1, "d-flex", "justify-content-between", "align-items-center", "mb-2"], [1, "Featured-head"], [1, "badge-trending"], [4, "ngIf", "ngIfElse"], [1, "col-lg-6", "mt-3", "mt-lg-0"], [1, "col-12", "mb-3"], [1, "card-Featured", "p-3", "mb-3", "h-100"], ["src", "../../../../assets/images/featureprofilebg.png", "alt", "", "srcset", "", 1, "featureprofilebg"], [1, "d-flex", "align-items-center", "mb-4", "gap-2"], ["id", "mask0_199_674", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["mask", "url(#mask0_199_674)"], ["d", "M5.85 17.1C6.7 16.45 7.65 15.9375 8.7 15.5625C9.75 15.1875 10.85 15 12 15C13.15 15 14.25 15.1875 15.3 15.5625C16.35 15.9375 17.3 16.45 18.15 17.1C18.7333 16.4167 19.1875 15.6417 19.5125 14.775C19.8375 13.9083 20 12.9833 20 12C20 9.78333 19.2208 7.89583 17.6625 6.3375C16.1042 4.77917 14.2167 4 12 4C9.78333 4 7.89583 4.77917 6.3375 6.3375C4.77917 7.89583 4 9.78333 4 12C4 12.9833 4.1625 13.9083 4.4875 14.775C4.8125 15.6417 5.26667 16.4167 5.85 17.1ZM12 13C11.0167 13 10.1875 12.6625 9.5125 11.9875C8.8375 11.3125 8.5 10.4833 8.5 9.5C8.5 8.51667 8.8375 7.6875 9.5125 7.0125C10.1875 6.3375 11.0167 6 12 6C12.9833 6 13.8125 6.3375 14.4875 7.0125C15.1625 7.6875 15.5 8.51667 15.5 9.5C15.5 10.4833 15.1625 11.3125 14.4875 11.9875C13.8125 12.6625 12.9833 13 12 13ZM12 22C10.6167 22 9.31667 21.7375 8.1 21.2125C6.88333 20.6875 5.825 19.975 4.925 19.075C4.025 18.175 3.3125 17.1167 2.7875 15.9C2.2625 14.6833 2 13.3833 2 12C2 10.6167 2.2625 9.31667 2.7875 8.1C3.3125 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.3125 8.1 2.7875C9.31667 2.2625 10.6167 2 12 2C13.3833 2 14.6833 2.2625 15.9 2.7875C17.1167 3.3125 18.175 4.025 19.075 4.925C19.975 5.825 20.6875 6.88333 21.2125 8.1C21.7375 9.31667 22 10.6167 22 12C22 13.3833 21.7375 14.6833 21.2125 15.9C20.6875 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6875 15.9 21.2125C14.6833 21.7375 13.3833 22 12 22ZM12 20C12.8833 20 13.7167 19.8708 14.5 19.6125C15.2833 19.3542 16 18.9833 16.65 18.5C16 18.0167 15.2833 17.6458 14.5 17.3875C13.7167 17.1292 12.8833 17 12 17C11.1167 17 10.2833 17.1292 9.5 17.3875C8.71667 17.6458 8 18.0167 7.35 18.5C8 18.9833 8.71667 19.3542 9.5 19.6125C10.2833 19.8708 11.1167 20 12 20ZM12 11C12.4333 11 12.7917 10.8583 13.075 10.575C13.3583 10.2917 13.5 9.93333 13.5 9.5C13.5 9.06667 13.3583 8.70833 13.075 8.425C12.7917 8.14167 12.4333 8 12 8C11.5667 8 11.2083 8.14167 10.925 8.425C10.6417 8.70833 10.5 9.06667 10.5 9.5C10.5 9.93333 10.6417 10.2917 10.925 10.575C11.2083 10.8583 11.5667 11 12 11Z", "fill", "white"], [1, "Featuredtitle"], ["class", "row", 4, "ngIf", "ngIfElse"], [1, "row", "gap-3", "gap-md-0"], [1, "col"], [1, "card-Featured", "p-4", "pb-2", "h-100"], ["src", "../../../../assets/images/recentbg.png", "alt", "", "srcset", "", 1, "recentbg"], [1, "d-flex", "align-items-center", "mb-3", "gap-2"], ["id", "mask0_329_397", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["mask", "url(#mask0_329_397)"], ["d", "M11.0229 16.2L12.3997 14.8L9.25283 11.6V7H7.28606V12.4L11.0229 16.2ZM17.1199 20.5V18.3C18.3328 17.7167 19.2916 16.8583 19.9964 15.725C20.7011 14.5917 21.0535 13.35 21.0535 12C21.0535 10.65 20.7011 9.40833 19.9964 8.275C19.2916 7.14167 18.3328 6.28333 17.1199 5.7V3.5C18.9064 4.13333 20.3364 5.22917 21.41 6.7875C22.4835 8.34583 23.0203 10.0833 23.0203 12C23.0203 13.9167 22.4835 15.6542 21.41 17.2125C20.3364 18.7708 18.9064 19.8667 17.1199 20.5ZM8.26944 21C7.04021 21 5.88882 20.7625 4.81529 20.2875C3.74176 19.8125 2.80754 19.1708 2.01263 18.3625C1.21773 17.5542 0.586719 16.6042 0.11961 15.5125C-0.3475 14.4208 -0.581055 13.25 -0.581055 12C-0.581055 10.75 -0.3475 9.57917 0.11961 8.4875C0.586719 7.39583 1.21773 6.44583 2.01263 5.6375C2.80754 4.82917 3.74176 4.1875 4.81529 3.7125C5.88882 3.2375 7.04021 3 8.26944 3C9.49868 3 10.6501 3.2375 11.7236 3.7125C12.7971 4.1875 13.7313 4.82917 14.5263 5.6375C15.3212 6.44583 15.9522 7.39583 16.4193 8.4875C16.8864 9.57917 17.1199 10.75 17.1199 12C17.1199 13.25 16.8864 14.4208 16.4193 15.5125C15.9522 16.6042 15.3212 17.5542 14.5263 18.3625C13.7313 19.1708 12.7971 19.8125 11.7236 20.2875C10.6501 20.7625 9.49868 21 8.26944 21ZM8.26944 19C10.1871 19 11.8137 18.3208 13.1495 16.9625C14.4853 15.6042 15.1532 13.95 15.1532 12C15.1532 10.05 14.4853 8.39583 13.1495 7.0375C11.8137 5.67917 10.1871 5 8.26944 5C6.35184 5 4.72515 5.67917 3.38938 7.0375C2.05361 8.39583 1.38572 10.05 1.38572 12C1.38572 13.95 2.05361 15.6042 3.38938 16.9625C4.72515 18.3208 6.35184 19 8.26944 19Z", "fill", "white"], [1, "mb-3", "user"], ["class", "position-relative imgcontainer overflow-auto d-flex gap-3 w-100 pb-3", 4, "ngIf"], [1, "mb-3"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-3"], [1, "like-div", "d-flex", "align-items-center"], [1, "like-button", "overflow-visible", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "19", "viewBox", "0 0 21 19", "fill", "none"], ["d", "M10.293 19L8.84297 17.7C7.15964 16.1834 5.76797 14.875 4.66797 13.775C3.56797 12.675 2.69297 11.6875 2.04297 10.8125C1.39297 9.93752 0.938802 9.13336 0.680469 8.40002C0.422135 7.66669 0.292969 6.91669 0.292969 6.15002C0.292969 4.58336 0.817969 3.27502 1.86797 2.22502C2.91797 1.17502 4.2263 0.650024 5.79297 0.650024C6.65964 0.650024 7.48464 0.833358 8.26797 1.20002C9.0513 1.56669 9.7263 2.08336 10.293 2.75002C10.8596 2.08336 11.5346 1.56669 12.318 1.20002C13.1013 0.833358 13.9263 0.650024 14.793 0.650024C16.3596 0.650024 17.668 1.17502 18.718 2.22502C19.768 3.27502 20.293 4.58336 20.293 6.15002C20.293 6.91669 20.1638 7.66669 19.9055 8.40002C19.6471 9.13336 19.193 9.93752 18.543 10.8125C17.893 11.6875 17.018 12.675 15.918 13.775C14.818 14.875 13.4263 16.1834 11.743 17.7L10.293 19ZM10.293 16.3C11.893 14.8667 13.2096 13.6375 14.243 12.6125C15.2763 11.5875 16.093 10.6959 16.693 9.93752C17.293 9.17919 17.7096 8.50419 17.943 7.91252C18.1763 7.32086 18.293 6.73336 18.293 6.15002C18.293 5.15002 17.9596 4.31669 17.293 3.65002C16.6263 2.98336 15.793 2.65002 14.793 2.65002C14.0096 2.65002 13.2846 2.87086 12.618 3.31252C11.9513 3.75419 11.493 4.31669 11.243 5.00002H9.34297C9.09297 4.31669 8.63464 3.75419 7.96797 3.31252C7.3013 2.87086 6.5763 2.65002 5.79297 2.65002C4.79297 2.65002 3.95964 2.98336 3.29297 3.65002C2.6263 4.31669 2.29297 5.15002 2.29297 6.15002C2.29297 6.73336 2.40964 7.32086 2.64297 7.91252C2.8763 8.50419 3.29297 9.17919 3.89297 9.93752C4.49297 10.6959 5.30964 11.5875 6.34297 12.6125C7.3763 13.6375 8.69297 14.8667 10.293 16.3Z", "fill", "white"], [1, "like-count"], [1, "share-div", "cursor-pointer", 3, "click"], ["id", "mask0_329_442", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "24", "height", "24", 2, "mask-type", "alpha"], ["mask", "url(#mask0_329_442)"], ["d", "M17 22C16.1667 22 15.4583 21.7083 14.875 21.125C14.2917 20.5417 14 19.8333 14 19C14 18.9 14.025 18.6667 14.075 18.3L7.05 14.2C6.78333 14.45 6.475 14.6458 6.125 14.7875C5.775 14.9292 5.4 15 5 15C4.16667 15 3.45833 14.7083 2.875 14.125C2.29167 13.5417 2 12.8333 2 12C2 11.1667 2.29167 10.4583 2.875 9.875C3.45833 9.29167 4.16667 9 5 9C5.4 9 5.775 9.07083 6.125 9.2125C6.475 9.35417 6.78333 9.55 7.05 9.8L14.075 5.7C14.0417 5.58333 14.0208 5.47083 14.0125 5.3625C14.0042 5.25417 14 5.13333 14 5C14 4.16667 14.2917 3.45833 14.875 2.875C15.4583 2.29167 16.1667 2 17 2C17.8333 2 18.5417 2.29167 19.125 2.875C19.7083 3.45833 20 4.16667 20 5C20 5.83333 19.7083 6.54167 19.125 7.125C18.5417 7.70833 17.8333 8 17 8C16.6 8 16.225 7.92917 15.875 7.7875C15.525 7.64583 15.2167 7.45 14.95 7.2L7.925 11.3C7.95833 11.4167 7.97917 11.5292 7.9875 11.6375C7.99583 11.7458 8 11.8667 8 12C8 12.1333 7.99583 12.2542 7.9875 12.3625C7.97917 12.4708 7.95833 12.5833 7.925 12.7L14.95 16.8C15.2167 16.55 15.525 16.3542 15.875 16.2125C16.225 16.0708 16.6 16 17 16C17.8333 16 18.5417 16.2917 19.125 16.875C19.7083 17.4583 20 18.1667 20 19C20 19.8333 19.7083 20.5417 19.125 21.125C18.5417 21.7083 17.8333 22 17 22ZM17 20C17.2833 20 17.5208 19.9042 17.7125 19.7125C17.9042 19.5208 18 19.2833 18 19C18 18.7167 17.9042 18.4792 17.7125 18.2875C17.5208 18.0958 17.2833 18 17 18C16.7167 18 16.4792 18.0958 16.2875 18.2875C16.0958 18.4792 16 18.7167 16 19C16 19.2833 16.0958 19.5208 16.2875 19.7125C16.4792 19.9042 16.7167 20 17 20ZM5 13C5.28333 13 5.52083 12.9042 5.7125 12.7125C5.90417 12.5208 6 12.2833 6 12C6 11.7167 5.90417 11.4792 5.7125 11.2875C5.52083 11.0958 5.28333 11 5 11C4.71667 11 4.47917 11.0958 4.2875 11.2875C4.09583 11.4792 4 11.7167 4 12C4 12.2833 4.09583 12.5208 4.2875 12.7125C4.47917 12.9042 4.71667 13 5 13ZM17 6C17.2833 6 17.5208 5.90417 17.7125 5.7125C17.9042 5.52083 18 5.28333 18 5C18 4.71667 17.9042 4.47917 17.7125 4.2875C17.5208 4.09583 17.2833 4 17 4C16.7167 4 16.4792 4.09583 16.2875 4.2875C16.0958 4.47917 16 4.71667 16 5C16 5.28333 16.0958 5.52083 16.2875 5.7125C16.4792 5.90417 16.7167 6 17 6Z", "fill", "white"], ["alt", "User", 1, "profile-imgg", "me-2", 3, "src"], [1, "profile-avatar", "rounded-circle", "me-2"], [1, "position-relative", "imgcontainer", "overflow-auto", "d-flex", "gap-3", "w-100", "pb-3"], [4, "ngFor", "ngForOf"], ["class", "img-fluid rounded", "alt", "Post Image", 3, "src", 4, "ngIf"], ["class", "img-fluid rounded", "controls", "", 3, "src", 4, "ngIf"], ["alt", "Post Image", 1, "img-fluid", "rounded", 3, "src"], ["controls", "", 1, "img-fluid", "rounded", 3, "src"], [1, "d-flex", "justify-content-center", "align-items-center", "mt-5", "pt-5"], [1, "col-4"], [1, "d-flex", "flex-column", "gap-2", "align-items-center"], [4, "ngIf"], [1, "profile-details"], [1, "col-8"], [1, "quote"], ["alt", "User", 1, "profile-pic", 3, "src"], [1, "text-center", "my-4"], ["class", "d-flex mb-3", 4, "ngFor", "ngForOf"], [1, "d-flex", "mb-3"], [1, "mb-1"]], template: function IasCreateshareComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "section", 4)(1, "div", 5)(2, "div", 6)(3, "div")(4, "p", 7);
         \u0275\u0275text(5, "POSTING");
@@ -1269,34 +1270,34 @@ var IasCreateshareComponent = class _IasCreateshareComponent {
         \u0275\u0275elementEnd()();
         \u0275\u0275template(27, IasCreateshareComponent_ng_container_27_Template, 28, 14, "ng-container", 23)(28, IasCreateshareComponent_ng_template_28_Template, 3, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(30, "div", 24)(31, "div", 25)(32, "div", 26)(33, "div", 27);
-        \u0275\u0275element(34, "img", 28);
-        \u0275\u0275elementStart(35, "div", 19)(36, "div", 29);
+        \u0275\u0275elementStart(30, "div", 24)(31, "div", 15)(32, "div", 25)(33, "div", 26);
+        \u0275\u0275element(34, "img", 27);
+        \u0275\u0275elementStart(35, "div", 19)(36, "div", 28);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(37, "svg", 10)(38, "mask", 30);
+        \u0275\u0275elementStart(37, "svg", 10)(38, "mask", 29);
         \u0275\u0275element(39, "rect", 12);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(40, "g", 31);
-        \u0275\u0275element(41, "path", 32);
+        \u0275\u0275elementStart(40, "g", 30);
+        \u0275\u0275element(41, "path", 31);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(42, "span", 33);
+        \u0275\u0275elementStart(42, "span", 32);
         \u0275\u0275text(43, "Featured Profile");
         \u0275\u0275elementEnd()();
-        \u0275\u0275template(44, IasCreateshareComponent_div_44_Template, 14, 6, "div", 34)(45, IasCreateshareComponent_ng_template_45_Template, 2, 0, "ng-template", null, 1, \u0275\u0275templateRefExtractor);
+        \u0275\u0275template(44, IasCreateshareComponent_div_44_Template, 14, 6, "div", 33)(45, IasCreateshareComponent_ng_template_45_Template, 2, 0, "ng-template", null, 1, \u0275\u0275templateRefExtractor);
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(47, "div", 35)(48, "div", 36)(49, "div", 37);
-        \u0275\u0275element(50, "img", 38);
-        \u0275\u0275elementStart(51, "div", 19)(52, "div", 39);
+        \u0275\u0275elementStart(47, "div", 34)(48, "div", 35)(49, "div", 36);
+        \u0275\u0275element(50, "img", 37);
+        \u0275\u0275elementStart(51, "div", 19)(52, "div", 38);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(53, "svg", 10)(54, "mask", 40);
+        \u0275\u0275elementStart(53, "svg", 10)(54, "mask", 39);
         \u0275\u0275element(55, "rect", 12);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(56, "g", 41);
-        \u0275\u0275element(57, "path", 42);
+        \u0275\u0275elementStart(56, "g", 40);
+        \u0275\u0275element(57, "path", 41);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(58, "span", 33);
+        \u0275\u0275elementStart(58, "span", 32);
         \u0275\u0275text(59, "Recent Activities");
         \u0275\u0275elementEnd()();
         \u0275\u0275template(60, IasCreateshareComponent_ng_container_60_Template, 3, 5, "ng-container", 23)(61, IasCreateshareComponent_ng_template_61_Template, 2, 0, "ng-template", null, 2, \u0275\u0275templateRefExtractor);
@@ -1343,4 +1344,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-TD2MJCFN.js.map
+//# sourceMappingURL=chunk-BMSKDO4U.mjs.map
