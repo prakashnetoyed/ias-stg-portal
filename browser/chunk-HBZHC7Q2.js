@@ -122,42 +122,42 @@ function UserHomeComponent_div_7_Template(rf, ctx) {
 }
 function UserHomeComponent_div_21_div_6_ng_container_1_img_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 90);
+    \u0275\u0275element(0, "img", 82);
   }
   if (rf & 2) {
-    const file_r5 = \u0275\u0275nextContext().$implicit;
+    const file_r4 = \u0275\u0275nextContext().$implicit;
     const ctx_r1 = \u0275\u0275nextContext(3);
-    \u0275\u0275property("src", ctx_r1.s3Url + file_r5, \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", ctx_r1.s3Url + file_r4, \u0275\u0275sanitizeUrl);
   }
 }
 function UserHomeComponent_div_21_div_6_ng_container_1_video_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "video", 91);
+    \u0275\u0275element(0, "video", 83);
   }
   if (rf & 2) {
-    const file_r5 = \u0275\u0275nextContext().$implicit;
+    const file_r4 = \u0275\u0275nextContext().$implicit;
     const ctx_r1 = \u0275\u0275nextContext(3);
-    \u0275\u0275property("src", ctx_r1.s3Url + file_r5, \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", ctx_r1.s3Url + file_r4, \u0275\u0275sanitizeUrl);
   }
 }
 function UserHomeComponent_div_21_div_6_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, UserHomeComponent_div_21_div_6_ng_container_1_img_1_Template, 1, 1, "img", 88)(2, UserHomeComponent_div_21_div_6_ng_container_1_video_2_Template, 1, 1, "video", 89);
+    \u0275\u0275template(1, UserHomeComponent_div_21_div_6_ng_container_1_img_1_Template, 1, 1, "img", 80)(2, UserHomeComponent_div_21_div_6_ng_container_1_video_2_Template, 1, 1, "video", 81);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
-    const file_r5 = ctx.$implicit;
+    const file_r4 = ctx.$implicit;
     \u0275\u0275advance();
-    \u0275\u0275property("ngIf", file_r5.endsWith(".jpg") || file_r5.endsWith(".jpeg") || file_r5.endsWith(".png"));
+    \u0275\u0275property("ngIf", file_r4.endsWith(".jpg") || file_r4.endsWith(".jpeg") || file_r4.endsWith(".png"));
     \u0275\u0275advance();
-    \u0275\u0275property("ngIf", file_r5.endsWith(".mp4"));
+    \u0275\u0275property("ngIf", file_r4.endsWith(".mp4"));
   }
 }
 function UserHomeComponent_div_21_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 86);
-    \u0275\u0275template(1, UserHomeComponent_div_21_div_6_ng_container_1_Template, 3, 2, "ng-container", 87);
+    \u0275\u0275elementStart(0, "div", 78);
+    \u0275\u0275template(1, UserHomeComponent_div_21_div_6_ng_container_1_Template, 3, 2, "ng-container", 79);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -166,9 +166,46 @@ function UserHomeComponent_div_21_div_6_Template(rf, ctx) {
     \u0275\u0275property("ngForOf", ctx_r1.userposts.mediaFile);
   }
 }
+function UserHomeComponent_div_21_div_10_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 84)(1, "div", 85)(2, "div", 86);
+    \u0275\u0275listener("click", function UserHomeComponent_div_21_div_10_Template_div_click_2_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.toggleLike(ctx_r1.userposts));
+    });
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(3, "svg", 87);
+    \u0275\u0275element(4, "path", 88);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(5, "span", 89);
+    \u0275\u0275text(6);
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(7, "div", 90);
+    \u0275\u0275listener("click", function UserHomeComponent_div_21_div_10_Template_div_click_7_listener() {
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext(2);
+      return \u0275\u0275resetView(ctx_r1.copyPostLink(ctx_r1.userposts.id));
+    });
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(8, "svg", 91);
+    \u0275\u0275element(9, "path", 92);
+    \u0275\u0275elementEnd();
+    \u0275\u0275text(10, "Copy Link ");
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(2);
+    \u0275\u0275classProp("liked", ctx_r1.userposts == null ? null : ctx_r1.userposts.isLiked)("animate", ctx_r1.userposts == null ? null : ctx_r1.userposts.animate);
+    \u0275\u0275advance(4);
+    \u0275\u0275textInterpolate1("", ctx_r1.userposts == null ? null : ctx_r1.userposts.likes, " Likes");
+  }
+}
 function UserHomeComponent_div_21_Template(rf, ctx) {
   if (rf & 1) {
-    const _r4 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "div", 73)(1, "div", 74)(2, "div")(3, "small", 62);
     \u0275\u0275text(4);
     \u0275\u0275pipe(5, "timeAgo");
@@ -178,45 +215,19 @@ function UserHomeComponent_div_21_Template(rf, ctx) {
     \u0275\u0275text(8);
     \u0275\u0275elementEnd();
     \u0275\u0275element(9, "hr", 76);
-    \u0275\u0275elementStart(10, "div", 77)(11, "div", 78)(12, "div", 79);
-    \u0275\u0275listener("click", function UserHomeComponent_div_21_Template_div_click_12_listener() {
-      \u0275\u0275restoreView(_r4);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.toggleLike(ctx_r1.userposts));
-    });
-    \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(13, "svg", 80);
-    \u0275\u0275element(14, "path", 81);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(15, "span", 82);
-    \u0275\u0275text(16);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(17, "div", 83);
-    \u0275\u0275listener("click", function UserHomeComponent_div_21_Template_div_click_17_listener() {
-      \u0275\u0275restoreView(_r4);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.copyPostLink(ctx_r1.userposts.id));
-    });
-    \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(18, "svg", 84);
-    \u0275\u0275element(19, "path", 85);
+    \u0275\u0275template(10, UserHomeComponent_div_21_div_10_Template, 11, 5, "div", 77);
     \u0275\u0275elementEnd();
-    \u0275\u0275text(20, "Copy Link ");
-    \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate(\u0275\u0275pipeBind1(5, 8, ctx_r1.userposts == null ? null : ctx_r1.userposts.createdAt));
+    \u0275\u0275textInterpolate(\u0275\u0275pipeBind1(5, 4, ctx_r1.userposts == null ? null : ctx_r1.userposts.createdAt));
     \u0275\u0275advance(2);
     \u0275\u0275property("ngIf", (ctx_r1.userposts == null ? null : ctx_r1.userposts.mediaFile == null ? null : ctx_r1.userposts.mediaFile.length) > 0);
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(ctx_r1.userposts == null ? null : ctx_r1.userposts.caption);
-    \u0275\u0275advance(4);
-    \u0275\u0275classProp("liked", ctx_r1.userposts == null ? null : ctx_r1.userposts.isLiked)("animate", ctx_r1.userposts == null ? null : ctx_r1.userposts.animate);
-    \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate1("", ctx_r1.userposts == null ? null : ctx_r1.userposts.likes, " Likes");
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngIf", ctx_r1.userposts !== void 0);
   }
 }
 function UserHomeComponent_div_22_Template(rf, ctx) {
@@ -229,7 +240,7 @@ function UserHomeComponent_div_22_Template(rf, ctx) {
 function UserHomeComponent_div_29_div_1_button_18_Template(rf, ctx) {
   if (rf & 1) {
     const _r6 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "button", 106);
+    \u0275\u0275elementStart(0, "button", 107);
     \u0275\u0275listener("click", function UserHomeComponent_div_29_div_1_button_18_Template_button_click_0_listener() {
       \u0275\u0275restoreView(_r6);
       const event_r7 = \u0275\u0275nextContext().$implicit;
@@ -242,28 +253,28 @@ function UserHomeComponent_div_29_div_1_button_18_Template(rf, ctx) {
 }
 function UserHomeComponent_div_29_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 93)(1, "div", 94)(2, "div", 95);
+    \u0275\u0275elementStart(0, "div", 94)(1, "div", 95)(2, "div", 96);
     \u0275\u0275text(3);
     \u0275\u0275pipe(4, "date");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "div", 96);
+    \u0275\u0275elementStart(5, "div", 97);
     \u0275\u0275text(6);
     \u0275\u0275pipe(7, "date");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(8, "div", 97)(9, "h6", 98);
+    \u0275\u0275elementStart(8, "div", 98)(9, "h6", 99);
     \u0275\u0275text(10);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(11, "p", 99);
+    \u0275\u0275elementStart(11, "p", 100);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(12, "svg", 100)(13, "mask", 101);
-    \u0275\u0275element(14, "rect", 102);
+    \u0275\u0275elementStart(12, "svg", 101)(13, "mask", 102);
+    \u0275\u0275element(14, "rect", 103);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(15, "g", 103);
-    \u0275\u0275element(16, "path", 104);
+    \u0275\u0275elementStart(15, "g", 104);
+    \u0275\u0275element(16, "path", 105);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(17);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(18, UserHomeComponent_div_29_div_1_button_18_Template, 2, 0, "button", 105);
+    \u0275\u0275template(18, UserHomeComponent_div_29_div_1_button_18_Template, 2, 0, "button", 106);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -286,7 +297,7 @@ function UserHomeComponent_div_29_div_1_Template(rf, ctx) {
 function UserHomeComponent_div_29_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div");
-    \u0275\u0275template(1, UserHomeComponent_div_29_div_1_Template, 19, 12, "div", 92);
+    \u0275\u0275template(1, UserHomeComponent_div_29_div_1_Template, 19, 12, "div", 93);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -297,50 +308,50 @@ function UserHomeComponent_div_29_Template(rf, ctx) {
 }
 function UserHomeComponent_ng_template_30_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 107)(1, "h5");
+    \u0275\u0275elementStart(0, "div", 108)(1, "h5");
     \u0275\u0275text(2, "No Events Found");
     \u0275\u0275elementEnd()();
   }
 }
 function UserHomeComponent_div_32_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 108)(1, "h1");
+    \u0275\u0275elementStart(0, "div", 109)(1, "h1");
     \u0275\u0275text(2);
     \u0275\u0275pipe(3, "date");
     \u0275\u0275elementEnd();
     \u0275\u0275element(4, "hr");
-    \u0275\u0275elementStart(5, "div", 109)(6, "div", 110)(7, "div", 111);
+    \u0275\u0275elementStart(5, "div", 110)(6, "div", 111)(7, "div", 112);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(8, "svg", 112);
-    \u0275\u0275element(9, "path", 113);
+    \u0275\u0275elementStart(8, "svg", 113);
+    \u0275\u0275element(9, "path", 114);
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
     \u0275\u0275elementStart(10, "p")(11, "span");
     \u0275\u0275text(12, "Membership Type:");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "span", 114);
+    \u0275\u0275elementStart(13, "span", 115);
     \u0275\u0275text(14);
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275elementStart(15, "div", 115)(16, "div", 111);
+    \u0275\u0275elementStart(15, "div", 116)(16, "div", 112);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(17, "svg", 100)(18, "mask", 116);
-    \u0275\u0275element(19, "rect", 102);
+    \u0275\u0275elementStart(17, "svg", 101)(18, "mask", 117);
+    \u0275\u0275element(19, "rect", 103);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(20, "g", 117);
-    \u0275\u0275element(21, "path", 118);
+    \u0275\u0275elementStart(20, "g", 118);
+    \u0275\u0275element(21, "path", 119);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
     \u0275\u0275elementStart(22, "p")(23, "span");
     \u0275\u0275text(24, "Fee Paid: ");
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(25, "svg", 119)(26, "title", 120);
+    \u0275\u0275elementStart(25, "svg", 120)(26, "title", 121);
     \u0275\u0275text(27, "Success");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(28, "desc", 121);
+    \u0275\u0275elementStart(28, "desc", 122);
     \u0275\u0275text(29, "Green circle with small white tick");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(30, "circle", 122)(31, "path", 123);
+    \u0275\u0275element(30, "circle", 123)(31, "path", 124);
     \u0275\u0275elementEnd()()()()()();
   }
   if (rf & 2) {
@@ -353,7 +364,7 @@ function UserHomeComponent_div_32_Template(rf, ctx) {
 }
 function UserHomeComponent_ng_container_41_div_1_img_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 130);
+    \u0275\u0275element(0, "img", 131);
   }
   if (rf & 2) {
     const post_r10 = \u0275\u0275nextContext().$implicit;
@@ -362,7 +373,7 @@ function UserHomeComponent_ng_container_41_div_1_img_2_Template(rf, ctx) {
 }
 function UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_img_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 90);
+    \u0275\u0275element(0, "img", 82);
   }
   if (rf & 2) {
     const file_r11 = \u0275\u0275nextContext().$implicit;
@@ -372,7 +383,7 @@ function UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_img_1_Temp
 }
 function UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_video_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "video", 91);
+    \u0275\u0275element(0, "video", 83);
   }
   if (rf & 2) {
     const file_r11 = \u0275\u0275nextContext().$implicit;
@@ -383,7 +394,7 @@ function UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_video_2_Te
 function UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_img_1_Template, 1, 1, "img", 88)(2, UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_video_2_Template, 1, 1, "video", 89);
+    \u0275\u0275template(1, UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_img_1_Template, 1, 1, "img", 80)(2, UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_video_2_Template, 1, 1, "video", 81);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -396,8 +407,8 @@ function UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_Template(r
 }
 function UserHomeComponent_ng_container_41_div_1_div_9_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 131);
-    \u0275\u0275template(1, UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_Template, 3, 2, "ng-container", 87);
+    \u0275\u0275elementStart(0, "div", 132);
+    \u0275\u0275template(1, UserHomeComponent_ng_container_41_div_1_div_9_ng_container_1_Template, 3, 2, "ng-container", 79);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -409,41 +420,41 @@ function UserHomeComponent_ng_container_41_div_1_div_9_Template(rf, ctx) {
 function UserHomeComponent_ng_container_41_div_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r9 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 125)(1, "div", 74);
-    \u0275\u0275template(2, UserHomeComponent_ng_container_41_div_1_img_2_Template, 1, 1, "img", 126);
-    \u0275\u0275elementStart(3, "div")(4, "h6", 127);
+    \u0275\u0275elementStart(0, "div", 126)(1, "div", 74);
+    \u0275\u0275template(2, UserHomeComponent_ng_container_41_div_1_img_2_Template, 1, 1, "img", 127);
+    \u0275\u0275elementStart(3, "div")(4, "h6", 128);
     \u0275\u0275text(5);
     \u0275\u0275elementStart(6, "small", 62);
     \u0275\u0275text(7);
     \u0275\u0275pipe(8, "timeAgo");
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275template(9, UserHomeComponent_ng_container_41_div_1_div_9_Template, 2, 1, "div", 128);
-    \u0275\u0275elementStart(10, "p", 129);
+    \u0275\u0275template(9, UserHomeComponent_ng_container_41_div_1_div_9_Template, 2, 1, "div", 129);
+    \u0275\u0275elementStart(10, "p", 130);
     \u0275\u0275text(11);
     \u0275\u0275elementEnd();
     \u0275\u0275element(12, "hr", 76);
-    \u0275\u0275elementStart(13, "div", 77)(14, "div", 78)(15, "div", 79);
+    \u0275\u0275elementStart(13, "div", 84)(14, "div", 85)(15, "div", 86);
     \u0275\u0275listener("click", function UserHomeComponent_ng_container_41_div_1_Template_div_click_15_listener() {
       const post_r10 = \u0275\u0275restoreView(_r9).$implicit;
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.toggleLike(post_r10));
     });
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(16, "svg", 80);
-    \u0275\u0275element(17, "path", 81);
+    \u0275\u0275elementStart(16, "svg", 87);
+    \u0275\u0275element(17, "path", 88);
     \u0275\u0275elementEnd()();
     \u0275\u0275text(18);
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(19, "div", 83);
+    \u0275\u0275elementStart(19, "div", 90);
     \u0275\u0275listener("click", function UserHomeComponent_ng_container_41_div_1_Template_div_click_19_listener() {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.copyPostLink(ctx_r1.userposts.id));
     });
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(20, "svg", 84);
-    \u0275\u0275element(21, "path", 85);
+    \u0275\u0275elementStart(20, "svg", 91);
+    \u0275\u0275element(21, "path", 92);
     \u0275\u0275elementEnd();
     \u0275\u0275text(22, "Copy Link ");
     \u0275\u0275elementEnd()()();
@@ -469,7 +480,7 @@ function UserHomeComponent_ng_container_41_div_1_Template(rf, ctx) {
 function UserHomeComponent_ng_container_41_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, UserHomeComponent_ng_container_41_div_1_Template, 23, 12, "div", 124);
+    \u0275\u0275template(1, UserHomeComponent_ng_container_41_div_1_Template, 23, 12, "div", 125);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -494,7 +505,7 @@ function UserHomeComponent_small_58_Template(rf, ctx) {
 }
 function UserHomeComponent_option_71_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 132);
+    \u0275\u0275elementStart(0, "option", 133);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -507,7 +518,7 @@ function UserHomeComponent_option_71_Template(rf, ctx) {
 }
 function UserHomeComponent_div_96_ng_container_1_img_2_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 138);
+    \u0275\u0275element(0, "img", 139);
   }
   if (rf & 2) {
     const preview_r14 = \u0275\u0275nextContext().$implicit;
@@ -516,7 +527,7 @@ function UserHomeComponent_div_96_ng_container_1_img_2_Template(rf, ctx) {
 }
 function UserHomeComponent_div_96_ng_container_1_video_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "video", 139);
+    \u0275\u0275element(0, "video", 140);
   }
   if (rf & 2) {
     const preview_r14 = \u0275\u0275nextContext().$implicit;
@@ -540,9 +551,9 @@ function UserHomeComponent_div_96_ng_container_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r13 = \u0275\u0275getCurrentView();
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "div", 134);
-    \u0275\u0275template(2, UserHomeComponent_div_96_ng_container_1_img_2_Template, 1, 1, "img", 135)(3, UserHomeComponent_div_96_ng_container_1_video_3_Template, 1, 1, "video", 136)(4, UserHomeComponent_div_96_ng_container_1_div_4_Template, 3, 1, "div", 30);
-    \u0275\u0275elementStart(5, "button", 137);
+    \u0275\u0275elementStart(1, "div", 135);
+    \u0275\u0275template(2, UserHomeComponent_div_96_ng_container_1_img_2_Template, 1, 1, "img", 136)(3, UserHomeComponent_div_96_ng_container_1_video_3_Template, 1, 1, "video", 137)(4, UserHomeComponent_div_96_ng_container_1_div_4_Template, 3, 1, "div", 30);
+    \u0275\u0275elementStart(5, "button", 138);
     \u0275\u0275listener("click", function UserHomeComponent_div_96_ng_container_1_Template_button_click_5_listener() {
       const i_r15 = \u0275\u0275restoreView(_r13).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
@@ -565,8 +576,8 @@ function UserHomeComponent_div_96_ng_container_1_Template(rf, ctx) {
 }
 function UserHomeComponent_div_96_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 133);
-    \u0275\u0275template(1, UserHomeComponent_div_96_ng_container_1_Template, 7, 3, "ng-container", 87);
+    \u0275\u0275elementStart(0, "div", 134);
+    \u0275\u0275template(1, UserHomeComponent_div_96_ng_container_1_Template, 7, 3, "ng-container", 79);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -577,8 +588,8 @@ function UserHomeComponent_div_96_Template(rf, ctx) {
 }
 function UserHomeComponent_div_97_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 140)(1, "div", 141);
-    \u0275\u0275element(2, "div", 142);
+    \u0275\u0275elementStart(0, "div", 141)(1, "div", 142);
+    \u0275\u0275element(2, "div", 143);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "small");
     \u0275\u0275text(4, "Uploading media...");
@@ -905,7 +916,7 @@ var UserHomeComponent = class _UserHomeComponent {
         \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.offcanvasEl = _t.first);
         \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.errorToast = _t.first);
       }
-    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 103, vars: 19, consts: [["noevent", ""], ["offcanvasEl", ""], ["initialsBlock", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-user-home-div"], ["class", "name-image-div d-flex align-items-center gap-3", 4, "ngIf"], [1, "other-content-div", "mt-4"], [1, "left-side-modules"], [1, "recent-post-module"], [1, "head", "d-flex", "align-items-center", "justify-content-between"], ["data-bs-toggle", "offcanvas", "data-bs-target", "#postFormCanvas", 1, "btn", "btn-donate", "d-flex", "align-items-center", "py-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "25", "height", "24", "viewBox", "0 0 25 24", "fill", "none"], ["id", "mask0_51469_6408", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "25", "height", "24", 2, "mask-type", "alpha"], ["x", "0.5", "width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_51469_6408)"], ["d", "M11.5 13H5.5V11H11.5V5H13.5V11H19.5V13H13.5V19H11.5V13Z", "fill", "white"], ["class", "mb-2", 4, "ngIf"], [1, "upcoming-events-module", "mt-4"], [1, "head", "d-flex", "align-items-center", "justify-content-between", "mb-4", "mt-2"], ["routerLink", "/user-home/user-events", 1, "cursur-pointer"], [4, "ngIf", "ngIfElse"], ["class", "recent-post-module mt-4 pt-4", 4, "ngIf"], [1, "right-side-modules"], [1, "all-post-component"], ["routerLink", "/homepage/community"], [1, "community", "my-4"], [4, "ngIf"], ["tabindex", "-1", "id", "postFormCanvas", "aria-labelledby", "postFormCanvasLabel", 1, "offcanvas", "offcanvas-end"], [1, "offcanvas-header"], ["id", "postFormCanvasLabel"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "d-flex", "flex-column", "justify-content-between", "h-100", 3, "ngSubmit", "formGroup"], [1, "inner-fields"], [1, "mb-3"], [1, "form-label"], [1, "text-danger"], ["type", "text", "placeholder", "Enter your title here", "formControlName", "caption", 1, "form-control"], ["class", "text-danger", 4, "ngIf"], ["rows", "3", "placeholder", "Enter your description here.", "formControlName", "description", 1, "form-control"], ["formControlName", "postTagId", 1, "form-select"], ["value", "0", "disabled", "", "selected", ""], [3, "value", 4, "ngFor", "ngForOf"], [1, "upload-wrapper"], ["for", "fileUpload", 1, "upload-box"], [1, "upload-content"], ["xmlns", "http://www.w3.org/2000/svg", "width", "49", "height", "48", "viewBox", "0 0 49 48", "fill", "none"], ["cx", "24.7529", "cy", "24", "r", "24", "fill", "url(#paint0_linear_50912_4491)", "fill-opacity", "0.12"], ["id", "mask0_50912_4491", "maskUnits", "userSpaceOnUse", "x", "12", "y", "12", "width", "25", "height", "24", 2, "mask-type", "alpha"], ["x", "12.7529", "y", "12", "width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_50912_4491)"], ["d", "M23.7529 31H25.7529V26.825L27.3529 28.425L28.7529 27L24.7529 23L20.7529 27L22.1779 28.4L23.7529 26.825V31ZM18.7529 34C18.2029 34 17.7321 33.8042 17.3404 33.4125C16.9488 33.0208 16.7529 32.55 16.7529 32V16C16.7529 15.45 16.9488 14.9792 17.3404 14.5875C17.7321 14.1958 18.2029 14 18.7529 14H26.7529L32.7529 20V32C32.7529 32.55 32.5571 33.0208 32.1654 33.4125C31.7738 33.8042 31.3029 34 30.7529 34H18.7529ZM25.7529 21V16H18.7529V32H30.7529V21H25.7529Z", "fill", "url(#paint1_linear_50912_4491)"], ["id", "paint0_linear_50912_4491", "x1", "5.25293", "y1", "-7.2", "x2", "71.3372", "y2", "48.2327", "gradientUnits", "userSpaceOnUse"], ["stop-color", "#492FB2"], ["offset", "1", "stop-color", "#492FB2", "stop-opacity", "0.61"], ["id", "paint1_linear_50912_4491", "x1", "18.2529", "y1", "11", "x2", "44.1283", "y2", "28.3638", "gradientUnits", "userSpaceOnUse"], [1, ""], [1, "m-0"], [1, "text-muted"], ["type", "file", "id", "fileUpload", "hidden", "", "accept", "image/*,video/*", 3, "change", "disabled"], ["class", "preview-box mt-3 d-flex flex-wrap gap-3", 4, "ngIf"], ["class", "mt-4", 4, "ngIf"], [1, "d-flex", "justify-content-end", "gap-3", "mt-3"], ["type", "button", "data-bs-dismiss", "offcanvas", 1, "btn", "btn-outline-secondary"], ["type", "submit", 1, "btn", "btn-prime", 3, "disabled"], [1, "name-image-div", "d-flex", "align-items-center", "gap-3"], [1, "avatar"], [1, "invite-text"], ["alt", "Avatar", 3, "src"], [1, "mb-2"], [1, "d-flex", "align-items-center", "mb-2"], ["class", "position-relative imgcontainer overflow-auto d-flex gap-2 w-100 pb-2", 4, "ngIf"], [1, "my-1"], [1, "like-share-div", "my-3", "z-1", "d-flex", "align-items-center", "gap-3"], [1, "like-div", "d-flex", "align-items-center"], [1, "like-button", "overflow-visible", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "19", "viewBox", "0 0 21 19", "fill", "none"], ["d", "M10.293 19L8.84297 17.7C7.15964 16.1834 5.76797 14.875 4.66797 13.775C3.56797 12.675 2.69297 11.6875 2.04297 10.8125C1.39297 9.93752 0.938802 9.13336 0.680469 8.40002C0.422135 7.66669 0.292969 6.91669 0.292969 6.15002C0.292969 4.58336 0.817969 3.27502 1.86797 2.22502C2.91797 1.17502 4.2263 0.650024 5.79297 0.650024C6.65964 0.650024 7.48464 0.833358 8.26797 1.20002C9.0513 1.56669 9.7263 2.08336 10.293 2.75002C10.8596 2.08336 11.5346 1.56669 12.318 1.20002C13.1013 0.833358 13.9263 0.650024 14.793 0.650024C16.3596 0.650024 17.668 1.17502 18.718 2.22502C19.768 3.27502 20.293 4.58336 20.293 6.15002C20.293 6.91669 20.1638 7.66669 19.9055 8.40002C19.6471 9.13336 19.193 9.93752 18.543 10.8125C17.893 11.6875 17.018 12.675 15.918 13.775C14.818 14.875 13.4263 16.1834 11.743 17.7L10.293 19ZM10.293 16.3C11.893 14.8667 13.2096 13.6375 14.243 12.6125C15.2763 11.5875 16.093 10.6959 16.693 9.93752C17.293 9.17919 17.7096 8.50419 17.943 7.91252C18.1763 7.32086 18.293 6.73336 18.293 6.15002C18.293 5.15002 17.9596 4.31669 17.293 3.65002C16.6263 2.98336 15.793 2.65002 14.793 2.65002C14.0096 2.65002 13.2846 2.87086 12.618 3.31252C11.9513 3.75419 11.493 4.31669 11.243 5.00002H9.34297C9.09297 4.31669 8.63464 3.75419 7.96797 3.31252C7.3013 2.87086 6.5763 2.65002 5.79297 2.65002C4.79297 2.65002 3.95964 2.98336 3.29297 3.65002C2.6263 4.31669 2.29297 5.15002 2.29297 6.15002C2.29297 6.73336 2.40964 7.32086 2.64297 7.91252C2.8763 8.50419 3.29297 9.17919 3.89297 9.93752C4.49297 10.6959 5.30964 11.5875 6.34297 12.6125C7.3763 13.6375 8.69297 14.8667 10.293 16.3Z", "fill", "black"], [1, "like-count"], [1, "share-div", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "14", "viewBox", "0 0 19 14", "fill", "none"], ["d", "M2.29297 14V10C2.29297 9.16667 2.58464 8.45833 3.16797 7.875C3.7513 7.29167 4.45964 7 5.29297 7H14.468L10.868 10.6L12.293 12L18.293 6L12.293 0L10.868 1.4L14.468 5H5.29297C3.90964 5 2.73047 5.4875 1.75547 6.4625C0.780468 7.4375 0.292969 8.61667 0.292969 10V14H2.29297Z", "fill", "black"], [1, "position-relative", "imgcontainer", "overflow-auto", "d-flex", "gap-2", "w-100", "pb-2"], [4, "ngFor", "ngForOf"], ["class", "img-fluid rounded", "alt", "Post Image", 3, "src", 4, "ngIf"], ["class", "img-fluid rounded", "controls", "", 3, "src", 4, "ngIf"], ["alt", "Post Image", 1, "img-fluid", "rounded", 3, "src"], ["controls", "", 1, "img-fluid", "rounded", 3, "src"], ["class", "meeting-card d-flex align-items-center shadow-sm mb-3 p-3 rounded", 4, "ngFor", "ngForOf"], [1, "meeting-card", "d-flex", "align-items-center", "shadow-sm", "mb-3", "p-3", "rounded"], [1, "date-badge", "bg-purple", "me-3", 3, "ngClass"], [1, "month"], [1, "day"], [1, "flex-grow-1"], [1, "mb-1"], [1, "mb-0"], ["xmlns", "http://www.w3.org/2000/svg", "width", "22", "height", "22", "viewBox", "0 0 22 22", "fill", "none"], ["id", "mask0_51656_5189", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "22", "height", "22", 2, "mask-type", "alpha"], ["width", "22", "height", "22", "fill", "#D9D9D9"], ["mask", "url(#mask0_51656_5189)"], ["d", "M10.9997 18.3181C9.38023 18.3181 8.0587 18.0637 7.03509 17.5549C6.01148 17.0461 5.49967 16.3891 5.49967 15.5841C5.49967 15.2196 5.61044 14.8816 5.83197 14.5702C6.05349 14.2589 6.36287 13.9893 6.76009 13.7614L8.20384 15.1057C8.06634 15.1664 7.91738 15.2348 7.75697 15.3107C7.59655 15.3867 7.47051 15.4778 7.37884 15.5841C7.57745 15.8271 8.03579 16.0398 8.75384 16.222C9.4719 16.4043 10.2205 16.4954 10.9997 16.4954C11.7788 16.4954 12.5313 16.4043 13.257 16.222C13.9827 16.0398 14.4448 15.8271 14.6434 15.5841C14.5365 15.4626 14.399 15.3639 14.2309 15.2879C14.0629 15.212 13.9025 15.1436 13.7497 15.0829L15.1705 13.7159C15.5983 13.9589 15.9268 14.2361 16.1559 14.5475C16.3851 14.8588 16.4997 15.2044 16.4997 15.5841C16.4997 16.3891 15.9879 17.0461 14.9643 17.5549C13.9406 18.0637 12.6191 18.3181 10.9997 18.3181ZM11.0226 13.3058C12.5351 12.197 13.6733 11.0844 14.4372 9.96797C15.2011 8.85157 15.583 7.73138 15.583 6.6074C15.583 5.05812 15.0865 3.88856 14.0934 3.09873C13.1004 2.30891 12.0691 1.91399 10.9997 1.91399C9.93023 1.91399 8.89898 2.30891 7.90592 3.09873C6.91287 3.88856 6.41634 5.05812 6.41634 6.6074C6.41634 7.62506 6.79065 8.68449 7.53926 9.7857C8.28787 10.8869 9.44898 12.0603 11.0226 13.3058ZM10.9997 15.5841C8.84551 14.0044 7.23752 12.4704 6.17572 10.9818C5.11391 9.49331 4.58301 8.03516 4.58301 6.6074C4.58301 5.52898 4.7778 4.58346 5.16738 3.77085C5.55697 2.95824 6.05731 2.27853 6.66842 1.73172C7.27954 1.18492 7.96704 0.774814 8.73092 0.501412C9.49481 0.22801 10.2511 0.0913086 10.9997 0.0913086C11.7483 0.0913086 12.5045 0.22801 13.2684 0.501412C14.0323 0.774814 14.7198 1.18492 15.3309 1.73172C15.942 2.27853 16.4424 2.95824 16.832 3.77085C17.2215 4.58346 17.4163 5.52898 17.4163 6.6074C17.4163 8.03516 16.8854 9.49331 15.8236 10.9818C14.7618 12.4704 13.1538 14.0044 10.9997 15.5841ZM10.9997 8.29338C11.5038 8.29338 11.9354 8.11491 12.2945 7.75797C12.6535 7.40102 12.833 6.97193 12.833 6.4707C12.833 5.96946 12.6535 5.54037 12.2945 5.18343C11.9354 4.82649 11.5038 4.64801 10.9997 4.64801C10.4955 4.64801 10.0639 4.82649 9.70488 5.18343C9.34585 5.54037 9.16634 5.96946 9.16634 6.4707C9.16634 6.97193 9.34585 7.40102 9.70488 7.75797C10.0639 8.11491 10.4955 8.29338 10.9997 8.29338Z", "fill", "#6B6B6B"], ["class", "btn btn-prime me-3", 3, "click", 4, "ngIf"], [1, "btn", "btn-prime", "me-3", 3, "click"], [1, "text-center", "my-3"], [1, "recent-post-module", "mt-4", "pt-4"], [1, "row", "mt-4", "membership"], [1, "col-lg-7", "mb-3"], [1, "d-flex", "align-items-center", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "20", "height", "21", "viewBox", "0 0 20 21", "fill", "none"], ["d", "M2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V4C0 3.45 0.195833 2.97917 0.5875 2.5875C0.979167 2.19583 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.0208 2.19583 17.4125 2.5875C17.8042 2.97917 18 3.45 18 4V10.375L16 12.375V8H2V18H8.2L10.2 20H2ZM2 6H16V4H2V6ZM13.55 20.5L10 16.95L11.4 15.55L13.525 17.675L17.775 13.425L19.175 14.85L13.55 20.5Z", "fill", "black"], [1, "Camelcase"], [1, "col-lg-5", "mb-3"], ["id", "mask0_51787_6416", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "22", "height", "22", 2, "mask-type", "alpha"], ["mask", "url(#mask0_51787_6416)"], ["d", "M12.5813 19.25L6.41667 12.8333V11H9.625C10.4347 11 11.1337 10.7365 11.7219 10.2094C12.3101 9.68229 12.6653 9.02917 12.7875 8.25H5.5V6.41667H12.5125C12.2528 5.88194 11.867 5.44271 11.3552 5.09896C10.8434 4.75521 10.2667 4.58333 9.625 4.58333H5.5V2.75H16.5V4.58333H13.5208C13.7347 4.84306 13.9257 5.12569 14.0938 5.43125C14.2618 5.73681 14.3917 6.06528 14.4833 6.41667H16.5V8.25H14.6438C14.5215 9.54861 13.9868 10.6372 13.0396 11.5156C12.0924 12.3941 10.9542 12.8333 9.625 12.8333H8.96042L15.125 19.25H12.5813Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "32", "height", "32", "viewBox", "0 0 48 48", "role", "img", "aria-labelledby", "checkTitle checkDesc"], ["id", "checkTitle"], ["id", "checkDesc"], ["cx", "24", "cy", "24", "r", "22", "fill", "#28a745"], ["d", "M18 24l4 4 10-10", "fill", "none", "stroke", "#ffffff", "stroke-width", "3", "stroke-linecap", "round", "stroke-linejoin", "round"], ["class", "mb-5", 4, "ngFor", "ngForOf"], [1, "mb-5"], ["class", "rounded-circle me-2", "alt", "User", 3, "src", 4, "ngIf"], [1, "mb-0", "fw-semibold"], ["class", "position-relative imgpostscontainer overflow-auto d-flex gap-2 w-100 pb-2", 4, "ngIf"], [1, "mb-2", "overflow-auto"], ["alt", "User", 1, "rounded-circle", "me-2", 3, "src"], [1, "position-relative", "imgpostscontainer", "overflow-auto", "d-flex", "gap-2", "w-100", "pb-2"], [3, "value"], [1, "preview-box", "mt-3", "d-flex", "flex-wrap", "gap-3"], [1, "position-relative"], ["class", "img-thumbnail", "style", "width: 120px; height: auto;", 3, "src", 4, "ngIf"], ["controls", "", "class", "img-thumbnail", "style", "width: 200px; height: auto;", 3, "src", 4, "ngIf"], ["type", "button", 1, "btn", "btn-sm", "btn-danger", "position-absolute", "top-0", "end-0", 3, "click"], [1, "img-thumbnail", 2, "width", "120px", "height", "auto", 3, "src"], ["controls", "", 1, "img-thumbnail", 2, "width", "200px", "height", "auto", 3, "src"], [1, "mt-4"], [1, "progress", 2, "height", "6px"], ["role", "progressbar", 1, "progress-bar", "progress-bar-striped", "progress-bar-animated", "bg-primary", 2, "width", "100%"]], template: function UserHomeComponent_Template(rf, ctx) {
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 103, vars: 19, consts: [["noevent", ""], ["offcanvasEl", ""], ["initialsBlock", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-user-home-div"], ["class", "name-image-div d-flex align-items-center gap-3", 4, "ngIf"], [1, "other-content-div", "mt-4"], [1, "left-side-modules"], [1, "recent-post-module"], [1, "head", "d-flex", "align-items-center", "justify-content-between"], ["data-bs-toggle", "offcanvas", "data-bs-target", "#postFormCanvas", 1, "btn", "btn-donate", "d-flex", "align-items-center", "py-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "25", "height", "24", "viewBox", "0 0 25 24", "fill", "none"], ["id", "mask0_51469_6408", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "25", "height", "24", 2, "mask-type", "alpha"], ["x", "0.5", "width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_51469_6408)"], ["d", "M11.5 13H5.5V11H11.5V5H13.5V11H19.5V13H13.5V19H11.5V13Z", "fill", "white"], ["class", "mb-2", 4, "ngIf"], [1, "upcoming-events-module", "mt-4"], [1, "head", "d-flex", "align-items-center", "justify-content-between", "mb-4", "mt-2"], ["routerLink", "/user-home/user-events", 1, "cursur-pointer"], [4, "ngIf", "ngIfElse"], ["class", "recent-post-module mt-4 pt-4", 4, "ngIf"], [1, "right-side-modules"], [1, "all-post-component"], ["routerLink", "/homepage/community"], [1, "community", "my-4"], [4, "ngIf"], ["tabindex", "-1", "id", "postFormCanvas", "aria-labelledby", "postFormCanvasLabel", 1, "offcanvas", "offcanvas-end"], [1, "offcanvas-header"], ["id", "postFormCanvasLabel"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "d-flex", "flex-column", "justify-content-between", "h-100", 3, "ngSubmit", "formGroup"], [1, "inner-fields"], [1, "mb-3"], [1, "form-label"], [1, "text-danger"], ["type", "text", "placeholder", "Enter your title here", "formControlName", "caption", 1, "form-control"], ["class", "text-danger", 4, "ngIf"], ["rows", "3", "placeholder", "Enter your description here.", "formControlName", "description", 1, "form-control"], ["formControlName", "postTagId", 1, "form-select"], ["value", "0", "disabled", "", "selected", ""], [3, "value", 4, "ngFor", "ngForOf"], [1, "upload-wrapper"], ["for", "fileUpload", 1, "upload-box"], [1, "upload-content"], ["xmlns", "http://www.w3.org/2000/svg", "width", "49", "height", "48", "viewBox", "0 0 49 48", "fill", "none"], ["cx", "24.7529", "cy", "24", "r", "24", "fill", "url(#paint0_linear_50912_4491)", "fill-opacity", "0.12"], ["id", "mask0_50912_4491", "maskUnits", "userSpaceOnUse", "x", "12", "y", "12", "width", "25", "height", "24", 2, "mask-type", "alpha"], ["x", "12.7529", "y", "12", "width", "24", "height", "24", "fill", "#D9D9D9"], ["mask", "url(#mask0_50912_4491)"], ["d", "M23.7529 31H25.7529V26.825L27.3529 28.425L28.7529 27L24.7529 23L20.7529 27L22.1779 28.4L23.7529 26.825V31ZM18.7529 34C18.2029 34 17.7321 33.8042 17.3404 33.4125C16.9488 33.0208 16.7529 32.55 16.7529 32V16C16.7529 15.45 16.9488 14.9792 17.3404 14.5875C17.7321 14.1958 18.2029 14 18.7529 14H26.7529L32.7529 20V32C32.7529 32.55 32.5571 33.0208 32.1654 33.4125C31.7738 33.8042 31.3029 34 30.7529 34H18.7529ZM25.7529 21V16H18.7529V32H30.7529V21H25.7529Z", "fill", "url(#paint1_linear_50912_4491)"], ["id", "paint0_linear_50912_4491", "x1", "5.25293", "y1", "-7.2", "x2", "71.3372", "y2", "48.2327", "gradientUnits", "userSpaceOnUse"], ["stop-color", "#492FB2"], ["offset", "1", "stop-color", "#492FB2", "stop-opacity", "0.61"], ["id", "paint1_linear_50912_4491", "x1", "18.2529", "y1", "11", "x2", "44.1283", "y2", "28.3638", "gradientUnits", "userSpaceOnUse"], [1, ""], [1, "m-0"], [1, "text-muted"], ["type", "file", "id", "fileUpload", "hidden", "", "accept", "image/*,video/*", 3, "change", "disabled"], ["class", "preview-box mt-3 d-flex flex-wrap gap-3", 4, "ngIf"], ["class", "mt-4", 4, "ngIf"], [1, "d-flex", "justify-content-end", "gap-3", "mt-3"], ["type", "button", "data-bs-dismiss", "offcanvas", 1, "btn", "btn-outline-secondary"], ["type", "submit", 1, "btn", "btn-prime", 3, "disabled"], [1, "name-image-div", "d-flex", "align-items-center", "gap-3"], [1, "avatar"], [1, "invite-text"], ["alt", "Avatar", 3, "src"], [1, "mb-2"], [1, "d-flex", "align-items-center", "mb-2"], ["class", "position-relative imgcontainer overflow-auto d-flex gap-2 w-100 pb-2", 4, "ngIf"], [1, "my-1"], ["class", "like-share-div my-3 z-1 d-flex align-items-center gap-3", 4, "ngIf"], [1, "position-relative", "imgcontainer", "overflow-auto", "d-flex", "gap-2", "w-100", "pb-2"], [4, "ngFor", "ngForOf"], ["class", "img-fluid rounded", "alt", "Post Image", 3, "src", 4, "ngIf"], ["class", "img-fluid rounded", "controls", "", 3, "src", 4, "ngIf"], ["alt", "Post Image", 1, "img-fluid", "rounded", 3, "src"], ["controls", "", 1, "img-fluid", "rounded", 3, "src"], [1, "like-share-div", "my-3", "z-1", "d-flex", "align-items-center", "gap-3"], [1, "like-div", "d-flex", "align-items-center"], [1, "like-button", "overflow-visible", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "21", "height", "19", "viewBox", "0 0 21 19", "fill", "none"], ["d", "M10.293 19L8.84297 17.7C7.15964 16.1834 5.76797 14.875 4.66797 13.775C3.56797 12.675 2.69297 11.6875 2.04297 10.8125C1.39297 9.93752 0.938802 9.13336 0.680469 8.40002C0.422135 7.66669 0.292969 6.91669 0.292969 6.15002C0.292969 4.58336 0.817969 3.27502 1.86797 2.22502C2.91797 1.17502 4.2263 0.650024 5.79297 0.650024C6.65964 0.650024 7.48464 0.833358 8.26797 1.20002C9.0513 1.56669 9.7263 2.08336 10.293 2.75002C10.8596 2.08336 11.5346 1.56669 12.318 1.20002C13.1013 0.833358 13.9263 0.650024 14.793 0.650024C16.3596 0.650024 17.668 1.17502 18.718 2.22502C19.768 3.27502 20.293 4.58336 20.293 6.15002C20.293 6.91669 20.1638 7.66669 19.9055 8.40002C19.6471 9.13336 19.193 9.93752 18.543 10.8125C17.893 11.6875 17.018 12.675 15.918 13.775C14.818 14.875 13.4263 16.1834 11.743 17.7L10.293 19ZM10.293 16.3C11.893 14.8667 13.2096 13.6375 14.243 12.6125C15.2763 11.5875 16.093 10.6959 16.693 9.93752C17.293 9.17919 17.7096 8.50419 17.943 7.91252C18.1763 7.32086 18.293 6.73336 18.293 6.15002C18.293 5.15002 17.9596 4.31669 17.293 3.65002C16.6263 2.98336 15.793 2.65002 14.793 2.65002C14.0096 2.65002 13.2846 2.87086 12.618 3.31252C11.9513 3.75419 11.493 4.31669 11.243 5.00002H9.34297C9.09297 4.31669 8.63464 3.75419 7.96797 3.31252C7.3013 2.87086 6.5763 2.65002 5.79297 2.65002C4.79297 2.65002 3.95964 2.98336 3.29297 3.65002C2.6263 4.31669 2.29297 5.15002 2.29297 6.15002C2.29297 6.73336 2.40964 7.32086 2.64297 7.91252C2.8763 8.50419 3.29297 9.17919 3.89297 9.93752C4.49297 10.6959 5.30964 11.5875 6.34297 12.6125C7.3763 13.6375 8.69297 14.8667 10.293 16.3Z", "fill", "black"], [1, "like-count"], [1, "share-div", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "14", "viewBox", "0 0 19 14", "fill", "none"], ["d", "M2.29297 14V10C2.29297 9.16667 2.58464 8.45833 3.16797 7.875C3.7513 7.29167 4.45964 7 5.29297 7H14.468L10.868 10.6L12.293 12L18.293 6L12.293 0L10.868 1.4L14.468 5H5.29297C3.90964 5 2.73047 5.4875 1.75547 6.4625C0.780468 7.4375 0.292969 8.61667 0.292969 10V14H2.29297Z", "fill", "black"], ["class", "meeting-card d-flex align-items-center shadow-sm mb-3 p-3 rounded", 4, "ngFor", "ngForOf"], [1, "meeting-card", "d-flex", "align-items-center", "shadow-sm", "mb-3", "p-3", "rounded"], [1, "date-badge", "bg-purple", "me-3", 3, "ngClass"], [1, "month"], [1, "day"], [1, "flex-grow-1"], [1, "mb-1"], [1, "mb-0"], ["xmlns", "http://www.w3.org/2000/svg", "width", "22", "height", "22", "viewBox", "0 0 22 22", "fill", "none"], ["id", "mask0_51656_5189", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "22", "height", "22", 2, "mask-type", "alpha"], ["width", "22", "height", "22", "fill", "#D9D9D9"], ["mask", "url(#mask0_51656_5189)"], ["d", "M10.9997 18.3181C9.38023 18.3181 8.0587 18.0637 7.03509 17.5549C6.01148 17.0461 5.49967 16.3891 5.49967 15.5841C5.49967 15.2196 5.61044 14.8816 5.83197 14.5702C6.05349 14.2589 6.36287 13.9893 6.76009 13.7614L8.20384 15.1057C8.06634 15.1664 7.91738 15.2348 7.75697 15.3107C7.59655 15.3867 7.47051 15.4778 7.37884 15.5841C7.57745 15.8271 8.03579 16.0398 8.75384 16.222C9.4719 16.4043 10.2205 16.4954 10.9997 16.4954C11.7788 16.4954 12.5313 16.4043 13.257 16.222C13.9827 16.0398 14.4448 15.8271 14.6434 15.5841C14.5365 15.4626 14.399 15.3639 14.2309 15.2879C14.0629 15.212 13.9025 15.1436 13.7497 15.0829L15.1705 13.7159C15.5983 13.9589 15.9268 14.2361 16.1559 14.5475C16.3851 14.8588 16.4997 15.2044 16.4997 15.5841C16.4997 16.3891 15.9879 17.0461 14.9643 17.5549C13.9406 18.0637 12.6191 18.3181 10.9997 18.3181ZM11.0226 13.3058C12.5351 12.197 13.6733 11.0844 14.4372 9.96797C15.2011 8.85157 15.583 7.73138 15.583 6.6074C15.583 5.05812 15.0865 3.88856 14.0934 3.09873C13.1004 2.30891 12.0691 1.91399 10.9997 1.91399C9.93023 1.91399 8.89898 2.30891 7.90592 3.09873C6.91287 3.88856 6.41634 5.05812 6.41634 6.6074C6.41634 7.62506 6.79065 8.68449 7.53926 9.7857C8.28787 10.8869 9.44898 12.0603 11.0226 13.3058ZM10.9997 15.5841C8.84551 14.0044 7.23752 12.4704 6.17572 10.9818C5.11391 9.49331 4.58301 8.03516 4.58301 6.6074C4.58301 5.52898 4.7778 4.58346 5.16738 3.77085C5.55697 2.95824 6.05731 2.27853 6.66842 1.73172C7.27954 1.18492 7.96704 0.774814 8.73092 0.501412C9.49481 0.22801 10.2511 0.0913086 10.9997 0.0913086C11.7483 0.0913086 12.5045 0.22801 13.2684 0.501412C14.0323 0.774814 14.7198 1.18492 15.3309 1.73172C15.942 2.27853 16.4424 2.95824 16.832 3.77085C17.2215 4.58346 17.4163 5.52898 17.4163 6.6074C17.4163 8.03516 16.8854 9.49331 15.8236 10.9818C14.7618 12.4704 13.1538 14.0044 10.9997 15.5841ZM10.9997 8.29338C11.5038 8.29338 11.9354 8.11491 12.2945 7.75797C12.6535 7.40102 12.833 6.97193 12.833 6.4707C12.833 5.96946 12.6535 5.54037 12.2945 5.18343C11.9354 4.82649 11.5038 4.64801 10.9997 4.64801C10.4955 4.64801 10.0639 4.82649 9.70488 5.18343C9.34585 5.54037 9.16634 5.96946 9.16634 6.4707C9.16634 6.97193 9.34585 7.40102 9.70488 7.75797C10.0639 8.11491 10.4955 8.29338 10.9997 8.29338Z", "fill", "#6B6B6B"], ["class", "btn btn-prime me-3", 3, "click", 4, "ngIf"], [1, "btn", "btn-prime", "me-3", 3, "click"], [1, "text-center", "my-3"], [1, "recent-post-module", "mt-4", "pt-4"], [1, "row", "mt-4", "membership"], [1, "col-lg-7", "mb-3"], [1, "d-flex", "align-items-center", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "20", "height", "21", "viewBox", "0 0 20 21", "fill", "none"], ["d", "M2 20C1.45 20 0.979167 19.8042 0.5875 19.4125C0.195833 19.0208 0 18.55 0 18V4C0 3.45 0.195833 2.97917 0.5875 2.5875C0.979167 2.19583 1.45 2 2 2H3V0H5V2H13V0H15V2H16C16.55 2 17.0208 2.19583 17.4125 2.5875C17.8042 2.97917 18 3.45 18 4V10.375L16 12.375V8H2V18H8.2L10.2 20H2ZM2 6H16V4H2V6ZM13.55 20.5L10 16.95L11.4 15.55L13.525 17.675L17.775 13.425L19.175 14.85L13.55 20.5Z", "fill", "black"], [1, "Camelcase"], [1, "col-lg-5", "mb-3"], ["id", "mask0_51787_6416", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "22", "height", "22", 2, "mask-type", "alpha"], ["mask", "url(#mask0_51787_6416)"], ["d", "M12.5813 19.25L6.41667 12.8333V11H9.625C10.4347 11 11.1337 10.7365 11.7219 10.2094C12.3101 9.68229 12.6653 9.02917 12.7875 8.25H5.5V6.41667H12.5125C12.2528 5.88194 11.867 5.44271 11.3552 5.09896C10.8434 4.75521 10.2667 4.58333 9.625 4.58333H5.5V2.75H16.5V4.58333H13.5208C13.7347 4.84306 13.9257 5.12569 14.0938 5.43125C14.2618 5.73681 14.3917 6.06528 14.4833 6.41667H16.5V8.25H14.6438C14.5215 9.54861 13.9868 10.6372 13.0396 11.5156C12.0924 12.3941 10.9542 12.8333 9.625 12.8333H8.96042L15.125 19.25H12.5813Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "32", "height", "32", "viewBox", "0 0 48 48", "role", "img", "aria-labelledby", "checkTitle checkDesc"], ["id", "checkTitle"], ["id", "checkDesc"], ["cx", "24", "cy", "24", "r", "22", "fill", "#28a745"], ["d", "M18 24l4 4 10-10", "fill", "none", "stroke", "#ffffff", "stroke-width", "3", "stroke-linecap", "round", "stroke-linejoin", "round"], ["class", "mb-5", 4, "ngFor", "ngForOf"], [1, "mb-5"], ["class", "rounded-circle me-2", "alt", "User", 3, "src", 4, "ngIf"], [1, "mb-0", "fw-semibold"], ["class", "position-relative imgpostscontainer overflow-auto d-flex gap-2 w-100 pb-2", 4, "ngIf"], [1, "mb-2", "overflow-auto"], ["alt", "User", 1, "rounded-circle", "me-2", 3, "src"], [1, "position-relative", "imgpostscontainer", "overflow-auto", "d-flex", "gap-2", "w-100", "pb-2"], [3, "value"], [1, "preview-box", "mt-3", "d-flex", "flex-wrap", "gap-3"], [1, "position-relative"], ["class", "img-thumbnail", "style", "width: 120px; height: auto;", 3, "src", 4, "ngIf"], ["controls", "", "class", "img-thumbnail", "style", "width: 200px; height: auto;", 3, "src", 4, "ngIf"], ["type", "button", 1, "btn", "btn-sm", "btn-danger", "position-absolute", "top-0", "end-0", 3, "click"], [1, "img-thumbnail", 2, "width", "120px", "height", "auto", 3, "src"], ["controls", "", 1, "img-thumbnail", 2, "width", "200px", "height", "auto", 3, "src"], [1, "mt-4"], [1, "progress", 2, "height", "6px"], ["role", "progressbar", 1, "progress-bar", "progress-bar-striped", "progress-bar-animated", "bg-primary", 2, "width", "100%"]], template: function UserHomeComponent_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = \u0275\u0275getCurrentView();
         \u0275\u0275elementStart(0, "div", 3)(1, "div", 4)(2, "div", 5)(3, "div", 6);
@@ -927,7 +938,7 @@ var UserHomeComponent = class _UserHomeComponent {
         \u0275\u0275elementStart(19, "g", 18);
         \u0275\u0275element(20, "path", 19);
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275template(21, UserHomeComponent_div_21_Template, 21, 10, "div", 20)(22, UserHomeComponent_div_22_Template, 3, 0, "div", 20);
+        \u0275\u0275template(21, UserHomeComponent_div_21_Template, 11, 6, "div", 20)(22, UserHomeComponent_div_22_Template, 3, 0, "div", 20);
         \u0275\u0275elementEnd();
         \u0275\u0275namespaceHTML();
         \u0275\u0275elementStart(23, "div", 21)(24, "div", 22)(25, "h1");
@@ -1068,4 +1079,4 @@ var UserHomeComponent = class _UserHomeComponent {
 export {
   UserHomeComponent
 };
-//# sourceMappingURL=chunk-4L2TZYD2.js.map
+//# sourceMappingURL=chunk-HBZHC7Q2.js.map

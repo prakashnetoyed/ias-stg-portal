@@ -2664,7 +2664,7 @@ var noAuthGuard = (route, state) => {
       } else if (role === "user") {
         router.navigateByUrl("/user-home", { replaceUrl: true });
       } else {
-        router.navigateByUrl("/", { replaceUrl: true });
+        router.navigateByUrl("", { replaceUrl: true });
       }
       return false;
     }
@@ -2841,7 +2841,7 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-4L2TZYD2.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-HBZHC7Q2.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
@@ -2853,7 +2853,7 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-WGMKOQ76.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-A4DQFNG4.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
@@ -2923,7 +2923,7 @@ var authInterceptor = (req, next) => {
   return next(req).pipe(catchError((error) => {
     if (error.status === 401) {
       localStorage.clear();
-      router.navigateByUrl("/logi");
+      router.navigateByUrl("");
     }
     return throwError(() => error);
   }));

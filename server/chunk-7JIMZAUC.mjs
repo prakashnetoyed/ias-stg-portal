@@ -2742,7 +2742,7 @@ var noAuthGuard = (route, state) => {
       } else if (role === "user") {
         router.navigateByUrl("/user-home", { replaceUrl: true });
       } else {
-        router.navigateByUrl("/", { replaceUrl: true });
+        router.navigateByUrl("", { replaceUrl: true });
       }
       return false;
     }
@@ -2919,7 +2919,7 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-62UKLBZR.mjs").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-RRLKQTTY.mjs").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
@@ -2931,7 +2931,7 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-4M4FXW5U.mjs").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-AUIRMEPL.mjs").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
@@ -3001,7 +3001,7 @@ var authInterceptor = (req, next) => {
   return next(req).pipe(catchError((error) => {
     if (error.status === 401) {
       localStorage.clear();
-      router.navigateByUrl("/logi");
+      router.navigateByUrl("");
     }
     return throwError(() => error);
   }));
@@ -3255,4 +3255,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-5XCWQITS.mjs.map
+//# sourceMappingURL=chunk-7JIMZAUC.mjs.map
