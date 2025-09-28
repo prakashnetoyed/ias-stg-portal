@@ -249,6 +249,7 @@ var PublicationsComponent = class _PublicationsComponent {
       announcements: [""],
       venue: [""],
       notifyAll: [false],
+      shareWithExecutive: [false],
       videolink: [""]
     });
   }
@@ -371,7 +372,8 @@ var PublicationsComponent = class _PublicationsComponent {
       location: this.blogForm.value.venue?.trim() ? this.blogForm.value.venue : "null",
       url: this.blogForm.value.videolink?.trim() ? this.blogForm.value.videolink : null,
       announcement: this.blogForm.value.announcements?.trim() ? this.blogForm.value.announcements : null,
-      isSentNotificationToAll: this.blogForm.value.notifyAll ? true : false
+      isSentNotificationToAll: this.blogForm.value.notifyAll ? true : false,
+      isSentNotificationToExecutive: this.blogForm.value.shareWithExecutive ? true : false
     };
     this.http.post(`${environment.apiUrl}/events`, payload, { headers }).subscribe({
       next: () => {
@@ -553,7 +555,7 @@ var PublicationsComponent = class _PublicationsComponent {
         \u0275\u0275elementStart(78, "div", 38);
         \u0275\u0275element(79, "input", 41);
         \u0275\u0275elementStart(80, "label", 42);
-        \u0275\u0275text(81, " Share document with executive committee members only ");
+        \u0275\u0275text(81, " Send notifications to executive committee members only ");
         \u0275\u0275elementEnd()()()();
         \u0275\u0275elementStart(82, "div", 18)(83, "button", 19);
         \u0275\u0275listener("click", function PublicationsComponent_Template_button_click_83_listener() {
@@ -635,4 +637,4 @@ var PublicationsComponent = class _PublicationsComponent {
 export {
   PublicationsComponent
 };
-//# sourceMappingURL=chunk-HSC35HBA.mjs.map
+//# sourceMappingURL=chunk-DGTTOSF2.mjs.map

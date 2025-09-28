@@ -2801,7 +2801,7 @@ var routes = [
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-MIBHPMBU.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-DUSXWBQN.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
