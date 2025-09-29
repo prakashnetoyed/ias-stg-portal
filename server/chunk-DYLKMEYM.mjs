@@ -29,6 +29,7 @@ import {
 } from "./chunk-324F4CRK.mjs";
 import {
   CommonModule,
+  DatePipe,
   NgIf
 } from "./chunk-6GREAR27.mjs";
 import {
@@ -46,6 +47,8 @@ import {
   ɵɵnamespaceHTML,
   ɵɵnamespaceSVG,
   ɵɵnextContext,
+  ɵɵpipe,
+  ɵɵpipeBind2,
   ɵɵproperty,
   ɵɵqueryRefresh,
   ɵɵresetView,
@@ -294,21 +297,22 @@ function ProfileInfoComponent_div_34_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(68, "h5");
     \u0275\u0275text(69);
+    \u0275\u0275pipe(70, "date");
     \u0275\u0275elementEnd()()()();
-    \u0275\u0275elementStart(70, "div", 62)(71, "h2");
-    \u0275\u0275text(72, "Contact Details");
+    \u0275\u0275elementStart(71, "div", 62)(72, "h2");
+    \u0275\u0275text(73, "Contact Details");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(73, "div", 63)(74, "div", 65)(75, "span");
-    \u0275\u0275text(76, "E- Mail: ");
+    \u0275\u0275elementStart(74, "div", 63)(75, "div", 65)(76, "span");
+    \u0275\u0275text(77, "E- Mail: ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(77, "h5");
-    \u0275\u0275text(78);
+    \u0275\u0275elementStart(78, "h5");
+    \u0275\u0275text(79);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(79, "div", 64)(80, "span");
-    \u0275\u0275text(81, "Mobile No: ");
+    \u0275\u0275elementStart(80, "div", 64)(81, "span");
+    \u0275\u0275text(82, "Mobile No: ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(82, "h5");
-    \u0275\u0275text(83);
+    \u0275\u0275elementStart(83, "h5");
+    \u0275\u0275text(84);
     \u0275\u0275elementEnd()()()()()()();
   }
   if (rf & 2) {
@@ -342,8 +346,8 @@ function ProfileInfoComponent_div_34_Template(rf, ctx) {
     \u0275\u0275advance(5);
     \u0275\u0275textInterpolate(ctx_r2.user.gender);
     \u0275\u0275advance(5);
-    \u0275\u0275textInterpolate(ctx_r2.user.dob);
-    \u0275\u0275advance(9);
+    \u0275\u0275textInterpolate(\u0275\u0275pipeBind2(70, 16, ctx_r2.user.dob, "dd/MM/yyyy"));
+    \u0275\u0275advance(10);
     \u0275\u0275textInterpolate(ctx_r2.user.email || "Not provided");
     \u0275\u0275advance(5);
     \u0275\u0275textInterpolate(ctx_r2.user.mobileNumber || "Not Provided");
@@ -525,7 +529,7 @@ var ProfileInfoComponent = class _ProfileInfoComponent {
         });
         \u0275\u0275text(33, "Save");
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275template(34, ProfileInfoComponent_div_34_Template, 84, 16, "div", 23);
+        \u0275\u0275template(34, ProfileInfoComponent_div_34_Template, 85, 19, "div", 23);
       }
       if (rf & 2) {
         \u0275\u0275advance(23);
@@ -541,7 +545,7 @@ var ProfileInfoComponent = class _ProfileInfoComponent {
         \u0275\u0275advance(2);
         \u0275\u0275property("ngIf", ctx.user);
       }
-    }, dependencies: [CommonModule, NgIf, ReactiveFormsModule, \u0275NgNoValidate, DefaultValueAccessor, NgControlStatus, NgControlStatusGroup, FormGroupDirective, FormControlName, ImageCropperComponent], styles: ["\n\n.main-profile-info[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: var(--Text, #211b3a);\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 28px;\n}\n.main-profile-info[_ngcontent-%COMP%]   .all-user-deatils-div[_ngcontent-%COMP%] {\n  border-radius: 12px;\n  background: #fff;\n  padding: 120px 30px 30px 30px;\n  position: relative;\n  margin-top: 90px;\n}\n.info-div[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}\n.info-heading-div[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  color: var(--Text, #211b3a);\n  font-family: Urbanist;\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 28px;\n  margin-bottom: 30px;\n}\n.inf[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n.inf[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  color: #000;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 28px;\n  width: 100px;\n}\n.inf[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.78);\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 28px;\n  margin: 0px;\n}\n.inf[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: rgba(11, 56, 161, 0.78);\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 28px;\n  margin: 0px;\n  cursor: pointer;\n}\n.warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\n.warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #a16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.form-label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n}\n.profile-photo-div[_ngcontent-%COMP%] {\n  border-radius: 999px;\n  box-shadow: 1px -23px 29px -13px rgba(0, 0, 0, 0.216);\n  width: max-content;\n  position: absolute;\n  top: -50%;\n  left: 50%;\n  transform: translate(-50%, 50%);\n}\n.profile-photo-div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  border-radius: 999px;\n  height: 150px;\n  width: 150px;\n}\n.password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\n.password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\n.password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\n.password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\n.profile-image[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.edit-icon-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 4px;\n  right: -10px;\n  background: rgba(200, 200, 200, 0.6);\n  color: #fff;\n  border: none;\n  border-radius: 50%;\n  height: 50px;\n  width: 50px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 8px;\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.edit-icon-btn[_ngcontent-%COMP%]:hover {\n  background: rgba(0, 0, 0, 0.8);\n}\n.edit-icon-btn[_ngcontent-%COMP%]:hover   svg[_ngcontent-%COMP%]   path[_ngcontent-%COMP%] {\n  fill: #fff;\n}\n.preview-img[_ngcontent-%COMP%] {\n  width: 60px;\n  height: 60px;\n  object-fit: cover;\n}\n  image-cropper {\n  max-width: 200px;\n  height: 200px;\n}\n  image-cropper .cropper-container .cropper-drag-box {\n  background-color: rgb(0, 0, 0) !important;\n}\n/*# sourceMappingURL=profile-info.component.css.map */"] });
+    }, dependencies: [CommonModule, NgIf, DatePipe, ReactiveFormsModule, \u0275NgNoValidate, DefaultValueAccessor, NgControlStatus, NgControlStatusGroup, FormGroupDirective, FormControlName, ImageCropperComponent], styles: ["\n\n.main-profile-info[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: var(--Text, #211b3a);\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 28px;\n}\n.main-profile-info[_ngcontent-%COMP%]   .all-user-deatils-div[_ngcontent-%COMP%] {\n  border-radius: 12px;\n  background: #fff;\n  padding: 120px 30px 30px 30px;\n  position: relative;\n  margin-top: 90px;\n}\n.info-div[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n}\n.info-heading-div[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  color: var(--Text, #211b3a);\n  font-family: Urbanist;\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 28px;\n  margin-bottom: 30px;\n}\n.inf[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n}\n.inf[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  color: #000;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 28px;\n  width: 100px;\n}\n.inf[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.78);\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 28px;\n  margin: 0px;\n}\n.inf[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: rgba(11, 56, 161, 0.78);\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 28px;\n  margin: 0px;\n  cursor: pointer;\n}\n.warning-box[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  background-color: #fff4db;\n  border-radius: 8px;\n  padding: 12px;\n  gap: 8px;\n  color: #333;\n}\n.warning-box[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #a16800;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 18px;\n  margin: 0;\n}\n.form-label[_ngcontent-%COMP%] {\n  color: var(--Text-Dark, #212121);\n  font-family: Urbanist;\n  font-size: var(--Font-Size-2, 14px);\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-2, 0.1px);\n}\n.profile-photo-div[_ngcontent-%COMP%] {\n  border-radius: 999px;\n  box-shadow: 1px -23px 29px -13px rgba(0, 0, 0, 0.216);\n  width: max-content;\n  position: absolute;\n  top: -50%;\n  left: 50%;\n  transform: translate(-50%, 50%);\n}\n.profile-photo-div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  border-radius: 999px;\n  height: 150px;\n  width: 150px;\n}\n.password-input[_ngcontent-%COMP%] {\n  position: relative;\n}\n.password-input[_ngcontent-%COMP%]   input[_ngcontent-%COMP%] {\n  width: 100%;\n  padding-right: 40px;\n}\n.password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%] {\n  position: absolute;\n  right: 10px;\n  top: 50%;\n  transform: translateY(-50%);\n  background: transparent;\n  border: none;\n  cursor: pointer;\n  padding: 0;\n}\n.password-input[_ngcontent-%COMP%]   .eye-button[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 20px;\n}\n.profile-image[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.edit-icon-btn[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: 4px;\n  right: -10px;\n  background: rgba(200, 200, 200, 0.6);\n  color: #fff;\n  border: none;\n  border-radius: 50%;\n  height: 50px;\n  width: 50px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  padding: 8px;\n  cursor: pointer;\n  transition: all 0.3s ease-in-out;\n}\n.edit-icon-btn[_ngcontent-%COMP%]:hover {\n  background: rgba(0, 0, 0, 0.8);\n}\n.edit-icon-btn[_ngcontent-%COMP%]:hover   svg[_ngcontent-%COMP%]   path[_ngcontent-%COMP%] {\n  fill: #fff;\n}\n.preview-img[_ngcontent-%COMP%] {\n  width: 60px;\n  height: 60px;\n  object-fit: cover;\n}\n  image-cropper {\n  max-width: 200px;\n  height: 200px;\n}\n  image-cropper .cropper-container .cropper-drag-box {\n  background-color: rgb(0, 0, 0) !important;\n}\n/*# sourceMappingURL=profile-info.component.css.map */"] });
   }
 };
 (() => {
@@ -550,4 +554,4 @@ var ProfileInfoComponent = class _ProfileInfoComponent {
 export {
   ProfileInfoComponent
 };
-//# sourceMappingURL=chunk-7BPADHY6.mjs.map
+//# sourceMappingURL=chunk-DYLKMEYM.mjs.map

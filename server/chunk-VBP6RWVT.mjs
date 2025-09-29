@@ -2875,7 +2875,7 @@ var routes = [
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-7BPADHY6.mjs").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-DYLKMEYM.mjs").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
@@ -3259,4 +3259,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-OD5LVHR2.mjs.map
+//# sourceMappingURL=chunk-VBP6RWVT.mjs.map
