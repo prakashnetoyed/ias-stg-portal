@@ -193,13 +193,13 @@ function DashboardComponent_table_96_tr_22_Template(rf, ctx) {
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate((ctx_r6.currentPage - 1) * ctx_r6.pageSize + i_r9 + 1);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r6.doptOfficer == null ? null : user_r6.doptOfficer.englishName) || "Not Found");
+    \u0275\u0275textInterpolate((user_r6.doptOfficer == null ? null : user_r6.doptOfficer.englishName) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r6.doptOfficer == null ? null : user_r6.doptOfficer.cadre == null ? null : user_r6.doptOfficer.cadre.name) || "Not Found");
+    \u0275\u0275textInterpolate((user_r6.doptOfficer == null ? null : user_r6.doptOfficer.cadre == null ? null : user_r6.doptOfficer.cadre.name) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r6.doptOfficer == null ? null : user_r6.doptOfficer.allotmentYear) || "Not Found");
+    \u0275\u0275textInterpolate((user_r6.doptOfficer == null ? null : user_r6.doptOfficer.allotmentYear) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(user_r6.mobileNumber || "Not Found");
+    \u0275\u0275textInterpolate(user_r6.mobileNumber || "N/A");
     \u0275\u0275advance(2);
     \u0275\u0275property("ngClass", user_r6.status === ctx_r6.AccountActivityStatus.APPROVED ? "Approved" : "Unapproved");
     \u0275\u0275advance();
@@ -329,7 +329,7 @@ var DashboardComponent = class _DashboardComponent {
   loadUsers(page = 1, limit = this.pageSize) {
     const token = localStorage.getItem("authToken");
     const headers = new HttpHeaders({ Authorization: `Bearer ${token}` });
-    let url = `${environment.apiUrl}/admin/users?page=${page}&limit=${limit}&isActive=true`;
+    let url = `${environment.apiUrl}/admin/users?page=${page}&limit=${limit}&isActive=true&role=user`;
     if (this.searchText.trim()) {
       url += `&name=${encodeURIComponent(this.searchText.trim())}`;
     }
@@ -752,4 +752,4 @@ export {
   AccountActivityStatus,
   DashboardComponent
 };
-//# sourceMappingURL=chunk-C3FHINYR.mjs.map
+//# sourceMappingURL=chunk-AUOO6DAE.mjs.map

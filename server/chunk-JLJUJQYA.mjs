@@ -2765,7 +2765,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-UL4KHOFK.mjs").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-VOTX3GHL.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2871,7 +2871,7 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-C7VBAORK.mjs").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-WRU43Z24.mjs").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
@@ -2903,15 +2903,15 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-5TB7QGWN.mjs").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-C4WBMD2M.mjs").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-EYAXCLQD.mjs").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-FA6LYU7B.mjs").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-OLUEKFFP.mjs").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-YAWWORV4.mjs").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -3259,4 +3259,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-2E76RI4R.mjs.map
+//# sourceMappingURL=chunk-JLJUJQYA.mjs.map

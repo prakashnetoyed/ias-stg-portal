@@ -1,31 +1,30 @@
-import './polyfills.server.mjs';
-import {
-  TimeAgoPipe
-} from "./chunk-R2TLOVHR.mjs";
-import {
-  AuthService
-} from "./chunk-YG7QR4BN.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-33ALSIJ6.mjs";
+} from "./chunk-D6QXAB2T.js";
+import {
+  TimeAgoPipe
+} from "./chunk-RJB2RMQU.js";
+import {
+  AuthService
+} from "./chunk-A2UVKS5P.js";
 import {
   Router,
   RouterLink,
   RouterModule
-} from "./chunk-6XERLHKS.mjs";
-import "./chunk-2JDN2HEQ.mjs";
+} from "./chunk-S2TCK2OF.js";
+import "./chunk-RJ25BFLR.js";
 import {
   ToastService
-} from "./chunk-KVWIJTHH.mjs";
+} from "./chunk-QRVLOFPY.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient
-} from "./chunk-324F4CRK.mjs";
+} from "./chunk-PMEJ6XV7.js";
 import {
   CommonModule,
   DatePipe,
@@ -34,7 +33,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-6GREAR27.mjs";
+} from "./chunk-4WMMRM5H.js";
 import {
   PLATFORM_ID,
   inject,
@@ -73,11 +72,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-KVDSLLK3.mjs";
+} from "./chunk-KROTWO27.js";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-24VIC3GD.mjs";
+} from "./chunk-ASLTLD6L.js";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -205,49 +204,49 @@ var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
         title: "President",
         name: "S Krishnan",
         image: "assets/members/s-krishnan.png",
-        email: "presidenticas@gmail.com",
+        email: "saranyan.krishnan@gmail.com",
         linkedin: "https://in.linkedin.com/in/s-krishnan-2a96216"
       },
       {
-        title: "Vice-President 1",
+        title: "Vice President",
         name: "Sriram Taranikanti",
         image: "assets/members/sriram.png",
-        email: "vicepresidenticas@gmail.com",
+        email: "sriramtaranikanti@gmail.com",
         linkedin: "https://in.linkedin.com/in/sriram-taranikanti-4467945a"
       },
       {
-        title: "Vice-President 2",
+        title: "Vice President",
         name: "A Anbarasu",
         image: "assets/members/anbarasu.png",
-        email: "vicepresidenticas@gmail.com",
+        email: "a.anbarasu@gmail.com",
         linkedin: "https://linkedin.com/in/anbarasu"
       },
       {
         title: "Secretary",
         name: "Kunal",
         image: "assets/members/kunal.png",
-        email: "secretaryicas@gmail.com",
+        email: "js-develop-sports@gov.in",
         linkedin: "https://www.linkedin.com/in/kunal-kumar-890337207/?originalSubdomain=in"
       },
       {
         title: "Treasurer",
         name: "Aditi Singh",
         image: "assets/members/aditi-singh.png",
-        email: "treasurericas@gmail.com",
+        email: "treasurericas2006@gmail.com",
         linkedin: ""
       },
       {
-        title: "JT Secretary 1",
+        title: "Joint Secretary",
         name: "Chinmay Gotmare",
         image: "assets/members/chinmay-gotmare.png",
         email: "secretaryicas@gmail.com",
         linkedin: "https://www.linkedin.com/in/chinmay-gotmare-46408321/?originalSubdomain=in"
       },
       {
-        title: "JT Secretary 2",
+        title: "Joint Secretary",
         name: "Shailesh Nawal",
         image: "assets/members/shelesh-nawal.png",
-        email: "secretaryicas@gmail.com",
+        email: "shail_nawal@yahoo.com",
         linkedin: ""
       },
       {
@@ -1344,4 +1343,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-UL4KHOFK.mjs.map
+//# sourceMappingURL=chunk-CG75JPN2.js.map
