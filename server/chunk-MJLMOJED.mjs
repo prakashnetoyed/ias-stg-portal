@@ -2794,7 +2794,7 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-VS2NUXCH.mjs").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-QUGGUSON.mjs").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
@@ -3259,4 +3259,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-2GUYOG2R.mjs.map
+//# sourceMappingURL=chunk-MJLMOJED.mjs.map

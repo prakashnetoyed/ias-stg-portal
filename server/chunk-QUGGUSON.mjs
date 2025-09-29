@@ -81,8 +81,21 @@ var AllMembersComponent = class _AllMembersComponent {
     this.loading = true;
     this.http.get(`${environment.apiUrl}/admin/users?page=${this.page}&limit=${this.limit}&role=user&sortby=isExecutive`).subscribe({
       next: (res) => {
-        const newData = res.data?.data || [];
+        let newData = res.data?.data || [];
+        console.log("Fetched cadres:", newData);
+        const priorityEmails = [
+          "saranyan.krishnan@gmail.com",
+          "sriramtaranikanti@gmail.com",
+          "a.anbarasu@gmail.com",
+          "js-develop-sports@gov.in",
+          "aditisin@gmail.com",
+          "chinmay.g3@gmail.com"
+        ];
         this.cadres = [...this.cadres, ...newData];
+        console.log("Total cadres after merge:", this.cadres);
+        const priorityUsers = this.cadres.filter((user) => priorityEmails.includes(user?.email || user?.doptOfficer?.email));
+        const otherUsers = this.cadres.filter((user) => !priorityEmails.includes(user?.email || user?.doptOfficer?.email));
+        this.cadres = [...priorityUsers, ...otherUsers];
         this.total = +res.data?.pagination?.total || 0;
         this.page++;
         this.loading = false;
@@ -148,4 +161,4 @@ var AllMembersComponent = class _AllMembersComponent {
 export {
   AllMembersComponent
 };
-//# sourceMappingURL=chunk-VS2NUXCH.mjs.map
+//# sourceMappingURL=chunk-QUGGUSON.mjs.map

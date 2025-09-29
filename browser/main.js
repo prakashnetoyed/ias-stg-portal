@@ -2716,7 +2716,7 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-YS64HFG3.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-QCKG7KPS.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
