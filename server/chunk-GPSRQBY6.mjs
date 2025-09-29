@@ -1,14 +1,15 @@
+import './polyfills.server.mjs';
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient
-} from "./chunk-PMEJ6XV7.js";
+} from "./chunk-324F4CRK.mjs";
 import {
   CommonModule,
   NgForOf,
   NgIf
-} from "./chunk-4WMMRM5H.js";
+} from "./chunk-6GREAR27.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -28,16 +29,19 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-KROTWO27.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-KVDSLLK3.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/website/pages/membership/all-members/all-members.component.ts
 function AllMembersComponent_ng_container_17_div_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 12);
     \u0275\u0275element(1, "img", 13);
-    \u0275\u0275elementStart(2, "h1", 14);
+    \u0275\u0275elementStart(2, "h4");
     \u0275\u0275text(3);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(4, "h1", 14);
+    \u0275\u0275text(5);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -45,13 +49,15 @@ function AllMembersComponent_ng_container_17_div_1_Template(rf, ctx) {
     \u0275\u0275advance();
     \u0275\u0275property("src", member_r1.doptOfficer.profilePic, \u0275\u0275sanitizeUrl)("alt", member_r1.doptOfficer.englishName);
     \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(member_r1.designation);
+    \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(member_r1.doptOfficer.englishName);
   }
 }
 function AllMembersComponent_ng_container_17_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, AllMembersComponent_ng_container_17_div_1_Template, 4, 3, "div", 11);
+    \u0275\u0275template(1, AllMembersComponent_ng_container_17_div_1_Template, 6, 4, "div", 11);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -78,7 +84,7 @@ var AllMembersComponent = class _AllMembersComponent {
     if (this.total && this.cadres.length >= this.total)
       return;
     this.loading = true;
-    this.http.get(`${environment.apiUrl}/admin/users?page=${this.page}&limit=${this.limit}&role=user&sortby=isExecutive`).subscribe({
+    this.http.get(`${environment.apiUrl}/admin/users?page=${this.page}&limit=${this.limit}&role=user&sortby=designation`).subscribe({
       next: (res) => {
         let newData = res.data?.data || [];
         console.log("Fetched cadres:", newData);
@@ -165,4 +171,4 @@ var AllMembersComponent = class _AllMembersComponent {
 export {
   AllMembersComponent
 };
-//# sourceMappingURL=chunk-QOYNHCQY.js.map
+//# sourceMappingURL=chunk-GPSRQBY6.mjs.map
