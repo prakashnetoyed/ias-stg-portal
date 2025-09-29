@@ -2821,7 +2821,7 @@ var routes = [
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-YBV3CQWO.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-GKBV4S5X.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",

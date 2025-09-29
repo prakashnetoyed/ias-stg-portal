@@ -2899,7 +2899,7 @@ var routes = [
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-SADMYZ7L.mjs").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-LEJMUDCO.mjs").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
@@ -3259,4 +3259,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-OC7QYTZN.mjs.map
+//# sourceMappingURL=chunk-OD5LVHR2.mjs.map
