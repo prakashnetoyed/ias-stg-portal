@@ -2857,7 +2857,7 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-Y74X4NZA.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-4C2PU3O4.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",

@@ -1,18 +1,17 @@
-import './polyfills.server.mjs';
 import {
   UserService
-} from "./chunk-VPO5HD3O.mjs";
+} from "./chunk-BAZOROVN.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient
-} from "./chunk-324F4CRK.mjs";
+} from "./chunk-PMEJ6XV7.js";
 import {
   CommonModule,
   DatePipe,
   NgIf
-} from "./chunk-6GREAR27.mjs";
+} from "./chunk-4WMMRM5H.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -40,8 +39,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-KVDSLLK3.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-KROTWO27.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/user-portal/pages/user-membership/user-membership.component.ts
 function UserMembershipComponent_ng_container_0_p_24_ng_container_1_Template(rf, ctx) {
@@ -340,7 +339,7 @@ var UserMembershipComponent = class _UserMembershipComponent {
       if (rf & 2) {
         \u0275\u0275property("ngIf", ctx.hasSubscription === true);
         \u0275\u0275advance();
-        \u0275\u0275property("ngIf", ctx.hasSubscription !== false);
+        \u0275\u0275property("ngIf", ctx.hasSubscription === false);
       }
     }, dependencies: [CommonModule, NgIf, DatePipe], styles: ["\n\n.headingmembership[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  color: #211b3a;\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 28px;\n}\n.membershipcard[_ngcontent-%COMP%] {\n  border-radius: 12px;\n  background: #fff;\n  padding: 20px;\n  padding-bottom: 60px;\n}\n.membershipcard[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  color: #211b3a;\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 28px;\n  margin-bottom: 0;\n}\n.membershipcard[_ngcontent-%COMP%]   .badge[_ngcontent-%COMP%] {\n  border-radius: 6px;\n  background: #d3ffb3;\n  padding: 4px 12px;\n  color: #3c9718;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: var(--Line-Heights-10, 20px);\n  letter-spacing: var(--Letter-Spacing-4, 0.25px);\n}\n.membershipcard[_ngcontent-%COMP%]   hr[_ngcontent-%COMP%] {\n  color: black;\n  opacity: 0.14;\n}\n.details[_ngcontent-%COMP%] {\n  color: rgba(0, 0, 0, 0.78);\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 28px;\n}\n.details[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #000;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 28px;\n  margin-bottom: 0;\n  min-width: 140px;\n}\n.pricing-card[_ngcontent-%COMP%] {\n  background: #fff;\n  border-radius: 12px;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-between;\n}\n.pricing-card[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  min-width: 20px;\n}\n.pricing-card[_ngcontent-%COMP%]   h5[_ngcontent-%COMP%] {\n  color: #000;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 39.943px;\n  letter-spacing: -0.067px;\n}\n.pricing-price[_ngcontent-%COMP%] {\n  color: #000;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 400;\n  letter-spacing: -0.067px;\n}\n.pricing-card[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%] {\n  list-style: none;\n  padding: 0;\n  margin-bottom: 20px;\n  color: rgba(0, 0, 0, 0.78);\n  font-family: Urbanist;\n  font-size: 15px;\n  font-style: normal;\n  font-weight: 400;\n  letter-spacing: -0.067px;\n}\n.pricing-card[_ngcontent-%COMP%]   ul[_ngcontent-%COMP%]   li[_ngcontent-%COMP%] {\n  margin: 12px 0;\n}\n.btn-custom[_ngcontent-%COMP%] {\n  background-color: #715CC3;\n  color: #FFF;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  width: 100%;\n  border-radius: 4px;\n}\n.btn-custom[_ngcontent-%COMP%]:hover {\n  background-color: #6846db;\n  color: #fff;\n}\n/*# sourceMappingURL=user-membership.component.css.map */"] });
   }
@@ -351,4 +350,4 @@ var UserMembershipComponent = class _UserMembershipComponent {
 export {
   UserMembershipComponent
 };
-//# sourceMappingURL=chunk-QSD2A22S.mjs.map
+//# sourceMappingURL=chunk-4C2PU3O4.js.map
