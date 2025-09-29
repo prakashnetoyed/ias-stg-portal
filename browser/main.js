@@ -2821,7 +2821,7 @@ var routes = [
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-PKHLIPLT.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-YBV3CQWO.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
@@ -2857,7 +2857,7 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-P2SDSDLC.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-Y74X4NZA.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
@@ -2865,7 +2865,7 @@ var routes = [
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-ELXFUT3C.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-AMIA2T7L.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
