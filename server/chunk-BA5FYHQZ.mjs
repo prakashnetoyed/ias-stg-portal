@@ -1,7 +1,10 @@
+import './polyfills.server.mjs';
 import {
   AccountActivityStatus
-} from "./chunk-DUYNSLIK.js";
-import "./chunk-NROLUPWF.js";
+} from "./chunk-AUOO6DAE.mjs";
+import "./chunk-GRXTKQ2G.mjs";
+import "./chunk-6XERLHKS.mjs";
+import "./chunk-2JDN2HEQ.mjs";
 import {
   CheckboxControlValueAccessor,
   DefaultValueAccessor,
@@ -10,22 +13,20 @@ import {
   NgModel,
   NgSelectOption,
   ɵNgSelectMultipleOption
-} from "./chunk-3JXWTB6G.js";
-import "./chunk-S2TCK2OF.js";
-import "./chunk-RJ25BFLR.js";
+} from "./chunk-VTTRVRAU.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-PMEJ6XV7.js";
+} from "./chunk-324F4CRK.mjs";
 import {
   CommonModule,
   NgClass,
   NgForOf,
   NgIf
-} from "./chunk-4WMMRM5H.js";
+} from "./chunk-6GREAR27.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -58,8 +59,8 @@ import {
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty,
   ɵɵviewQuery
-} from "./chunk-KROTWO27.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-KVDSLLK3.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/IAS-portal/pages/not-approved-user/not-approved-user.component.ts
 var _c0 = ["toastElement"];
@@ -173,19 +174,19 @@ function NotApprovedUserComponent_table_34_tr_22_Template(rf, ctx) {
     \u0275\u0275advance(2);
     \u0275\u0275twoWayProperty("ngModel", user_r5.selected);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r5.doptOfficer == null ? null : user_r5.doptOfficer.englishName) || "Not Found");
+    \u0275\u0275textInterpolate((user_r5.doptOfficer == null ? null : user_r5.doptOfficer.englishName) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r5.doptOfficer == null ? null : user_r5.doptOfficer.cadre == null ? null : user_r5.doptOfficer.cadre.name) || "Not Found");
+    \u0275\u0275textInterpolate((user_r5.doptOfficer == null ? null : user_r5.doptOfficer.cadre == null ? null : user_r5.doptOfficer.cadre.name) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r5.doptOfficer == null ? null : user_r5.doptOfficer.allotmentYear) || "Not Found");
+    \u0275\u0275textInterpolate((user_r5.doptOfficer == null ? null : user_r5.doptOfficer.allotmentYear) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(user_r5.mobileNumber || "Not Found");
+    \u0275\u0275textInterpolate(user_r5.mobileNumber || "N/A");
     \u0275\u0275advance(2);
     \u0275\u0275property("ngClass", user_r5.status === ctx_r2.AccountActivityStatus.APPROVED ? "Approved" : "Unapproved");
     \u0275\u0275advance();
     \u0275\u0275textInterpolate1(" ", user_r5.status === ctx_r2.AccountActivityStatus.APPROVED ? "Approved" : "Pending for Approval", " ");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(user_r5.email || "Not Found");
+    \u0275\u0275textInterpolate(user_r5.email || "N/A");
     \u0275\u0275advance(7);
     \u0275\u0275property("ngIf", user_r5.status !== "approved");
     \u0275\u0275advance(2);
@@ -294,7 +295,7 @@ var NotApprovedUserComponent = class _NotApprovedUserComponent {
     const headers = new HttpHeaders({
       Authorization: `Bearer ${token}`
     });
-    let url = `${environment.apiUrl}/admin/users?limit=0&isActive=true`;
+    let url = `${environment.apiUrl}/admin/users?limit=0&isActive=true&role=user`;
     if (this.searchText?.trim()) {
       url += `&name=${encodeURIComponent(this.searchText.trim())}`;
     }
@@ -584,4 +585,4 @@ var NotApprovedUserComponent = class _NotApprovedUserComponent {
 export {
   NotApprovedUserComponent
 };
-//# sourceMappingURL=chunk-7MUG3GSD.js.map
+//# sourceMappingURL=chunk-BA5FYHQZ.mjs.map

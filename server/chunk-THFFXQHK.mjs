@@ -1,7 +1,10 @@
+import './polyfills.server.mjs';
 import {
   AccountActivityStatus
-} from "./chunk-DUYNSLIK.js";
-import "./chunk-NROLUPWF.js";
+} from "./chunk-AUOO6DAE.mjs";
+import "./chunk-GRXTKQ2G.mjs";
+import "./chunk-6XERLHKS.mjs";
+import "./chunk-2JDN2HEQ.mjs";
 import {
   DefaultValueAccessor,
   FormsModule,
@@ -9,22 +12,20 @@ import {
   NgModel,
   NgSelectOption,
   ɵNgSelectMultipleOption
-} from "./chunk-3JXWTB6G.js";
-import "./chunk-S2TCK2OF.js";
-import "./chunk-RJ25BFLR.js";
+} from "./chunk-VTTRVRAU.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-PMEJ6XV7.js";
+} from "./chunk-324F4CRK.mjs";
 import {
   CommonModule,
   NgClass,
   NgForOf,
   NgIf
-} from "./chunk-4WMMRM5H.js";
+} from "./chunk-6GREAR27.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -57,8 +58,8 @@ import {
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty,
   ɵɵviewQuery
-} from "./chunk-KROTWO27.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-KVDSLLK3.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/IAS-portal/pages/approved-user/approved-user.component.ts
 var _c0 = ["toastElement"];
@@ -158,19 +159,19 @@ function ApprovedUserComponent_table_31_tr_20_Template(rf, ctx) {
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate((ctx_r4.currentPage - 1) * ctx_r4.pageSize + i_r7 + 1);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r4.doptOfficer == null ? null : user_r4.doptOfficer.englishName) || "Not Found");
+    \u0275\u0275textInterpolate((user_r4.doptOfficer == null ? null : user_r4.doptOfficer.englishName) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r4.doptOfficer == null ? null : user_r4.doptOfficer.cadre == null ? null : user_r4.doptOfficer.cadre.name) || "Not Found");
+    \u0275\u0275textInterpolate((user_r4.doptOfficer == null ? null : user_r4.doptOfficer.cadre == null ? null : user_r4.doptOfficer.cadre.name) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r4.doptOfficer == null ? null : user_r4.doptOfficer.allotmentYear) || "Not Found");
+    \u0275\u0275textInterpolate((user_r4.doptOfficer == null ? null : user_r4.doptOfficer.allotmentYear) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(user_r4.mobileNumber || "Not Found");
+    \u0275\u0275textInterpolate(user_r4.mobileNumber || "N/A");
     \u0275\u0275advance(2);
     \u0275\u0275property("ngClass", user_r4.status === ctx_r4.AccountActivityStatus.APPROVED ? "Approved" : "Unapproved");
     \u0275\u0275advance();
     \u0275\u0275textInterpolate1(" ", user_r4.status === ctx_r4.AccountActivityStatus.APPROVED ? "Approved" : "Pending for Approval", " ");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(user_r4.email || "Not Found");
+    \u0275\u0275textInterpolate(user_r4.email || "N/A");
     \u0275\u0275advance(7);
     \u0275\u0275property("ngIf", user_r4.status !== "approved");
     \u0275\u0275advance(2);
@@ -265,7 +266,7 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
   loadUsers() {
     const token = localStorage.getItem("authToken");
     const headers = new HttpHeaders({ Authorization: `Bearer ${token}` });
-    let url = `${environment.apiUrl}/admin/users?limit=0&isActive=true`;
+    let url = `${environment.apiUrl}/admin/users?limit=0&isActive=true&role=user`;
     if (this.searchText?.trim()) {
       url += `&name=${encodeURIComponent(this.searchText.trim())}`;
     }
@@ -513,4 +514,4 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
 export {
   ApprovedUserComponent
 };
-//# sourceMappingURL=chunk-E2AYSV3Z.js.map
+//# sourceMappingURL=chunk-THFFXQHK.mjs.map

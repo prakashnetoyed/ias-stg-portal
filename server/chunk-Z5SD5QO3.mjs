@@ -2903,15 +2903,15 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-C4WBMD2M.mjs").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-THFFXQHK.mjs").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-FA6LYU7B.mjs").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-BA5FYHQZ.mjs").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-YAWWORV4.mjs").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-KJHXXQZO.mjs").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -2939,7 +2939,7 @@ var routes = [
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-NE6G6ZRF.mjs").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-HULLI37T.mjs").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
@@ -3259,4 +3259,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-MJLMOJED.mjs.map
+//# sourceMappingURL=chunk-Z5SD5QO3.mjs.map

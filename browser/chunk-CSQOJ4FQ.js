@@ -1,24 +1,23 @@
-import './polyfills.server.mjs';
 import {
   AccountActivityStatus
-} from "./chunk-AUOO6DAE.mjs";
-import "./chunk-GRXTKQ2G.mjs";
-import "./chunk-6XERLHKS.mjs";
-import "./chunk-2JDN2HEQ.mjs";
-import "./chunk-VTTRVRAU.mjs";
+} from "./chunk-DUYNSLIK.js";
+import "./chunk-NROLUPWF.js";
+import "./chunk-3JXWTB6G.js";
+import "./chunk-S2TCK2OF.js";
+import "./chunk-RJ25BFLR.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-324F4CRK.mjs";
+} from "./chunk-PMEJ6XV7.js";
 import {
   CommonModule,
   NgClass,
   NgForOf,
   NgIf
-} from "./chunk-6GREAR27.mjs";
+} from "./chunk-4WMMRM5H.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -47,8 +46,8 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-KVDSLLK3.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-KROTWO27.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/IAS-portal/pages/rejected-users/rejected-users.component.ts
 var _c0 = ["toastElement"];
@@ -97,19 +96,19 @@ function RejectedUsersComponent_table_12_tr_20_Template(rf, ctx) {
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate((ctx_r3.currentPage - 1) * ctx_r3.pageSize + i_r5 + 1);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r3.doptOfficer == null ? null : user_r3.doptOfficer.englishName) || "Not Found");
+    \u0275\u0275textInterpolate((user_r3.doptOfficer == null ? null : user_r3.doptOfficer.englishName) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r3.doptOfficer == null ? null : user_r3.doptOfficer.cadre == null ? null : user_r3.doptOfficer.cadre.name) || "Not Found");
+    \u0275\u0275textInterpolate((user_r3.doptOfficer == null ? null : user_r3.doptOfficer.cadre == null ? null : user_r3.doptOfficer.cadre.name) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate((user_r3.doptOfficer == null ? null : user_r3.doptOfficer.allotmentYear) || "Not Found");
+    \u0275\u0275textInterpolate((user_r3.doptOfficer == null ? null : user_r3.doptOfficer.allotmentYear) || "N/A");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(user_r3.mobileNumber || "Not Found");
+    \u0275\u0275textInterpolate(user_r3.mobileNumber || "N/A");
     \u0275\u0275advance(2);
     \u0275\u0275property("ngClass", user_r3.isActive ? "approved" : "unapproved");
     \u0275\u0275advance();
     \u0275\u0275textInterpolate1(" ", user_r3.isActive ? "Active" : "Deactivated", " ");
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(user_r3.email || "Not Found");
+    \u0275\u0275textInterpolate(user_r3.email || "N/A");
   }
 }
 function RejectedUsersComponent_table_12_Template(rf, ctx) {
@@ -202,7 +201,7 @@ var RejectedUsersComponent = class _RejectedUsersComponent {
     const headers = new HttpHeaders({
       Authorization: `Bearer ${token}`
     });
-    this.http.get(`${environment.apiUrl}/admin/users?limit=0&isActive=false`, { headers }).subscribe({
+    this.http.get(`${environment.apiUrl}/admin/users?limit=0&isActive=false&role=user`, { headers }).subscribe({
       next: (res) => {
         this.allApprovedUsers = res.data.data;
         this.pagination.total = this.allApprovedUsers.length;
@@ -391,4 +390,4 @@ var RejectedUsersComponent = class _RejectedUsersComponent {
 export {
   RejectedUsersComponent
 };
-//# sourceMappingURL=chunk-YAWWORV4.mjs.map
+//# sourceMappingURL=chunk-CSQOJ4FQ.js.map

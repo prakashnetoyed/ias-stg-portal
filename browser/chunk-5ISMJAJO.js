@@ -186,7 +186,7 @@ var UserMembersComponent = class _UserMembersComponent {
     this.loadUsers(1);
   }
   loadUsers(page = this.currentPage, limit = this.pageSize) {
-    let url = `${environment.apiUrl}/admin/users?page=${page}&limit=${limit}&isActive=true`;
+    let url = `${environment.apiUrl}/admin/users?page=${page}&limit=${limit}&isActive=true&role=user`;
     if (this.searchText.trim()) {
       url += `&name=${encodeURIComponent(this.searchText.trim())}`;
     }
@@ -402,4 +402,4 @@ var UserMembersComponent = class _UserMembersComponent {
 export {
   UserMembersComponent
 };
-//# sourceMappingURL=chunk-2RUXXHTM.js.map
+//# sourceMappingURL=chunk-5ISMJAJO.js.map

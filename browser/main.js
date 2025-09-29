@@ -2825,15 +2825,15 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-E2AYSV3Z.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-BXVAWXUD.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-7MUG3GSD.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-AIPOCZ2R.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-NHXL3YCR.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-CSQOJ4FQ.js").then((m) => m.RejectedUsersComponent)
       }
     ]
   },
@@ -2861,7 +2861,7 @@ var routes = [
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-2RUXXHTM.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-5ISMJAJO.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
