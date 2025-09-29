@@ -2785,7 +2785,7 @@ var routes = [
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-PCACC6DV.mjs").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-PINNCQ3Q.mjs").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -3259,4 +3259,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-WJYKPSKE.mjs.map
+//# sourceMappingURL=chunk-CCS3ILUN.mjs.map

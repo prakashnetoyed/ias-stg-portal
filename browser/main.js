@@ -2707,7 +2707,7 @@ var routes = [
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-GSKUXJD5.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-I7YZADN6.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
