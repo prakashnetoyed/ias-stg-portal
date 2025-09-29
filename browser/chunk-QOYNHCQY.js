@@ -1,15 +1,14 @@
-import './polyfills.server.mjs';
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient
-} from "./chunk-324F4CRK.mjs";
+} from "./chunk-PMEJ6XV7.js";
 import {
   CommonModule,
   NgForOf,
   NgIf
-} from "./chunk-6GREAR27.mjs";
+} from "./chunk-4WMMRM5H.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -29,8 +28,8 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate
-} from "./chunk-KVDSLLK3.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-KROTWO27.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/website/pages/membership/all-members/all-members.component.ts
 function AllMembersComponent_ng_container_17_div_1_Template(rf, ctx) {
@@ -95,6 +94,11 @@ var AllMembersComponent = class _AllMembersComponent {
         console.log("Total cadres after merge:", this.cadres);
         const priorityUsers = this.cadres.filter((user) => priorityEmails.includes(user?.email || user?.doptOfficer?.email));
         const otherUsers = this.cadres.filter((user) => !priorityEmails.includes(user?.email || user?.doptOfficer?.email));
+        priorityUsers.sort((a, b) => {
+          const emailA = a?.email || a?.doptOfficer?.email;
+          const emailB = b?.email || b?.doptOfficer?.email;
+          return priorityEmails.indexOf(emailA) - priorityEmails.indexOf(emailB);
+        });
         this.cadres = [...priorityUsers, ...otherUsers];
         this.total = +res.data?.pagination?.total || 0;
         this.page++;
@@ -161,4 +165,4 @@ var AllMembersComponent = class _AllMembersComponent {
 export {
   AllMembersComponent
 };
-//# sourceMappingURL=chunk-QUGGUSON.mjs.map
+//# sourceMappingURL=chunk-QOYNHCQY.js.map
