@@ -95,16 +95,6 @@ function PaymentStatusComponent_div_2_Template(rf, ctx) {
     \u0275\u0275text(13, "Order ID:");
     \u0275\u0275elementEnd();
     \u0275\u0275text(14);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(15, "p")(16, "strong");
-    \u0275\u0275text(17, "Mode:");
-    \u0275\u0275elementEnd();
-    \u0275\u0275text(18);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(19, "p")(20, "strong");
-    \u0275\u0275text(21, "Date:");
-    \u0275\u0275elementEnd();
-    \u0275\u0275text(22);
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -115,10 +105,6 @@ function PaymentStatusComponent_div_2_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" \u20B9", ctx_r0.paymentDetails.txnAmount, "");
     \u0275\u0275advance(4);
     \u0275\u0275textInterpolate1(" ", ctx_r0.paymentDetails.orderID, "");
-    \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate1(" ", ctx_r0.paymentDetails.txnMode, "");
-    \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate1(" ", ctx_r0.paymentDetails.txnDate, "");
   }
 }
 var PaymentStatusComponent = class _PaymentStatusComponent {
@@ -149,7 +135,7 @@ var PaymentStatusComponent = class _PaymentStatusComponent {
     this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _PaymentStatusComponent, selectors: [["app-payment-status"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 3, vars: 2, consts: [[1, "container", "py-5"], ["class", "card shadow border-success mb-4", 4, "ngIf"], ["class", "card shadow border-danger mb-4", 4, "ngIf"], [1, "card", "shadow", "border-success", "mb-4"], [1, "card-body", "text-center", "text-success"], [1, "card", "shadow", "border-danger", "mb-4"], [1, "card-body", "text-center", "text-danger"]], template: function PaymentStatusComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0);
-        \u0275\u0275template(1, PaymentStatusComponent_div_1_Template, 27, 6, "div", 1)(2, PaymentStatusComponent_div_2_Template, 23, 5, "div", 2);
+        \u0275\u0275template(1, PaymentStatusComponent_div_1_Template, 27, 6, "div", 1)(2, PaymentStatusComponent_div_2_Template, 15, 3, "div", 2);
         \u0275\u0275elementEnd();
       }
       if (rf & 2) {
@@ -167,4 +153,4 @@ var PaymentStatusComponent = class _PaymentStatusComponent {
 export {
   PaymentStatusComponent
 };
-//# sourceMappingURL=chunk-7UJFLFSY.js.map
+//# sourceMappingURL=chunk-56CYB4RC.js.map

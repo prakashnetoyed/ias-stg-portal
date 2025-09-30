@@ -2,9 +2,6 @@ import {
   ImageCropperComponent
 } from "./chunk-EJHTPSKA.js";
 import {
-  UserService
-} from "./chunk-BAZOROVN.js";
-import {
   DefaultValueAccessor,
   FormBuilder,
   FormControlName,
@@ -15,6 +12,9 @@ import {
   Validators,
   ɵNgNoValidate
 } from "./chunk-3JXWTB6G.js";
+import {
+  UserService
+} from "./chunk-BAZOROVN.js";
 import "./chunk-RJ25BFLR.js";
 import {
   ToastService
@@ -553,4 +553,4 @@ var ProfileInfoComponent = class _ProfileInfoComponent {
 export {
   ProfileInfoComponent
 };
-//# sourceMappingURL=chunk-OJTMNX5Z.js.map
+//# sourceMappingURL=chunk-4JEG3F4E.js.map

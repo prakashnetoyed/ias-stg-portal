@@ -544,10 +544,16 @@ var MoMComponent = class _MoMComponent {
   }
   showToast(message, type) {
     this.toastMessage = message;
+    if (!this.errorToast?.nativeElement) {
+      console.warn("Toast element not found");
+      return;
+    }
     const toastElement = this.errorToast.nativeElement;
     toastElement.classList.remove("bg-success", "bg-danger");
     toastElement.classList.add(type === "success" ? "bg-success" : "bg-danger");
-    new bootstrap.Toast(toastElement).show();
+    if (window.bootstrap?.Toast) {
+      new window.bootstrap.Toast(toastElement).show();
+    }
   }
   static {
     this.\u0275fac = function MoMComponent_Factory(t) {
@@ -787,4 +793,4 @@ var MoMComponent = class _MoMComponent {
 export {
   MoMComponent
 };
-//# sourceMappingURL=chunk-DU6AMCZO.mjs.map
+//# sourceMappingURL=chunk-43LKQSNG.mjs.map
