@@ -263,7 +263,7 @@ function DashboardComponent_table_96_Template(rf, ctx) {
     \u0275\u0275text(16, "Payment Status");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(17, "th");
-    \u0275\u0275text(18, "Txt Date");
+    \u0275\u0275text(18, "Txn Date");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(19, "th");
     \u0275\u0275text(20, "Email");
@@ -777,4 +777,4 @@ export {
   AccountActivityStatus,
   DashboardComponent
 };
-//# sourceMappingURL=chunk-2JLQB5GT.js.map
+//# sourceMappingURL=chunk-5U6PPLUG.js.map
