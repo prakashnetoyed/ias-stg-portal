@@ -776,7 +776,7 @@ function IasLoginComponent_div_11_Template(rf, ctx) {
     \u0275\u0275advance(5);
     \u0275\u0275classProp("disabled", ctx_r1.isResendDisabled);
     \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate1(" ", \u0275\u0275pipeBind3(18, 7, ctx_r1.countdown * 1e3, "mm:ss", "UTC"), "");
+    \u0275\u0275textInterpolate(\u0275\u0275pipeBind3(18, 7, ctx_r1.countdown * 1e3, "mm:ss", "UTC"));
   }
 }
 var IasLoginComponent = class _IasLoginComponent {
@@ -864,7 +864,34 @@ var IasLoginComponent = class _IasLoginComponent {
     }, 1e3);
   }
   onResendOtp() {
-    this.startCountdown(59);
+    if (this.isResendDisabled)
+      return;
+    this.isResendDisabled = true;
+    this.loading = true;
+    const payload = {
+      email: this.email?.value,
+      password: this.password?.value
+    };
+    this.http.post(`${environment.apiUrl}/accounts/login`, payload).subscribe({
+      next: (res) => {
+        this.loading = false;
+        const token = res?.data?.token;
+        if (token) {
+          this.tempToken = token;
+          this.showToast("\u2705 OTP resent successfully", "success");
+          this.startCountdown(59);
+        } else {
+          this.showToast("\u26A0\uFE0F Failed to resend OTP.", "warning");
+          this.isResendDisabled = false;
+        }
+      },
+      error: (err) => {
+        this.loading = false;
+        console.error(err);
+        this.showToast(err.error?.message || "\u274C Failed to resend OTP.", "danger");
+        this.isResendDisabled = false;
+      }
+    });
   }
   handleKeyDown(event, index) {
     const input = event.target;
