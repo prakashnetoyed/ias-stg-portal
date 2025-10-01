@@ -24,7 +24,7 @@ import {
 } from "./chunk-BAZOROVN.js";
 import {
   AuthService
-} from "./chunk-A2UVKS5P.js";
+} from "./chunk-OSVG5WYZ.js";
 import {
   Router,
   RouterLink,
@@ -1365,7 +1365,6 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
   submitOtp() {
     if (this.otpForm.valid) {
       const otp = this.otpControls.map((ctrl) => this.otpForm.get(ctrl)?.value).join("");
-      console.log("OTP entered:", otp);
       if (!this.token || !this.action) {
         console.error("Token or action not found. Did you call forgot-password first?");
         return;
@@ -2291,10 +2290,8 @@ var IasSignupComponent = class _IasSignupComponent {
     const url = `${environment.apiUrl}/dopt/cadres?limit=0`;
     this.http.get(url).subscribe({
       next: (response) => {
-        console.log("cadeeeeessss", response);
         this.loading = false;
         this.cadrelist = response.data.data;
-        console.log("Cadre List:", this.cadrelist);
       }
     });
     const today = /* @__PURE__ */ new Date();
@@ -2321,21 +2318,17 @@ var IasSignupComponent = class _IasSignupComponent {
   // Step 1 - Submit email
   submitMemberId() {
     if (this.memberidForm.valid) {
-      console.log("Member ID submitted:", this.memberidForm.value);
       this.loading = true;
       const url = `${environment.apiUrl}/dopt/officers?limit=1&identityNo=` + this.memberidForm.value.identityNumber;
       this.http.get(url).subscribe({
         next: (response) => {
-          console.log("user details", response);
           this.iasid = response.data.data[0]?.id;
           this.iasname = response.data.data[0]?.englishName;
           this.iasbatch = response.data.data[0]?.allotmentYear;
           this.iascadre = response.data.data[0]?.cadreDomicile;
           this.iasprofilePic = response.data.data[0]?.profilePic;
-          console.log("IAS ID:", this.iasid);
           this.loading = false;
           if (this.iasid !== void 0 && this.iasid !== null) {
-            console.log("Valid IAS ID found:", this.iasid);
             this.mobilenumber = this.memberidForm.value.mobilenumber || null;
             this.alternateemail = this.memberidForm.value.alternateEmail || null;
             this.showToast("\u2705 Details Found Successfully", "success");
@@ -2391,24 +2384,18 @@ var IasSignupComponent = class _IasSignupComponent {
   }
   submitmemberdetails() {
     if (this.memberdetailsForm.valid) {
-      console.log("Member ID submitted:", this.memberdetailsForm.value);
       this.loading = true;
-      console.log("Date of Birth:", this.memberdetailsForm.value.dateofbirth);
       const formatted = this.datePipe.transform(this.memberdetailsForm.value.dateofbirth, "dd/MM/yyyy");
-      console.log("Formatted Date of Birth:", formatted);
       const url = `${environment.apiUrl}/dopt/officers?limit=1&englishName=` + this.memberdetailsForm.value.fullname + "&populate=cadre&cadre=" + this.memberdetailsForm.value.cadre + "&allotmentYear=" + this.memberdetailsForm.value.allotmentyear + "&gender=" + this.memberdetailsForm.value.gender + "&dob=" + formatted + "&mothertongue=" + this.memberdetailsForm.value.mothertongue + "&retirementreason=" + this.memberdetailsForm.value.retirementreason;
       this.http.get(url).subscribe({
         next: (response) => {
-          console.log("user details", response);
           this.iasid = response.data.data[0]?.id;
           this.iasname = response.data.data[0]?.englishName;
           this.iasbatch = response.data.data[0]?.allotmentYear;
           this.iascadre = response.data.data[0]?.cadreDomicile;
           this.iasprofilePic = response.data.data[0]?.profilePic;
-          console.log("IAS ID:", this.iasid);
           this.loading = false;
           if (this.iasid !== void 0 && this.iasid !== null) {
-            console.log("Valid IAS ID found:", this.iasid);
             this.mobilenumber = this.memberdetailsForm.value.mobilenumber || null;
             this.alternateemail = this.memberdetailsForm.value.alternateEmail || null;
             this.showToast("\u2705 Details Found Successfully", "success");
@@ -2440,8 +2427,6 @@ var IasSignupComponent = class _IasSignupComponent {
     });
     this.http.post(url, payload, { headers }).subscribe({
       next: (response) => {
-        console.log("user details", response);
-        console.log("message", response.data.message);
         this.loading = false;
         this.showToast("\u2705 IAS Details submitted successful", "success");
         this.currentStep = 7;
@@ -2461,7 +2446,6 @@ var IasSignupComponent = class _IasSignupComponent {
       };
       this.http.post(url, payload).subscribe({
         next: (response) => {
-          console.log("Signup successful", response);
           this.token = response.data.token;
           this.action = response.data.action;
           this.loading = false;
@@ -2508,7 +2492,6 @@ var IasSignupComponent = class _IasSignupComponent {
     if (this.otpForm.valid) {
       this.loading = true;
       const otp = this.otpControls.map((ctrl) => this.otpForm.get(ctrl)?.value).join("");
-      console.log("OTP entered:", otp);
       const url = `${environment.apiUrl}/accounts/otpverify`;
       const token = this.token;
       const headers = new HttpHeaders({
@@ -2522,10 +2505,8 @@ var IasSignupComponent = class _IasSignupComponent {
         token: this.token
         // Include the token in the payload
       };
-      console.log("otp payload", payload);
       this.http.patch(url, payload, { headers }).subscribe({
         next: (response) => {
-          console.log("otp verified ", response);
           this.sessionid = response.data.sessionToken;
           this.loading = false;
           this.showToast("\u2705 OTP verified successfully", "success");
@@ -2544,7 +2525,6 @@ var IasSignupComponent = class _IasSignupComponent {
         this.passwordnotmatch = true;
         return;
       }
-      console.log("Password created:", this.passwordForm.value);
       const formdata = this.passwordForm.value;
       const url = `${environment.apiUrl}/accounts/setup-password`;
       const headers = new HttpHeaders({
@@ -2555,10 +2535,8 @@ var IasSignupComponent = class _IasSignupComponent {
         password: formdata.newPassword,
         confirmPassword: formdata.confirmPassword
       };
-      console.log("payload", payload);
       this.http.post(url, payload, { headers }).subscribe({
         next: (response) => {
-          console.log("Signup successful:", response);
           this.showToast("\u2705 Password setup successfully", "success");
           this.currentStep = 8;
         },
@@ -2694,7 +2672,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-Z2JTTZYJ.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-25F6ULL5.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2709,17 +2687,17 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-GYPG7F42.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-IM7QKWEE.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "my-posts",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-QO3BC7E4.js").then((m) => m.MyPostsComponent)
+        loadComponent: () => import("./chunk-HVY4SLJ3.js").then((m) => m.MyPostsComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-Y2AGQNGJ.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-J5A242D2.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2728,7 +2706,7 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TEQFSI7E.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-AK7KL7LL.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
@@ -2805,7 +2783,7 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-X45MDP3H.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-SVF7PLLR.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
@@ -2813,11 +2791,11 @@ var routes = [
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-5QBA3BRO.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-EY2VXPTP.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-PX2MQAWO.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-JKZIDEDQ.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
@@ -2825,11 +2803,11 @@ var routes = [
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-YAJK73SM.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-MOZNBQDV.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-RXCRNWMD.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-SVJJBRVG.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
@@ -2837,15 +2815,19 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-RQAIVWRI.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-XKO6GFD5.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-7U5HSN3C.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-3W7NCQ4G.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-INFS5OGT.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-CMACDSG4.js").then((m) => m.RejectedUsersComponent)
+      },
+      {
+        path: "user-info",
+        loadComponent: () => import("./chunk-J66SG7JV.js").then((m) => m.DetailedUserInfoComponent)
       }
     ]
   },
@@ -2857,7 +2839,7 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-PAMJADF6.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-LRG6JTFI.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
@@ -2865,19 +2847,19 @@ var routes = [
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-K5Z7PICQ.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-YPFON5E3.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-M5Q6OPAP.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-QAAARWTG.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-7DEVKA45.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-7TKIUJV7.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-AMIA2T7L.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-MRQ4P7OK.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
