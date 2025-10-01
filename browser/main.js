@@ -2773,7 +2773,7 @@ var routes = [
       {
         path: "Terms-Conditions",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-PY2GNPQ4.js").then((m) => m.TermsConditionsComponent)
+        loadComponent: () => import("./chunk-4Y3RPPE3.js").then((m) => m.TermsConditionsComponent)
       },
       {
         path: "Refund-Cancellation-Policy",

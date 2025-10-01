@@ -1,4 +1,3 @@
-import './polyfills.server.mjs';
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -6,8 +5,8 @@ import {
   ɵɵelementEnd,
   ɵɵelementStart,
   ɵɵtext
-} from "./chunk-KVDSLLK3.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-KROTWO27.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/website/pages/terms-conditions/terms-conditions.component.ts
 var TermsConditionsComponent = class _TermsConditionsComponent {
@@ -108,7 +107,7 @@ var TermsConditionsComponent = class _TermsConditionsComponent {
         \u0275\u0275elementStart(73, "p");
         \u0275\u0275text(74, "\u{1F4E7} ");
         \u0275\u0275elementStart(75, "strong");
-        \u0275\u0275text(76, "association.ias@gmail.com");
+        \u0275\u0275text(76, "iascahelpdesk@gmail.com");
         \u0275\u0275elementEnd();
         \u0275\u0275text(77, " | \u{1F4DE} ");
         \u0275\u0275elementStart(78, "strong");
@@ -124,4 +123,4 @@ var TermsConditionsComponent = class _TermsConditionsComponent {
 export {
   TermsConditionsComponent
 };
-//# sourceMappingURL=chunk-YV5CP3BW.mjs.map
+//# sourceMappingURL=chunk-4Y3RPPE3.js.map
