@@ -1,31 +1,30 @@
-import './polyfills.server.mjs';
-import {
-  TimeAgoPipe
-} from "./chunk-R2TLOVHR.mjs";
-import {
-  AuthService
-} from "./chunk-CJKP6ATJ.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-33ALSIJ6.mjs";
+} from "./chunk-D6QXAB2T.js";
+import {
+  TimeAgoPipe
+} from "./chunk-RJB2RMQU.js";
+import {
+  AuthService
+} from "./chunk-OSVG5WYZ.js";
 import {
   Router,
   RouterLink,
   RouterModule
-} from "./chunk-6XERLHKS.mjs";
-import "./chunk-2JDN2HEQ.mjs";
+} from "./chunk-S2TCK2OF.js";
+import "./chunk-RJ25BFLR.js";
 import {
   ToastService
-} from "./chunk-KVWIJTHH.mjs";
+} from "./chunk-QRVLOFPY.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient
-} from "./chunk-324F4CRK.mjs";
+} from "./chunk-PMEJ6XV7.js";
 import {
   CommonModule,
   DatePipe,
@@ -34,7 +33,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-6GREAR27.mjs";
+} from "./chunk-4WMMRM5H.js";
 import {
   PLATFORM_ID,
   inject,
@@ -73,11 +72,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-KVDSLLK3.mjs";
+} from "./chunk-KROTWO27.js";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-24VIC3GD.mjs";
+} from "./chunk-ASLTLD6L.js";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -226,21 +225,21 @@ var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
         title: "Secretary",
         name: "Kunal",
         image: "assets/members/kunal.png",
-        email: "js-develop-sports@gov.in",
+        email: "kunalone@gmail.com",
         linkedin: "https://www.linkedin.com/in/kunal-kumar-890337207/?originalSubdomain=in"
       },
       {
         title: "Treasurer",
         name: "Aditi Singh",
         image: "assets/members/aditi-singh.png",
-        email: "treasurericas2006@gmail.com",
+        email: "aditisin@gmail.com",
         linkedin: ""
       },
       {
         title: "Joint Secretary",
         name: "Chinmay Gotmare",
         image: "assets/members/chinmay-gotmare.png",
-        email: "secretaryicas@gmail.com",
+        email: "chinmay.g3@gmail.com",
         linkedin: "https://www.linkedin.com/in/chinmay-gotmare-46408321/?originalSubdomain=in"
       },
       {
@@ -254,77 +253,77 @@ var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
         title: "Retired Member",
         name: "Sanjay Bandyopadhyay",
         image: "assets/members/sanjay-bandyopadhyay.png",
-        email: "membericas@gmail.com",
+        email: "sanjay.bando@gmail.com",
         linkedin: "https://linkedin.com/in/sanjay-bandyopadhyay"
       },
       {
         title: "Retired Member",
         name: "Sanjay Bhosreddy",
         image: "assets/members/sanjay-bhoosreddy.png",
-        email: "membericas@gmail.com",
+        email: "s.bhoosreddy@gmail.com",
         linkedin: ""
       },
       {
         title: "Member",
         name: "D Thara",
         image: "assets/members/d-thara.png",
-        email: "membericas@gmail.com",
+        email: "thara307@gmail.com",
         linkedin: ""
       },
       {
         title: "Member",
         name: "Rahul Singh",
         image: "assets/members/rahul-singh.png",
-        email: "membericas@gmail.com",
+        email: "rahulratna1@gmail.com",
         linkedin: ""
       },
       {
         title: "Member",
         name: "Prasanna R",
         image: "assets/members/prasanna.png",
-        email: "membericas@gmail.com",
+        email: "rprasanaias@gmail.com",
         linkedin: ""
       },
       {
         title: "Member",
         name: "Nitin Khade",
         image: "assets/members/nitin-khade.png",
-        email: "membericas@gmail.com",
+        email: "nskhade_2004@yahoo.co.in",
         linkedin: ""
       },
       {
         title: "Member",
         name: "Dinesh Kumar",
         image: "assets/members/dinesh-kumar.png",
-        email: "membericas@gmail.com",
+        email: "dineshkr05@gmail.com",
         linkedin: ""
       },
       {
         title: "Member",
         name: "Rohan Chand Thakur",
         image: "assets/members/rohan-chand-thakur.png",
-        email: "membericas@gmail.com",
+        email: "rcthakur1984@gmail.com",
         linkedin: ""
       },
       {
         title: "Member",
         name: "Manasi Sahay Thakur",
         image: "assets/members/manasi-thakur.png",
-        email: "membericas@gmail.com",
+        email: "manasisahay@gmail.com",
         linkedin: "https://linkedin.com/in/manasi-sahay-thakur"
       },
       {
         title: "Member",
         name: "Shah Faesal",
         image: "assets/members/shah-faesal.png",
-        email: "membericas@gmail.com",
+        email: "i.shahfaesal@gmail.com",
         linkedin: ""
       },
       {
         title: "Member",
         name: "Naveen Aggarwal",
         image: "assets/members/naveen-aggarwal.png",
-        email: "membericas@gmail.com",
+        email: "naveen.aggarwal@ias.nic.in",
         linkedin: "https://linkedin.com/in/naveen-aggarwal"
       }
     ];
@@ -1518,4 +1517,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-THGICE5N.mjs.map
+//# sourceMappingURL=chunk-RV5RC2XZ.js.map
