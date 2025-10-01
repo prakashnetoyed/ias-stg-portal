@@ -60,7 +60,7 @@ var RefundCancellationPolicyComponent = class _RefundCancellationPolicyComponent
         \u0275\u0275elementStart(34, "p");
         \u0275\u0275text(35, "Refunds or cancellations will not be entertained under normal circumstances. However, in case of any technical error during payment processing (such as double payment deduction), members are requested to contact us immediately at ");
         \u0275\u0275elementStart(36, "strong");
-        \u0275\u0275text(37, "association.ias@gmail.com");
+        \u0275\u0275text(37, "iascahelpdesk@gmail.com");
         \u0275\u0275elementEnd();
         \u0275\u0275text(38, " with payment details. Valid cases will be reviewed and resolved accordingly.");
         \u0275\u0275elementEnd()()()()()();
@@ -74,4 +74,4 @@ var RefundCancellationPolicyComponent = class _RefundCancellationPolicyComponent
 export {
   RefundCancellationPolicyComponent
 };
-//# sourceMappingURL=chunk-NP35JEY4.js.map
+//# sourceMappingURL=chunk-IV74OQ2P.js.map

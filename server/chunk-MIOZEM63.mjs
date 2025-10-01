@@ -2856,7 +2856,7 @@ var routes = [
       {
         path: "Refund-Cancellation-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-NPFTAAZN.mjs").then((m) => m.RefundCancellationPolicyComponent)
+        loadComponent: () => import("./chunk-7ICBXFF4.mjs").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
         path: "Privacy-Policy",
@@ -3280,4 +3280,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-SIEFRB55.mjs.map
+//# sourceMappingURL=chunk-MIOZEM63.mjs.map

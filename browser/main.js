@@ -2778,7 +2778,7 @@ var routes = [
       {
         path: "Refund-Cancellation-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-NP35JEY4.js").then((m) => m.RefundCancellationPolicyComponent)
+        loadComponent: () => import("./chunk-IV74OQ2P.js").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
         path: "Privacy-Policy",
