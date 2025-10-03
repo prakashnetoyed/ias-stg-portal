@@ -33,18 +33,20 @@ import {
   RouterOutlet,
   provideRouter,
   withInMemoryScrolling
-} from "./chunk-S2TCK2OF.js";
-import {
-  DomRendererFactory2,
-  bootstrapApplication,
-  provideClientHydration
-} from "./chunk-RJ25BFLR.js";
+} from "./chunk-AVEQ3X5N.js";
 import {
   ToastService
 } from "./chunk-QRVLOFPY.js";
 import {
   environment
 } from "./chunk-WYW2S4QW.js";
+import {
+  DomRendererFactory2,
+  Meta,
+  Title,
+  bootstrapApplication,
+  provideClientHydration
+} from "./chunk-JD6DESWN.js";
 import {
   HttpClient,
   HttpClientModule,
@@ -780,11 +782,13 @@ function IasLoginComponent_div_11_Template(rf, ctx) {
   }
 }
 var IasLoginComponent = class _IasLoginComponent {
-  constructor(fb, http, router, toastService) {
+  constructor(fb, http, router, toastService, title, meta) {
     this.fb = fb;
     this.http = http;
     this.router = router;
     this.toastService = toastService;
+    this.title = title;
+    this.meta = meta;
     this.showPassword = false;
     this.loading = false;
     this.errorMessage = "";
@@ -801,6 +805,20 @@ var IasLoginComponent = class _IasLoginComponent {
     this.otpForm = this.fb.group({});
     this.otpControls.forEach((ctrl) => this.otpForm.addControl(ctrl, new FormControl("", [Validators.required, Validators.pattern("[0-9]")])));
   }
+  ngOnInit() {
+    this.title.setTitle("IASCA Portal - Login");
+    const currentUrl = window.location.origin + this.router.url;
+    this.meta.addTags([
+      { name: "description", content: "Login to the IASCA Portal to access your dashboard, community, news, blogs, and membership details." },
+      { name: "keywords", content: "IASCA login, member login, IAS portal access, IAS community" },
+      { property: "og:title", content: "IASCA Portal - Login" },
+      { property: "og:description", content: "Secure login to IASCA Portal for members and admins." },
+      { property: "og:image", content: `${window.location.origin}/assets/logo/ias-small-logo.png` },
+      { property: "og:url", content: currentUrl },
+      { property: "og:type", content: "website" },
+      { name: "robots", content: "index, follow" }
+    ]);
+  }
   get email() {
     return this.emailForm.get("email");
   }
@@ -810,7 +828,6 @@ var IasLoginComponent = class _IasLoginComponent {
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
-  // Step 1: Login
   onSubmit() {
     if (this.emailForm.valid) {
       this.loading = true;
@@ -907,7 +924,6 @@ var IasLoginComponent = class _IasLoginComponent {
       event.preventDefault();
     }
   }
-  // OTP Field Navigation
   onOtpInput(event, index) {
     const input = event.target;
     if (input.value && index < this.otpControls.length - 1) {
@@ -915,7 +931,6 @@ var IasLoginComponent = class _IasLoginComponent {
       next?.focus();
     }
   }
-  // Step 2: Verify OTP
   submitOtp() {
     if (this.otpForm.valid) {
       this.loading = true;
@@ -965,7 +980,7 @@ var IasLoginComponent = class _IasLoginComponent {
   }
   static {
     this.\u0275fac = function IasLoginComponent_Factory(t) {
-      return new (t || _IasLoginComponent)(\u0275\u0275directiveInject(FormBuilder), \u0275\u0275directiveInject(HttpClient), \u0275\u0275directiveInject(Router), \u0275\u0275directiveInject(ToastService));
+      return new (t || _IasLoginComponent)(\u0275\u0275directiveInject(FormBuilder), \u0275\u0275directiveInject(HttpClient), \u0275\u0275directiveInject(Router), \u0275\u0275directiveInject(ToastService), \u0275\u0275directiveInject(Title), \u0275\u0275directiveInject(Meta));
     };
   }
   static {
@@ -1018,7 +1033,7 @@ var IasLoginComponent = class _IasLoginComponent {
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasLoginComponent, { className: "IasLoginComponent", filePath: "src/app/authmodule/ias-login/ias-login.component.ts", lineNumber: 32 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasLoginComponent, { className: "IasLoginComponent", filePath: "src/app/authmodule/ias-login/ias-login.component.ts", lineNumber: 33 });
 })();
 
 // src/app/authmodule/ias-forgotpassword/ias-forgotpassword.component.ts
@@ -1078,7 +1093,7 @@ function IasForgotpasswordComponent_div_8_Template(rf, ctx) {
       return \u0275\u0275resetView(ctx_r1.submitEmail());
     });
     \u0275\u0275elementStart(6, "label", 14);
-    \u0275\u0275text(7, "IAS Email ID");
+    \u0275\u0275text(7, "Registered Email ID");
     \u0275\u0275elementEnd();
     \u0275\u0275element(8, "input", 15);
     \u0275\u0275template(9, IasForgotpasswordComponent_div_8_div_9_Template, 4, 3, "div", 16);
@@ -1368,7 +1383,7 @@ function IasForgotpasswordComponent_div_11_Template(rf, ctx) {
     \u0275\u0275text(7, "Your password has been successfully reset.");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(8, "h4", 53);
-    \u0275\u0275text(9, "You can now login using your IAS email and new password.");
+    \u0275\u0275text(9, "You can now login using your registered email Id and new password.");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(10, "button", 54);
     \u0275\u0275text(11, "Return to Login");
@@ -2779,32 +2794,32 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-RV5RC2XZ.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-43OFOSUI.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-MAWNYRVX.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-DNGTSNAD.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-KFMBUJ4D.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-VSAZNH7A.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-IM7QKWEE.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-WER25VZS.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "my-posts",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HVY4SLJ3.js").then((m) => m.MyPostsComponent)
+        loadComponent: () => import("./chunk-OHK77DY2.js").then((m) => m.MyPostsComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-J5A242D2.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-JENWA4AR.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -2818,7 +2833,7 @@ var routes = [
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-U43IBZAD.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-ZXAHU2DT.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -2838,17 +2853,17 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-GXCMXEKP.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-Q3FVJHAG.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-PDLNBVLL.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-HNDYUCBQ.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-U5XSUMZ7.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-3A5WDOF2.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -2886,15 +2901,15 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-27HFUWFT.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-FC4KOAIO.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-KCBCXYF2.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-LUBAHJPU.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-Z7LG7TMJ.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-LLIKAGRY.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
@@ -2910,7 +2925,7 @@ var routes = [
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-MOZNBQDV.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-R7GZTEMI.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
@@ -2922,19 +2937,19 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-3NT6PRPW.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-5NGRFC2Q.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-C5CAMHYD.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-2FEP2PNY.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-QAHCH52O.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-HKDFIEHQ.js").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",
-        loadComponent: () => import("./chunk-J66SG7JV.js").then((m) => m.DetailedUserInfoComponent)
+        loadComponent: () => import("./chunk-NFFBH4WV.js").then((m) => m.DetailedUserInfoComponent)
       }
     ]
   },
@@ -2942,15 +2957,15 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-UYAKRPMW.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-TVZYAOBG.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-LRG6JTFI.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-2PILFPD4.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-OZEMLHLY.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-IA4PXNIA.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
@@ -2970,19 +2985,19 @@ var routes = [
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-56CYB4RC.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-EZS4BTTB.js").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-VFEN6CYM.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-V4SYF24Z.js").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-VESBRKR2.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-SJV63OHB.js").then((m) => m.RouteErrorComponent)
   }
 ];
 
