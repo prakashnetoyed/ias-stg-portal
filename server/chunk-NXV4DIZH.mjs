@@ -1272,7 +1272,47 @@ function IasForgotpasswordComponent_div_10__svg_svg_10_Template(rf, ctx) {
     \u0275\u0275elementEnd()()();
   }
 }
-function IasForgotpasswordComponent_div_10__svg_svg_16_Template(rf, ctx) {
+function IasForgotpasswordComponent_div_10_div_11_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, "Password is required");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasForgotpasswordComponent_div_10_div_11_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, "Must be at least 8 characters");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasForgotpasswordComponent_div_10_div_11_small_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Must include uppercase, lowercase, number & special character ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasForgotpasswordComponent_div_10_div_11_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 19);
+    \u0275\u0275template(1, IasForgotpasswordComponent_div_10_div_11_small_1_Template, 2, 0, "small", 20)(2, IasForgotpasswordComponent_div_10_div_11_small_2_Template, 2, 0, "small", 20)(3, IasForgotpasswordComponent_div_10_div_11_small_3_Template, 2, 0, "small", 20);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.passwordForm.get("newPassword")) == null ? null : tmp_2_0.hasError("required"));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.passwordForm.get("newPassword")) == null ? null : tmp_3_0.hasError("minlength"));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.passwordForm.get("newPassword")) == null ? null : tmp_4_0.hasError("pattern"));
+  }
+}
+function IasForgotpasswordComponent_div_10__svg_svg_17_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
     \u0275\u0275elementStart(0, "svg", 38)(1, "g", 39);
@@ -1283,7 +1323,7 @@ function IasForgotpasswordComponent_div_10__svg_svg_16_Template(rf, ctx) {
     \u0275\u0275elementEnd()()();
   }
 }
-function IasForgotpasswordComponent_div_10__svg_svg_17_Template(rf, ctx) {
+function IasForgotpasswordComponent_div_10__svg_svg_18_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
     \u0275\u0275elementStart(0, "svg", 38)(1, "g", 43);
@@ -1292,6 +1332,33 @@ function IasForgotpasswordComponent_div_10__svg_svg_17_Template(rf, ctx) {
     \u0275\u0275elementStart(3, "defs")(4, "clipPath", 45);
     \u0275\u0275element(5, "rect", 42);
     \u0275\u0275elementEnd()()();
+  }
+}
+function IasForgotpasswordComponent_div_10_div_19_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, "Confirm Password is required");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasForgotpasswordComponent_div_10_div_19_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 19);
+    \u0275\u0275template(1, IasForgotpasswordComponent_div_10_div_19_small_1_Template, 2, 0, "small", 20);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.passwordForm.get("confirmPassword")) == null ? null : tmp_2_0.hasError("required"));
+  }
+}
+function IasForgotpasswordComponent_div_10_div_20_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 19)(1, "small");
+    \u0275\u0275text(2, "Passwords do not match");
+    \u0275\u0275elementEnd()();
   }
 }
 function IasForgotpasswordComponent_div_10_Template(rf, ctx) {
@@ -1319,24 +1386,29 @@ function IasForgotpasswordComponent_div_10_Template(rf, ctx) {
     });
     \u0275\u0275template(9, IasForgotpasswordComponent_div_10__svg_svg_9_Template, 6, 0, "svg", 35)(10, IasForgotpasswordComponent_div_10__svg_svg_10_Template, 6, 0, "svg", 35);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(11, "label", 36);
-    \u0275\u0275text(12, "Confirm Password");
+    \u0275\u0275template(11, IasForgotpasswordComponent_div_10_div_11_Template, 4, 3, "div", 16);
+    \u0275\u0275elementStart(12, "label", 36);
+    \u0275\u0275text(13, "Confirm Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "div", 32);
-    \u0275\u0275element(14, "input", 37);
-    \u0275\u0275elementStart(15, "button", 34);
-    \u0275\u0275listener("click", function IasForgotpasswordComponent_div_10_Template_button_click_15_listener() {
+    \u0275\u0275elementStart(14, "div", 32);
+    \u0275\u0275element(15, "input", 37);
+    \u0275\u0275elementStart(16, "button", 34);
+    \u0275\u0275listener("click", function IasForgotpasswordComponent_div_10_Template_button_click_16_listener() {
       \u0275\u0275restoreView(_r7);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.togglePassword("confirm"));
     });
-    \u0275\u0275template(16, IasForgotpasswordComponent_div_10__svg_svg_16_Template, 6, 0, "svg", 35)(17, IasForgotpasswordComponent_div_10__svg_svg_17_Template, 6, 0, "svg", 35);
+    \u0275\u0275template(17, IasForgotpasswordComponent_div_10__svg_svg_17_Template, 6, 0, "svg", 35)(18, IasForgotpasswordComponent_div_10__svg_svg_18_Template, 6, 0, "svg", 35);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(18, "button", 17);
-    \u0275\u0275text(19, "Reset password");
+    \u0275\u0275template(19, IasForgotpasswordComponent_div_10_div_19_Template, 2, 1, "div", 16)(20, IasForgotpasswordComponent_div_10_div_20_Template, 3, 0, "div", 16);
+    \u0275\u0275elementStart(21, "button", 24);
+    \u0275\u0275text(22, "Reset password");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
+    let tmp_5_0;
+    let tmp_9_0;
+    let tmp_10_0;
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(3);
     \u0275\u0275property("formGroup", ctx_r1.passwordForm);
@@ -1346,12 +1418,20 @@ function IasForgotpasswordComponent_div_10_Template(rf, ctx) {
     \u0275\u0275property("ngIf", !ctx_r1.showNewPassword);
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", ctx_r1.showNewPassword);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ((tmp_5_0 = ctx_r1.passwordForm.get("newPassword")) == null ? null : tmp_5_0.touched) && ((tmp_5_0 = ctx_r1.passwordForm.get("newPassword")) == null ? null : tmp_5_0.errors));
     \u0275\u0275advance(4);
     \u0275\u0275property("type", ctx_r1.showConfirmPassword ? "text" : "password");
     \u0275\u0275advance(2);
     \u0275\u0275property("ngIf", !ctx_r1.showConfirmPassword);
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", ctx_r1.showConfirmPassword);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ((tmp_9_0 = ctx_r1.passwordForm.get("confirmPassword")) == null ? null : tmp_9_0.touched) && ((tmp_9_0 = ctx_r1.passwordForm.get("confirmPassword")) == null ? null : tmp_9_0.errors));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (ctx_r1.passwordForm.errors == null ? null : ctx_r1.passwordForm.errors["passwordMismatch"]) && ((tmp_10_0 = ctx_r1.passwordForm.get("confirmPassword")) == null ? null : tmp_10_0.touched));
+    \u0275\u0275advance();
+    \u0275\u0275property("disabled", ctx_r1.passwordForm.invalid);
   }
 }
 function IasForgotpasswordComponent_div_11_Template(rf, ctx) {
@@ -1395,7 +1475,7 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
     });
     this.otpForm = this.fb.group(otpGroup);
     this.passwordForm = this.fb.group({
-      newPassword: ["", [Validators.required, Validators.minLength(6)]],
+      newPassword: ["", [Validators.required, Validators.minLength(6), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).+$/)]],
       confirmPassword: ["", [Validators.required]]
     });
   }
@@ -1549,7 +1629,7 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
         \u0275\u0275elementStart(5, "div", 5);
         \u0275\u0275element(6, "div", 6);
         \u0275\u0275elementStart(7, "div", 7);
-        \u0275\u0275template(8, IasForgotpasswordComponent_div_8_Template, 15, 2, "div", 8)(9, IasForgotpasswordComponent_div_9_Template, 19, 11, "div", 9)(10, IasForgotpasswordComponent_div_10_Template, 20, 7, "div", 10)(11, IasForgotpasswordComponent_div_11_Template, 12, 1, "div", 11);
+        \u0275\u0275template(8, IasForgotpasswordComponent_div_8_Template, 15, 2, "div", 8)(9, IasForgotpasswordComponent_div_9_Template, 19, 11, "div", 9)(10, IasForgotpasswordComponent_div_10_Template, 23, 11, "div", 10)(11, IasForgotpasswordComponent_div_11_Template, 12, 1, "div", 11);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -2787,7 +2867,7 @@ var routes = [
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-NBAOZC5C.mjs").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-I3ZDTPX2.mjs").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
@@ -3280,4 +3360,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-O4WOEP32.mjs.map
+//# sourceMappingURL=chunk-NXV4DIZH.mjs.map
