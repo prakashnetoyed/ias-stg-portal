@@ -1,6 +1,6 @@
 import {
   IasLoaderComponent
-} from "./chunk-NROLUPWF.js";
+} from "./chunk-GWB22WA3.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -18,13 +18,13 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-3JXWTB6G.js";
+} from "./chunk-AGO5MSWX.js";
 import {
   UserService
-} from "./chunk-BAZOROVN.js";
+} from "./chunk-6XA4DFGU.js";
 import {
   AuthService
-} from "./chunk-OSVG5WYZ.js";
+} from "./chunk-GOFR4JAH.js";
 import {
   Router,
   RouterLink,
@@ -33,10 +33,10 @@ import {
   RouterOutlet,
   provideRouter,
   withInMemoryScrolling
-} from "./chunk-AVEQ3X5N.js";
+} from "./chunk-PIHJ7NOG.js";
 import {
   ToastService
-} from "./chunk-QRVLOFPY.js";
+} from "./chunk-CGBCDAXV.js";
 import {
   environment
 } from "./chunk-WYW2S4QW.js";
@@ -46,7 +46,7 @@ import {
   Title,
   bootstrapApplication,
   provideClientHydration
-} from "./chunk-JD6DESWN.js";
+} from "./chunk-Y2T74JRK.js";
 import {
   HttpClient,
   HttpClientModule,
@@ -54,7 +54,7 @@ import {
   provideHttpClient,
   withFetch,
   withInterceptors
-} from "./chunk-PMEJ6XV7.js";
+} from "./chunk-EFZN4HJY.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -62,7 +62,7 @@ import {
   NgForOf,
   NgIf,
   isPlatformBrowser
-} from "./chunk-4WMMRM5H.js";
+} from "./chunk-B5ZMSCOI.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
@@ -118,7 +118,7 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-KROTWO27.js";
+} from "./chunk-664KIS5M.js";
 import "./chunk-ASLTLD6L.js";
 
 // src/app/common/ias-header/ias-header.component.ts
@@ -2794,91 +2794,91 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-43OFOSUI.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-OWAVUEG2.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-DNGTSNAD.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-HEEHMUUG.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-VSAZNH7A.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-NHUUVCKL.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-WER25VZS.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-XVY5SP3B.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "my-posts",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-OHK77DY2.js").then((m) => m.MyPostsComponent)
+        loadComponent: () => import("./chunk-SCZA3TFS.js").then((m) => m.MyPostsComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-JENWA4AR.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-CZJRMSYJ.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
-        loadComponent: () => import("./chunk-JM2LK5HR.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-7QTOZXRB.js").then((m) => m.IasCarunaComponent)
       },
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-AK7KL7LL.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-OIVTFGUZ.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-ZXAHU2DT.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-JKDB5Q2I.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-JM2LK5HR.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-7QTOZXRB.js").then((m) => m.IasCarunaComponent)
       },
       {
         path: "welfare-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-NVUKX4AD.js").then((m) => m.WelfareMembershipComponent)
+        loadComponent: () => import("./chunk-QFPKNBPH.js").then((m) => m.WelfareMembershipComponent)
       },
       {
         path: "lifetime-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-3LKATJYO.js").then((m) => m.LifetimeMembershipComponent)
+        loadComponent: () => import("./chunk-3PMRDSHV.js").then((m) => m.LifetimeMembershipComponent)
       },
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-Q3FVJHAG.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-5F72CTLJ.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HNDYUCBQ.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-MAK4NKBT.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-3A5WDOF2.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-XGNWXYUG.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-4Y3RPPE3.js").then((m) => m.TermsConditionsComponent)
+        loadComponent: () => import("./chunk-6P2IZOAE.js").then((m) => m.TermsConditionsComponent)
       },
       {
         path: "Refund-Cancellation-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-IV74OQ2P.js").then((m) => m.RefundCancellationPolicyComponent)
+        loadComponent: () => import("./chunk-CLHFFME3.js").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
         path: "Privacy-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-X7HVRPRO.js").then((m) => m.PrivacyPolicyComponent)
+        loadComponent: () => import("./chunk-KAWZNUX5.js").then((m) => m.PrivacyPolicyComponent)
       }
     ]
   },
@@ -2901,55 +2901,55 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-FC4KOAIO.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-OIU4PJO5.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-LUBAHJPU.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-BR73KYMK.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-LLIKAGRY.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-ZODB7PVK.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-EY2VXPTP.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-LSAQ73XI.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-JKZIDEDQ.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-WR7HS435.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-5WYCYKP6.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-AFKTWJAW.js").then((m) => m.NewsComponent)
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-R7GZTEMI.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-M42AFKVM.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-SVJJBRVG.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-UZV4T4EJ.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-ZYYTJ4OL.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-JEYJSTZU.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-5NGRFC2Q.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-4YAJ2O2S.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-2FEP2PNY.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-AUXMYKCW.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-HKDFIEHQ.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-5TBJGMPK.js").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",
-        loadComponent: () => import("./chunk-NFFBH4WV.js").then((m) => m.DetailedUserInfoComponent)
+        loadComponent: () => import("./chunk-RB5S4K26.js").then((m) => m.DetailedUserInfoComponent)
       }
     ]
   },
@@ -2957,47 +2957,47 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-TVZYAOBG.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-YY4ZHXCK.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-2PILFPD4.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-D4HPWTM4.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-IA4PXNIA.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-2L7NKAXY.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-YPFON5E3.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-TNOHACZ5.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-QAAARWTG.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-HHRP3A5K.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-7TKIUJV7.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-HFMUIQFI.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-MRQ4P7OK.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-HTLQGE3E.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-EZS4BTTB.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-JNQU5RKP.js").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-V4SYF24Z.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-TVVJMGUB.js").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-SJV63OHB.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-M3P2ZIQI.js").then((m) => m.RouteErrorComponent)
   }
 ];
 
@@ -3075,7 +3075,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const moduleImpl = this.moduleImpl ?? import("./chunk-YWYKU3NF.js");
+    const moduleImpl = this.moduleImpl ?? import("./chunk-ZXRLHGHQ.js");
     return moduleImpl.catch((e) => {
       throw new RuntimeError(5300, (typeof ngDevMode === "undefined" || ngDevMode) && "Async loading for animations package was enabled, but loading failed. Angular falls back to using regular rendering. No animations will be displayed and their styles won't be applied.");
     }).then(({
