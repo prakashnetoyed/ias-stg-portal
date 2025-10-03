@@ -1,33 +1,34 @@
+import './polyfills.server.mjs';
+import {
+  TimeAgoPipe
+} from "./chunk-GMEYXRZM.mjs";
+import {
+  AuthService
+} from "./chunk-5HPBRMJD.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-V65JA3TA.js";
-import {
-  TimeAgoPipe
-} from "./chunk-6BLZEBKM.js";
-import {
-  AuthService
-} from "./chunk-GOFR4JAH.js";
+} from "./chunk-YXGGFZ4I.mjs";
 import {
   Router,
   RouterLink,
   RouterModule
-} from "./chunk-PIHJ7NOG.js";
+} from "./chunk-JZ4B5MOV.mjs";
 import {
   ToastService
-} from "./chunk-CGBCDAXV.js";
+} from "./chunk-A2UBZQQG.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   Meta,
   Title
-} from "./chunk-Y2T74JRK.js";
+} from "./chunk-WMPFVPWG.mjs";
 import {
   HttpClient
-} from "./chunk-EFZN4HJY.js";
+} from "./chunk-DVOKZFMG.mjs";
 import {
   CommonModule,
   DatePipe,
@@ -36,7 +37,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-B5ZMSCOI.js";
+} from "./chunk-JUVOLG3M.mjs";
 import {
   PLATFORM_ID,
   inject,
@@ -75,11 +76,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-664KIS5M.js";
+} from "./chunk-IXD3JOLX.mjs";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-ASLTLD6L.js";
+} from "./chunk-24VIC3GD.mjs";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -615,7 +616,7 @@ var IasFoundationComponent = class _IasFoundationComponent {
       },
       {
         title: "Lifetime Membership ",
-        status: " (Retired Members)",
+        status: " (Only retired members eligible)",
         description: "Retired members shall pay a one-time life membership fee of \u20B9500.",
         isOpen: false
       }
@@ -649,7 +650,7 @@ var IasFoundationComponent = class _IasFoundationComponent {
         \u0275\u0275advance(10);
         \u0275\u0275property("ngForOf", ctx.faqs);
       }
-    }, dependencies: [CommonModule, NgClass, NgForOf, RouterLink], styles: ['\n\n.ias-bg[_ngcontent-%COMP%] {\n  background: #15142b;\n  color: #fff;\n  padding-top: 60px;\n  padding-bottom: 60px;\n}\n.ias-label[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: "Urbanist";\n  font-size: 12px;\n  font-weight: 400;\n  line-height: normal;\n  text-transform: uppercase;\n}\n.ias-title[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: "Urbanist";\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n.accordion-item[_ngcontent-%COMP%] {\n  border: none;\n  background: transparent;\n}\n.accordion-button.ias-accordion-btn[_ngcontent-%COMP%] {\n  border: none;\n  border-radius: 0px !important;\n  border-bottom: 0.646px solid rgba(255, 255, 255, 0.6);\n  background:\n    linear-gradient(\n      90deg,\n      #150F22 -11.97%,\n      #363539 100%);\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 39.6px;\n  box-shadow: none;\n  transition: background 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;\n}\n.accordion-button.ias-accent[_ngcontent-%COMP%] {\n  background:\n    linear-gradient(\n      90deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%);\n  border-bottom: 0px;\n}\n.ias-status[_ngcontent-%COMP%] {\n  color: rgba(255, 255, 255, 0.43);\n  font-family: "Urbanist";\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 39.6px;\n}\n.ias-accordion-body[_ngcontent-%COMP%] {\n  background: transparent;\n  color: #fff;\n  text-align: justify;\n  font-family: "Urbanist";\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 25px;\n  border-radius: 0px;\n  transition: background 0.35s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.ias-accent[_ngcontent-%COMP%] {\n  background:\n    linear-gradient(\n      90deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%) !important;\n  color: #fff;\n}\n.accordion-button[_ngcontent-%COMP%]::after {\n  display: none !important;\n}\n.chevron-icon[_ngcontent-%COMP%] {\n  color: #fff;\n  fill: #fff;\n  margin-left: auto;\n  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.chevron-icon.rotate[_ngcontent-%COMP%] {\n  transform: rotate(180deg);\n}\n.btn-join[_ngcontent-%COMP%] {\n  border-radius: 4px;\n  border: 1px solid #FFF;\n  background-color: rgba(255, 255, 255, 0);\n  opacity: 0.71;\n  padding: 8px 24px;\n  color: #FFF;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 24px;\n  letter-spacing: 0.15px;\n  transition: all 0.3s ease-in-out;\n}\n.btn-join[_ngcontent-%COMP%]:hover {\n  border-radius: 4px;\n  border: 1px solid #FFF;\n  background-color: #fff;\n  opacity: 0.71;\n  padding: 8px 24px;\n  color: #000;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 24px;\n  letter-spacing: 0.15px;\n}\n/*# sourceMappingURL=ias-foundation.component.css.map */'] });
+    }, dependencies: [CommonModule, NgClass, NgForOf, RouterLink], styles: ['\n\n.ias-bg[_ngcontent-%COMP%] {\n  background: #15142b;\n  color: #fff;\n  padding-top: 60px;\n  padding-bottom: 60px;\n}\n.ias-label[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: "Urbanist";\n  font-size: 12px;\n  font-weight: 400;\n  line-height: normal;\n  text-transform: uppercase;\n}\n.ias-title[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: "Urbanist";\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n}\n.accordion-item[_ngcontent-%COMP%] {\n  border: none;\n  background: transparent;\n}\n.accordion-button.ias-accordion-btn[_ngcontent-%COMP%] {\n  border: none;\n  border-radius: 0px !important;\n  border-bottom: 0.646px solid rgba(255, 255, 255, 0.6);\n  background:\n    linear-gradient(\n      90deg,\n      #150F22 -11.97%,\n      #363539 100%);\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 39.6px;\n  box-shadow: none;\n  transition: background 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s;\n}\n.accordion-button.ias-accent[_ngcontent-%COMP%] {\n  background:\n    linear-gradient(\n      90deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%);\n  border-bottom: 0px;\n}\n.ias-status[_ngcontent-%COMP%] {\n  color: rgb(255, 255, 255);\n  font-family: "Urbanist";\n  font-size: 22px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 39.6px;\n}\n.ias-accordion-body[_ngcontent-%COMP%] {\n  background: transparent;\n  color: #fff;\n  text-align: justify;\n  font-family: "Urbanist";\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 25px;\n  border-radius: 0px;\n  transition: background 0.35s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.ias-accent[_ngcontent-%COMP%] {\n  background:\n    linear-gradient(\n      90deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%) !important;\n  color: #fff;\n}\n.accordion-button[_ngcontent-%COMP%]::after {\n  display: none !important;\n}\n.chevron-icon[_ngcontent-%COMP%] {\n  color: #fff;\n  fill: #fff;\n  margin-left: auto;\n  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);\n}\n.chevron-icon.rotate[_ngcontent-%COMP%] {\n  transform: rotate(180deg);\n}\n.btn-join[_ngcontent-%COMP%] {\n  border-radius: 4px;\n  border: 1px solid #FFF;\n  background-color: rgba(255, 255, 255, 0);\n  opacity: 0.71;\n  padding: 8px 24px;\n  color: #FFF;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 24px;\n  letter-spacing: 0.15px;\n  transition: all 0.3s ease-in-out;\n}\n.btn-join[_ngcontent-%COMP%]:hover {\n  border-radius: 4px;\n  border: 1px solid #FFF;\n  background-color: #fff;\n  opacity: 0.71;\n  padding: 8px 24px;\n  color: #000;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 24px;\n  letter-spacing: 0.15px;\n}\n/*# sourceMappingURL=ias-foundation.component.css.map */'] });
   }
 };
 (() => {
@@ -1537,4 +1538,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-OWAVUEG2.js.map
+//# sourceMappingURL=chunk-XVOIIUTD.mjs.map

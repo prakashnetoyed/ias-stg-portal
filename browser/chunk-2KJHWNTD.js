@@ -67,7 +67,7 @@ var CombinedMemberPageComponent = class _CombinedMemberPageComponent {
         \u0275\u0275text(28, "One-time fee \u20B9500");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(29, "ul", 18)(30, "li");
-        \u0275\u0275text(31, "Retired members eligible");
+        \u0275\u0275text(31, "Only retired members eligible");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(32, "li");
         \u0275\u0275text(33, "One-time fee only");
@@ -147,4 +147,4 @@ var CombinedMemberPageComponent = class _CombinedMemberPageComponent {
 export {
   CombinedMemberPageComponent
 };
-//# sourceMappingURL=chunk-XGNWXYUG.js.map
+//# sourceMappingURL=chunk-2KJHWNTD.js.map

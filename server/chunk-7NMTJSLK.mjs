@@ -1,19 +1,20 @@
+import './polyfills.server.mjs';
 import {
   UserService
-} from "./chunk-6XA4DFGU.js";
-import "./chunk-PIHJ7NOG.js";
+} from "./chunk-A66FB2S5.mjs";
+import "./chunk-JZ4B5MOV.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
-import "./chunk-Y2T74JRK.js";
+} from "./chunk-SJMEGSB4.mjs";
+import "./chunk-WMPFVPWG.mjs";
 import {
   HttpClient
-} from "./chunk-EFZN4HJY.js";
+} from "./chunk-DVOKZFMG.mjs";
 import {
   CommonModule,
   DatePipe,
   NgIf
-} from "./chunk-B5ZMSCOI.js";
+} from "./chunk-JUVOLG3M.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -41,8 +42,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-664KIS5M.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-IXD3JOLX.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/user-portal/pages/user-membership/user-membership.component.ts
 function UserMembershipComponent_ng_container_0_p_24_ng_container_1_Template(rf, ctx) {
@@ -175,7 +176,7 @@ function UserMembershipComponent_ng_container_1_Template(rf, ctx) {
     \u0275\u0275text(16, "One-time fee \u20B9500");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(17, "ul", 33)(18, "li");
-    \u0275\u0275text(19, "\u2714 Retired members eligible ");
+    \u0275\u0275text(19, "\u2714 Only retired members eligible ");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(20, "li");
     \u0275\u0275text(21, "\u2714 One-time fee only");
@@ -350,4 +351,4 @@ var UserMembershipComponent = class _UserMembershipComponent {
 export {
   UserMembershipComponent
 };
-//# sourceMappingURL=chunk-HHRP3A5K.js.map
+//# sourceMappingURL=chunk-7NMTJSLK.mjs.map

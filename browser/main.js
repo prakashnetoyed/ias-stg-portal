@@ -2794,7 +2794,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-OWAVUEG2.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-FFFUGFQZ.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2863,7 +2863,7 @@ var routes = [
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-XGNWXYUG.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-2KJHWNTD.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -2973,7 +2973,7 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-HHRP3A5K.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-KC5M3ORA.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
