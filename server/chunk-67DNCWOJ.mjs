@@ -3082,6 +3082,11 @@ var routes = [
     pathMatch: "full"
   },
   {
+    path: "login/",
+    redirectTo: "",
+    pathMatch: "full"
+  },
+  {
     path: "**",
     // wildcard → catch all unknown routes
     loadComponent: () => import("./chunk-EVH637RB.mjs").then((m) => m.RouteErrorComponent)
@@ -3384,4 +3389,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-5QWTE36C.mjs.map
+//# sourceMappingURL=chunk-67DNCWOJ.mjs.map

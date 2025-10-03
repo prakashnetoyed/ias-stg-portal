@@ -3004,6 +3004,11 @@ var routes = [
     pathMatch: "full"
   },
   {
+    path: "login/",
+    redirectTo: "",
+    pathMatch: "full"
+  },
+  {
     path: "**",
     // wildcard → catch all unknown routes
     loadComponent: () => import("./chunk-M3P2ZIQI.js").then((m) => m.RouteErrorComponent)
