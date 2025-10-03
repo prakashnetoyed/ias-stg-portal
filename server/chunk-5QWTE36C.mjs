@@ -308,7 +308,7 @@ function IasHeaderComponent_ng_container_39_Template(rf, ctx) {
   }
   if (rf & 2) {
     \u0275\u0275advance();
-    \u0275\u0275property("routerLink", "/login");
+    \u0275\u0275property("routerLink", "");
   }
 }
 var IasHeaderComponent = class _IasHeaderComponent {
@@ -2876,7 +2876,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-XVOIIUTD.mjs").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-F2W5TIMM.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -3075,6 +3075,11 @@ var routes = [
     path: "user-not-aproved",
     data: { statuses: ["created"] },
     loadComponent: () => import("./chunk-775MYMHR.mjs").then((m) => m.UserNotApprovedLayoutComponent)
+  },
+  {
+    path: "login",
+    redirectTo: "",
+    pathMatch: "full"
   },
   {
     path: "**",
@@ -3379,4 +3384,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-CGEQNJQR.mjs.map
+//# sourceMappingURL=chunk-5QWTE36C.mjs.map

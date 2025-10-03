@@ -230,7 +230,7 @@ function IasHeaderComponent_ng_container_39_Template(rf, ctx) {
   }
   if (rf & 2) {
     \u0275\u0275advance();
-    \u0275\u0275property("routerLink", "/login");
+    \u0275\u0275property("routerLink", "");
   }
 }
 var IasHeaderComponent = class _IasHeaderComponent {
@@ -2798,7 +2798,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-FFFUGFQZ.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-GKJ3O57J.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -2997,6 +2997,11 @@ var routes = [
     path: "user-not-aproved",
     data: { statuses: ["created"] },
     loadComponent: () => import("./chunk-TVVJMGUB.js").then((m) => m.UserNotApprovedLayoutComponent)
+  },
+  {
+    path: "login",
+    redirectTo: "",
+    pathMatch: "full"
   },
   {
     path: "**",
