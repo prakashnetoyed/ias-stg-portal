@@ -1826,17 +1826,17 @@ function IasSignupComponent_div_13_div_25_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_13_div_30_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_32_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid Mobile Number ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_13_div_30_Template(rf, ctx) {
+function IasSignupComponent_div_13_div_32_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 20);
-    \u0275\u0275template(1, IasSignupComponent_div_13_div_30_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_13_div_32_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1894,19 +1894,21 @@ function IasSignupComponent_div_13_Template(rf, ctx) {
     \u0275\u0275template(25, IasSignupComponent_div_13_div_25_Template, 2, 1, "div", 15);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(26, "div", 40)(27, "label", 43);
-    \u0275\u0275text(28, " Mobile Number");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(29, "input", 44);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_13_Template_input_keypress_29_listener($event) {
+    \u0275\u0275text(28, "Mobile Number");
+    \u0275\u0275elementStart(29, "span", 35);
+    \u0275\u0275text(30, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(31, "input", 44);
+    \u0275\u0275listener("keypress", function IasSignupComponent_div_13_Template_input_keypress_31_listener($event) {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allow10Numbers($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275template(30, IasSignupComponent_div_13_div_30_Template, 2, 1, "div", 15);
+    \u0275\u0275template(32, IasSignupComponent_div_13_div_32_Template, 2, 1, "div", 15);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(31, "button", 45);
-    \u0275\u0275text(32, "Continue");
+    \u0275\u0275elementStart(33, "button", 45);
+    \u0275\u0275text(34, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -1923,7 +1925,7 @@ function IasSignupComponent_div_13_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ((tmp_3_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_3_0.touched) && ((tmp_3_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_3_0.invalid));
     \u0275\u0275advance(6);
     \u0275\u0275property("ngIf", ((tmp_4_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_4_0.touched) && ((tmp_4_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_4_0.invalid));
-    \u0275\u0275advance(5);
+    \u0275\u0275advance(7);
     \u0275\u0275property("ngIf", ((tmp_5_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_5_0.touched) && ((tmp_5_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_5_0.invalid));
     \u0275\u0275advance();
     \u0275\u0275property("disabled", ctx_r1.memberidForm.invalid);
@@ -1962,17 +1964,17 @@ function IasSignupComponent_div_14_div_72_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_14_div_77_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_14_div_79_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid Mobile Number ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_14_div_77_Template(rf, ctx) {
+function IasSignupComponent_div_14_div_79_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 20);
-    \u0275\u0275template(1, IasSignupComponent_div_14_div_77_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_14_div_79_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2095,18 +2097,20 @@ function IasSignupComponent_div_14_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(73, "div", 40)(74, "label", 71);
     \u0275\u0275text(75, "Mobile Number");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(76, "input", 72);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_14_Template_input_keypress_76_listener($event) {
+    \u0275\u0275elementStart(76, "span", 35);
+    \u0275\u0275text(77, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(78, "input", 72);
+    \u0275\u0275listener("keypress", function IasSignupComponent_div_14_Template_input_keypress_78_listener($event) {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allow10Numbers($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275template(77, IasSignupComponent_div_14_div_77_Template, 2, 1, "div", 15);
+    \u0275\u0275template(79, IasSignupComponent_div_14_div_79_Template, 2, 1, "div", 15);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(78, "button", 73);
-    \u0275\u0275text(79, "Continue");
+    \u0275\u0275elementStart(80, "button", 73);
+    \u0275\u0275text(81, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -2121,7 +2125,7 @@ function IasSignupComponent_div_14_Template(rf, ctx) {
     \u0275\u0275property("max", ctx_r1.maxDOB);
     \u0275\u0275advance(23);
     \u0275\u0275property("ngIf", ((tmp_4_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_4_0.touched) && ((tmp_4_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_4_0.invalid));
-    \u0275\u0275advance(5);
+    \u0275\u0275advance(7);
     \u0275\u0275property("ngIf", ((tmp_5_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_5_0.touched) && ((tmp_5_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_5_0.invalid));
     \u0275\u0275advance();
     \u0275\u0275property("disabled", ctx_r1.memberdetailsForm.invalid);
@@ -2362,7 +2366,7 @@ var IasSignupComponent = class _IasSignupComponent {
       name: ["", [Validators.pattern(/^[A-Za-z\s]+$/)]],
       identityNumber: ["", [Validators.required]],
       alternateEmail: [null, [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]],
-      mobilenumber: [null, [Validators.pattern(/^[0-9]{10}$/)]]
+      mobilenumber: ["", [Validators.required, Validators.pattern(/^[0-9]{10}$/)]]
     });
     this.memberdetailsForm = this.fb.group({
       fullname: [""],
@@ -2372,7 +2376,7 @@ var IasSignupComponent = class _IasSignupComponent {
       dateofbirth: ["", [Validators.required]],
       mothertongue: ["", [Validators.required]],
       retirementreason: ["", [Validators.required]],
-      mobilenumber: [null, [Validators.pattern(/^[0-9]{10}$/)]],
+      mobilenumber: ["", [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
       alternateEmail: [null, [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]]
     });
     const controls = {};
@@ -2686,7 +2690,7 @@ var IasSignupComponent = class _IasSignupComponent {
         \u0275\u0275elementStart(7, "div", 6);
         \u0275\u0275element(8, "div", 7);
         \u0275\u0275elementStart(9, "div", 8);
-        \u0275\u0275template(10, IasSignupComponent_div_10_Template, 16, 3, "div", 9)(11, IasSignupComponent_div_11_Template, 19, 11, "div", 9)(12, IasSignupComponent_div_12_Template, 9, 0, "div", 9)(13, IasSignupComponent_div_13_Template, 33, 6, "div", 9)(14, IasSignupComponent_div_14_Template, 80, 5, "div", 9)(15, IasSignupComponent_div_15_Template, 26, 4, "div", 9)(16, IasSignupComponent_div_16_Template, 22, 9, "div", 9)(17, IasSignupComponent_div_17_Template, 12, 1, "div", 9);
+        \u0275\u0275template(10, IasSignupComponent_div_10_Template, 16, 3, "div", 9)(11, IasSignupComponent_div_11_Template, 19, 11, "div", 9)(12, IasSignupComponent_div_12_Template, 9, 0, "div", 9)(13, IasSignupComponent_div_13_Template, 35, 6, "div", 9)(14, IasSignupComponent_div_14_Template, 82, 5, "div", 9)(15, IasSignupComponent_div_15_Template, 26, 4, "div", 9)(16, IasSignupComponent_div_16_Template, 22, 9, "div", 9)(17, IasSignupComponent_div_17_Template, 12, 1, "div", 9);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
