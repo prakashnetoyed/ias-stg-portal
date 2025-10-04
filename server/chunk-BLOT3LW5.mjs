@@ -1,33 +1,34 @@
+import './polyfills.server.mjs';
+import {
+  TimeAgoPipe
+} from "./chunk-GMEYXRZM.mjs";
+import {
+  AuthService
+} from "./chunk-5HPBRMJD.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-V65JA3TA.js";
-import {
-  TimeAgoPipe
-} from "./chunk-6BLZEBKM.js";
-import {
-  AuthService
-} from "./chunk-GOFR4JAH.js";
+} from "./chunk-YXGGFZ4I.mjs";
 import {
   Router,
   RouterLink,
   RouterModule
-} from "./chunk-PIHJ7NOG.js";
+} from "./chunk-JZ4B5MOV.mjs";
 import {
   ToastService
-} from "./chunk-CGBCDAXV.js";
+} from "./chunk-A2UBZQQG.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   Meta,
   Title
-} from "./chunk-Y2T74JRK.js";
+} from "./chunk-WMPFVPWG.mjs";
 import {
   HttpClient
-} from "./chunk-EFZN4HJY.js";
+} from "./chunk-DVOKZFMG.mjs";
 import {
   CommonModule,
   DatePipe,
@@ -36,7 +37,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-B5ZMSCOI.js";
+} from "./chunk-JUVOLG3M.mjs";
 import {
   PLATFORM_ID,
   inject,
@@ -75,11 +76,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-664KIS5M.js";
+} from "./chunk-IXD3JOLX.mjs";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-ASLTLD6L.js";
+} from "./chunk-24VIC3GD.mjs";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -247,7 +248,7 @@ var IasCommunityMembersComponent = class _IasCommunityMembersComponent {
       },
       {
         title: "Joint Secretary",
-        name: "Shailesh Nawal",
+        name: "Shelesh Nawal",
         image: "assets/members/shelesh-nawal.png",
         email: "shail_nawal@yahoo.com",
         linkedin: ""
@@ -1537,4 +1538,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-GKJ3O57J.js.map
+//# sourceMappingURL=chunk-BLOT3LW5.mjs.map
