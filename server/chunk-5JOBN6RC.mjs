@@ -112,7 +112,7 @@ function UserMembersComponent_tbody_34_tr_1_Template(rf, ctx) {
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(user_r4.doptOfficer == null ? null : user_r4.doptOfficer.allotmentYear);
     \u0275\u0275advance(2);
-    \u0275\u0275property("src", user_r4.doptOfficer == null ? null : user_r4.doptOfficer.profilePic, \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", (user_r4.doptOfficer == null ? null : user_r4.doptOfficer.profilePic) || "assets/images/avatar.png", \u0275\u0275sanitizeUrl);
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(user_r4 == null ? null : user_r4.email);
   }
@@ -400,4 +400,4 @@ var UserMembersComponent = class _UserMembersComponent {
 export {
   UserMembersComponent
 };
-//# sourceMappingURL=chunk-X2L6URZB.mjs.map
+//# sourceMappingURL=chunk-5JOBN6RC.mjs.map

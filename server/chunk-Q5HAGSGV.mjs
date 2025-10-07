@@ -1,6 +1,11 @@
+import './polyfills.server.mjs';
 import {
   ImageCropperComponent
-} from "./chunk-RVYMDGOO.js";
+} from "./chunk-3FRO4QBT.mjs";
+import {
+  UserService
+} from "./chunk-A66FB2S5.mjs";
+import "./chunk-JZ4B5MOV.mjs";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -11,27 +16,23 @@ import {
   ReactiveFormsModule,
   Validators,
   ɵNgNoValidate
-} from "./chunk-AGO5MSWX.js";
-import {
-  UserService
-} from "./chunk-6XA4DFGU.js";
-import "./chunk-PIHJ7NOG.js";
+} from "./chunk-RMA2HJLV.mjs";
 import {
   ToastService
-} from "./chunk-CGBCDAXV.js";
+} from "./chunk-A2UBZQQG.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
-import "./chunk-Y2T74JRK.js";
+} from "./chunk-SJMEGSB4.mjs";
+import "./chunk-WMPFVPWG.mjs";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-EFZN4HJY.js";
+} from "./chunk-DVOKZFMG.mjs";
 import {
   CommonModule,
   DatePipe,
   NgIf
-} from "./chunk-B5ZMSCOI.js";
+} from "./chunk-JUVOLG3M.mjs";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -58,8 +59,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-664KIS5M.js";
-import "./chunk-ASLTLD6L.js";
+} from "./chunk-IXD3JOLX.mjs";
+import "./chunk-24VIC3GD.mjs";
 
 // src/app/IAS-portal/pages/profile-info/profile-info.component.ts
 var _c0 = ["successToast"];
@@ -340,7 +341,7 @@ function ProfileInfoComponent_div_34_Template(rf, ctx) {
     \u0275\u0275advance(9);
     \u0275\u0275property("disabled", ctx_r2.changepassword.invalid);
     \u0275\u0275advance(5);
-    \u0275\u0275property("src", ctx_r2.user.profilePic || "assets/default-profile.jpg", \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", ctx_r2.user.profilePic || "assets/images/avatar.png", \u0275\u0275sanitizeUrl);
     \u0275\u0275advance(13);
     \u0275\u0275textInterpolate(ctx_r2.user.name);
     \u0275\u0275advance(5);
@@ -554,4 +555,4 @@ var ProfileInfoComponent = class _ProfileInfoComponent {
 export {
   ProfileInfoComponent
 };
-//# sourceMappingURL=chunk-ZODB7PVK.js.map
+//# sourceMappingURL=chunk-Q5HAGSGV.mjs.map

@@ -1,11 +1,6 @@
-import './polyfills.server.mjs';
 import {
   ImageCropperComponent
-} from "./chunk-3FRO4QBT.mjs";
-import {
-  UserService
-} from "./chunk-A66FB2S5.mjs";
-import "./chunk-JZ4B5MOV.mjs";
+} from "./chunk-RVYMDGOO.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -16,23 +11,27 @@ import {
   ReactiveFormsModule,
   Validators,
   ɵNgNoValidate
-} from "./chunk-RMA2HJLV.mjs";
+} from "./chunk-AGO5MSWX.js";
+import {
+  UserService
+} from "./chunk-6XA4DFGU.js";
+import "./chunk-PIHJ7NOG.js";
 import {
   ToastService
-} from "./chunk-A2UBZQQG.mjs";
+} from "./chunk-CGBCDAXV.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
-import "./chunk-WMPFVPWG.mjs";
+} from "./chunk-WYW2S4QW.js";
+import "./chunk-Y2T74JRK.js";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-DVOKZFMG.mjs";
+} from "./chunk-EFZN4HJY.js";
 import {
   CommonModule,
   DatePipe,
   NgIf
-} from "./chunk-JUVOLG3M.mjs";
+} from "./chunk-B5ZMSCOI.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -59,8 +58,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵviewQuery
-} from "./chunk-IXD3JOLX.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-664KIS5M.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/IAS-portal/pages/profile-info/profile-info.component.ts
 var _c0 = ["successToast"];
@@ -341,7 +340,7 @@ function ProfileInfoComponent_div_34_Template(rf, ctx) {
     \u0275\u0275advance(9);
     \u0275\u0275property("disabled", ctx_r2.changepassword.invalid);
     \u0275\u0275advance(5);
-    \u0275\u0275property("src", ctx_r2.user.profilePic || "assets/default-profile.jpg", \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", ctx_r2.user.profilePic || "assets/images/avatar.png", \u0275\u0275sanitizeUrl);
     \u0275\u0275advance(13);
     \u0275\u0275textInterpolate(ctx_r2.user.name);
     \u0275\u0275advance(5);
@@ -555,4 +554,4 @@ var ProfileInfoComponent = class _ProfileInfoComponent {
 export {
   ProfileInfoComponent
 };
-//# sourceMappingURL=chunk-D7QXGI3M.mjs.map
+//# sourceMappingURL=chunk-H7ODUN3W.js.map

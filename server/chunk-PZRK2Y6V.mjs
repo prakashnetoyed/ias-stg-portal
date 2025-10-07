@@ -2778,7 +2778,7 @@ var IasSignupComponent = class _IasSignupComponent {
       const url = `${environment.apiUrl}/accounts/retired-member-signup`;
       this.http.post(url, payload, { headers }).subscribe({
         next: (response) => {
-          this.iasid = response.data.user?.id;
+          this.iasid = response.data.user?.doptOfficer?.id;
           this.iasname = response.data.user?.name;
           this.iasbatch = response.data.user?.doptOfficer?.allotmentYear;
           this.iascadre = response.data.user?.doptOfficer?.cadre?.name;
@@ -3241,7 +3241,7 @@ var routes = [
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-D7QXGI3M.mjs").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-Q5HAGSGV.mjs").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
@@ -3297,7 +3297,7 @@ var routes = [
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-V5R5JJ7X.mjs").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-Y5FGNVVG.mjs").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
@@ -3309,7 +3309,7 @@ var routes = [
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-X2L6URZB.mjs").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-5JOBN6RC.mjs").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
@@ -3639,4 +3639,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-RBMMZN4P.mjs.map
+//# sourceMappingURL=chunk-PZRK2Y6V.mjs.map

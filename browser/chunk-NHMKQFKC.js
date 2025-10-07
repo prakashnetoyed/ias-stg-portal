@@ -359,7 +359,7 @@ function UserProfileComponent_div_34_Template(rf, ctx) {
     \u0275\u0275advance(9);
     \u0275\u0275property("disabled", ctx_r2.changepassword.invalid);
     \u0275\u0275advance(5);
-    \u0275\u0275property("src", (ctx_r2.user.doptOfficer == null ? null : ctx_r2.user.doptOfficer.profilePic) || "assets/default-profile.jpg", \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", (ctx_r2.user.doptOfficer == null ? null : ctx_r2.user.doptOfficer.profilePic) || "assets/images/avatar.png", \u0275\u0275sanitizeUrl);
     \u0275\u0275advance(13);
     \u0275\u0275textInterpolate(ctx_r2.user.doptOfficer == null ? null : ctx_r2.user.doptOfficer.englishName);
     \u0275\u0275advance(5);
@@ -587,4 +587,4 @@ var UserProfileComponent = class _UserProfileComponent {
 export {
   UserProfileComponent
 };
-//# sourceMappingURL=chunk-2L7NKAXY.js.map
+//# sourceMappingURL=chunk-NHMKQFKC.js.map
