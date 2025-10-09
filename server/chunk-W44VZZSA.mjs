@@ -345,7 +345,7 @@ function ProfileInfoComponent_div_34_Template(rf, ctx) {
     \u0275\u0275advance(13);
     \u0275\u0275textInterpolate(ctx_r2.user.name);
     \u0275\u0275advance(5);
-    \u0275\u0275textInterpolate(ctx_r2.user.gender);
+    \u0275\u0275textInterpolate(ctx_r2.user.gender || "N/A");
     \u0275\u0275advance(5);
     \u0275\u0275textInterpolate(\u0275\u0275pipeBind2(70, 16, ctx_r2.user.dob, "dd/MM/yyyy"));
     \u0275\u0275advance(10);
@@ -555,4 +555,4 @@ var ProfileInfoComponent = class _ProfileInfoComponent {
 export {
   ProfileInfoComponent
 };
-//# sourceMappingURL=chunk-Q5HAGSGV.mjs.map
+//# sourceMappingURL=chunk-W44VZZSA.mjs.map
