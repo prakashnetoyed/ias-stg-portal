@@ -3,7 +3,7 @@ import {
 } from "./chunk-GWB22WA3.js";
 import {
   ImageCropperComponent
-} from "./chunk-RVYMDGOO.js";
+} from "./chunk-GNFFRZTR.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -22,14 +22,15 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-D2N4R6R5.js";
+} from "./chunk-CTBAGNAW.js";
 import {
   UserService
-} from "./chunk-6XA4DFGU.js";
+} from "./chunk-HM73QMMI.js";
 import {
   AuthService
-} from "./chunk-GOFR4JAH.js";
+} from "./chunk-XIWVDVCF.js";
 import {
+  ActivatedRoute,
   Router,
   RouterLink,
   RouterLinkActive,
@@ -37,7 +38,7 @@ import {
   RouterOutlet,
   provideRouter,
   withInMemoryScrolling
-} from "./chunk-PIHJ7NOG.js";
+} from "./chunk-JPPWT7WU.js";
 import {
   ToastService
 } from "./chunk-CGBCDAXV.js";
@@ -50,7 +51,7 @@ import {
   Title,
   bootstrapApplication,
   provideClientHydration
-} from "./chunk-Y2T74JRK.js";
+} from "./chunk-R23YUY6E.js";
 import {
   HttpClient,
   HttpClientModule,
@@ -58,16 +59,17 @@ import {
   provideHttpClient,
   withFetch,
   withInterceptors
-} from "./chunk-EFZN4HJY.js";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DOCUMENT,
   DatePipe,
   NgForOf,
   NgIf,
+  NgStyle,
   isPlatformBrowser,
   isPlatformServer
-} from "./chunk-B5ZMSCOI.js";
+} from "./chunk-EWZKLZHI.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
@@ -124,6 +126,7 @@ import {
   ɵɵprojectionDef,
   ɵɵproperty,
   ɵɵpureFunction0,
+  ɵɵpureFunction1,
   ɵɵqueryRefresh,
   ɵɵreference,
   ɵɵrepeater,
@@ -3681,6 +3684,7 @@ var SlickCarouselModule = class _SlickCarouselModule {
 })();
 
 // src/app/state-website/pages/state-landing-page/state-landing-page.component.ts
+var _c03 = (a0) => ({ "background-image": a0 });
 function StateLandingPageComponent_app_ias_loader_0_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275element(0, "app-ias-loader");
@@ -3893,9 +3897,10 @@ function StateLandingPageComponent_ng_template_52_Template(rf, ctx) {
   }
 }
 var StateLandingPageComponent = class _StateLandingPageComponent {
-  constructor(http, router) {
+  constructor(http, router, route) {
     this.http = http;
     this.router = router;
+    this.route = route;
     this.loading = false;
     this.loading1 = false;
     this.loading2 = false;
@@ -3904,6 +3909,8 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
     this.galleryImages = [];
     this.toastMessage = "";
     this.toastType = "primary";
+    this.dynamicImageUrl = "assets/images/state-banner.png";
+    this.id = null;
     this.activeTab = "event";
     this.allItems = [];
     this.galleryslider = {
@@ -3932,15 +3939,24 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
     };
   }
   ngOnInit() {
-    this.loadData();
-    this.loadNews();
-    this.loadGallery();
+    this.route.queryParamMap.subscribe((params) => {
+      this.id = params.get("id");
+      if (this.id) {
+        this.loadData(this.id);
+        this.loadNews(this.id);
+        this.loadGallery(this.id);
+      } else {
+        this.showToast("Invalid State Association ID", "danger");
+        this.router.navigateByUrl("/homepage");
+      }
+    });
   }
-  loadData() {
+  loadData(id) {
     this.loading = true;
-    this.http.get(`${environment.apiUrl}/state-associations/18`).subscribe((data) => {
+    this.http.get(`${environment.apiUrl}/state-associations/${id}`).subscribe((data) => {
       this.loading = false;
       this.pageData = data.data?.data?.cadre;
+      console.log(this.pageData);
       this.officeBearers = (this.pageData?.officeBearer || []).filter((item) => item.isActive === true);
       this.groupItemsByScreenWidth();
       this.filterItems();
@@ -3951,9 +3967,9 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
       console.error("Error loading data:", error);
     });
   }
-  loadNews() {
+  loadNews(id) {
     this.loading1 = true;
-    this.http.get(`${environment.apiUrl}/state-associations/18/news`).subscribe((data) => {
+    this.http.get(`${environment.apiUrl}/state-associations/${id}/news`).subscribe((data) => {
       this.loading1 = false;
       this.allItems = (data.data?.data?.latestNewsEvents || []).filter((item) => item.isActive === true);
       this.filterItems();
@@ -3963,9 +3979,9 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
       console.error("Error loading data:", error);
     });
   }
-  loadGallery() {
+  loadGallery(id) {
     this.loading2 = true;
-    this.http.get(`${environment.apiUrl}/state-associations/18/gallery`).subscribe((data) => {
+    this.http.get(`${environment.apiUrl}/state-associations/${id}/gallery`).subscribe((data) => {
       this.loading2 = false;
       this.galleryImages = (data.data?.data?.gallery || []).filter((item) => item.isActive === true);
     }, (error) => {
@@ -4003,7 +4019,7 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
   }
   static {
     this.\u0275fac = function StateLandingPageComponent_Factory(t) {
-      return new (t || _StateLandingPageComponent)(\u0275\u0275directiveInject(HttpClient), \u0275\u0275directiveInject(Router));
+      return new (t || _StateLandingPageComponent)(\u0275\u0275directiveInject(HttpClient), \u0275\u0275directiveInject(Router), \u0275\u0275directiveInject(ActivatedRoute));
     };
   }
   static {
@@ -4013,7 +4029,7 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
           return ctx.onResize();
         }, false, \u0275\u0275resolveWindow);
       }
-    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 55, vars: 14, consts: [["noOffice", ""], ["noEvent", ""], ["noUsers", ""], ["slickModal", "slick-carousel"], [4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "hero-section", "position-relative", "text-white"], [1, "overlay"], [1, "container", "py-5"], [1, "row", "align-items-center"], [1, "col-md-8", "col-12", "text-center", "text-md-start", "mb-4", "mb-md-0"], [1, "fw-normal"], [1, "fw-bold"], [1, "mb-0"], [1, "col-md-4", "text-center"], ["src", "../../../../assets/images/microsite_logo.png", "alt", "IAS Logo", 1, "img-fluid"], [1, "about-section"], [1, "container"], [1, "row", "align-items-center", "justify-content-center"], [1, "col-md-9", "text-center"], [1, "mb-4"], [1, "office-bearers-section"], [1, "mb-5"], ["id", "officeBearersCarousel", "class", "carousel slide", "data-bs-ride", "carousel", "data-bs-interval", "6000", 4, "ngIf", "ngIfElse"], [1, "news-events-section", "py-5"], [1, "container", "py-4"], ["class", "cardsrow", 4, "ngIf", "ngIfElse"], [1, "gallery-section", "py-5"], [1, "section-title", "mb-4", "ps-3"], [4, "ngIf", "ngIfElse"], ["id", "officeBearersCarousel", "data-bs-ride", "carousel", "data-bs-interval", "6000", 1, "carousel", "slide"], [1, "carousel-inner"], ["class", "carousel-item", 3, "active", 4, "ngFor", "ngForOf"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "visually-hidden"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], [1, "carousel-item"], [1, "row"], ["class", "col-lg-3 col-6 mb-4 mb-lg-0", 4, "ngFor", "ngForOf"], [1, "col-lg-3", "col-6", "mb-4", "mb-lg-0"], [1, "bearer-card", "text-center", "mx-auto"], [1, "bearer-img", "mb-3"], [1, "img-fluid", "rounded-circle", "shadow", 3, "src", "alt"], [1, "bearer-name"], [1, "bearer-role", "mb-3"], [1, "social-icons", "d-flex", "justify-content-center", "gap-3"], ["target", "_blank", 3, "href", 4, "ngIf"], ["target", "_blank", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "29", "height", "29", "viewBox", "0 0 29 29", "fill", "none"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M12.3053 14.5261V19.361C12.3053 19.4313 12.3645 19.4863 12.4401 19.4863H14.371C14.4467 19.4863 14.5059 19.4313 14.5059 19.361V14.4466H15.9072C15.9763 14.4466 16.0355 14.3977 16.0421 14.3305L16.177 12.8512C16.1836 12.7779 16.1211 12.7137 16.0421 12.7137H14.5059V11.6624C14.5059 11.4148 14.7197 11.2162 14.9862 11.2162H16.0651C16.1408 11.2162 16.2 11.1611 16.2 11.0909V9.61163C16.2 9.54134 16.1408 9.48633 16.0651 9.48633H14.2395C13.1704 9.48633 12.302 10.2932 12.302 11.2865V12.7137H11.3349C11.2592 12.7137 11.2 12.7687 11.2 12.839V14.3182C11.2 14.3885 11.2592 14.4435 11.3349 14.4435H12.302V14.523L12.3053 14.5261Z", "fill", "#523AB1"], ["x", "0.699997", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], ["clip-path", "url(#clip0_52831_3220)"], ["d", "M14.2 0.986328C21.6556 0.986328 27.7 7.03075 27.7 14.4863C27.7 21.9419 21.6556 27.9863 14.2 27.9863C6.74444 27.9863 0.700012 21.9419 0.700012 14.4863C0.700012 7.03075 6.74444 0.986328 14.2 0.986328Z", "stroke", "#523AB1"], ["d", "M15.1514 13.7206L18.8741 9.48633H17.9919L14.7595 13.1629L12.1777 9.48633H9.20001L13.1041 15.046L9.20001 19.4863H10.0822L13.4958 15.6037L16.2223 19.4863H19.2L15.1514 13.7206ZM10.4001 10.1362H11.7551L17.9923 18.866H16.6373L10.4001 10.1362Z", "fill", "#523AB1"], ["id", "clip0_52831_3220"], ["width", "28", "height", "28", "fill", "white", "transform", "translate(0.200012 0.486328)"], ["d", "M16.8298 11.3261C16.506 11.3261 16.2408 11.5885 16.2408 11.9151C16.2408 12.2418 16.5032 12.5042 16.8298 12.5042C17.1565 12.5042 17.4189 12.2418 17.4189 11.9151C17.4189 11.5885 17.1565 11.3261 16.8298 11.3261ZM14.2168 12.0798C12.8544 12.0798 11.7461 13.1882 11.7461 14.5505C11.7461 15.9129 12.8544 17.0212 14.2168 17.0212C15.5791 17.0212 16.6874 15.9129 16.6874 14.5505C16.6874 13.1882 15.5791 12.0798 14.2168 12.0798ZM14.2168 16.1335C13.3429 16.1335 12.6339 15.4244 12.6339 14.5505C12.6339 13.6767 13.3429 12.9676 14.2168 12.9676C15.0906 12.9676 15.7997 13.6767 15.7997 14.5505C15.7997 15.4244 15.0906 16.1335 14.2168 16.1335ZM19.2 12.4986C19.2 10.8347 17.8516 9.48633 16.1877 9.48633H12.2123C10.5484 9.48633 9.20001 10.8347 9.20001 12.4986V16.4741C9.20001 18.1379 10.5484 19.4863 12.2123 19.4863H16.1877C17.8516 19.4863 19.2 18.1379 19.2 16.4741V12.4986ZM18.2564 16.4741C18.2564 17.6159 17.3295 18.5427 16.1877 18.5427H12.2123C11.0705 18.5427 10.1436 17.6159 10.1436 16.4741V12.4986C10.1436 11.3568 11.0705 10.4299 12.2123 10.4299H16.1877C17.3295 10.4299 18.2564 11.3568 18.2564 12.4986V16.4741Z", "fill", "#523AB1"], ["x", "0.700012", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center", "nouser", "flex-column"], ["src", "../../../../assets/icons/empty-img-gray.png", "alt", "empty state"], [1, "cardsrow"], ["class", "news-card", 4, "ngFor", "ngForOf"], [1, "news-card"], [1, "d-flex", "align-items-center", "justify-content-between", "gap-3", "mb-3"], [1, "Published", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", "class", "pdf-icon ms-2", 4, "ngIf"], [1, "fw-semibold", "text-primary", "mb-3"], [1, "text-muted", "small", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", 1, "pdf-icon", "ms-2"], [1, "gallery-slider", 3, "config"], ["ngxSlickItem", "", "class", "px-3", 4, "ngFor", "ngForOf"], ["ngxSlickItem", "", 1, "px-3"], [1, "gallery-card"], [1, "gallery-img", 3, "src"]], template: function StateLandingPageComponent_Template(rf, ctx) {
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 55, vars: 17, consts: [["noOffice", ""], ["noEvent", ""], ["noUsers", ""], ["slickModal", "slick-carousel"], [4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "hero-section", "position-relative", "text-white", 3, "ngStyle"], [1, "overlay"], [1, "container", "py-5"], [1, "row", "align-items-center"], [1, "col-md-8", "col-12", "text-center", "text-md-start", "mb-4", "mb-md-0"], [1, "fw-normal"], [1, "fw-bold"], [1, "mb-0"], [1, "col-md-4", "text-center"], ["src", "../../../../assets/images/microsite_logo.png", "alt", "IAS Logo", 1, "img-fluid"], [1, "about-section"], [1, "container"], [1, "row", "align-items-center", "justify-content-center"], [1, "col-md-9", "text-center"], [1, "mb-4"], [1, "office-bearers-section"], [1, "mb-5"], ["id", "officeBearersCarousel", "class", "carousel slide", "data-bs-ride", "carousel", "data-bs-interval", "6000", 4, "ngIf", "ngIfElse"], [1, "news-events-section", "py-5"], [1, "container", "py-4"], ["class", "cardsrow", 4, "ngIf", "ngIfElse"], [1, "gallery-section", "py-5"], [1, "section-title", "mb-4", "ps-3"], [4, "ngIf", "ngIfElse"], ["id", "officeBearersCarousel", "data-bs-ride", "carousel", "data-bs-interval", "6000", 1, "carousel", "slide"], [1, "carousel-inner"], ["class", "carousel-item", 3, "active", 4, "ngFor", "ngForOf"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "visually-hidden"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], [1, "carousel-item"], [1, "row"], ["class", "col-lg-3 col-6 mb-4 mb-lg-0", 4, "ngFor", "ngForOf"], [1, "col-lg-3", "col-6", "mb-4", "mb-lg-0"], [1, "bearer-card", "text-center", "mx-auto"], [1, "bearer-img", "mb-3"], [1, "img-fluid", "rounded-circle", "shadow", 3, "src", "alt"], [1, "bearer-name"], [1, "bearer-role", "mb-3"], [1, "social-icons", "d-flex", "justify-content-center", "gap-3"], ["target", "_blank", 3, "href", 4, "ngIf"], ["target", "_blank", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "29", "height", "29", "viewBox", "0 0 29 29", "fill", "none"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M12.3053 14.5261V19.361C12.3053 19.4313 12.3645 19.4863 12.4401 19.4863H14.371C14.4467 19.4863 14.5059 19.4313 14.5059 19.361V14.4466H15.9072C15.9763 14.4466 16.0355 14.3977 16.0421 14.3305L16.177 12.8512C16.1836 12.7779 16.1211 12.7137 16.0421 12.7137H14.5059V11.6624C14.5059 11.4148 14.7197 11.2162 14.9862 11.2162H16.0651C16.1408 11.2162 16.2 11.1611 16.2 11.0909V9.61163C16.2 9.54134 16.1408 9.48633 16.0651 9.48633H14.2395C13.1704 9.48633 12.302 10.2932 12.302 11.2865V12.7137H11.3349C11.2592 12.7137 11.2 12.7687 11.2 12.839V14.3182C11.2 14.3885 11.2592 14.4435 11.3349 14.4435H12.302V14.523L12.3053 14.5261Z", "fill", "#523AB1"], ["x", "0.699997", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], ["clip-path", "url(#clip0_52831_3220)"], ["d", "M14.2 0.986328C21.6556 0.986328 27.7 7.03075 27.7 14.4863C27.7 21.9419 21.6556 27.9863 14.2 27.9863C6.74444 27.9863 0.700012 21.9419 0.700012 14.4863C0.700012 7.03075 6.74444 0.986328 14.2 0.986328Z", "stroke", "#523AB1"], ["d", "M15.1514 13.7206L18.8741 9.48633H17.9919L14.7595 13.1629L12.1777 9.48633H9.20001L13.1041 15.046L9.20001 19.4863H10.0822L13.4958 15.6037L16.2223 19.4863H19.2L15.1514 13.7206ZM10.4001 10.1362H11.7551L17.9923 18.866H16.6373L10.4001 10.1362Z", "fill", "#523AB1"], ["id", "clip0_52831_3220"], ["width", "28", "height", "28", "fill", "white", "transform", "translate(0.200012 0.486328)"], ["d", "M16.8298 11.3261C16.506 11.3261 16.2408 11.5885 16.2408 11.9151C16.2408 12.2418 16.5032 12.5042 16.8298 12.5042C17.1565 12.5042 17.4189 12.2418 17.4189 11.9151C17.4189 11.5885 17.1565 11.3261 16.8298 11.3261ZM14.2168 12.0798C12.8544 12.0798 11.7461 13.1882 11.7461 14.5505C11.7461 15.9129 12.8544 17.0212 14.2168 17.0212C15.5791 17.0212 16.6874 15.9129 16.6874 14.5505C16.6874 13.1882 15.5791 12.0798 14.2168 12.0798ZM14.2168 16.1335C13.3429 16.1335 12.6339 15.4244 12.6339 14.5505C12.6339 13.6767 13.3429 12.9676 14.2168 12.9676C15.0906 12.9676 15.7997 13.6767 15.7997 14.5505C15.7997 15.4244 15.0906 16.1335 14.2168 16.1335ZM19.2 12.4986C19.2 10.8347 17.8516 9.48633 16.1877 9.48633H12.2123C10.5484 9.48633 9.20001 10.8347 9.20001 12.4986V16.4741C9.20001 18.1379 10.5484 19.4863 12.2123 19.4863H16.1877C17.8516 19.4863 19.2 18.1379 19.2 16.4741V12.4986ZM18.2564 16.4741C18.2564 17.6159 17.3295 18.5427 16.1877 18.5427H12.2123C11.0705 18.5427 10.1436 17.6159 10.1436 16.4741V12.4986C10.1436 11.3568 11.0705 10.4299 12.2123 10.4299H16.1877C17.3295 10.4299 18.2564 11.3568 18.2564 12.4986V16.4741Z", "fill", "#523AB1"], ["x", "0.700012", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center", "nouser", "flex-column"], ["src", "../../../../assets/icons/empty-img-gray.png", "alt", "empty state"], [1, "cardsrow"], ["class", "news-card", 4, "ngFor", "ngForOf"], [1, "news-card"], [1, "d-flex", "align-items-center", "justify-content-between", "gap-3", "mb-3"], [1, "Published", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", "class", "pdf-icon ms-2", 4, "ngIf"], [1, "fw-semibold", "text-primary", "mb-3"], [1, "text-muted", "small", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", 1, "pdf-icon", "ms-2"], [1, "gallery-slider", 3, "config"], ["ngxSlickItem", "", "class", "px-3", 4, "ngFor", "ngForOf"], ["ngxSlickItem", "", 1, "px-3"], [1, "gallery-card"], [1, "gallery-img", 3, "src"]], template: function StateLandingPageComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, StateLandingPageComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 4);
         \u0275\u0275element(1, "app-accessibility-header")(2, "app-state-header");
@@ -4070,7 +4086,9 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
         \u0275\u0275classMapInterpolate1("toast align-items-center text-bg-", ctx.toastType, " border-0");
         \u0275\u0275advance(3);
         \u0275\u0275textInterpolate1(" ", ctx.toastMessage, " ");
-        \u0275\u0275advance(15);
+        \u0275\u0275advance(3);
+        \u0275\u0275property("ngStyle", \u0275\u0275pureFunction1(15, _c03, "url(" + (ctx.pageData == null ? null : ctx.pageData.aboutBanner) + ")"));
+        \u0275\u0275advance(12);
         \u0275\u0275textInterpolate(ctx.pageData == null ? null : ctx.pageData.name);
         \u0275\u0275advance(8);
         \u0275\u0275textInterpolate1(" Indian Administrative Service Association ", ctx.pageData == null ? null : ctx.pageData.name, " ");
@@ -4083,7 +4101,7 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
         \u0275\u0275advance(7);
         \u0275\u0275property("ngIf", ctx.galleryImages && ctx.galleryImages.length > 0)("ngIfElse", noUsers_r9);
       }
-    }, dependencies: [StateHeaderComponent, StateFooterComponent, AccessibilityHeaderComponent, CommonModule, NgForOf, NgIf, DatePipe, SlickCarouselModule, SlickCarouselComponent, SlickItemDirective, IasLoaderComponent], styles: ['\n\n.hero-section[_ngcontent-%COMP%] {\n  background: url("./media/state-banner.png") center center/cover no-repeat;\n  position: relative;\n  min-height: 500px;\n  display: flex;\n  align-items: center;\n  overflow: hidden;\n}\n.hero-section[_ngcontent-%COMP%]   .overlay[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background:\n    linear-gradient(\n      115deg,\n      rgba(0, 0, 0, 0.6) 30%,\n      rgba(0, 0, 0, 0.6) 100%);\n  z-index: 1;\n}\n.hero-section[_ngcontent-%COMP%]   .container[_ngcontent-%COMP%] {\n  position: relative;\n  z-index: 2;\n}\n.hero-section[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 32px;\n  font-style: normal;\n  font-weight: 700;\n  line-height: normal;\n}\n.hero-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 48px;\n  font-style: normal;\n  font-weight: 700;\n  line-height: normal;\n}\n.hero-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 150%;\n}\n@media (max-width: 768px) {\n  .hero-section[_ngcontent-%COMP%] {\n    text-align: center;\n    padding: 2rem 1rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   .row[_ngcontent-%COMP%] {\n    flex-direction: column-reverse;\n  }\n  .hero-logo[_ngcontent-%COMP%] {\n    max-width: 140px;\n    margin-bottom: 3rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 1.6rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n    margin-top: 30px;\n    font-size: 1.2rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 1rem;\n  }\n}\n.about-section[_ngcontent-%COMP%] {\n  padding: 120px 0;\n}\n.about-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523AB1;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.about-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #21242c;\n  font-family: Urbanist;\n  font-size: 20px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 36px;\n  letter-spacing: -0.1px;\n}\n@media (max-width: 1000px) {\n  .about-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .about-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n}\n.office-bearers-section[_ngcontent-%COMP%] {\n  background-color: #fff;\n  margin-bottom: 100px;\n}\n.office-bearers-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.section-title[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-weight: 600;\n}\n.bearer-card[_ngcontent-%COMP%] {\n  max-width: 260px;\n}\n.bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 180px;\n  height: 180px;\n  object-fit: cover;\n  border: 5px solid #fff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\n  transition: transform 0.5s ease;\n}\n.bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover {\n  transform: scale(1.05);\n  transform-origin: top;\n}\n.bearer-name[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-weight: 600;\n  margin-bottom: 0.3rem;\n}\n.bearer-role[_ngcontent-%COMP%] {\n  color: #666;\n  font-size: 0.95rem;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-size: 1.1rem;\n  transition: color 0.3s ease;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  color: #231f77;\n}\n.carousel-control-prev-icon[_ngcontent-%COMP%], .carousel-control-next-icon[_ngcontent-%COMP%] {\n  filter: invert(0.4);\n}\n#officeBearersCarousel[_ngcontent-%COMP%] {\n  padding: 0 4rem;\n}\n#officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-next[_ngcontent-%COMP%], #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-prev[_ngcontent-%COMP%] {\n  width: 3%;\n}\n@media (max-width: 768px) {\n  .bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 120px;\n    height: 120px;\n  }\n  #officeBearersCarousel[_ngcontent-%COMP%] {\n    padding: 0 1rem;\n  }\n  #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-next[_ngcontent-%COMP%], #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-prev[_ngcontent-%COMP%] {\n    width: 6%;\n  }\n}\n.news-events-section[_ngcontent-%COMP%] {\n  background-color: #f0edff;\n}\n.news-events-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.btn[_ngcontent-%COMP%] {\n  border-radius: 25px;\n  padding: 0.4rem 1.2rem;\n  font-weight: 500;\n}\n.tabbtn[_ngcontent-%COMP%] {\n  border-radius: 40px;\n  border: 1px solid #523ab1;\n  background: #fff;\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 20px;\n  letter-spacing: 0.1px;\n  padding: 8px 16px;\n}\n.tabactive[_ngcontent-%COMP%] {\n  border-radius: 40px;\n  border: 1px solid #e2e2e2;\n  background: #523ab1;\n  color: #fff;\n  transition: all 0.3s ease;\n}\n.cardsrow[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n  position: relative;\n  width: 100%;\n  overflow-x: auto;\n}\n.news-card[_ngcontent-%COMP%] {\n  min-width: 350px;\n  border-radius: 16px;\n  padding: 24px;\n  background: #fff;\n}\n.news-card[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.news-card[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  overflow: hidden;\n  color: #61646b;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 20px;\n  letter-spacing: 0.07px;\n}\n.pdf-icon[_ngcontent-%COMP%] {\n  width: 22px;\n  height: 22px;\n}\n.Published[_ngcontent-%COMP%] {\n  color: #212121;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 20px;\n  letter-spacing: 0.06px;\n}\n@media (max-width: 768px) {\n  .news-card[_ngcontent-%COMP%] {\n    min-width: 250px;\n    border-radius: 12px;\n    padding: 12px;\n  }\n}\n.gallery-section[_ngcontent-%COMP%] {\n  background-color: #fff;\n  margin-bottom: 60px 0 80px 0;\n}\n.gallery-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.gallery-section[_ngcontent-%COMP%]   .gallery-img[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 230px;\n  object-fit: cover;\n  border-radius: 8px;\n}\n.gallery-section[_ngcontent-%COMP%]     .slick-dots {\n  bottom: -40px;\n}\n.gallery-section[_ngcontent-%COMP%]     .slick-dots li button:before {\n  font-size: 16px;\n}\n/*# sourceMappingURL=state-landing-page.component.css.map */'] });
+    }, dependencies: [StateHeaderComponent, StateFooterComponent, AccessibilityHeaderComponent, CommonModule, NgForOf, NgIf, NgStyle, DatePipe, SlickCarouselModule, SlickCarouselComponent, SlickItemDirective, IasLoaderComponent], styles: ["\n\n.hero-section[_ngcontent-%COMP%] {\n  background-position: center center;\n  background-size: cover;\n  background-repeat: no-repeat;\n  position: relative;\n  min-height: 500px;\n  display: flex;\n  align-items: center;\n  overflow: hidden;\n}\n.hero-section[_ngcontent-%COMP%]   .overlay[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background:\n    linear-gradient(\n      115deg,\n      rgba(0, 0, 0, 0.6) 30%,\n      rgba(0, 0, 0, 0.6) 100%);\n  z-index: 1;\n}\n.hero-section[_ngcontent-%COMP%]   .container[_ngcontent-%COMP%] {\n  position: relative;\n  z-index: 2;\n}\n.hero-section[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 32px;\n  font-style: normal;\n  font-weight: 700;\n  line-height: normal;\n}\n.hero-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 48px;\n  font-style: normal;\n  font-weight: 700;\n  line-height: normal;\n}\n.hero-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 150%;\n}\n@media (max-width: 768px) {\n  .hero-section[_ngcontent-%COMP%] {\n    text-align: center;\n    padding: 2rem 1rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   .row[_ngcontent-%COMP%] {\n    flex-direction: column-reverse;\n  }\n  .hero-logo[_ngcontent-%COMP%] {\n    max-width: 140px;\n    margin-bottom: 3rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 1.6rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n    margin-top: 30px;\n    font-size: 1.2rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 1rem;\n  }\n}\n.about-section[_ngcontent-%COMP%] {\n  padding: 120px 0;\n}\n.about-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523AB1;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.about-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #21242c;\n  font-family: Urbanist;\n  font-size: 20px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 36px;\n  letter-spacing: -0.1px;\n}\n@media (max-width: 1000px) {\n  .about-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .about-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n}\n.office-bearers-section[_ngcontent-%COMP%] {\n  background-color: #fff;\n  margin-bottom: 100px;\n}\n.office-bearers-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.section-title[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-weight: 600;\n}\n.bearer-card[_ngcontent-%COMP%] {\n  max-width: 260px;\n}\n.bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 180px;\n  height: 180px;\n  object-fit: cover;\n  border: 5px solid #fff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\n  transition: transform 0.5s ease;\n}\n.bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover {\n  transform: scale(1.05);\n  transform-origin: top;\n}\n.bearer-name[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-weight: 600;\n  margin-bottom: 0.3rem;\n}\n.bearer-role[_ngcontent-%COMP%] {\n  color: #666;\n  font-size: 0.95rem;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-size: 1.1rem;\n  transition: color 0.3s ease;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  color: #231f77;\n}\n.carousel-control-prev-icon[_ngcontent-%COMP%], .carousel-control-next-icon[_ngcontent-%COMP%] {\n  filter: invert(0.4);\n}\n#officeBearersCarousel[_ngcontent-%COMP%] {\n  padding: 0 4rem;\n}\n#officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-next[_ngcontent-%COMP%], #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-prev[_ngcontent-%COMP%] {\n  width: 3%;\n}\n@media (max-width: 768px) {\n  .bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 120px;\n    height: 120px;\n  }\n  #officeBearersCarousel[_ngcontent-%COMP%] {\n    padding: 0 1rem;\n  }\n  #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-next[_ngcontent-%COMP%], #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-prev[_ngcontent-%COMP%] {\n    width: 6%;\n  }\n}\n.news-events-section[_ngcontent-%COMP%] {\n  background-color: #f0edff;\n}\n.news-events-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.btn[_ngcontent-%COMP%] {\n  border-radius: 25px;\n  padding: 0.4rem 1.2rem;\n  font-weight: 500;\n}\n.tabbtn[_ngcontent-%COMP%] {\n  border-radius: 40px;\n  border: 1px solid #523ab1;\n  background: #fff;\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 20px;\n  letter-spacing: 0.1px;\n  padding: 8px 16px;\n}\n.tabactive[_ngcontent-%COMP%] {\n  border-radius: 40px;\n  border: 1px solid #e2e2e2;\n  background: #523ab1;\n  color: #fff;\n  transition: all 0.3s ease;\n}\n.cardsrow[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n  position: relative;\n  width: 100%;\n  overflow-x: auto;\n}\n.news-card[_ngcontent-%COMP%] {\n  min-width: 350px;\n  border-radius: 16px;\n  padding: 24px;\n  background: #fff;\n}\n.news-card[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.news-card[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  overflow: hidden;\n  color: #61646b;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 20px;\n  letter-spacing: 0.07px;\n}\n.pdf-icon[_ngcontent-%COMP%] {\n  width: 22px;\n  height: 22px;\n}\n.Published[_ngcontent-%COMP%] {\n  color: #212121;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 20px;\n  letter-spacing: 0.06px;\n}\n@media (max-width: 768px) {\n  .news-card[_ngcontent-%COMP%] {\n    min-width: 250px;\n    border-radius: 12px;\n    padding: 12px;\n  }\n}\n.gallery-section[_ngcontent-%COMP%] {\n  background-color: #fff;\n  margin-bottom: 60px 0 80px 0;\n}\n.gallery-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.gallery-section[_ngcontent-%COMP%]   .gallery-img[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 230px;\n  object-fit: cover;\n  border-radius: 8px;\n}\n.gallery-section[_ngcontent-%COMP%]     .slick-dots {\n  bottom: -40px;\n}\n.gallery-section[_ngcontent-%COMP%]     .slick-dots li button:before {\n  font-size: 16px;\n}\n/*# sourceMappingURL=state-landing-page.component.css.map */"] });
   }
 };
 (() => {
@@ -4100,32 +4118,32 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-IKERVPSR.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-PCTCOY7D.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HEEHMUUG.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-65W2W5I3.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-DCKHVXLH.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-TTV7C7TE.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-XVY5SP3B.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-GSQV3DQO.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "my-posts",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-SCZA3TFS.js").then((m) => m.MyPostsComponent)
+        loadComponent: () => import("./chunk-4NYNKXJG.js").then((m) => m.MyPostsComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-IRHCMCNH.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-KLGQEJZL.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -4134,12 +4152,12 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-OIVTFGUZ.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-J74RPPAQ.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-JKDB5Q2I.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-THXNVB5I.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "caruna",
@@ -4159,17 +4177,17 @@ var routes = [
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-5F72CTLJ.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-7XZWKOZJ.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-C6LYDN3V.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-UX4553E3.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-2KJHWNTD.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-HRNRF7AH.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
@@ -4213,55 +4231,55 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-OE3HUSDY.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-PBIRWBJP.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-I7GXVTGE.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-LXCYPIDG.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-ZOEXVPU2.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-2T4X3N6F.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-4YIN7QT2.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-3E3ZZ6BM.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-3KQM5VLJ.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-NOD66FLM.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-273GW6UV.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-H227RB7F.js").then((m) => m.NewsComponent)
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-KCW57OXB.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-IWQUZ3LB.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-YIQ4CYNX.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-M7OKVOTC.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-TKGLAJJQ.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-VB466BNF.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-5Z5V7ED6.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-VHZRU64S.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-M52SUS6I.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-63R6DROF.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-3LR3NYUO.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-EDQJFHSX.js").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",
-        loadComponent: () => import("./chunk-RB5S4K26.js").then((m) => m.DetailedUserInfoComponent)
+        loadComponent: () => import("./chunk-4AIWGLH5.js").then((m) => m.DetailedUserInfoComponent)
       }
     ]
   },
@@ -4269,35 +4287,35 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-COJMN2MI.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-INBEVYOP.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-S22ZSWAG.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-AVWABCVV.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-J77BGD6T.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-D4KGSVO5.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-TNOHACZ5.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-GYTIA6IM.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-KC5M3ORA.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-GUXQCAJW.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-74QB4MGC.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-PXPZGBXP.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-HTLQGE3E.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-4YQWVM2X.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-JNQU5RKP.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-TEVDJVQS.js").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
@@ -4305,34 +4323,34 @@ var routes = [
     path: "state-dashboard",
     canActivate: [authGuard],
     data: { roles: ["state_association_admin"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-MR2H7LWI.js").then((m) => m.StateDashboardLayoutComponent),
+    loadComponent: () => import("./chunk-BYNRPSZX.js").then((m) => m.StateDashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-UBNQI6DS.js").then((m) => m.StateAboutUsComponent)
+        loadComponent: () => import("./chunk-3IZWXNGR.js").then((m) => m.StateAboutUsComponent)
       },
       {
         path: "state-news",
-        loadComponent: () => import("./chunk-RA32M2B2.js").then((m) => m.StateNewsComponent)
+        loadComponent: () => import("./chunk-5UVYUFUY.js").then((m) => m.StateNewsComponent)
       },
       {
         path: "state-events",
-        loadComponent: () => import("./chunk-WFC3Y4WE.js").then((m) => m.StateEventsComponent)
+        loadComponent: () => import("./chunk-SL5YIL3B.js").then((m) => m.StateEventsComponent)
       },
       {
         path: "state-office-bearers",
-        loadComponent: () => import("./chunk-TQX4IOZA.js").then((m) => m.StateOfficeBearersComponent)
+        loadComponent: () => import("./chunk-2W62USO2.js").then((m) => m.StateOfficeBearersComponent)
       },
       {
         path: "state-gallery",
-        loadComponent: () => import("./chunk-GQO4AOKH.js").then((m) => m.StateGalleryComponent)
+        loadComponent: () => import("./chunk-ZI2SZSDC.js").then((m) => m.StateGalleryComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-TVVJMGUB.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-IQW3XD55.js").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "login",
@@ -4347,7 +4365,7 @@ var routes = [
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-M3P2ZIQI.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-AGO2UG76.js").then((m) => m.RouteErrorComponent)
   }
 ];
 
@@ -4425,7 +4443,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const moduleImpl = this.moduleImpl ?? import("./chunk-ZXRLHGHQ.js");
+    const moduleImpl = this.moduleImpl ?? import("./chunk-VQ7OAEOT.js");
     return moduleImpl.catch((e) => {
       throw new RuntimeError(5300, (typeof ngDevMode === "undefined" || ngDevMode) && "Async loading for animations package was enabled, but loading failed. Angular falls back to using regular rendering. No animations will be displayed and their styles won't be applied.");
     }).then(({
@@ -4624,7 +4642,7 @@ var appConfig = {
 };
 
 // src/app/common/common-toast/common-toast.component.ts
-var _c03 = ["errorToast"];
+var _c04 = ["errorToast"];
 var CommonToastComponent = class _CommonToastComponent {
   constructor(toastService) {
     this.toastService = toastService;
@@ -4648,7 +4666,7 @@ var CommonToastComponent = class _CommonToastComponent {
   static {
     this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _CommonToastComponent, selectors: [["app-common-toast"]], viewQuery: function CommonToastComponent_Query(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275viewQuery(_c03, 7);
+        \u0275\u0275viewQuery(_c04, 7);
       }
       if (rf & 2) {
         let _t;
