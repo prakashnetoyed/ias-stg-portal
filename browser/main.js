@@ -3732,6 +3732,19 @@ function StateLandingPageComponent_div_37_div_2_div_2_a_11_Template(rf, ctx) {
     \u0275\u0275property("href", bearer_r1 == null ? null : bearer_r1.instagramUrl, \u0275\u0275sanitizeUrl);
   }
 }
+function StateLandingPageComponent_div_37_div_2_div_2_a_12_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 53);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(1, "svg", 64);
+    \u0275\u0275element(2, "path", 65)(3, "path", 66)(4, "rect", 67);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const bearer_r1 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275property("href", bearer_r1 == null ? null : bearer_r1.linkedInUrl, \u0275\u0275sanitizeUrl);
+  }
+}
 function StateLandingPageComponent_div_37_div_2_div_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 45)(1, "div", 46)(2, "div", 47);
@@ -3744,7 +3757,7 @@ function StateLandingPageComponent_div_37_div_2_div_2_Template(rf, ctx) {
     \u0275\u0275text(7);
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(8, "div", 51);
-    \u0275\u0275template(9, StateLandingPageComponent_div_37_div_2_div_2_a_9_Template, 4, 1, "a", 52)(10, StateLandingPageComponent_div_37_div_2_div_2_a_10_Template, 8, 1, "a", 52)(11, StateLandingPageComponent_div_37_div_2_div_2_a_11_Template, 4, 1, "a", 52);
+    \u0275\u0275template(9, StateLandingPageComponent_div_37_div_2_div_2_a_9_Template, 4, 1, "a", 52)(10, StateLandingPageComponent_div_37_div_2_div_2_a_10_Template, 8, 1, "a", 52)(11, StateLandingPageComponent_div_37_div_2_div_2_a_11_Template, 4, 1, "a", 52)(12, StateLandingPageComponent_div_37_div_2_div_2_a_12_Template, 5, 1, "a", 52);
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -3761,12 +3774,14 @@ function StateLandingPageComponent_div_37_div_2_div_2_Template(rf, ctx) {
     \u0275\u0275property("ngIf", bearer_r1 == null ? null : bearer_r1.twitterUrl);
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", bearer_r1 == null ? null : bearer_r1.instagramUrl);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", bearer_r1 == null ? null : bearer_r1.linkedInUrl);
   }
 }
 function StateLandingPageComponent_div_37_div_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 42)(1, "div", 43);
-    \u0275\u0275template(2, StateLandingPageComponent_div_37_div_2_div_2_Template, 12, 7, "div", 44);
+    \u0275\u0275template(2, StateLandingPageComponent_div_37_div_2_div_2_Template, 13, 8, "div", 44);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -3801,8 +3816,8 @@ function StateLandingPageComponent_div_37_Template(rf, ctx) {
 }
 function StateLandingPageComponent_ng_template_38_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 64);
-    \u0275\u0275element(1, "img", 65);
+    \u0275\u0275elementStart(0, "div", 68);
+    \u0275\u0275element(1, "img", 69);
     \u0275\u0275elementStart(2, "p");
     \u0275\u0275text(3, "Upcoming Office Bearers will be published here.");
     \u0275\u0275elementEnd()();
@@ -3810,21 +3825,21 @@ function StateLandingPageComponent_ng_template_38_Template(rf, ctx) {
 }
 function StateLandingPageComponent_div_44_div_1_img_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 74);
+    \u0275\u0275element(0, "img", 78);
   }
 }
 function StateLandingPageComponent_div_44_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 68)(1, "div", 69)(2, "p", 70);
+    \u0275\u0275elementStart(0, "div", 72)(1, "div", 73)(2, "p", 74);
     \u0275\u0275text(3);
     \u0275\u0275pipe(4, "date");
     \u0275\u0275elementEnd();
-    \u0275\u0275template(5, StateLandingPageComponent_div_44_div_1_img_5_Template, 1, 0, "img", 71);
+    \u0275\u0275template(5, StateLandingPageComponent_div_44_div_1_img_5_Template, 1, 0, "img", 75);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(6, "h6", 72);
+    \u0275\u0275elementStart(6, "h6", 76);
     \u0275\u0275text(7);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "p", 73);
+    \u0275\u0275elementStart(8, "p", 77);
     \u0275\u0275text(9);
     \u0275\u0275elementEnd()();
   }
@@ -3842,8 +3857,8 @@ function StateLandingPageComponent_div_44_div_1_Template(rf, ctx) {
 }
 function StateLandingPageComponent_div_44_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 66);
-    \u0275\u0275template(1, StateLandingPageComponent_div_44_div_1_Template, 10, 7, "div", 67);
+    \u0275\u0275elementStart(0, "div", 70);
+    \u0275\u0275template(1, StateLandingPageComponent_div_44_div_1_Template, 10, 7, "div", 71);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -3854,8 +3869,8 @@ function StateLandingPageComponent_div_44_Template(rf, ctx) {
 }
 function StateLandingPageComponent_ng_template_45_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 64);
-    \u0275\u0275element(1, "img", 65);
+    \u0275\u0275elementStart(0, "div", 68);
+    \u0275\u0275element(1, "img", 69);
     \u0275\u0275elementStart(2, "p");
     \u0275\u0275text(3, "Upcoming events will be published here.");
     \u0275\u0275elementEnd()();
@@ -3863,8 +3878,8 @@ function StateLandingPageComponent_ng_template_45_Template(rf, ctx) {
 }
 function StateLandingPageComponent_div_51_div_3_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 77)(1, "div", 78);
-    \u0275\u0275element(2, "img", 79);
+    \u0275\u0275elementStart(0, "div", 81)(1, "div", 82);
+    \u0275\u0275element(2, "img", 83);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -3875,8 +3890,8 @@ function StateLandingPageComponent_div_51_div_3_Template(rf, ctx) {
 }
 function StateLandingPageComponent_div_51_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div")(1, "ngx-slick-carousel", 75, 3);
-    \u0275\u0275template(3, StateLandingPageComponent_div_51_div_3_Template, 3, 1, "div", 76);
+    \u0275\u0275elementStart(0, "div")(1, "ngx-slick-carousel", 79, 3);
+    \u0275\u0275template(3, StateLandingPageComponent_div_51_div_3_Template, 3, 1, "div", 80);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -3889,8 +3904,8 @@ function StateLandingPageComponent_div_51_Template(rf, ctx) {
 }
 function StateLandingPageComponent_ng_template_52_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 64);
-    \u0275\u0275element(1, "img", 65);
+    \u0275\u0275elementStart(0, "div", 68);
+    \u0275\u0275element(1, "img", 69);
     \u0275\u0275elementStart(2, "p");
     \u0275\u0275text(3, "Upcoming images will be published here.");
     \u0275\u0275elementEnd()();
@@ -4029,7 +4044,7 @@ var StateLandingPageComponent = class _StateLandingPageComponent {
           return ctx.onResize();
         }, false, \u0275\u0275resolveWindow);
       }
-    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 55, vars: 17, consts: [["noOffice", ""], ["noEvent", ""], ["noUsers", ""], ["slickModal", "slick-carousel"], [4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "hero-section", "position-relative", "text-white", 3, "ngStyle"], [1, "overlay"], [1, "container", "py-5"], [1, "row", "align-items-center"], [1, "col-md-8", "col-12", "text-center", "text-md-start", "mb-4", "mb-md-0"], [1, "fw-normal"], [1, "fw-bold"], [1, "mb-0"], [1, "col-md-4", "text-center"], ["src", "../../../../assets/images/microsite_logo.png", "alt", "IAS Logo", 1, "img-fluid"], [1, "about-section"], [1, "container"], [1, "row", "align-items-center", "justify-content-center"], [1, "col-md-9", "text-center"], [1, "mb-4"], [1, "office-bearers-section"], [1, "mb-5"], ["id", "officeBearersCarousel", "class", "carousel slide", "data-bs-ride", "carousel", "data-bs-interval", "6000", 4, "ngIf", "ngIfElse"], [1, "news-events-section", "py-5"], [1, "container", "py-4"], ["class", "cardsrow", 4, "ngIf", "ngIfElse"], [1, "gallery-section", "py-5"], [1, "section-title", "mb-4", "ps-3"], [4, "ngIf", "ngIfElse"], ["id", "officeBearersCarousel", "data-bs-ride", "carousel", "data-bs-interval", "6000", 1, "carousel", "slide"], [1, "carousel-inner"], ["class", "carousel-item", 3, "active", 4, "ngFor", "ngForOf"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "visually-hidden"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], [1, "carousel-item"], [1, "row"], ["class", "col-lg-3 col-6 mb-4 mb-lg-0", 4, "ngFor", "ngForOf"], [1, "col-lg-3", "col-6", "mb-4", "mb-lg-0"], [1, "bearer-card", "text-center", "mx-auto"], [1, "bearer-img", "mb-3"], [1, "img-fluid", "rounded-circle", "shadow", 3, "src", "alt"], [1, "bearer-name"], [1, "bearer-role", "mb-3"], [1, "social-icons", "d-flex", "justify-content-center", "gap-3"], ["target", "_blank", 3, "href", 4, "ngIf"], ["target", "_blank", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "29", "height", "29", "viewBox", "0 0 29 29", "fill", "none"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M12.3053 14.5261V19.361C12.3053 19.4313 12.3645 19.4863 12.4401 19.4863H14.371C14.4467 19.4863 14.5059 19.4313 14.5059 19.361V14.4466H15.9072C15.9763 14.4466 16.0355 14.3977 16.0421 14.3305L16.177 12.8512C16.1836 12.7779 16.1211 12.7137 16.0421 12.7137H14.5059V11.6624C14.5059 11.4148 14.7197 11.2162 14.9862 11.2162H16.0651C16.1408 11.2162 16.2 11.1611 16.2 11.0909V9.61163C16.2 9.54134 16.1408 9.48633 16.0651 9.48633H14.2395C13.1704 9.48633 12.302 10.2932 12.302 11.2865V12.7137H11.3349C11.2592 12.7137 11.2 12.7687 11.2 12.839V14.3182C11.2 14.3885 11.2592 14.4435 11.3349 14.4435H12.302V14.523L12.3053 14.5261Z", "fill", "#523AB1"], ["x", "0.699997", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], ["clip-path", "url(#clip0_52831_3220)"], ["d", "M14.2 0.986328C21.6556 0.986328 27.7 7.03075 27.7 14.4863C27.7 21.9419 21.6556 27.9863 14.2 27.9863C6.74444 27.9863 0.700012 21.9419 0.700012 14.4863C0.700012 7.03075 6.74444 0.986328 14.2 0.986328Z", "stroke", "#523AB1"], ["d", "M15.1514 13.7206L18.8741 9.48633H17.9919L14.7595 13.1629L12.1777 9.48633H9.20001L13.1041 15.046L9.20001 19.4863H10.0822L13.4958 15.6037L16.2223 19.4863H19.2L15.1514 13.7206ZM10.4001 10.1362H11.7551L17.9923 18.866H16.6373L10.4001 10.1362Z", "fill", "#523AB1"], ["id", "clip0_52831_3220"], ["width", "28", "height", "28", "fill", "white", "transform", "translate(0.200012 0.486328)"], ["d", "M16.8298 11.3261C16.506 11.3261 16.2408 11.5885 16.2408 11.9151C16.2408 12.2418 16.5032 12.5042 16.8298 12.5042C17.1565 12.5042 17.4189 12.2418 17.4189 11.9151C17.4189 11.5885 17.1565 11.3261 16.8298 11.3261ZM14.2168 12.0798C12.8544 12.0798 11.7461 13.1882 11.7461 14.5505C11.7461 15.9129 12.8544 17.0212 14.2168 17.0212C15.5791 17.0212 16.6874 15.9129 16.6874 14.5505C16.6874 13.1882 15.5791 12.0798 14.2168 12.0798ZM14.2168 16.1335C13.3429 16.1335 12.6339 15.4244 12.6339 14.5505C12.6339 13.6767 13.3429 12.9676 14.2168 12.9676C15.0906 12.9676 15.7997 13.6767 15.7997 14.5505C15.7997 15.4244 15.0906 16.1335 14.2168 16.1335ZM19.2 12.4986C19.2 10.8347 17.8516 9.48633 16.1877 9.48633H12.2123C10.5484 9.48633 9.20001 10.8347 9.20001 12.4986V16.4741C9.20001 18.1379 10.5484 19.4863 12.2123 19.4863H16.1877C17.8516 19.4863 19.2 18.1379 19.2 16.4741V12.4986ZM18.2564 16.4741C18.2564 17.6159 17.3295 18.5427 16.1877 18.5427H12.2123C11.0705 18.5427 10.1436 17.6159 10.1436 16.4741V12.4986C10.1436 11.3568 11.0705 10.4299 12.2123 10.4299H16.1877C17.3295 10.4299 18.2564 11.3568 18.2564 12.4986V16.4741Z", "fill", "#523AB1"], ["x", "0.700012", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center", "nouser", "flex-column"], ["src", "../../../../assets/icons/empty-img-gray.png", "alt", "empty state"], [1, "cardsrow"], ["class", "news-card", 4, "ngFor", "ngForOf"], [1, "news-card"], [1, "d-flex", "align-items-center", "justify-content-between", "gap-3", "mb-3"], [1, "Published", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", "class", "pdf-icon ms-2", 4, "ngIf"], [1, "fw-semibold", "text-primary", "mb-3"], [1, "text-muted", "small", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", 1, "pdf-icon", "ms-2"], [1, "gallery-slider", 3, "config"], ["ngxSlickItem", "", "class", "px-3", 4, "ngFor", "ngForOf"], ["ngxSlickItem", "", 1, "px-3"], [1, "gallery-card"], [1, "gallery-img", 3, "src"]], template: function StateLandingPageComponent_Template(rf, ctx) {
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 55, vars: 17, consts: [["noOffice", ""], ["noEvent", ""], ["noUsers", ""], ["slickModal", "slick-carousel"], [4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "hero-section", "position-relative", "text-white", 3, "ngStyle"], [1, "overlay"], [1, "container", "py-5"], [1, "row", "align-items-center"], [1, "col-md-8", "col-12", "text-center", "text-md-start", "mb-4", "mb-md-0"], [1, "fw-normal"], [1, "fw-bold"], [1, "mb-0"], [1, "col-md-4", "text-center"], ["src", "../../../../assets/images/microsite_logo.png", "alt", "IAS Logo", 1, "img-fluid"], [1, "about-section"], [1, "container"], [1, "row", "align-items-center", "justify-content-center"], [1, "col-md-9", "text-center"], [1, "mb-4"], [1, "office-bearers-section"], [1, "mb-5"], ["id", "officeBearersCarousel", "class", "carousel slide", "data-bs-ride", "carousel", "data-bs-interval", "6000", 4, "ngIf", "ngIfElse"], [1, "news-events-section", "py-5"], [1, "container", "py-4"], ["class", "cardsrow", 4, "ngIf", "ngIfElse"], [1, "gallery-section", "py-5"], [1, "section-title", "mb-4", "ps-3"], [4, "ngIf", "ngIfElse"], ["id", "officeBearersCarousel", "data-bs-ride", "carousel", "data-bs-interval", "6000", 1, "carousel", "slide"], [1, "carousel-inner"], ["class", "carousel-item", 3, "active", 4, "ngFor", "ngForOf"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "visually-hidden"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], [1, "carousel-item"], [1, "row"], ["class", "col-lg-3 col-6 mb-4 mb-lg-0", 4, "ngFor", "ngForOf"], [1, "col-lg-3", "col-6", "mb-4", "mb-lg-0"], [1, "bearer-card", "text-center", "mx-auto"], [1, "bearer-img", "mb-3"], [1, "img-fluid", "rounded-circle", "shadow", 3, "src", "alt"], [1, "bearer-name"], [1, "bearer-role", "mb-3"], [1, "social-icons", "d-flex", "justify-content-center", "gap-3"], ["target", "_blank", 3, "href", 4, "ngIf"], ["target", "_blank", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "29", "height", "29", "viewBox", "0 0 29 29", "fill", "none"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M12.3053 14.5261V19.361C12.3053 19.4313 12.3645 19.4863 12.4401 19.4863H14.371C14.4467 19.4863 14.5059 19.4313 14.5059 19.361V14.4466H15.9072C15.9763 14.4466 16.0355 14.3977 16.0421 14.3305L16.177 12.8512C16.1836 12.7779 16.1211 12.7137 16.0421 12.7137H14.5059V11.6624C14.5059 11.4148 14.7197 11.2162 14.9862 11.2162H16.0651C16.1408 11.2162 16.2 11.1611 16.2 11.0909V9.61163C16.2 9.54134 16.1408 9.48633 16.0651 9.48633H14.2395C13.1704 9.48633 12.302 10.2932 12.302 11.2865V12.7137H11.3349C11.2592 12.7137 11.2 12.7687 11.2 12.839V14.3182C11.2 14.3885 11.2592 14.4435 11.3349 14.4435H12.302V14.523L12.3053 14.5261Z", "fill", "#523AB1"], ["x", "0.699997", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], ["clip-path", "url(#clip0_52831_3220)"], ["d", "M14.2 0.986328C21.6556 0.986328 27.7 7.03075 27.7 14.4863C27.7 21.9419 21.6556 27.9863 14.2 27.9863C6.74444 27.9863 0.700012 21.9419 0.700012 14.4863C0.700012 7.03075 6.74444 0.986328 14.2 0.986328Z", "stroke", "#523AB1"], ["d", "M15.1514 13.7206L18.8741 9.48633H17.9919L14.7595 13.1629L12.1777 9.48633H9.20001L13.1041 15.046L9.20001 19.4863H10.0822L13.4958 15.6037L16.2223 19.4863H19.2L15.1514 13.7206ZM10.4001 10.1362H11.7551L17.9923 18.866H16.6373L10.4001 10.1362Z", "fill", "#523AB1"], ["id", "clip0_52831_3220"], ["width", "28", "height", "28", "fill", "white", "transform", "translate(0.200012 0.486328)"], ["d", "M16.8298 11.3261C16.506 11.3261 16.2408 11.5885 16.2408 11.9151C16.2408 12.2418 16.5032 12.5042 16.8298 12.5042C17.1565 12.5042 17.4189 12.2418 17.4189 11.9151C17.4189 11.5885 17.1565 11.3261 16.8298 11.3261ZM14.2168 12.0798C12.8544 12.0798 11.7461 13.1882 11.7461 14.5505C11.7461 15.9129 12.8544 17.0212 14.2168 17.0212C15.5791 17.0212 16.6874 15.9129 16.6874 14.5505C16.6874 13.1882 15.5791 12.0798 14.2168 12.0798ZM14.2168 16.1335C13.3429 16.1335 12.6339 15.4244 12.6339 14.5505C12.6339 13.6767 13.3429 12.9676 14.2168 12.9676C15.0906 12.9676 15.7997 13.6767 15.7997 14.5505C15.7997 15.4244 15.0906 16.1335 14.2168 16.1335ZM19.2 12.4986C19.2 10.8347 17.8516 9.48633 16.1877 9.48633H12.2123C10.5484 9.48633 9.20001 10.8347 9.20001 12.4986V16.4741C9.20001 18.1379 10.5484 19.4863 12.2123 19.4863H16.1877C17.8516 19.4863 19.2 18.1379 19.2 16.4741V12.4986ZM18.2564 16.4741C18.2564 17.6159 17.3295 18.5427 16.1877 18.5427H12.2123C11.0705 18.5427 10.1436 17.6159 10.1436 16.4741V12.4986C10.1436 11.3568 11.0705 10.4299 12.2123 10.4299H16.1877C17.3295 10.4299 18.2564 11.3568 18.2564 12.4986V16.4741Z", "fill", "#523AB1"], ["x", "0.700012", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], ["xmlns", "http://www.w3.org/2000/svg", "width", "28", "height", "28", "viewBox", "0 0 28 28", "fill", "none"], ["d", "M19 15.0775V18.8303C19 18.9225 18.9295 19 18.8379 19H16.988C16.8999 19 16.8259 18.9262 16.8259 18.8303V15.3395C16.8259 14.4207 16.5123 13.7934 15.7266 13.7934C15.1276 13.7934 14.7717 14.214 14.6131 14.6236C14.5567 14.7712 14.5426 14.9742 14.5426 15.1771V18.8303C14.5426 18.9225 14.4722 19 14.3806 19H12.5307C12.4426 19 12.3686 18.9262 12.3686 18.8303C12.3721 17.9004 12.3897 13.3911 12.3721 12.3284C12.3721 12.2362 12.4426 12.1587 12.5307 12.1587H14.377C14.4651 12.1587 14.5391 12.2325 14.5391 12.3284V13.1292C14.5391 13.1292 14.5285 13.1439 14.525 13.1513H14.5391V13.1292C14.828 12.6642 15.3425 12 16.4947 12C17.9218 12 18.993 12.9779 18.993 15.0775H19ZM9.16209 19H11.012C11.1001 19 11.1741 18.9262 11.1741 18.8303V12.3284C11.1741 12.2362 11.1036 12.1587 11.012 12.1587H9.16209C9.074 12.1587 9 12.2325 9 12.3284V18.8303C9 18.9225 9.07048 19 9.16209 19Z", "fill", "#523AB1"], ["d", "M10 11C10.5523 11 11 10.5523 11 10C11 9.44772 10.5523 9 10 9C9.44772 9 9 9.44772 9 10C9 10.5523 9.44772 11 10 11Z", "fill", "#523AB1"], ["x", "0.5", "y", "0.5", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center", "nouser", "flex-column"], ["src", "../../../../assets/icons/empty-img-gray.png", "alt", "empty state"], [1, "cardsrow"], ["class", "news-card", 4, "ngFor", "ngForOf"], [1, "news-card"], [1, "d-flex", "align-items-center", "justify-content-between", "gap-3", "mb-3"], [1, "Published", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", "class", "pdf-icon ms-2", 4, "ngIf"], [1, "fw-semibold", "text-primary", "mb-3"], [1, "text-muted", "small", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", 1, "pdf-icon", "ms-2"], [1, "gallery-slider", 3, "config"], ["ngxSlickItem", "", "class", "px-3", 4, "ngFor", "ngForOf"], ["ngxSlickItem", "", 1, "px-3"], [1, "gallery-card"], [1, "gallery-img", 3, "src"]], template: function StateLandingPageComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, StateLandingPageComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 4);
         \u0275\u0275element(1, "app-accessibility-header")(2, "app-state-header");
@@ -4118,7 +4133,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-PCTCOY7D.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-RLWVUWZN.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",

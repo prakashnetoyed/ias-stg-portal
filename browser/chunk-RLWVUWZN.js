@@ -1,34 +1,33 @@
-import './polyfills.server.mjs';
-import {
-  TimeAgoPipe
-} from "./chunk-GMEYXRZM.mjs";
-import {
-  AuthService
-} from "./chunk-MFAT4735.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-YLAG4H64.mjs";
+} from "./chunk-6BSWSVZ7.js";
+import {
+  TimeAgoPipe
+} from "./chunk-6BLZEBKM.js";
+import {
+  AuthService
+} from "./chunk-XIWVDVCF.js";
 import {
   Router,
   RouterLink,
   RouterModule
-} from "./chunk-UI6ESX43.mjs";
+} from "./chunk-JPPWT7WU.js";
 import {
   ToastService
-} from "./chunk-A2UBZQQG.mjs";
+} from "./chunk-CGBCDAXV.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   Meta,
   Title
-} from "./chunk-NFXFD3SX.mjs";
+} from "./chunk-R23YUY6E.js";
 import {
   HttpClient
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DatePipe,
@@ -37,7 +36,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   PLATFORM_ID,
   inject,
@@ -76,11 +75,11 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-IXD3JOLX.mjs";
+} from "./chunk-664KIS5M.js";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-24VIC3GD.mjs";
+} from "./chunk-ASLTLD6L.js";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -803,23 +802,24 @@ var IasMonthlymeetComponent = class _IasMonthlymeetComponent {
 function IasInitiativesComponent_div_5_div_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 10);
-    \u0275\u0275element(1, "img", 11);
-    \u0275\u0275elementStart(2, "div", 12)(3, "h2");
-    \u0275\u0275text(4);
+    \u0275\u0275elementStart(0, "div", 10)(1, "div", 11);
+    \u0275\u0275element(2, "img", 12);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "button", 13);
-    \u0275\u0275listener("click", function IasInitiativesComponent_div_5_div_1_Template_button_click_5_listener() {
+    \u0275\u0275elementStart(3, "div", 13)(4, "h2");
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(6, "button", 14);
+    \u0275\u0275listener("click", function IasInitiativesComponent_div_5_div_1_Template_button_click_6_listener() {
       const card_r2 = \u0275\u0275restoreView(_r1).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.openLink(card_r2.link));
     });
-    \u0275\u0275text(6, "Explore more \u2192");
+    \u0275\u0275text(7, "Explore more \u2192");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
     const card_r2 = ctx.$implicit;
-    \u0275\u0275advance();
+    \u0275\u0275advance(2);
     \u0275\u0275property("src", card_r2.image, \u0275\u0275sanitizeUrl);
     \u0275\u0275advance(3);
     \u0275\u0275textInterpolate(card_r2.title);
@@ -828,7 +828,7 @@ function IasInitiativesComponent_div_5_div_1_Template(rf, ctx) {
 function IasInitiativesComponent_div_5_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 8);
-    \u0275\u0275template(1, IasInitiativesComponent_div_5_div_1_Template, 7, 2, "div", 9);
+    \u0275\u0275template(1, IasInitiativesComponent_div_5_div_1_Template, 8, 2, "div", 9);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -840,7 +840,7 @@ function IasInitiativesComponent_div_5_Template(rf, ctx) {
 function IasInitiativesComponent_span_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "span", 14);
+    \u0275\u0275elementStart(0, "span", 15);
     \u0275\u0275listener("click", function IasInitiativesComponent_span_7_Template_span_click_0_listener() {
       const i_r6 = \u0275\u0275restoreView(_r5).index;
       const ctx_r2 = \u0275\u0275nextContext();
@@ -859,9 +859,13 @@ var IasInitiativesComponent = class _IasInitiativesComponent {
     this.platformId = platformId;
     this.router = router;
     this.cards = [
-      { title: "IAS Rajasthan Association", image: "assets/images/rajasthan.png", link: "/microsite?id=18" },
-      { title: "IAS AGMUT Association", image: "../../../../assets/images/ias-agmut.png", link: "https://x.com/ias_agmut?lang=en" },
+      { title: "IAS Madhya Pradesh Association", image: "../../../../assets/images/madhya-pradesh.png", link: "/microsite?id=12" },
+      { title: "IAS Chhattisgarh Association", image: "../../../../assets/images/chattisgarh.png", link: "/microsite?id=5" },
+      { title: "IAS Himachal Pradesh Association", image: "../../../../assets/images/himachal.png", link: "/microsite?id=8" },
+      { title: "IAS Uttar Pradesh Association", image: "assets/images/up.png", link: "/microsite?id=23" },
       { title: "IAS Andhra Pradesh Association", image: "assets/images/ias-ap.png", link: "https://x.com/IASAndhraP" },
+      { title: "IAS AGMUT Association", image: "../../../../assets/images/ias-agmut.png", link: "https://x.com/ias_agmut?lang=en" },
+      { title: "IAS Rajasthan Association", image: "assets/images/rajasthan.png", link: "https://x.com/RajasthanIAS" },
       // { title: 'Haryana IAS Association', image: 'assets/images/haryana.png', link: 'https://example.com/haryana' },
       { title: "IAS Karnataka Association", image: "assets/images/karnataka.png", link: "https://x.com/IASOAKarnataka" },
       // { title: 'Kerala IAS Association', image: 'assets/images/kerala.png', link: 'https://example.com/kerala' },
@@ -871,7 +875,6 @@ var IasInitiativesComponent = class _IasInitiativesComponent {
       { title: "IAS Tamil Nadu Association", image: "assets/images/tamilnadu.png", link: "https://tniasoa.org/" },
       { title: "IAS Telangana Association", image: "assets/images/telangana.png", link: "https://x.com/IasTelangana" },
       { title: "IAS Bihar Association", image: "assets/images/bihar.png", link: "http://iasbihar.org.in/" },
-      { title: "IAS Uttar Pradesh Association", image: "assets/images/up.png", link: "https://x.com/upiasasso" },
       { title: "IAS West Bengal Association", image: "assets/images/westbengal.png", link: "https://iasassociationwb.in/" }
     ];
     this.groupedCards = [];
@@ -923,7 +926,7 @@ var IasInitiativesComponent = class _IasInitiativesComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasInitiativesComponent, selectors: [["app-ias-initiatives"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 8, vars: 4, consts: [[1, "main-slider-div"], [1, "container"], [1, "state-slider-container"], [1, "slider-wrapper"], [1, "slider"], ["class", "slide", 4, "ngFor", "ngForOf"], [1, "pagination"], [3, "active", "click", 4, "ngFor", "ngForOf"], [1, "slide"], ["class", "state-card", 4, "ngFor", "ngForOf"], [1, "state-card"], ["alt", "state-image", 3, "src"], [1, "right-div", "d-flex", "flex-column", "justify-content-between", "h-100", "align-items-start"], [1, "btn-explore", "mt-2", 3, "click"], [3, "click"]], template: function IasInitiativesComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasInitiativesComponent, selectors: [["app-ias-initiatives"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 8, vars: 4, consts: [[1, "main-slider-div"], [1, "container"], [1, "state-slider-container"], [1, "slider-wrapper"], [1, "slider"], ["class", "slide", 4, "ngFor", "ngForOf"], [1, "pagination"], [3, "active", "click", 4, "ngFor", "ngForOf"], [1, "slide"], ["class", "state-card", 4, "ngFor", "ngForOf"], [1, "state-card"], [1, "image-div"], ["alt", "state-image", 3, "src"], [1, "right-div", "d-flex", "flex-column", "justify-content-between", "h-100", "align-items-start"], [1, "btn-explore", "mt-2", 3, "click"], [3, "click"]], template: function IasInitiativesComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
         \u0275\u0275template(5, IasInitiativesComponent_div_5_Template, 2, 1, "div", 5);
@@ -940,7 +943,7 @@ var IasInitiativesComponent = class _IasInitiativesComponent {
         \u0275\u0275advance(2);
         \u0275\u0275property("ngForOf", ctx.groupedCards);
       }
-    }, dependencies: [CommonModule, NgForOf], styles: ["\n\n.btn-explore[_ngcontent-%COMP%] {\n  border: 1px solid #fff;\n  border-radius: 4px;\n  background-color: rgba(150, 140, 140, 0);\n  color: #fff;\n  padding: 8px 24px;\n  transition: all 0.3s ease-in-out;\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n}\n.btn-explore[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  fill: white;\n}\n.btn-explore[_ngcontent-%COMP%]:hover {\n  border: 1px solid #fff;\n  border-radius: 4px;\n  background-color: #fff;\n  color: #15142b !important;\n  padding: 8px 24px;\n}\n.btn-explore[_ngcontent-%COMP%]:hover   svg[_ngcontent-%COMP%] {\n  fill: #15142b;\n}\n.main-slider-div[_ngcontent-%COMP%] {\n  background: #150F22;\n}\n.state-slider-container[_ngcontent-%COMP%] {\n  padding: 2rem 0;\n  position: relative;\n  overflow: hidden;\n  min-width: 220px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .slider-wrapper[_ngcontent-%COMP%] {\n  width: 100%;\n  overflow: hidden;\n}\n.state-slider-container[_ngcontent-%COMP%]   .slider[_ngcontent-%COMP%] {\n  display: flex;\n  transition: transform 0.6s ease-in-out;\n}\n.state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n  display: grid;\n  flex: 0 0 100%;\n  grid-template-columns: 1fr 1fr 1fr;\n  gap: 20px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n  background:\n    linear-gradient(\n      148.14deg,\n      rgba(88, 71, 114, 0.55) -33.59%,\n      rgba(47, 42, 56, 0.55) 79.09%);\n  padding: 25px 35px;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  height: 100%;\n}\n.state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n  text-transform: capitalize;\n  margin-bottom: 12px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .pagination[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  margin-top: 1rem;\n  gap: 8px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .pagination[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  width: 10px;\n  height: 10px;\n  background: #555;\n  border-radius: 50%;\n  display: inline-block;\n  cursor: pointer;\n  transition: background 0.3s;\n}\n.state-slider-container[_ngcontent-%COMP%]   .pagination[_ngcontent-%COMP%]   span.active[_ngcontent-%COMP%] {\n  background: #fff;\n}\n@media (max-width: 1380px) {\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    gap: 16px;\n    display: flex !important;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    padding: 20px 24px;\n    flex: 1 1 45%;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 16px;\n  }\n}\n@media (max-width: 1200px) {\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    gap: 16px;\n    display: flex !important;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    padding: 20px 24px;\n    flex: 1 1 45%;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 16px;\n  }\n}\n@media (max-width: 992px) {\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    flex-wrap: wrap;\n    justify-content: center;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    flex: 1 1 100%;\n    max-width: 90%;\n    height: fit-content;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 16px;\n    text-align: center;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .btn-explore[_ngcontent-%COMP%] {\n    margin: 0 auto;\n  }\n}\n@media (max-width: 768px) {\n  .state-slider-container[_ngcontent-%COMP%] {\n    padding: 1.5rem 0;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    gap: 12px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    padding: 16px 20px;\n    border-radius: 6px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 15px;\n  }\n}\n@media (max-width: 576px) {\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    padding: 14px 16px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 100%;\n    height: auto;\n    max-width: 260px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .btn-explore[_ngcontent-%COMP%] {\n    width: 100%;\n    justify-content: center;\n  }\n}\n/*# sourceMappingURL=ias-initiatives.component.css.map */"] });
+    }, dependencies: [CommonModule, NgForOf], styles: ["\n\n.btn-explore[_ngcontent-%COMP%] {\n  border: 1px solid #fff;\n  border-radius: 4px;\n  background-color: rgba(150, 140, 140, 0);\n  color: #fff;\n  padding: 8px 24px;\n  transition: all 0.3s ease-in-out;\n  display: inline-flex;\n  align-items: center;\n  gap: 8px;\n}\n.btn-explore[_ngcontent-%COMP%]   svg[_ngcontent-%COMP%] {\n  fill: white;\n}\n.btn-explore[_ngcontent-%COMP%]:hover {\n  border: 1px solid #fff;\n  border-radius: 4px;\n  background-color: #fff;\n  color: #15142b !important;\n  padding: 8px 24px;\n}\n.btn-explore[_ngcontent-%COMP%]:hover   svg[_ngcontent-%COMP%] {\n  fill: #15142b;\n}\n.main-slider-div[_ngcontent-%COMP%] {\n  background: #150F22;\n}\n.state-slider-container[_ngcontent-%COMP%] {\n  padding: 2rem 0;\n  position: relative;\n  overflow: hidden;\n  min-width: 220px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .slider-wrapper[_ngcontent-%COMP%] {\n  width: 100%;\n  overflow: hidden;\n}\n.state-slider-container[_ngcontent-%COMP%]   .slider[_ngcontent-%COMP%] {\n  display: flex;\n  transition: transform 0.6s ease-in-out;\n}\n.state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n  display: grid;\n  flex: 0 0 100%;\n  grid-template-columns: 1fr 1fr 1fr;\n  gap: 20px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n  background:\n    linear-gradient(\n      148.14deg,\n      rgba(88, 71, 114, 0.55) -33.59%,\n      rgba(47, 42, 56, 0.55) 79.09%);\n  padding: 25px 35px;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  height: 100%;\n}\n.state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%]   .image-div[_ngcontent-%COMP%] {\n  max-width: 140px;\n  height: 100px;\n  border: 2px solid white;\n  border-radius: 12px;\n  overflow: hidden;\n}\n.state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%]   .image-div[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n.state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: normal;\n  text-transform: capitalize;\n  margin-bottom: 12px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .pagination[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center;\n  margin-top: 1rem;\n  gap: 8px;\n}\n.state-slider-container[_ngcontent-%COMP%]   .pagination[_ngcontent-%COMP%]   span[_ngcontent-%COMP%] {\n  width: 10px;\n  height: 10px;\n  background: #555;\n  border-radius: 50%;\n  display: inline-block;\n  cursor: pointer;\n  transition: background 0.3s;\n}\n.state-slider-container[_ngcontent-%COMP%]   .pagination[_ngcontent-%COMP%]   span.active[_ngcontent-%COMP%] {\n  background: #fff;\n}\n@media (max-width: 1380px) {\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    gap: 16px;\n    display: flex !important;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    padding: 20px 24px;\n    flex: 1 1 45%;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 16px;\n  }\n}\n@media (max-width: 1200px) {\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    gap: 16px;\n    display: flex !important;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    padding: 20px 24px;\n    flex: 1 1 45%;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 16px;\n  }\n}\n@media (max-width: 992px) {\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    flex-wrap: wrap;\n    justify-content: center;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    flex: 1 1 100%;\n    max-width: 90%;\n    height: fit-content;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 16px;\n    text-align: center;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .btn-explore[_ngcontent-%COMP%] {\n    margin: 0 auto;\n  }\n}\n@media (max-width: 768px) {\n  .state-slider-container[_ngcontent-%COMP%] {\n    padding: 1.5rem 0;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .slide[_ngcontent-%COMP%] {\n    gap: 12px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    padding: 16px 20px;\n    border-radius: 6px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 15px;\n  }\n}\n@media (max-width: 576px) {\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%] {\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    padding: 14px 16px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .state-card[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 100%;\n    height: auto;\n    max-width: 260px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n  .state-slider-container[_ngcontent-%COMP%]   .btn-explore[_ngcontent-%COMP%] {\n    width: 100%;\n    justify-content: center;\n  }\n}\n/*# sourceMappingURL=ias-initiatives.component.css.map */"] });
   }
 };
 (() => {
@@ -1543,4 +1546,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-6NGWMFBL.mjs.map
+//# sourceMappingURL=chunk-RLWVUWZN.js.map
