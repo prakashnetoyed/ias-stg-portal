@@ -12,6 +12,7 @@ import {
   FormGroupDirective,
   FormsModule,
   MaxLengthValidator,
+  NG_VALUE_ACCESSOR,
   NgControlStatus,
   NgControlStatusGroup,
   NgSelectOption,
@@ -21,7 +22,7 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-AGO5MSWX.js";
+} from "./chunk-D2N4R6R5.js";
 import {
   UserService
 } from "./chunk-6XA4DFGU.js";
@@ -64,32 +65,45 @@ import {
   DatePipe,
   NgForOf,
   NgIf,
-  isPlatformBrowser
+  isPlatformBrowser,
+  isPlatformServer
 } from "./chunk-B5ZMSCOI.js";
 import {
   ANIMATION_MODULE_TYPE,
   ChangeDetectionScheduler,
+  Component,
+  Directive,
+  ElementRef,
   Injectable,
+  Input,
+  NgModule,
   NgZone,
   PLATFORM_ID,
+  Renderer2,
   RendererFactory2,
   RuntimeError,
   catchError,
+  forwardRef,
   from,
   inject,
   makeEnvironmentProviders,
+  output,
   performanceMarkFeature,
   setClassMetadata,
   switchMap,
   throwError,
   ɵsetClassDebugInfo,
+  ɵɵNgOnChangesFeature,
   ɵɵProvidersFeature,
   ɵɵStandaloneFeature,
   ɵɵadvance,
   ɵɵclassMapInterpolate1,
   ɵɵclassProp,
   ɵɵdefineComponent,
+  ɵɵdefineDirective,
   ɵɵdefineInjectable,
+  ɵɵdefineInjector,
+  ɵɵdefineNgModule,
   ɵɵdirectiveInject,
   ɵɵelement,
   ɵɵelementContainerEnd,
@@ -104,7 +118,10 @@ import {
   ɵɵnamespaceSVG,
   ɵɵnextContext,
   ɵɵpipe,
+  ɵɵpipeBind2,
   ɵɵpipeBind3,
+  ɵɵprojection,
+  ɵɵprojectionDef,
   ɵɵproperty,
   ɵɵpureFunction0,
   ɵɵqueryRefresh,
@@ -113,6 +130,7 @@ import {
   ɵɵrepeaterCreate,
   ɵɵrepeaterTrackByIndex,
   ɵɵresetView,
+  ɵɵresolveWindow,
   ɵɵrestoreView,
   ɵɵsanitizeUrl,
   ɵɵtemplate,
@@ -129,13 +147,13 @@ var _c0 = () => ({ exact: true });
 function IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275element(1, "img", 30);
+    \u0275\u0275element(1, "img", 29);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
     const ctx_r1 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
-    \u0275\u0275property("src", ctx_r1.userRole === "admin" ? ctx_r1.user == null ? null : ctx_r1.user.profilePic : ctx_r1.user == null ? null : ctx_r1.user.doptOfficer == null ? null : ctx_r1.user.doptOfficer.profilePic, \u0275\u0275sanitizeUrl);
+    \u0275\u0275property("src", ctx_r1.userRole === "admin" || ctx_r1.userRole === "state_association_admin" ? ctx_r1.user == null ? null : ctx_r1.user.profilePic : ctx_r1.user == null ? null : ctx_r1.user.doptOfficer == null ? null : ctx_r1.user.doptOfficer.profilePic, \u0275\u0275sanitizeUrl);
   }
 }
 function IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template(rf, ctx) {
@@ -150,10 +168,10 @@ function IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template(rf, ctx
 function IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "li")(2, "a", 31);
+    \u0275\u0275elementStart(1, "li")(2, "a", 30);
     \u0275\u0275text(3, "Admin Profile");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(4, "li")(5, "a", 31);
+    \u0275\u0275elementStart(4, "li")(5, "a", 30);
     \u0275\u0275text(6, "Admin Dashboard");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementContainerEnd();
@@ -165,17 +183,32 @@ function IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template(rf, ct
     \u0275\u0275property("routerLink", "/home");
   }
 }
-function IasHeaderComponent_ng_container_38_div_1_ng_template_8_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_38_div_1_ng_container_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "li")(1, "a", 31);
-    \u0275\u0275text(2, "User Profile");
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275elementStart(1, "li")(2, "a", 30);
+    \u0275\u0275text(3, "State Admin Dashboard");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(3, "li")(4, "a", 31);
-    \u0275\u0275text(5, "User Dashboard");
-    \u0275\u0275elementEnd()();
+    \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
-    \u0275\u0275advance();
+    \u0275\u0275advance(2);
+    \u0275\u0275property("routerLink", "/state-dashboard");
+  }
+}
+function IasHeaderComponent_ng_container_38_div_1_ng_container_9_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementContainerStart(0);
+    \u0275\u0275elementStart(1, "li")(2, "a", 30);
+    \u0275\u0275text(3, "User Profile");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(4, "li")(5, "a", 30);
+    \u0275\u0275text(6, "User Dashboard");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementContainerEnd();
+  }
+  if (rf & 2) {
+    \u0275\u0275advance(2);
     \u0275\u0275property("routerLink", "/user-home/user-profile");
     \u0275\u0275advance(3);
     \u0275\u0275property("routerLink", "/user-home");
@@ -184,15 +217,15 @@ function IasHeaderComponent_ng_container_38_div_1_ng_template_8_Template(rf, ctx
 function IasHeaderComponent_ng_container_38_div_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 23)(1, "button", 24)(2, "div", 25);
-    \u0275\u0275template(3, IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template, 2, 1, "ng-container", 26)(4, IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template, 1, 1, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+    \u0275\u0275elementStart(0, "div", 22)(1, "button", 23)(2, "div", 24);
+    \u0275\u0275template(3, IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template, 2, 1, "ng-container", 25)(4, IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template, 1, 1, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(6, "ul", 27);
-    \u0275\u0275template(7, IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template, 7, 2, "ng-container", 26)(8, IasHeaderComponent_ng_container_38_div_1_ng_template_8_Template, 6, 2, "ng-template", null, 1, \u0275\u0275templateRefExtractor);
+    \u0275\u0275elementStart(6, "ul", 26);
+    \u0275\u0275template(7, IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template, 7, 2, "ng-container", 20)(8, IasHeaderComponent_ng_container_38_div_1_ng_container_8_Template, 4, 1, "ng-container", 20)(9, IasHeaderComponent_ng_container_38_div_1_ng_container_9_Template, 7, 2, "ng-container", 20);
     \u0275\u0275elementStart(10, "li");
-    \u0275\u0275element(11, "hr", 28);
+    \u0275\u0275element(11, "hr", 27);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "li")(13, "a", 29);
+    \u0275\u0275elementStart(12, "li")(13, "a", 28);
     \u0275\u0275listener("click", function IasHeaderComponent_ng_container_38_div_1_Template_a_click_13_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext(2);
@@ -203,18 +236,21 @@ function IasHeaderComponent_ng_container_38_div_1_Template(rf, ctx) {
   }
   if (rf & 2) {
     const initials_r3 = \u0275\u0275reference(5);
-    const userMenu_r4 = \u0275\u0275reference(9);
     const ctx_r1 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(3);
-    \u0275\u0275property("ngIf", ctx_r1.userRole === "admin" ? ctx_r1.user == null ? null : ctx_r1.user.profilePic : ctx_r1.user == null ? null : ctx_r1.user.doptOfficer == null ? null : ctx_r1.user.doptOfficer.profilePic)("ngIfElse", initials_r3);
+    \u0275\u0275property("ngIf", ctx_r1.userRole === "admin" || ctx_r1.userRole === "state_association_admin" ? ctx_r1.user == null ? null : ctx_r1.user.profilePic : ctx_r1.user == null ? null : ctx_r1.user.doptOfficer == null ? null : ctx_r1.user.doptOfficer.profilePic)("ngIfElse", initials_r3);
     \u0275\u0275advance(4);
-    \u0275\u0275property("ngIf", ctx_r1.userRole === "admin")("ngIfElse", userMenu_r4);
+    \u0275\u0275property("ngIf", ctx_r1.userRole === "admin");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r1.userRole === "state_association_admin");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r1.userRole === "user");
   }
 }
 function IasHeaderComponent_ng_container_38_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, IasHeaderComponent_ng_container_38_div_1_Template, 15, 4, "div", 22);
+    \u0275\u0275template(1, IasHeaderComponent_ng_container_38_div_1_Template, 15, 5, "div", 21);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -226,7 +262,7 @@ function IasHeaderComponent_ng_container_38_Template(rf, ctx) {
 function IasHeaderComponent_ng_container_39_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "button", 32);
+    \u0275\u0275elementStart(1, "button", 31);
     \u0275\u0275text(2, "Log in / Sign up");
     \u0275\u0275elementEnd();
     \u0275\u0275elementContainerEnd();
@@ -300,51 +336,51 @@ var IasHeaderComponent = class _IasHeaderComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 40, vars: 26, consts: [["initials", ""], ["userMenu", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], ["class", "dropdown", 4, "ngIf"], [1, "dropdown"], ["type", "button", "id", "profileDropdown", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "dropdown-toggle", "user-profile", "d-flex", "align-items-center", "p-0"], [1, "avatar"], [4, "ngIf", "ngIfElse"], ["aria-labelledby", "profileDropdown", 1, "dropdown-menu", "dropdown-menu-end"], [1, "dropdown-divider"], [1, "dropdown-item", "text-danger", 2, "cursor", "pointer", 3, "click"], ["alt", "User Avatar", 3, "src"], [1, "dropdown-item", 3, "routerLink"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 40, vars: 26, consts: [["initials", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], ["class", "dropdown", 4, "ngIf"], [1, "dropdown"], ["type", "button", "id", "profileDropdown", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "dropdown-toggle", "user-profile", "d-flex", "align-items-center", "p-0"], [1, "avatar"], [4, "ngIf", "ngIfElse"], ["aria-labelledby", "profileDropdown", 1, "dropdown-menu", "dropdown-menu-end"], [1, "dropdown-divider"], [1, "dropdown-item", "text-danger", 2, "cursor", "pointer", 3, "click"], ["alt", "User Avatar", 3, "src"], [1, "dropdown-item", 3, "routerLink"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275elementStart(0, "div", 2)(1, "div", 3)(2, "div", 4);
+        \u0275\u0275elementStart(0, "div", 1)(1, "div", 2)(2, "div", 3);
         \u0275\u0275listener("click", function IasHeaderComponent_Template_div_click_2_listener() {
           return ctx.goHome();
         });
-        \u0275\u0275element(3, "img", 5);
+        \u0275\u0275element(3, "img", 4);
         \u0275\u0275elementStart(4, "h1");
         \u0275\u0275text(5, "Indian Administrative Service ");
         \u0275\u0275element(6, "br");
         \u0275\u0275text(7, "Central Association");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(8, "div", 6)(9, "nav", 7)(10, "div", 8)(11, "button", 9);
-        \u0275\u0275element(12, "span", 10);
+        \u0275\u0275elementStart(8, "div", 5)(9, "nav", 6)(10, "div", 7)(11, "button", 8);
+        \u0275\u0275element(12, "span", 9);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(13, "div", 11)(14, "div", 12)(15, "a", 13);
+        \u0275\u0275elementStart(13, "div", 10)(14, "div", 11)(15, "a", 12);
         \u0275\u0275text(16, "Membership");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(17, "a", 13);
+        \u0275\u0275elementStart(17, "a", 12);
         \u0275\u0275text(18, "Community");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(19, "a", 13);
+        \u0275\u0275elementStart(19, "a", 12);
         \u0275\u0275text(20, "News");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(21, "a", 13);
+        \u0275\u0275elementStart(21, "a", 12);
         \u0275\u0275text(22, "Contact us");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(23, "div", 14)(24, "div", 15)(25, "h5", 16);
+        \u0275\u0275elementStart(23, "div", 13)(24, "div", 14)(25, "h5", 15);
         \u0275\u0275text(26, "Menu");
         \u0275\u0275elementEnd();
-        \u0275\u0275element(27, "button", 17);
+        \u0275\u0275element(27, "button", 16);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(28, "div", 18)(29, "div", 19)(30, "a", 20);
+        \u0275\u0275elementStart(28, "div", 17)(29, "div", 18)(30, "a", 19);
         \u0275\u0275text(31, "Membership");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(32, "a", 20);
+        \u0275\u0275elementStart(32, "a", 19);
         \u0275\u0275text(33, "Community");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(34, "a", 20);
+        \u0275\u0275elementStart(34, "a", 19);
         \u0275\u0275text(35, "News");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(36, "a", 20);
+        \u0275\u0275elementStart(36, "a", 19);
         \u0275\u0275text(37, "Contact us");
         \u0275\u0275elementEnd()()()()()();
-        \u0275\u0275template(38, IasHeaderComponent_ng_container_38_Template, 2, 1, "ng-container", 21)(39, IasHeaderComponent_ng_container_39_Template, 3, 1, "ng-container", 21);
+        \u0275\u0275template(38, IasHeaderComponent_ng_container_38_Template, 2, 1, "ng-container", 20)(39, IasHeaderComponent_ng_container_39_Template, 3, 1, "ng-container", 20);
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
@@ -389,7 +425,7 @@ var IasFooterComponent = class _IasFooterComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 67, vars: 5, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [2, "cursor", "pointer", 3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:iascahelpdesk@gmail.com", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "Refund-Cancellation-Policy"], ["routerLink", "Terms-Conditions"], ["routerLink", "Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 67, vars: 5, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [2, "cursor", "pointer", 3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:iasca.helpdesk@zohomail.in", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "Refund-Cancellation-Policy"], ["routerLink", "Terms-Conditions"], ["routerLink", "Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "footer", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
         \u0275\u0275element(5, "img", 5);
@@ -454,7 +490,7 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275text(53, "[+91 9910659965]");
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(54, "a", 32);
-        \u0275\u0275text(55, "[iascahelpdesk@gmail.com]");
+        \u0275\u0275text(55, "[iasca.helpdesk@zohomail.in]");
         \u0275\u0275elementEnd()()()()()()()();
         \u0275\u0275elementStart(56, "div", 33)(57, "div", 34)(58, "p", 35);
         \u0275\u0275text(59, "\xA9 2024 - Indian Administrative Service Central Association. All rights reserved.");
@@ -497,7 +533,7 @@ var AccessibilityHeaderComponent = class _AccessibilityHeaderComponent {
     this.isMirrored = !this.isMirrored;
   }
   sendMail() {
-    window.location.href = "mailto:iascahelpdesk@gmail.com?subject=Help%20Desk%20Support&body=Hello,%0D%0A%0D%0AI am contacting the Help Desk for assistance.%0D%0A%0D%0ARegards,";
+    window.location.href = "mailto:iasca.helpdesk@zohomail.in?subject=Help%20Desk%20Support&body=Hello,%0D%0A%0D%0AI am contacting the Help Desk for assistance.%0D%0A%0D%0ARegards,";
   }
   scrollToContent() {
     const element = document.getElementById("mainContent");
@@ -3136,13 +3172,16 @@ var authGuard = (route, state) => {
     const token = localStorage.getItem("authToken");
     const role = localStorage.getItem("userRole") ? atob(localStorage.getItem("userRole")) : "";
     const status = localStorage.getItem("userStatus") ? atob(localStorage.getItem("userStatus")) : "";
-    const toastService2 = inject(ToastService);
     if (token) {
       const expectedRoles = route.data?.["roles"];
       const expectedStatuses = route.data?.["statuses"];
       if (expectedRoles && !expectedRoles.includes(role)) {
         if (role === "admin" && expectedRoles.includes("user")) {
-          toastService2.showToast("You are logged in as admin. To visit this page, login with member credentials.", "danger");
+          toastService.showToast("You are logged in as admin. Please login with member credentials to access this page.", "danger");
+        } else if (role === "state_association_admin" && expectedRoles.includes("user")) {
+          toastService.showToast("You are logged in as State Association Admin. Please login with member credentials to access this page.", "danger");
+        } else if (role === "user" && expectedRoles.includes("state_association_admin")) {
+          toastService.showToast("You are logged in as a Member. Please login with State Association Admin credentials to access this page.", "danger");
         } else {
           router.navigateByUrl("/unauthorized", { replaceUrl: true });
         }
@@ -3159,7 +3198,7 @@ var authGuard = (route, state) => {
       return true;
     }
     localStorage.setItem("redirectUrl", state.url);
-    toastService2.showToast("To visit this page you need to Login", "success");
+    toastService.showToast("To visit this page, you need to log in.", "success");
     router.navigateByUrl("", { replaceUrl: true });
     return false;
   }
@@ -3190,6 +3229,867 @@ var noAuthGuard = (route, state) => {
   return false;
 };
 
+// src/app/state-website/components/state-header/state-header.component.ts
+var StateHeaderComponent = class _StateHeaderComponent {
+  constructor(toastService, router) {
+    this.toastService = toastService;
+    this.router = router;
+  }
+  goHome() {
+    if (this.router.url === "/homepage") {
+      this.toastService.showToast("You are already on Webpage", "success");
+    } else {
+      this.router.navigateByUrl("/homepage");
+    }
+  }
+  static {
+    this.\u0275fac = function StateHeaderComponent_Factory(t) {
+      return new (t || _StateHeaderComponent)(\u0275\u0275directiveInject(ToastService), \u0275\u0275directiveInject(Router));
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _StateHeaderComponent, selectors: [["app-state-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 38, vars: 0, consts: [[1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], [1, "nav-link"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title", 3, "click"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"]], template: function StateHeaderComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2);
+        \u0275\u0275listener("click", function StateHeaderComponent_Template_div_click_2_listener() {
+          return ctx.goHome();
+        });
+        \u0275\u0275element(3, "img", 3);
+        \u0275\u0275elementStart(4, "h1");
+        \u0275\u0275text(5, "Indian Administrative Service ");
+        \u0275\u0275element(6, "br");
+        \u0275\u0275text(7, "Central Association");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(8, "div", 4)(9, "nav", 5)(10, "div", 6)(11, "button", 7);
+        \u0275\u0275element(12, "span", 8);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(13, "div", 9)(14, "div", 10)(15, "a", 11);
+        \u0275\u0275text(16, "About Us");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(17, "a", 11);
+        \u0275\u0275text(18, "Office Bearers");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(19, "a", 11);
+        \u0275\u0275text(20, "News & Events");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(21, "a", 11);
+        \u0275\u0275text(22, "Gallery");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(23, "div", 12)(24, "div", 13)(25, "h5", 14);
+        \u0275\u0275listener("click", function StateHeaderComponent_Template_h5_click_25_listener() {
+          return ctx.goHome();
+        });
+        \u0275\u0275text(26, "Website");
+        \u0275\u0275elementEnd();
+        \u0275\u0275element(27, "button", 15);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(28, "div", 16)(29, "div", 17)(30, "a", 11);
+        \u0275\u0275text(31, "About Us");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(32, "a", 11);
+        \u0275\u0275text(33, "Office Bearers");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(34, "a", 11);
+        \u0275\u0275text(35, "News & Events");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(36, "a", 11);
+        \u0275\u0275text(37, "Gallery");
+        \u0275\u0275elementEnd()()()()()()()()();
+      }
+    }, dependencies: [CommonModule, RouterModule], styles: ["\n\n.main-ncs-header-div[_ngcontent-%COMP%] {\n  background-color: #fff;\n  padding: 12px 0px;\n  position: sticky;\n  top: 0px;\n  z-index: 10;\n  display: block;\n  box-shadow: 10px 2px 26px -6px black;\n}\n.logo-div[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 5px;\n}\n.logo-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #000;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 22.393px;\n  margin: 0px;\n}\n@media (max-width: 900px) {\n  .logo-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 13px;\n  }\n}\n/*# sourceMappingURL=state-header.component.css.map */"] });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(StateHeaderComponent, { className: "StateHeaderComponent", filePath: "src/app/state-website/components/state-header/state-header.component.ts", lineNumber: 13 });
+})();
+
+// src/app/state-website/components/state-footer/state-footer.component.ts
+var StateFooterComponent = class _StateFooterComponent {
+  constructor() {
+    const today = /* @__PURE__ */ new Date();
+    const formattedDate = today.toLocaleDateString("en-GB");
+    this.finalDate = formattedDate.replace(/\//g, "-");
+  }
+  static {
+    this.\u0275fac = function StateFooterComponent_Factory(t) {
+      return new (t || _StateFooterComponent)();
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _StateFooterComponent, selectors: [["app-state-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 62, vars: 1, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], ["routerLink", "/homepage", 1, "footer-logo"], [1, "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [1, "mb-4"], ["href", "'community'"], ["href", "'membership'"], ["href", "'contact-us'"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52881_3913", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52881_3913)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52881_3903", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52881_3903)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "white"], [1, "texthelp"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:iascahelpdesk@gmail.com", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "Terms-Conditions"], ["routerLink", "Privacy-Policy"]], template: function StateFooterComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "footer", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
+        \u0275\u0275element(5, "img", 5);
+        \u0275\u0275elementStart(6, "p", 6);
+        \u0275\u0275text(7, "Indian Administrative Service ");
+        \u0275\u0275element(8, "br");
+        \u0275\u0275text(9, "Central Association");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(10, "div", 7);
+        \u0275\u0275text(11);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(12, "div", 8)(13, "h4", 9);
+        \u0275\u0275text(14, "Important Links");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(15, "a", 10);
+        \u0275\u0275text(16, "Community");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(17, "a", 11);
+        \u0275\u0275text(18, "Membership");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(19, "a", 12);
+        \u0275\u0275text(20, "Contact Us");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(21, "div", 13)(22, "div", 14)(23, "a", 15);
+        \u0275\u0275element(24, "i", 16);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(25, "a", 17);
+        \u0275\u0275element(26, "i", 18);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(27, "div", 19)(28, "p", 20);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(29, "svg", 21)(30, "mask", 22);
+        \u0275\u0275element(31, "rect", 23);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(32, "g", 24);
+        \u0275\u0275element(33, "path", 25);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(34, "span");
+        \u0275\u0275text(35, "Indian Administrative Service ");
+        \u0275\u0275element(36, "br");
+        \u0275\u0275text(37, "Central Association, New Delhi");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(38, "div", 20);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(39, "svg", 26)(40, "mask", 27);
+        \u0275\u0275element(41, "rect", 28);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(42, "g", 29);
+        \u0275\u0275element(43, "path", 30);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(44, "div");
+        \u0275\u0275text(45, " Need help?");
+        \u0275\u0275elementStart(46, "span", 31);
+        \u0275\u0275text(47, " Contact Help Desk:");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(48, "div", 32)(49, "a", 33);
+        \u0275\u0275text(50, "[+91 9910659965]");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(51, "a", 34);
+        \u0275\u0275text(52, "[iascahelpdesk@gmail.com]");
+        \u0275\u0275elementEnd()()()()()()()();
+        \u0275\u0275elementStart(53, "div", 35)(54, "div", 36)(55, "p", 37);
+        \u0275\u0275text(56, "\xA9 2024 - Indian Administrative Service Central Association. All rights reserved.");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(57, "div", 38)(58, "a", 39);
+        \u0275\u0275text(59, "Terms & Conditions");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(60, "a", 40);
+        \u0275\u0275text(61, "Privacy Policy");
+        \u0275\u0275elementEnd()()()()();
+      }
+      if (rf & 2) {
+        \u0275\u0275advance(11);
+        \u0275\u0275textInterpolate1("Last updated: ", ctx.finalDate, "");
+      }
+    }, dependencies: [RouterLink], styles: ['\n\n.footer[_ngcontent-%COMP%] {\n  background: #000;\n  color: #fff;\n  font-family: "Urbanist", sans-serif;\n}\n.footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: 1.3fr 1.5fr 1fr;\n  gap: 30px;\n  padding: 40px 0px;\n}\n@media (max-width: 1024px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: 1fr;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%] {\n  cursor: pointer;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 80px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .org-name[_ngcontent-%COMP%] {\n  font-weight: 600;\n  margin-top: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .last-updated[_ngcontent-%COMP%] {\n  display: inline-block;\n  background: rgba(255, 255, 255, 0.4);\n  border-radius: 20px;\n  padding: 10px 20px;\n  font-size: 12px;\n  margin-top: 28px;\n}\n.footer[_ngcontent-%COMP%]   .texthelp[_ngcontent-%COMP%] {\n  color: #8f8f8f;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  font-size: 16px;\n  font-weight: 600;\n  margin-bottom: 10px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  display: block;\n  color: inherit;\n  text-decoration: none;\n  margin-bottom: 8px;\n  font-size: 14px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n    justify-content: start;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  background: #ffffff;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #000;\n  font-size: 14px;\n  transition: 0.2s;\n  text-decoration: none;\n  opacity: 0.7;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n  opacity: 1;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%] {\n  margin-top: 15px;\n  font-size: 14px;\n  line-height: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  margin-right: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n  background: #000;\n  color: #fff;\n  font-size: 12px;\n  padding: 15px 0px;\n  flex-wrap: wrap;\n  border-top: 1px solid #ddd;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n    flex-direction: column;\n    gap: 8px;\n    text-align: center;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #fff;\n  text-decoration: none;\n  cursor: pointer;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .needlink[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: rgba(0, 97, 188, 0.92);\n}\n/*# sourceMappingURL=state-footer.component.css.map */'] });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(StateFooterComponent, { className: "StateFooterComponent", filePath: "src/app/state-website/components/state-footer/state-footer.component.ts", lineNumber: 11 });
+})();
+
+// node_modules/ngx-slick-carousel/fesm2022/ngx-slick-carousel.mjs
+var _c02 = ["*"];
+var SlickCarouselComponent = class _SlickCarouselComponent {
+  config;
+  afterChange = output();
+  beforeChange = output();
+  breakpoint = output();
+  destroy = output();
+  init = output();
+  $instance;
+  // access from parent component can be a problem with change detection timing. Please use afterChange output
+  currentIndex = 0;
+  slides = [];
+  initialized = false;
+  _removedSlides = [];
+  _addedSlides = [];
+  el = inject(ElementRef);
+  zone = inject(NgZone);
+  isServer = isPlatformServer(inject(PLATFORM_ID));
+  /**
+   * On component destroy
+   */
+  ngOnDestroy() {
+    this.unslick();
+  }
+  ngAfterViewInit() {
+    this.ngAfterViewChecked();
+  }
+  /**
+   * On component view checked
+   */
+  ngAfterViewChecked() {
+    if (this.isServer) {
+      return;
+    }
+    if (this._addedSlides.length > 0 || this._removedSlides.length > 0) {
+      const nextSlidesLength = this.slides.length - this._removedSlides.length + this._addedSlides.length;
+      if (!this.initialized) {
+        if (nextSlidesLength > 0) {
+          this.initSlick();
+        }
+      } else if (nextSlidesLength === 0) {
+        this.unslick();
+      } else {
+        this._addedSlides.forEach((slickItem) => {
+          this.slides.push(slickItem);
+          this.$instance.slick("slickAdd", slickItem.el.nativeElement);
+        });
+        this._addedSlides = [];
+        this._removedSlides.forEach((slickItem) => {
+          const idx = this.slides.indexOf(slickItem);
+          this.slides = this.slides.filter((s) => s !== slickItem);
+          this.$instance.slick("slickRemove", idx);
+        });
+        this._removedSlides = [];
+      }
+    }
+  }
+  /**
+   * init slick
+   */
+  initSlick() {
+    this.slides = this._addedSlides;
+    this._addedSlides = [];
+    this._removedSlides = [];
+    this.$instance = jQuery(this.el.nativeElement);
+    this.$instance.on("init", (event, slick) => {
+      this.zone.run(() => {
+        this.init.emit({
+          event,
+          slick
+        });
+      });
+    });
+    this.$instance.slick(this.config);
+    this.zone.run(() => {
+      this.initialized = true;
+      this.currentIndex = this.config?.initialSlide || 0;
+    });
+    this.$instance.on("afterChange", (event, slick, currentSlide) => {
+      this.zone.run(() => {
+        this.afterChange.emit({
+          event,
+          slick,
+          currentSlide,
+          first: currentSlide === 0,
+          last: slick.$slides.length === currentSlide + slick.options.slidesToScroll
+        });
+        this.currentIndex = currentSlide;
+      });
+    });
+    this.$instance.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+      this.zone.run(() => {
+        this.beforeChange.emit({
+          event,
+          slick,
+          currentSlide,
+          nextSlide
+        });
+        this.currentIndex = nextSlide;
+      });
+    });
+    this.$instance.on("breakpoint", (event, slick, breakpoint) => {
+      this.zone.run(() => {
+        this.breakpoint.emit({
+          event,
+          slick,
+          breakpoint
+        });
+      });
+    });
+    this.$instance.on("destroy", (event, slick) => {
+      this.zone.run(() => {
+        this.destroy.emit({
+          event,
+          slick
+        });
+        this.initialized = false;
+      });
+    });
+  }
+  addSlide(slickItem) {
+    this._addedSlides.push(slickItem);
+  }
+  removeSlide(slickItem) {
+    this._removedSlides.push(slickItem);
+  }
+  /**
+   * Slick Method
+   */
+  slickGoTo(index) {
+    this.$instance.slick("slickGoTo", index);
+  }
+  slickNext() {
+    this.$instance.slick("slickNext");
+  }
+  slickPrev() {
+    this.$instance.slick("slickPrev");
+  }
+  slickPause() {
+    this.$instance.slick("slickPause");
+  }
+  slickPlay() {
+    this.$instance.slick("slickPlay");
+  }
+  unslick() {
+    if (this.$instance) {
+      this.$instance.slick("unslick");
+      this.$instance = void 0;
+    }
+    this.initialized = false;
+  }
+  ngOnChanges(changes) {
+    if (this.initialized) {
+      const config = changes["config"];
+      if (config.previousValue !== config.currentValue && config.currentValue !== void 0) {
+        const refresh = config.currentValue["refresh"];
+        const newOptions = Object.assign({}, config.currentValue);
+        delete newOptions["refresh"];
+        this.$instance.slick("slickSetOption", newOptions, refresh);
+      }
+    }
+  }
+  /** @nocollapse */
+  static \u0275fac = function SlickCarouselComponent_Factory(t) {
+    return new (t || _SlickCarouselComponent)();
+  };
+  /** @nocollapse */
+  static \u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({
+    type: _SlickCarouselComponent,
+    selectors: [["ngx-slick-carousel"]],
+    inputs: {
+      config: "config"
+    },
+    outputs: {
+      afterChange: "afterChange",
+      beforeChange: "beforeChange",
+      breakpoint: "breakpoint",
+      destroy: "destroy",
+      init: "init"
+    },
+    exportAs: ["slick-carousel"],
+    features: [\u0275\u0275ProvidersFeature([{
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => _SlickCarouselComponent),
+      multi: true
+    }]), \u0275\u0275NgOnChangesFeature],
+    ngContentSelectors: _c02,
+    decls: 1,
+    vars: 0,
+    template: function SlickCarouselComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275projectionDef();
+        \u0275\u0275projection(0);
+      }
+    },
+    encapsulation: 2
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SlickCarouselComponent, [{
+    type: Component,
+    args: [{
+      selector: "ngx-slick-carousel",
+      exportAs: "slick-carousel",
+      providers: [{
+        provide: NG_VALUE_ACCESSOR,
+        useExisting: forwardRef(() => SlickCarouselComponent),
+        multi: true
+      }],
+      template: "<ng-content></ng-content>",
+      standalone: false
+    }]
+  }], null, {
+    config: [{
+      type: Input
+    }]
+  });
+})();
+var SlickItemDirective = class _SlickItemDirective {
+  carousel = inject(SlickCarouselComponent, {
+    host: true
+  });
+  renderer = inject(Renderer2);
+  el = inject(ElementRef);
+  isServer = isPlatformServer(inject(PLATFORM_ID));
+  ngOnInit() {
+    this.carousel.addSlide(this);
+    if (this.isServer && this.carousel.slides.length > 0) {
+      this.renderer.setStyle(this.el, "display", "none");
+    }
+  }
+  ngOnDestroy() {
+    this.carousel.removeSlide(this);
+  }
+  /** @nocollapse */
+  static \u0275fac = function SlickItemDirective_Factory(t) {
+    return new (t || _SlickItemDirective)();
+  };
+  /** @nocollapse */
+  static \u0275dir = /* @__PURE__ */ \u0275\u0275defineDirective({
+    type: _SlickItemDirective,
+    selectors: [["", "ngxSlickItem", ""]]
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SlickItemDirective, [{
+    type: Directive,
+    args: [{
+      selector: "[ngxSlickItem]",
+      standalone: false
+    }]
+  }], null, null);
+})();
+var SlickCarouselModule = class _SlickCarouselModule {
+  /** @nocollapse */
+  static \u0275fac = function SlickCarouselModule_Factory(t) {
+    return new (t || _SlickCarouselModule)();
+  };
+  /** @nocollapse */
+  static \u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({
+    type: _SlickCarouselModule
+  });
+  /** @nocollapse */
+  static \u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({
+    imports: [CommonModule]
+  });
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SlickCarouselModule, [{
+    type: NgModule,
+    args: [{
+      imports: [CommonModule],
+      declarations: [SlickCarouselComponent, SlickItemDirective],
+      exports: [SlickCarouselComponent, SlickItemDirective]
+    }]
+  }], null, null);
+})();
+
+// src/app/state-website/pages/state-landing-page/state-landing-page.component.ts
+function StateLandingPageComponent_app_ias_loader_0_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "app-ias-loader");
+  }
+}
+function StateLandingPageComponent_div_37_div_2_div_2_a_9_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 53);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(1, "svg", 54);
+    \u0275\u0275element(2, "path", 55)(3, "rect", 56);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const bearer_r1 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275property("href", bearer_r1 == null ? null : bearer_r1.facebookUrl, \u0275\u0275sanitizeUrl);
+  }
+}
+function StateLandingPageComponent_div_37_div_2_div_2_a_10_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 53);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(1, "svg", 54)(2, "g", 57);
+    \u0275\u0275element(3, "path", 58)(4, "path", 59);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(5, "defs")(6, "clipPath", 60);
+    \u0275\u0275element(7, "rect", 61);
+    \u0275\u0275elementEnd()()()();
+  }
+  if (rf & 2) {
+    const bearer_r1 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275property("href", bearer_r1 == null ? null : bearer_r1.twitterUrl, \u0275\u0275sanitizeUrl);
+  }
+}
+function StateLandingPageComponent_div_37_div_2_div_2_a_11_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "a", 53);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(1, "svg", 54);
+    \u0275\u0275element(2, "path", 62)(3, "rect", 63);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const bearer_r1 = \u0275\u0275nextContext().$implicit;
+    \u0275\u0275property("href", bearer_r1 == null ? null : bearer_r1.instagramUrl, \u0275\u0275sanitizeUrl);
+  }
+}
+function StateLandingPageComponent_div_37_div_2_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 45)(1, "div", 46)(2, "div", 47);
+    \u0275\u0275element(3, "img", 48);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(4, "h5", 49);
+    \u0275\u0275text(5);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(6, "p", 50);
+    \u0275\u0275text(7);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(8, "div", 51);
+    \u0275\u0275template(9, StateLandingPageComponent_div_37_div_2_div_2_a_9_Template, 4, 1, "a", 52)(10, StateLandingPageComponent_div_37_div_2_div_2_a_10_Template, 8, 1, "a", 52)(11, StateLandingPageComponent_div_37_div_2_div_2_a_11_Template, 4, 1, "a", 52);
+    \u0275\u0275elementEnd()()();
+  }
+  if (rf & 2) {
+    const bearer_r1 = ctx.$implicit;
+    \u0275\u0275advance(3);
+    \u0275\u0275property("src", bearer_r1 == null ? null : bearer_r1.bearerProfilePic, \u0275\u0275sanitizeUrl)("alt", bearer_r1 == null ? null : bearer_r1.bearerName);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(bearer_r1 == null ? null : bearer_r1.bearerName);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(bearer_r1 == null ? null : bearer_r1.bearerDesignation);
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngIf", bearer_r1 == null ? null : bearer_r1.facebookUrl);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", bearer_r1 == null ? null : bearer_r1.twitterUrl);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", bearer_r1 == null ? null : bearer_r1.instagramUrl);
+  }
+}
+function StateLandingPageComponent_div_37_div_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 42)(1, "div", 43);
+    \u0275\u0275template(2, StateLandingPageComponent_div_37_div_2_div_2_Template, 12, 7, "div", 44);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const group_r2 = ctx.$implicit;
+    const i_r3 = ctx.index;
+    \u0275\u0275classProp("active", i_r3 === 0);
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngForOf", group_r2);
+  }
+}
+function StateLandingPageComponent_div_37_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 34)(1, "div", 35);
+    \u0275\u0275template(2, StateLandingPageComponent_div_37_div_2_Template, 3, 3, "div", 36);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "button", 37);
+    \u0275\u0275element(4, "span", 38);
+    \u0275\u0275elementStart(5, "span", 39);
+    \u0275\u0275text(6, "Previous");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(7, "button", 40);
+    \u0275\u0275element(8, "span", 41);
+    \u0275\u0275elementStart(9, "span", 39);
+    \u0275\u0275text(10, "Next");
+    \u0275\u0275elementEnd()()();
+  }
+  if (rf & 2) {
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngForOf", ctx_r3.groupedBearers);
+  }
+}
+function StateLandingPageComponent_ng_template_38_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 64);
+    \u0275\u0275element(1, "img", 65);
+    \u0275\u0275elementStart(2, "p");
+    \u0275\u0275text(3, "Upcoming Office Bearers will be published here.");
+    \u0275\u0275elementEnd()();
+  }
+}
+function StateLandingPageComponent_div_44_div_1_img_5_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275element(0, "img", 74);
+  }
+}
+function StateLandingPageComponent_div_44_div_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 68)(1, "div", 69)(2, "p", 70);
+    \u0275\u0275text(3);
+    \u0275\u0275pipe(4, "date");
+    \u0275\u0275elementEnd();
+    \u0275\u0275template(5, StateLandingPageComponent_div_44_div_1_img_5_Template, 1, 0, "img", 71);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(6, "h6", 72);
+    \u0275\u0275text(7);
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(8, "p", 73);
+    \u0275\u0275text(9);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const item_r5 = ctx.$implicit;
+    \u0275\u0275advance(3);
+    \u0275\u0275textInterpolate1(" Published on: ", \u0275\u0275pipeBind2(4, 4, item_r5 == null ? null : item_r5.eventDate, "dd MMMM yyyy"), " ");
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngIf", item_r5.hasPdf);
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate1(" ", item_r5 == null ? null : item_r5.title, " ");
+    \u0275\u0275advance(2);
+    \u0275\u0275textInterpolate(item_r5 == null ? null : item_r5.description);
+  }
+}
+function StateLandingPageComponent_div_44_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 66);
+    \u0275\u0275template(1, StateLandingPageComponent_div_44_div_1_Template, 10, 7, "div", 67);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("ngForOf", ctx_r3.filteredItems);
+  }
+}
+function StateLandingPageComponent_ng_template_45_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 64);
+    \u0275\u0275element(1, "img", 65);
+    \u0275\u0275elementStart(2, "p");
+    \u0275\u0275text(3, "Upcoming events will be published here.");
+    \u0275\u0275elementEnd()();
+  }
+}
+function StateLandingPageComponent_div_51_div_3_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 77)(1, "div", 78);
+    \u0275\u0275element(2, "img", 79);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const item_r6 = ctx.$implicit;
+    \u0275\u0275advance(2);
+    \u0275\u0275property("src", item_r6.image, \u0275\u0275sanitizeUrl);
+  }
+}
+function StateLandingPageComponent_div_51_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div")(1, "ngx-slick-carousel", 75, 3);
+    \u0275\u0275template(3, StateLandingPageComponent_div_51_div_3_Template, 3, 1, "div", 76);
+    \u0275\u0275elementEnd()();
+  }
+  if (rf & 2) {
+    const ctx_r3 = \u0275\u0275nextContext();
+    \u0275\u0275advance();
+    \u0275\u0275property("config", ctx_r3.galleryslider);
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngForOf", ctx_r3.galleryImages);
+  }
+}
+function StateLandingPageComponent_ng_template_52_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 64);
+    \u0275\u0275element(1, "img", 65);
+    \u0275\u0275elementStart(2, "p");
+    \u0275\u0275text(3, "Upcoming images will be published here.");
+    \u0275\u0275elementEnd()();
+  }
+}
+var StateLandingPageComponent = class _StateLandingPageComponent {
+  constructor(http, router) {
+    this.http = http;
+    this.router = router;
+    this.loading = false;
+    this.loading1 = false;
+    this.loading2 = false;
+    this.officeBearers = [];
+    this.groupedBearers = [];
+    this.galleryImages = [];
+    this.toastMessage = "";
+    this.toastType = "primary";
+    this.activeTab = "event";
+    this.allItems = [];
+    this.galleryslider = {
+      slidesToShow: 3,
+      slidesToScroll: 2,
+      autoplay: true,
+      pauseOnHover: true,
+      speed: 600,
+      dots: true,
+      infinite: true,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+      ]
+    };
+  }
+  ngOnInit() {
+    this.loadData();
+    this.loadNews();
+    this.loadGallery();
+  }
+  loadData() {
+    this.loading = true;
+    this.http.get(`${environment.apiUrl}/state-associations/18`).subscribe((data) => {
+      this.loading = false;
+      this.pageData = data.data?.data?.cadre;
+      this.officeBearers = (this.pageData?.officeBearer || []).filter((item) => item.isActive === true);
+      this.groupItemsByScreenWidth();
+      this.filterItems();
+    }, (error) => {
+      this.loading = false;
+      this.showToast("Something Went Wrong", "danger");
+      this.router.navigateByUrl("/homepage");
+      console.error("Error loading data:", error);
+    });
+  }
+  loadNews() {
+    this.loading1 = true;
+    this.http.get(`${environment.apiUrl}/state-associations/18/news`).subscribe((data) => {
+      this.loading1 = false;
+      this.allItems = (data.data?.data?.latestNewsEvents || []).filter((item) => item.isActive === true);
+      this.filterItems();
+    }, (error) => {
+      this.loading1 = false;
+      this.showToast("New Fatch Failed", "danger");
+      console.error("Error loading data:", error);
+    });
+  }
+  loadGallery() {
+    this.loading2 = true;
+    this.http.get(`${environment.apiUrl}/state-associations/18/gallery`).subscribe((data) => {
+      this.loading2 = false;
+      this.galleryImages = (data.data?.data?.gallery || []).filter((item) => item.isActive === true);
+    }, (error) => {
+      this.loading2 = false;
+      this.showToast("Gallery Fatch Failed", "danger");
+      console.error("Error loading data:", error);
+    });
+  }
+  onResize() {
+    this.groupItemsByScreenWidth();
+  }
+  groupItemsByScreenWidth() {
+    const isMobile = window.innerWidth < 992;
+    const groupSize = isMobile ? 2 : 4;
+    this.groupedBearers = [];
+    for (let i = 0; i < this.officeBearers.length; i += groupSize) {
+      this.groupedBearers.push(this.officeBearers.slice(i, i + groupSize));
+    }
+  }
+  // setTab(tab: 'news' | 'event') {
+  //   this.activeTab = tab;
+  //   this.filterItems();
+  // }
+  filterItems() {
+    this.filteredItems = this.allItems.filter((item) => item.eventType === this.activeTab);
+  }
+  showToast(message, type = "primary") {
+    this.toastMessage = message;
+    this.toastType = type;
+    const toastEl = document.getElementById("liveToast");
+    if (toastEl) {
+      const toast = new bootstrap.Toast(toastEl, { delay: 3e3 });
+      toast.show();
+    }
+  }
+  static {
+    this.\u0275fac = function StateLandingPageComponent_Factory(t) {
+      return new (t || _StateLandingPageComponent)(\u0275\u0275directiveInject(HttpClient), \u0275\u0275directiveInject(Router));
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _StateLandingPageComponent, selectors: [["app-state-landing-page"]], hostBindings: function StateLandingPageComponent_HostBindings(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275listener("resize", function StateLandingPageComponent_resize_HostBindingHandler() {
+          return ctx.onResize();
+        }, false, \u0275\u0275resolveWindow);
+      }
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 55, vars: 14, consts: [["noOffice", ""], ["noEvent", ""], ["noUsers", ""], ["slickModal", "slick-carousel"], [4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "hero-section", "position-relative", "text-white"], [1, "overlay"], [1, "container", "py-5"], [1, "row", "align-items-center"], [1, "col-md-8", "col-12", "text-center", "text-md-start", "mb-4", "mb-md-0"], [1, "fw-normal"], [1, "fw-bold"], [1, "mb-0"], [1, "col-md-4", "text-center"], ["src", "../../../../assets/images/microsite_logo.png", "alt", "IAS Logo", 1, "img-fluid"], [1, "about-section"], [1, "container"], [1, "row", "align-items-center", "justify-content-center"], [1, "col-md-9", "text-center"], [1, "mb-4"], [1, "office-bearers-section"], [1, "mb-5"], ["id", "officeBearersCarousel", "class", "carousel slide", "data-bs-ride", "carousel", "data-bs-interval", "6000", 4, "ngIf", "ngIfElse"], [1, "news-events-section", "py-5"], [1, "container", "py-4"], ["class", "cardsrow", 4, "ngIf", "ngIfElse"], [1, "gallery-section", "py-5"], [1, "section-title", "mb-4", "ps-3"], [4, "ngIf", "ngIfElse"], ["id", "officeBearersCarousel", "data-bs-ride", "carousel", "data-bs-interval", "6000", 1, "carousel", "slide"], [1, "carousel-inner"], ["class", "carousel-item", 3, "active", 4, "ngFor", "ngForOf"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "prev", 1, "carousel-control-prev"], ["aria-hidden", "true", 1, "carousel-control-prev-icon"], [1, "visually-hidden"], ["type", "button", "data-bs-target", "#officeBearersCarousel", "data-bs-slide", "next", 1, "carousel-control-next"], ["aria-hidden", "true", 1, "carousel-control-next-icon"], [1, "carousel-item"], [1, "row"], ["class", "col-lg-3 col-6 mb-4 mb-lg-0", 4, "ngFor", "ngForOf"], [1, "col-lg-3", "col-6", "mb-4", "mb-lg-0"], [1, "bearer-card", "text-center", "mx-auto"], [1, "bearer-img", "mb-3"], [1, "img-fluid", "rounded-circle", "shadow", 3, "src", "alt"], [1, "bearer-name"], [1, "bearer-role", "mb-3"], [1, "social-icons", "d-flex", "justify-content-center", "gap-3"], ["target", "_blank", 3, "href", 4, "ngIf"], ["target", "_blank", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "29", "height", "29", "viewBox", "0 0 29 29", "fill", "none"], ["fill-rule", "evenodd", "clip-rule", "evenodd", "d", "M12.3053 14.5261V19.361C12.3053 19.4313 12.3645 19.4863 12.4401 19.4863H14.371C14.4467 19.4863 14.5059 19.4313 14.5059 19.361V14.4466H15.9072C15.9763 14.4466 16.0355 14.3977 16.0421 14.3305L16.177 12.8512C16.1836 12.7779 16.1211 12.7137 16.0421 12.7137H14.5059V11.6624C14.5059 11.4148 14.7197 11.2162 14.9862 11.2162H16.0651C16.1408 11.2162 16.2 11.1611 16.2 11.0909V9.61163C16.2 9.54134 16.1408 9.48633 16.0651 9.48633H14.2395C13.1704 9.48633 12.302 10.2932 12.302 11.2865V12.7137H11.3349C11.2592 12.7137 11.2 12.7687 11.2 12.839V14.3182C11.2 14.3885 11.2592 14.4435 11.3349 14.4435H12.302V14.523L12.3053 14.5261Z", "fill", "#523AB1"], ["x", "0.699997", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], ["clip-path", "url(#clip0_52831_3220)"], ["d", "M14.2 0.986328C21.6556 0.986328 27.7 7.03075 27.7 14.4863C27.7 21.9419 21.6556 27.9863 14.2 27.9863C6.74444 27.9863 0.700012 21.9419 0.700012 14.4863C0.700012 7.03075 6.74444 0.986328 14.2 0.986328Z", "stroke", "#523AB1"], ["d", "M15.1514 13.7206L18.8741 9.48633H17.9919L14.7595 13.1629L12.1777 9.48633H9.20001L13.1041 15.046L9.20001 19.4863H10.0822L13.4958 15.6037L16.2223 19.4863H19.2L15.1514 13.7206ZM10.4001 10.1362H11.7551L17.9923 18.866H16.6373L10.4001 10.1362Z", "fill", "#523AB1"], ["id", "clip0_52831_3220"], ["width", "28", "height", "28", "fill", "white", "transform", "translate(0.200012 0.486328)"], ["d", "M16.8298 11.3261C16.506 11.3261 16.2408 11.5885 16.2408 11.9151C16.2408 12.2418 16.5032 12.5042 16.8298 12.5042C17.1565 12.5042 17.4189 12.2418 17.4189 11.9151C17.4189 11.5885 17.1565 11.3261 16.8298 11.3261ZM14.2168 12.0798C12.8544 12.0798 11.7461 13.1882 11.7461 14.5505C11.7461 15.9129 12.8544 17.0212 14.2168 17.0212C15.5791 17.0212 16.6874 15.9129 16.6874 14.5505C16.6874 13.1882 15.5791 12.0798 14.2168 12.0798ZM14.2168 16.1335C13.3429 16.1335 12.6339 15.4244 12.6339 14.5505C12.6339 13.6767 13.3429 12.9676 14.2168 12.9676C15.0906 12.9676 15.7997 13.6767 15.7997 14.5505C15.7997 15.4244 15.0906 16.1335 14.2168 16.1335ZM19.2 12.4986C19.2 10.8347 17.8516 9.48633 16.1877 9.48633H12.2123C10.5484 9.48633 9.20001 10.8347 9.20001 12.4986V16.4741C9.20001 18.1379 10.5484 19.4863 12.2123 19.4863H16.1877C17.8516 19.4863 19.2 18.1379 19.2 16.4741V12.4986ZM18.2564 16.4741C18.2564 17.6159 17.3295 18.5427 16.1877 18.5427H12.2123C11.0705 18.5427 10.1436 17.6159 10.1436 16.4741V12.4986C10.1436 11.3568 11.0705 10.4299 12.2123 10.4299H16.1877C17.3295 10.4299 18.2564 11.3568 18.2564 12.4986V16.4741Z", "fill", "#523AB1"], ["x", "0.700012", "y", "0.986328", "width", "27", "height", "27", "rx", "13.5", "stroke", "#523AB1"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center", "nouser", "flex-column"], ["src", "../../../../assets/icons/empty-img-gray.png", "alt", "empty state"], [1, "cardsrow"], ["class", "news-card", 4, "ngFor", "ngForOf"], [1, "news-card"], [1, "d-flex", "align-items-center", "justify-content-between", "gap-3", "mb-3"], [1, "Published", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", "class", "pdf-icon ms-2", 4, "ngIf"], [1, "fw-semibold", "text-primary", "mb-3"], [1, "text-muted", "small", "mb-0"], ["src", "../../../../assets/images/pdf.png", "alt", "PDF", 1, "pdf-icon", "ms-2"], [1, "gallery-slider", 3, "config"], ["ngxSlickItem", "", "class", "px-3", 4, "ngFor", "ngForOf"], ["ngxSlickItem", "", 1, "px-3"], [1, "gallery-card"], [1, "gallery-img", 3, "src"]], template: function StateLandingPageComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275template(0, StateLandingPageComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 4);
+        \u0275\u0275element(1, "app-accessibility-header")(2, "app-state-header");
+        \u0275\u0275elementStart(3, "div", 5)(4, "div", 6)(5, "div", 7)(6, "div", 8);
+        \u0275\u0275text(7);
+        \u0275\u0275elementEnd();
+        \u0275\u0275element(8, "button", 9);
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(9, "main")(10, "section", 10);
+        \u0275\u0275element(11, "div", 11);
+        \u0275\u0275elementStart(12, "div", 12)(13, "div", 13)(14, "div", 14)(15, "h6", 15);
+        \u0275\u0275text(16, "Welcome to");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(17, "h2", 16);
+        \u0275\u0275text(18, "Indian Administrative Service");
+        \u0275\u0275element(19, "br");
+        \u0275\u0275text(20, "Association");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(21, "p", 17);
+        \u0275\u0275text(22);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(23, "div", 18);
+        \u0275\u0275element(24, "img", 19);
+        \u0275\u0275elementEnd()()()();
+        \u0275\u0275elementStart(25, "section", 20)(26, "div", 21)(27, "div", 22)(28, "div", 23)(29, "h3", 24);
+        \u0275\u0275text(30);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(31, "p", 17);
+        \u0275\u0275text(32);
+        \u0275\u0275elementEnd()()()()();
+        \u0275\u0275elementStart(33, "section", 25)(34, "div", 21)(35, "h3", 26);
+        \u0275\u0275text(36, "Office Bearers");
+        \u0275\u0275elementEnd();
+        \u0275\u0275template(37, StateLandingPageComponent_div_37_Template, 11, 1, "div", 27)(38, StateLandingPageComponent_ng_template_38_Template, 4, 0, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(40, "section", 28)(41, "div", 29)(42, "h3", 24);
+        \u0275\u0275text(43, "Latest Events");
+        \u0275\u0275elementEnd();
+        \u0275\u0275template(44, StateLandingPageComponent_div_44_Template, 2, 1, "div", 30)(45, StateLandingPageComponent_ng_template_45_Template, 4, 0, "ng-template", null, 1, \u0275\u0275templateRefExtractor);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(47, "div", 31)(48, "div", 21)(49, "h3", 32);
+        \u0275\u0275text(50, "Gallery");
+        \u0275\u0275elementEnd();
+        \u0275\u0275template(51, StateLandingPageComponent_div_51_Template, 4, 2, "div", 33)(52, StateLandingPageComponent_ng_template_52_Template, 4, 0, "ng-template", null, 2, \u0275\u0275templateRefExtractor);
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275element(54, "app-state-footer");
+      }
+      if (rf & 2) {
+        const noOffice_r7 = \u0275\u0275reference(39);
+        const noEvent_r8 = \u0275\u0275reference(46);
+        const noUsers_r9 = \u0275\u0275reference(53);
+        \u0275\u0275property("ngIf", ctx.loading || ctx.loading1 || ctx.loading2);
+        \u0275\u0275advance(4);
+        \u0275\u0275classMapInterpolate1("toast align-items-center text-bg-", ctx.toastType, " border-0");
+        \u0275\u0275advance(3);
+        \u0275\u0275textInterpolate1(" ", ctx.toastMessage, " ");
+        \u0275\u0275advance(15);
+        \u0275\u0275textInterpolate(ctx.pageData == null ? null : ctx.pageData.name);
+        \u0275\u0275advance(8);
+        \u0275\u0275textInterpolate1(" Indian Administrative Service Association ", ctx.pageData == null ? null : ctx.pageData.name, " ");
+        \u0275\u0275advance(2);
+        \u0275\u0275textInterpolate1(" The IAS Association ", ctx.pageData == null ? null : ctx.pageData.name, " embodies the spirit of the Indian Administrative Service. It promotes excellence, camaraderie, and good governance through welfare initiatives and community outreach, upholding the standards of public service and integrity. ");
+        \u0275\u0275advance(5);
+        \u0275\u0275property("ngIf", ctx.groupedBearers && ctx.groupedBearers.length > 0)("ngIfElse", noOffice_r7);
+        \u0275\u0275advance(7);
+        \u0275\u0275property("ngIf", ctx.filteredItems && ctx.filteredItems.length > 0)("ngIfElse", noEvent_r8);
+        \u0275\u0275advance(7);
+        \u0275\u0275property("ngIf", ctx.galleryImages && ctx.galleryImages.length > 0)("ngIfElse", noUsers_r9);
+      }
+    }, dependencies: [StateHeaderComponent, StateFooterComponent, AccessibilityHeaderComponent, CommonModule, NgForOf, NgIf, DatePipe, SlickCarouselModule, SlickCarouselComponent, SlickItemDirective, IasLoaderComponent], styles: ['\n\n.hero-section[_ngcontent-%COMP%] {\n  background: url("./media/state-banner.png") center center/cover no-repeat;\n  position: relative;\n  min-height: 500px;\n  display: flex;\n  align-items: center;\n  overflow: hidden;\n}\n.hero-section[_ngcontent-%COMP%]   .overlay[_ngcontent-%COMP%] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background:\n    linear-gradient(\n      115deg,\n      rgba(0, 0, 0, 0.6) 30%,\n      rgba(0, 0, 0, 0.6) 100%);\n  z-index: 1;\n}\n.hero-section[_ngcontent-%COMP%]   .container[_ngcontent-%COMP%] {\n  position: relative;\n  z-index: 2;\n}\n.hero-section[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 32px;\n  font-style: normal;\n  font-weight: 700;\n  line-height: normal;\n}\n.hero-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 48px;\n  font-style: normal;\n  font-weight: 700;\n  line-height: normal;\n}\n.hero-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #fff;\n  font-family: Urbanist;\n  font-size: 24px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 150%;\n}\n@media (max-width: 768px) {\n  .hero-section[_ngcontent-%COMP%] {\n    text-align: center;\n    padding: 2rem 1rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   .row[_ngcontent-%COMP%] {\n    flex-direction: column-reverse;\n  }\n  .hero-logo[_ngcontent-%COMP%] {\n    max-width: 140px;\n    margin-bottom: 3rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   h2[_ngcontent-%COMP%] {\n    font-size: 1.6rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n    margin-top: 30px;\n    font-size: 1.2rem;\n  }\n  .hero-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 1rem;\n  }\n}\n.about-section[_ngcontent-%COMP%] {\n  padding: 120px 0;\n}\n.about-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523AB1;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.about-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #21242c;\n  font-family: Urbanist;\n  font-size: 20px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 36px;\n  letter-spacing: -0.1px;\n}\n@media (max-width: 1000px) {\n  .about-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n    font-size: 24px;\n  }\n  .about-section[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n}\n.office-bearers-section[_ngcontent-%COMP%] {\n  background-color: #fff;\n  margin-bottom: 100px;\n}\n.office-bearers-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.section-title[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-weight: 600;\n}\n.bearer-card[_ngcontent-%COMP%] {\n  max-width: 260px;\n}\n.bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 180px;\n  height: 180px;\n  object-fit: cover;\n  border: 5px solid #fff;\n  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);\n  transition: transform 0.5s ease;\n}\n.bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%]:hover {\n  transform: scale(1.05);\n  transform-origin: top;\n}\n.bearer-name[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-weight: 600;\n  margin-bottom: 0.3rem;\n}\n.bearer-role[_ngcontent-%COMP%] {\n  color: #666;\n  font-size: 0.95rem;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #4636d9;\n  font-size: 1.1rem;\n  transition: color 0.3s ease;\n}\n.social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  color: #231f77;\n}\n.carousel-control-prev-icon[_ngcontent-%COMP%], .carousel-control-next-icon[_ngcontent-%COMP%] {\n  filter: invert(0.4);\n}\n#officeBearersCarousel[_ngcontent-%COMP%] {\n  padding: 0 4rem;\n}\n#officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-next[_ngcontent-%COMP%], #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-prev[_ngcontent-%COMP%] {\n  width: 3%;\n}\n@media (max-width: 768px) {\n  .bearer-img[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n    width: 120px;\n    height: 120px;\n  }\n  #officeBearersCarousel[_ngcontent-%COMP%] {\n    padding: 0 1rem;\n  }\n  #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-next[_ngcontent-%COMP%], #officeBearersCarousel[_ngcontent-%COMP%]   .carousel-control-prev[_ngcontent-%COMP%] {\n    width: 6%;\n  }\n}\n.news-events-section[_ngcontent-%COMP%] {\n  background-color: #f0edff;\n}\n.news-events-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.btn[_ngcontent-%COMP%] {\n  border-radius: 25px;\n  padding: 0.4rem 1.2rem;\n  font-weight: 500;\n}\n.tabbtn[_ngcontent-%COMP%] {\n  border-radius: 40px;\n  border: 1px solid #523ab1;\n  background: #fff;\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 20px;\n  letter-spacing: 0.1px;\n  padding: 8px 16px;\n}\n.tabactive[_ngcontent-%COMP%] {\n  border-radius: 40px;\n  border: 1px solid #e2e2e2;\n  background: #523ab1;\n  color: #fff;\n  transition: all 0.3s ease;\n}\n.cardsrow[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n  position: relative;\n  width: 100%;\n  overflow-x: auto;\n}\n.news-card[_ngcontent-%COMP%] {\n  min-width: 350px;\n  border-radius: 16px;\n  padding: 24px;\n  background: #fff;\n}\n.news-card[_ngcontent-%COMP%]   h6[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 18px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n.news-card[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  overflow: hidden;\n  color: #61646b;\n  text-overflow: ellipsis;\n  display: -webkit-box;\n  -webkit-line-clamp: 2;\n  -webkit-box-orient: vertical;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 20px;\n  letter-spacing: 0.07px;\n}\n.pdf-icon[_ngcontent-%COMP%] {\n  width: 22px;\n  height: 22px;\n}\n.Published[_ngcontent-%COMP%] {\n  color: #212121;\n  font-family: Urbanist;\n  font-size: 12px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 20px;\n  letter-spacing: 0.06px;\n}\n@media (max-width: 768px) {\n  .news-card[_ngcontent-%COMP%] {\n    min-width: 250px;\n    border-radius: 12px;\n    padding: 12px;\n  }\n}\n.gallery-section[_ngcontent-%COMP%] {\n  background-color: #fff;\n  margin-bottom: 60px 0 80px 0;\n}\n.gallery-section[_ngcontent-%COMP%]   h3[_ngcontent-%COMP%] {\n  color: #523ab1;\n  font-family: Urbanist;\n  font-size: 40px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: normal;\n}\n.gallery-section[_ngcontent-%COMP%]   .gallery-img[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 230px;\n  object-fit: cover;\n  border-radius: 8px;\n}\n.gallery-section[_ngcontent-%COMP%]     .slick-dots {\n  bottom: -40px;\n}\n.gallery-section[_ngcontent-%COMP%]     .slick-dots li button:before {\n  font-size: 16px;\n}\n/*# sourceMappingURL=state-landing-page.component.css.map */'] });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(StateLandingPageComponent, { className: "StateLandingPageComponent", filePath: "src/app/state-website/pages/state-landing-page/state-landing-page.component.ts", lineNumber: 19 });
+})();
+
 // src/app/app.routes.ts
 var routes = [
   {
@@ -3200,7 +4100,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HWVINI5I.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-IKERVPSR.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -3210,7 +4110,7 @@ var routes = [
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-NHUUVCKL.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-DCKHVXLH.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
@@ -3225,7 +4125,7 @@ var routes = [
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HLTH6TQZ.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-IRHCMCNH.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -3264,7 +4164,7 @@ var routes = [
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-MAK4NKBT.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-C6LYDN3V.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
@@ -3274,12 +4174,12 @@ var routes = [
       {
         path: "Terms-Conditions",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6P2IZOAE.js").then((m) => m.TermsConditionsComponent)
+        loadComponent: () => import("./chunk-43VP3RFG.js").then((m) => m.TermsConditionsComponent)
       },
       {
         path: "Refund-Cancellation-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-CLHFFME3.js").then((m) => m.RefundCancellationPolicyComponent)
+        loadComponent: () => import("./chunk-VSL73547.js").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
         path: "Privacy-Policy",
@@ -3287,6 +4187,12 @@ var routes = [
         loadComponent: () => import("./chunk-KAWZNUX5.js").then((m) => m.PrivacyPolicyComponent)
       }
     ]
+  },
+  {
+    path: "microsite",
+    canActivate: [authGuard],
+    // loadChildren: () => import('../app/state-website/pages/state-landing-page/state-landing-page.component').then(m => m.StateLandingPageComponent),
+    component: StateLandingPageComponent
   },
   {
     path: "",
@@ -3307,51 +4213,51 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-OIU4PJO5.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-OE3HUSDY.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-3SPUOEFZ.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-I7GXVTGE.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-QISEUZ6D.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-ZOEXVPU2.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-LSAQ73XI.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-4YIN7QT2.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-WR7HS435.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-3KQM5VLJ.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-AFKTWJAW.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-273GW6UV.js").then((m) => m.NewsComponent)
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-M42AFKVM.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-KCW57OXB.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-UZV4T4EJ.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-YIQ4CYNX.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-JEYJSTZU.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-TKGLAJJQ.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-BW4LNCR7.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-5Z5V7ED6.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-IHIEKVU5.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-M52SUS6I.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-F5JZE7RU.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-3LR3NYUO.js").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",
@@ -3363,15 +4269,15 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-YY4ZHXCK.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-COJMN2MI.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-D4HPWTM4.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-S22ZSWAG.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-Z5IJXA7M.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-J77BGD6T.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
@@ -3383,7 +4289,7 @@ var routes = [
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-AWOJ5RKS.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-74QB4MGC.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
@@ -3392,6 +4298,34 @@ var routes = [
       {
         path: "payment-status",
         loadComponent: () => import("./chunk-JNQU5RKP.js").then((m) => m.PaymentStatusComponent)
+      }
+    ]
+  },
+  {
+    path: "state-dashboard",
+    canActivate: [authGuard],
+    data: { roles: ["state_association_admin"], statuses: ["approved"] },
+    loadComponent: () => import("./chunk-MR2H7LWI.js").then((m) => m.StateDashboardLayoutComponent),
+    children: [
+      {
+        path: "",
+        loadComponent: () => import("./chunk-UBNQI6DS.js").then((m) => m.StateAboutUsComponent)
+      },
+      {
+        path: "state-news",
+        loadComponent: () => import("./chunk-RA32M2B2.js").then((m) => m.StateNewsComponent)
+      },
+      {
+        path: "state-events",
+        loadComponent: () => import("./chunk-WFC3Y4WE.js").then((m) => m.StateEventsComponent)
+      },
+      {
+        path: "state-office-bearers",
+        loadComponent: () => import("./chunk-TQX4IOZA.js").then((m) => m.StateOfficeBearersComponent)
+      },
+      {
+        path: "state-gallery",
+        loadComponent: () => import("./chunk-GQO4AOKH.js").then((m) => m.StateGalleryComponent)
       }
     ]
   },
@@ -3690,7 +4624,7 @@ var appConfig = {
 };
 
 // src/app/common/common-toast/common-toast.component.ts
-var _c02 = ["errorToast"];
+var _c03 = ["errorToast"];
 var CommonToastComponent = class _CommonToastComponent {
   constructor(toastService) {
     this.toastService = toastService;
@@ -3714,7 +4648,7 @@ var CommonToastComponent = class _CommonToastComponent {
   static {
     this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _CommonToastComponent, selectors: [["app-common-toast"]], viewQuery: function CommonToastComponent_Query(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275viewQuery(_c02, 7);
+        \u0275\u0275viewQuery(_c03, 7);
       }
       if (rf & 2) {
         let _t;
