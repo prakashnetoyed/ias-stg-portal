@@ -138,4 +138,4 @@ var IasAboutusComponent = class _IasAboutusComponent {
 export {
   IasAboutusComponent
 };
-//# sourceMappingURL=chunk-VNN6JC5H.mjs.map
+//# sourceMappingURL=chunk-2UN7YWHY.mjs.map

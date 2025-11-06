@@ -147,10 +147,10 @@ import "./chunk-ASLTLD6L.js";
 
 // src/app/common/ias-header/ias-header.component.ts
 var _c0 = () => ({ exact: true });
-function IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_52_div_1_ng_container_3_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275element(1, "img", 29);
+    \u0275\u0275element(1, "img", 37);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -159,7 +159,7 @@ function IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template(rf, ct
     \u0275\u0275property("src", ctx_r1.userRole === "admin" || ctx_r1.userRole === "state_association_admin" ? ctx_r1.user == null ? null : ctx_r1.user.profilePic : ctx_r1.user == null ? null : ctx_r1.user.doptOfficer == null ? null : ctx_r1.user.doptOfficer.profilePic, \u0275\u0275sanitizeUrl);
   }
 }
-function IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_52_div_1_ng_template_4_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275text(0);
   }
@@ -168,13 +168,13 @@ function IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template(rf, ctx
     \u0275\u0275textInterpolate1(" ", ctx_r1.getUserInitials(), " ");
   }
 }
-function IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_52_div_1_ng_container_7_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "li")(2, "a", 30);
+    \u0275\u0275elementStart(1, "li")(2, "a", 20);
     \u0275\u0275text(3, "Admin Profile");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(4, "li")(5, "a", 30);
+    \u0275\u0275elementStart(4, "li")(5, "a", 20);
     \u0275\u0275text(6, "Admin Dashboard");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementContainerEnd();
@@ -186,10 +186,10 @@ function IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template(rf, ct
     \u0275\u0275property("routerLink", "/home");
   }
 }
-function IasHeaderComponent_ng_container_38_div_1_ng_container_8_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_52_div_1_ng_container_8_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "li")(2, "a", 30);
+    \u0275\u0275elementStart(1, "li")(2, "a", 20);
     \u0275\u0275text(3, "State Admin Dashboard");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementContainerEnd();
@@ -199,13 +199,13 @@ function IasHeaderComponent_ng_container_38_div_1_ng_container_8_Template(rf, ct
     \u0275\u0275property("routerLink", "/state-dashboard");
   }
 }
-function IasHeaderComponent_ng_container_38_div_1_ng_container_9_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_52_div_1_ng_container_9_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "li")(2, "a", 30);
+    \u0275\u0275elementStart(1, "li")(2, "a", 20);
     \u0275\u0275text(3, "User Profile");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(4, "li")(5, "a", 30);
+    \u0275\u0275elementStart(4, "li")(5, "a", 20);
     \u0275\u0275text(6, "User Dashboard");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementContainerEnd();
@@ -217,19 +217,19 @@ function IasHeaderComponent_ng_container_38_div_1_ng_container_9_Template(rf, ct
     \u0275\u0275property("routerLink", "/user-home");
   }
 }
-function IasHeaderComponent_ng_container_38_div_1_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_52_div_1_Template(rf, ctx) {
   if (rf & 1) {
     const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 22)(1, "button", 23)(2, "div", 24);
-    \u0275\u0275template(3, IasHeaderComponent_ng_container_38_div_1_ng_container_3_Template, 2, 1, "ng-container", 25)(4, IasHeaderComponent_ng_container_38_div_1_ng_template_4_Template, 1, 1, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
+    \u0275\u0275elementStart(0, "div", 30)(1, "button", 31)(2, "div", 32);
+    \u0275\u0275template(3, IasHeaderComponent_ng_container_52_div_1_ng_container_3_Template, 2, 1, "ng-container", 33)(4, IasHeaderComponent_ng_container_52_div_1_ng_template_4_Template, 1, 1, "ng-template", null, 0, \u0275\u0275templateRefExtractor);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(6, "ul", 26);
-    \u0275\u0275template(7, IasHeaderComponent_ng_container_38_div_1_ng_container_7_Template, 7, 2, "ng-container", 20)(8, IasHeaderComponent_ng_container_38_div_1_ng_container_8_Template, 4, 1, "ng-container", 20)(9, IasHeaderComponent_ng_container_38_div_1_ng_container_9_Template, 7, 2, "ng-container", 20);
+    \u0275\u0275elementStart(6, "ul", 34);
+    \u0275\u0275template(7, IasHeaderComponent_ng_container_52_div_1_ng_container_7_Template, 7, 2, "ng-container", 28)(8, IasHeaderComponent_ng_container_52_div_1_ng_container_8_Template, 4, 1, "ng-container", 28)(9, IasHeaderComponent_ng_container_52_div_1_ng_container_9_Template, 7, 2, "ng-container", 28);
     \u0275\u0275elementStart(10, "li");
-    \u0275\u0275element(11, "hr", 27);
+    \u0275\u0275element(11, "hr", 35);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(12, "li")(13, "a", 28);
-    \u0275\u0275listener("click", function IasHeaderComponent_ng_container_38_div_1_Template_a_click_13_listener() {
+    \u0275\u0275elementStart(12, "li")(13, "a", 36);
+    \u0275\u0275listener("click", function IasHeaderComponent_ng_container_52_div_1_Template_a_click_13_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.logout());
@@ -250,10 +250,10 @@ function IasHeaderComponent_ng_container_38_div_1_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ctx_r1.userRole === "user");
   }
 }
-function IasHeaderComponent_ng_container_38_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_52_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275template(1, IasHeaderComponent_ng_container_38_div_1_Template, 15, 5, "div", 21);
+    \u0275\u0275template(1, IasHeaderComponent_ng_container_52_div_1_Template, 15, 5, "div", 29);
     \u0275\u0275elementContainerEnd();
   }
   if (rf & 2) {
@@ -262,10 +262,10 @@ function IasHeaderComponent_ng_container_38_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ctx_r1.isLoggedIn);
   }
 }
-function IasHeaderComponent_ng_container_39_Template(rf, ctx) {
+function IasHeaderComponent_ng_container_53_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementContainerStart(0);
-    \u0275\u0275elementStart(1, "button", 31);
+    \u0275\u0275elementStart(1, "button", 38);
     \u0275\u0275text(2, "Log in / Sign up");
     \u0275\u0275elementEnd();
     \u0275\u0275elementContainerEnd();
@@ -339,7 +339,7 @@ var IasHeaderComponent = class _IasHeaderComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 40, vars: 26, consts: [["initials", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], ["class", "dropdown", 4, "ngIf"], [1, "dropdown"], ["type", "button", "id", "profileDropdown", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "dropdown-toggle", "user-profile", "d-flex", "align-items-center", "p-0"], [1, "avatar"], [4, "ngIf", "ngIfElse"], ["aria-labelledby", "profileDropdown", 1, "dropdown-menu", "dropdown-menu-end"], [1, "dropdown-divider"], [1, "dropdown-item", "text-danger", 2, "cursor", "pointer", 3, "click"], ["alt", "User Avatar", 3, "src"], [1, "dropdown-item", 3, "routerLink"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHeaderComponent, selectors: [["app-ias-header"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 54, vars: 28, consts: [["initials", ""], [1, "main-ncs-header-div"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "logo-div", 2, "cursor", "pointer", 3, "click"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "ias-logo", "draggable", "false"], [1, "navigationmenu", "d-flex", "align-items-center"], [1, "navbar", "navbar-expand-lg"], [1, "container-fluid"], ["type", "button", "data-bs-toggle", "offcanvas", "data-bs-target", "#offcanvasNavbar", "aria-controls", "offcanvasNavbar", 1, "navbar-toggler"], [1, "navbar-toggler-icon"], ["id", "navbarNavAltMarkup", 1, "collapse", "navbar-collapse", "d-none", "d-lg-flex"], [1, "navbar-nav", "ms-auto"], ["routerLinkActive", "active-link", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [1, "nav-item", "dropdown"], ["data-bs-toggle", "dropdown", "aria-expanded", "false", "id", "dropdownMenuButton", 1, "d-flex", "align-items-center", "text-decoration-none", "nav-link"], [1, "me-2"], [1, "arrow-icon"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "10", "fill", "none"], ["d", "M12.6 0.8L14 2.2 7 9.2 0 2.2 1.4 0.8 7 6.375 12.6 0.8Z", "fill", "#222"], ["aria-labelledby", "dropdownMenuButton", 1, "dropdown-menu", "dropdown-menu-dark"], [1, "dropdown-item", 3, "routerLink"], ["tabindex", "-1", "id", "offcanvasNavbar", "aria-labelledby", "offcanvasNavbarLabel", 1, "offcanvas", "offcanvas-start", "d-lg-none"], [1, "offcanvas-header"], ["id", "offcanvasNavbarLabel", 1, "offcanvas-title"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "navbar-nav"], ["routerLinkActive", "active-link", "data-bs-dismiss", "offcanvas", 1, "nav-link", 3, "routerLink", "routerLinkActiveOptions"], [4, "ngIf"], ["class", "dropdown", 4, "ngIf"], [1, "dropdown"], ["type", "button", "id", "profileDropdown", "data-bs-toggle", "dropdown", "aria-expanded", "false", 1, "btn", "dropdown-toggle", "user-profile", "d-flex", "align-items-center", "p-0"], [1, "avatar"], [4, "ngIf", "ngIfElse"], ["aria-labelledby", "profileDropdown", 1, "dropdown-menu", "dropdown-menu-end"], [1, "dropdown-divider"], [1, "dropdown-item", "text-danger", 2, "cursor", "pointer", 3, "click"], ["alt", "User Avatar", 3, "src"], [1, "btn", "btn-prime", 3, "routerLink"]], template: function IasHeaderComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 1)(1, "div", 2)(2, "div", 3);
         \u0275\u0275listener("click", function IasHeaderComponent_Template_div_click_2_listener() {
@@ -360,49 +360,68 @@ var IasHeaderComponent = class _IasHeaderComponent {
         \u0275\u0275elementStart(17, "a", 12);
         \u0275\u0275text(18, "Community");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(19, "a", 12);
-        \u0275\u0275text(20, "News");
+        \u0275\u0275elementStart(19, "li", 13)(20, "a", 14)(21, "span", 15);
+        \u0275\u0275text(22, "Resources");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(21, "a", 12);
-        \u0275\u0275text(22, "Contact us");
+        \u0275\u0275elementStart(23, "i", 16);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(24, "svg", 17);
+        \u0275\u0275element(25, "path", 18);
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(23, "div", 13)(24, "div", 14)(25, "h5", 15);
-        \u0275\u0275text(26, "Menu");
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(26, "ul", 19)(27, "li")(28, "a", 20);
+        \u0275\u0275text(29, "News & Blogs");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(30, "li")(31, "a", 20);
+        \u0275\u0275text(32, "Good Governance Initiatives");
+        \u0275\u0275elementEnd()()()();
+        \u0275\u0275elementStart(33, "a", 12);
+        \u0275\u0275text(34, "Contact us");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(35, "div", 21)(36, "div", 22)(37, "h5", 23);
+        \u0275\u0275text(38, "Menu");
         \u0275\u0275elementEnd();
-        \u0275\u0275element(27, "button", 16);
+        \u0275\u0275element(39, "button", 24);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(28, "div", 17)(29, "div", 18)(30, "a", 19);
-        \u0275\u0275text(31, "Membership");
+        \u0275\u0275elementStart(40, "div", 25)(41, "div", 26)(42, "a", 27);
+        \u0275\u0275text(43, "Membership");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(32, "a", 19);
-        \u0275\u0275text(33, "Community");
+        \u0275\u0275elementStart(44, "a", 27);
+        \u0275\u0275text(45, "Community");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(34, "a", 19);
-        \u0275\u0275text(35, "News");
+        \u0275\u0275elementStart(46, "a", 27);
+        \u0275\u0275text(47, "News");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(36, "a", 19);
-        \u0275\u0275text(37, "Contact us");
+        \u0275\u0275elementStart(48, "a", 27);
+        \u0275\u0275text(49, "Good Governance Initiatives");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(50, "a", 27);
+        \u0275\u0275text(51, "Contact us");
         \u0275\u0275elementEnd()()()()()();
-        \u0275\u0275template(38, IasHeaderComponent_ng_container_38_Template, 2, 1, "ng-container", 20)(39, IasHeaderComponent_ng_container_39_Template, 3, 1, "ng-container", 20);
+        \u0275\u0275template(52, IasHeaderComponent_ng_container_52_Template, 2, 1, "ng-container", 28)(53, IasHeaderComponent_ng_container_53_Template, 3, 1, "ng-container", 28);
         \u0275\u0275elementEnd()()();
       }
       if (rf & 2) {
         \u0275\u0275advance(15);
-        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(18, _c0));
+        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(20, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(19, _c0));
+        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c0));
+        \u0275\u0275advance(11);
+        \u0275\u0275property("routerLink", "news-blogs");
+        \u0275\u0275advance(3);
+        \u0275\u0275property("routerLink", "good-governance-initiatives");
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(20, _c0));
-        \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(21, _c0));
+        \u0275\u0275property("routerLink", "contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c0));
         \u0275\u0275advance(9);
-        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(22, _c0));
+        \u0275\u0275property("routerLink", "membership")("routerLinkActiveOptions", \u0275\u0275pureFunction0(23, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(23, _c0));
+        \u0275\u0275property("routerLink", "community")("routerLinkActiveOptions", \u0275\u0275pureFunction0(24, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(24, _c0));
+        \u0275\u0275property("routerLink", "news-blogs")("routerLinkActiveOptions", \u0275\u0275pureFunction0(25, _c0));
         \u0275\u0275advance(2);
-        \u0275\u0275property("routerLink", "contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(25, _c0));
+        \u0275\u0275property("routerLink", "good-governance-initiatives")("routerLinkActiveOptions", \u0275\u0275pureFunction0(26, _c0));
+        \u0275\u0275advance(2);
+        \u0275\u0275property("routerLink", "contact-us")("routerLinkActiveOptions", \u0275\u0275pureFunction0(27, _c0));
         \u0275\u0275advance(2);
         \u0275\u0275property("ngIf", ctx.isLoggedIn && ctx.isLoggedIn !== null);
         \u0275\u0275advance();
@@ -428,7 +447,7 @@ var IasFooterComponent = class _IasFooterComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 67, vars: 5, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [2, "cursor", "pointer", 3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:iasca.helpdesk@zohomail.in", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "Refund-Cancellation-Policy"], ["routerLink", "Terms-Conditions"], ["routerLink", "Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasFooterComponent, selectors: [["app-ias-footer"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 71, vars: 6, consts: [[1, "footer"], [1, "container"], [1, "footer-top"], [1, "footer-logo"], [1, "sbvhs", "d-flex", "align-items-center", "gap-2"], ["src", "../../../assets/logo/ias-small-logo.png", "alt", "IAS Association Logo"], [1, "org-name", "m-0", "p-0"], [1, "last-updated"], [1, "footer-links"], [3, "routerLink"], [1, "footer-contact"], [1, "social-icons"], ["href", "https://x.com/iasassociation", "target", "_blank"], [1, "fab", "fa-x-twitter"], ["href", "https://www.facebook.com/IASassociation/", "target", "_blank"], [1, "fab", "fa-facebook-f"], [1, "contact-info"], [1, "d-flex", "gap-2"], ["xmlns", "http://www.w3.org/2000/svg", "width", "17", "height", "18", "viewBox", "0 0 17 18", "fill", "none"], ["id", "mask0_52081_3854", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "17", "height", "18", 2, "mask-type", "alpha"], ["width", "17", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3854)"], ["d", "M8.50742 9C8.92164 9 9.27624 8.85313 9.57121 8.55938C9.86618 8.26563 10.0137 7.9125 10.0137 7.5C10.0137 7.0875 9.86618 6.73438 9.57121 6.44063C9.27624 6.14687 8.92164 6 8.50742 6C8.0932 6 7.73861 6.14687 7.44363 6.44063C7.14866 6.73438 7.00117 7.0875 7.00117 7.5C7.00117 7.9125 7.14866 8.26563 7.44363 8.55938C7.73861 8.85313 8.0932 9 8.50742 9ZM8.50742 14.5125C10.0388 13.1125 11.1747 11.8406 11.9153 10.6969C12.6559 9.55312 13.0262 8.5375 13.0262 7.65C13.0262 6.2875 12.59 5.17188 11.7176 4.30312C10.8452 3.43438 9.77518 3 8.50742 3C7.23966 3 6.1696 3.43438 5.29723 4.30312C4.42486 5.17188 3.98867 6.2875 3.98867 7.65C3.98867 8.5375 4.35896 9.55312 5.09953 10.6969C5.8401 11.8406 6.97607 13.1125 8.50742 14.5125ZM8.50742 16.5C6.48654 14.7875 4.97715 13.1969 3.97926 11.7281C2.98137 10.2594 2.48242 8.9 2.48242 7.65C2.48242 5.775 3.08806 4.28125 4.29934 3.16875C5.51061 2.05625 6.91331 1.5 8.50742 1.5C10.1015 1.5 11.5042 2.05625 12.7155 3.16875C13.9268 4.28125 14.5324 5.775 14.5324 7.65C14.5324 8.9 14.0335 10.2594 13.0356 11.7281C12.0377 13.1969 10.5283 14.7875 8.50742 16.5Z", "fill", "#1C1B1F"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "18", "viewBox", "0 0 18 18", "fill", "none"], ["id", "mask0_52081_3844", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "18", "height", "18", 2, "mask-type", "alpha"], ["width", "18", "height", "18", "fill", "#D9D9D9"], ["mask", "url(#mask0_52081_3844)"], ["d", "M8.25 12.75H9.75V8.25H8.25V12.75ZM9 6.75C9.2125 6.75 9.39063 6.67812 9.53438 6.53438C9.67813 6.39062 9.75 6.2125 9.75 6C9.75 5.7875 9.67813 5.60938 9.53438 5.46562C9.39063 5.32187 9.2125 5.25 9 5.25C8.7875 5.25 8.60938 5.32187 8.46563 5.46562C8.32188 5.60938 8.25 5.7875 8.25 6C8.25 6.2125 8.32188 6.39062 8.46563 6.53438C8.60938 6.67812 8.7875 6.75 9 6.75ZM9 16.5C7.9625 16.5 6.9875 16.3031 6.075 15.9094C5.1625 15.5156 4.36875 14.9813 3.69375 14.3063C3.01875 13.6313 2.48438 12.8375 2.09063 11.925C1.69687 11.0125 1.5 10.0375 1.5 9C1.5 7.9625 1.69687 6.9875 2.09063 6.075C2.48438 5.1625 3.01875 4.36875 3.69375 3.69375C4.36875 3.01875 5.1625 2.48438 6.075 2.09063C6.9875 1.69687 7.9625 1.5 9 1.5C10.0375 1.5 11.0125 1.69687 11.925 2.09063C12.8375 2.48438 13.6313 3.01875 14.3063 3.69375C14.9813 4.36875 15.5156 5.1625 15.9094 6.075C16.3031 6.9875 16.5 7.9625 16.5 9C16.5 10.0375 16.3031 11.0125 15.9094 11.925C15.5156 12.8375 14.9813 13.6313 14.3063 14.3063C13.6313 14.9813 12.8375 15.5156 11.925 15.9094C11.0125 16.3031 10.0375 16.5 9 16.5ZM9 15C10.675 15 12.0938 14.4187 13.2563 13.2563C14.4187 12.0938 15 10.675 15 9C15 7.325 14.4187 5.90625 13.2563 4.74375C12.0938 3.58125 10.675 3 9 3C7.325 3 5.90625 3.58125 4.74375 4.74375C3.58125 5.90625 3 7.325 3 9C3 10.675 3.58125 12.0938 4.74375 13.2563C5.90625 14.4187 7.325 15 9 15Z", "fill", "#1C1B1F"], [1, "text-muted"], [1, "mt-2", "needlink"], ["href", "tel:+919876543210", 1, "d-block", "text-primary"], ["href", "mailto:iasca.helpdesk@zohomail.in", 1, "d-block", "text-primary"], [1, "footer-bottom"], [1, "container", "d-flex", "align-items-center", "justify-content-between"], [1, "m-0"], [1, "footer-policies"], ["routerLink", "Refund-Cancellation-Policy"], ["routerLink", "Terms-Conditions"], ["routerLink", "Privacy-Policy"]], template: function IasFooterComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "footer", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
         \u0275\u0275element(5, "img", 5);
@@ -452,60 +471,66 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275elementStart(19, "a", 9);
         \u0275\u0275text(20, "Contact Us");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(21, "div", 8)(22, "h4", 10);
-        \u0275\u0275text(23, "News");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(24, "div", 11)(25, "div", 12)(26, "a", 13);
-        \u0275\u0275element(27, "i", 14);
+        \u0275\u0275elementStart(21, "div", 8)(22, "h4");
+        \u0275\u0275text(23, "Resources");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(28, "a", 15);
-        \u0275\u0275element(29, "i", 16);
+        \u0275\u0275elementStart(24, "a", 9);
+        \u0275\u0275text(25, "News");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(26, "a", 9);
+        \u0275\u0275text(27, "Good Governance Initiatives");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(30, "div", 17)(31, "p", 18);
+        \u0275\u0275elementStart(28, "div", 10)(29, "div", 11)(30, "a", 12);
+        \u0275\u0275element(31, "i", 13);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(32, "a", 14);
+        \u0275\u0275element(33, "i", 15);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(34, "div", 16)(35, "p", 17);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(32, "svg", 19)(33, "mask", 20);
-        \u0275\u0275element(34, "rect", 21);
+        \u0275\u0275elementStart(36, "svg", 18)(37, "mask", 19);
+        \u0275\u0275element(38, "rect", 20);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(35, "g", 22);
-        \u0275\u0275element(36, "path", 23);
+        \u0275\u0275elementStart(39, "g", 21);
+        \u0275\u0275element(40, "path", 22);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(37, "span");
-        \u0275\u0275text(38, "Indian Administrative Service ");
-        \u0275\u0275element(39, "br");
-        \u0275\u0275text(40, "Central Association, New Delhi");
+        \u0275\u0275elementStart(41, "span");
+        \u0275\u0275text(42, "Indian Administrative Service ");
+        \u0275\u0275element(43, "br");
+        \u0275\u0275text(44, "Central Association, New Delhi");
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(41, "div", 18);
+        \u0275\u0275elementStart(45, "div", 17);
         \u0275\u0275namespaceSVG();
-        \u0275\u0275elementStart(42, "svg", 24)(43, "mask", 25);
-        \u0275\u0275element(44, "rect", 26);
+        \u0275\u0275elementStart(46, "svg", 23)(47, "mask", 24);
+        \u0275\u0275element(48, "rect", 25);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(45, "g", 27);
-        \u0275\u0275element(46, "path", 28);
+        \u0275\u0275elementStart(49, "g", 26);
+        \u0275\u0275element(50, "path", 27);
         \u0275\u0275elementEnd()();
         \u0275\u0275namespaceHTML();
-        \u0275\u0275elementStart(47, "div");
-        \u0275\u0275text(48, " Need help?");
-        \u0275\u0275elementStart(49, "span", 29);
-        \u0275\u0275text(50, " Contact Help Desk:");
+        \u0275\u0275elementStart(51, "div");
+        \u0275\u0275text(52, " Need help?");
+        \u0275\u0275elementStart(53, "span", 28);
+        \u0275\u0275text(54, " Contact Help Desk:");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(51, "div", 30)(52, "a", 31);
-        \u0275\u0275text(53, "[+91 9910659965]");
+        \u0275\u0275elementStart(55, "div", 29)(56, "a", 30);
+        \u0275\u0275text(57, "[+91 9910659965]");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(54, "a", 32);
-        \u0275\u0275text(55, "[iasca.helpdesk@zohomail.in]");
+        \u0275\u0275elementStart(58, "a", 31);
+        \u0275\u0275text(59, "[iasca.helpdesk@zohomail.in]");
         \u0275\u0275elementEnd()()()()()()()();
-        \u0275\u0275elementStart(56, "div", 33)(57, "div", 34)(58, "p", 35);
-        \u0275\u0275text(59, "\xA9 2024 - Indian Administrative Service Central Association. All rights reserved.");
+        \u0275\u0275elementStart(60, "div", 32)(61, "div", 33)(62, "p", 34);
+        \u0275\u0275text(63, "\xA9 2024 - Indian Administrative Service Central Association. All rights reserved.");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(60, "div", 36)(61, "a", 37);
-        \u0275\u0275text(62, "Refund & Cancellation Policy");
+        \u0275\u0275elementStart(64, "div", 35)(65, "a", 36);
+        \u0275\u0275text(66, "Refund & Cancellation Policy");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(63, "a", 38);
-        \u0275\u0275text(64, "Terms & Conditions");
+        \u0275\u0275elementStart(67, "a", 37);
+        \u0275\u0275text(68, "Terms & Conditions");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(65, "a", 39);
-        \u0275\u0275text(66, "Privacy Policy");
+        \u0275\u0275elementStart(69, "a", 38);
+        \u0275\u0275text(70, "Privacy Policy");
         \u0275\u0275elementEnd()()()()();
       }
       if (rf & 2) {
@@ -517,8 +542,10 @@ var IasFooterComponent = class _IasFooterComponent {
         \u0275\u0275property("routerLink", "membership");
         \u0275\u0275advance(2);
         \u0275\u0275property("routerLink", "contact-us");
-        \u0275\u0275advance(3);
+        \u0275\u0275advance(5);
         \u0275\u0275property("routerLink", "news-blogs");
+        \u0275\u0275advance(2);
+        \u0275\u0275property("routerLink", "good-governance-initiatives");
       }
     }, dependencies: [RouterLink], styles: ['\n\n.footer[_ngcontent-%COMP%] {\n  background: #ffffff;\n  color: #000;\n  font-family: "Urbanist", sans-serif;\n}\n.footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n  display: grid;\n  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;\n  gap: 30px;\n  padding: 40px 0px;\n}\n@media (max-width: 1024px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-top[_ngcontent-%COMP%] {\n    grid-template-columns: 1fr;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  max-width: 80px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .org-name[_ngcontent-%COMP%] {\n  font-weight: 600;\n  margin-top: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-logo[_ngcontent-%COMP%]   .last-updated[_ngcontent-%COMP%] {\n  display: inline-block;\n  background: #f0f0f0;\n  border-radius: 20px;\n  padding: 10px 20px;\n  font-size: 12px;\n  margin-top: 28px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   h4[_ngcontent-%COMP%] {\n  font-size: 16px;\n  font-weight: 600;\n  margin-bottom: 10px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  display: block;\n  color: inherit;\n  text-decoration: none;\n  margin-bottom: 8px;\n  font-size: 14px;\n}\n.footer[_ngcontent-%COMP%]   .footer-links[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 10px;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%] {\n    justify-content: start;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  width: 30px;\n  height: 30px;\n  background: #f5f5f5;\n  border-radius: 50%;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: #000;\n  font-size: 14px;\n  transition: 0.2s;\n  text-decoration: none;\n  opacity: 0.7;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .social-icons[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  background: #ddd;\n  opacity: 1;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%] {\n  margin-top: 15px;\n  font-size: 14px;\n  line-height: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-contact[_ngcontent-%COMP%]   .contact-info[_ngcontent-%COMP%]   i[_ngcontent-%COMP%] {\n  margin-right: 8px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n  background: #000;\n  color: #fff;\n  font-size: 12px;\n  padding: 10px 0px;\n  flex-wrap: wrap;\n}\n@media (max-width: 600px) {\n  .footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%] {\n    flex-direction: column;\n    gap: 8px;\n    text-align: center;\n  }\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%] {\n  display: flex;\n  gap: 20px;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  color: #fff;\n  text-decoration: none;\n}\n.footer[_ngcontent-%COMP%]   .footer-bottom[_ngcontent-%COMP%]   .footer-policies[_ngcontent-%COMP%]   a[_ngcontent-%COMP%]:hover {\n  text-decoration: underline;\n}\n.footer[_ngcontent-%COMP%]   .needlink[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\n  text-decoration: none;\n  color: rgba(0, 97, 188, 0.92);\n}\n/*# sourceMappingURL=ias-footer.component.css.map */'] });
   }
@@ -4138,7 +4165,7 @@ var routes = [
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-65W2W5I3.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-4H6PR32W.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
@@ -4173,6 +4200,16 @@ var routes = [
         path: "news-blogs",
         // component:IasHomepageComponent,
         loadComponent: () => import("./chunk-THXNVB5I.js").then((m) => m.NewsBlogsComponent)
+      },
+      {
+        path: "good-governance-initiatives",
+        // component:IasHomepageComponent,
+        loadComponent: () => import("./chunk-6SQ5W5DZ.js").then((m) => m.CaseStudiesComponent)
+      },
+      {
+        path: "read-good-governance-initiatives",
+        // component:IasHomepageComponent,
+        loadComponent: () => import("./chunk-HRIKCZKY.js").then((m) => m.ReadmoreCaseStudiesComponent)
       },
       {
         path: "caruna",
@@ -4246,7 +4283,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-PBIRWBJP.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-QIPMCSGT.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -4267,6 +4304,10 @@ var routes = [
       {
         path: "news",
         loadComponent: () => import("./chunk-H227RB7F.js").then((m) => m.NewsComponent)
+      },
+      {
+        path: "case-study",
+        loadComponent: () => import("./chunk-WM5NB24V.js").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "mom",
@@ -4338,7 +4379,7 @@ var routes = [
     path: "state-dashboard",
     canActivate: [authGuard],
     data: { roles: ["state_association_admin"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-BYNRPSZX.js").then((m) => m.StateDashboardLayoutComponent),
+    loadComponent: () => import("./chunk-SUCPPT76.js").then((m) => m.StateDashboardLayoutComponent),
     children: [
       {
         path: "",

@@ -14369,4 +14369,4 @@ jspdf/dist/jspdf.es.min.js:
    * http://opensource.org/licenses/mit-license
    *)
 */
-//# sourceMappingURL=chunk-4AFEP2MM.mjs.map
+//# sourceMappingURL=chunk-XHZ5YG4K.mjs.map
