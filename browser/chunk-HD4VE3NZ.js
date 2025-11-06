@@ -1,4 +1,3 @@
-import './polyfills.server.mjs';
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -12,19 +11,19 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-2UIUPUOY.mjs";
+} from "./chunk-CTBAGNAW.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DatePipe,
   NgForOf,
   NgIf
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -55,13 +54,13 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-IXD3JOLX.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-664KIS5M.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/IAS-portal/pages/case-studies/case-studies.component.ts
 var _c0 = ["errorToast"];
 var _c1 = () => [];
-function CaseStudiesComponent_div_62_Template(rf, ctx) {
+function CaseStudiesComponent_div_60_Template(rf, ctx) {
   if (rf & 1) {
     const _r2 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "div", 56)(1, "div", 57);
@@ -70,7 +69,7 @@ function CaseStudiesComponent_div_62_Template(rf, ctx) {
     \u0275\u0275text(4, "Uploaded Image");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(5, "i", 59);
-    \u0275\u0275listener("click", function CaseStudiesComponent_div_62_Template_i_click_5_listener() {
+    \u0275\u0275listener("click", function CaseStudiesComponent_div_60_Template_i_click_5_listener() {
       \u0275\u0275restoreView(_r2);
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.openImagePreviewModal());
@@ -78,7 +77,7 @@ function CaseStudiesComponent_div_62_Template(rf, ctx) {
     \u0275\u0275elementEnd()();
   }
 }
-function CaseStudiesComponent_table_69_tr_12_Template(rf, ctx) {
+function CaseStudiesComponent_table_67_tr_12_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "tr")(1, "td");
@@ -95,7 +94,7 @@ function CaseStudiesComponent_table_69_tr_12_Template(rf, ctx) {
     \u0275\u0275text(11, " \u22EE ");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(12, "ul", 64)(13, "li")(14, "a", 65);
-    \u0275\u0275listener("click", function CaseStudiesComponent_table_69_tr_12_Template_a_click_14_listener() {
+    \u0275\u0275listener("click", function CaseStudiesComponent_table_67_tr_12_Template_a_click_14_listener() {
       const user_r5 = \u0275\u0275restoreView(_r4).$implicit;
       const ctx_r2 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r2.deleteNews(user_r5.id));
@@ -122,7 +121,7 @@ function CaseStudiesComponent_table_69_tr_12_Template(rf, ctx) {
     \u0275\u0275textInterpolate(user_r5.createdAt ? \u0275\u0275pipeBind2(7, 3, user_r5.createdAt, "dd-MM-yyyy") : "Not found");
   }
 }
-function CaseStudiesComponent_table_69_Template(rf, ctx) {
+function CaseStudiesComponent_table_67_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "table", 60)(1, "thead")(2, "tr")(3, "th");
     \u0275\u0275text(4, "S.no");
@@ -137,7 +136,7 @@ function CaseStudiesComponent_table_69_Template(rf, ctx) {
     \u0275\u0275text(10, "Action");
     \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(11, "tbody");
-    \u0275\u0275template(12, CaseStudiesComponent_table_69_tr_12_Template, 21, 6, "tr", 61);
+    \u0275\u0275template(12, CaseStudiesComponent_table_67_tr_12_Template, 21, 6, "tr", 61);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -146,18 +145,18 @@ function CaseStudiesComponent_table_69_Template(rf, ctx) {
     \u0275\u0275property("ngForOf", ctx_r2.users);
   }
 }
-function CaseStudiesComponent_ng_template_70_Template(rf, ctx) {
+function CaseStudiesComponent_ng_template_68_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 71);
     \u0275\u0275element(1, "img", 72);
     \u0275\u0275elementEnd();
   }
 }
-function CaseStudiesComponent_li_78_Template(rf, ctx) {
+function CaseStudiesComponent_li_76_Template(rf, ctx) {
   if (rf & 1) {
     const _r7 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "li", 48)(1, "a", 49);
-    \u0275\u0275listener("click", function CaseStudiesComponent_li_78_Template_a_click_1_listener() {
+    \u0275\u0275listener("click", function CaseStudiesComponent_li_76_Template_a_click_1_listener() {
       const i_r8 = \u0275\u0275restoreView(_r7).index;
       const ctx_r2 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r2.changePage(i_r8 + 1));
@@ -193,7 +192,7 @@ var CaseStudiesComponent = class _CaseStudiesComponent {
     this.newsForm = this.fb.group({
       title: ["", [Validators.required]],
       // required
-      newsLink: ["", [Validators.required]],
+      newsLink: [""],
       // required
       description: ["", [Validators.required]],
       bannerImage: [null, [Validators.required]]
@@ -336,7 +335,7 @@ var CaseStudiesComponent = class _CaseStudiesComponent {
         let _t;
         \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.errorToast = _t.first);
       }
-    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 90, vars: 16, consts: [["errorToast", ""], ["noUsers", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true", 1, "toast", "align-items-center", "text-bg-danger", "border-0"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "imagePreviewModal", "tabindex", "-1", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "modal-lg"], [1, "modal-content"], [1, "modal-header", "border-0"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close"], [1, "modal-body", "text-center"], ["alt", "Image Preview", 1, "img-fluid", "rounded", 3, "src"], [1, "mt-4", "tableheading"], [1, "d-flex", "justify-content-between", "align-items-center", "flex-wrap", "mb-3"], [1, "mb-1"], [1, "search-add-div", "d-flex", "align-items-center", "gap-3"], ["data-bs-toggle", "offcanvas", "data-bs-target", "#addNewsDrawer", 1, "btn", "btn-prime", "w-100"], ["tabindex", "-1", "id", "addNewsDrawer", "aria-labelledby", "addNewsDrawerLabel", 1, "offcanvas", "offcanvas-end"], [1, "offcanvas-header"], ["id", "addNewsDrawerLabel"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "d-flex", "flex-column", "justify-content-between", "h-100", 3, "ngSubmit", "formGroup"], [1, "inner-fields"], [1, "mb-3"], [1, "form-label"], [1, "text-danger"], ["type", "text", "placeholder", "Enter your title here", "formControlName", "title", 1, "form-control"], ["type", "text", "placeholder", "Type or paste link", "formControlName", "newsLink", 1, "form-control"], ["rows", "3", "placeholder", "Enter your description here", "formControlName", "description", 1, "form-control"], [1, "upload-wrapper"], ["for", "fileUpload", 1, "upload-box"], [1, "upload-content"], [1, "infs"], [1, "m-0"], [1, "click-here"], [1, "text-muted"], ["type", "file", "id", "fileUpload", "hidden", "", "accept", "image/jpeg, image/png", 3, "change"], ["class", "file-box mt-3", 4, "ngIf"], [1, "d-flex", "justify-content-end", "gap-3", "mt-3"], ["type", "button", "data-bs-dismiss", "offcanvas", 1, "btn", "btn-outline-secondary"], ["type", "submit", 1, "btn", "btn-prime", 3, "disabled"], [1, "table-responsive", "custom-table"], ["class", "table align-middle mb-0", 4, "ngIf", "ngIfElse"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-2", "mt-3"], [1, "pagination", "modern-pagination", "mb-0"], [1, "page-item"], [1, "page-link", 3, "click"], ["class", "page-item", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center"], [1, "form-select", "form-select-sm", "w-auto", 3, "change"], ["value", "5", 3, "selected"], ["value", "10", 3, "selected"], ["value", "20", 3, "selected"], [1, "file-box", "mt-3"], [1, "file-info"], [1, "radio-icon"], [1, "fas", "fa-eye", "view-icon", 3, "click"], [1, "table", "align-middle", "mb-0"], [4, "ngFor", "ngForOf"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", 1, "btn"], [1, "dropdown-menu", "shadow"], [1, "dropdown-item", "red", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "20", "height", "20", "viewBox", "0 0 20 20", "fill", "none"], ["id", "mask0_50905_5148", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "20", "height", "20", 2, "mask-type", "alpha"], ["width", "20", "height", "20", "fill", "#D9D9D9"], ["mask", "url(#mask0_50905_5148)"], ["d", "M14.5002 10.8335L13.3335 9.66683L15.0627 7.91683L13.3335 6.18766L14.5002 5.00016L16.2502 6.75016L17.9793 5.00016L19.1668 6.18766L17.4168 7.91683L19.1668 9.66683L17.9793 10.8335L16.2502 9.10433L14.5002 10.8335ZM7.50016 10.0002C6.5835 10.0002 5.79877 9.67377 5.146 9.021C4.49322 8.36822 4.16683 7.5835 4.16683 6.66683C4.16683 5.75016 4.49322 4.96544 5.146 4.31266C5.79877 3.65989 6.5835 3.3335 7.50016 3.3335C8.41683 3.3335 9.20155 3.65989 9.85433 4.31266C10.5071 4.96544 10.8335 5.75016 10.8335 6.66683C10.8335 7.5835 10.5071 8.36822 9.85433 9.021C9.20155 9.67377 8.41683 10.0002 7.50016 10.0002ZM0.833496 16.6668V14.3335C0.833496 13.8613 0.955024 13.4272 1.19808 13.0314C1.44114 12.6356 1.76405 12.3335 2.16683 12.1252C3.02794 11.6946 3.90294 11.3717 4.79183 11.1564C5.68072 10.9411 6.5835 10.8335 7.50016 10.8335C8.41683 10.8335 9.31961 10.9411 10.2085 11.1564C11.0974 11.3717 11.9724 11.6946 12.8335 12.1252C13.2363 12.3335 13.5592 12.6356 13.8022 13.0314C14.0453 13.4272 14.1668 13.8613 14.1668 14.3335V16.6668H0.833496ZM2.50016 15.0002H12.5002V14.3335C12.5002 14.1807 12.462 14.0418 12.3856 13.9168C12.3092 13.7918 12.2085 13.6946 12.0835 13.6252C11.3335 13.2502 10.5766 12.9689 9.81266 12.7814C9.04877 12.5939 8.27794 12.5002 7.50016 12.5002C6.72239 12.5002 5.95155 12.5939 5.18766 12.7814C4.42377 12.9689 3.66683 13.2502 2.91683 13.6252C2.79183 13.6946 2.69114 13.7918 2.61475 13.9168C2.53836 14.0418 2.50016 14.1807 2.50016 14.3335V15.0002ZM7.50016 8.3335C7.9585 8.3335 8.35086 8.1703 8.67725 7.84391C9.00364 7.51752 9.16683 7.12516 9.16683 6.66683C9.16683 6.2085 9.00364 5.81613 8.67725 5.48975C8.35086 5.16336 7.9585 5.00016 7.50016 5.00016C7.04183 5.00016 6.64947 5.16336 6.32308 5.48975C5.99669 5.81613 5.8335 6.2085 5.8335 6.66683C5.8335 7.12516 5.99669 7.51752 6.32308 7.84391C6.64947 8.1703 7.04183 8.3335 7.50016 8.3335Z", "fill", "#B7131A"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center"], ["src", "../../../../assets/icons/empty-state.png", "alt", "empty state"]], template: function CaseStudiesComponent_Template(rf, ctx) {
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 88, vars: 16, consts: [["errorToast", ""], ["noUsers", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true", 1, "toast", "align-items-center", "text-bg-danger", "border-0"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "imagePreviewModal", "tabindex", "-1", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered", "modal-lg"], [1, "modal-content"], [1, "modal-header", "border-0"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close"], [1, "modal-body", "text-center"], ["alt", "Image Preview", 1, "img-fluid", "rounded", 3, "src"], [1, "mt-4", "tableheading"], [1, "d-flex", "justify-content-between", "align-items-center", "flex-wrap", "mb-3"], [1, "mb-1"], [1, "search-add-div", "d-flex", "align-items-center", "gap-3"], ["data-bs-toggle", "offcanvas", "data-bs-target", "#addNewsDrawer", 1, "btn", "btn-prime", "w-100"], ["tabindex", "-1", "id", "addNewsDrawer", "aria-labelledby", "addNewsDrawerLabel", 1, "offcanvas", "offcanvas-end"], [1, "offcanvas-header"], ["id", "addNewsDrawerLabel"], ["type", "button", "data-bs-dismiss", "offcanvas", "aria-label", "Close", 1, "btn-close", "text-reset"], [1, "offcanvas-body"], [1, "d-flex", "flex-column", "justify-content-between", "h-100", 3, "ngSubmit", "formGroup"], [1, "inner-fields"], [1, "mb-3"], [1, "form-label"], [1, "text-danger"], ["type", "text", "placeholder", "Enter your title here", "formControlName", "title", 1, "form-control"], ["type", "text", "placeholder", "Type or paste link", "formControlName", "newsLink", 1, "form-control"], ["rows", "3", "placeholder", "Enter your description here", "formControlName", "description", 1, "form-control"], [1, "upload-wrapper"], ["for", "fileUpload", 1, "upload-box"], [1, "upload-content"], [1, "infs"], [1, "m-0"], [1, "click-here"], [1, "text-muted"], ["type", "file", "id", "fileUpload", "hidden", "", "accept", "image/jpeg, image/png", 3, "change"], ["class", "file-box mt-3", 4, "ngIf"], [1, "d-flex", "justify-content-end", "gap-3", "mt-3"], ["type", "button", "data-bs-dismiss", "offcanvas", 1, "btn", "btn-outline-secondary"], ["type", "submit", 1, "btn", "btn-prime", 3, "disabled"], [1, "table-responsive", "custom-table"], ["class", "table align-middle mb-0", 4, "ngIf", "ngIfElse"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-2", "mt-3"], [1, "pagination", "modern-pagination", "mb-0"], [1, "page-item"], [1, "page-link", 3, "click"], ["class", "page-item", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center"], [1, "form-select", "form-select-sm", "w-auto", 3, "change"], ["value", "5", 3, "selected"], ["value", "10", 3, "selected"], ["value", "20", 3, "selected"], [1, "file-box", "mt-3"], [1, "file-info"], [1, "radio-icon"], [1, "fas", "fa-eye", "view-icon", 3, "click"], [1, "table", "align-middle", "mb-0"], [4, "ngFor", "ngForOf"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", 1, "btn"], [1, "dropdown-menu", "shadow"], [1, "dropdown-item", "red", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "20", "height", "20", "viewBox", "0 0 20 20", "fill", "none"], ["id", "mask0_50905_5148", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "20", "height", "20", 2, "mask-type", "alpha"], ["width", "20", "height", "20", "fill", "#D9D9D9"], ["mask", "url(#mask0_50905_5148)"], ["d", "M14.5002 10.8335L13.3335 9.66683L15.0627 7.91683L13.3335 6.18766L14.5002 5.00016L16.2502 6.75016L17.9793 5.00016L19.1668 6.18766L17.4168 7.91683L19.1668 9.66683L17.9793 10.8335L16.2502 9.10433L14.5002 10.8335ZM7.50016 10.0002C6.5835 10.0002 5.79877 9.67377 5.146 9.021C4.49322 8.36822 4.16683 7.5835 4.16683 6.66683C4.16683 5.75016 4.49322 4.96544 5.146 4.31266C5.79877 3.65989 6.5835 3.3335 7.50016 3.3335C8.41683 3.3335 9.20155 3.65989 9.85433 4.31266C10.5071 4.96544 10.8335 5.75016 10.8335 6.66683C10.8335 7.5835 10.5071 8.36822 9.85433 9.021C9.20155 9.67377 8.41683 10.0002 7.50016 10.0002ZM0.833496 16.6668V14.3335C0.833496 13.8613 0.955024 13.4272 1.19808 13.0314C1.44114 12.6356 1.76405 12.3335 2.16683 12.1252C3.02794 11.6946 3.90294 11.3717 4.79183 11.1564C5.68072 10.9411 6.5835 10.8335 7.50016 10.8335C8.41683 10.8335 9.31961 10.9411 10.2085 11.1564C11.0974 11.3717 11.9724 11.6946 12.8335 12.1252C13.2363 12.3335 13.5592 12.6356 13.8022 13.0314C14.0453 13.4272 14.1668 13.8613 14.1668 14.3335V16.6668H0.833496ZM2.50016 15.0002H12.5002V14.3335C12.5002 14.1807 12.462 14.0418 12.3856 13.9168C12.3092 13.7918 12.2085 13.6946 12.0835 13.6252C11.3335 13.2502 10.5766 12.9689 9.81266 12.7814C9.04877 12.5939 8.27794 12.5002 7.50016 12.5002C6.72239 12.5002 5.95155 12.5939 5.18766 12.7814C4.42377 12.9689 3.66683 13.2502 2.91683 13.6252C2.79183 13.6946 2.69114 13.7918 2.61475 13.9168C2.53836 14.0418 2.50016 14.1807 2.50016 14.3335V15.0002ZM7.50016 8.3335C7.9585 8.3335 8.35086 8.1703 8.67725 7.84391C9.00364 7.51752 9.16683 7.12516 9.16683 6.66683C9.16683 6.2085 9.00364 5.81613 8.67725 5.48975C8.35086 5.16336 7.9585 5.00016 7.50016 5.00016C7.04183 5.00016 6.64947 5.16336 6.32308 5.48975C5.99669 5.81613 5.8335 6.2085 5.8335 6.66683C5.8335 7.12516 5.99669 7.51752 6.32308 7.84391C6.64947 8.1703 7.04183 8.3335 7.50016 8.3335Z", "fill", "#B7131A"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center"], ["src", "../../../../assets/icons/empty-state.png", "alt", "empty state"]], template: function CaseStudiesComponent_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = \u0275\u0275getCurrentView();
         \u0275\u0275elementStart(0, "div", 2)(1, "div", 3, 0)(3, "div", 4)(4, "div", 5);
@@ -374,89 +373,87 @@ var CaseStudiesComponent = class _CaseStudiesComponent {
         \u0275\u0275element(34, "input", 29);
         \u0275\u0275elementEnd();
         \u0275\u0275elementStart(35, "div", 26)(36, "label", 27);
-        \u0275\u0275text(37, "Case Study Link ");
-        \u0275\u0275elementStart(38, "span", 28);
-        \u0275\u0275text(39, "*");
+        \u0275\u0275text(37, "Case Study Link");
+        \u0275\u0275elementEnd();
+        \u0275\u0275element(38, "input", 30);
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(39, "div", 26)(40, "label", 27);
+        \u0275\u0275text(41, "Description ");
+        \u0275\u0275elementStart(42, "span", 28);
+        \u0275\u0275text(43, "*");
         \u0275\u0275elementEnd()();
-        \u0275\u0275element(40, "input", 30);
+        \u0275\u0275element(44, "textarea", 31);
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(41, "div", 26)(42, "label", 27);
-        \u0275\u0275text(43, "Description ");
-        \u0275\u0275elementStart(44, "span", 28);
-        \u0275\u0275text(45, "*");
+        \u0275\u0275elementStart(45, "div", 32)(46, "label", 27);
+        \u0275\u0275text(47, "Upload Image");
+        \u0275\u0275elementStart(48, "span", 28);
+        \u0275\u0275text(49, "*");
         \u0275\u0275elementEnd()();
-        \u0275\u0275element(46, "textarea", 31);
+        \u0275\u0275elementStart(50, "label", 33)(51, "div", 34)(52, "div", 35)(53, "p", 36)(54, "span", 37);
+        \u0275\u0275text(55, "Click here");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(47, "div", 32)(48, "label", 27);
-        \u0275\u0275text(49, "Upload Image");
-        \u0275\u0275elementStart(50, "span", 28);
-        \u0275\u0275text(51, "*");
-        \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(52, "label", 33)(53, "div", 34)(54, "div", 35)(55, "p", 36)(56, "span", 37);
-        \u0275\u0275text(57, "Click here");
+        \u0275\u0275text(56, " to upload your file");
         \u0275\u0275elementEnd();
-        \u0275\u0275text(58, " to upload your file");
-        \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(59, "small", 38);
-        \u0275\u0275text(60, "Supported format (.jpg, .png., jpeg), maximum file size : 5 MB");
+        \u0275\u0275elementStart(57, "small", 38);
+        \u0275\u0275text(58, "Supported format (.jpg, .png., jpeg), maximum file size : 5 MB");
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(61, "input", 39);
-        \u0275\u0275listener("change", function CaseStudiesComponent_Template_input_change_61_listener($event) {
+        \u0275\u0275elementStart(59, "input", 39);
+        \u0275\u0275listener("change", function CaseStudiesComponent_Template_input_change_59_listener($event) {
           \u0275\u0275restoreView(_r1);
           return \u0275\u0275resetView(ctx.onFileSelected($event));
         });
         \u0275\u0275elementEnd()();
-        \u0275\u0275template(62, CaseStudiesComponent_div_62_Template, 6, 0, "div", 40);
+        \u0275\u0275template(60, CaseStudiesComponent_div_60_Template, 6, 0, "div", 40);
         \u0275\u0275elementEnd()();
-        \u0275\u0275elementStart(63, "div", 41)(64, "button", 42);
-        \u0275\u0275text(65, "Back");
+        \u0275\u0275elementStart(61, "div", 41)(62, "button", 42);
+        \u0275\u0275text(63, "Back");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(66, "button", 43);
-        \u0275\u0275text(67, "Submit");
+        \u0275\u0275elementStart(64, "button", 43);
+        \u0275\u0275text(65, "Submit");
         \u0275\u0275elementEnd()()()()();
-        \u0275\u0275elementStart(68, "div", 44);
-        \u0275\u0275template(69, CaseStudiesComponent_table_69_Template, 13, 1, "table", 45);
+        \u0275\u0275elementStart(66, "div", 44);
+        \u0275\u0275template(67, CaseStudiesComponent_table_67_Template, 13, 1, "table", 45);
         \u0275\u0275elementEnd();
-        \u0275\u0275template(70, CaseStudiesComponent_ng_template_70_Template, 2, 0, "ng-template", null, 1, \u0275\u0275templateRefExtractor);
-        \u0275\u0275elementStart(72, "div", 46)(73, "nav")(74, "ul", 47)(75, "li", 48)(76, "a", 49);
-        \u0275\u0275listener("click", function CaseStudiesComponent_Template_a_click_76_listener() {
+        \u0275\u0275template(68, CaseStudiesComponent_ng_template_68_Template, 2, 0, "ng-template", null, 1, \u0275\u0275templateRefExtractor);
+        \u0275\u0275elementStart(70, "div", 46)(71, "nav")(72, "ul", 47)(73, "li", 48)(74, "a", 49);
+        \u0275\u0275listener("click", function CaseStudiesComponent_Template_a_click_74_listener() {
           \u0275\u0275restoreView(_r1);
           return \u0275\u0275resetView(ctx.goPrevious());
         });
-        \u0275\u0275text(77, "\u2039");
+        \u0275\u0275text(75, "\u2039");
         \u0275\u0275elementEnd()();
-        \u0275\u0275template(78, CaseStudiesComponent_li_78_Template, 3, 3, "li", 50);
-        \u0275\u0275elementStart(79, "li", 48)(80, "a", 49);
-        \u0275\u0275listener("click", function CaseStudiesComponent_Template_a_click_80_listener() {
+        \u0275\u0275template(76, CaseStudiesComponent_li_76_Template, 3, 3, "li", 50);
+        \u0275\u0275elementStart(77, "li", 48)(78, "a", 49);
+        \u0275\u0275listener("click", function CaseStudiesComponent_Template_a_click_78_listener() {
           \u0275\u0275restoreView(_r1);
           return \u0275\u0275resetView(ctx.goNext());
         });
-        \u0275\u0275text(81, "\u203A");
+        \u0275\u0275text(79, "\u203A");
         \u0275\u0275elementEnd()()()();
-        \u0275\u0275elementStart(82, "div", 51)(83, "select", 52);
-        \u0275\u0275listener("change", function CaseStudiesComponent_Template_select_change_83_listener($event) {
+        \u0275\u0275elementStart(80, "div", 51)(81, "select", 52);
+        \u0275\u0275listener("change", function CaseStudiesComponent_Template_select_change_81_listener($event) {
           \u0275\u0275restoreView(_r1);
           return \u0275\u0275resetView(ctx.onPageSizeChange($event));
         });
-        \u0275\u0275elementStart(84, "option", 53);
-        \u0275\u0275text(85, "5 /Page");
+        \u0275\u0275elementStart(82, "option", 53);
+        \u0275\u0275text(83, "5 /Page");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(86, "option", 54);
-        \u0275\u0275text(87, "10 /Page");
+        \u0275\u0275elementStart(84, "option", 54);
+        \u0275\u0275text(85, "10 /Page");
         \u0275\u0275elementEnd();
-        \u0275\u0275elementStart(88, "option", 55);
-        \u0275\u0275text(89, "20 /Page");
+        \u0275\u0275elementStart(86, "option", 55);
+        \u0275\u0275text(87, "20 /Page");
         \u0275\u0275elementEnd()()()()();
       }
       if (rf & 2) {
-        const noUsers_r9 = \u0275\u0275reference(71);
+        const noUsers_r9 = \u0275\u0275reference(69);
         \u0275\u0275advance(5);
         \u0275\u0275textInterpolate1(" ", ctx.toastMessage, " ");
         \u0275\u0275advance(8);
         \u0275\u0275property("src", ctx.previewUrl, \u0275\u0275sanitizeUrl);
         \u0275\u0275advance(14);
         \u0275\u0275property("formGroup", ctx.newsForm);
-        \u0275\u0275advance(35);
+        \u0275\u0275advance(33);
         \u0275\u0275property("ngIf", ctx.previewUrl);
         \u0275\u0275advance(4);
         \u0275\u0275property("disabled", ctx.newsForm.invalid);
@@ -484,4 +481,4 @@ var CaseStudiesComponent = class _CaseStudiesComponent {
 export {
   CaseStudiesComponent
 };
-//# sourceMappingURL=chunk-WBYCBISQ.mjs.map
+//# sourceMappingURL=chunk-HD4VE3NZ.js.map

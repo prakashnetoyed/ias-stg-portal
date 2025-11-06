@@ -4204,7 +4204,7 @@ var routes = [
       {
         path: "good-governance-initiatives",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6SQ5W5DZ.js").then((m) => m.CaseStudiesComponent)
+        loadComponent: () => import("./chunk-XF5JGXUM.js").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "read-good-governance-initiatives",
@@ -4307,7 +4307,7 @@ var routes = [
       },
       {
         path: "case-study",
-        loadComponent: () => import("./chunk-WM5NB24V.js").then((m) => m.CaseStudiesComponent)
+        loadComponent: () => import("./chunk-HD4VE3NZ.js").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "mom",

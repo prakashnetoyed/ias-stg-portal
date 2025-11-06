@@ -4282,7 +4282,7 @@ var routes = [
       {
         path: "good-governance-initiatives",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-YALKGYAJ.mjs").then((m) => m.CaseStudiesComponent)
+        loadComponent: () => import("./chunk-YDNUY7UM.mjs").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "read-good-governance-initiatives",
@@ -4385,7 +4385,7 @@ var routes = [
       },
       {
         path: "case-study",
-        loadComponent: () => import("./chunk-WBYCBISQ.mjs").then((m) => m.CaseStudiesComponent)
+        loadComponent: () => import("./chunk-JJCJBDGZ.mjs").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "mom",
@@ -4799,4 +4799,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-JB5OTRGE.mjs.map
+//# sourceMappingURL=chunk-4VJKT5XN.mjs.map

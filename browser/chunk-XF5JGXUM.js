@@ -1,24 +1,23 @@
-import './polyfills.server.mjs';
 import {
   RouterLink,
   RouterModule
-} from "./chunk-UI6ESX43.mjs";
+} from "./chunk-JPPWT7WU.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   Title
-} from "./chunk-NFXFD3SX.mjs";
+} from "./chunk-R23YUY6E.js";
 import {
   HttpClient,
   HttpClientModule
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DatePipe,
   NgForOf,
   NgIf
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -40,13 +39,12 @@ import {
   ɵɵtemplate,
   ɵɵtext,
   ɵɵtextInterpolate1
-} from "./chunk-IXD3JOLX.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-664KIS5M.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/website/pages/resources/case-studies/case-studies.component.ts
 var _c0 = () => ["/homepage/read-good-governance-initiatives"];
 var _c1 = (a0) => ({ id: a0 });
-var _c2 = () => ["/homepage/readmorenews"];
 function CaseStudiesComponent_div_21_img_19_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275element(0, "img", 28);
@@ -161,7 +159,7 @@ function CaseStudiesComponent_div_22_div_2_Template(rf, ctx) {
     \u0275\u0275advance(6);
     \u0275\u0275textInterpolate1(" ", news_r2.caseStudyLink, " ");
     \u0275\u0275advance();
-    \u0275\u0275property("routerLink", \u0275\u0275pureFunction0(11, _c2))("queryParams", \u0275\u0275pureFunction1(12, _c1, news_r2.id));
+    \u0275\u0275property("routerLink", \u0275\u0275pureFunction0(11, _c0))("queryParams", \u0275\u0275pureFunction1(12, _c1, news_r2.id));
   }
 }
 function CaseStudiesComponent_div_22_Template(rf, ctx) {
@@ -250,4 +248,4 @@ var CaseStudiesComponent = class _CaseStudiesComponent {
 export {
   CaseStudiesComponent
 };
-//# sourceMappingURL=chunk-YALKGYAJ.mjs.map
+//# sourceMappingURL=chunk-XF5JGXUM.js.map
