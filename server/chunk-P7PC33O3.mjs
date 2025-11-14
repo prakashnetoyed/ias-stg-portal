@@ -4238,7 +4238,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-2MWFLHF3.mjs").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-EMEUZTPT.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4333,6 +4333,11 @@ var routes = [
         path: "Privacy-Policy",
         // component:IasHomepageComponent,
         loadComponent: () => import("./chunk-FBVCNFJ6.mjs").then((m) => m.PrivacyPolicyComponent)
+      },
+      {
+        path: "coming-soon",
+        // component:IasHomepageComponent,
+        loadComponent: () => import("./chunk-6XMH5YSG.mjs").then((m) => m.ComingSoonComponent)
       }
     ]
   },
@@ -4499,7 +4504,7 @@ var routes = [
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-W5SVSAFW.mjs").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-3YL6A5TP.mjs").then((m) => m.RouteErrorComponent)
   }
 ];
 
@@ -4799,4 +4804,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-4VJKT5XN.mjs.map
+//# sourceMappingURL=chunk-P7PC33O3.mjs.map

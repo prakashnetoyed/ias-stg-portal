@@ -4160,7 +4160,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-RLWVUWZN.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-V3Y3UARJ.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4255,6 +4255,11 @@ var routes = [
         path: "Privacy-Policy",
         // component:IasHomepageComponent,
         loadComponent: () => import("./chunk-KAWZNUX5.js").then((m) => m.PrivacyPolicyComponent)
+      },
+      {
+        path: "coming-soon",
+        // component:IasHomepageComponent,
+        loadComponent: () => import("./chunk-IMROAGDN.js").then((m) => m.ComingSoonComponent)
       }
     ]
   },
@@ -4319,7 +4324,7 @@ var routes = [
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-VB466BNF.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-S3GLFPBX.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
@@ -4367,7 +4372,7 @@ var routes = [
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-4YQWVM2X.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-MCZE42NR.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "payment-status",
@@ -4421,7 +4426,7 @@ var routes = [
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-AGO2UG76.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-BWE3UB3L.js").then((m) => m.RouteErrorComponent)
   }
 ];
 

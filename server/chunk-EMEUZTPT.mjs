@@ -1509,6 +1509,95 @@ var NewsSliderComponent = class _NewsSliderComponent {
   (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(NewsSliderComponent, { className: "NewsSliderComponent", filePath: "src/app/website/components/news-slider/news-slider.component.ts", lineNumber: 14 });
 })();
 
+// src/app/website/components/payment-cta/payment-cta.component.ts
+var PaymentCtaComponent = class _PaymentCtaComponent {
+  static {
+    this.\u0275fac = function PaymentCtaComponent_Factory(t) {
+      return new (t || _PaymentCtaComponent)();
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _PaymentCtaComponent, selectors: [["app-payment-cta"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 30, vars: 0, consts: [[1, "main-cta-div"], [1, "container"], [1, "main-payment-div", "d-flex", "position-relative"], [1, "left-side-cont-div", "w-50", "d-flex", "flex-column", "align-items-start", "justify-content-center"], [1, "type-div", "d-flex", "align-items-center", "gap-4", "mb-4"], [1, "type"], ["xmlns", "http://www.w3.org/2000/svg", "width", "12", "height", "14", "viewBox", "0 0 12 14", "fill", "none"], ["d", "M1.33333 13.3333C0.966667 13.3333 0.652778 13.2028 0.391667 12.9417C0.130556 12.6806 0 12.3667 0 12V2.66667C0 2.3 0.130556 1.98611 0.391667 1.725C0.652778 1.46389 0.966667 1.33333 1.33333 1.33333H2V0H3.33333V1.33333H8.66667V0H10V1.33333H10.6667C11.0333 1.33333 11.3472 1.46389 11.6083 1.725C11.8694 1.98611 12 2.3 12 2.66667V12C12 12.3667 11.8694 12.6806 11.6083 12.9417C11.3472 13.2028 11.0333 13.3333 10.6667 13.3333H1.33333ZM1.33333 12H10.6667V5.33333H1.33333V12ZM1.33333 4H10.6667V2.66667H1.33333V4Z", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M2 10.6667V6H3.33333V10.6667H2ZM6 10.6667V6H7.33333V10.6667H6ZM0 13.3333V12H13.3333V13.3333H0ZM10 10.6667V6H11.3333V10.6667H10ZM0 4.66667V3.33333L6.66667 0L13.3333 3.33333V4.66667H0ZM2.96667 3.33333H10.3667L6.66667 1.5L2.96667 3.33333Z", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "8", "viewBox", "0 0 16 8", "fill", "none"], ["d", "M3.66667 7.33333C2.64444 7.33333 1.77778 6.97778 1.06667 6.26667C0.355556 5.55556 0 4.68889 0 3.66667C0 2.64444 0.355556 1.77778 1.06667 1.06667C1.77778 0.355556 2.64444 0 3.66667 0C4.07778 0 4.47222 0.0722222 4.85 0.216667C5.22778 0.361111 5.56667 0.566667 5.86667 0.833333L7 1.86667L6 2.76667L4.96667 1.83333C4.78889 1.67778 4.58889 1.55556 4.36667 1.46667C4.14444 1.37778 3.91111 1.33333 3.66667 1.33333C3.02222 1.33333 2.47222 1.56111 2.01667 2.01667C1.56111 2.47222 1.33333 3.02222 1.33333 3.66667C1.33333 4.31111 1.56111 4.86111 2.01667 5.31667C2.47222 5.77222 3.02222 6 3.66667 6C3.91111 6 4.14444 5.95556 4.36667 5.86667C4.58889 5.77778 4.78889 5.65556 4.96667 5.5L10.1333 0.833333C10.4333 0.566667 10.7722 0.361111 11.15 0.216667C11.5278 0.0722222 11.9222 0 12.3333 0C13.3556 0 14.2222 0.355556 14.9333 1.06667C15.6444 1.77778 16 2.64444 16 3.66667C16 4.68889 15.6444 5.55556 14.9333 6.26667C14.2222 6.97778 13.3556 7.33333 12.3333 7.33333C11.9222 7.33333 11.5278 7.26111 11.15 7.11667C10.7722 6.97222 10.4333 6.76667 10.1333 6.5L9 5.46667L10 4.56667L11.0333 5.5C11.2111 5.65556 11.4111 5.77778 11.6333 5.86667C11.8556 5.95556 12.0889 6 12.3333 6C12.9778 6 13.5278 5.77222 13.9833 5.31667C14.4389 4.86111 14.6667 4.31111 14.6667 3.66667C14.6667 3.02222 14.4389 2.47222 13.9833 2.01667C13.5278 1.56111 12.9778 1.33333 12.3333 1.33333C12.0889 1.33333 11.8556 1.37778 11.6333 1.46667C11.4111 1.55556 11.2111 1.67778 11.0333 1.83333L5.86667 6.5C5.56667 6.76667 5.22778 6.97222 4.85 7.11667C4.47222 7.26111 4.07778 7.33333 3.66667 7.33333Z", "fill", "white"], ["routerLink", "/homepage/membership", 1, "btn", "btn-white"], [1, "right-sidegradient-div", "w-50", "overflow-hidden"], [1, "grad-div", "position-relative", "w-100", "d-flex", "justify-content-center"], [1, "gradient-div", "position-absolute"], ["src", "../../../../assets/logo/ias-big-logo.png", "alt", "ias logo", 1, "ias-logo"]], template: function PaymentCtaComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1");
+        \u0275\u0275text(5, "Serve. Support. Stay Connected.");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(6, "p");
+        \u0275\u0275text(7, "Support initiatives and access member updates, forums, and events. Enrol with your preferred plan.");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(8, "div", 4)(9, "div", 5);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(10, "svg", 6);
+        \u0275\u0275element(11, "path", 7);
+        \u0275\u0275elementEnd();
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(12, "h1");
+        \u0275\u0275text(13, "Annual");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(14, "div", 5);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(15, "svg", 8);
+        \u0275\u0275element(16, "path", 9);
+        \u0275\u0275elementEnd();
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(17, "h1");
+        \u0275\u0275text(18, "Tenure");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(19, "div", 5);
+        \u0275\u0275namespaceSVG();
+        \u0275\u0275elementStart(20, "svg", 10);
+        \u0275\u0275element(21, "path", 11);
+        \u0275\u0275elementEnd();
+        \u0275\u0275namespaceHTML();
+        \u0275\u0275elementStart(22, "h1");
+        \u0275\u0275text(23, "Lifetime");
+        \u0275\u0275elementEnd()()();
+        \u0275\u0275elementStart(24, "button", 12);
+        \u0275\u0275text(25, "Join & pay");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(26, "div", 13)(27, "div", 14);
+        \u0275\u0275element(28, "div", 15);
+        \u0275\u0275elementEnd()();
+        \u0275\u0275element(29, "img", 16);
+        \u0275\u0275elementEnd()()();
+      }
+    }, dependencies: [RouterModule, RouterLink], styles: ["\n\n.main-cta-div[_ngcontent-%COMP%] {\n  background-color: #150F22;\n  padding: 60px 0px;\n}\n.main-payment-div[_ngcontent-%COMP%] {\n  border-radius: 24px;\n  background: var(--new, linear-gradient(130deg, #492FB2 -1.74%, #ADADAD 108.02%));\n  height: 315px;\n  padding: 0px 50px;\n}\n.gradient-div[_ngcontent-%COMP%] {\n  border-radius: 418px;\n  background: rgba(255, 255, 255, 0.12);\n  filter: blur(10px);\n  width: 418px;\n  height: 418px;\n  flex-shrink: 0;\n  top: 0px;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 36px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 42px;\n  letter-spacing: 0.097px;\n  margin-bottom: 18px;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-style: normal;\n  font-weight: 500;\n  line-height: 150%;\n  letter-spacing: 0.097px;\n}\n.type[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  background: #8C7FC3;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.type[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 24px;\n  margin: 0px;\n}\n.btn-white[_ngcontent-%COMP%] {\n  display: inline-flex;\n  height: 48px;\n  padding: 8px 24px;\n  justify-content: center;\n  align-items: center;\n  gap: 8px;\n  flex-shrink: 0;\n  border-radius: 4px;\n  background: #FFF;\n  color: #150F22;\n  text-align: center;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 600;\n  line-height: 16px;\n  letter-spacing: var(--Letter-Spacing-3, 0.5px);\n}\n.ias-logo[_ngcontent-%COMP%] {\n  position: absolute;\n  top: -50%;\n  right: 27%;\n  transform: translate(50%, 27%);\n}\n@media (max-width: 991px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    flex-direction: column;\n    height: 100%;\n    padding: 90px 30px 30px 30px;\n    text-align: center;\n    justify-content: center;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    align-items: center !important;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    line-height: 36px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    width: 90%;\n    margin: 0 auto;\n  }\n  .type-div[_ngcontent-%COMP%] {\n    justify-content: center;\n    flex-wrap: wrap;\n    margin-top: 20px;\n  }\n  .right-sidegradient-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    display: flex;\n    justify-content: center;\n    overflow: visible;\n  }\n  .gradient-div[_ngcontent-%COMP%] {\n    width: 330px;\n    height: 330px;\n  }\n  .ias-logo[_ngcontent-%COMP%] {\n    top: -45%;\n    right: 50%;\n    transform: translate(50%, 45%);\n    width: 150px;\n  }\n}\n@media (max-width: 768px) {\n  .main-cta-div[_ngcontent-%COMP%] {\n    padding: 40px 0;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    line-height: 32px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n  }\n  .type[_ngcontent-%COMP%] {\n    padding: 5px 10px;\n  }\n  .type[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 12px;\n  }\n  .gradient-div[_ngcontent-%COMP%] {\n    width: 260px;\n    height: 260px;\n  }\n  .btn-white[_ngcontent-%COMP%] {\n    width: 100%;\n  }\n}\n@media (max-width: 480px) {\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 22px;\n    line-height: 28px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    width: 100%;\n  }\n  .type-div[_ngcontent-%COMP%] {\n    gap: 10px !important;\n  }\n  .gradient-div[_ngcontent-%COMP%] {\n    width: 200px;\n    height: 200px;\n  }\n  .ias-logo[_ngcontent-%COMP%] {\n    width: 100px;\n    top: -12%;\n    transform: translate(50%, 15%);\n  }\n}\n/*# sourceMappingURL=payment-cta.component.css.map */"] });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(PaymentCtaComponent, { className: "PaymentCtaComponent", filePath: "src/app/website/components/payment-cta/payment-cta.component.ts", lineNumber: 11 });
+})();
+
+// src/app/website/components/ias-donate/ias-donate.component.ts
+var IasDonateComponent = class _IasDonateComponent {
+  static {
+    this.\u0275fac = function IasDonateComponent_Factory(t) {
+      return new (t || _IasDonateComponent)();
+    };
+  }
+  static {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasDonateComponent, selectors: [["app-ias-donate"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 0, consts: [[1, "main-cta-div"], [1, "container"], [1, "main-payment-div", "d-flex", "position-relative"], [1, "left-side-cont-div", "w-50", "d-flex", "flex-column", "align-items-start", "justify-content-center"], ["routerLink", "coming-soon", 1, "btn", "btn-white"], [1, "right-sidegradient-div", "w-50", "overflow-hidden", "position-relative"], ["src", "../../../../assets/images/make-image.png", "alt", "ias logo", 1, "position-absolute", "w-100", "donate-img"]], template: function IasDonateComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1");
+        \u0275\u0275text(5, "Donate & Empower Change");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(6, "p");
+        \u0275\u0275text(7, "Your membership fee or donation directly supports governance research, rural outreach, and public service mentorship.");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(8, "button", 4);
+        \u0275\u0275text(9, "Donate Now");
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(10, "div", 5);
+        \u0275\u0275element(11, "img", 6);
+        \u0275\u0275elementEnd()()()();
+      }
+    }, dependencies: [RouterModule, RouterLink], styles: ['@charset "UTF-8";\n\n\n\n.main-cta-div[_ngcontent-%COMP%] {\n  background-color: #150F22;\n  padding: 60px 0px;\n}\n.main-payment-div[_ngcontent-%COMP%] {\n  border-radius: 24px;\n  background:\n    linear-gradient(\n      130deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%);\n  height: 315px;\n  padding: 0px 50px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 36px;\n  font-weight: 500;\n  line-height: 42px;\n  margin-bottom: 18px;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 150%;\n}\n.btn-white[_ngcontent-%COMP%] {\n  display: inline-flex;\n  height: 48px;\n  padding: 8px 24px;\n  justify-content: center;\n  align-items: center;\n  border-radius: 4px;\n  background: #FFF;\n  color: #150F22;\n  font-family: Urbanist;\n  font-weight: 600;\n}\n.donate-img[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: -40px;\n  width: 100%;\n}\n@media (max-width: 767px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    flex-direction: column;\n    height: auto;\n    padding: 20px 20px 0 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    text-align: center;\n    align-items: center !important;\n    margin-bottom: 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    line-height: 32px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n    line-height: 22px;\n    padding: 0 12px;\n  }\n  .right-sidegradient-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    height: auto;\n    position: relative;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    position: relative;\n    bottom: 0 !important;\n    width: 100%;\n    margin-top: 10px;\n  }\n}\n@media (min-width: 768px) and (max-width: 1024px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    height: auto;\n    padding: 40px 30px;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    bottom: -10px;\n    width: 105%;\n  }\n}\n/*# sourceMappingURL=ias-donate.component.css.map */'] });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasDonateComponent, { className: "IasDonateComponent", filePath: "src/app/website/components/ias-donate/ias-donate.component.ts", lineNumber: 11 });
+})();
+
 // src/app/website/pages/main-page/ias-homepage/ias-homepage.component.ts
 var IasHomepageComponent = class _IasHomepageComponent {
   constructor(meta, titleService, router) {
@@ -1534,17 +1623,17 @@ var IasHomepageComponent = class _IasHomepageComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHomepageComponent, selectors: [["app-ias-homepage"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 8, vars: 0, template: function IasHomepageComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasHomepageComponent, selectors: [["app-ias-homepage"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 10, vars: 0, template: function IasHomepageComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275element(0, "app-hero-section")(1, "app-news-slider")(2, "app-ias-community-members")(3, "app-ias-privileges")(4, "app-ias-foundation")(5, "app-ias-createshare")(6, "app-ias-monthlymeet")(7, "app-ias-initiatives");
+        \u0275\u0275element(0, "app-hero-section")(1, "app-news-slider")(2, "app-ias-community-members")(3, "app-ias-privileges")(4, "app-ias-foundation")(5, "app-ias-donate")(6, "app-ias-createshare")(7, "app-ias-monthlymeet")(8, "app-payment-cta")(9, "app-ias-initiatives");
       }
-    }, dependencies: [HeroSectionComponent, IasCommunityMembersComponent, IasPrivilegesComponent, IasFoundationComponent, IasMonthlymeetComponent, IasInitiativesComponent, IasCreateshareComponent, NewsSliderComponent] });
+    }, dependencies: [HeroSectionComponent, IasCommunityMembersComponent, IasPrivilegesComponent, IasFoundationComponent, IasMonthlymeetComponent, IasInitiativesComponent, IasCreateshareComponent, NewsSliderComponent, PaymentCtaComponent, IasDonateComponent] });
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasHomepageComponent, { className: "IasHomepageComponent", filePath: "src/app/website/pages/main-page/ias-homepage/ias-homepage.component.ts", lineNumber: 20 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasHomepageComponent, { className: "IasHomepageComponent", filePath: "src/app/website/pages/main-page/ias-homepage/ias-homepage.component.ts", lineNumber: 22 });
 })();
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-2MWFLHF3.mjs.map
+//# sourceMappingURL=chunk-EMEUZTPT.mjs.map
