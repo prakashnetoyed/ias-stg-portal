@@ -1159,7 +1159,7 @@ function IasCreateshareComponent_div_44_Template(rf, ctx) {
 function IasCreateshareComponent_ng_template_45_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "p", 75);
-    \u0275\u0275text(1, "No fatured profile Available.");
+    \u0275\u0275text(1, "No featured profile Available.");
     \u0275\u0275elementEnd();
   }
 }
@@ -1636,4 +1636,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-EMEUZTPT.mjs.map
+//# sourceMappingURL=chunk-3OXJ4WSB.mjs.map
