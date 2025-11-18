@@ -1,9 +1,7 @@
-import './polyfills.server.mjs';
 import {
   AccountActivityStatus
-} from "./chunk-5O6ACHHV.mjs";
-import "./chunk-TPTASJJA.mjs";
-import "./chunk-UI6ESX43.mjs";
+} from "./chunk-2F5YYLMP.js";
+import "./chunk-GWB22WA3.js";
 import {
   DefaultValueAccessor,
   FormsModule,
@@ -11,21 +9,22 @@ import {
   NgModel,
   NgSelectOption,
   ɵNgSelectMultipleOption
-} from "./chunk-2UIUPUOY.mjs";
+} from "./chunk-CTBAGNAW.js";
+import "./chunk-JPPWT7WU.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
-import "./chunk-NFXFD3SX.mjs";
+} from "./chunk-WYW2S4QW.js";
+import "./chunk-R23YUY6E.js";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   NgClass,
   NgForOf,
   NgIf
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -44,7 +43,6 @@ import {
   ɵɵnamespaceSVG,
   ɵɵnextContext,
   ɵɵproperty,
-  ɵɵpureFunction0,
   ɵɵqueryRefresh,
   ɵɵreference,
   ɵɵresetView,
@@ -58,12 +56,11 @@ import {
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty,
   ɵɵviewQuery
-} from "./chunk-IXD3JOLX.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-664KIS5M.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/IAS-portal/pages/approved-user/approved-user.component.ts
 var _c0 = ["toastElement"];
-var _c1 = () => [];
 function ApprovedUserComponent_table_31_tr_20_a_22_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = \u0275\u0275getCurrentView();
@@ -226,27 +223,26 @@ function ApprovedUserComponent_li_40_Template(rf, ctx) {
     const _r8 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "li", 29)(1, "a", 30);
     \u0275\u0275listener("click", function ApprovedUserComponent_li_40_Template_a_click_1_listener() {
-      const i_r9 = \u0275\u0275restoreView(_r8).index;
+      const page_r9 = \u0275\u0275restoreView(_r8).$implicit;
       const ctx_r4 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r4.changePage(i_r9 + 1));
+      return \u0275\u0275resetView(ctx_r4.changePage(page_r9));
     });
     \u0275\u0275text(2);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
-    const i_r9 = ctx.index;
+    const page_r9 = ctx.$implicit;
     const ctx_r4 = \u0275\u0275nextContext();
     \u0275\u0275advance();
-    \u0275\u0275classProp("active", i_r9 + 1 === ctx_r4.currentPage);
+    \u0275\u0275classProp("active", page_r9 === ctx_r4.currentPage);
     \u0275\u0275advance();
-    \u0275\u0275textInterpolate(i_r9 + 1);
+    \u0275\u0275textInterpolate1(" ", page_r9, " ");
   }
 }
 var ApprovedUserComponent = class _ApprovedUserComponent {
   constructor(http) {
     this.http = http;
     this.users = [];
-    this.allApprovedUsers = [];
     this.AccountActivityStatus = AccountActivityStatus;
     this.searchText = "";
     this.pageSize = 15;
@@ -257,40 +253,37 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
     this.pagination = {
       total: 0,
       page: 1,
-      limit: 8
+      limit: this.pageSize
     };
   }
   ngOnInit() {
-    this.loadUsers();
+    this.loadUsers(1, this.pageSize);
   }
+  // ✅ Server-side paginated API call
   loadUsers(page = 1, limit = this.pageSize) {
     const token = localStorage.getItem("authToken");
     const headers = new HttpHeaders({ Authorization: `Bearer ${token}` });
-    let url = `${environment.apiUrl}/admin/users?limit=${limit}&page=${page}&isActive=true&role=user`;
-    if (this.searchText?.trim()) {
+    let url = `${environment.apiUrl}/admin/users?page=${page}&limit=${limit}&isActive=true&role=user`;
+    if (this.searchText.trim()) {
       url += `&name=${encodeURIComponent(this.searchText.trim())}`;
     }
     this.http.get(url, { headers }).subscribe({
       next: (res) => {
-        this.allApprovedUsers = res.data.data.filter((user) => user.status === this.AccountActivityStatus.APPROVED);
-        this.pagination.total = this.allApprovedUsers.length;
-        this.pagination.limit = this.pageSize;
-        this.updatePage();
+        this.users = res.data.data.filter((user) => user.status === this.AccountActivityStatus.APPROVED);
+        this.pagination = res.data.pagination;
+        this.currentPage = this.pagination.page;
       },
       error: (err) => {
         console.error("Error fetching users:", err);
       }
     });
   }
+  get paginationArray() {
+    return Array.from({ length: this.totalPages }, (_, i) => i + 1);
+  }
   onSearchKeyup() {
     this.currentPage = 1;
-    this.loadUsers();
-  }
-  // ✅ slice approved data according to pagination
-  updatePage() {
-    const start = (this.currentPage - 1) * this.pageSize;
-    const end = start + this.pageSize;
-    this.users = this.allApprovedUsers.slice(start, end);
+    this.loadUsers(1, this.pageSize);
   }
   get totalPages() {
     return Math.ceil(this.pagination.total / this.pageSize);
@@ -298,19 +291,23 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
   changePage(page) {
     if (page >= 1 && page <= this.totalPages) {
       this.currentPage = page;
-      this.updatePage();
+      this.loadUsers(page, this.pageSize);
     }
   }
   goPrevious() {
-    this.changePage(this.currentPage - 1);
+    if (this.currentPage > 1) {
+      this.loadUsers(this.currentPage - 1, this.pageSize);
+    }
   }
   goNext() {
-    this.changePage(this.currentPage + 1);
+    if (this.currentPage < this.totalPages) {
+      this.loadUsers(this.currentPage + 1, this.pageSize);
+    }
   }
   onPageSizeChange(event) {
     this.pageSize = +event.target.value;
     this.currentPage = 1;
-    this.updatePage();
+    this.loadUsers(1, this.pageSize);
   }
   approveUser(user) {
     const token = localStorage.getItem("authToken");
@@ -322,10 +319,9 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
     this.http.put(`${environment.apiUrl}/admin/users`, body, { headers }).subscribe({
       next: () => {
         this.showToast(`User ${user.doptOfficer?.englishName} approved successfully`, "success");
-        this.loadUsers();
+        this.loadUsers(this.currentPage, this.pageSize);
       },
-      error: (err) => {
-        console.error("Error approving user:", err);
+      error: () => {
         this.showToast("Failed to approve user", "danger");
       }
     });
@@ -340,10 +336,9 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
     this.http.put(`${environment.apiUrl}/admin/users`, body, { headers }).subscribe({
       next: () => {
         this.showToast(`User ${user.doptOfficer?.englishName} Moved to pending list`, "warning");
-        this.loadUsers();
+        this.loadUsers(this.currentPage, this.pageSize);
       },
-      error: (err) => {
-        console.error("Error approving user:", err);
+      error: () => {
         this.showToast("Failed to approve user", "danger");
       }
     });
@@ -356,7 +351,6 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
       modal.show();
     }
   }
-  // Called when "Deactivate" in modal is clicked
   confirmDelete() {
     if (!this.userIdToDelete)
       return;
@@ -369,9 +363,9 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
     this.http.patch(`${environment.apiUrl}/admin/user`, body, { headers }).subscribe({
       next: () => {
         this.showToast("User Account Deactivated successfully", "success");
-        this.loadUsers();
+        this.loadUsers(this.currentPage, this.pageSize);
       },
-      error: (err) => {
+      error: () => {
         this.showToast("Error Deactivating account", "danger");
       }
     });
@@ -402,7 +396,7 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
         let _t;
         \u0275\u0275queryRefresh(_t = \u0275\u0275loadQuery()) && (ctx.toastElement = _t.first);
       }
-    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 52, vars: 16, consts: [["toastElement", ""], ["noUsers", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "confirmDeleteModal", "tabindex", "-1", "aria-labelledby", "confirmDeleteLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog"], [1, "modal-content"], [1, "modal-header"], ["id", "confirmDeleteLabel", 1, "modal-title"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close"], [1, "modal-body"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-secondary"], ["type", "button", 1, "btn", "btn-prime", 3, "click"], [1, "tableheading"], [1, "d-flex", "justify-content-between", "align-items-center", "flex-wrap", "mb-3"], [1, "mb-1"], [1, "input-group", "w-100", 2, "max-width", "300px"], [1, "input-group-text", "bg-transparent", "border-end-0"], ["xmlns", "http://www.w3.org/2000/svg", "width", "15", "height", "15", "viewBox", "0 0 15 15", "fill", "none"], ["d", "M10.2708 9.08333H9.64542L9.42375 8.86958C10.1996 7.96708 10.6667 6.79542 10.6667 5.52083C10.6667 2.67875 8.36292 0.375 5.52083 0.375C2.67875 0.375 0.375 2.67875 0.375 5.52083C0.375 8.36292 2.67875 10.6667 5.52083 10.6667C6.79542 10.6667 7.96708 10.1996 8.86958 9.42375L9.08333 9.64542V10.2708L13.0417 14.2213L14.2213 13.0417L10.2708 9.08333ZM5.52083 9.08333C3.54958 9.08333 1.95833 7.49208 1.95833 5.52083C1.95833 3.54958 3.54958 1.95833 5.52083 1.95833C7.49208 1.95833 9.08333 3.54958 9.08333 5.52083C9.08333 7.49208 7.49208 9.08333 5.52083 9.08333Z", "fill", "#727272"], ["type", "text", "placeholder", "Search by name", 1, "form-control", "border-start-0", 3, "ngModelChange", "keyup", "ngModel"], [1, "table-responsive", "custom-table"], ["class", "table align-middle mb-0", 4, "ngIf", "ngIfElse"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-2", "mt-3"], [1, "pagination", "modern-pagination", "mb-0"], [1, "page-item"], [1, "page-link", 3, "click"], ["class", "page-item", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center"], [1, "form-select", "form-select-sm", "w-auto", 3, "change"], ["value", "15", 3, "selected"], ["value", "30", 3, "selected"], ["value", "50", 3, "selected"], [1, "table", "align-middle", "mb-0"], [4, "ngFor", "ngForOf"], [1, "badge", 3, "ngClass"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", 1, "btn"], [1, "dropdown-menu", "shadow"], ["class", "dropdown-item blue", 3, "click", 4, "ngIf"], ["class", "dropdown-item red", 3, "click", 4, "ngIf"], [1, "dropdown-item", "red", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "20", "height", "20", "viewBox", "0 0 20 20", "fill", "none"], ["id", "mask0_50905_5148", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "20", "height", "20", 2, "mask-type", "alpha"], ["width", "20", "height", "20", "fill", "#D9D9D9"], ["mask", "url(#mask0_50905_5148)"], ["d", "M14.5002 10.8335L13.3335 9.66683L15.0627 7.91683L13.3335 6.18766L14.5002 5.00016L16.2502 6.75016L17.9793 5.00016L19.1668 6.18766L17.4168 7.91683L19.1668 9.66683L17.9793 10.8335L16.2502 9.10433L14.5002 10.8335ZM7.50016 10.0002C6.5835 10.0002 5.79877 9.67377 5.146 9.021C4.49322 8.36822 4.16683 7.5835 4.16683 6.66683C4.16683 5.75016 4.49322 4.96544 5.146 4.31266C5.79877 3.65989 6.5835 3.3335 7.50016 3.3335C8.41683 3.3335 9.20155 3.65989 9.85433 4.31266C10.5071 4.96544 10.8335 5.75016 10.8335 6.66683C10.8335 7.5835 10.5071 8.36822 9.85433 9.021C9.20155 9.67377 8.41683 10.0002 7.50016 10.0002ZM0.833496 16.6668V14.3335C0.833496 13.8613 0.955024 13.4272 1.19808 13.0314C1.44114 12.6356 1.76405 12.3335 2.16683 12.1252C3.02794 11.6946 3.90294 11.3717 4.79183 11.1564C5.68072 10.9411 6.5835 10.8335 7.50016 10.8335C8.41683 10.8335 9.31961 10.9411 10.2085 11.1564C11.0974 11.3717 11.9724 11.6946 12.8335 12.1252C13.2363 12.3335 13.5592 12.6356 13.8022 13.0314C14.0453 13.4272 14.1668 13.8613 14.1668 14.3335V16.6668H0.833496ZM2.50016 15.0002H12.5002V14.3335C12.5002 14.1807 12.462 14.0418 12.3856 13.9168C12.3092 13.7918 12.2085 13.6946 12.0835 13.6252C11.3335 13.2502 10.5766 12.9689 9.81266 12.7814C9.04877 12.5939 8.27794 12.5002 7.50016 12.5002C6.72239 12.5002 5.95155 12.5939 5.18766 12.7814C4.42377 12.9689 3.66683 13.2502 2.91683 13.6252C2.79183 13.6946 2.69114 13.7918 2.61475 13.9168C2.53836 14.0418 2.50016 14.1807 2.50016 14.3335V15.0002ZM7.50016 8.3335C7.9585 8.3335 8.35086 8.1703 8.67725 7.84391C9.00364 7.51752 9.16683 7.12516 9.16683 6.66683C9.16683 6.2085 9.00364 5.81613 8.67725 5.48975C8.35086 5.16336 7.9585 5.00016 7.50016 5.00016C7.04183 5.00016 6.64947 5.16336 6.32308 5.48975C5.99669 5.81613 5.8335 6.2085 5.8335 6.66683C5.8335 7.12516 5.99669 7.51752 6.32308 7.84391C6.64947 8.1703 7.04183 8.3335 7.50016 8.3335Z", "fill", "#B7131A"], [1, "dropdown-item", "blue", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "14", "viewBox", "0 0 18 14", "fill", "none"], ["d", "M0.666504 13.6668V11.3335C0.666504 10.8752 0.784559 10.4446 1.02067 10.0418C1.25678 9.63905 1.58317 9.3335 1.99984 9.12516C2.70817 8.76405 3.50678 8.4585 4.39567 8.2085C5.28456 7.9585 6.26373 7.8335 7.33317 7.8335C7.74984 7.8335 8.15609 7.85433 8.55192 7.896C8.94775 7.93766 9.33317 8.00016 9.70817 8.0835L8.24984 9.54183C8.09706 9.51405 7.94775 9.50016 7.80192 9.50016H7.33317C6.34706 9.50016 5.46164 9.61822 4.67692 9.85433C3.8922 10.0904 3.24984 10.3474 2.74984 10.6252C2.62484 10.6946 2.52414 10.7918 2.44775 10.9168C2.37137 11.0418 2.33317 11.1807 2.33317 11.3335V12.0002H7.5415L9.20817 13.6668H0.666504ZM11.9582 14.0002L9.08317 11.1252L10.2498 9.9585L11.9582 11.6668L16.1665 7.4585L17.3332 8.62516L11.9582 14.0002ZM7.33317 7.00016C6.4165 7.00016 5.63178 6.67377 4.979 6.021C4.32623 5.36822 3.99984 4.5835 3.99984 3.66683C3.99984 2.75016 4.32623 1.96544 4.979 1.31266C5.63178 0.659885 6.4165 0.333496 7.33317 0.333496C8.24984 0.333496 9.03456 0.659885 9.68734 1.31266C10.3401 1.96544 10.6665 2.75016 10.6665 3.66683C10.6665 4.5835 10.3401 5.36822 9.68734 6.021C9.03456 6.67377 8.24984 7.00016 7.33317 7.00016ZM7.33317 5.3335C7.7915 5.3335 8.18387 5.1703 8.51025 4.84391C8.83664 4.51752 8.99984 4.12516 8.99984 3.66683C8.99984 3.2085 8.83664 2.81613 8.51025 2.48975C8.18387 2.16336 7.7915 2.00016 7.33317 2.00016C6.87484 2.00016 6.48248 2.16336 6.15609 2.48975C5.8297 2.81613 5.6665 3.2085 5.6665 3.66683C5.6665 4.12516 5.8297 4.51752 6.15609 4.84391C6.48248 5.1703 6.87484 5.3335 7.33317 5.3335Z", "fill", "#3C9718"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center"], ["src", "../../../../assets/icons/empty-state.png", "alt", "empty state"]], template: function ApprovedUserComponent_Template(rf, ctx) {
+    }, standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 52, vars: 15, consts: [["toastElement", ""], ["noUsers", ""], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "confirmDeleteModal", "tabindex", "-1", "aria-labelledby", "confirmDeleteLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog"], [1, "modal-content"], [1, "modal-header"], ["id", "confirmDeleteLabel", 1, "modal-title"], ["type", "button", "data-bs-dismiss", "modal", "aria-label", "Close", 1, "btn-close"], [1, "modal-body"], [1, "modal-footer"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn", "btn-secondary"], ["type", "button", 1, "btn", "btn-prime", 3, "click"], [1, "tableheading"], [1, "d-flex", "justify-content-between", "align-items-center", "flex-wrap", "mb-3"], [1, "mb-1"], [1, "input-group", "w-100", 2, "max-width", "300px"], [1, "input-group-text", "bg-transparent", "border-end-0"], ["xmlns", "http://www.w3.org/2000/svg", "width", "15", "height", "15", "viewBox", "0 0 15 15", "fill", "none"], ["d", "M10.2708 9.08333H9.64542L9.42375 8.86958C10.1996 7.96708 10.6667 6.79542 10.6667 5.52083C10.6667 2.67875 8.36292 0.375 5.52083 0.375C2.67875 0.375 0.375 2.67875 0.375 5.52083C0.375 8.36292 2.67875 10.6667 5.52083 10.6667C6.79542 10.6667 7.96708 10.1996 8.86958 9.42375L9.08333 9.64542V10.2708L13.0417 14.2213L14.2213 13.0417L10.2708 9.08333ZM5.52083 9.08333C3.54958 9.08333 1.95833 7.49208 1.95833 5.52083C1.95833 3.54958 3.54958 1.95833 5.52083 1.95833C7.49208 1.95833 9.08333 3.54958 9.08333 5.52083C9.08333 7.49208 7.49208 9.08333 5.52083 9.08333Z", "fill", "#727272"], ["type", "text", "placeholder", "Search by name", 1, "form-control", "border-start-0", 3, "ngModelChange", "keyup", "ngModel"], [1, "table-responsive", "custom-table"], ["class", "table align-middle mb-0", 4, "ngIf", "ngIfElse"], [1, "d-flex", "justify-content-end", "align-items-center", "gap-2", "mt-3"], [1, "pagination", "modern-pagination", "mb-0"], [1, "page-item"], [1, "page-link", 3, "click"], ["class", "page-item", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center"], [1, "form-select", "form-select-sm", "w-auto", 3, "change"], ["value", "15", 3, "selected"], ["value", "30", 3, "selected"], ["value", "50", 3, "selected"], [1, "table", "align-middle", "mb-0"], [4, "ngFor", "ngForOf"], [1, "badge", 3, "ngClass"], [1, "dropdown"], ["type", "button", "data-bs-toggle", "dropdown", 1, "btn"], [1, "dropdown-menu", "shadow"], ["class", "dropdown-item blue", 3, "click", 4, "ngIf"], ["class", "dropdown-item red", 3, "click", 4, "ngIf"], [1, "dropdown-item", "red", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "20", "height", "20", "viewBox", "0 0 20 20", "fill", "none"], ["id", "mask0_50905_5148", "maskUnits", "userSpaceOnUse", "x", "0", "y", "0", "width", "20", "height", "20", 2, "mask-type", "alpha"], ["width", "20", "height", "20", "fill", "#D9D9D9"], ["mask", "url(#mask0_50905_5148)"], ["d", "M14.5002 10.8335L13.3335 9.66683L15.0627 7.91683L13.3335 6.18766L14.5002 5.00016L16.2502 6.75016L17.9793 5.00016L19.1668 6.18766L17.4168 7.91683L19.1668 9.66683L17.9793 10.8335L16.2502 9.10433L14.5002 10.8335ZM7.50016 10.0002C6.5835 10.0002 5.79877 9.67377 5.146 9.021C4.49322 8.36822 4.16683 7.5835 4.16683 6.66683C4.16683 5.75016 4.49322 4.96544 5.146 4.31266C5.79877 3.65989 6.5835 3.3335 7.50016 3.3335C8.41683 3.3335 9.20155 3.65989 9.85433 4.31266C10.5071 4.96544 10.8335 5.75016 10.8335 6.66683C10.8335 7.5835 10.5071 8.36822 9.85433 9.021C9.20155 9.67377 8.41683 10.0002 7.50016 10.0002ZM0.833496 16.6668V14.3335C0.833496 13.8613 0.955024 13.4272 1.19808 13.0314C1.44114 12.6356 1.76405 12.3335 2.16683 12.1252C3.02794 11.6946 3.90294 11.3717 4.79183 11.1564C5.68072 10.9411 6.5835 10.8335 7.50016 10.8335C8.41683 10.8335 9.31961 10.9411 10.2085 11.1564C11.0974 11.3717 11.9724 11.6946 12.8335 12.1252C13.2363 12.3335 13.5592 12.6356 13.8022 13.0314C14.0453 13.4272 14.1668 13.8613 14.1668 14.3335V16.6668H0.833496ZM2.50016 15.0002H12.5002V14.3335C12.5002 14.1807 12.462 14.0418 12.3856 13.9168C12.3092 13.7918 12.2085 13.6946 12.0835 13.6252C11.3335 13.2502 10.5766 12.9689 9.81266 12.7814C9.04877 12.5939 8.27794 12.5002 7.50016 12.5002C6.72239 12.5002 5.95155 12.5939 5.18766 12.7814C4.42377 12.9689 3.66683 13.2502 2.91683 13.6252C2.79183 13.6946 2.69114 13.7918 2.61475 13.9168C2.53836 14.0418 2.50016 14.1807 2.50016 14.3335V15.0002ZM7.50016 8.3335C7.9585 8.3335 8.35086 8.1703 8.67725 7.84391C9.00364 7.51752 9.16683 7.12516 9.16683 6.66683C9.16683 6.2085 9.00364 5.81613 8.67725 5.48975C8.35086 5.16336 7.9585 5.00016 7.50016 5.00016C7.04183 5.00016 6.64947 5.16336 6.32308 5.48975C5.99669 5.81613 5.8335 6.2085 5.8335 6.66683C5.8335 7.12516 5.99669 7.51752 6.32308 7.84391C6.64947 8.1703 7.04183 8.3335 7.50016 8.3335Z", "fill", "#B7131A"], [1, "dropdown-item", "blue", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "18", "height", "14", "viewBox", "0 0 18 14", "fill", "none"], ["d", "M0.666504 13.6668V11.3335C0.666504 10.8752 0.784559 10.4446 1.02067 10.0418C1.25678 9.63905 1.58317 9.3335 1.99984 9.12516C2.70817 8.76405 3.50678 8.4585 4.39567 8.2085C5.28456 7.9585 6.26373 7.8335 7.33317 7.8335C7.74984 7.8335 8.15609 7.85433 8.55192 7.896C8.94775 7.93766 9.33317 8.00016 9.70817 8.0835L8.24984 9.54183C8.09706 9.51405 7.94775 9.50016 7.80192 9.50016H7.33317C6.34706 9.50016 5.46164 9.61822 4.67692 9.85433C3.8922 10.0904 3.24984 10.3474 2.74984 10.6252C2.62484 10.6946 2.52414 10.7918 2.44775 10.9168C2.37137 11.0418 2.33317 11.1807 2.33317 11.3335V12.0002H7.5415L9.20817 13.6668H0.666504ZM11.9582 14.0002L9.08317 11.1252L10.2498 9.9585L11.9582 11.6668L16.1665 7.4585L17.3332 8.62516L11.9582 14.0002ZM7.33317 7.00016C6.4165 7.00016 5.63178 6.67377 4.979 6.021C4.32623 5.36822 3.99984 4.5835 3.99984 3.66683C3.99984 2.75016 4.32623 1.96544 4.979 1.31266C5.63178 0.659885 6.4165 0.333496 7.33317 0.333496C8.24984 0.333496 9.03456 0.659885 9.68734 1.31266C10.3401 1.96544 10.6665 2.75016 10.6665 3.66683C10.6665 4.5835 10.3401 5.36822 9.68734 6.021C9.03456 6.67377 8.24984 7.00016 7.33317 7.00016ZM7.33317 5.3335C7.7915 5.3335 8.18387 5.1703 8.51025 4.84391C8.83664 4.51752 8.99984 4.12516 8.99984 3.66683C8.99984 3.2085 8.83664 2.81613 8.51025 2.48975C8.18387 2.16336 7.7915 2.00016 7.33317 2.00016C6.87484 2.00016 6.48248 2.16336 6.15609 2.48975C5.8297 2.81613 5.6665 3.2085 5.6665 3.66683C5.6665 4.12516 5.8297 4.51752 6.15609 4.84391C6.48248 5.1703 6.87484 5.3335 7.33317 5.3335Z", "fill", "#3C9718"], [1, "text-center", "p-4", "d-flex", "align-items-center", "justify-content-center"], ["src", "../../../../assets/icons/empty-state.png", "alt", "empty state"]], template: function ApprovedUserComponent_Template(rf, ctx) {
       if (rf & 1) {
         const _r1 = \u0275\u0275getCurrentView();
         \u0275\u0275elementStart(0, "div", 2)(1, "div", 3, 0)(3, "div", 4)(4, "div", 5);
@@ -495,7 +489,7 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
         \u0275\u0275advance(6);
         \u0275\u0275classProp("disabled", ctx.currentPage === 1);
         \u0275\u0275advance(3);
-        \u0275\u0275property("ngForOf", \u0275\u0275pureFunction0(15, _c1).constructor(ctx.totalPages));
+        \u0275\u0275property("ngForOf", ctx.paginationArray);
         \u0275\u0275advance();
         \u0275\u0275classProp("disabled", ctx.currentPage === ctx.totalPages);
         \u0275\u0275advance(5);
@@ -514,4 +508,4 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
 export {
   ApprovedUserComponent
 };
-//# sourceMappingURL=chunk-JH3IVTD2.mjs.map
+//# sourceMappingURL=chunk-OCBCNG7U.js.map

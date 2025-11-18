@@ -4328,7 +4328,7 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-QX5FPNVU.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-OCBCNG7U.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",

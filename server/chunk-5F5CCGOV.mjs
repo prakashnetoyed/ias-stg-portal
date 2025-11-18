@@ -4406,7 +4406,7 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-JH3IVTD2.mjs").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-LM3UKRGY.mjs").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
@@ -4804,4 +4804,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-IVAXHX6O.mjs.map
+//# sourceMappingURL=chunk-5F5CCGOV.mjs.map
