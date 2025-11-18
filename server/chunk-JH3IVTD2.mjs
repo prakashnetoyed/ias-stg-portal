@@ -263,10 +263,10 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
   ngOnInit() {
     this.loadUsers();
   }
-  loadUsers() {
+  loadUsers(page = 1, limit = this.pageSize) {
     const token = localStorage.getItem("authToken");
     const headers = new HttpHeaders({ Authorization: `Bearer ${token}` });
-    let url = `${environment.apiUrl}/admin/users?limit=0&isActive=true&role=user`;
+    let url = `${environment.apiUrl}/admin/users?limit=${limit}&page=${page}&isActive=true&role=user`;
     if (this.searchText?.trim()) {
       url += `&name=${encodeURIComponent(this.searchText.trim())}`;
     }
@@ -514,4 +514,4 @@ var ApprovedUserComponent = class _ApprovedUserComponent {
 export {
   ApprovedUserComponent
 };
-//# sourceMappingURL=chunk-MDRTECM3.mjs.map
+//# sourceMappingURL=chunk-JH3IVTD2.mjs.map

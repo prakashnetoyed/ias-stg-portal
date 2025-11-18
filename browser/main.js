@@ -4328,15 +4328,15 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-VHZRU64S.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-QX5FPNVU.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-63R6DROF.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-2DTM2QAB.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-EDQJFHSX.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-LJVHINEK.js").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",

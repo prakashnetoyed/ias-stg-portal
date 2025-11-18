@@ -4406,15 +4406,15 @@ var routes = [
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-MDRTECM3.mjs").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-JH3IVTD2.mjs").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-FDIFG34N.mjs").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-RVXZ5ABS.mjs").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-EQFVJIFS.mjs").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-HNQXLU7S.mjs").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",
@@ -4804,4 +4804,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-W7QUGEVQ.mjs.map
+//# sourceMappingURL=chunk-IVAXHX6O.mjs.map
