@@ -4160,7 +4160,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7OAHTVVI.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-7JZIGJJJ.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4344,7 +4344,7 @@ var routes = [
       },
       {
         path: "donation",
-        loadComponent: () => import("./chunk-6ZKVDBIK.js").then((m) => m.DonationsComponent)
+        loadComponent: () => import("./chunk-V2HPDBQJ.js").then((m) => m.DonationsComponent)
       }
     ]
   },

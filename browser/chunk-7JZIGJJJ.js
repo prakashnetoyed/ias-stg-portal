@@ -1,41 +1,40 @@
-import './polyfills.server.mjs';
-import {
-  TimeAgoPipe
-} from "./chunk-GMEYXRZM.mjs";
-import {
-  AuthService
-} from "./chunk-MFAT4735.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-YLAG4H64.mjs";
-import {
-  Router,
-  RouterLink,
-  RouterModule
-} from "./chunk-UI6ESX43.mjs";
+} from "./chunk-6BSWSVZ7.js";
 import {
   DefaultValueAccessor,
   FormsModule,
   NgControlStatus,
   NgModel,
   NumberValueAccessor
-} from "./chunk-2UIUPUOY.mjs";
+} from "./chunk-CTBAGNAW.js";
+import {
+  TimeAgoPipe
+} from "./chunk-6BLZEBKM.js";
+import {
+  AuthService
+} from "./chunk-XIWVDVCF.js";
+import {
+  Router,
+  RouterLink,
+  RouterModule
+} from "./chunk-JPPWT7WU.js";
 import {
   ToastService
-} from "./chunk-A2UBZQQG.mjs";
+} from "./chunk-CGBCDAXV.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   Meta,
   Title
-} from "./chunk-NFXFD3SX.mjs";
+} from "./chunk-R23YUY6E.js";
 import {
   HttpClient
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DatePipe,
@@ -44,7 +43,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   PLATFORM_ID,
   inject,
@@ -86,11 +85,11 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-IXD3JOLX.mjs";
+} from "./chunk-664KIS5M.js";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-24VIC3GD.mjs";
+} from "./chunk-ASLTLD6L.js";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -1580,11 +1579,17 @@ var PaymentCtaComponent = class _PaymentCtaComponent {
 
 // src/app/website/components/ias-donate/ias-donate.component.ts
 var IasDonateComponent = class _IasDonateComponent {
-  constructor(http) {
+  constructor(http, toastService) {
     this.http = http;
+    this.toastService = toastService;
     this.donationAmount = 0;
   }
   openModal() {
+    const userRole = atob(localStorage.getItem("userRole") || "");
+    if (userRole === "admin") {
+      this.toastService.showToast("You are logged in as a Admin. Please login with Member credentials to access this feature", "danger");
+      return;
+    }
     const modal = new bootstrap.Modal(document.getElementById("donationModal"));
     modal.show();
   }
@@ -1625,7 +1630,7 @@ var IasDonateComponent = class _IasDonateComponent {
   }
   static {
     this.\u0275fac = function IasDonateComponent_Factory(t) {
-      return new (t || _IasDonateComponent)(\u0275\u0275directiveInject(HttpClient));
+      return new (t || _IasDonateComponent)(\u0275\u0275directiveInject(HttpClient), \u0275\u0275directiveInject(ToastService));
     };
   }
   static {
@@ -1705,7 +1710,7 @@ var IasDonateComponent = class _IasDonateComponent {
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasDonateComponent, { className: "IasDonateComponent", filePath: "src/app/website/components/ias-donate/ias-donate.component.ts", lineNumber: 16 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasDonateComponent, { className: "IasDonateComponent", filePath: "src/app/website/components/ias-donate/ias-donate.component.ts", lineNumber: 17 });
 })();
 
 // src/app/website/pages/main-page/ias-homepage/ias-homepage.component.ts
@@ -1746,4 +1751,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-6MWUGEMY.mjs.map
+//# sourceMappingURL=chunk-7JZIGJJJ.js.map
