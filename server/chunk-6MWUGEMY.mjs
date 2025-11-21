@@ -1,33 +1,41 @@
+import './polyfills.server.mjs';
+import {
+  TimeAgoPipe
+} from "./chunk-GMEYXRZM.mjs";
+import {
+  AuthService
+} from "./chunk-MFAT4735.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-6BSWSVZ7.js";
-import {
-  TimeAgoPipe
-} from "./chunk-6BLZEBKM.js";
-import {
-  AuthService
-} from "./chunk-XIWVDVCF.js";
+} from "./chunk-YLAG4H64.mjs";
 import {
   Router,
   RouterLink,
   RouterModule
-} from "./chunk-JPPWT7WU.js";
+} from "./chunk-UI6ESX43.mjs";
+import {
+  DefaultValueAccessor,
+  FormsModule,
+  NgControlStatus,
+  NgModel,
+  NumberValueAccessor
+} from "./chunk-2UIUPUOY.mjs";
 import {
   ToastService
-} from "./chunk-CGBCDAXV.js";
+} from "./chunk-A2UBZQQG.mjs";
 import {
   environment
-} from "./chunk-WYW2S4QW.js";
+} from "./chunk-SJMEGSB4.mjs";
 import {
   Meta,
   Title
-} from "./chunk-R23YUY6E.js";
+} from "./chunk-NFXFD3SX.mjs";
 import {
   HttpClient
-} from "./chunk-VZD35PY6.js";
+} from "./chunk-DO7CA2WQ.mjs";
 import {
   CommonModule,
   DatePipe,
@@ -36,7 +44,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-EWZKLZHI.js";
+} from "./chunk-3RYB6XRG.mjs";
 import {
   PLATFORM_ID,
   inject,
@@ -74,12 +82,15 @@ import {
   ɵɵtemplateRefExtractor,
   ɵɵtext,
   ɵɵtextInterpolate,
-  ɵɵtextInterpolate1
-} from "./chunk-664KIS5M.js";
+  ɵɵtextInterpolate1,
+  ɵɵtwoWayBindingSet,
+  ɵɵtwoWayListener,
+  ɵɵtwoWayProperty
+} from "./chunk-IXD3JOLX.mjs";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-ASLTLD6L.js";
+} from "./chunk-24VIC3GD.mjs";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -1569,13 +1580,56 @@ var PaymentCtaComponent = class _PaymentCtaComponent {
 
 // src/app/website/components/ias-donate/ias-donate.component.ts
 var IasDonateComponent = class _IasDonateComponent {
+  constructor(http) {
+    this.http = http;
+    this.donationAmount = 0;
+  }
+  openModal() {
+    const modal = new bootstrap.Modal(document.getElementById("donationModal"));
+    modal.show();
+  }
+  submitDonation() {
+    const url = `${window.location.origin}/user-home/payment-status`;
+    const payload = {
+      amount: this.donationAmount,
+      clientUrl: url
+    };
+    this.http.post(`${environment.apiUrl}/donations/donate`, payload).subscribe({
+      next: (res) => {
+        if (res?.success && res.data?.paymentForm?.URL) {
+          const url2 = res.data.paymentForm.URL;
+          const form = document.createElement("form");
+          form.method = "POST";
+          form.action = url2;
+          form.style.display = "none";
+          const addField = (name, value) => {
+            const input = document.createElement("input");
+            input.type = "hidden";
+            input.name = name;
+            input.value = value;
+            form.appendChild(input);
+          };
+          addField("merchant_id", res.data.paymentForm.mid);
+          addField("privatekey", res.data.paymentForm.privatekey);
+          addField("checksum", res.data.paymentForm.checksum);
+          addField("encdata", res.data.paymentForm.encdata);
+          addField("chmod", "");
+          document.body.appendChild(form);
+          form.submit();
+        }
+      },
+      error: (err) => {
+        console.error("Error in token API:", err);
+      }
+    });
+  }
   static {
     this.\u0275fac = function IasDonateComponent_Factory(t) {
-      return new (t || _IasDonateComponent)();
+      return new (t || _IasDonateComponent)(\u0275\u0275directiveInject(HttpClient));
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasDonateComponent, selectors: [["app-ias-donate"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 28, vars: 0, consts: [[1, "main-cta-div"], [1, "container"], [1, "main-payment-div", "d-flex", "position-relative"], [1, "left-side-cont-div", "w-50", "d-flex", "flex-column", "align-items-start", "justify-content-center"], [1, "type-div", "d-flex", "align-items-center", "gap-4", "mb-4"], [1, "type"], ["xmlns", "http://www.w3.org/2000/svg", "width", "8", "height", "12", "viewBox", "0 0 8 12", "fill", "none"], ["d", "M5.15 12L0.666667 7.33333V6H3C3.58889 6 4.09722 5.80833 4.525 5.425C4.95278 5.04167 5.21111 4.56667 5.3 4H0V2.66667H5.1C4.91111 2.27778 4.63056 1.95833 4.25833 1.70833C3.88611 1.45833 3.46667 1.33333 3 1.33333H0V0H8V1.33333H5.83333C5.98889 1.52222 6.12778 1.72778 6.25 1.95C6.37222 2.17222 6.46667 2.41111 6.53333 2.66667H8V4H6.65C6.56111 4.94444 6.17222 5.73611 5.48333 6.375C4.79445 7.01389 3.96667 7.33333 3 7.33333H2.51667L7 12H5.15Z", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M7.95 5.65L5.11667 2.81667L6.06667 1.88333L7.95 3.76667L11.7333 0L12.6667 0.933333L7.95 5.65ZM4 10.6167L8.63333 11.8833L12.6 10.65C12.5444 10.55 12.4639 10.4639 12.3583 10.3917C12.2528 10.3194 12.1333 10.2833 12 10.2833H8.63333C8.33333 10.2833 8.09444 10.2722 7.91667 10.25C7.73889 10.2278 7.55556 10.1833 7.36667 10.1167L5.81667 9.6L6.18333 8.3L7.53333 8.75C7.72222 8.80556 7.94444 8.85 8.2 8.88333C8.45556 8.91667 8.83333 8.93889 9.33333 8.95C9.33333 8.82778 9.29722 8.71111 9.225 8.6C9.15278 8.48889 9.06667 8.41667 8.96667 8.38333L5.06667 6.95H4V10.6167ZM0 12.95V5.61667H5.06667C5.14444 5.61667 5.22222 5.625 5.3 5.64167C5.37778 5.65833 5.45 5.67778 5.51667 5.7L9.43333 7.15C9.8 7.28333 10.0972 7.51667 10.325 7.85C10.5528 8.18333 10.6667 8.55 10.6667 8.95H12C12.5556 8.95 13.0278 9.13333 13.4167 9.5C13.8056 9.86667 14 10.35 14 10.95V11.6167L8.66667 13.2833L4 11.9833V12.95H0ZM1.33333 11.6167H2.66667V6.95H1.33333V11.6167Z", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "8", "viewBox", "0 0 16 8", "fill", "none"], ["d", "M3.66667 7.33333C2.64444 7.33333 1.77778 6.97778 1.06667 6.26667C0.355556 5.55556 0 4.68889 0 3.66667C0 2.64444 0.355556 1.77778 1.06667 1.06667C1.77778 0.355556 2.64444 0 3.66667 0C4.07778 0 4.47222 0.0722222 4.85 0.216667C5.22778 0.361111 5.56667 0.566667 5.86667 0.833333L7 1.86667L6 2.76667L4.96667 1.83333C4.78889 1.67778 4.58889 1.55556 4.36667 1.46667C4.14444 1.37778 3.91111 1.33333 3.66667 1.33333C3.02222 1.33333 2.47222 1.56111 2.01667 2.01667C1.56111 2.47222 1.33333 3.02222 1.33333 3.66667C1.33333 4.31111 1.56111 4.86111 2.01667 5.31667C2.47222 5.77222 3.02222 6 3.66667 6C3.91111 6 4.14444 5.95556 4.36667 5.86667C4.58889 5.77778 4.78889 5.65556 4.96667 5.5L10.1333 0.833333C10.4333 0.566667 10.7722 0.361111 11.15 0.216667C11.5278 0.0722222 11.9222 0 12.3333 0C13.3556 0 14.2222 0.355556 14.9333 1.06667C15.6444 1.77778 16 2.64444 16 3.66667C16 4.68889 15.6444 5.55556 14.9333 6.26667C14.2222 6.97778 13.3556 7.33333 12.3333 7.33333C11.9222 7.33333 11.5278 7.26111 11.15 7.11667C10.7722 6.97222 10.4333 6.76667 10.1333 6.5L9 5.46667L10 4.56667L11.0333 5.5C11.2111 5.65556 11.4111 5.77778 11.6333 5.86667C11.8556 5.95556 12.0889 6 12.3333 6C12.9778 6 13.5278 5.77222 13.9833 5.31667C14.4389 4.86111 14.6667 4.31111 14.6667 3.66667C14.6667 3.02222 14.4389 2.47222 13.9833 2.01667C13.5278 1.56111 12.9778 1.33333 12.3333 1.33333C12.0889 1.33333 11.8556 1.37778 11.6333 1.46667C11.4111 1.55556 11.2111 1.67778 11.0333 1.83333L5.86667 6.5C5.56667 6.76667 5.22778 6.97222 4.85 7.11667C4.47222 7.26111 4.07778 7.33333 3.66667 7.33333Z", "fill", "white"], ["routerLink", "coming-soon", 1, "btn", "btn-white"], [1, "right-sidegradient-div", "w-50", "overflow-hidden", "position-relative"], ["src", "../../../../assets/images/make-image.png", "alt", "ias logo", 1, "position-absolute", "w-100", "donate-img"]], template: function IasDonateComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasDonateComponent, selectors: [["app-ias-donate"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 42, vars: 2, consts: [[1, "main-cta-div"], [1, "container"], [1, "main-payment-div", "d-flex", "position-relative"], [1, "left-side-cont-div", "w-50", "d-flex", "flex-column", "align-items-start", "justify-content-center"], [1, "type-div", "d-flex", "align-items-center", "gap-4", "mb-4"], [1, "type"], ["xmlns", "http://www.w3.org/2000/svg", "width", "8", "height", "12", "viewBox", "0 0 8 12", "fill", "none"], ["d", "M5.15 12L0.666667 7.33333V6H3C3.58889 6 4.09722 5.80833 4.525 5.425C4.95278 5.04167 5.21111 4.56667 5.3 4H0V2.66667H5.1C4.91111 2.27778 4.63056 1.95833 4.25833 1.70833C3.88611 1.45833 3.46667 1.33333 3 1.33333H0V0H8V1.33333H5.83333C5.98889 1.52222 6.12778 1.72778 6.25 1.95C6.37222 2.17222 6.46667 2.41111 6.53333 2.66667H8V4H6.65C6.56111 4.94444 6.17222 5.73611 5.48333 6.375C4.79445 7.01389 3.96667 7.33333 3 7.33333H2.51667L7 12H5.15Z", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M7.95 5.65L5.11667 2.81667L6.06667 1.88333L7.95 3.76667L11.7333 0L12.6667 0.933333L7.95 5.65ZM4 10.6167L8.63333 11.8833L12.6 10.65C12.5444 10.55 12.4639 10.4639 12.3583 10.3917C12.2528 10.3194 12.1333 10.2833 12 10.2833H8.63333C8.33333 10.2833 8.09444 10.2722 7.91667 10.25C7.73889 10.2278 7.55556 10.1833 7.36667 10.1167L5.81667 9.6L6.18333 8.3L7.53333 8.75C7.72222 8.80556 7.94444 8.85 8.2 8.88333C8.45556 8.91667 8.83333 8.93889 9.33333 8.95C9.33333 8.82778 9.29722 8.71111 9.225 8.6C9.15278 8.48889 9.06667 8.41667 8.96667 8.38333L5.06667 6.95H4V10.6167ZM0 12.95V5.61667H5.06667C5.14444 5.61667 5.22222 5.625 5.3 5.64167C5.37778 5.65833 5.45 5.67778 5.51667 5.7L9.43333 7.15C9.8 7.28333 10.0972 7.51667 10.325 7.85C10.5528 8.18333 10.6667 8.55 10.6667 8.95H12C12.5556 8.95 13.0278 9.13333 13.4167 9.5C13.8056 9.86667 14 10.35 14 10.95V11.6167L8.66667 13.2833L4 11.9833V12.95H0ZM1.33333 11.6167H2.66667V6.95H1.33333V11.6167Z", "fill", "white"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "8", "viewBox", "0 0 16 8", "fill", "none"], ["d", "M3.66667 7.33333C2.64444 7.33333 1.77778 6.97778 1.06667 6.26667C0.355556 5.55556 0 4.68889 0 3.66667C0 2.64444 0.355556 1.77778 1.06667 1.06667C1.77778 0.355556 2.64444 0 3.66667 0C4.07778 0 4.47222 0.0722222 4.85 0.216667C5.22778 0.361111 5.56667 0.566667 5.86667 0.833333L7 1.86667L6 2.76667L4.96667 1.83333C4.78889 1.67778 4.58889 1.55556 4.36667 1.46667C4.14444 1.37778 3.91111 1.33333 3.66667 1.33333C3.02222 1.33333 2.47222 1.56111 2.01667 2.01667C1.56111 2.47222 1.33333 3.02222 1.33333 3.66667C1.33333 4.31111 1.56111 4.86111 2.01667 5.31667C2.47222 5.77222 3.02222 6 3.66667 6C3.91111 6 4.14444 5.95556 4.36667 5.86667C4.58889 5.77778 4.78889 5.65556 4.96667 5.5L10.1333 0.833333C10.4333 0.566667 10.7722 0.361111 11.15 0.216667C11.5278 0.0722222 11.9222 0 12.3333 0C13.3556 0 14.2222 0.355556 14.9333 1.06667C15.6444 1.77778 16 2.64444 16 3.66667C16 4.68889 15.6444 5.55556 14.9333 6.26667C14.2222 6.97778 13.3556 7.33333 12.3333 7.33333C11.9222 7.33333 11.5278 7.26111 11.15 7.11667C10.7722 6.97222 10.4333 6.76667 10.1333 6.5L9 5.46667L10 4.56667L11.0333 5.5C11.2111 5.65556 11.4111 5.77778 11.6333 5.86667C11.8556 5.95556 12.0889 6 12.3333 6C12.9778 6 13.5278 5.77222 13.9833 5.31667C14.4389 4.86111 14.6667 4.31111 14.6667 3.66667C14.6667 3.02222 14.4389 2.47222 13.9833 2.01667C13.5278 1.56111 12.9778 1.33333 12.3333 1.33333C12.0889 1.33333 11.8556 1.37778 11.6333 1.46667C11.4111 1.55556 11.2111 1.67778 11.0333 1.83333L5.86667 6.5C5.56667 6.76667 5.22778 6.97222 4.85 7.11667C4.47222 7.26111 4.07778 7.33333 3.66667 7.33333Z", "fill", "white"], [1, "btn", "btn-white", 3, "click"], [1, "right-sidegradient-div", "w-50", "overflow-hidden", "position-relative"], ["src", "../../../../assets/images/make-image.png", "alt", "ias logo", 1, "position-absolute", "w-100", "donate-img"], ["id", "donationModal", "tabindex", "-1", "aria-labelledby", "donationModalLabel", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered"], [1, "modal-content"], [1, "modal-body"], ["id", "donationModalLabel", 1, "modal-title", "mb-4"], [1, "form-label"], ["type", "number", "placeholder", "Enter amount", 1, "form-control", 3, "ngModelChange", "ngModel"], [1, "modal-footer"], ["data-bs-dismiss", "modal", 1, "btn", "btn-black"], [1, "btn", "btn-donate", 3, "click", "disabled"]], template: function IasDonateComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "h1");
         \u0275\u0275text(5, "Make a Contribution. Fuel Change.");
@@ -1611,17 +1665,47 @@ var IasDonateComponent = class _IasDonateComponent {
         \u0275\u0275text(23, "Development");
         \u0275\u0275elementEnd()()();
         \u0275\u0275elementStart(24, "button", 12);
+        \u0275\u0275listener("click", function IasDonateComponent_Template_button_click_24_listener() {
+          return ctx.openModal();
+        });
         \u0275\u0275text(25, "Make Contribution");
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(26, "div", 13);
         \u0275\u0275element(27, "img", 14);
         \u0275\u0275elementEnd()()()();
+        \u0275\u0275elementStart(28, "div", 15)(29, "div", 16)(30, "div", 17)(31, "div", 18)(32, "h5", 19);
+        \u0275\u0275text(33, "Make a Donation");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(34, "label", 20);
+        \u0275\u0275text(35, "Enter Amount");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(36, "input", 21);
+        \u0275\u0275twoWayListener("ngModelChange", function IasDonateComponent_Template_input_ngModelChange_36_listener($event) {
+          \u0275\u0275twoWayBindingSet(ctx.donationAmount, $event) || (ctx.donationAmount = $event);
+          return $event;
+        });
+        \u0275\u0275elementEnd()();
+        \u0275\u0275elementStart(37, "div", 22)(38, "button", 23);
+        \u0275\u0275text(39, "Cancel");
+        \u0275\u0275elementEnd();
+        \u0275\u0275elementStart(40, "button", 24);
+        \u0275\u0275listener("click", function IasDonateComponent_Template_button_click_40_listener() {
+          return ctx.submitDonation();
+        });
+        \u0275\u0275text(41, "Donate");
+        \u0275\u0275elementEnd()()()()();
       }
-    }, dependencies: [RouterModule, RouterLink], styles: ['@charset "UTF-8";\n\n\n\n.main-cta-div[_ngcontent-%COMP%] {\n  background-color: #150F22;\n  padding: 60px 0px;\n}\n.main-payment-div[_ngcontent-%COMP%] {\n  border-radius: 24px;\n  background:\n    linear-gradient(\n      130deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%);\n  height: 315px;\n  padding: 0px 50px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 36px;\n  font-weight: 500;\n  line-height: 42px;\n  margin-bottom: 18px;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 150%;\n}\n.type[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  background: #8C7FC3;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.type[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 24px;\n  margin: 0px;\n}\n.btn-white[_ngcontent-%COMP%] {\n  display: inline-flex;\n  height: 48px;\n  padding: 8px 24px;\n  justify-content: center;\n  align-items: center;\n  border-radius: 4px;\n  background: #FFF;\n  color: #150F22;\n  font-family: Urbanist;\n  font-weight: 600;\n}\n.donate-img[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: -40px;\n  width: 100%;\n}\n@media (max-width: 767px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    flex-direction: column;\n    height: auto;\n    padding: 20px 20px 0 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    text-align: center;\n    align-items: center !important;\n    margin-bottom: 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    line-height: 32px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n    line-height: 22px;\n    padding: 0 12px;\n  }\n  .right-sidegradient-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    height: auto;\n    position: relative;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    position: relative;\n    bottom: 0 !important;\n    width: 100%;\n    margin-top: 10px;\n  }\n}\n@media (min-width: 768px) and (max-width: 1024px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    height: auto;\n    padding: 40px 30px;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    bottom: -10px;\n    width: 105%;\n  }\n}\n/*# sourceMappingURL=ias-donate.component.css.map */'] });
+      if (rf & 2) {
+        \u0275\u0275advance(36);
+        \u0275\u0275twoWayProperty("ngModel", ctx.donationAmount);
+        \u0275\u0275advance(4);
+        \u0275\u0275property("disabled", ctx.donationAmount <= 0);
+      }
+    }, dependencies: [RouterModule, FormsModule, DefaultValueAccessor, NumberValueAccessor, NgControlStatus, NgModel], styles: ['@charset "UTF-8";\n\n\n\n.main-cta-div[_ngcontent-%COMP%] {\n  background-color: #150F22;\n  padding: 60px 0px;\n}\n.main-payment-div[_ngcontent-%COMP%] {\n  border-radius: 24px;\n  background:\n    linear-gradient(\n      130deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%);\n  height: 315px;\n  padding: 0px 50px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 36px;\n  font-weight: 500;\n  line-height: 42px;\n  margin-bottom: 18px;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 150%;\n}\n.type[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  background: #8C7FC3;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.type[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 24px;\n  margin: 0px;\n}\n.btn-white[_ngcontent-%COMP%] {\n  display: inline-flex;\n  height: 48px;\n  padding: 8px 24px;\n  justify-content: center;\n  align-items: center;\n  border-radius: 4px;\n  background: #FFF;\n  color: #150F22;\n  font-family: Urbanist;\n  font-weight: 600;\n}\n.donate-img[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: -40px;\n  width: 100%;\n}\n.btn-donate[_ngcontent-%COMP%], .btn-black[_ngcontent-%COMP%] {\n  padding: 10px 24px;\n  font-family: Urbanist, sans-serif;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 24px;\n}\n@media (max-width: 767px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    flex-direction: column;\n    height: auto;\n    padding: 20px 20px 0 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    text-align: center;\n    align-items: center !important;\n    margin-bottom: 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    line-height: 32px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n    line-height: 22px;\n    padding: 0 12px;\n  }\n  .right-sidegradient-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    height: auto;\n    position: relative;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    position: relative;\n    bottom: 0 !important;\n    width: 100%;\n    margin-top: 10px;\n  }\n}\n@media (min-width: 768px) and (max-width: 1024px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    height: auto;\n    padding: 40px 30px;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    bottom: -10px;\n    width: 105%;\n  }\n}\n/*# sourceMappingURL=ias-donate.component.css.map */'] });
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasDonateComponent, { className: "IasDonateComponent", filePath: "src/app/website/components/ias-donate/ias-donate.component.ts", lineNumber: 11 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasDonateComponent, { className: "IasDonateComponent", filePath: "src/app/website/components/ias-donate/ias-donate.component.ts", lineNumber: 16 });
 })();
 
 // src/app/website/pages/main-page/ias-homepage/ias-homepage.component.ts
@@ -1662,4 +1746,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-EGVOG7XY.js.map
+//# sourceMappingURL=chunk-6MWUGEMY.mjs.map

@@ -4238,7 +4238,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-U3PLICVY.mjs").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-6MWUGEMY.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4366,7 +4366,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-WXREDZRG.mjs").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-RPTJPJ7D.mjs").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -4419,6 +4419,10 @@ var routes = [
       {
         path: "user-info",
         loadComponent: () => import("./chunk-N2OEAR6Y.mjs").then((m) => m.DetailedUserInfoComponent)
+      },
+      {
+        path: "donation",
+        loadComponent: () => import("./chunk-6OWV4WC3.mjs").then((m) => m.DonationsComponent)
       }
     ]
   },
@@ -4426,7 +4430,7 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-U44OWIEP.mjs").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-DZ5KJN77.mjs").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
@@ -4442,7 +4446,7 @@ var routes = [
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-GZLV4NXR.mjs").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-6U3A472G.mjs").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
@@ -4451,6 +4455,10 @@ var routes = [
       {
         path: "user-transactions",
         loadComponent: () => import("./chunk-AWTNPZWM.mjs").then((m) => m.MyTransactionsComponent)
+      },
+      {
+        path: "my-donation",
+        loadComponent: () => import("./chunk-5VJFYE35.mjs").then((m) => m.UserDonationsComponent)
       },
       {
         path: "payment-status",
@@ -4462,7 +4470,7 @@ var routes = [
     path: "state-dashboard",
     canActivate: [authGuard],
     data: { roles: ["state_association_admin"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-LU4M4GVB.mjs").then((m) => m.StateDashboardLayoutComponent),
+    loadComponent: () => import("./chunk-CIT3Z7XP.mjs").then((m) => m.StateDashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -4804,4 +4812,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-5F5CCGOV.mjs.map
+//# sourceMappingURL=chunk-ZUQRBOAF.mjs.map
