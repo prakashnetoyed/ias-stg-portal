@@ -1,8 +1,7 @@
-import './polyfills.server.mjs';
 import {
   E
-} from "./chunk-XHZ5YG4K.mjs";
-import "./chunk-DPV27543.mjs";
+} from "./chunk-JUOWKMPX.js";
+import "./chunk-7YWLATDR.js";
 import {
   FormBuilder,
   FormsModule,
@@ -10,19 +9,19 @@ import {
   ReactiveFormsModule,
   Validators,
   ɵNgSelectMultipleOption
-} from "./chunk-2UIUPUOY.mjs";
+} from "./chunk-CTBAGNAW.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DatePipe,
   NgClass,
   NgForOf
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -50,8 +49,8 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-IXD3JOLX.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-664KIS5M.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/user-portal/pages/user-donations/user-donations.component.ts
 var _c0 = ["errorToast"];
@@ -228,14 +227,14 @@ var UserDonationsComponent = class _UserDonationsComponent {
     posY += 15;
     doc.setFont("helvetica", "normal");
     doc.text("Donation Amount", 14, posY);
-    doc.text(`\u20B9 ${tx?.amount || 0}`, 180, posY, { align: "right" });
+    doc.text(`Rs ${tx?.amount || 0}`, 180, posY, { align: "right" });
     posY += 20;
     doc.line(10, posY, 200, posY);
     posY += 10;
     doc.setFont("helvetica", "bold");
     doc.setFontSize(11);
-    doc.text("Total:", 150, posY);
-    doc.text(`\u20B9 ${tx?.amount || 0}`, 180, posY, { align: "right" });
+    doc.text("Total:", 145, posY);
+    doc.text(` Rs ${tx?.amount || 0}`, 180, posY, { align: "right" });
     posY += 100;
     doc.setFontSize(10);
     doc.setFont("helvetica", "normal");
@@ -370,4 +369,4 @@ var UserDonationsComponent = class _UserDonationsComponent {
 export {
   UserDonationsComponent
 };
-//# sourceMappingURL=chunk-5VJFYE35.mjs.map
+//# sourceMappingURL=chunk-AUXOOOVB.js.map

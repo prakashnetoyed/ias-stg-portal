@@ -4458,7 +4458,7 @@ var routes = [
       },
       {
         path: "my-donation",
-        loadComponent: () => import("./chunk-5VJFYE35.mjs").then((m) => m.UserDonationsComponent)
+        loadComponent: () => import("./chunk-M6BMBBT3.mjs").then((m) => m.UserDonationsComponent)
       },
       {
         path: "payment-status",
@@ -4812,4 +4812,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-GFVXEAQX.mjs.map
+//# sourceMappingURL=chunk-LOLBZT5D.mjs.map

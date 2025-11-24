@@ -4380,7 +4380,7 @@ var routes = [
       },
       {
         path: "my-donation",
-        loadComponent: () => import("./chunk-PC4GFALJ.js").then((m) => m.UserDonationsComponent)
+        loadComponent: () => import("./chunk-AUXOOOVB.js").then((m) => m.UserDonationsComponent)
       },
       {
         path: "payment-status",
