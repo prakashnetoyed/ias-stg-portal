@@ -22,7 +22,7 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-CTBAGNAW.js";
+} from "./chunk-7MH5K4O5.js";
 import {
   UserService
 } from "./chunk-HM73QMMI.js";
@@ -4160,7 +4160,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7JZIGJJJ.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-4SHDEOAG.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4170,7 +4170,7 @@ var routes = [
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TTV7C7TE.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-L7ABHTBU.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
@@ -4185,7 +4185,7 @@ var routes = [
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-KLGQEJZL.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-PPUG77MI.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -4234,7 +4234,7 @@ var routes = [
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-UX4553E3.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-WWU5HQUE.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
@@ -4292,51 +4292,51 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-LXCYPIDG.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-YEZ7TM5E.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-2T4X3N6F.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-OXGVFGH4.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-3E3ZZ6BM.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-O6ICZSBL.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-NOD66FLM.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-KOVV4QOI.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-H227RB7F.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-WP7W63FW.js").then((m) => m.NewsComponent)
       },
       {
         path: "case-study",
-        loadComponent: () => import("./chunk-HD4VE3NZ.js").then((m) => m.CaseStudiesComponent)
+        loadComponent: () => import("./chunk-2W4KWLEU.js").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-IWQUZ3LB.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-F2JR6PIB.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-M7OKVOTC.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-YUXTUJHZ.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-S3GLFPBX.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-DMGFGRVF.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-OCBCNG7U.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-WN2NCV7O.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-2DTM2QAB.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-GWWC55OO.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-LJVHINEK.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-PZRSWHRQ.js").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",
@@ -4344,7 +4344,7 @@ var routes = [
       },
       {
         path: "donation",
-        loadComponent: () => import("./chunk-V2HPDBQJ.js").then((m) => m.DonationsComponent)
+        loadComponent: () => import("./chunk-WCUR6YW3.js").then((m) => m.DonationsComponent)
       }
     ]
   },
@@ -4356,11 +4356,11 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-AVWABCVV.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-RRG7LIS7.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-D4KGSVO5.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-3BW5U4FV.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
@@ -4372,7 +4372,7 @@ var routes = [
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-PXPZGBXP.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-Z7D45KL7.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
@@ -4380,7 +4380,7 @@ var routes = [
       },
       {
         path: "my-donation",
-        loadComponent: () => import("./chunk-AUXOOOVB.js").then((m) => m.UserDonationsComponent)
+        loadComponent: () => import("./chunk-VH42K4QL.js").then((m) => m.UserDonationsComponent)
       },
       {
         path: "payment-status",
@@ -4396,23 +4396,23 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-3IZWXNGR.js").then((m) => m.StateAboutUsComponent)
+        loadComponent: () => import("./chunk-R7XBFE5F.js").then((m) => m.StateAboutUsComponent)
       },
       {
         path: "state-news",
-        loadComponent: () => import("./chunk-5UVYUFUY.js").then((m) => m.StateNewsComponent)
+        loadComponent: () => import("./chunk-A3M4E7WQ.js").then((m) => m.StateNewsComponent)
       },
       {
         path: "state-events",
-        loadComponent: () => import("./chunk-SL5YIL3B.js").then((m) => m.StateEventsComponent)
+        loadComponent: () => import("./chunk-NVE7V3AM.js").then((m) => m.StateEventsComponent)
       },
       {
         path: "state-office-bearers",
-        loadComponent: () => import("./chunk-2W62USO2.js").then((m) => m.StateOfficeBearersComponent)
+        loadComponent: () => import("./chunk-VCAQ7ACB.js").then((m) => m.StateOfficeBearersComponent)
       },
       {
         path: "state-gallery",
-        loadComponent: () => import("./chunk-ZI2SZSDC.js").then((m) => m.StateGalleryComponent)
+        loadComponent: () => import("./chunk-I4QKYTIE.js").then((m) => m.StateGalleryComponent)
       }
     ]
   },
