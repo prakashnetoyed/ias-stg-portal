@@ -1,21 +1,9 @@
-import './polyfills.server.mjs';
-import {
-  TimeAgoPipe
-} from "./chunk-GMEYXRZM.mjs";
-import {
-  AuthService
-} from "./chunk-MFAT4735.mjs";
 import {
   animate,
   style,
   transition,
   trigger
-} from "./chunk-YLAG4H64.mjs";
-import {
-  Router,
-  RouterLink,
-  RouterModule
-} from "./chunk-UI6ESX43.mjs";
+} from "./chunk-6BSWSVZ7.js";
 import {
   DefaultValueAccessor,
   FormsModule,
@@ -23,20 +11,31 @@ import {
   NgControlStatus,
   NgModel,
   NumberValueAccessor
-} from "./chunk-TDE3IE3W.mjs";
+} from "./chunk-7MH5K4O5.js";
+import {
+  TimeAgoPipe
+} from "./chunk-KT3BWFIE.js";
+import {
+  AuthService
+} from "./chunk-XIWVDVCF.js";
+import {
+  Router,
+  RouterLink,
+  RouterModule
+} from "./chunk-JPPWT7WU.js";
 import {
   ToastService
-} from "./chunk-A2UBZQQG.mjs";
+} from "./chunk-CGBCDAXV.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   Meta,
   Title
-} from "./chunk-NFXFD3SX.mjs";
+} from "./chunk-R23YUY6E.js";
 import {
   HttpClient
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DatePipe,
@@ -45,7 +44,7 @@ import {
   NgIf,
   SlicePipe,
   isPlatformBrowser
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   PLATFORM_ID,
   inject,
@@ -87,11 +86,11 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-IXD3JOLX.mjs";
+} from "./chunk-664KIS5M.js";
 import {
   __spreadProps,
   __spreadValues
-} from "./chunk-24VIC3GD.mjs";
+} from "./chunk-ASLTLD6L.js";
 
 // src/app/website/components/hero-section/hero-section.component.ts
 function HeroSectionComponent_button_11_Template(rf, ctx) {
@@ -1731,7 +1730,7 @@ var IasDonateComponent = class _IasDonateComponent {
         \u0275\u0275advance(4);
         \u0275\u0275property("disabled", ctx.donationAmount <= 0);
       }
-    }, dependencies: [RouterModule, FormsModule, DefaultValueAccessor, NumberValueAccessor, NgControlStatus, MinValidator, NgModel], styles: ['@charset "UTF-8";\n\n\n\n.main-cta-div[_ngcontent-%COMP%] {\n  background-color: #150F22;\n  padding: 60px 0px;\n}\n.main-payment-div[_ngcontent-%COMP%] {\n  border-radius: 24px;\n  background:\n    linear-gradient(\n      130deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%);\n  height: 315px;\n  padding: 0px 50px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 36px;\n  font-weight: 500;\n  line-height: 42px;\n  margin-bottom: 18px;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 150%;\n}\n.type[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  background: #8C7FC3;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.type[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 24px;\n  margin: 0px;\n}\n.btn-white[_ngcontent-%COMP%] {\n  display: inline-flex;\n  height: 48px;\n  padding: 8px 24px;\n  justify-content: center;\n  align-items: center;\n  border-radius: 4px;\n  background: #FFF;\n  color: #150F22;\n  font-family: Urbanist;\n  font-weight: 600;\n}\n.donate-img[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: -40px;\n  width: 100%;\n}\n.btn-donate[_ngcontent-%COMP%], .btn-black[_ngcontent-%COMP%] {\n  padding: 10px 24px;\n  font-family: Urbanist, sans-serif;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 24px;\n}\n@media (max-width: 767px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    flex-direction: column;\n    height: auto;\n    padding: 20px 20px 0 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    text-align: center;\n    align-items: center !important;\n    margin-bottom: 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    line-height: 32px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n    line-height: 22px;\n    padding: 0 12px;\n  }\n  .right-sidegradient-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    height: auto;\n    position: relative;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    position: relative;\n    bottom: 0 !important;\n    width: 100%;\n    margin-top: 10px;\n  }\n}\n@media (min-width: 768px) and (max-width: 1024px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    height: auto;\n    padding: 40px 30px;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    bottom: -10px;\n    width: 105%;\n  }\n}\ninput[type=number][_ngcontent-%COMP%]::-webkit-inner-spin-button, input[type=number][_ngcontent-%COMP%]::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\ninput[type=number][_ngcontent-%COMP%] {\n  -moz-appearance: textfield;\n}\n/*# sourceMappingURL=ias-donate.component.css.map */'] });
+    }, dependencies: [RouterModule, FormsModule, DefaultValueAccessor, NumberValueAccessor, NgControlStatus, MinValidator, NgModel], styles: ['@charset "UTF-8";\n\n\n\n.main-cta-div[_ngcontent-%COMP%] {\n  background-color: #150F22;\n  padding: 60px 0px;\n}\n.main-payment-div[_ngcontent-%COMP%] {\n  border-radius: 24px;\n  background:\n    linear-gradient(\n      130deg,\n      #492FB2 -1.74%,\n      #ADADAD 108.02%);\n  height: 315px;\n  padding: 0px 50px;\n  display: flex;\n  overflow: hidden;\n  position: relative;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 36px;\n  font-weight: 500;\n  line-height: 42px;\n  margin-bottom: 18px;\n}\n.left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 150%;\n}\n.type[_ngcontent-%COMP%] {\n  border-radius: 8px;\n  background: #8C7FC3;\n  padding: 6px;\n  display: flex;\n  align-items: center;\n  gap: 8px;\n}\n.type[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n  color: #FFF;\n  font-family: Urbanist;\n  font-size: 14px;\n  font-style: normal;\n  font-weight: 400;\n  line-height: 24px;\n  margin: 0px;\n}\n.btn-white[_ngcontent-%COMP%] {\n  display: inline-flex;\n  height: 48px;\n  padding: 8px 24px;\n  justify-content: center;\n  align-items: center;\n  border-radius: 4px;\n  background: #FFF;\n  color: #150F22;\n  font-family: Urbanist;\n  font-weight: 600;\n}\n.donate-img[_ngcontent-%COMP%] {\n  position: absolute;\n  bottom: -40px;\n  width: 100%;\n}\n.btn-donate[_ngcontent-%COMP%], .btn-black[_ngcontent-%COMP%] {\n  padding: 10px 24px;\n  font-family: Urbanist, sans-serif;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 24px;\n}\n@media (max-width: 767px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    flex-direction: column;\n    height: auto;\n    padding: 20px 20px 0 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    text-align: center;\n    align-items: center !important;\n    margin-bottom: 20px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   h1[_ngcontent-%COMP%] {\n    font-size: 26px;\n    line-height: 32px;\n  }\n  .left-side-cont-div[_ngcontent-%COMP%]   p[_ngcontent-%COMP%] {\n    font-size: 14px;\n    line-height: 22px;\n    padding: 0 12px;\n  }\n  .right-sidegradient-div[_ngcontent-%COMP%] {\n    width: 100% !important;\n    height: auto;\n    position: relative;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    position: relative;\n    bottom: 0 !important;\n    width: 100%;\n    margin-top: 10px;\n  }\n}\n@media (min-width: 768px) and (max-width: 1024px) {\n  .main-payment-div[_ngcontent-%COMP%] {\n    height: auto;\n    padding: 40px 30px;\n  }\n  .donate-img[_ngcontent-%COMP%] {\n    bottom: -10px;\n    width: 105%;\n  }\n}\ninput[type=number][_ngcontent-%COMP%]::-webkit-inner-spin-button, input[type=number][_ngcontent-%COMP%]::-webkit-outer-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\ninput[type=number][_ngcontent-%COMP%] {\n  -webkit-appearance: textfield;\n  -moz-appearance: textfield;\n  appearance: textfield;\n}\n/*# sourceMappingURL=ias-donate.component.css.map */'] });
   }
 };
 (() => {
@@ -1776,4 +1775,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-QGLNTV6Q.mjs.map
+//# sourceMappingURL=chunk-EHHE7V4M.js.map

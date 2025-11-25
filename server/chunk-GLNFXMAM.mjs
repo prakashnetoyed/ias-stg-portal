@@ -4238,7 +4238,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-QGLNTV6Q.mjs").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-OD6Z4H4W.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4253,17 +4253,17 @@ var routes = [
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6PNRF4BB.mjs").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-VVE4VVKY.mjs").then((m) => m.IasCommunityComponent)
       },
       {
         path: "my-posts",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-O3BYLVVH.mjs").then((m) => m.MyPostsComponent)
+        loadComponent: () => import("./chunk-EWGWSRJH.mjs").then((m) => m.MyPostsComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-RSHM563C.mjs").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-U47UUUVM.mjs").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
@@ -4434,7 +4434,7 @@ var routes = [
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-I5XO7EUD.mjs").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-P7RTATY3.mjs").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
@@ -4812,4 +4812,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-OUNBMZFV.mjs.map
+//# sourceMappingURL=chunk-GLNFXMAM.mjs.map
