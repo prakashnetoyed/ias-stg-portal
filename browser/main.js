@@ -4160,7 +4160,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-XY23HW4G.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-MQKAGI2S.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4288,7 +4288,7 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-UKGTX4AH.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-IOW62YFZ.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
@@ -4352,7 +4352,7 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-QORZHYQZ.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-QFFFHZ67.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
@@ -4392,7 +4392,7 @@ var routes = [
     path: "state-dashboard",
     canActivate: [authGuard],
     data: { roles: ["state_association_admin"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-ZHWWGZ4L.js").then((m) => m.StateDashboardLayoutComponent),
+    loadComponent: () => import("./chunk-BPTTMION.js").then((m) => m.StateDashboardLayoutComponent),
     children: [
       {
         path: "",

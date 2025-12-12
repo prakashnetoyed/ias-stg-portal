@@ -1,7 +1,7 @@
 import {
   IasSidebarComponent,
   IasUserHeaderComponent
-} from "./chunk-LQEPHRVP.js";
+} from "./chunk-GSAHYY3Z.js";
 import "./chunk-6BSWSVZ7.js";
 import "./chunk-HM73QMMI.js";
 import {
@@ -52,4 +52,4 @@ var DashboardLayoutComponent = class _DashboardLayoutComponent {
 export {
   DashboardLayoutComponent
 };
-//# sourceMappingURL=chunk-UKGTX4AH.js.map
+//# sourceMappingURL=chunk-IOW62YFZ.js.map
