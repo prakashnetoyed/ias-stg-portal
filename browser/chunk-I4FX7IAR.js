@@ -1,4 +1,3 @@
-import './polyfills.server.mjs';
 import {
   CheckboxControlValueAccessor,
   DefaultValueAccessor,
@@ -13,21 +12,21 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-2UIUPUOY.mjs";
+} from "./chunk-CTBAGNAW.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   HttpClient,
   HttpHeaders
-} from "./chunk-DO7CA2WQ.mjs";
+} from "./chunk-VZD35PY6.js";
 import {
   CommonModule,
   DatePipe,
   NgClass,
   NgForOf,
   NgIf
-} from "./chunk-3RYB6XRG.mjs";
+} from "./chunk-EWZKLZHI.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -47,7 +46,7 @@ import {
   ɵɵnamespaceSVG,
   ɵɵnextContext,
   ɵɵpipe,
-  ɵɵpipeBind2,
+  ɵɵpipeBind3,
   ɵɵproperty,
   ɵɵpureFunction0,
   ɵɵqueryRefresh,
@@ -61,8 +60,8 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-IXD3JOLX.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-664KIS5M.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/IAS-portal/pages/publications/publications.component.ts
 var _c0 = ["errorToast"];
@@ -157,7 +156,7 @@ function PublicationsComponent_table_88_tr_18_Template(rf, ctx) {
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate(user_r3.title);
     \u0275\u0275advance(2);
-    \u0275\u0275textInterpolate(\u0275\u0275pipeBind2(7, 8, user_r3.date, "dd-MM-yyyy hh:mm a"));
+    \u0275\u0275textInterpolate(\u0275\u0275pipeBind3(7, 8, user_r3.date, "dd-MM-yyyy hh:mm a", "UTC"));
     \u0275\u0275advance(3);
     \u0275\u0275textInterpolate(user_r3.location);
     \u0275\u0275advance(2);
@@ -192,7 +191,7 @@ function PublicationsComponent_table_88_Template(rf, ctx) {
     \u0275\u0275text(16, "Action");
     \u0275\u0275elementEnd()()();
     \u0275\u0275elementStart(17, "tbody");
-    \u0275\u0275template(18, PublicationsComponent_table_88_tr_18_Template, 38, 11, "tr", 57);
+    \u0275\u0275template(18, PublicationsComponent_table_88_tr_18_Template, 38, 12, "tr", 57);
     \u0275\u0275elementEnd()();
   }
   if (rf & 2) {
@@ -639,4 +638,4 @@ var PublicationsComponent = class _PublicationsComponent {
 export {
   PublicationsComponent
 };
-//# sourceMappingURL=chunk-RZZYEDS5.mjs.map
+//# sourceMappingURL=chunk-I4FX7IAR.js.map
