@@ -4300,7 +4300,7 @@ var routes = [
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-3E3ZZ6BM.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-YIUYPFBS.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
