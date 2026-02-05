@@ -2093,7 +2093,7 @@ function IasSignupComponent_div_29_Template(rf, ctx) {
     \u0275\u0275text(4, " back");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(5, "h1", 24);
-    \u0275\u0275text(6, "Fill You Details Manually");
+    \u0275\u0275text(6, "Fill Your Details Manually");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(7, "form", 25);
     \u0275\u0275listener("ngSubmit", function IasSignupComponent_div_29_Template_form_ngSubmit_7_listener() {
@@ -4316,7 +4316,7 @@ var routes = [
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-IWQUZ3LB.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-ZNKYBJGE.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
