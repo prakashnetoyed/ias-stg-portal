@@ -148,6 +148,10 @@ import {
   ɵɵtextInterpolate1,
   ɵɵviewQuery
 } from "./chunk-IXD3JOLX.mjs";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-24VIC3GD.mjs";
 
 // src/app/common/common-toast/common-toast.component.ts
 var _c0 = ["errorToast"];
@@ -723,24 +727,24 @@ function IasLoginComponent_app_ias_loader_0_Template(rf, ctx) {
     \u0275\u0275element(0, "app-ias-loader");
   }
 }
-function IasLoginComponent_div_10_div_7_small_1_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_8_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
-    \u0275\u0275text(1, "Email is required.");
+    \u0275\u0275text(1, "Email or Mobile is required");
     \u0275\u0275elementEnd();
   }
 }
-function IasLoginComponent_div_10_div_7_small_2_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_8_small_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
-    \u0275\u0275text(1, "Enter a Valid Email Id");
+    \u0275\u0275text(1, "Enter valid Email or 10-digit Mobile Number");
     \u0275\u0275elementEnd();
   }
 }
-function IasLoginComponent_div_10_div_7_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 28);
-    \u0275\u0275template(1, IasLoginComponent_div_10_div_7_small_1_Template, 2, 0, "small", 0)(2, IasLoginComponent_div_10_div_7_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementStart(0, "div", 24);
+    \u0275\u0275template(1, IasLoginComponent_div_10_div_8_small_1_Template, 2, 0, "small", 1)(2, IasLoginComponent_div_10_div_8_small_2_Template, 2, 0, "small", 1);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -748,96 +752,59 @@ function IasLoginComponent_div_10_div_7_Template(rf, ctx) {
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", ctx_r1.email == null ? null : ctx_r1.email.errors == null ? null : ctx_r1.email.errors["required"]);
     \u0275\u0275advance();
-    \u0275\u0275property("ngIf", ctx_r1.email == null ? null : ctx_r1.email.errors == null ? null : ctx_r1.email.errors["pattern"]);
+    \u0275\u0275property("ngIf", ctx_r1.email == null ? null : ctx_r1.email.errors == null ? null : ctx_r1.email.errors["invalidInput"]);
   }
 }
-function IasLoginComponent_div_10__svg_svg_13_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_9__svg_svg_6_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 29)(1, "g", 30);
-    \u0275\u0275element(2, "path", 31);
+    \u0275\u0275elementStart(0, "svg", 30)(1, "g", 31);
+    \u0275\u0275element(2, "path", 32);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 32);
-    \u0275\u0275element(5, "rect", 33);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 33);
+    \u0275\u0275element(5, "rect", 34);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasLoginComponent_div_10__svg_svg_14_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_9__svg_svg_7_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 29)(1, "g", 34);
-    \u0275\u0275element(2, "path", 35);
+    \u0275\u0275elementStart(0, "svg", 30)(1, "g", 35);
+    \u0275\u0275element(2, "path", 36);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 36);
-    \u0275\u0275element(5, "rect", 33);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 37);
+    \u0275\u0275element(5, "rect", 34);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasLoginComponent_div_10_div_15_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_9_div_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 28)(1, "small");
+    \u0275\u0275elementStart(0, "div", 24)(1, "small");
     \u0275\u0275text(2, "Password is required.");
     \u0275\u0275elementEnd()();
   }
 }
-function IasLoginComponent_div_10_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_9_Template(rf, ctx) {
   if (rf & 1) {
-    const _r1 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 11)(1, "h1");
-    \u0275\u0275text(2, "Login to your account");
+    const _r4 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div")(1, "label", 25);
+    \u0275\u0275text(2, "Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "form", 12);
-    \u0275\u0275listener("ngSubmit", function IasLoginComponent_div_10_Template_form_ngSubmit_3_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.onSubmit());
-    });
-    \u0275\u0275elementStart(4, "label", 13);
-    \u0275\u0275text(5, "Email ID");
-    \u0275\u0275elementEnd();
-    \u0275\u0275element(6, "input", 14);
-    \u0275\u0275template(7, IasLoginComponent_div_10_div_7_Template, 3, 2, "div", 15);
-    \u0275\u0275elementStart(8, "label", 16);
-    \u0275\u0275text(9, "Password");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "div", 17);
-    \u0275\u0275element(11, "input", 18);
-    \u0275\u0275elementStart(12, "button", 19);
-    \u0275\u0275listener("click", function IasLoginComponent_div_10_Template_button_click_12_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275elementStart(3, "div", 26);
+    \u0275\u0275element(4, "input", 27);
+    \u0275\u0275elementStart(5, "button", 28);
+    \u0275\u0275listener("click", function IasLoginComponent_div_10_div_9_Template_button_click_5_listener() {
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.togglePasswordVisibility());
     });
-    \u0275\u0275template(13, IasLoginComponent_div_10__svg_svg_13_Template, 6, 0, "svg", 20)(14, IasLoginComponent_div_10__svg_svg_14_Template, 6, 0, "svg", 20);
+    \u0275\u0275template(6, IasLoginComponent_div_10_div_9__svg_svg_6_Template, 6, 0, "svg", 29)(7, IasLoginComponent_div_10_div_9__svg_svg_7_Template, 6, 0, "svg", 29);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(15, IasLoginComponent_div_10_div_15_Template, 3, 0, "div", 15);
-    \u0275\u0275elementStart(16, "div", 21)(17, "a", 22);
-    \u0275\u0275text(18, "Forgot Password?");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(19, "button", 23);
-    \u0275\u0275text(20, "Login");
+    \u0275\u0275template(8, IasLoginComponent_div_10_div_9_div_8_Template, 3, 0, "div", 16);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(21, "div", 24);
-    \u0275\u0275text(22, " Don\u2019t have an account? ");
-    \u0275\u0275elementStart(23, "a", 22);
-    \u0275\u0275text(24, "Sign up");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(25, "div", 25);
-    \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(26, "svg", 26);
-    \u0275\u0275element(27, "path", 27);
-    \u0275\u0275elementEnd();
-    \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(28, "p");
-    \u0275\u0275text(29, " This facility is strictly for serving and retired IAS officers only. Unauthorized access is prohibited. ");
-    \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
-    const ctx_r1 = \u0275\u0275nextContext();
-    \u0275\u0275advance(3);
-    \u0275\u0275property("formGroup", ctx_r1.emailForm);
-    \u0275\u0275advance(4);
-    \u0275\u0275property("ngIf", (ctx_r1.email == null ? null : ctx_r1.email.touched) && (ctx_r1.email == null ? null : ctx_r1.email.invalid));
+    const ctx_r1 = \u0275\u0275nextContext(2);
     \u0275\u0275advance(4);
     \u0275\u0275property("type", ctx_r1.showPassword ? "text" : "password");
     \u0275\u0275advance(2);
@@ -846,68 +813,121 @@ function IasLoginComponent_div_10_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ctx_r1.showPassword);
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", (ctx_r1.password == null ? null : ctx_r1.password.touched) && (ctx_r1.password == null ? null : ctx_r1.password.invalid));
+  }
+}
+function IasLoginComponent_div_10_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 12)(1, "h1");
+    \u0275\u0275text(2, "Login to your account");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(3, "form", 13);
+    \u0275\u0275listener("ngSubmit", function IasLoginComponent_div_10_Template_form_ngSubmit_3_listener() {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.onSubmit());
+    });
+    \u0275\u0275elementStart(4, "label", 14);
+    \u0275\u0275text(5, "Email ID or Mobile Number");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(6, "input", 15, 0);
+    \u0275\u0275listener("input", function IasLoginComponent_div_10_Template_input_input_6_listener() {
+      \u0275\u0275restoreView(_r1);
+      const userInput_r3 = \u0275\u0275reference(7);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.detectInputType(userInput_r3.value));
+    });
+    \u0275\u0275elementEnd();
+    \u0275\u0275template(8, IasLoginComponent_div_10_div_8_Template, 3, 2, "div", 16)(9, IasLoginComponent_div_10_div_9_Template, 9, 4, "div", 1);
+    \u0275\u0275elementStart(10, "div", 17)(11, "a", 18);
+    \u0275\u0275text(12, "Forgot Password?");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(13, "button", 19);
+    \u0275\u0275text(14, "Continue");
+    \u0275\u0275elementEnd();
+    \u0275\u0275elementStart(15, "div", 20);
+    \u0275\u0275text(16, " Don\u2019t have an account? ");
+    \u0275\u0275elementStart(17, "a", 18);
+    \u0275\u0275text(18, "Sign up");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275elementStart(19, "div", 21);
+    \u0275\u0275namespaceSVG();
+    \u0275\u0275elementStart(20, "svg", 22);
+    \u0275\u0275element(21, "path", 23);
+    \u0275\u0275elementEnd();
+    \u0275\u0275namespaceHTML();
+    \u0275\u0275elementStart(22, "p");
+    \u0275\u0275text(23, " This facility is strictly for serving and retired IAS officers only. Unauthorized access is prohibited. ");
+    \u0275\u0275elementEnd()()()();
+  }
+  if (rf & 2) {
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275advance(3);
+    \u0275\u0275property("formGroup", ctx_r1.emailForm);
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngIf", (ctx_r1.email == null ? null : ctx_r1.email.touched) && (ctx_r1.email == null ? null : ctx_r1.email.invalid));
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", !ctx_r1.isMobileLogin);
     \u0275\u0275advance(2);
     \u0275\u0275property("routerLink", "/forget-password");
-    \u0275\u0275advance(2);
-    \u0275\u0275property("disabled", ctx_r1.emailForm.invalid);
-    \u0275\u0275advance(4);
+    \u0275\u0275advance(6);
     \u0275\u0275property("routerLink", "/signup");
   }
 }
 function IasLoginComponent_div_11_input_7_Template(rf, ctx) {
   if (rf & 1) {
-    const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "input", 44);
+    const _r6 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "input", 45);
     \u0275\u0275listener("input", function IasLoginComponent_div_11_input_7_Template_input_input_0_listener($event) {
-      const i_r5 = \u0275\u0275restoreView(_r4).index;
+      const i_r7 = \u0275\u0275restoreView(_r6).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r1.onOtpInput($event, i_r5));
+      return \u0275\u0275resetView(ctx_r1.onOtpInput($event, i_r7));
     })("keydown", function IasLoginComponent_div_11_input_7_Template_input_keydown_0_listener($event) {
-      const i_r5 = \u0275\u0275restoreView(_r4).index;
+      const i_r7 = \u0275\u0275restoreView(_r6).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
-      return \u0275\u0275resetView(ctx_r1.handleKeyDown($event, i_r5));
+      return \u0275\u0275resetView(ctx_r1.handleKeyDown($event, i_r7));
     });
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctrl_r6 = ctx.$implicit;
-    \u0275\u0275property("formControlName", ctrl_r6);
+    const ctrl_r8 = ctx.$implicit;
+    \u0275\u0275property("formControlName", ctrl_r8);
   }
 }
 function IasLoginComponent_div_11_Template(rf, ctx) {
   if (rf & 1) {
-    const _r3 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 37)(1, "h1");
+    const _r5 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "div", 38)(1, "h1");
     \u0275\u0275text(2, "Enter OTP to Verify");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "h4");
     \u0275\u0275text(4);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "form", 12);
+    \u0275\u0275elementStart(5, "form", 13);
     \u0275\u0275listener("ngSubmit", function IasLoginComponent_div_11_Template_form_ngSubmit_5_listener() {
-      \u0275\u0275restoreView(_r3);
+      \u0275\u0275restoreView(_r5);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitOtp());
     });
-    \u0275\u0275elementStart(6, "div", 38);
-    \u0275\u0275template(7, IasLoginComponent_div_11_input_7_Template, 1, 1, "input", 39);
+    \u0275\u0275elementStart(6, "div", 39);
+    \u0275\u0275template(7, IasLoginComponent_div_11_input_7_Template, 1, 1, "input", 40);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "button", 23);
+    \u0275\u0275elementStart(8, "button", 19);
     \u0275\u0275text(9, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "span", 40)(11, "p", 41);
+    \u0275\u0275elementStart(10, "span", 41)(11, "p", 42);
     \u0275\u0275text(12, "Did not get the OTP?");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "span", 42);
+    \u0275\u0275elementStart(13, "span", 43);
     \u0275\u0275listener("click", function IasLoginComponent_div_11_Template_span_click_13_listener() {
-      \u0275\u0275restoreView(_r3);
+      \u0275\u0275restoreView(_r5);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(!ctx_r1.isResendDisabled && ctx_r1.onResendOtp());
     });
     \u0275\u0275text(14, " Resend OTP ");
     \u0275\u0275elementEnd();
     \u0275\u0275text(15, " in ");
-    \u0275\u0275elementStart(16, "span", 43);
+    \u0275\u0275elementStart(16, "span", 44);
     \u0275\u0275text(17);
     \u0275\u0275pipe(18, "date");
     \u0275\u0275elementEnd()()()();
@@ -920,12 +940,10 @@ function IasLoginComponent_div_11_Template(rf, ctx) {
     \u0275\u0275property("formGroup", ctx_r1.otpForm);
     \u0275\u0275advance(2);
     \u0275\u0275property("ngForOf", ctx_r1.otpControls);
-    \u0275\u0275advance();
-    \u0275\u0275property("disabled", ctx_r1.otpForm.invalid);
-    \u0275\u0275advance(5);
+    \u0275\u0275advance(6);
     \u0275\u0275classProp("disabled", ctx_r1.isResendDisabled);
     \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate(\u0275\u0275pipeBind3(18, 7, ctx_r1.countdown * 1e3, "mm:ss", "UTC"));
+    \u0275\u0275textInterpolate(\u0275\u0275pipeBind3(18, 6, ctx_r1.countdown * 1e3, "mm:ss", "UTC"));
   }
 }
 var IasLoginComponent = class _IasLoginComponent {
@@ -937,6 +955,7 @@ var IasLoginComponent = class _IasLoginComponent {
     this.title = title;
     this.meta = meta;
     this.showPassword = false;
+    this.isMobileLogin = false;
     this.loading = false;
     this.errorMessage = "";
     this.showOtpStep = false;
@@ -946,7 +965,7 @@ var IasLoginComponent = class _IasLoginComponent {
     this.toastMessage = "";
     this.toastType = "primary";
     this.emailForm = this.fb.group({
-      email: ["", [Validators.required, Validators.email, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]],
+      email: ["", [Validators.required, this.emailOrMobileValidator]],
       password: ["", Validators.required]
     });
     this.otpForm = this.fb.group({});
@@ -975,13 +994,44 @@ var IasLoginComponent = class _IasLoginComponent {
   togglePasswordVisibility() {
     this.showPassword = !this.showPassword;
   }
+  // ✅ Custom Validator for Email OR Mobile
+  emailOrMobileValidator(control) {
+    const value = control.value?.trim();
+    if (!value)
+      return { required: true };
+    const mobileRegex = /^[6-9]\d{9}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (mobileRegex.test(value) || emailRegex.test(value))
+      return null;
+    return { invalidInput: true };
+  }
+  // Detect input type for UI behavior
+  detectInputType(value) {
+    const mobileRegex = /^[6-9]\d{9}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    if (mobileRegex.test(value)) {
+      this.isMobileLogin = true;
+      this.password?.clearValidators();
+    } else if (emailRegex.test(value)) {
+      this.isMobileLogin = false;
+      this.password?.setValidators([Validators.required]);
+    } else {
+      this.isMobileLogin = false;
+      this.password?.clearValidators();
+    }
+    this.password?.updateValueAndValidity();
+  }
   onSubmit() {
     if (this.emailForm.valid) {
       this.loading = true;
-      const payload = {
-        email: this.email?.value,
-        password: this.password?.value
-      };
+      const inputValue = this.email?.value?.trim();
+      let payload = {};
+      if (this.isMobileLogin) {
+        payload.mobile = inputValue;
+      } else {
+        payload.email = inputValue;
+        payload.password = this.password?.value;
+      }
       this.http.post(`${environment.apiUrl}/accounts/login`, payload).subscribe({
         next: (res) => {
           this.loading = false;
@@ -997,31 +1047,29 @@ var IasLoginComponent = class _IasLoginComponent {
         },
         error: (err) => {
           this.loading = false;
-          this.showToast(err.error?.message || "\u274C Invalid email or password.", "danger");
+          this.showToast(err.error?.message || "\u274C Invalid credentials.", "danger");
         }
       });
     } else {
       this.emailForm.markAllAsTouched();
-      this.showToast("\u26A0\uFE0F Please fill in all required fields.", "warning");
+      this.showToast("\u26A0\uFE0F Please enter valid details.", "warning");
     }
   }
   showToast(message, type = "primary") {
     this.toastMessage = message;
     this.toastType = type;
     const toastEl = document.getElementById("liveToast");
-    if (toastEl) {
-      const toast = new bootstrap.Toast(toastEl, { delay: 3e3 });
-      toast.show();
-    }
+    if (toastEl)
+      new bootstrap.Toast(toastEl, { delay: 3e3 }).show();
   }
   startCountdown(seconds) {
     this.countdown = seconds;
     this.isResendDisabled = true;
     clearInterval(this.intervalId);
     this.intervalId = setInterval(() => {
-      if (this.countdown > 0) {
+      if (this.countdown > 0)
         this.countdown--;
-      } else {
+      else {
         this.isResendDisabled = false;
         clearInterval(this.intervalId);
       }
@@ -1030,30 +1078,25 @@ var IasLoginComponent = class _IasLoginComponent {
   onResendOtp() {
     if (this.isResendDisabled)
       return;
-    this.isResendDisabled = true;
+    const inputValue = this.email?.value?.trim();
+    let payload = {};
+    if (this.isMobileLogin)
+      payload.mobile = inputValue;
+    else {
+      payload.email = inputValue;
+      payload.password = this.password?.value;
+    }
     this.loading = true;
-    const payload = {
-      email: this.email?.value,
-      password: this.password?.value
-    };
     this.http.post(`${environment.apiUrl}/accounts/login`, payload).subscribe({
       next: (res) => {
         this.loading = false;
-        const token = res?.data?.token;
-        if (token) {
-          this.tempToken = token;
-          this.showToast("\u2705 OTP resent successfully", "success");
-          this.startCountdown(59);
-        } else {
-          this.showToast("\u26A0\uFE0F Failed to resend OTP.", "warning");
-          this.isResendDisabled = false;
-        }
+        this.tempToken = res?.data?.token;
+        this.showToast("\u2705 OTP resent successfully", "success");
+        this.startCountdown(59);
       },
       error: (err) => {
         this.loading = false;
-        console.error(err);
         this.showToast(err.error?.message || "\u274C Failed to resend OTP.", "danger");
-        this.isResendDisabled = false;
       }
     });
   }
@@ -1067,9 +1110,8 @@ var IasLoginComponent = class _IasLoginComponent {
       }
       return;
     }
-    if (!/^[0-9]$/.test(event.key)) {
+    if (!/^[0-9]$/.test(event.key))
       event.preventDefault();
-    }
   }
   onOtpInput(event, index) {
     const input = event.target;
@@ -1111,14 +1153,11 @@ var IasLoginComponent = class _IasLoginComponent {
             } else {
               this.router.navigate(["homepage"]);
             }
-          } else {
-            this.errorMessage = "No session token received after OTP verification.";
           }
         },
         error: (err) => {
           this.loading = false;
           this.showToast(err.error?.message || "\u274C Invalid OTP. Please try again.", "danger");
-          this.errorMessage = err.error?.message || "Invalid OTP. Please try again.";
         }
       });
     } else {
@@ -1131,18 +1170,18 @@ var IasLoginComponent = class _IasLoginComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasLoginComponent, selectors: [["app-ias-login"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 8, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 2, "cursor", "pointer", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center"], ["class", "inneradjustment", 4, "ngIf"], ["class", "second-step", 4, "ngIf"], [1, "inneradjustment"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id"], ["class", "error-message", 4, "ngIf"], ["for", "password"], [1, "password-input"], ["id", "password", "formControlName", "password", "placeholder", "Enter your password", 3, "type"], ["type", "button", 1, "eye-button", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], [1, "forgot"], [3, "routerLink"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "signup-text"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M6.33325 10.3333H7.66658V6.33331H6.33325V10.3333ZM6.99992 4.99998C7.18881 4.99998 7.34714 4.93609 7.47492 4.80831C7.6027 4.68053 7.66658 4.5222 7.66658 4.33331C7.66658 4.14442 7.6027 3.98609 7.47492 3.85831C7.34714 3.73054 7.18881 3.66665 6.99992 3.66665C6.81103 3.66665 6.6527 3.73054 6.52492 3.85831C6.39714 3.98609 6.33325 4.14442 6.33325 4.33331C6.33325 4.5222 6.39714 4.68053 6.52492 4.80831C6.6527 4.93609 6.81103 4.99998 6.99992 4.99998ZM6.99992 13.6666C6.0777 13.6666 5.21103 13.4916 4.39992 13.1416C3.58881 12.7916 2.88325 12.3166 2.28325 11.7166C1.68325 11.1166 1.20825 10.4111 0.858252 9.59998C0.508252 8.78887 0.333252 7.9222 0.333252 6.99998C0.333252 6.07776 0.508252 5.21109 0.858252 4.39998C1.20825 3.58887 1.68325 2.88331 2.28325 2.28331C2.88325 1.68331 3.58881 1.20831 4.39992 0.858313C5.21103 0.508313 6.0777 0.333313 6.99992 0.333313C7.92214 0.333313 8.78881 0.508313 9.59992 0.858313C10.411 1.20831 11.1166 1.68331 11.7166 2.28331C12.3166 2.88331 12.7916 3.58887 13.1416 4.39998C13.4916 5.21109 13.6666 6.07776 13.6666 6.99998C13.6666 7.9222 13.4916 8.78887 13.1416 9.59998C12.7916 10.4111 12.3166 11.1166 11.7166 11.7166C11.1166 12.3166 10.411 12.7916 9.59992 13.1416C8.78881 13.4916 7.92214 13.6666 6.99992 13.6666ZM6.99992 12.3333C8.48881 12.3333 9.74992 11.8166 10.7833 10.7833C11.8166 9.74998 12.3333 8.48887 12.3333 6.99998C12.3333 5.51109 11.8166 4.24998 10.7833 3.21665C9.74992 2.18331 8.48881 1.66665 6.99992 1.66665C5.51103 1.66665 4.24992 2.18331 3.21659 3.21665C2.18325 4.24998 1.66659 5.51109 1.66659 6.99998C1.66659 8.48887 2.18325 9.74998 3.21659 10.7833C4.24992 11.8166 5.51103 12.3333 6.99992 12.3333Z", "fill", "#A16800"], [1, "error-message"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "second-step"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"]], template: function IasLoginComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasLoginComponent, selectors: [["app-ias-login"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 8, consts: [["userInput", ""], [4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 2, "cursor", "pointer", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center"], ["class", "inneradjustment", 4, "ngIf"], ["class", "second-step", 4, "ngIf"], [1, "inneradjustment"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "text", "id", "email", "formControlName", "email", "placeholder", "Enter Email or Mobile Number", 3, "input"], ["class", "error-message", 4, "ngIf"], [1, "forgot"], [3, "routerLink"], ["type", "submit", 1, "login-btn"], [1, "signup-text"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M6.33325 10.3333H7.66658V6.33331H6.33325V10.3333ZM6.99992 4.99998C7.18881 4.99998 7.34714 4.93609 7.47492 4.80831C7.6027 4.68053 7.66658 4.5222 7.66658 4.33331C7.66658 4.14442 7.6027 3.98609 7.47492 3.85831C7.34714 3.73054 7.18881 3.66665 6.99992 3.66665C6.81103 3.66665 6.6527 3.73054 6.52492 3.85831C6.39714 3.98609 6.33325 4.14442 6.33325 4.33331C6.33325 4.5222 6.39714 4.68053 6.52492 4.80831C6.6527 4.93609 6.81103 4.99998 6.99992 4.99998ZM6.99992 13.6666C6.0777 13.6666 5.21103 13.4916 4.39992 13.1416C3.58881 12.7916 2.88325 12.3166 2.28325 11.7166C1.68325 11.1166 1.20825 10.4111 0.858252 9.59998C0.508252 8.78887 0.333252 7.9222 0.333252 6.99998C0.333252 6.07776 0.508252 5.21109 0.858252 4.39998C1.20825 3.58887 1.68325 2.88331 2.28325 2.28331C2.88325 1.68331 3.58881 1.20831 4.39992 0.858313C5.21103 0.508313 6.0777 0.333313 6.99992 0.333313C7.92214 0.333313 8.78881 0.508313 9.59992 0.858313C10.411 1.20831 11.1166 1.68331 11.7166 2.28331C12.3166 2.88331 12.7916 3.58887 13.1416 4.39998C13.4916 5.21109 13.6666 6.07776 13.6666 6.99998C13.6666 7.9222 13.4916 8.78887 13.1416 9.59998C12.7916 10.4111 12.3166 11.1166 11.7166 11.7166C11.1166 12.3166 10.411 12.7916 9.59992 13.1416C8.78881 13.4916 7.92214 13.6666 6.99992 13.6666ZM6.99992 12.3333C8.48881 12.3333 9.74992 11.8166 10.7833 10.7833C11.8166 9.74998 12.3333 8.48887 12.3333 6.99998C12.3333 5.51109 11.8166 4.24998 10.7833 3.21665C9.74992 2.18331 8.48881 1.66665 6.99992 1.66665C5.51103 1.66665 4.24992 2.18331 3.21659 3.21665C2.18325 4.24998 1.66659 5.51109 1.66659 6.99998C1.66659 8.48887 2.18325 9.74998 3.21659 10.7833C4.24992 11.8166 5.51103 12.3333 6.99992 12.3333Z", "fill", "#A16800"], [1, "error-message"], ["for", "password"], [1, "password-input"], ["id", "password", "formControlName", "password", "placeholder", "Enter your password", 3, "type"], ["type", "button", 1, "eye-button", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "second-step"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", 3, "input", "keydown", "formControlName"]], template: function IasLoginComponent_Template(rf, ctx) {
       if (rf & 1) {
-        \u0275\u0275template(0, IasLoginComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 0);
-        \u0275\u0275elementStart(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
+        \u0275\u0275template(0, IasLoginComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 1);
+        \u0275\u0275elementStart(1, "div", 2)(2, "div", 3)(3, "div", 4)(4, "div", 5);
         \u0275\u0275text(5);
         \u0275\u0275elementEnd();
-        \u0275\u0275element(6, "button", 5);
+        \u0275\u0275element(6, "button", 6);
         \u0275\u0275elementEnd()()();
-        \u0275\u0275elementStart(7, "div", 6);
-        \u0275\u0275element(8, "div", 7);
-        \u0275\u0275elementStart(9, "div", 8);
-        \u0275\u0275template(10, IasLoginComponent_div_10_Template, 30, 9, "div", 9)(11, IasLoginComponent_div_11_Template, 19, 11, "div", 10);
+        \u0275\u0275elementStart(7, "div", 7);
+        \u0275\u0275element(8, "div", 8);
+        \u0275\u0275elementStart(9, "div", 9);
+        \u0275\u0275template(10, IasLoginComponent_div_10_Template, 24, 5, "div", 10)(11, IasLoginComponent_div_11_Template, 19, 10, "div", 11);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -1180,7 +1219,7 @@ var IasLoginComponent = class _IasLoginComponent {
   }
 };
 (() => {
-  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasLoginComponent, { className: "IasLoginComponent", filePath: "src/app/authmodule/ias-login/ias-login.component.ts", lineNumber: 33 });
+  (typeof ngDevMode === "undefined" || ngDevMode) && \u0275setClassDebugInfo(IasLoginComponent, { className: "IasLoginComponent", filePath: "src/app/authmodule/ias-login/ias-login.component.ts", lineNumber: 36 });
 })();
 
 // src/app/authmodule/ias-forgotpassword/ias-forgotpassword.component.ts
@@ -1760,14 +1799,14 @@ function IasSignupComponent_image_cropper_16_Template(rf, ctx) {
 function IasSignupComponent_div_25_div_7_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
-    \u0275\u0275text(1, "Email is required.");
+    \u0275\u0275text(1, " Email or mobile number is required. ");
     \u0275\u0275elementEnd();
   }
 }
 function IasSignupComponent_div_25_div_7_small_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
-    \u0275\u0275text(1, "Enter a Valid Email Id");
+    \u0275\u0275text(1, " Enter a valid email or mobile number. ");
     \u0275\u0275elementEnd();
   }
 }
@@ -1784,7 +1823,7 @@ function IasSignupComponent_div_25_div_7_Template(rf, ctx) {
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.emailForm.get("email")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["required"]);
     \u0275\u0275advance();
-    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.emailForm.get("email")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["pattern"]);
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.emailForm.get("email")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["invalidContact"]);
   }
 }
 function IasSignupComponent_div_25_Template(rf, ctx) {
@@ -1800,7 +1839,7 @@ function IasSignupComponent_div_25_Template(rf, ctx) {
       return \u0275\u0275resetView(ctx_r1.submitEmail());
     });
     \u0275\u0275elementStart(4, "label", 26);
-    \u0275\u0275text(5, "Email ID");
+    \u0275\u0275text(5, "Email ID or Mobile Number");
     \u0275\u0275elementEnd();
     \u0275\u0275element(6, "input", 27);
     \u0275\u0275template(7, IasSignupComponent_div_25_div_7_Template, 3, 2, "div", 28);
@@ -1980,17 +2019,113 @@ function IasSignupComponent_div_28_div_19_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["required"]);
   }
 }
-function IasSignupComponent_div_28_div_25_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_28_div_21_div_6_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Mobile number required ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_28_div_21_div_6_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Enter valid mobile number ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_28_div_21_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 33);
+    \u0275\u0275template(1, IasSignupComponent_div_28_div_21_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_28_div_21_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["required"]);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
+  }
+}
+function IasSignupComponent_div_28_div_21_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 54)(1, "label", 58);
+    \u0275\u0275text(2, " Mobile Number ");
+    \u0275\u0275elementStart(3, "span", 48);
+    \u0275\u0275text(4, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(5, "input", 59);
+    \u0275\u0275template(6, IasSignupComponent_div_28_div_21_div_6_Template, 3, 2, "div", 28);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(6);
+    \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_2_0.touched) && ((tmp_2_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_2_0.invalid));
+  }
+}
+function IasSignupComponent_div_28_div_22_div_6_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Email required ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_28_div_22_div_6_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Enter valid email ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_28_div_22_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 33);
+    \u0275\u0275template(1, IasSignupComponent_div_28_div_22_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_28_div_22_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.memberidForm.get("email")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["required"]);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.memberidForm.get("email")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
+  }
+}
+function IasSignupComponent_div_28_div_22_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 54)(1, "label", 58);
+    \u0275\u0275text(2, " Email ID ");
+    \u0275\u0275elementStart(3, "span", 48);
+    \u0275\u0275text(4, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(5, "input", 60);
+    \u0275\u0275template(6, IasSignupComponent_div_28_div_22_div_6_Template, 3, 2, "div", 28);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(6);
+    \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.memberidForm.get("email")) == null ? null : tmp_2_0.touched) && ((tmp_2_0 = ctx_r1.memberidForm.get("email")) == null ? null : tmp_2_0.invalid));
+  }
+}
+function IasSignupComponent_div_28_div_27_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid email ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_28_div_25_Template(rf, ctx) {
+function IasSignupComponent_div_28_div_27_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_28_div_25_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_28_div_27_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1998,26 +2133,6 @@ function IasSignupComponent_div_28_div_25_Template(rf, ctx) {
     const ctx_r1 = \u0275\u0275nextContext(2);
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
-  }
-}
-function IasSignupComponent_div_28_div_32_small_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "small");
-    \u0275\u0275text(1, " Enter a valid Mobile Number ");
-    \u0275\u0275elementEnd();
-  }
-}
-function IasSignupComponent_div_28_div_32_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_28_div_32_small_1_Template, 2, 0, "small", 0);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    let tmp_2_0;
-    const ctx_r1 = \u0275\u0275nextContext(2);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
 function IasSignupComponent_div_28_Template(rf, ctx) {
@@ -2061,35 +2176,22 @@ function IasSignupComponent_div_28_Template(rf, ctx) {
     \u0275\u0275elementEnd()();
     \u0275\u0275element(18, "input", 51);
     \u0275\u0275template(19, IasSignupComponent_div_28_div_19_Template, 2, 1, "div", 28);
-    \u0275\u0275elementStart(20, "div", 52)(21, "div", 53)(22, "label", 54);
-    \u0275\u0275text(23, "Alternate Email ID ");
+    \u0275\u0275elementStart(20, "div", 52);
+    \u0275\u0275template(21, IasSignupComponent_div_28_div_21_Template, 7, 1, "div", 53)(22, IasSignupComponent_div_28_div_22_Template, 7, 1, "div", 53);
+    \u0275\u0275elementStart(23, "div", 54)(24, "label", 55);
+    \u0275\u0275text(25, "Alternate Email ID ");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(24, "input", 55);
-    \u0275\u0275template(25, IasSignupComponent_div_28_div_25_Template, 2, 1, "div", 28);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(26, "div", 53)(27, "label", 56);
-    \u0275\u0275text(28, "Mobile Number");
-    \u0275\u0275elementStart(29, "span", 48);
-    \u0275\u0275text(30, "*");
+    \u0275\u0275element(26, "input", 56);
+    \u0275\u0275template(27, IasSignupComponent_div_28_div_27_Template, 2, 1, "div", 28);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(31, "input", 57);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_28_Template_input_keypress_31_listener($event) {
-      \u0275\u0275restoreView(_r9);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.allow10Numbers($event));
-    });
-    \u0275\u0275elementEnd();
-    \u0275\u0275template(32, IasSignupComponent_div_28_div_32_Template, 2, 1, "div", 28);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(33, "button", 58);
-    \u0275\u0275text(34, "Continue");
+    \u0275\u0275elementStart(28, "button", 57);
+    \u0275\u0275text(29, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
     let tmp_2_0;
     let tmp_3_0;
-    let tmp_4_0;
-    let tmp_5_0;
+    let tmp_6_0;
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(7);
     \u0275\u0275property("formGroup", ctx_r1.memberidForm);
@@ -2097,17 +2199,19 @@ function IasSignupComponent_div_28_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberidForm.get("name")) == null ? null : tmp_2_0.invalid);
     \u0275\u0275advance(6);
     \u0275\u0275property("ngIf", ((tmp_3_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_3_0.touched) && ((tmp_3_0 = ctx_r1.memberidForm.get("identityNumber")) == null ? null : tmp_3_0.invalid));
-    \u0275\u0275advance(6);
-    \u0275\u0275property("ngIf", ((tmp_4_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_4_0.touched) && ((tmp_4_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_4_0.invalid));
-    \u0275\u0275advance(7);
-    \u0275\u0275property("ngIf", ((tmp_5_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_5_0.touched) && ((tmp_5_0 = ctx_r1.memberidForm.get("mobilenumber")) == null ? null : tmp_5_0.invalid));
+    \u0275\u0275advance(2);
+    \u0275\u0275property("ngIf", ctx_r1.contactType === "email");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r1.contactType === "mobile");
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngIf", ((tmp_6_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_6_0.touched) && ((tmp_6_0 = ctx_r1.memberidForm.get("alternateEmail")) == null ? null : tmp_6_0.invalid));
     \u0275\u0275advance();
     \u0275\u0275property("disabled", ctx_r1.memberidForm.invalid);
   }
 }
 function IasSignupComponent_div_29_For_23_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 65);
+    \u0275\u0275elementStart(0, "option", 67);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -2118,17 +2222,113 @@ function IasSignupComponent_div_29_For_23_Template(rf, ctx) {
     \u0275\u0275textInterpolate(cadre_r11.name);
   }
 }
-function IasSignupComponent_div_29_div_72_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_29_div_68_div_6_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Mobile required ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_29_div_68_div_6_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Enter valid mobile number ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_29_div_68_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 33);
+    \u0275\u0275template(1, IasSignupComponent_div_29_div_68_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_29_div_68_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["required"]);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
+  }
+}
+function IasSignupComponent_div_29_div_68_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
+    \u0275\u0275text(2, "Mobile Number ");
+    \u0275\u0275elementStart(3, "span", 48);
+    \u0275\u0275text(4, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(5, "input", 87);
+    \u0275\u0275template(6, IasSignupComponent_div_29_div_68_div_6_Template, 3, 2, "div", 28);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(6);
+    \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_2_0.touched) && ((tmp_2_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_2_0.invalid));
+  }
+}
+function IasSignupComponent_div_29_div_69_div_6_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Email required ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_29_div_69_div_6_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Enter valid email ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_29_div_69_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 33);
+    \u0275\u0275template(1, IasSignupComponent_div_29_div_69_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_29_div_69_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.memberdetailsForm.get("email")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["required"]);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.memberdetailsForm.get("email")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
+  }
+}
+function IasSignupComponent_div_29_div_69_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
+    \u0275\u0275text(2, "Email ID ");
+    \u0275\u0275elementStart(3, "span", 48);
+    \u0275\u0275text(4, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(5, "input", 60);
+    \u0275\u0275template(6, IasSignupComponent_div_29_div_69_div_6_Template, 3, 2, "div", 28);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(6);
+    \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.memberdetailsForm.get("email")) == null ? null : tmp_2_0.touched) && ((tmp_2_0 = ctx_r1.memberdetailsForm.get("email")) == null ? null : tmp_2_0.invalid));
+  }
+}
+function IasSignupComponent_div_29_div_74_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid email ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_29_div_72_Template(rf, ctx) {
+function IasSignupComponent_div_29_div_74_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_29_div_72_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_29_div_74_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2136,26 +2336,6 @@ function IasSignupComponent_div_29_div_72_Template(rf, ctx) {
     const ctx_r1 = \u0275\u0275nextContext(2);
     \u0275\u0275advance();
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
-  }
-}
-function IasSignupComponent_div_29_div_79_small_1_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "small");
-    \u0275\u0275text(1, " Enter a valid Mobile Number ");
-    \u0275\u0275elementEnd();
-  }
-}
-function IasSignupComponent_div_29_div_79_Template(rf, ctx) {
-  if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_29_div_79_small_1_Template, 2, 0, "small", 0);
-    \u0275\u0275elementEnd();
-  }
-  if (rf & 2) {
-    let tmp_2_0;
-    const ctx_r1 = \u0275\u0275nextContext(2);
-    \u0275\u0275advance();
-    \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
 function IasSignupComponent_div_29_Template(rf, ctx) {
@@ -2179,117 +2359,103 @@ function IasSignupComponent_div_29_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitmemberdetails());
     });
-    \u0275\u0275elementStart(8, "label", 59);
+    \u0275\u0275elementStart(8, "label", 61);
     \u0275\u0275text(9, "Full Name");
     \u0275\u0275elementStart(10, "span", 48);
     \u0275\u0275text(11, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(12, "input", 60);
+    \u0275\u0275elementStart(12, "input", 62);
     \u0275\u0275listener("keypress", function IasSignupComponent_div_29_Template_input_keypress_12_listener($event) {
       \u0275\u0275restoreView(_r10);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allowOnlyLetters($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "div", 61)(14, "div", 53)(15, "label", 62);
+    \u0275\u0275elementStart(13, "div", 63)(14, "div", 54)(15, "label", 64);
     \u0275\u0275text(16, "Cadre");
     \u0275\u0275elementStart(17, "span", 48);
     \u0275\u0275text(18, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(19, "select", 63)(20, "option", 64);
+    \u0275\u0275elementStart(19, "select", 65)(20, "option", 66);
     \u0275\u0275text(21, "Enter Cadre");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(22, IasSignupComponent_div_29_For_23_Template, 2, 2, "option", 65, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275repeaterCreate(22, IasSignupComponent_div_29_For_23_Template, 2, 2, "option", 67, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(24, "div", 53)(25, "label", 66);
+    \u0275\u0275elementStart(24, "div", 54)(25, "label", 68);
     \u0275\u0275text(26, "Allotment Year");
     \u0275\u0275elementStart(27, "span", 48);
     \u0275\u0275text(28, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(29, "input", 67);
+    \u0275\u0275elementStart(29, "input", 69);
     \u0275\u0275listener("input", function IasSignupComponent_div_29_Template_input_input_29_listener($event) {
       \u0275\u0275restoreView(_r10);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.validateYear($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(30, "div", 53)(31, "label", 68);
+    \u0275\u0275elementStart(30, "div", 54)(31, "label", 70);
     \u0275\u0275text(32, "Gender");
     \u0275\u0275elementStart(33, "span", 48);
     \u0275\u0275text(34, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(35, "select", 69)(36, "option", 70);
+    \u0275\u0275elementStart(35, "select", 71)(36, "option", 72);
     \u0275\u0275text(37, "Select Gender");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(38, "option", 71);
+    \u0275\u0275elementStart(38, "option", 73);
     \u0275\u0275text(39, "Male");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(40, "option", 72);
+    \u0275\u0275elementStart(40, "option", 74);
     \u0275\u0275text(41, "Female");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(42, "option", 73);
+    \u0275\u0275elementStart(42, "option", 75);
     \u0275\u0275text(43, "Other");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(44, "div", 53)(45, "label", 74);
+    \u0275\u0275elementStart(44, "div", 54)(45, "label", 76);
     \u0275\u0275text(46, "Date of Birth");
     \u0275\u0275elementStart(47, "span", 48);
     \u0275\u0275text(48, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(49, "input", 75);
+    \u0275\u0275element(49, "input", 77);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(50, "div", 53)(51, "label", 76);
+    \u0275\u0275elementStart(50, "div", 54)(51, "label", 78);
     \u0275\u0275text(52, "Mother Tongue");
     \u0275\u0275elementStart(53, "span", 48);
     \u0275\u0275text(54, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(55, "input", 77);
+    \u0275\u0275elementStart(55, "input", 79);
     \u0275\u0275listener("keypress", function IasSignupComponent_div_29_Template_input_keypress_55_listener($event) {
       \u0275\u0275restoreView(_r10);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allowOnlyLetters($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(56, "div", 53)(57, "label", 78);
+    \u0275\u0275elementStart(56, "div", 54)(57, "label", 80);
     \u0275\u0275text(58, "Service Status");
     \u0275\u0275elementStart(59, "span", 48);
     \u0275\u0275text(60, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(61, "select", 79)(62, "option", 70);
+    \u0275\u0275elementStart(61, "select", 81)(62, "option", 72);
     \u0275\u0275text(63, "Select Status");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(64, "option", 80);
+    \u0275\u0275elementStart(64, "option", 82);
     \u0275\u0275text(65, "Serving");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(66, "option", 81);
+    \u0275\u0275elementStart(66, "option", 83);
     \u0275\u0275text(67, "Superannuated");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(68, "div", 53)(69, "label", 82);
-    \u0275\u0275text(70, "Alternate Email ID");
+    \u0275\u0275template(68, IasSignupComponent_div_29_div_68_Template, 7, 1, "div", 53)(69, IasSignupComponent_div_29_div_69_Template, 7, 1, "div", 53);
+    \u0275\u0275elementStart(70, "div", 54)(71, "label", 84);
+    \u0275\u0275text(72, "Alternate Email ID");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(71, "input", 83);
-    \u0275\u0275template(72, IasSignupComponent_div_29_div_72_Template, 2, 1, "div", 28);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(73, "div", 53)(74, "label", 84);
-    \u0275\u0275text(75, "Mobile Number");
-    \u0275\u0275elementStart(76, "span", 48);
-    \u0275\u0275text(77, "*");
+    \u0275\u0275element(73, "input", 85);
+    \u0275\u0275template(74, IasSignupComponent_div_29_div_74_Template, 2, 1, "div", 28);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(78, "input", 85);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_29_Template_input_keypress_78_listener($event) {
-      \u0275\u0275restoreView(_r10);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.allow10Numbers($event));
-    });
-    \u0275\u0275elementEnd();
-    \u0275\u0275template(79, IasSignupComponent_div_29_div_79_Template, 2, 1, "div", 28);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(80, "button", 86);
-    \u0275\u0275text(81, "Continue");
+    \u0275\u0275elementStart(75, "button", 86);
+    \u0275\u0275text(76, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
-    let tmp_4_0;
-    let tmp_5_0;
+    let tmp_6_0;
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(7);
     \u0275\u0275property("formGroup", ctx_r1.memberdetailsForm);
@@ -2297,25 +2463,27 @@ function IasSignupComponent_div_29_Template(rf, ctx) {
     \u0275\u0275repeater(ctx_r1.cadrelist);
     \u0275\u0275advance(27);
     \u0275\u0275property("max", ctx_r1.maxDOB);
-    \u0275\u0275advance(23);
-    \u0275\u0275property("ngIf", ((tmp_4_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_4_0.touched) && ((tmp_4_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_4_0.invalid));
-    \u0275\u0275advance(7);
-    \u0275\u0275property("ngIf", ((tmp_5_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_5_0.touched) && ((tmp_5_0 = ctx_r1.memberdetailsForm.get("mobilenumber")) == null ? null : tmp_5_0.invalid));
+    \u0275\u0275advance(19);
+    \u0275\u0275property("ngIf", ctx_r1.contactType === "email");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r1.contactType === "mobile");
+    \u0275\u0275advance(5);
+    \u0275\u0275property("ngIf", ((tmp_6_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_6_0.touched) && ((tmp_6_0 = ctx_r1.memberdetailsForm.get("alternateEmail")) == null ? null : tmp_6_0.invalid));
     \u0275\u0275advance();
     \u0275\u0275property("disabled", ctx_r1.memberdetailsForm.invalid);
   }
 }
 function IasSignupComponent_div_30_div_15_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 33)(1, "small", 92);
+    \u0275\u0275elementStart(0, "div", 33)(1, "small", 93);
     \u0275\u0275text(2, "Profile picture is required.");
     \u0275\u0275elementEnd()();
   }
 }
 function IasSignupComponent_div_30_div_17_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 93);
-    \u0275\u0275element(1, "img", 94);
+    \u0275\u0275elementStart(0, "div", 94);
+    \u0275\u0275element(1, "img", 95);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2389,7 +2557,7 @@ function IasSignupComponent_div_30_div_31_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_For_48_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 65);
+    \u0275\u0275elementStart(0, "option", 67);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -2400,24 +2568,100 @@ function IasSignupComponent_div_30_For_48_Template(rf, ctx) {
     \u0275\u0275textInterpolate(cadre_r13.name);
   }
 }
-function IasSignupComponent_div_30_div_61_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_55_div_6_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
-    \u0275\u0275text(1, " Enter a valid Mobile Number ");
+    \u0275\u0275text(1, " Mobile required ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_61_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_55_div_6_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Enter valid mobile number ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_30_div_55_div_6_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_61_small_1_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_30_div_55_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_55_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = \u0275\u0275nextContext(3);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["required"]);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
+  }
+}
+function IasSignupComponent_div_30_div_55_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
+    \u0275\u0275text(2, "Mobile Number ");
+    \u0275\u0275elementStart(3, "span", 48);
+    \u0275\u0275text(4, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(5, "input", 87);
+    \u0275\u0275template(6, IasSignupComponent_div_30_div_55_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
     let tmp_2_0;
     const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(6);
+    \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_2_0.touched) && ((tmp_2_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_2_0.invalid));
+  }
+}
+function IasSignupComponent_div_30_div_56_div_6_small_1_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Email required ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_30_div_56_div_6_small_2_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "small");
+    \u0275\u0275text(1, " Enter valid email ");
+    \u0275\u0275elementEnd();
+  }
+}
+function IasSignupComponent_div_30_div_56_div_6_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 33);
+    \u0275\u0275template(1, IasSignupComponent_div_30_div_56_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_56_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_3_0;
+    let tmp_4_0;
+    const ctx_r1 = \u0275\u0275nextContext(3);
     \u0275\u0275advance();
-    \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
+    \u0275\u0275property("ngIf", (tmp_3_0 = ctx_r1.retiredForm.get("email")) == null ? null : tmp_3_0.errors == null ? null : tmp_3_0.errors["required"]);
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.retiredForm.get("email")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
+  }
+}
+function IasSignupComponent_div_30_div_56_Template(rf, ctx) {
+  if (rf & 1) {
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
+    \u0275\u0275text(2, "Email ID ");
+    \u0275\u0275elementStart(3, "span", 48);
+    \u0275\u0275text(4, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(5, "input", 60);
+    \u0275\u0275template(6, IasSignupComponent_div_30_div_56_div_6_Template, 3, 2, "div", 28);
+    \u0275\u0275elementEnd();
+  }
+  if (rf & 2) {
+    let tmp_2_0;
+    const ctx_r1 = \u0275\u0275nextContext(2);
+    \u0275\u0275advance(6);
+    \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.retiredForm.get("email")) == null ? null : tmp_2_0.touched) && ((tmp_2_0 = ctx_r1.retiredForm.get("email")) == null ? null : tmp_2_0.invalid));
   }
 }
 function IasSignupComponent_div_30_Template(rf, ctx) {
@@ -2441,12 +2685,12 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitRetired());
     });
-    \u0275\u0275elementStart(8, "div", 87)(9, "div", 53)(10, "label", 88);
+    \u0275\u0275elementStart(8, "div", 88)(9, "div", 54)(10, "label", 89);
     \u0275\u0275text(11, "Profile Picture ");
     \u0275\u0275elementStart(12, "span", 48);
     \u0275\u0275text(13, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(14, "input", 89);
+    \u0275\u0275elementStart(14, "input", 90);
     \u0275\u0275listener("click", function IasSignupComponent_div_30_Template_input_click_14_listener() {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2454,8 +2698,8 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     });
     \u0275\u0275elementEnd()();
     \u0275\u0275template(15, IasSignupComponent_div_30_div_15_Template, 3, 0, "div", 28);
-    \u0275\u0275elementStart(16, "div", 53);
-    \u0275\u0275template(17, IasSignupComponent_div_30_div_17_Template, 2, 1, "div", 90);
+    \u0275\u0275elementStart(16, "div", 54);
+    \u0275\u0275template(17, IasSignupComponent_div_30_div_17_Template, 2, 1, "div", 91);
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(18, "label", 47);
     \u0275\u0275text(19, "Full Name");
@@ -2478,60 +2722,47 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     \u0275\u0275elementStart(28, "span", 48);
     \u0275\u0275text(29, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(30, "input", 91);
+    \u0275\u0275element(30, "input", 92);
     \u0275\u0275template(31, IasSignupComponent_div_30_div_31_Template, 2, 1, "div", 28);
-    \u0275\u0275elementStart(32, "div", 61)(33, "div", 53)(34, "label", 74);
+    \u0275\u0275elementStart(32, "div", 63)(33, "div", 54)(34, "label", 76);
     \u0275\u0275text(35, "Date of Birth");
     \u0275\u0275elementStart(36, "span", 48);
     \u0275\u0275text(37, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(38, "input", 75);
+    \u0275\u0275element(38, "input", 77);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(39, "div", 53)(40, "label", 62);
+    \u0275\u0275elementStart(39, "div", 54)(40, "label", 64);
     \u0275\u0275text(41, "Cadre");
     \u0275\u0275elementStart(42, "span", 48);
     \u0275\u0275text(43, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(44, "select", 63)(45, "option", 64);
+    \u0275\u0275elementStart(44, "select", 65)(45, "option", 66);
     \u0275\u0275text(46, "Enter Cadre");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(47, IasSignupComponent_div_30_For_48_Template, 2, 2, "option", 65, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275repeaterCreate(47, IasSignupComponent_div_30_For_48_Template, 2, 2, "option", 67, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(49, "div", 53)(50, "label", 66);
+    \u0275\u0275elementStart(49, "div", 54)(50, "label", 68);
     \u0275\u0275text(51, "Allotment Year");
     \u0275\u0275elementStart(52, "span", 48);
     \u0275\u0275text(53, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(54, "input", 67);
+    \u0275\u0275elementStart(54, "input", 69);
     \u0275\u0275listener("input", function IasSignupComponent_div_30_Template_input_input_54_listener($event) {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.validateYear($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(55, "div", 53)(56, "label", 84);
-    \u0275\u0275text(57, "Mobile Number");
-    \u0275\u0275elementStart(58, "span", 48);
-    \u0275\u0275text(59, "*");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(60, "input", 85);
-    \u0275\u0275listener("keypress", function IasSignupComponent_div_30_Template_input_keypress_60_listener($event) {
-      \u0275\u0275restoreView(_r12);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.allow10Numbers($event));
-    });
+    \u0275\u0275template(55, IasSignupComponent_div_30_div_55_Template, 7, 1, "div", 53)(56, IasSignupComponent_div_30_div_56_Template, 7, 1, "div", 53);
     \u0275\u0275elementEnd();
-    \u0275\u0275template(61, IasSignupComponent_div_30_div_61_Template, 2, 1, "div", 28);
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(62, "button", 58);
-    \u0275\u0275text(63, "Continue");
+    \u0275\u0275elementStart(57, "button", 57);
+    \u0275\u0275text(58, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
     let tmp_2_0;
     let tmp_4_0;
     let tmp_5_0;
-    let tmp_8_0;
     const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(7);
     \u0275\u0275property("formGroup", ctx_r1.retiredForm);
@@ -2547,8 +2778,10 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     \u0275\u0275property("max", ctx_r1.maxDOB);
     \u0275\u0275advance(9);
     \u0275\u0275repeater(ctx_r1.cadrelist);
-    \u0275\u0275advance(14);
-    \u0275\u0275property("ngIf", ((tmp_8_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_8_0.touched) && ((tmp_8_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_8_0.invalid));
+    \u0275\u0275advance(8);
+    \u0275\u0275property("ngIf", ctx_r1.contactType === "email");
+    \u0275\u0275advance();
+    \u0275\u0275property("ngIf", ctx_r1.contactType === "mobile");
     \u0275\u0275advance();
     \u0275\u0275property("disabled", ctx_r1.retiredForm.invalid);
   }
@@ -2568,17 +2801,17 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     \u0275\u0275elementStart(0, "div", 23)(1, "h1", 24);
     \u0275\u0275text(2, "Your Details");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "div", 95)(4, "div", 96);
-    \u0275\u0275template(5, IasSignupComponent_div_31_img_5_Template, 1, 1, "img", 97);
-    \u0275\u0275elementStart(6, "div")(7, "h3", 98);
+    \u0275\u0275elementStart(3, "div", 96)(4, "div", 97);
+    \u0275\u0275template(5, IasSignupComponent_div_31_img_5_Template, 1, 1, "img", 98);
+    \u0275\u0275elementStart(6, "div")(7, "h3", 99);
     \u0275\u0275text(8);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(9, "div", 99)(10, "span");
+    \u0275\u0275elementStart(9, "div", 100)(10, "span");
     \u0275\u0275text(11, "IAS Batch Year:");
     \u0275\u0275elementStart(12, "strong");
     \u0275\u0275text(13);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(14, "span", 100);
+    \u0275\u0275elementStart(14, "span", 101);
     \u0275\u0275text(15, "|");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(16, "span");
@@ -2586,7 +2819,7 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     \u0275\u0275elementStart(18, "strong");
     \u0275\u0275text(19);
     \u0275\u0275elementEnd()()()()()();
-    \u0275\u0275elementStart(20, "button", 101);
+    \u0275\u0275elementStart(20, "button", 102);
     \u0275\u0275listener("click", function IasSignupComponent_div_31_Template_button_click_20_listener() {
       \u0275\u0275restoreView(_r14);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2594,7 +2827,7 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     });
     \u0275\u0275text(21, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(22, "p", 102);
+    \u0275\u0275elementStart(22, "p", 58);
     \u0275\u0275text(23, "Wrong profile or incorrect information? ");
     \u0275\u0275elementStart(24, "span", 103);
     \u0275\u0275listener("click", function IasSignupComponent_div_31_Template_span_click_24_listener() {
@@ -2750,7 +2983,7 @@ function IasSignupComponent_div_33_Template(rf, ctx) {
     \u0275\u0275element(2, "circle", 122)(3, "circle", 123)(4, "circle", 124)(5, "path", 125);
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(6, "h1", 102);
+    \u0275\u0275elementStart(6, "h1", 58);
     \u0275\u0275text(7, "You have successfully signed up");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(8, "h4", 24);
@@ -2780,6 +3013,7 @@ var IasSignupComponent = class _IasSignupComponent {
     this.passwordnotmatch = false;
     this.action = "";
     this.loading = false;
+    this.email = null;
     this.mobilenumber = null;
     this.alternateemail = null;
     this.iasid = null;
@@ -2792,15 +3026,17 @@ var IasSignupComponent = class _IasSignupComponent {
     this.imageChangedEvent = "";
     this.croppedImage = null;
     this.finalImage = null;
+    this.contactType = null;
     this.cadrelist = [];
     this.emailForm = this.fb.group({
-      email: ["", [Validators.required, Validators.email, Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]]
+      email: ["", [Validators.required, this.contactValidator()]]
     });
     this.memberidForm = this.fb.group({
       name: ["", [Validators.pattern(/^[A-Za-z\s]+$/)]],
       identityNumber: ["", [Validators.required]],
-      alternateEmail: [null, [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]],
-      mobilenumber: ["", [Validators.required, Validators.pattern(/^[0-9]{10}$/)]]
+      mobilenumber: [""],
+      email: [""],
+      alternateEmail: [null, [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]]
     });
     this.retiredForm = this.fb.group({
       profilePic: ["", [Validators.required]],
@@ -2814,7 +3050,8 @@ var IasSignupComponent = class _IasSignupComponent {
       dateofbirth: ["", [Validators.required]],
       cadre: [0, [Validators.required]],
       allotmentyear: ["", [Validators.required, Validators.pattern(/^[0-9]{4}$/)]],
-      mobilenumber: ["", [Validators.required, Validators.pattern(/^[0-9]{10}$/)]]
+      mobilenumber: [""],
+      email: [""]
     });
     this.memberdetailsForm = this.fb.group({
       fullname: [""],
@@ -2824,7 +3061,8 @@ var IasSignupComponent = class _IasSignupComponent {
       dateofbirth: ["", [Validators.required]],
       mothertongue: ["", [Validators.required]],
       retirementreason: ["", [Validators.required]],
-      mobilenumber: ["", [Validators.required, Validators.pattern(/^[0-9]{10}$/)]],
+      mobilenumber: [""],
+      email: [""],
       alternateEmail: [null, [Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)]]
     });
     const controls = {};
@@ -2856,6 +3094,53 @@ var IasSignupComponent = class _IasSignupComponent {
         clearInterval(this.intervalId);
       }
     }, 1e3);
+  }
+  contactValidator() {
+    return (control) => {
+      const value = control.value?.trim();
+      if (!value)
+        return null;
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
+      const mobileRegex = /^[6-9]\d{9}$/;
+      if (emailRegex.test(value) || mobileRegex.test(value)) {
+        return null;
+      }
+      return { invalidContact: true };
+    };
+  }
+  updateContactValidators(form) {
+    const mobileCtrl = form.get("mobilenumber");
+    const emailCtrl = form.get("email");
+    if (!mobileCtrl || !emailCtrl)
+      return;
+    mobileCtrl.clearValidators();
+    emailCtrl.clearValidators();
+    if (this.contactType === "email") {
+      mobileCtrl.setValidators([
+        Validators.required,
+        Validators.pattern(/^[6-9]\d{9}$/)
+      ]);
+    }
+    if (this.contactType === "mobile") {
+      emailCtrl.setValidators([
+        Validators.required,
+        Validators.pattern(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/)
+      ]);
+    }
+    mobileCtrl.updateValueAndValidity();
+    emailCtrl.updateValueAndValidity();
+  }
+  assignContactValues(form) {
+    const emailVal = form.get("email")?.value || null;
+    const mobileVal = form.get("mobilenumber")?.value || null;
+    if (this.contactType === "mobile") {
+      this.email = emailVal;
+      this.mobilenumber = null;
+    }
+    if (this.contactType === "email") {
+      this.mobilenumber = mobileVal;
+      this.email = null;
+    }
   }
   onResendOtp() {
     this.startCountdown(59);
@@ -2889,7 +3174,6 @@ var IasSignupComponent = class _IasSignupComponent {
       this.myModal = null;
     }
   }
-  // Step 1 - Submit email
   submitMemberId() {
     if (this.memberidForm.valid) {
       this.loading = true;
@@ -2903,7 +3187,7 @@ var IasSignupComponent = class _IasSignupComponent {
           this.iasprofilePic = response.data.data[0]?.profilePic;
           this.loading = false;
           if (this.iasid !== void 0 && this.iasid !== null) {
-            this.mobilenumber = this.memberidForm.value.mobilenumber || null;
+            this.assignContactValues(this.memberidForm);
             this.alternateemail = this.memberidForm.value.alternateEmail || null;
             this.showToast("\u2705 Details Found Successfully", "success");
             this.currentStep = 7;
@@ -2953,20 +3237,20 @@ var IasSignupComponent = class _IasSignupComponent {
   }
   submitRetired() {
     if (this.retiredForm.valid) {
+      this.assignContactValues(this.retiredForm);
       this.loading = true;
       const headers = new HttpHeaders({
         "Authorization": `Bearer ${this.sessionid}`,
         "Content-Type": "application/json"
       });
-      let payload = {
+      let payload = __spreadValues({
         profilePic: this.finalImage || null,
         name: this.retiredForm.value.name || null,
         identityNo: this.retiredForm.value.identityNumber || null,
         dob: this.retiredForm.value.dateofbirth || null,
         cadreId: +this.retiredForm.value.cadre || null,
-        batch: String(this.retiredForm.value.allotmentyear) || null,
-        mobileNo: String(this.retiredForm.value.mobilenumber) || null
-      };
+        batch: String(this.retiredForm.value.allotmentyear) || null
+      }, this.contactType === "mobile" ? { email: this.email } : { mobileNo: String(this.mobilenumber) });
       const url = `${environment.apiUrl}/accounts/retired-member-signup`;
       this.http.post(url, payload, { headers }).subscribe({
         next: (response) => {
@@ -2975,7 +3259,6 @@ var IasSignupComponent = class _IasSignupComponent {
           this.iasbatch = response.data.user?.doptOfficer?.allotmentYear;
           this.iascadre = response.data.user?.doptOfficer?.cadre?.name;
           this.iasprofilePic = response.data.user?.doptOfficer?.profilePic || null;
-          this.mobilenumber = this.retiredForm.value.mobilenumber || null;
           this.alternateemail = this.retiredForm.value.alternateEmail || null;
           this.loading = false;
           this.showToast("Form submitted successfully \u2705", "success");
@@ -3041,7 +3324,7 @@ var IasSignupComponent = class _IasSignupComponent {
           this.iasprofilePic = response.data.data[0]?.profilePic;
           this.loading = false;
           if (this.iasid !== void 0 && this.iasid !== null) {
-            this.mobilenumber = this.memberdetailsForm.value.mobilenumber || null;
+            this.assignContactValues(this.memberdetailsForm);
             this.alternateemail = this.memberdetailsForm.value.alternateEmail || null;
             this.showToast("\u2705 Details Found Successfully", "success");
             this.currentStep = 7;
@@ -3059,13 +3342,13 @@ var IasSignupComponent = class _IasSignupComponent {
   }
   submitdetails() {
     const url = `${environment.apiUrl}/accounts/details`;
-    const payload = {
+    const payload = __spreadProps(__spreadValues({
       identityNumber: {
         id: this.iasid
-      },
-      alternateEmail: this.alternateemail !== "" ? this.alternateemail : null,
-      mobileNumber: this.mobilenumber !== "" && this.mobilenumber != null ? String(this.mobilenumber) : null
-    };
+      }
+    }, this.contactType === "mobile" ? { email: this.email } : { mobileNumber: String(this.mobilenumber) }), {
+      alternateEmail: this.alternateemail !== "" ? this.alternateemail : null
+    });
     const headers = new HttpHeaders({
       "Authorization": `Bearer ${this.sessionid}`,
       "Content-Type": "application/json"
@@ -3083,27 +3366,42 @@ var IasSignupComponent = class _IasSignupComponent {
     });
   }
   submitEmail() {
-    if (this.emailForm.valid) {
-      this.loading = true;
-      const url = `${environment.apiUrl}/accounts/signup`;
-      const payload = {
-        email: this.emailForm.value.email
-      };
-      this.http.post(url, payload).subscribe({
-        next: (response) => {
-          this.token = response.data.token;
-          this.action = response.data.action;
-          this.loading = false;
-          this.showToast("\u2705 Please check your email for OTP.", "success");
-          this.currentStep = 2;
-          this.startCountdown(59);
-        },
-        error: (err) => {
-          this.loading = false;
-          this.showToast("Email is already registered.", "danger");
-        }
-      });
+    if (!this.emailForm.valid)
+      return;
+    const value = this.emailForm.value.email.trim();
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
+    const mobileRegex = /^[6-9]\d{9}$/;
+    if (emailRegex.test(value)) {
+      this.contactType = "email";
+      this.updateContactValidators(this.memberidForm);
+      this.updateContactValidators(this.memberdetailsForm);
+      this.updateContactValidators(this.retiredForm);
+    } else if (mobileRegex.test(value)) {
+      this.contactType = "mobile";
+      this.updateContactValidators(this.memberidForm);
+      this.updateContactValidators(this.memberdetailsForm);
+      this.updateContactValidators(this.retiredForm);
     }
+    this.loading = true;
+    const url = `${environment.apiUrl}/accounts/signup`;
+    const payload = {
+      email: value
+    };
+    this.http.post(url, payload).subscribe({
+      next: (response) => {
+        this.token = response.data.token;
+        this.action = response.data.action;
+        this.loading = false;
+        this.showToast("\u2705 OTP sent successfully.", "success");
+        console.log("Detected type:", this.contactType);
+        this.currentStep = 2;
+        this.startCountdown(59);
+      },
+      error: () => {
+        this.loading = false;
+        this.showToast("Already registered.", "danger");
+      }
+    });
   }
   onOtpInput(event, index) {
     const input = event.target;
@@ -3198,7 +3496,7 @@ var IasSignupComponent = class _IasSignupComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSignupComponent, selectors: [["app-ias-signup"]], standalone: true, features: [\u0275\u0275ProvidersFeature([DatePipe]), \u0275\u0275StandaloneFeature], decls: 34, vars: 17, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "uploadModal", "tabindex", "-1", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered"], [1, "modal-content", "p-3"], [1, "modal-header"], [1, "modal-title"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn-close"], [1, "modal-body"], ["type", "file", "accept", "image/*", 1, "form-control", "mb-3", 3, "change"], ["format", "png", 3, "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor", "imageCropped", 4, "ngIf"], [1, "modal-footer", "d-flex", "justify-content-between"], ["data-bs-dismiss", "modal", 1, "btn", "btn-secondary"], [1, "btn", "btn-dark", 3, "click", "disabled"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "stepcontainer", 4, "ngIf"], ["format", "png", 3, "imageCropped", "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor"], [1, "stepcontainer"], [1, "mb-4"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "email", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id", 1, "mb-1"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn", "my-4", 3, "disabled"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "viewBox", "0 0 16 16", "fill", "none"], ["d", "M7.3335 11.3333H8.66683V7.33331H7.3335V11.3333ZM8.00016 5.99998C8.18905 5.99998 8.34738 5.93609 8.47516 5.80831C8.60294 5.68053 8.66683 5.5222 8.66683 5.33331C8.66683 5.14442 8.60294 4.98609 8.47516 4.85831C8.34738 4.73054 8.18905 4.66665 8.00016 4.66665C7.81127 4.66665 7.65294 4.73054 7.52516 4.85831C7.39738 4.98609 7.3335 5.14442 7.3335 5.33331C7.3335 5.5222 7.39738 5.68053 7.52516 5.80831C7.65294 5.93609 7.81127 5.99998 8.00016 5.99998ZM8.00016 14.6666C7.07794 14.6666 6.21127 14.4916 5.40016 14.1416C4.58905 13.7916 3.8835 13.3166 3.2835 12.7166C2.6835 12.1166 2.2085 11.4111 1.8585 10.6C1.5085 9.78887 1.3335 8.9222 1.3335 7.99998C1.3335 7.07776 1.5085 6.21109 1.8585 5.39998C2.2085 4.58887 2.6835 3.88331 3.2835 3.28331C3.8835 2.68331 4.58905 2.20831 5.40016 1.85831C6.21127 1.50831 7.07794 1.33331 8.00016 1.33331C8.92238 1.33331 9.78905 1.50831 10.6002 1.85831C11.4113 2.20831 12.1168 2.68331 12.7168 3.28331C13.3168 3.88331 13.7918 4.58887 14.1418 5.39998C14.4918 6.21109 14.6668 7.07776 14.6668 7.99998C14.6668 8.9222 14.4918 9.78887 14.1418 10.6C13.7918 11.4111 13.3168 12.1166 12.7168 12.7166C12.1168 13.3166 11.4113 13.7916 10.6002 14.1416C9.78905 14.4916 8.92238 14.6666 8.00016 14.6666ZM8.00016 13.3333C9.48905 13.3333 10.7502 12.8166 11.7835 11.7833C12.8168 10.75 13.3335 9.48887 13.3335 7.99998C13.3335 6.51109 12.8168 5.24998 11.7835 4.21665C10.7502 3.18331 9.48905 2.66665 8.00016 2.66665C6.51127 2.66665 5.25016 3.18331 4.21683 4.21665C3.1835 5.24998 2.66683 6.51109 2.66683 7.99998C2.66683 9.48887 3.1835 10.75 4.21683 11.7833C5.25016 12.8166 6.51127 13.3333 8.00016 13.3333Z", "fill", "#A16800"], [1, "error-message"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"], ["type", "submit", 1, "login-btn", "mt-4", 3, "click"], [1, "text-center", "my-3"], ["type", "button", 1, "white-btn", 3, "click"], [1, "cursor-pointer", "fs-5", "fw-bold", 3, "click"], [1, "fas", "fa-arrow-left"], ["for", "name"], [1, "redstar"], ["type", "text", "id", "name", "formControlName", "name", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], ["for", "identityNumber", 1, "mt-3"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "placeholder", "Enter Your Identity No."], [1, "row"], [1, "col-md-6"], ["for", "alternateEmail", 1, "mt-3"], ["type", "email", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter Email ID", "maxlength", "100"], ["for", "mobilenumber ", 1, "mt-3"], ["type", "number", "id", "mobilenumber", "formControlName", "mobilenumber", "placeholder", "Enter Mobile Number", 3, "keypress"], ["type", "submit", 1, "login-btn", "my-3", "mt-4", 3, "disabled"], ["for", "FullName"], ["type", "text", "id", "FullName", "formControlName", "fullname", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], [1, "row", "mt-3"], ["for", "Cadre"], ["id", "Cadre", "aria-label", "Default select example", "formControlName", "cadre", 1, "form-select"], ["value", "0", "disabled", ""], [3, "value"], ["for", "allotmentyear"], ["type", "number", "id", "allotmentyear", "formControlName", "allotmentyear", "placeholder", "Enter Allotment Year", 1, "mb-3", 3, "input"], ["for", "Gender"], ["id", "Gender", "formControlName", "gender", 1, "form-select"], ["value", "", "disabled", ""], ["value", "Male"], ["value", "Female"], ["value", ""], ["for", "dob"], ["type", "date", "id", "dob", "formControlName", "dateofbirth", "placeholder", "Select Date of Birth", 1, "mb-3", 3, "max"], ["for", "mothertongue"], ["type", "text", "id", "mothertongue", "formControlName", "mothertongue", "placeholder", "Enter Language", "maxlength", "40", 1, "mb-3", 3, "keypress"], ["for", "retirementreason"], ["id", "retirementreason", "formControlName", "retirementreason", 1, "form-select"], ["value", "Serving"], ["value", "Superannuated"], ["for", "alternateEmail"], ["type", "text", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter your Email ID", "maxlength", "100", 1, "mb-1"], ["for", "mobilenumber"], ["type", "number", "id", "mobilenumber", "formControlName", "mobilenumber", "placeholder", "Enter Your Number", 1, "mb-1", 3, "keypress"], ["type", "submit", 1, "login-btn", "mt-4", 3, "disabled"], [1, "profile-pic-input", "mb-3", "row"], ["for", "profilePic"], ["type", "text", "id", "profilePic", "formControlName", "profilePic", "placeholder", "Click to upload", "readonly", "", 1, "form-control", "cursor-pointer", "bg-light", 3, "click"], ["class", "d-flex align-items-center justify-content-center h-100", 4, "ngIf"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "maxlength", "10", "placeholder", "Enter Your Identity No."], [1, "text-danger"], [1, "d-flex", "align-items-center", "justify-content-center", "h-100"], ["width", "80", "height", "80", "alt", "Preview", 1, "rounded-circle", "border", "preview-img", "mt-2", 3, "src"], [1, "detailscard", "shadow-sm", "border", "rounded-4"], [1, "d-flex", "align-items-center"], ["class", "rounded-circle me-4", "alt", "", "style", "width:80px; height:80px; object-fit:cover; object-position: center;", 3, "src", 4, "ngIf"], [1, "mb-3"], [1, "d-flex", "flex-wrap", "gap-2", "text-muted"], [1, "mx-2"], [1, "login-btn", "mt-4", 3, "click"], [1, "mt-3"], [1, "text-danger", "cursor-pointer", 3, "click"], ["alt", "", 1, "rounded-circle", "me-4", 2, "width", "80px", "height", "80px", "object-fit", "cover", "object-position", "center", 3, "src"], ["for", "newPassword"], [1, "password-wrapper", "my-1"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword", 1, "mt-3"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["type", "submit", 1, "login-btn", "mt-4"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasSignupComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSignupComponent, selectors: [["app-ias-signup"]], standalone: true, features: [\u0275\u0275ProvidersFeature([DatePipe]), \u0275\u0275StandaloneFeature], decls: 34, vars: 17, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "uploadModal", "tabindex", "-1", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered"], [1, "modal-content", "p-3"], [1, "modal-header"], [1, "modal-title"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn-close"], [1, "modal-body"], ["type", "file", "accept", "image/*", 1, "form-control", "mb-3", 3, "change"], ["format", "png", 3, "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor", "imageCropped", 4, "ngIf"], [1, "modal-footer", "d-flex", "justify-content-between"], ["data-bs-dismiss", "modal", 1, "btn", "btn-secondary"], [1, "btn", "btn-dark", 3, "click", "disabled"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "stepcontainer", 4, "ngIf"], ["format", "png", 3, "imageCropped", "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor"], [1, "stepcontainer"], [1, "mb-4"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "text", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id or Mobile Number", 1, "mb-1"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn", "my-4", 3, "disabled"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "viewBox", "0 0 16 16", "fill", "none"], ["d", "M7.3335 11.3333H8.66683V7.33331H7.3335V11.3333ZM8.00016 5.99998C8.18905 5.99998 8.34738 5.93609 8.47516 5.80831C8.60294 5.68053 8.66683 5.5222 8.66683 5.33331C8.66683 5.14442 8.60294 4.98609 8.47516 4.85831C8.34738 4.73054 8.18905 4.66665 8.00016 4.66665C7.81127 4.66665 7.65294 4.73054 7.52516 4.85831C7.39738 4.98609 7.3335 5.14442 7.3335 5.33331C7.3335 5.5222 7.39738 5.68053 7.52516 5.80831C7.65294 5.93609 7.81127 5.99998 8.00016 5.99998ZM8.00016 14.6666C7.07794 14.6666 6.21127 14.4916 5.40016 14.1416C4.58905 13.7916 3.8835 13.3166 3.2835 12.7166C2.6835 12.1166 2.2085 11.4111 1.8585 10.6C1.5085 9.78887 1.3335 8.9222 1.3335 7.99998C1.3335 7.07776 1.5085 6.21109 1.8585 5.39998C2.2085 4.58887 2.6835 3.88331 3.2835 3.28331C3.8835 2.68331 4.58905 2.20831 5.40016 1.85831C6.21127 1.50831 7.07794 1.33331 8.00016 1.33331C8.92238 1.33331 9.78905 1.50831 10.6002 1.85831C11.4113 2.20831 12.1168 2.68331 12.7168 3.28331C13.3168 3.88331 13.7918 4.58887 14.1418 5.39998C14.4918 6.21109 14.6668 7.07776 14.6668 7.99998C14.6668 8.9222 14.4918 9.78887 14.1418 10.6C13.7918 11.4111 13.3168 12.1166 12.7168 12.7166C12.1168 13.3166 11.4113 13.7916 10.6002 14.1416C9.78905 14.4916 8.92238 14.6666 8.00016 14.6666ZM8.00016 13.3333C9.48905 13.3333 10.7502 12.8166 11.7835 11.7833C12.8168 10.75 13.3335 9.48887 13.3335 7.99998C13.3335 6.51109 12.8168 5.24998 11.7835 4.21665C10.7502 3.18331 9.48905 2.66665 8.00016 2.66665C6.51127 2.66665 5.25016 3.18331 4.21683 4.21665C3.1835 5.24998 2.66683 6.51109 2.66683 7.99998C2.66683 9.48887 3.1835 10.75 4.21683 11.7833C5.25016 12.8166 6.51127 13.3333 8.00016 13.3333Z", "fill", "#A16800"], [1, "error-message"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"], ["type", "submit", 1, "login-btn", "mt-4", 3, "click"], [1, "text-center", "my-3"], ["type", "button", 1, "white-btn", 3, "click"], [1, "cursor-pointer", "fs-5", "fw-bold", 3, "click"], [1, "fas", "fa-arrow-left"], ["for", "name"], [1, "redstar"], ["type", "text", "id", "name", "formControlName", "name", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], ["for", "identityNumber", 1, "mt-3"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "placeholder", "Enter Your Identity No."], [1, "row"], ["class", "col-md-6", 4, "ngIf"], [1, "col-md-6"], ["for", "alternateEmail", 1, "mt-3"], ["type", "email", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter Email ID", "maxlength", "100"], ["type", "submit", 1, "login-btn", "my-3", "mt-4", 3, "disabled"], [1, "mt-3"], ["type", "text", "formControlName", "mobilenumber", "placeholder", "Enter Mobile Number", "maxlength", "10"], ["type", "email", "formControlName", "email", "placeholder", "Enter Email ID"], ["for", "FullName"], ["type", "text", "id", "FullName", "formControlName", "fullname", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], [1, "row", "mt-3"], ["for", "Cadre"], ["id", "Cadre", "aria-label", "Default select example", "formControlName", "cadre", 1, "form-select"], ["value", "0", "disabled", ""], [3, "value"], ["for", "allotmentyear"], ["type", "number", "id", "allotmentyear", "formControlName", "allotmentyear", "placeholder", "Enter Allotment Year", 1, "mb-3", 3, "input"], ["for", "Gender"], ["id", "Gender", "formControlName", "gender", 1, "form-select"], ["value", "", "disabled", ""], ["value", "Male"], ["value", "Female"], ["value", ""], ["for", "dob"], ["type", "date", "id", "dob", "formControlName", "dateofbirth", "placeholder", "Select Date of Birth", 1, "mb-3", 3, "max"], ["for", "mothertongue"], ["type", "text", "id", "mothertongue", "formControlName", "mothertongue", "placeholder", "Enter Language", "maxlength", "40", 1, "mb-3", 3, "keypress"], ["for", "retirementreason"], ["id", "retirementreason", "formControlName", "retirementreason", 1, "form-select"], ["value", "Serving"], ["value", "Superannuated"], ["for", "alternateEmail"], ["type", "text", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter your Email ID", "maxlength", "100", 1, "mb-1"], ["type", "submit", 1, "login-btn", "mt-4", 3, "disabled"], ["type", "text", "formControlName", "mobilenumber", "maxlength", "10", "placeholder", "Enter Your Number"], [1, "profile-pic-input", "mb-3", "row"], ["for", "profilePic"], ["type", "text", "id", "profilePic", "formControlName", "profilePic", "placeholder", "Click to upload", "readonly", "", 1, "form-control", "cursor-pointer", "bg-light", 3, "click"], ["class", "d-flex align-items-center justify-content-center h-100", 4, "ngIf"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "maxlength", "10", "placeholder", "Enter Your Identity No."], [1, "text-danger"], [1, "d-flex", "align-items-center", "justify-content-center", "h-100"], ["width", "80", "height", "80", "alt", "Preview", 1, "rounded-circle", "border", "preview-img", "mt-2", 3, "src"], [1, "detailscard", "shadow-sm", "border", "rounded-4"], [1, "d-flex", "align-items-center"], ["class", "rounded-circle me-4", "alt", "", "style", "width:80px; height:80px; object-fit:cover; object-position: center;", 3, "src", 4, "ngIf"], [1, "mb-3"], [1, "d-flex", "flex-wrap", "gap-2", "text-muted"], [1, "mx-2"], [1, "login-btn", "mt-4", 3, "click"], [1, "text-danger", "cursor-pointer", 3, "click"], ["alt", "", 1, "rounded-circle", "me-4", 2, "width", "80px", "height", "80px", "object-fit", "cover", "object-position", "center", 3, "src"], ["for", "newPassword"], [1, "password-wrapper", "my-1"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword", 1, "mt-3"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["type", "submit", 1, "login-btn", "mt-4"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasSignupComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, IasSignupComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 0);
         \u0275\u0275elementStart(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
@@ -3230,7 +3528,7 @@ var IasSignupComponent = class _IasSignupComponent {
         \u0275\u0275elementStart(22, "div", 18);
         \u0275\u0275element(23, "div", 19);
         \u0275\u0275elementStart(24, "div", 20);
-        \u0275\u0275template(25, IasSignupComponent_div_25_Template, 16, 3, "div", 21)(26, IasSignupComponent_div_26_Template, 19, 11, "div", 21)(27, IasSignupComponent_div_27_Template, 13, 0, "div", 21)(28, IasSignupComponent_div_28_Template, 35, 6, "div", 21)(29, IasSignupComponent_div_29_Template, 82, 5, "div", 21)(30, IasSignupComponent_div_30_Template, 64, 8, "div", 21)(31, IasSignupComponent_div_31_Template, 26, 4, "div", 21)(32, IasSignupComponent_div_32_Template, 22, 9, "div", 21)(33, IasSignupComponent_div_33_Template, 12, 1, "div", 21);
+        \u0275\u0275template(25, IasSignupComponent_div_25_Template, 16, 3, "div", 21)(26, IasSignupComponent_div_26_Template, 19, 11, "div", 21)(27, IasSignupComponent_div_27_Template, 13, 0, "div", 21)(28, IasSignupComponent_div_28_Template, 30, 7, "div", 21)(29, IasSignupComponent_div_29_Template, 77, 6, "div", 21)(30, IasSignupComponent_div_30_Template, 59, 9, "div", 21)(31, IasSignupComponent_div_31_Template, 26, 4, "div", 21)(32, IasSignupComponent_div_32_Template, 22, 9, "div", 21)(33, IasSignupComponent_div_33_Template, 12, 1, "div", 21);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -4812,4 +5110,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-YZ57VTHJ.mjs.map
+//# sourceMappingURL=chunk-HOZVTOP4.mjs.map
