@@ -1575,7 +1575,7 @@ var IasForgotpasswordComponent = class _IasForgotpasswordComponent {
     }, 1e3);
   }
   onResendOtp() {
-    this.startCountdown(59);
+    this.submitEmail();
   }
   handleKeyDown(event, index) {
     const input = event.target;
