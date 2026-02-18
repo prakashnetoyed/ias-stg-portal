@@ -2433,24 +2433,24 @@ function IasSignupComponent_div_30_div_23_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_2_0 = ctx_r1.retiredForm.get("name")) == null ? null : tmp_2_0.errors == null ? null : tmp_2_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_30_div_31_div_1_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_29_div_1_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Identity Number is required. ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_31_div_1_small_2_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_29_div_1_small_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter a valid Identity Number. ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_31_div_1_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_29_div_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_31_div_1_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_31_div_1_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_30_div_29_div_1_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_29_div_1_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2463,10 +2463,10 @@ function IasSignupComponent_div_30_div_31_div_1_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ((tmp_4_0 = ctx_r1.retiredForm.get("identityNumber")) == null ? null : tmp_4_0.hasError("pattern")) || ((tmp_4_0 = ctx_r1.retiredForm.get("identityNumber")) == null ? null : tmp_4_0.hasError("minlength")) || ((tmp_4_0 = ctx_r1.retiredForm.get("identityNumber")) == null ? null : tmp_4_0.hasError("maxlength")));
   }
 }
-function IasSignupComponent_div_30_div_31_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_29_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_31_div_1_Template, 3, 2, "div", 28);
+    \u0275\u0275template(1, IasSignupComponent_div_30_div_29_div_1_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2476,7 +2476,7 @@ function IasSignupComponent_div_30_div_31_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.retiredForm.get("identityNumber")) == null ? null : tmp_2_0.touched) || ((tmp_2_0 = ctx_r1.retiredForm.get("identityNumber")) == null ? null : tmp_2_0.dirty));
   }
 }
-function IasSignupComponent_div_30_For_48_Template(rf, ctx) {
+function IasSignupComponent_div_30_For_46_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "option", 67);
     \u0275\u0275text(1);
@@ -2489,24 +2489,24 @@ function IasSignupComponent_div_30_For_48_Template(rf, ctx) {
     \u0275\u0275textInterpolate(cadre_r13.name);
   }
 }
-function IasSignupComponent_div_30_div_55_div_6_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_53_div_6_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Mobile required ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_55_div_6_small_2_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_53_div_6_small_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter valid mobile number ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_55_div_6_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_53_div_6_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_55_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_55_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_30_div_53_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_53_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2519,7 +2519,7 @@ function IasSignupComponent_div_30_div_55_div_6_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_30_div_55_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_53_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 54)(1, "label");
     \u0275\u0275text(2, "Mobile Number ");
@@ -2527,7 +2527,7 @@ function IasSignupComponent_div_30_div_55_Template(rf, ctx) {
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
     \u0275\u0275element(5, "input", 87);
-    \u0275\u0275template(6, IasSignupComponent_div_30_div_55_div_6_Template, 3, 2, "div", 28);
+    \u0275\u0275template(6, IasSignupComponent_div_30_div_53_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2537,24 +2537,24 @@ function IasSignupComponent_div_30_div_55_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ((tmp_2_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_2_0.touched) && ((tmp_2_0 = ctx_r1.retiredForm.get("mobilenumber")) == null ? null : tmp_2_0.invalid));
   }
 }
-function IasSignupComponent_div_30_div_56_div_6_small_1_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_54_div_6_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Email required ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_56_div_6_small_2_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_54_div_6_small_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1, " Enter valid email ");
     \u0275\u0275elementEnd();
   }
 }
-function IasSignupComponent_div_30_div_56_div_6_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_54_div_6_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 33);
-    \u0275\u0275template(1, IasSignupComponent_div_30_div_56_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_56_div_6_small_2_Template, 2, 0, "small", 0);
+    \u0275\u0275template(1, IasSignupComponent_div_30_div_54_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_54_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2567,7 +2567,7 @@ function IasSignupComponent_div_30_div_56_div_6_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.retiredForm.get("email")) == null ? null : tmp_4_0.errors == null ? null : tmp_4_0.errors["pattern"]);
   }
 }
-function IasSignupComponent_div_30_div_56_Template(rf, ctx) {
+function IasSignupComponent_div_30_div_54_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 54)(1, "label");
     \u0275\u0275text(2, "Email ID ");
@@ -2575,7 +2575,7 @@ function IasSignupComponent_div_30_div_56_Template(rf, ctx) {
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
     \u0275\u0275element(5, "input", 60);
-    \u0275\u0275template(6, IasSignupComponent_div_30_div_56_div_6_Template, 3, 2, "div", 28);
+    \u0275\u0275template(6, IasSignupComponent_div_30_div_54_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2639,45 +2639,42 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     \u0275\u0275text(25, "Identity No. ");
     \u0275\u0275elementStart(26, "small");
     \u0275\u0275text(27, "(DoPT-allotted ID as shown on your ER Sheet)");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(28, "input", 92);
+    \u0275\u0275template(29, IasSignupComponent_div_30_div_29_Template, 2, 1, "div", 28);
+    \u0275\u0275elementStart(30, "div", 63)(31, "div", 54)(32, "label", 76);
+    \u0275\u0275text(33, "Date of Birth");
+    \u0275\u0275elementStart(34, "span", 48);
+    \u0275\u0275text(35, "*");
+    \u0275\u0275elementEnd()();
+    \u0275\u0275element(36, "input", 77);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(28, "span", 48);
-    \u0275\u0275text(29, "*");
+    \u0275\u0275elementStart(37, "div", 54)(38, "label", 64);
+    \u0275\u0275text(39, "Cadre");
+    \u0275\u0275elementStart(40, "span", 48);
+    \u0275\u0275text(41, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(30, "input", 92);
-    \u0275\u0275template(31, IasSignupComponent_div_30_div_31_Template, 2, 1, "div", 28);
-    \u0275\u0275elementStart(32, "div", 63)(33, "div", 54)(34, "label", 76);
-    \u0275\u0275text(35, "Date of Birth");
-    \u0275\u0275elementStart(36, "span", 48);
-    \u0275\u0275text(37, "*");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275element(38, "input", 77);
+    \u0275\u0275elementStart(42, "select", 65)(43, "option", 66);
+    \u0275\u0275text(44, "Enter Cadre");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(39, "div", 54)(40, "label", 64);
-    \u0275\u0275text(41, "Cadre");
-    \u0275\u0275elementStart(42, "span", 48);
-    \u0275\u0275text(43, "*");
+    \u0275\u0275repeaterCreate(45, IasSignupComponent_div_30_For_46_Template, 2, 2, "option", 67, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(44, "select", 65)(45, "option", 66);
-    \u0275\u0275text(46, "Enter Cadre");
-    \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(47, IasSignupComponent_div_30_For_48_Template, 2, 2, "option", 67, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275elementStart(47, "div", 54)(48, "label", 68);
+    \u0275\u0275text(49, "Allotment Year");
+    \u0275\u0275elementStart(50, "span", 48);
+    \u0275\u0275text(51, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(49, "div", 54)(50, "label", 68);
-    \u0275\u0275text(51, "Allotment Year");
-    \u0275\u0275elementStart(52, "span", 48);
-    \u0275\u0275text(53, "*");
-    \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(54, "input", 69);
-    \u0275\u0275listener("input", function IasSignupComponent_div_30_Template_input_input_54_listener($event) {
+    \u0275\u0275elementStart(52, "input", 69);
+    \u0275\u0275listener("input", function IasSignupComponent_div_30_Template_input_input_52_listener($event) {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.validateYear($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(55, IasSignupComponent_div_30_div_55_Template, 7, 1, "div", 53)(56, IasSignupComponent_div_30_div_56_Template, 7, 1, "div", 53);
+    \u0275\u0275template(53, IasSignupComponent_div_30_div_53_Template, 7, 1, "div", 53)(54, IasSignupComponent_div_30_div_54_Template, 7, 1, "div", 53);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(57, "button", 57);
-    \u0275\u0275text(58, "Continue");
+    \u0275\u0275elementStart(55, "button", 57);
+    \u0275\u0275text(56, "Continue");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
@@ -2693,7 +2690,7 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ctx_r1.finalImage);
     \u0275\u0275advance(6);
     \u0275\u0275property("ngIf", (tmp_4_0 = ctx_r1.retiredForm.get("name")) == null ? null : tmp_4_0.invalid);
-    \u0275\u0275advance(8);
+    \u0275\u0275advance(6);
     \u0275\u0275property("ngIf", ((tmp_5_0 = ctx_r1.retiredForm.get("identityNumber")) == null ? null : tmp_5_0.touched) && ((tmp_5_0 = ctx_r1.retiredForm.get("identityNumber")) == null ? null : tmp_5_0.invalid));
     \u0275\u0275advance(7);
     \u0275\u0275property("max", ctx_r1.maxDOB);
@@ -2963,7 +2960,6 @@ var IasSignupComponent = class _IasSignupComponent {
       profilePic: ["", [Validators.required]],
       name: ["", [Validators.pattern(/^[A-Za-z\s]+$/)]],
       identityNumber: ["", [
-        Validators.required,
         Validators.pattern(/^[0-9]{2}[A-Za-z]{2}[0-9]{6}$/),
         Validators.minLength(10),
         Validators.maxLength(10)
@@ -3164,14 +3160,14 @@ var IasSignupComponent = class _IasSignupComponent {
         "Authorization": `Bearer ${this.sessionid}`,
         "Content-Type": "application/json"
       });
-      let payload = __spreadValues({
+      let payload = __spreadValues(__spreadProps(__spreadValues({
         profilePic: this.finalImage || null,
-        name: this.retiredForm.value.name || null,
-        identityNo: this.retiredForm.value.identityNumber || null,
+        name: this.retiredForm.value.name || null
+      }, this.retiredForm.value.identityNumber != "" && { identityNo: this.retiredForm.value.identityNumber }), {
         dob: this.retiredForm.value.dateofbirth || null,
         cadreId: +this.retiredForm.value.cadre || null,
         batch: String(this.retiredForm.value.allotmentyear) || null
-      }, this.contactType === "mobile" ? { email: this.email } : { mobileNo: String(this.mobilenumber) });
+      }), this.contactType === "mobile" ? { email: this.email } : { mobileNo: String(this.mobilenumber) });
       const url = `${environment.apiUrl}/accounts/retired-member-signup`;
       this.http.post(url, payload, { headers }).subscribe({
         next: (response) => {
@@ -3449,7 +3445,7 @@ var IasSignupComponent = class _IasSignupComponent {
         \u0275\u0275elementStart(22, "div", 18);
         \u0275\u0275element(23, "div", 19);
         \u0275\u0275elementStart(24, "div", 20);
-        \u0275\u0275template(25, IasSignupComponent_div_25_Template, 16, 3, "div", 21)(26, IasSignupComponent_div_26_Template, 19, 11, "div", 21)(27, IasSignupComponent_div_27_Template, 13, 0, "div", 21)(28, IasSignupComponent_div_28_Template, 30, 7, "div", 21)(29, IasSignupComponent_div_29_Template, 77, 6, "div", 21)(30, IasSignupComponent_div_30_Template, 59, 9, "div", 21)(31, IasSignupComponent_div_31_Template, 26, 4, "div", 21)(32, IasSignupComponent_div_32_Template, 22, 9, "div", 21)(33, IasSignupComponent_div_33_Template, 12, 1, "div", 21);
+        \u0275\u0275template(25, IasSignupComponent_div_25_Template, 16, 3, "div", 21)(26, IasSignupComponent_div_26_Template, 19, 11, "div", 21)(27, IasSignupComponent_div_27_Template, 13, 0, "div", 21)(28, IasSignupComponent_div_28_Template, 30, 7, "div", 21)(29, IasSignupComponent_div_29_Template, 77, 6, "div", 21)(30, IasSignupComponent_div_30_Template, 57, 9, "div", 21)(31, IasSignupComponent_div_31_Template, 26, 4, "div", 21)(32, IasSignupComponent_div_32_Template, 22, 9, "div", 21)(33, IasSignupComponent_div_33_Template, 12, 1, "div", 21);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
