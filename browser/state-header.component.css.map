@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/state-website/components/state-header/state-header.component.scss"],
-  "sourcesContent": [".main-ncs-header-div{\n    background-color: #fff;\n    padding: 12px 0px;\n    position: sticky;\n    top: 0px;\n    z-index: 10;\n    display: block;\n    box-shadow: 10px 2px 26px -6px black;\n}\n.logo-div {\n  h1 {\n    color: #000;\n    font-family: Urbanist;\n    font-size: 16px;\n    font-style: normal;\n    font-weight: 500;\n    line-height: 22.393px;\n    margin: 0px;\n  }\n  display: flex;\n  align-items: center;\n  gap: 5px;\n\n  @media (max-width: 900px) {\n  h1 {\n    font-size: 13px;\n  }\n}\n}"],
-  "mappings": ";AAAA,CAAA;AACI,oBAAA;AACA,WAAA,KAAA;AACA,YAAA;AACA,OAAA;AACA,WAAA;AACA,WAAA;AACA,cAAA,KAAA,IAAA,KAAA,KAAA;;AAEJ,CAAA;AAUE,WAAA;AACA,eAAA;AACA,OAAA;;AAXA,CADF,SACE;AACE,SAAA;AACA,eAAA;AACA,aAAA;AACA,cAAA;AACA,eAAA;AACA,eAAA;AACA,UAAA;;AAMF,OAAA,CAAA,SAAA,EAAA;AACA,GAfF,SAeE;AACE,eAAA;;;",
-  "names": []
-}

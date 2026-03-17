@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/state-dashboard/state-dashboard-layout/state-dashboard-layout.component.scss"],
-  "sourcesContent": [".main-after-login-layout{\n    background: #F4F1FF;\n    display: flex;\n    width: 100%;\n}\n.side-bar-div {\n    position: sticky;\n    top: 0;\n    align-self: flex-start; /* important in flex layout */\n    height: 100vh;\n  }\n    @media (max-width: 1235px) {\n      .side-bar-div {\n        display: none;\n  }}"],
-  "mappings": ";AAAA,CAAA;AACI,cAAA;AACA,WAAA;AACA,SAAA;;AAEJ,CAAA;AACI,YAAA;AACA,OAAA;AACA,cAAA;AACA,UAAA;;AAEA,OAAA,CAAA,SAAA,EAAA;AACE,GAPN;AAQQ,aAAA;;;",
-  "names": []
-}
