@@ -1,2 +1,0 @@
-import './polyfills.server.mjs';
-import{V as r,f as o}from"./chunk-OBTCTYAH.mjs";var i=(()=>{class t{constructor(){this.toastMessageSource=new o,this.toastMessage$=this.toastMessageSource.asObservable()}showToast(s,e="danger"){this.toastMessageSource.next({message:s,type:e})}static{this.\u0275fac=function(e){return new(e||t)}}static{this.\u0275prov=r({token:t,factory:t.\u0275fac,providedIn:"root"})}}return t})();export{i as a};

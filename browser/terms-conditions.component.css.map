@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/website/pages/terms-conditions/terms-conditions.component.scss"],
+  "sourcesContent": ["section{\n    background: #f4f7fa;\n}\n.policy-card {\n      background: #fff;\n      border-radius: 0.75rem;\n      box-shadow: 0 4px 12px rgba(0,0,0,0.05);\n      padding: 2rem;\n    }\n    h1, h2 { color: #523AB1; }\n    .term-number { font-weight: bold; color: #523AB1; margin-right: 0.5rem; }"],
+  "mappings": ";AAAA;AACI,cAAA;;AAEJ,CAAA;AACM,cAAA;AACA,iBAAA;AACA,cAAA,EAAA,IAAA,KAAA,KAAA,CAAA,EAAA,CAAA,EAAA,CAAA,EAAA;AACA,WAAA;;AAEF;AAAA;AAAS,SAAA;;AACT,CAAA;AAAe,eAAA;AAAmB,SAAA;AAAgB,gBAAA;;",
+  "names": []
+}

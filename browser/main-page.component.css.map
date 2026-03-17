@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/website/pages/main-page/main-page.component.scss"],
+  "sourcesContent": [".layout-wrapper {\n  overflow: visible; /* let sticky work */\n}\n"],
+  "mappings": ";AAAA,CAAA;AACE,YAAA;;",
+  "names": []
+}

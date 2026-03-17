@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/common/toast.service.ts"],
+  "sourcesContent": ["import { Injectable } from '@angular/core';\nimport { Subject } from 'rxjs';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class ToastService {\n  private toastMessageSource = new Subject<{ message: string, type?: string }>();\n  toastMessage$ = this.toastMessageSource.asObservable();\n\n  showToast(message: string, type: string = 'danger') {\n    this.toastMessageSource.next({ message, type });\n  }\n}\n"],
+  "mappings": ";;;;;;;AAMM,IAAO,eAAP,MAAO,cAAY;EAHzB,cAAA;AAIU,SAAA,qBAAqB,IAAI,QAAO;AACxC,SAAA,gBAAgB,KAAK,mBAAmB,aAAY;;EAEpD,UAAU,SAAiB,OAAe,UAAQ;AAChD,SAAK,mBAAmB,KAAK,EAAE,SAAS,KAAI,CAAE;EAChD;;;uBANW,eAAY;IAAA;EAAA;;4EAAZ,eAAY,SAAZ,cAAY,WAAA,YAFX,OAAM,CAAA;EAAA;;",
+  "names": []
+}

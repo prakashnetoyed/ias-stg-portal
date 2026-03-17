@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/common/ias-loader/ias-loader.component.ts", "src/app/common/ias-loader/ias-loader.component.html"],
+  "sourcesContent": ["import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-ias-loader',\n  standalone: true,\n  imports: [],\n  templateUrl: './ias-loader.component.html',\n  styleUrl: './ias-loader.component.scss'\n})\nexport class IasLoaderComponent {\n\n}\n", "<!-- Loader -->\n<div class=\"loader-overlay\">\n  <div class=\"loader-container\">\n    <div class=\"bg-image\"></div>\n    <div class=\"spinner\"></div>\n  </div>\n</div>\n"],
+  "mappings": ";;;;;;;;;;;AASM,IAAO,qBAAP,MAAO,oBAAkB;;;uBAAlB,qBAAkB;IAAA;EAAA;;yEAAlB,qBAAkB,WAAA,CAAA,CAAA,gBAAA,CAAA,GAAA,YAAA,MAAA,UAAA,CAAA,6BAAA,GAAA,OAAA,GAAA,MAAA,GAAA,QAAA,CAAA,CAAA,GAAA,gBAAA,GAAA,CAAA,GAAA,kBAAA,GAAA,CAAA,GAAA,UAAA,GAAA,CAAA,GAAA,SAAA,CAAA,GAAA,UAAA,SAAA,4BAAA,IAAA,KAAA;AAAA,UAAA,KAAA,GAAA;ACR/B,QAAA,yBAAA,GAAA,OAAA,CAAA,EAA4B,GAAA,OAAA,CAAA;AAExB,QAAA,oBAAA,GAAA,OAAA,CAAA,EAA4B,GAAA,OAAA,CAAA;AAE9B,QAAA,uBAAA,EAAM;;;;;;6EDIK,oBAAkB,EAAA,WAAA,sBAAA,UAAA,qDAAA,YAAA,GAAA,CAAA;AAAA,GAAA;",
+  "names": []
+}
