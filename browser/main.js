@@ -1,9 +1,9 @@
 import {
   IasLoaderComponent
-} from "./chunk-GWB22WA3.js";
+} from "./chunk-NFBHHRI6.js";
 import {
   ImageCropperComponent
-} from "./chunk-GNFFRZTR.js";
+} from "./chunk-CMZTRR6R.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -22,13 +22,13 @@ import {
   Validators,
   ɵNgNoValidate,
   ɵNgSelectMultipleOption
-} from "./chunk-CTBAGNAW.js";
+} from "./chunk-YRHWIA2M.js";
 import {
   UserService
-} from "./chunk-HM73QMMI.js";
+} from "./chunk-UKQX5KCK.js";
 import {
   AuthService
-} from "./chunk-XIWVDVCF.js";
+} from "./chunk-NYFHXPBM.js";
 import {
   ActivatedRoute,
   Router,
@@ -38,10 +38,10 @@ import {
   RouterOutlet,
   provideRouter,
   withInMemoryScrolling
-} from "./chunk-JPPWT7WU.js";
+} from "./chunk-NZQ6EF6T.js";
 import {
   ToastService
-} from "./chunk-CGBCDAXV.js";
+} from "./chunk-KC2EVZ25.js";
 import {
   environment
 } from "./chunk-WYW2S4QW.js";
@@ -51,7 +51,7 @@ import {
   Title,
   bootstrapApplication,
   provideClientHydration
-} from "./chunk-R23YUY6E.js";
+} from "./chunk-7VYRPV2J.js";
 import {
   HttpClient,
   HttpClientModule,
@@ -59,7 +59,7 @@ import {
   provideHttpClient,
   withFetch,
   withInterceptors
-} from "./chunk-VZD35PY6.js";
+} from "./chunk-SFG4SZVN.js";
 import {
   CommonModule,
   DOCUMENT,
@@ -69,30 +69,48 @@ import {
   NgStyle,
   isPlatformBrowser,
   isPlatformServer
-} from "./chunk-EWZKLZHI.js";
+} from "./chunk-G2HLXPCJ.js";
 import {
   ANIMATION_MODULE_TYPE,
+  APP_INITIALIZER,
+  ApplicationRef,
   ChangeDetectionScheduler,
   Component,
   Directive,
   ElementRef,
   Injectable,
+  InjectionToken,
+  Injector,
   Input,
+  NEVER,
   NgModule,
   NgZone,
   PLATFORM_ID,
   Renderer2,
   RendererFactory2,
   RuntimeError,
+  Subject,
   catchError,
+  concat,
+  defer,
+  delay,
+  filter,
   forwardRef,
   from,
+  fromEvent,
   inject,
+  isDevMode,
   makeEnvironmentProviders,
+  map,
+  merge,
+  of,
   output,
   performanceMarkFeature,
+  publish,
   setClassMetadata,
   switchMap,
+  take,
+  tap,
   throwError,
   ɵsetClassDebugInfo,
   ɵɵNgOnChangesFeature,
@@ -113,6 +131,7 @@ import {
   ɵɵelementEnd,
   ɵɵelementStart,
   ɵɵgetCurrentView,
+  ɵɵinject,
   ɵɵinvalidFactory,
   ɵɵlistener,
   ɵɵloadQuery,
@@ -142,7 +161,7 @@ import {
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1,
   ɵɵviewQuery
-} from "./chunk-664KIS5M.js";
+} from "./chunk-2RXJFVL4.js";
 import {
   __spreadProps,
   __spreadValues
@@ -4453,106 +4472,106 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-MQKAGI2S.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-6PWM62Q2.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-4H6PR32W.js").then((m) => m.IasAboutusComponent)
+        loadComponent: () => import("./chunk-6EMHJBIS.js").then((m) => m.IasAboutusComponent)
       },
       {
         path: "contact-us",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TTV7C7TE.js").then((m) => m.IasContactusComponent)
+        loadComponent: () => import("./chunk-OAUFRCUD.js").then((m) => m.IasContactusComponent)
       },
       {
         path: "community",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-OC5XNTDT.js").then((m) => m.IasCommunityComponent)
+        loadComponent: () => import("./chunk-PVPPEWQI.js").then((m) => m.IasCommunityComponent)
       },
       {
         path: "my-posts",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-GLTNOLOH.js").then((m) => m.MyPostsComponent)
+        loadComponent: () => import("./chunk-JRAP5CJV.js").then((m) => m.MyPostsComponent)
       },
       {
         path: "post",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-V2PXVS2V.js").then((m) => m.PostComponent)
+        loadComponent: () => import("./chunk-BVC5D47K.js").then((m) => m.PostComponent)
       },
       {
         path: "caruna",
-        loadComponent: () => import("./chunk-7QTOZXRB.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-IPLU2HDF.js").then((m) => m.IasCarunaComponent)
       },
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-J74RPPAQ.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-V5QKN5UV.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-THXNVB5I.js").then((m) => m.NewsBlogsComponent)
+        loadComponent: () => import("./chunk-XJYYODM2.js").then((m) => m.NewsBlogsComponent)
       },
       {
         path: "good-governance-initiatives",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-XF5JGXUM.js").then((m) => m.CaseStudiesComponent)
+        loadComponent: () => import("./chunk-KF52MCL3.js").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "read-good-governance-initiatives",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HRIKCZKY.js").then((m) => m.ReadmoreCaseStudiesComponent)
+        loadComponent: () => import("./chunk-UGBLNGHF.js").then((m) => m.ReadmoreCaseStudiesComponent)
       },
       {
         path: "caruna",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7QTOZXRB.js").then((m) => m.IasCarunaComponent)
+        loadComponent: () => import("./chunk-IPLU2HDF.js").then((m) => m.IasCarunaComponent)
       },
       {
         path: "welfare-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-QFPKNBPH.js").then((m) => m.WelfareMembershipComponent)
+        loadComponent: () => import("./chunk-XCPDIICQ.js").then((m) => m.WelfareMembershipComponent)
       },
       {
         path: "lifetime-membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-3PMRDSHV.js").then((m) => m.LifetimeMembershipComponent)
+        loadComponent: () => import("./chunk-JOHWQUTU.js").then((m) => m.LifetimeMembershipComponent)
       },
       {
         path: "readmorenews",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7XZWKOZJ.js").then((m) => m.ReadmoreNewsComponent)
+        loadComponent: () => import("./chunk-CJPPBLQQ.js").then((m) => m.ReadmoreNewsComponent)
       },
       {
         path: "readmoreblogs",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-UX4553E3.js").then((m) => m.ReadmoreBlogsComponent)
+        loadComponent: () => import("./chunk-AIOIZQHO.js").then((m) => m.ReadmoreBlogsComponent)
       },
       {
         path: "membership",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-HRNRF7AH.js").then((m) => m.CombinedMemberPageComponent)
+        loadComponent: () => import("./chunk-GGVECTXW.js").then((m) => m.CombinedMemberPageComponent)
       },
       {
         path: "Terms-Conditions",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-43VP3RFG.js").then((m) => m.TermsConditionsComponent)
+        loadComponent: () => import("./chunk-HIIX6TSK.js").then((m) => m.TermsConditionsComponent)
       },
       {
         path: "Refund-Cancellation-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-VSL73547.js").then((m) => m.RefundCancellationPolicyComponent)
+        loadComponent: () => import("./chunk-DZ5QRPDP.js").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
         path: "Privacy-Policy",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-KAWZNUX5.js").then((m) => m.PrivacyPolicyComponent)
+        loadComponent: () => import("./chunk-BITNC6IU.js").then((m) => m.PrivacyPolicyComponent)
       },
       {
         path: "coming-soon",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-IMROAGDN.js").then((m) => m.ComingSoonComponent)
+        loadComponent: () => import("./chunk-XWV73RZZ.js").then((m) => m.ComingSoonComponent)
       }
     ]
   },
@@ -4581,63 +4600,63 @@ var routes = [
     path: "home",
     canActivate: [authGuard],
     data: { roles: ["admin"] },
-    loadComponent: () => import("./chunk-IOW62YFZ.js").then((m) => m.DashboardLayoutComponent),
+    loadComponent: () => import("./chunk-TWI5FN7R.js").then((m) => m.DashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-LXCYPIDG.js").then((m) => m.DashboardComponent)
+        loadComponent: () => import("./chunk-FHVCNDMJ.js").then((m) => m.DashboardComponent)
       },
       {
         path: "profile",
-        loadComponent: () => import("./chunk-2T4X3N6F.js").then((m) => m.ProfileInfoComponent)
+        loadComponent: () => import("./chunk-7N2QMT4X.js").then((m) => m.ProfileInfoComponent)
       },
       {
         path: "publications",
-        loadComponent: () => import("./chunk-I4FX7IAR.js").then((m) => m.PublicationsComponent)
+        loadComponent: () => import("./chunk-IF5W3AEE.js").then((m) => m.PublicationsComponent)
       },
       {
         path: "blogs",
-        loadComponent: () => import("./chunk-NOD66FLM.js").then((m) => m.BlogsComponent)
+        loadComponent: () => import("./chunk-HZ2NEO3B.js").then((m) => m.BlogsComponent)
       },
       {
         path: "news",
-        loadComponent: () => import("./chunk-H227RB7F.js").then((m) => m.NewsComponent)
+        loadComponent: () => import("./chunk-KLDUQPA2.js").then((m) => m.NewsComponent)
       },
       {
         path: "case-study",
-        loadComponent: () => import("./chunk-HD4VE3NZ.js").then((m) => m.CaseStudiesComponent)
+        loadComponent: () => import("./chunk-5K2M5NWC.js").then((m) => m.CaseStudiesComponent)
       },
       {
         path: "mom",
-        loadComponent: () => import("./chunk-ZNKYBJGE.js").then((m) => m.MoMComponent)
+        loadComponent: () => import("./chunk-BBAD5XCR.js").then((m) => m.MoMComponent)
       },
       {
         path: "feedbacks",
-        loadComponent: () => import("./chunk-M7OKVOTC.js").then((m) => m.FeedbacksComponent)
+        loadComponent: () => import("./chunk-N7USEYIG.js").then((m) => m.FeedbacksComponent)
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-S3GLFPBX.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-TK4OVZLL.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
-        loadComponent: () => import("./chunk-OCBCNG7U.js").then((m) => m.ApprovedUserComponent)
+        loadComponent: () => import("./chunk-KAAWRADT.js").then((m) => m.ApprovedUserComponent)
       },
       {
         path: "pending-approval-user",
-        loadComponent: () => import("./chunk-AECOUI5Z.js").then((m) => m.NotApprovedUserComponent)
+        loadComponent: () => import("./chunk-LQWDJODS.js").then((m) => m.NotApprovedUserComponent)
       },
       {
         path: "rejected-user",
-        loadComponent: () => import("./chunk-LJVHINEK.js").then((m) => m.RejectedUsersComponent)
+        loadComponent: () => import("./chunk-EWDRYEHG.js").then((m) => m.RejectedUsersComponent)
       },
       {
         path: "user-info",
-        loadComponent: () => import("./chunk-4AIWGLH5.js").then((m) => m.DetailedUserInfoComponent)
+        loadComponent: () => import("./chunk-WVW3BMOC.js").then((m) => m.DetailedUserInfoComponent)
       },
       {
         path: "donation",
-        loadComponent: () => import("./chunk-V2HPDBQJ.js").then((m) => m.DonationsComponent)
+        loadComponent: () => import("./chunk-PZSE4326.js").then((m) => m.DonationsComponent)
       }
     ]
   },
@@ -4645,39 +4664,39 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-QFFFHZ67.js").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-ZFSB2WAE.js").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-QYMY272G.js").then((m) => m.UserHomeComponent)
+        loadComponent: () => import("./chunk-CBS4RGQX.js").then((m) => m.UserHomeComponent)
       },
       {
         path: "user-profile",
-        loadComponent: () => import("./chunk-D4KGSVO5.js").then((m) => m.UserProfileComponent)
+        loadComponent: () => import("./chunk-DD5NMFV4.js").then((m) => m.UserProfileComponent)
       },
       {
         path: "user-events",
-        loadComponent: () => import("./chunk-GYTIA6IM.js").then((m) => m.UserEventsComponent)
+        loadComponent: () => import("./chunk-53TRRWSY.js").then((m) => m.UserEventsComponent)
       },
       {
         path: "user-membership",
-        loadComponent: () => import("./chunk-NRS7HOQE.js").then((m) => m.UserMembershipComponent)
+        loadComponent: () => import("./chunk-RHEKHV57.js").then((m) => m.UserMembershipComponent)
       },
       {
         path: "user-members",
-        loadComponent: () => import("./chunk-PXPZGBXP.js").then((m) => m.UserMembersComponent)
+        loadComponent: () => import("./chunk-76OYMSFK.js").then((m) => m.UserMembersComponent)
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-MCZE42NR.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-OKQ5R6A4.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "my-donation",
-        loadComponent: () => import("./chunk-AUXOOOVB.js").then((m) => m.UserDonationsComponent)
+        loadComponent: () => import("./chunk-LLLPNOSL.js").then((m) => m.UserDonationsComponent)
       },
       {
         path: "payment-status",
-        loadComponent: () => import("./chunk-TEVDJVQS.js").then((m) => m.PaymentStatusComponent)
+        loadComponent: () => import("./chunk-ALV2XZLK.js").then((m) => m.PaymentStatusComponent)
       }
     ]
   },
@@ -4685,34 +4704,34 @@ var routes = [
     path: "state-dashboard",
     canActivate: [authGuard],
     data: { roles: ["state_association_admin"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-BPTTMION.js").then((m) => m.StateDashboardLayoutComponent),
+    loadComponent: () => import("./chunk-TIOFM3LS.js").then((m) => m.StateDashboardLayoutComponent),
     children: [
       {
         path: "",
-        loadComponent: () => import("./chunk-3IZWXNGR.js").then((m) => m.StateAboutUsComponent)
+        loadComponent: () => import("./chunk-Y2JINZRV.js").then((m) => m.StateAboutUsComponent)
       },
       {
         path: "state-news",
-        loadComponent: () => import("./chunk-5UVYUFUY.js").then((m) => m.StateNewsComponent)
+        loadComponent: () => import("./chunk-ACSQFPNL.js").then((m) => m.StateNewsComponent)
       },
       {
         path: "state-events",
-        loadComponent: () => import("./chunk-SL5YIL3B.js").then((m) => m.StateEventsComponent)
+        loadComponent: () => import("./chunk-SUZBI4KN.js").then((m) => m.StateEventsComponent)
       },
       {
         path: "state-office-bearers",
-        loadComponent: () => import("./chunk-2W62USO2.js").then((m) => m.StateOfficeBearersComponent)
+        loadComponent: () => import("./chunk-HILHGT4X.js").then((m) => m.StateOfficeBearersComponent)
       },
       {
         path: "state-gallery",
-        loadComponent: () => import("./chunk-ZI2SZSDC.js").then((m) => m.StateGalleryComponent)
+        loadComponent: () => import("./chunk-YL2KNBOX.js").then((m) => m.StateGalleryComponent)
       }
     ]
   },
   {
     path: "user-not-aproved",
     data: { statuses: ["created"] },
-    loadComponent: () => import("./chunk-IQW3XD55.js").then((m) => m.UserNotApprovedLayoutComponent)
+    loadComponent: () => import("./chunk-KO4JUGTO.js").then((m) => m.UserNotApprovedLayoutComponent)
   },
   {
     path: "login",
@@ -4727,7 +4746,7 @@ var routes = [
   {
     path: "**",
     // wildcard → catch all unknown routes
-    loadComponent: () => import("./chunk-BWE3UB3L.js").then((m) => m.RouteErrorComponent)
+    loadComponent: () => import("./chunk-DYCNCQSW.js").then((m) => m.RouteErrorComponent)
   }
 ];
 
@@ -4805,7 +4824,7 @@ var AsyncAnimationRendererFactory = class _AsyncAnimationRendererFactory {
    * @internal
    */
   loadImpl() {
-    const moduleImpl = this.moduleImpl ?? import("./chunk-VQ7OAEOT.js");
+    const moduleImpl = this.moduleImpl ?? import("./chunk-4XYQFFN7.js");
     return moduleImpl.catch((e) => {
       throw new RuntimeError(5300, (typeof ngDevMode === "undefined" || ngDevMode) && "Async loading for animations package was enabled, but loading failed. Angular falls back to using regular rendering. No animations will be displayed and their styles won't be applied.");
     }).then(({
@@ -4985,6 +5004,358 @@ function provideAnimationsAsync(type = "animations") {
   }]);
 }
 
+// node_modules/@angular/service-worker/fesm2022/service-worker.mjs
+var ERR_SW_NOT_SUPPORTED = "Service workers are disabled or not supported by this browser";
+function errorObservable(message) {
+  return defer(() => throwError(new Error(message)));
+}
+var NgswCommChannel = class {
+  constructor(serviceWorker) {
+    this.serviceWorker = serviceWorker;
+    if (!serviceWorker) {
+      this.worker = this.events = this.registration = errorObservable(ERR_SW_NOT_SUPPORTED);
+    } else {
+      const controllerChangeEvents = fromEvent(serviceWorker, "controllerchange");
+      const controllerChanges = controllerChangeEvents.pipe(map(() => serviceWorker.controller));
+      const currentController = defer(() => of(serviceWorker.controller));
+      const controllerWithChanges = concat(currentController, controllerChanges);
+      this.worker = controllerWithChanges.pipe(filter((c) => !!c));
+      this.registration = this.worker.pipe(switchMap(() => serviceWorker.getRegistration()));
+      const rawEvents = fromEvent(serviceWorker, "message");
+      const rawEventPayload = rawEvents.pipe(map((event) => event.data));
+      const eventsUnconnected = rawEventPayload.pipe(filter((event) => event && event.type));
+      const events = eventsUnconnected.pipe(publish());
+      events.connect();
+      this.events = events;
+    }
+  }
+  postMessage(action, payload) {
+    return this.worker.pipe(take(1), tap((sw) => {
+      sw.postMessage(__spreadValues({
+        action
+      }, payload));
+    })).toPromise().then(() => void 0);
+  }
+  postMessageWithOperation(type, payload, operationNonce) {
+    const waitForOperationCompleted = this.waitForOperationCompleted(operationNonce);
+    const postMessage = this.postMessage(type, payload);
+    return Promise.all([postMessage, waitForOperationCompleted]).then(([, result]) => result);
+  }
+  generateNonce() {
+    return Math.round(Math.random() * 1e7);
+  }
+  eventsOfType(type) {
+    let filterFn;
+    if (typeof type === "string") {
+      filterFn = (event) => event.type === type;
+    } else {
+      filterFn = (event) => type.includes(event.type);
+    }
+    return this.events.pipe(filter(filterFn));
+  }
+  nextEventOfType(type) {
+    return this.eventsOfType(type).pipe(take(1));
+  }
+  waitForOperationCompleted(nonce) {
+    return this.eventsOfType("OPERATION_COMPLETED").pipe(filter((event) => event.nonce === nonce), take(1), map((event) => {
+      if (event.result !== void 0) {
+        return event.result;
+      }
+      throw new Error(event.error);
+    })).toPromise();
+  }
+  get isEnabled() {
+    return !!this.serviceWorker;
+  }
+};
+var SwPush = class _SwPush {
+  /**
+   * True if the Service Worker is enabled (supported by the browser and enabled via
+   * `ServiceWorkerModule`).
+   */
+  get isEnabled() {
+    return this.sw.isEnabled;
+  }
+  constructor(sw) {
+    this.sw = sw;
+    this.pushManager = null;
+    this.subscriptionChanges = new Subject();
+    if (!sw.isEnabled) {
+      this.messages = NEVER;
+      this.notificationClicks = NEVER;
+      this.subscription = NEVER;
+      return;
+    }
+    this.messages = this.sw.eventsOfType("PUSH").pipe(map((message) => message.data));
+    this.notificationClicks = this.sw.eventsOfType("NOTIFICATION_CLICK").pipe(map((message) => message.data));
+    this.pushManager = this.sw.registration.pipe(map((registration) => registration.pushManager));
+    const workerDrivenSubscriptions = this.pushManager.pipe(switchMap((pm) => pm.getSubscription()));
+    this.subscription = merge(workerDrivenSubscriptions, this.subscriptionChanges);
+  }
+  /**
+   * Subscribes to Web Push Notifications,
+   * after requesting and receiving user permission.
+   *
+   * @param options An object containing the `serverPublicKey` string.
+   * @returns A Promise that resolves to the new subscription object.
+   */
+  requestSubscription(options) {
+    if (!this.sw.isEnabled || this.pushManager === null) {
+      return Promise.reject(new Error(ERR_SW_NOT_SUPPORTED));
+    }
+    const pushOptions = {
+      userVisibleOnly: true
+    };
+    let key = this.decodeBase64(options.serverPublicKey.replace(/_/g, "/").replace(/-/g, "+"));
+    let applicationServerKey = new Uint8Array(new ArrayBuffer(key.length));
+    for (let i = 0; i < key.length; i++) {
+      applicationServerKey[i] = key.charCodeAt(i);
+    }
+    pushOptions.applicationServerKey = applicationServerKey;
+    return this.pushManager.pipe(switchMap((pm) => pm.subscribe(pushOptions)), take(1)).toPromise().then((sub) => {
+      this.subscriptionChanges.next(sub);
+      return sub;
+    });
+  }
+  /**
+   * Unsubscribes from Service Worker push notifications.
+   *
+   * @returns A Promise that is resolved when the operation succeeds, or is rejected if there is no
+   *          active subscription or the unsubscribe operation fails.
+   */
+  unsubscribe() {
+    if (!this.sw.isEnabled) {
+      return Promise.reject(new Error(ERR_SW_NOT_SUPPORTED));
+    }
+    const doUnsubscribe = (sub) => {
+      if (sub === null) {
+        throw new Error("Not subscribed to push notifications.");
+      }
+      return sub.unsubscribe().then((success) => {
+        if (!success) {
+          throw new Error("Unsubscribe failed!");
+        }
+        this.subscriptionChanges.next(null);
+      });
+    };
+    return this.subscription.pipe(take(1), switchMap(doUnsubscribe)).toPromise();
+  }
+  decodeBase64(input) {
+    return atob(input);
+  }
+  static {
+    this.\u0275fac = function SwPush_Factory(t) {
+      return new (t || _SwPush)(\u0275\u0275inject(NgswCommChannel));
+    };
+  }
+  static {
+    this.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({
+      token: _SwPush,
+      factory: _SwPush.\u0275fac
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SwPush, [{
+    type: Injectable
+  }], () => [{
+    type: NgswCommChannel
+  }], null);
+})();
+var SwUpdate = class _SwUpdate {
+  /**
+   * True if the Service Worker is enabled (supported by the browser and enabled via
+   * `ServiceWorkerModule`).
+   */
+  get isEnabled() {
+    return this.sw.isEnabled;
+  }
+  constructor(sw) {
+    this.sw = sw;
+    if (!sw.isEnabled) {
+      this.versionUpdates = NEVER;
+      this.unrecoverable = NEVER;
+      return;
+    }
+    this.versionUpdates = this.sw.eventsOfType(["VERSION_DETECTED", "VERSION_INSTALLATION_FAILED", "VERSION_READY", "NO_NEW_VERSION_DETECTED"]);
+    this.unrecoverable = this.sw.eventsOfType("UNRECOVERABLE_STATE");
+  }
+  /**
+   * Checks for an update and waits until the new version is downloaded from the server and ready
+   * for activation.
+   *
+   * @returns a promise that
+   * - resolves to `true` if a new version was found and is ready to be activated.
+   * - resolves to `false` if no new version was found
+   * - rejects if any error occurs
+   */
+  checkForUpdate() {
+    if (!this.sw.isEnabled) {
+      return Promise.reject(new Error(ERR_SW_NOT_SUPPORTED));
+    }
+    const nonce = this.sw.generateNonce();
+    return this.sw.postMessageWithOperation("CHECK_FOR_UPDATES", {
+      nonce
+    }, nonce);
+  }
+  /**
+   * Updates the current client (i.e. browser tab) to the latest version that is ready for
+   * activation.
+   *
+   * In most cases, you should not use this method and instead should update a client by reloading
+   * the page.
+   *
+   * <div class="alert is-important">
+   *
+   * Updating a client without reloading can easily result in a broken application due to a version
+   * mismatch between the [application shell](guide/glossary#app-shell) and other page resources,
+   * such as [lazy-loaded chunks](guide/glossary#lazy-loading), whose filenames may change between
+   * versions.
+   *
+   * Only use this method, if you are certain it is safe for your specific use case.
+   *
+   * </div>
+   *
+   * @returns a promise that
+   *  - resolves to `true` if an update was activated successfully
+   *  - resolves to `false` if no update was available (for example, the client was already on the
+   *    latest version).
+   *  - rejects if any error occurs
+   */
+  activateUpdate() {
+    if (!this.sw.isEnabled) {
+      return Promise.reject(new Error(ERR_SW_NOT_SUPPORTED));
+    }
+    const nonce = this.sw.generateNonce();
+    return this.sw.postMessageWithOperation("ACTIVATE_UPDATE", {
+      nonce
+    }, nonce);
+  }
+  static {
+    this.\u0275fac = function SwUpdate_Factory(t) {
+      return new (t || _SwUpdate)(\u0275\u0275inject(NgswCommChannel));
+    };
+  }
+  static {
+    this.\u0275prov = /* @__PURE__ */ \u0275\u0275defineInjectable({
+      token: _SwUpdate,
+      factory: _SwUpdate.\u0275fac
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(SwUpdate, [{
+    type: Injectable
+  }], () => [{
+    type: NgswCommChannel
+  }], null);
+})();
+var SCRIPT = new InjectionToken(ngDevMode ? "NGSW_REGISTER_SCRIPT" : "");
+function ngswAppInitializer(injector, script, options, platformId) {
+  return () => {
+    if (!(isPlatformBrowser(platformId) && "serviceWorker" in navigator && options.enabled !== false)) {
+      return;
+    }
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (navigator.serviceWorker.controller !== null) {
+        navigator.serviceWorker.controller.postMessage({
+          action: "INITIALIZE"
+        });
+      }
+    });
+    let readyToRegister$;
+    if (typeof options.registrationStrategy === "function") {
+      readyToRegister$ = options.registrationStrategy();
+    } else {
+      const [strategy, ...args] = (options.registrationStrategy || "registerWhenStable:30000").split(":");
+      switch (strategy) {
+        case "registerImmediately":
+          readyToRegister$ = of(null);
+          break;
+        case "registerWithDelay":
+          readyToRegister$ = delayWithTimeout(+args[0] || 0);
+          break;
+        case "registerWhenStable":
+          readyToRegister$ = !args[0] ? whenStable(injector) : merge(whenStable(injector), delayWithTimeout(+args[0]));
+          break;
+        default:
+          throw new Error(`Unknown ServiceWorker registration strategy: ${options.registrationStrategy}`);
+      }
+    }
+    const ngZone = injector.get(NgZone);
+    ngZone.runOutsideAngular(() => readyToRegister$.pipe(take(1)).subscribe(() => navigator.serviceWorker.register(script, {
+      scope: options.scope
+    }).catch((err) => console.error("Service worker registration failed with:", err))));
+  };
+}
+function delayWithTimeout(timeout) {
+  return of(null).pipe(delay(timeout));
+}
+function whenStable(injector) {
+  const appRef = injector.get(ApplicationRef);
+  return appRef.isStable.pipe(filter((stable) => stable));
+}
+function ngswCommChannelFactory(opts, platformId) {
+  return new NgswCommChannel(isPlatformBrowser(platformId) && opts.enabled !== false ? navigator.serviceWorker : void 0);
+}
+var SwRegistrationOptions = class {
+};
+function provideServiceWorker(script, options = {}) {
+  return makeEnvironmentProviders([SwPush, SwUpdate, {
+    provide: SCRIPT,
+    useValue: script
+  }, {
+    provide: SwRegistrationOptions,
+    useValue: options
+  }, {
+    provide: NgswCommChannel,
+    useFactory: ngswCommChannelFactory,
+    deps: [SwRegistrationOptions, PLATFORM_ID]
+  }, {
+    provide: APP_INITIALIZER,
+    useFactory: ngswAppInitializer,
+    deps: [Injector, SCRIPT, SwRegistrationOptions, PLATFORM_ID],
+    multi: true
+  }]);
+}
+var ServiceWorkerModule = class _ServiceWorkerModule {
+  /**
+   * Register the given Angular Service Worker script.
+   *
+   * If `enabled` is set to `false` in the given options, the module will behave as if service
+   * workers are not supported by the browser, and the service worker will not be registered.
+   */
+  static register(script, options = {}) {
+    return {
+      ngModule: _ServiceWorkerModule,
+      providers: [provideServiceWorker(script, options)]
+    };
+  }
+  static {
+    this.\u0275fac = function ServiceWorkerModule_Factory(t) {
+      return new (t || _ServiceWorkerModule)();
+    };
+  }
+  static {
+    this.\u0275mod = /* @__PURE__ */ \u0275\u0275defineNgModule({
+      type: _ServiceWorkerModule
+    });
+  }
+  static {
+    this.\u0275inj = /* @__PURE__ */ \u0275\u0275defineInjector({
+      providers: [SwPush, SwUpdate]
+    });
+  }
+};
+(() => {
+  (typeof ngDevMode === "undefined" || ngDevMode) && setClassMetadata(ServiceWorkerModule, [{
+    type: NgModule,
+    args: [{
+      providers: [SwPush, SwUpdate]
+    }]
+  }], null, null);
+})();
+
 // src/app/app.config.ts
 var appConfig = {
   providers: [
@@ -4998,8 +5369,11 @@ var appConfig = {
       withFetch()
       // ✅ enable Fetch API for SSR
     ),
-    provideAnimationsAsync()
-    // ✅ keep only once
+    provideAnimationsAsync(),
+    provideServiceWorker("ngsw-worker.js", {
+      enabled: !isDevMode(),
+      registrationStrategy: "registerWhenStable:30000"
+    })
   ]
 };
 
@@ -5090,7 +5464,15 @@ if (environment.production) {
   `;
   document.head.appendChild(clarityScript);
 }
-bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
+bootstrapApplication(AppComponent, __spreadProps(__spreadValues({}, appConfig), {
+  providers: [
+    ...appConfig.providers || [],
+    // ✅ THIS IS THE MOST IMPORTANT LINE
+    provideServiceWorker("ngsw-worker.js", {
+      enabled: environment.production
+    })
+  ]
+})).catch((err) => console.error(err));
 /*! Bundled license information:
 
 @angular/platform-browser/fesm2022/animations/async.mjs:
@@ -5098,6 +5480,20 @@ bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err))
    * @license Angular v17.3.12
    * (c) 2010-2024 Google LLC. https://angular.io/
    * License: MIT
+   *)
+
+@angular/service-worker/fesm2022/service-worker.mjs:
+  (**
+   * @license Angular v17.3.12
+   * (c) 2010-2024 Google LLC. https://angular.io/
+   * License: MIT
+   *)
+  (*!
+   * @license
+   * Copyright Google LLC All Rights Reserved.
+   *
+   * Use of this source code is governed by an MIT-style license that can be
+   * found in the LICENSE file at https://angular.io/license
    *)
 */
 //# sourceMappingURL=main.js.map
