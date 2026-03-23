@@ -2,7 +2,7 @@ import './polyfills.server.mjs';
 import {
   IasSidebarComponent,
   IasUserHeaderComponent
-} from "./chunk-476MCINQ.mjs";
+} from "./chunk-BS5DHMND.mjs";
 import "./chunk-CSPNFJ4P.mjs";
 import "./chunk-36MGJUKC.mjs";
 import {
@@ -53,4 +53,4 @@ var DashboardLayoutComponent = class _DashboardLayoutComponent {
 export {
   DashboardLayoutComponent
 };
-//# sourceMappingURL=chunk-4MWRWXAA.mjs.map
+//# sourceMappingURL=chunk-3HTCWECV.mjs.map

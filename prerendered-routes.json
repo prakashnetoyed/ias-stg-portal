@@ -1,6 +1,7 @@
 {
   "routes": [
     "/",
+    "/auth/callback",
     "/forget-password",
     "/home",
     "/home/approved-user",
