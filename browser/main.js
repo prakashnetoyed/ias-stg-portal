@@ -4604,7 +4604,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6PWM62Q2.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-F4HDJRGT.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",

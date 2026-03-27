@@ -727,7 +727,7 @@ function IasMonthlymeetComponent_div_5_div_1_Template(rf, ctx) {
     \u0275\u0275advance(5);
     \u0275\u0275textInterpolate(\u0275\u0275pipeBind2(8, 9, blog_r2.date, "MMM"));
     \u0275\u0275advance(3);
-    \u0275\u0275textInterpolate(\u0275\u0275pipeBind2(11, 12, blog_r2.date, "dd"));
+    \u0275\u0275textInterpolate1(" ", \u0275\u0275pipeBind3(11, 12, blog_r2.date, "dd", "UTC"), "");
     \u0275\u0275advance(6);
     \u0275\u0275textInterpolate(blog_r2.title);
     \u0275\u0275advance(2);
@@ -739,7 +739,7 @@ function IasMonthlymeetComponent_div_5_div_1_Template(rf, ctx) {
 function IasMonthlymeetComponent_div_5_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 6);
-    \u0275\u0275template(1, IasMonthlymeetComponent_div_5_div_1_Template, 27, 15, "div", 7);
+    \u0275\u0275template(1, IasMonthlymeetComponent_div_5_div_1_Template, 27, 16, "div", 7);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -1770,4 +1770,4 @@ var IasHomepageComponent = class _IasHomepageComponent {
 export {
   IasHomepageComponent
 };
-//# sourceMappingURL=chunk-3FE5PNW4.mjs.map
+//# sourceMappingURL=chunk-7DW5DXOA.mjs.map
