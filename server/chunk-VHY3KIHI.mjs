@@ -746,7 +746,7 @@ function IasLoginComponent_app_ias_loader_0_Template(rf, ctx) {
     \u0275\u0275element(0, "app-ias-loader");
   }
 }
-function IasLoginComponent_div_10_div_19_small_1_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_12_small_1_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1);
@@ -758,7 +758,7 @@ function IasLoginComponent_div_10_div_19_small_1_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", ctx_r1.activeTab === "mobile" ? "Mobile number is required" : "Email is required", " ");
   }
 }
-function IasLoginComponent_div_10_div_19_small_2_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_12_small_2_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "small");
     \u0275\u0275text(1);
@@ -770,10 +770,10 @@ function IasLoginComponent_div_10_div_19_small_2_Template(rf, ctx) {
     \u0275\u0275textInterpolate1(" ", ctx_r1.activeTab === "mobile" ? "Enter valid 10-digit mobile number" : "Enter valid email address", " ");
   }
 }
-function IasLoginComponent_div_10_div_19_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_12_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 31);
-    \u0275\u0275template(1, IasLoginComponent_div_10_div_19_small_1_Template, 2, 1, "small", 0)(2, IasLoginComponent_div_10_div_19_small_2_Template, 2, 1, "small", 0);
+    \u0275\u0275elementStart(0, "div", 25);
+    \u0275\u0275template(1, IasLoginComponent_div_10_div_12_small_1_Template, 2, 1, "small", 0)(2, IasLoginComponent_div_10_div_12_small_2_Template, 2, 1, "small", 0);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -784,52 +784,52 @@ function IasLoginComponent_div_10_div_19_Template(rf, ctx) {
     \u0275\u0275property("ngIf", ctx_r1.email == null ? null : ctx_r1.email.errors == null ? null : ctx_r1.email.errors["invalidInput"]);
   }
 }
-function IasLoginComponent_div_10_div_20__svg_svg_6_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_13__svg_svg_6_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 37)(1, "g", 38);
-    \u0275\u0275element(2, "path", 39);
+    \u0275\u0275elementStart(0, "svg", 31)(1, "g", 32);
+    \u0275\u0275element(2, "path", 33);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 40);
-    \u0275\u0275element(5, "rect", 41);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 34);
+    \u0275\u0275element(5, "rect", 35);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasLoginComponent_div_10_div_20__svg_svg_7_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_13__svg_svg_7_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 37)(1, "g", 42);
-    \u0275\u0275element(2, "path", 43);
+    \u0275\u0275elementStart(0, "svg", 31)(1, "g", 36);
+    \u0275\u0275element(2, "path", 37);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 44);
-    \u0275\u0275element(5, "rect", 41);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 38);
+    \u0275\u0275element(5, "rect", 35);
     \u0275\u0275elementEnd()()();
   }
 }
-function IasLoginComponent_div_10_div_20_div_8_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_13_div_8_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 31)(1, "small");
+    \u0275\u0275elementStart(0, "div", 25)(1, "small");
     \u0275\u0275text(2, "Password is required.");
     \u0275\u0275elementEnd()();
   }
 }
-function IasLoginComponent_div_10_div_20_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_13_Template(rf, ctx) {
   if (rf & 1) {
     const _r3 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div")(1, "label", 32);
+    \u0275\u0275elementStart(0, "div")(1, "label", 26);
     \u0275\u0275text(2, "Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "div", 33);
-    \u0275\u0275element(4, "input", 34);
-    \u0275\u0275elementStart(5, "button", 35);
-    \u0275\u0275listener("click", function IasLoginComponent_div_10_div_20_Template_button_click_5_listener() {
+    \u0275\u0275elementStart(3, "div", 27);
+    \u0275\u0275element(4, "input", 28);
+    \u0275\u0275elementStart(5, "button", 29);
+    \u0275\u0275listener("click", function IasLoginComponent_div_10_div_13_Template_button_click_5_listener() {
       \u0275\u0275restoreView(_r3);
       const ctx_r1 = \u0275\u0275nextContext(2);
       return \u0275\u0275resetView(ctx_r1.togglePasswordVisibility());
     });
-    \u0275\u0275template(6, IasLoginComponent_div_10_div_20__svg_svg_6_Template, 6, 0, "svg", 36)(7, IasLoginComponent_div_10_div_20__svg_svg_7_Template, 6, 0, "svg", 36);
+    \u0275\u0275template(6, IasLoginComponent_div_10_div_13__svg_svg_6_Template, 6, 0, "svg", 30)(7, IasLoginComponent_div_10_div_13__svg_svg_7_Template, 6, 0, "svg", 30);
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(8, IasLoginComponent_div_10_div_20_div_8_Template, 3, 0, "div", 23);
+    \u0275\u0275template(8, IasLoginComponent_div_10_div_13_div_8_Template, 3, 0, "div", 17);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -844,9 +844,9 @@ function IasLoginComponent_div_10_div_20_Template(rf, ctx) {
     \u0275\u0275property("ngIf", (ctx_r1.password == null ? null : ctx_r1.password.touched) && (ctx_r1.password == null ? null : ctx_r1.password.invalid));
   }
 }
-function IasLoginComponent_div_10_div_21_Template(rf, ctx) {
+function IasLoginComponent_div_10_div_14_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 45)(1, "a", 27);
+    \u0275\u0275elementStart(0, "div", 39)(1, "a", 21);
     \u0275\u0275text(2, "Forgot Password?");
     \u0275\u0275elementEnd()();
   }
@@ -876,53 +876,40 @@ function IasLoginComponent_div_10_Template(rf, ctx) {
       return \u0275\u0275resetView(ctx_r1.switchTab("mobile"));
     });
     \u0275\u0275text(7, " Mobile Login ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "div", 14);
-    \u0275\u0275listener("click", function IasLoginComponent_div_10_Template_div_click_8_listener() {
-      \u0275\u0275restoreView(_r1);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.loginWithGoogle());
-    });
-    \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(9, "svg", 15);
-    \u0275\u0275element(10, "path", 16)(11, "path", 17)(12, "path", 18)(13, "path", 19);
-    \u0275\u0275elementEnd();
-    \u0275\u0275text(14, " Google ");
     \u0275\u0275elementEnd()();
-    \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(15, "form", 20);
-    \u0275\u0275listener("ngSubmit", function IasLoginComponent_div_10_Template_form_ngSubmit_15_listener() {
+    \u0275\u0275elementStart(8, "form", 14);
+    \u0275\u0275listener("ngSubmit", function IasLoginComponent_div_10_Template_form_ngSubmit_8_listener() {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onSubmit());
     });
-    \u0275\u0275elementStart(16, "label", 21);
-    \u0275\u0275text(17);
+    \u0275\u0275elementStart(9, "label", 15);
+    \u0275\u0275text(10);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(18, "input", 22);
-    \u0275\u0275listener("input", function IasLoginComponent_div_10_Template_input_input_18_listener($event) {
+    \u0275\u0275elementStart(11, "input", 16);
+    \u0275\u0275listener("input", function IasLoginComponent_div_10_Template_input_input_11_listener($event) {
       \u0275\u0275restoreView(_r1);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onInputChange($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275template(19, IasLoginComponent_div_10_div_19_Template, 3, 2, "div", 23)(20, IasLoginComponent_div_10_div_20_Template, 9, 4, "div", 0)(21, IasLoginComponent_div_10_div_21_Template, 3, 1, "div", 24);
-    \u0275\u0275elementStart(22, "button", 25);
-    \u0275\u0275text(23, " Continue ");
+    \u0275\u0275template(12, IasLoginComponent_div_10_div_12_Template, 3, 2, "div", 17)(13, IasLoginComponent_div_10_div_13_Template, 9, 4, "div", 0)(14, IasLoginComponent_div_10_div_14_Template, 3, 1, "div", 18);
+    \u0275\u0275elementStart(15, "button", 19);
+    \u0275\u0275text(16, " Continue ");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(24, "div", 26);
-    \u0275\u0275text(25, " Don\u2019t have an account? ");
-    \u0275\u0275elementStart(26, "a", 27);
-    \u0275\u0275text(27, "Sign up");
+    \u0275\u0275elementStart(17, "div", 20);
+    \u0275\u0275text(18, " Don\u2019t have an account? ");
+    \u0275\u0275elementStart(19, "a", 21);
+    \u0275\u0275text(20, "Sign up");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(28, "div", 28);
+    \u0275\u0275elementStart(21, "div", 22);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(29, "svg", 29);
-    \u0275\u0275element(30, "path", 30);
+    \u0275\u0275elementStart(22, "svg", 23);
+    \u0275\u0275element(23, "path", 24);
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(31, "p");
-    \u0275\u0275text(32, " This facility is strictly for serving and retired IAS officers only. Unauthorized access is prohibited. ");
+    \u0275\u0275elementStart(24, "p");
+    \u0275\u0275text(25, " This facility is strictly for serving and retired IAS officers only. Unauthorized access is prohibited. ");
     \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
@@ -931,7 +918,7 @@ function IasLoginComponent_div_10_Template(rf, ctx) {
     \u0275\u0275classProp("active", ctx_r1.activeTab === "email");
     \u0275\u0275advance(2);
     \u0275\u0275classProp("active", ctx_r1.activeTab === "mobile");
-    \u0275\u0275advance(9);
+    \u0275\u0275advance(2);
     \u0275\u0275property("formGroup", ctx_r1.emailForm);
     \u0275\u0275advance(2);
     \u0275\u0275textInterpolate1(" ", ctx_r1.activeTab === "mobile" ? "Mobile Number" : "Email Address", " ");
@@ -952,7 +939,7 @@ function IasLoginComponent_div_10_Template(rf, ctx) {
 function IasLoginComponent_div_11_input_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "input", 54);
+    \u0275\u0275elementStart(0, "input", 48);
     \u0275\u0275listener("input", function IasLoginComponent_div_11_input_7_Template_input_input_0_listener($event) {
       const i_r6 = \u0275\u0275restoreView(_r5).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
@@ -972,28 +959,28 @@ function IasLoginComponent_div_11_input_7_Template(rf, ctx) {
 function IasLoginComponent_div_11_Template(rf, ctx) {
   if (rf & 1) {
     const _r4 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 46)(1, "h1");
+    \u0275\u0275elementStart(0, "div", 40)(1, "h1");
     \u0275\u0275text(2, "Enter OTP to Verify");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(3, "h4");
     \u0275\u0275text(4);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "form", 20);
+    \u0275\u0275elementStart(5, "form", 14);
     \u0275\u0275listener("ngSubmit", function IasLoginComponent_div_11_Template_form_ngSubmit_5_listener() {
       \u0275\u0275restoreView(_r4);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitOtp());
     });
-    \u0275\u0275elementStart(6, "div", 47);
-    \u0275\u0275template(7, IasLoginComponent_div_11_input_7_Template, 1, 1, "input", 48);
+    \u0275\u0275elementStart(6, "div", 41);
+    \u0275\u0275template(7, IasLoginComponent_div_11_input_7_Template, 1, 1, "input", 42);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "button", 49);
+    \u0275\u0275elementStart(8, "button", 43);
     \u0275\u0275text(9, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "span", 50)(11, "p", 51);
+    \u0275\u0275elementStart(10, "span", 44)(11, "p", 45);
     \u0275\u0275text(12, "Did not get the OTP?");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "span", 52);
+    \u0275\u0275elementStart(13, "span", 46);
     \u0275\u0275listener("click", function IasLoginComponent_div_11_Template_span_click_13_listener() {
       \u0275\u0275restoreView(_r4);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -1002,7 +989,7 @@ function IasLoginComponent_div_11_Template(rf, ctx) {
     \u0275\u0275text(14, " Resend OTP ");
     \u0275\u0275elementEnd();
     \u0275\u0275text(15, " in ");
-    \u0275\u0275elementStart(16, "span", 53);
+    \u0275\u0275elementStart(16, "span", 47);
     \u0275\u0275text(17);
     \u0275\u0275pipe(18, "date");
     \u0275\u0275elementEnd()()()();
@@ -1264,7 +1251,7 @@ var IasLoginComponent = class _IasLoginComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasLoginComponent, selectors: [["app-ias-login"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 8, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 2, "cursor", "pointer", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center"], ["class", "inneradjustment", 4, "ngIf"], ["class", "second-step", 4, "ngIf"], [1, "inneradjustment"], [1, "tabs-div", "mt-4"], [1, "formstab", 3, "click"], [1, "googletab", "d-flex", "align-items-center", "gap-2", "justify-content-center", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "x", "0px", "y", "0px", "width", "20", "height", "20", "viewBox", "0 0 48 48"], ["fill", "#FFC107", "d", "M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"], ["fill", "#FF3D00", "d", "M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"], ["fill", "#4CAF50", "d", "M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"], ["fill", "#1976D2", "d", "M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "text", "id", "email", "formControlName", "email", 3, "input", "placeholder"], ["class", "error-message", 4, "ngIf"], ["class", "forgot", 4, "ngIf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "signup-text"], [3, "routerLink"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M6.33325 10.3333H7.66658V6.33331H6.33325V10.3333ZM6.99992 4.99998C7.18881 4.99998 7.34714 4.93609 7.47492 4.80831C7.6027 4.68053 7.66658 4.5222 7.66658 4.33331C7.66658 4.14442 7.6027 3.98609 7.47492 3.85831C7.34714 3.73054 7.18881 3.66665 6.99992 3.66665C6.81103 3.66665 6.6527 3.73054 6.52492 3.85831C6.39714 3.98609 6.33325 4.14442 6.33325 4.33331C6.33325 4.5222 6.39714 4.68053 6.52492 4.80831C6.6527 4.93609 6.81103 4.99998 6.99992 4.99998ZM6.99992 13.6666C6.0777 13.6666 5.21103 13.4916 4.39992 13.1416C3.58881 12.7916 2.88325 12.3166 2.28325 11.7166C1.68325 11.1166 1.20825 10.4111 0.858252 9.59998C0.508252 8.78887 0.333252 7.9222 0.333252 6.99998C0.333252 6.07776 0.508252 5.21109 0.858252 4.39998C1.20825 3.58887 1.68325 2.88331 2.28325 2.28331C2.88325 1.68331 3.58881 1.20831 4.39992 0.858313C5.21103 0.508313 6.0777 0.333313 6.99992 0.333313C7.92214 0.333313 8.78881 0.508313 9.59992 0.858313C10.411 1.20831 11.1166 1.68331 11.7166 2.28331C12.3166 2.88331 12.7916 3.58887 13.1416 4.39998C13.4916 5.21109 13.6666 6.07776 13.6666 6.99998C13.6666 7.9222 13.4916 8.78887 13.1416 9.59998C12.7916 10.4111 12.3166 11.1166 11.7166 11.7166C11.1166 12.3166 10.411 12.7916 9.59992 13.1416C8.78881 13.4916 7.92214 13.6666 6.99992 13.6666ZM6.99992 12.3333C8.48881 12.3333 9.74992 11.8166 10.7833 10.7833C11.8166 9.74998 12.3333 8.48887 12.3333 6.99998C12.3333 5.51109 11.8166 4.24998 10.7833 3.21665C9.74992 2.18331 8.48881 1.66665 6.99992 1.66665C5.51103 1.66665 4.24992 2.18331 3.21659 3.21665C2.18325 4.24998 1.66659 5.51109 1.66659 6.99998C1.66659 8.48887 2.18325 9.74998 3.21659 10.7833C4.24992 11.8166 5.51103 12.3333 6.99992 12.3333Z", "fill", "#A16800"], [1, "error-message"], ["for", "password"], [1, "password-input"], ["id", "password", "formControlName", "password", "placeholder", "Enter your password", 3, "type"], ["type", "button", 1, "eye-button", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "forgot"], [1, "second-step"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", 3, "input", "keydown", "formControlName"]], template: function IasLoginComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasLoginComponent, selectors: [["app-ias-login"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 12, vars: 8, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 2, "cursor", "pointer", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center"], ["class", "inneradjustment", 4, "ngIf"], ["class", "second-step", 4, "ngIf"], [1, "inneradjustment"], [1, "tabs-div", "mt-4"], [1, "formstab", 3, "click"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "text", "id", "email", "formControlName", "email", 3, "input", "placeholder"], ["class", "error-message", 4, "ngIf"], ["class", "forgot", 4, "ngIf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "signup-text"], [3, "routerLink"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "14", "height", "14", "viewBox", "0 0 14 14", "fill", "none"], ["d", "M6.33325 10.3333H7.66658V6.33331H6.33325V10.3333ZM6.99992 4.99998C7.18881 4.99998 7.34714 4.93609 7.47492 4.80831C7.6027 4.68053 7.66658 4.5222 7.66658 4.33331C7.66658 4.14442 7.6027 3.98609 7.47492 3.85831C7.34714 3.73054 7.18881 3.66665 6.99992 3.66665C6.81103 3.66665 6.6527 3.73054 6.52492 3.85831C6.39714 3.98609 6.33325 4.14442 6.33325 4.33331C6.33325 4.5222 6.39714 4.68053 6.52492 4.80831C6.6527 4.93609 6.81103 4.99998 6.99992 4.99998ZM6.99992 13.6666C6.0777 13.6666 5.21103 13.4916 4.39992 13.1416C3.58881 12.7916 2.88325 12.3166 2.28325 11.7166C1.68325 11.1166 1.20825 10.4111 0.858252 9.59998C0.508252 8.78887 0.333252 7.9222 0.333252 6.99998C0.333252 6.07776 0.508252 5.21109 0.858252 4.39998C1.20825 3.58887 1.68325 2.88331 2.28325 2.28331C2.88325 1.68331 3.58881 1.20831 4.39992 0.858313C5.21103 0.508313 6.0777 0.333313 6.99992 0.333313C7.92214 0.333313 8.78881 0.508313 9.59992 0.858313C10.411 1.20831 11.1166 1.68331 11.7166 2.28331C12.3166 2.88331 12.7916 3.58887 13.1416 4.39998C13.4916 5.21109 13.6666 6.07776 13.6666 6.99998C13.6666 7.9222 13.4916 8.78887 13.1416 9.59998C12.7916 10.4111 12.3166 11.1166 11.7166 11.7166C11.1166 12.3166 10.411 12.7916 9.59992 13.1416C8.78881 13.4916 7.92214 13.6666 6.99992 13.6666ZM6.99992 12.3333C8.48881 12.3333 9.74992 11.8166 10.7833 10.7833C11.8166 9.74998 12.3333 8.48887 12.3333 6.99998C12.3333 5.51109 11.8166 4.24998 10.7833 3.21665C9.74992 2.18331 8.48881 1.66665 6.99992 1.66665C5.51103 1.66665 4.24992 2.18331 3.21659 3.21665C2.18325 4.24998 1.66659 5.51109 1.66659 6.99998C1.66659 8.48887 2.18325 9.74998 3.21659 10.7833C4.24992 11.8166 5.51103 12.3333 6.99992 12.3333Z", "fill", "#A16800"], [1, "error-message"], ["for", "password"], [1, "password-input"], ["id", "password", "formControlName", "password", "placeholder", "Enter your password", 3, "type"], ["type", "button", 1, "eye-button", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], [1, "forgot"], [1, "second-step"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", 3, "input", "keydown", "formControlName"]], template: function IasLoginComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, IasLoginComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 0);
         \u0275\u0275elementStart(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
@@ -1275,7 +1262,7 @@ var IasLoginComponent = class _IasLoginComponent {
         \u0275\u0275elementStart(7, "div", 6);
         \u0275\u0275element(8, "div", 7);
         \u0275\u0275elementStart(9, "div", 8);
-        \u0275\u0275template(10, IasLoginComponent_div_10_Template, 33, 12, "div", 9)(11, IasLoginComponent_div_11_Template, 19, 10, "div", 10);
+        \u0275\u0275template(10, IasLoginComponent_div_10_Template, 26, 12, "div", 9)(11, IasLoginComponent_div_11_Template, 19, 10, "div", 10);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -1906,7 +1893,7 @@ function IasSignupComponent_div_25_div_7_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_25_div_7_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_25_div_7_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_25_div_7_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -1940,34 +1927,14 @@ function IasSignupComponent_div_25_Template(rf, ctx) {
     \u0275\u0275elementStart(8, "button", 29);
     \u0275\u0275text(9, "Sign up");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "div", 30);
-    \u0275\u0275element(11, "hr", 31);
-    \u0275\u0275elementStart(12, "span", 32);
-    \u0275\u0275text(13, "Or");
-    \u0275\u0275elementEnd();
-    \u0275\u0275element(14, "hr", 31);
-    \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(15, "button", 33);
-    \u0275\u0275listener("click", function IasSignupComponent_div_25_Template_button_click_15_listener() {
-      \u0275\u0275restoreView(_r3);
-      const ctx_r1 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r1.signupWithGoogle());
-    });
+    \u0275\u0275elementStart(10, "div", 30)(11, "span");
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(16, "svg", 34);
-    \u0275\u0275element(17, "path", 35)(18, "path", 36)(19, "path", 37)(20, "path", 38);
-    \u0275\u0275elementEnd();
-    \u0275\u0275text(21, " Continue with Google ");
-    \u0275\u0275elementEnd();
-    \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(22, "div", 39)(23, "span");
-    \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(24, "svg", 40);
-    \u0275\u0275element(25, "path", 41);
+    \u0275\u0275elementStart(12, "svg", 31);
+    \u0275\u0275element(13, "path", 32);
     \u0275\u0275elementEnd()();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(26, "p");
-    \u0275\u0275text(27, " This facility is strictly for serving and retired IAS officers only. Unauthorized access is prohibited. ");
+    \u0275\u0275elementStart(14, "p");
+    \u0275\u0275text(15, " This facility is strictly for serving and retired IAS officers only. Unauthorized access is prohibited. ");
     \u0275\u0275elementEnd()()()();
   }
   if (rf & 2) {
@@ -1984,7 +1951,7 @@ function IasSignupComponent_div_25_Template(rf, ctx) {
 function IasSignupComponent_div_26_input_7_Template(rf, ctx) {
   if (rf & 1) {
     const _r5 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "input", 50);
+    \u0275\u0275elementStart(0, "input", 41);
     \u0275\u0275listener("input", function IasSignupComponent_div_26_input_7_Template_input_input_0_listener($event) {
       const i_r6 = \u0275\u0275restoreView(_r5).index;
       const ctx_r1 = \u0275\u0275nextContext(2);
@@ -2016,16 +1983,16 @@ function IasSignupComponent_div_26_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitOtp());
     });
-    \u0275\u0275elementStart(6, "div", 43);
-    \u0275\u0275template(7, IasSignupComponent_div_26_input_7_Template, 1, 1, "input", 44);
+    \u0275\u0275elementStart(6, "div", 34);
+    \u0275\u0275template(7, IasSignupComponent_div_26_input_7_Template, 1, 1, "input", 35);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(8, "button", 45);
+    \u0275\u0275elementStart(8, "button", 36);
     \u0275\u0275text(9, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(10, "span", 46)(11, "p", 47);
+    \u0275\u0275elementStart(10, "span", 37)(11, "p", 38);
     \u0275\u0275text(12, "Did not get the OTP?");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "span", 48);
+    \u0275\u0275elementStart(13, "span", 39);
     \u0275\u0275listener("click", function IasSignupComponent_div_26_Template_span_click_13_listener() {
       \u0275\u0275restoreView(_r4);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2034,7 +2001,7 @@ function IasSignupComponent_div_26_Template(rf, ctx) {
     \u0275\u0275text(14, " Resend OTP ");
     \u0275\u0275elementEnd();
     \u0275\u0275text(15, " in ");
-    \u0275\u0275elementStart(16, "span", 49);
+    \u0275\u0275elementStart(16, "span", 40);
     \u0275\u0275text(17);
     \u0275\u0275pipe(18, "date");
     \u0275\u0275elementEnd()()()();
@@ -2061,7 +2028,7 @@ function IasSignupComponent_div_27_Template(rf, ctx) {
     \u0275\u0275elementStart(0, "div", 23)(1, "h1", 24);
     \u0275\u0275text(2, "Sign up your account");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "button", 51);
+    \u0275\u0275elementStart(3, "button", 42);
     \u0275\u0275listener("click", function IasSignupComponent_div_27_Template_button_click_3_listener() {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2069,10 +2036,10 @@ function IasSignupComponent_div_27_Template(rf, ctx) {
     });
     \u0275\u0275text(4, "Get Details from DoPT");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(5, "p", 52);
+    \u0275\u0275elementStart(5, "p", 43);
     \u0275\u0275text(6, "or");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(7, "button", 53);
+    \u0275\u0275elementStart(7, "button", 44);
     \u0275\u0275listener("click", function IasSignupComponent_div_27_Template_button_click_7_listener() {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2080,10 +2047,10 @@ function IasSignupComponent_div_27_Template(rf, ctx) {
     });
     \u0275\u0275text(8, "Fill Details Manually");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(9, "p", 52);
+    \u0275\u0275elementStart(9, "p", 43);
     \u0275\u0275text(10, "or");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(11, "button", 53);
+    \u0275\u0275elementStart(11, "button", 44);
     \u0275\u0275listener("click", function IasSignupComponent_div_27_Template_button_click_11_listener() {
       \u0275\u0275restoreView(_r8);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2102,7 +2069,7 @@ function IasSignupComponent_div_28_div_13_small_1_Template(rf, ctx) {
 }
 function IasSignupComponent_div_28_div_13_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_28_div_13_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2122,7 +2089,7 @@ function IasSignupComponent_div_28_div_19_small_1_Template(rf, ctx) {
 }
 function IasSignupComponent_div_28_div_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_28_div_19_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2149,7 +2116,7 @@ function IasSignupComponent_div_28_div_21_div_6_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_28_div_21_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_28_div_21_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_28_div_21_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2165,12 +2132,12 @@ function IasSignupComponent_div_28_div_21_div_6_Template(rf, ctx) {
 }
 function IasSignupComponent_div_28_div_21_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 63)(1, "label", 67);
+    \u0275\u0275elementStart(0, "div", 54)(1, "label", 58);
     \u0275\u0275text(2, " Mobile Number ");
-    \u0275\u0275elementStart(3, "span", 57);
+    \u0275\u0275elementStart(3, "span", 48);
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(5, "input", 68);
+    \u0275\u0275element(5, "input", 59);
     \u0275\u0275template(6, IasSignupComponent_div_28_div_21_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
@@ -2197,7 +2164,7 @@ function IasSignupComponent_div_28_div_22_div_6_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_28_div_22_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_28_div_22_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_28_div_22_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2213,12 +2180,12 @@ function IasSignupComponent_div_28_div_22_div_6_Template(rf, ctx) {
 }
 function IasSignupComponent_div_28_div_22_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 63)(1, "label", 67);
+    \u0275\u0275elementStart(0, "div", 54)(1, "label", 58);
     \u0275\u0275text(2, " Email ID ");
-    \u0275\u0275elementStart(3, "span", 57);
+    \u0275\u0275elementStart(3, "span", 48);
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(5, "input", 69);
+    \u0275\u0275element(5, "input", 60);
     \u0275\u0275template(6, IasSignupComponent_div_28_div_22_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
@@ -2238,7 +2205,7 @@ function IasSignupComponent_div_28_div_27_small_1_Template(rf, ctx) {
 }
 function IasSignupComponent_div_28_div_27_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_28_div_27_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2252,13 +2219,13 @@ function IasSignupComponent_div_28_div_27_Template(rf, ctx) {
 function IasSignupComponent_div_28_Template(rf, ctx) {
   if (rf & 1) {
     const _r9 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 23)(1, "p")(2, "span", 54);
+    \u0275\u0275elementStart(0, "div", 23)(1, "p")(2, "span", 45);
     \u0275\u0275listener("click", function IasSignupComponent_div_28_Template_span_click_2_listener() {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 3);
     });
-    \u0275\u0275element(3, "i", 55);
+    \u0275\u0275element(3, "i", 46);
     \u0275\u0275text(4, " back");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(5, "h1", 24);
@@ -2270,12 +2237,12 @@ function IasSignupComponent_div_28_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitMemberId());
     });
-    \u0275\u0275elementStart(8, "label", 56);
+    \u0275\u0275elementStart(8, "label", 47);
     \u0275\u0275text(9, "Full Name");
-    \u0275\u0275elementStart(10, "span", 57);
+    \u0275\u0275elementStart(10, "span", 48);
     \u0275\u0275text(11, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(12, "input", 58);
+    \u0275\u0275elementStart(12, "input", 49);
     \u0275\u0275listener("keypress", function IasSignupComponent_div_28_Template_input_keypress_12_listener($event) {
       \u0275\u0275restoreView(_r9);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2283,22 +2250,22 @@ function IasSignupComponent_div_28_Template(rf, ctx) {
     });
     \u0275\u0275elementEnd();
     \u0275\u0275template(13, IasSignupComponent_div_28_div_13_Template, 2, 1, "div", 28);
-    \u0275\u0275elementStart(14, "label", 59);
+    \u0275\u0275elementStart(14, "label", 50);
     \u0275\u0275text(15, "Identity No.");
-    \u0275\u0275elementStart(16, "span", 57);
+    \u0275\u0275elementStart(16, "span", 48);
     \u0275\u0275text(17, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(18, "input", 60);
+    \u0275\u0275element(18, "input", 51);
     \u0275\u0275template(19, IasSignupComponent_div_28_div_19_Template, 2, 1, "div", 28);
-    \u0275\u0275elementStart(20, "div", 61);
-    \u0275\u0275template(21, IasSignupComponent_div_28_div_21_Template, 7, 1, "div", 62)(22, IasSignupComponent_div_28_div_22_Template, 7, 1, "div", 62);
-    \u0275\u0275elementStart(23, "div", 63)(24, "label", 64);
+    \u0275\u0275elementStart(20, "div", 52);
+    \u0275\u0275template(21, IasSignupComponent_div_28_div_21_Template, 7, 1, "div", 53)(22, IasSignupComponent_div_28_div_22_Template, 7, 1, "div", 53);
+    \u0275\u0275elementStart(23, "div", 54)(24, "label", 55);
     \u0275\u0275text(25, "Alternate Email ID ");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(26, "input", 65);
+    \u0275\u0275element(26, "input", 56);
     \u0275\u0275template(27, IasSignupComponent_div_28_div_27_Template, 2, 1, "div", 28);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(28, "button", 66);
+    \u0275\u0275elementStart(28, "button", 57);
     \u0275\u0275text(29, "Continue");
     \u0275\u0275elementEnd()()();
   }
@@ -2325,7 +2292,7 @@ function IasSignupComponent_div_28_Template(rf, ctx) {
 }
 function IasSignupComponent_div_29_For_23_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 76);
+    \u0275\u0275elementStart(0, "option", 67);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -2352,7 +2319,7 @@ function IasSignupComponent_div_29_div_68_div_6_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_29_div_68_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_29_div_68_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_29_div_68_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2368,12 +2335,12 @@ function IasSignupComponent_div_29_div_68_div_6_Template(rf, ctx) {
 }
 function IasSignupComponent_div_29_div_68_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 63)(1, "label");
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
     \u0275\u0275text(2, "Mobile Number ");
-    \u0275\u0275elementStart(3, "span", 57);
+    \u0275\u0275elementStart(3, "span", 48);
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(5, "input", 96);
+    \u0275\u0275element(5, "input", 87);
     \u0275\u0275template(6, IasSignupComponent_div_29_div_68_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
@@ -2400,7 +2367,7 @@ function IasSignupComponent_div_29_div_69_div_6_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_29_div_69_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_29_div_69_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_29_div_69_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2416,12 +2383,12 @@ function IasSignupComponent_div_29_div_69_div_6_Template(rf, ctx) {
 }
 function IasSignupComponent_div_29_div_69_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 63)(1, "label");
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
     \u0275\u0275text(2, "Email ID ");
-    \u0275\u0275elementStart(3, "span", 57);
+    \u0275\u0275elementStart(3, "span", 48);
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(5, "input", 69);
+    \u0275\u0275element(5, "input", 60);
     \u0275\u0275template(6, IasSignupComponent_div_29_div_69_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
@@ -2441,7 +2408,7 @@ function IasSignupComponent_div_29_div_74_small_1_Template(rf, ctx) {
 }
 function IasSignupComponent_div_29_div_74_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_29_div_74_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2455,13 +2422,13 @@ function IasSignupComponent_div_29_div_74_Template(rf, ctx) {
 function IasSignupComponent_div_29_Template(rf, ctx) {
   if (rf & 1) {
     const _r10 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 23)(1, "p")(2, "span", 54);
+    \u0275\u0275elementStart(0, "div", 23)(1, "p")(2, "span", 45);
     \u0275\u0275listener("click", function IasSignupComponent_div_29_Template_span_click_2_listener() {
       \u0275\u0275restoreView(_r10);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 3);
     });
-    \u0275\u0275element(3, "i", 55);
+    \u0275\u0275element(3, "i", 46);
     \u0275\u0275text(4, " back");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(5, "h1", 24);
@@ -2473,98 +2440,98 @@ function IasSignupComponent_div_29_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitmemberdetails());
     });
-    \u0275\u0275elementStart(8, "label", 70);
+    \u0275\u0275elementStart(8, "label", 61);
     \u0275\u0275text(9, "Full Name");
-    \u0275\u0275elementStart(10, "span", 57);
+    \u0275\u0275elementStart(10, "span", 48);
     \u0275\u0275text(11, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(12, "input", 71);
+    \u0275\u0275elementStart(12, "input", 62);
     \u0275\u0275listener("keypress", function IasSignupComponent_div_29_Template_input_keypress_12_listener($event) {
       \u0275\u0275restoreView(_r10);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allowOnlyLetters($event));
     });
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(13, "div", 72)(14, "div", 63)(15, "label", 73);
+    \u0275\u0275elementStart(13, "div", 63)(14, "div", 54)(15, "label", 64);
     \u0275\u0275text(16, "Cadre");
-    \u0275\u0275elementStart(17, "span", 57);
+    \u0275\u0275elementStart(17, "span", 48);
     \u0275\u0275text(18, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(19, "select", 74)(20, "option", 75);
+    \u0275\u0275elementStart(19, "select", 65)(20, "option", 66);
     \u0275\u0275text(21, "Enter Cadre");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(22, IasSignupComponent_div_29_For_23_Template, 2, 2, "option", 76, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275repeaterCreate(22, IasSignupComponent_div_29_For_23_Template, 2, 2, "option", 67, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(24, "div", 63)(25, "label", 77);
+    \u0275\u0275elementStart(24, "div", 54)(25, "label", 68);
     \u0275\u0275text(26, "Allotment Year");
-    \u0275\u0275elementStart(27, "span", 57);
+    \u0275\u0275elementStart(27, "span", 48);
     \u0275\u0275text(28, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(29, "input", 78);
+    \u0275\u0275elementStart(29, "input", 69);
     \u0275\u0275listener("input", function IasSignupComponent_div_29_Template_input_input_29_listener($event) {
       \u0275\u0275restoreView(_r10);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.validateYear($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(30, "div", 63)(31, "label", 79);
+    \u0275\u0275elementStart(30, "div", 54)(31, "label", 70);
     \u0275\u0275text(32, "Gender");
-    \u0275\u0275elementStart(33, "span", 57);
+    \u0275\u0275elementStart(33, "span", 48);
     \u0275\u0275text(34, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(35, "select", 80)(36, "option", 81);
+    \u0275\u0275elementStart(35, "select", 71)(36, "option", 72);
     \u0275\u0275text(37, "Select Gender");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(38, "option", 82);
+    \u0275\u0275elementStart(38, "option", 73);
     \u0275\u0275text(39, "Male");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(40, "option", 83);
+    \u0275\u0275elementStart(40, "option", 74);
     \u0275\u0275text(41, "Female");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(42, "option", 84);
+    \u0275\u0275elementStart(42, "option", 75);
     \u0275\u0275text(43, "Other");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275elementStart(44, "div", 63)(45, "label", 85);
+    \u0275\u0275elementStart(44, "div", 54)(45, "label", 76);
     \u0275\u0275text(46, "Date of Birth");
-    \u0275\u0275elementStart(47, "span", 57);
+    \u0275\u0275elementStart(47, "span", 48);
     \u0275\u0275text(48, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(49, "input", 86);
+    \u0275\u0275element(49, "input", 77);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(50, "div", 63)(51, "label", 87);
+    \u0275\u0275elementStart(50, "div", 54)(51, "label", 78);
     \u0275\u0275text(52, "Mother Tongue");
-    \u0275\u0275elementStart(53, "span", 57);
+    \u0275\u0275elementStart(53, "span", 48);
     \u0275\u0275text(54, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(55, "input", 88);
+    \u0275\u0275elementStart(55, "input", 79);
     \u0275\u0275listener("keypress", function IasSignupComponent_div_29_Template_input_keypress_55_listener($event) {
       \u0275\u0275restoreView(_r10);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.allowOnlyLetters($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(56, "div", 63)(57, "label", 89);
+    \u0275\u0275elementStart(56, "div", 54)(57, "label", 80);
     \u0275\u0275text(58, "Service Status");
-    \u0275\u0275elementStart(59, "span", 57);
+    \u0275\u0275elementStart(59, "span", 48);
     \u0275\u0275text(60, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(61, "select", 90)(62, "option", 81);
+    \u0275\u0275elementStart(61, "select", 81)(62, "option", 72);
     \u0275\u0275text(63, "Select Status");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(64, "option", 91);
+    \u0275\u0275elementStart(64, "option", 82);
     \u0275\u0275text(65, "Serving");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(66, "option", 92);
+    \u0275\u0275elementStart(66, "option", 83);
     \u0275\u0275text(67, "Superannuated");
     \u0275\u0275elementEnd()()();
-    \u0275\u0275template(68, IasSignupComponent_div_29_div_68_Template, 7, 1, "div", 62)(69, IasSignupComponent_div_29_div_69_Template, 7, 1, "div", 62);
-    \u0275\u0275elementStart(70, "div", 63)(71, "label", 93);
+    \u0275\u0275template(68, IasSignupComponent_div_29_div_68_Template, 7, 1, "div", 53)(69, IasSignupComponent_div_29_div_69_Template, 7, 1, "div", 53);
+    \u0275\u0275elementStart(70, "div", 54)(71, "label", 84);
     \u0275\u0275text(72, "Alternate Email ID");
     \u0275\u0275elementEnd();
-    \u0275\u0275element(73, "input", 94);
+    \u0275\u0275element(73, "input", 85);
     \u0275\u0275template(74, IasSignupComponent_div_29_div_74_Template, 2, 1, "div", 28);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(75, "button", 95);
+    \u0275\u0275elementStart(75, "button", 86);
     \u0275\u0275text(76, "Continue");
     \u0275\u0275elementEnd()()();
   }
@@ -2589,15 +2556,15 @@ function IasSignupComponent_div_29_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_15_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42)(1, "small", 102);
+    \u0275\u0275elementStart(0, "div", 33)(1, "small", 93);
     \u0275\u0275text(2, "Profile picture is required.");
     \u0275\u0275elementEnd()();
   }
 }
 function IasSignupComponent_div_30_div_17_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 103);
-    \u0275\u0275element(1, "img", 104);
+    \u0275\u0275elementStart(0, "div", 94);
+    \u0275\u0275element(1, "img", 95);
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -2615,7 +2582,7 @@ function IasSignupComponent_div_30_div_23_small_1_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_23_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_30_div_23_small_1_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2642,7 +2609,7 @@ function IasSignupComponent_div_30_div_29_div_1_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_29_div_1_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_30_div_29_div_1_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_29_div_1_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2658,7 +2625,7 @@ function IasSignupComponent_div_30_div_29_div_1_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_29_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_30_div_29_div_1_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
@@ -2671,7 +2638,7 @@ function IasSignupComponent_div_30_div_29_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_For_46_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "option", 76);
+    \u0275\u0275elementStart(0, "option", 67);
     \u0275\u0275text(1);
     \u0275\u0275elementEnd();
   }
@@ -2698,7 +2665,7 @@ function IasSignupComponent_div_30_div_53_div_6_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_53_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_30_div_53_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_53_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2714,12 +2681,12 @@ function IasSignupComponent_div_30_div_53_div_6_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_53_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 63)(1, "label");
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
     \u0275\u0275text(2, "Mobile Number ");
-    \u0275\u0275elementStart(3, "span", 57);
+    \u0275\u0275elementStart(3, "span", 48);
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(5, "input", 96);
+    \u0275\u0275element(5, "input", 87);
     \u0275\u0275template(6, IasSignupComponent_div_30_div_53_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
@@ -2746,7 +2713,7 @@ function IasSignupComponent_div_30_div_54_div_6_small_2_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_54_div_6_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275template(1, IasSignupComponent_div_30_div_54_div_6_small_1_Template, 2, 0, "small", 0)(2, IasSignupComponent_div_30_div_54_div_6_small_2_Template, 2, 0, "small", 0);
     \u0275\u0275elementEnd();
   }
@@ -2762,12 +2729,12 @@ function IasSignupComponent_div_30_div_54_div_6_Template(rf, ctx) {
 }
 function IasSignupComponent_div_30_div_54_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 63)(1, "label");
+    \u0275\u0275elementStart(0, "div", 54)(1, "label");
     \u0275\u0275text(2, "Email ID ");
-    \u0275\u0275elementStart(3, "span", 57);
+    \u0275\u0275elementStart(3, "span", 48);
     \u0275\u0275text(4, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(5, "input", 69);
+    \u0275\u0275element(5, "input", 60);
     \u0275\u0275template(6, IasSignupComponent_div_30_div_54_div_6_Template, 3, 2, "div", 28);
     \u0275\u0275elementEnd();
   }
@@ -2781,13 +2748,13 @@ function IasSignupComponent_div_30_div_54_Template(rf, ctx) {
 function IasSignupComponent_div_30_Template(rf, ctx) {
   if (rf & 1) {
     const _r12 = \u0275\u0275getCurrentView();
-    \u0275\u0275elementStart(0, "div", 23)(1, "p")(2, "span", 54);
+    \u0275\u0275elementStart(0, "div", 23)(1, "p")(2, "span", 45);
     \u0275\u0275listener("click", function IasSignupComponent_div_30_Template_span_click_2_listener() {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.currentStep = 3);
     });
-    \u0275\u0275element(3, "i", 55);
+    \u0275\u0275element(3, "i", 46);
     \u0275\u0275text(4, " back");
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(5, "h1", 24);
@@ -2799,12 +2766,12 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitRetired());
     });
-    \u0275\u0275elementStart(8, "div", 97)(9, "div", 63)(10, "label", 98);
+    \u0275\u0275elementStart(8, "div", 88)(9, "div", 54)(10, "label", 89);
     \u0275\u0275text(11, "Profile Picture ");
-    \u0275\u0275elementStart(12, "span", 57);
+    \u0275\u0275elementStart(12, "span", 48);
     \u0275\u0275text(13, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(14, "input", 99);
+    \u0275\u0275elementStart(14, "input", 90);
     \u0275\u0275listener("click", function IasSignupComponent_div_30_Template_input_click_14_listener() {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2812,15 +2779,15 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     });
     \u0275\u0275elementEnd()();
     \u0275\u0275template(15, IasSignupComponent_div_30_div_15_Template, 3, 0, "div", 28);
-    \u0275\u0275elementStart(16, "div", 63);
-    \u0275\u0275template(17, IasSignupComponent_div_30_div_17_Template, 2, 1, "div", 100);
+    \u0275\u0275elementStart(16, "div", 54);
+    \u0275\u0275template(17, IasSignupComponent_div_30_div_17_Template, 2, 1, "div", 91);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(18, "label", 56);
+    \u0275\u0275elementStart(18, "label", 47);
     \u0275\u0275text(19, "Full Name");
-    \u0275\u0275elementStart(20, "span", 57);
+    \u0275\u0275elementStart(20, "span", 48);
     \u0275\u0275text(21, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(22, "input", 58);
+    \u0275\u0275elementStart(22, "input", 49);
     \u0275\u0275listener("keypress", function IasSignupComponent_div_30_Template_input_keypress_22_listener($event) {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2828,45 +2795,45 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
     });
     \u0275\u0275elementEnd();
     \u0275\u0275template(23, IasSignupComponent_div_30_div_23_Template, 2, 1, "div", 28);
-    \u0275\u0275elementStart(24, "label", 59);
+    \u0275\u0275elementStart(24, "label", 50);
     \u0275\u0275text(25, "Identity No. ");
     \u0275\u0275elementStart(26, "small");
     \u0275\u0275text(27, "(DoPT-allotted ID as shown on your ER Sheet)");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(28, "input", 101);
+    \u0275\u0275element(28, "input", 92);
     \u0275\u0275template(29, IasSignupComponent_div_30_div_29_Template, 2, 1, "div", 28);
-    \u0275\u0275elementStart(30, "div", 72)(31, "div", 63)(32, "label", 85);
+    \u0275\u0275elementStart(30, "div", 63)(31, "div", 54)(32, "label", 76);
     \u0275\u0275text(33, "Date of Birth");
-    \u0275\u0275elementStart(34, "span", 57);
+    \u0275\u0275elementStart(34, "span", 48);
     \u0275\u0275text(35, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275element(36, "input", 86);
+    \u0275\u0275element(36, "input", 77);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(37, "div", 63)(38, "label", 73);
+    \u0275\u0275elementStart(37, "div", 54)(38, "label", 64);
     \u0275\u0275text(39, "Cadre");
-    \u0275\u0275elementStart(40, "span", 57);
+    \u0275\u0275elementStart(40, "span", 48);
     \u0275\u0275text(41, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(42, "select", 74)(43, "option", 75);
+    \u0275\u0275elementStart(42, "select", 65)(43, "option", 66);
     \u0275\u0275text(44, "Enter Cadre");
     \u0275\u0275elementEnd();
-    \u0275\u0275repeaterCreate(45, IasSignupComponent_div_30_For_46_Template, 2, 2, "option", 76, \u0275\u0275repeaterTrackByIndex);
+    \u0275\u0275repeaterCreate(45, IasSignupComponent_div_30_For_46_Template, 2, 2, "option", 67, \u0275\u0275repeaterTrackByIndex);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(47, "div", 63)(48, "label", 77);
+    \u0275\u0275elementStart(47, "div", 54)(48, "label", 68);
     \u0275\u0275text(49, "Allotment Year");
-    \u0275\u0275elementStart(50, "span", 57);
+    \u0275\u0275elementStart(50, "span", 48);
     \u0275\u0275text(51, "*");
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(52, "input", 78);
+    \u0275\u0275elementStart(52, "input", 69);
     \u0275\u0275listener("input", function IasSignupComponent_div_30_Template_input_input_52_listener($event) {
       \u0275\u0275restoreView(_r12);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.validateYear($event));
     });
     \u0275\u0275elementEnd()();
-    \u0275\u0275template(53, IasSignupComponent_div_30_div_53_Template, 7, 1, "div", 62)(54, IasSignupComponent_div_30_div_54_Template, 7, 1, "div", 62);
+    \u0275\u0275template(53, IasSignupComponent_div_30_div_53_Template, 7, 1, "div", 53)(54, IasSignupComponent_div_30_div_54_Template, 7, 1, "div", 53);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(55, "button", 66);
+    \u0275\u0275elementStart(55, "button", 57);
     \u0275\u0275text(56, "Continue");
     \u0275\u0275elementEnd()()();
   }
@@ -2899,7 +2866,7 @@ function IasSignupComponent_div_30_Template(rf, ctx) {
 }
 function IasSignupComponent_div_31_img_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "img", 113);
+    \u0275\u0275element(0, "img", 104);
   }
   if (rf & 2) {
     const ctx_r1 = \u0275\u0275nextContext(2);
@@ -2912,17 +2879,17 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     \u0275\u0275elementStart(0, "div", 23)(1, "h1", 24);
     \u0275\u0275text(2, "Your Details");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "div", 105)(4, "div", 106);
-    \u0275\u0275template(5, IasSignupComponent_div_31_img_5_Template, 1, 1, "img", 107);
-    \u0275\u0275elementStart(6, "div")(7, "h3", 108);
+    \u0275\u0275elementStart(3, "div", 96)(4, "div", 97);
+    \u0275\u0275template(5, IasSignupComponent_div_31_img_5_Template, 1, 1, "img", 98);
+    \u0275\u0275elementStart(6, "div")(7, "h3", 99);
     \u0275\u0275text(8);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(9, "div", 109)(10, "span");
+    \u0275\u0275elementStart(9, "div", 100)(10, "span");
     \u0275\u0275text(11, "IAS Batch Year:");
     \u0275\u0275elementStart(12, "strong");
     \u0275\u0275text(13);
     \u0275\u0275elementEnd()();
-    \u0275\u0275elementStart(14, "span", 110);
+    \u0275\u0275elementStart(14, "span", 101);
     \u0275\u0275text(15, "|");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(16, "span");
@@ -2930,7 +2897,7 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     \u0275\u0275elementStart(18, "strong");
     \u0275\u0275text(19);
     \u0275\u0275elementEnd()()()()()();
-    \u0275\u0275elementStart(20, "button", 111);
+    \u0275\u0275elementStart(20, "button", 102);
     \u0275\u0275listener("click", function IasSignupComponent_div_31_Template_button_click_20_listener() {
       \u0275\u0275restoreView(_r14);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2938,9 +2905,9 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
     });
     \u0275\u0275text(21, "Continue");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(22, "p", 67);
+    \u0275\u0275elementStart(22, "p", 58);
     \u0275\u0275text(23, "Wrong profile or incorrect information? ");
-    \u0275\u0275elementStart(24, "span", 112);
+    \u0275\u0275elementStart(24, "span", 103);
     \u0275\u0275listener("click", function IasSignupComponent_div_31_Template_span_click_24_listener() {
       \u0275\u0275restoreView(_r14);
       const ctx_r1 = \u0275\u0275nextContext();
@@ -2964,28 +2931,28 @@ function IasSignupComponent_div_31_Template(rf, ctx) {
 function IasSignupComponent_div_32__svg_svg_9_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 122)(1, "g", 123);
-    \u0275\u0275element(2, "path", 124);
+    \u0275\u0275elementStart(0, "svg", 113)(1, "g", 114);
+    \u0275\u0275element(2, "path", 115);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 125);
-    \u0275\u0275element(5, "rect", 126);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 116);
+    \u0275\u0275element(5, "rect", 117);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasSignupComponent_div_32__svg_svg_10_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 122)(1, "g", 127);
-    \u0275\u0275element(2, "path", 128);
+    \u0275\u0275elementStart(0, "svg", 113)(1, "g", 118);
+    \u0275\u0275element(2, "path", 119);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 129);
-    \u0275\u0275element(5, "rect", 126);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 120);
+    \u0275\u0275element(5, "rect", 117);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasSignupComponent_div_32_div_11_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275text(1, " Password must have 8 characters, contain at least one uppercase letter, one lowercase letter, one number, and one special character. ");
     \u0275\u0275elementEnd();
   }
@@ -2993,28 +2960,28 @@ function IasSignupComponent_div_32_div_11_Template(rf, ctx) {
 function IasSignupComponent_div_32__svg_svg_17_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 122)(1, "g", 123);
-    \u0275\u0275element(2, "path", 124);
+    \u0275\u0275elementStart(0, "svg", 113)(1, "g", 114);
+    \u0275\u0275element(2, "path", 115);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 125);
-    \u0275\u0275element(5, "rect", 126);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 116);
+    \u0275\u0275element(5, "rect", 117);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasSignupComponent_div_32__svg_svg_18_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(0, "svg", 122)(1, "g", 127);
-    \u0275\u0275element(2, "path", 128);
+    \u0275\u0275elementStart(0, "svg", 113)(1, "g", 118);
+    \u0275\u0275element(2, "path", 119);
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 129);
-    \u0275\u0275element(5, "rect", 126);
+    \u0275\u0275elementStart(3, "defs")(4, "clipPath", 120);
+    \u0275\u0275element(5, "rect", 117);
     \u0275\u0275elementEnd()()();
   }
 }
 function IasSignupComponent_div_32_div_19_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275elementStart(0, "div", 42);
+    \u0275\u0275elementStart(0, "div", 33);
     \u0275\u0275text(1, " Passwords do not match. ");
     \u0275\u0275elementEnd();
   }
@@ -3031,35 +2998,35 @@ function IasSignupComponent_div_32_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.submitPassword());
     });
-    \u0275\u0275elementStart(4, "label", 114);
+    \u0275\u0275elementStart(4, "label", 105);
     \u0275\u0275text(5, "Create Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(6, "div", 115);
-    \u0275\u0275element(7, "input", 116);
-    \u0275\u0275elementStart(8, "button", 117);
+    \u0275\u0275elementStart(6, "div", 106);
+    \u0275\u0275element(7, "input", 107);
+    \u0275\u0275elementStart(8, "button", 108);
     \u0275\u0275listener("click", function IasSignupComponent_div_32_Template_button_click_8_listener() {
       \u0275\u0275restoreView(_r15);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.togglePassword("new"));
     });
-    \u0275\u0275template(9, IasSignupComponent_div_32__svg_svg_9_Template, 6, 0, "svg", 118)(10, IasSignupComponent_div_32__svg_svg_10_Template, 6, 0, "svg", 118);
+    \u0275\u0275template(9, IasSignupComponent_div_32__svg_svg_9_Template, 6, 0, "svg", 109)(10, IasSignupComponent_div_32__svg_svg_10_Template, 6, 0, "svg", 109);
     \u0275\u0275elementEnd()();
     \u0275\u0275template(11, IasSignupComponent_div_32_div_11_Template, 2, 0, "div", 28);
-    \u0275\u0275elementStart(12, "label", 119);
+    \u0275\u0275elementStart(12, "label", 110);
     \u0275\u0275text(13, "Confirm Password");
     \u0275\u0275elementEnd();
-    \u0275\u0275elementStart(14, "div", 115);
-    \u0275\u0275element(15, "input", 120);
-    \u0275\u0275elementStart(16, "button", 117);
+    \u0275\u0275elementStart(14, "div", 106);
+    \u0275\u0275element(15, "input", 111);
+    \u0275\u0275elementStart(16, "button", 108);
     \u0275\u0275listener("click", function IasSignupComponent_div_32_Template_button_click_16_listener() {
       \u0275\u0275restoreView(_r15);
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.togglePassword("confirm"));
     });
-    \u0275\u0275template(17, IasSignupComponent_div_32__svg_svg_17_Template, 6, 0, "svg", 118)(18, IasSignupComponent_div_32__svg_svg_18_Template, 6, 0, "svg", 118);
+    \u0275\u0275template(17, IasSignupComponent_div_32__svg_svg_17_Template, 6, 0, "svg", 109)(18, IasSignupComponent_div_32__svg_svg_18_Template, 6, 0, "svg", 109);
     \u0275\u0275elementEnd()();
     \u0275\u0275template(19, IasSignupComponent_div_32_div_19_Template, 2, 0, "div", 28);
-    \u0275\u0275elementStart(20, "button", 121);
+    \u0275\u0275elementStart(20, "button", 112);
     \u0275\u0275text(21, "Create password");
     \u0275\u0275elementEnd()()();
   }
@@ -3104,15 +3071,15 @@ function IasSignupComponent_div_33_Template(rf, ctx) {
   if (rf & 1) {
     \u0275\u0275elementStart(0, "div", 23);
     \u0275\u0275namespaceSVG();
-    \u0275\u0275elementStart(1, "svg", 130);
-    \u0275\u0275element(2, "circle", 131)(3, "circle", 132)(4, "circle", 133)(5, "path", 134);
+    \u0275\u0275elementStart(1, "svg", 121);
+    \u0275\u0275element(2, "circle", 122)(3, "circle", 123)(4, "circle", 124)(5, "path", 125);
     \u0275\u0275elementEnd();
     \u0275\u0275namespaceHTML();
-    \u0275\u0275elementStart(6, "h1", 67);
+    \u0275\u0275elementStart(6, "h1", 58);
     \u0275\u0275text(7, "You have successfully signed up");
     \u0275\u0275elementEnd();
-    \u0275\u0275template(8, IasSignupComponent_div_33_h4_8_Template, 2, 0, "h4", 135)(9, IasSignupComponent_div_33_h4_9_Template, 2, 0, "h4", 135);
-    \u0275\u0275elementStart(10, "button", 136);
+    \u0275\u0275template(8, IasSignupComponent_div_33_h4_8_Template, 2, 0, "h4", 126)(9, IasSignupComponent_div_33_h4_9_Template, 2, 0, "h4", 126);
+    \u0275\u0275elementStart(10, "button", 127);
     \u0275\u0275text(11, "Return to Login");
     \u0275\u0275elementEnd()();
   }
@@ -3643,7 +3610,7 @@ var IasSignupComponent = class _IasSignupComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSignupComponent, selectors: [["app-ias-signup"]], standalone: true, features: [\u0275\u0275ProvidersFeature([DatePipe]), \u0275\u0275StandaloneFeature], decls: 34, vars: 17, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "uploadModal", "tabindex", "-1", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered"], [1, "modal-content", "p-3"], [1, "modal-header"], [1, "modal-title"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn-close"], [1, "modal-body"], ["type", "file", "accept", "image/*", 1, "form-control", "mb-3", 3, "change"], ["format", "png", 3, "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor", "imageCropped", 4, "ngIf"], [1, "modal-footer", "d-flex", "justify-content-between"], ["data-bs-dismiss", "modal", 1, "btn", "btn-secondary"], [1, "btn", "btn-dark", 3, "click", "disabled"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "stepcontainer", 4, "ngIf"], ["format", "png", 3, "imageCropped", "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor"], [1, "stepcontainer"], [1, "mb-4"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "text", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id or Mobile Number", 1, "mb-1"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn", "my-4", 3, "disabled"], [1, "d-flex", "align-items-center", "mb-3", "w-100"], [1, "flex-grow-1"], [1, "mx-2", "text-muted", "fw-bold"], ["type", "button", 1, "login-btn", "w-100", "mb-4", "bg-white", "text-dark", "border", "border-secondary", "d-flex", "justify-content-center", "align-items-center", "gap-2", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "x", "0px", "y", "0px", "width", "20", "height", "20", "viewBox", "0 0 48 48"], ["fill", "#FFC107", "d", "M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z"], ["fill", "#FF3D00", "d", "M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z"], ["fill", "#4CAF50", "d", "M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z"], ["fill", "#1976D2", "d", "M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "viewBox", "0 0 16 16", "fill", "none"], ["d", "M7.3335 11.3333H8.66683V7.33331H7.3335V11.3333ZM8.00016 5.99998C8.18905 5.99998 8.34738 5.93609 8.47516 5.80831C8.60294 5.68053 8.66683 5.5222 8.66683 5.33331C8.66683 5.14442 8.60294 4.98609 8.47516 4.85831C8.34738 4.73054 8.18905 4.66665 8.00016 4.66665C7.81127 4.66665 7.65294 4.73054 7.52516 4.85831C7.39738 4.98609 7.3335 5.14442 7.3335 5.33331C7.3335 5.5222 7.39738 5.68053 7.52516 5.80831C7.65294 5.93609 7.81127 5.99998 8.00016 5.99998ZM8.00016 14.6666C7.07794 14.6666 6.21127 14.4916 5.40016 14.1416C4.58905 13.7916 3.8835 13.3166 3.2835 12.7166C2.6835 12.1166 2.2085 11.4111 1.8585 10.6C1.5085 9.78887 1.3335 8.9222 1.3335 7.99998C1.3335 7.07776 1.5085 6.21109 1.8585 5.39998C2.2085 4.58887 2.6835 3.88331 3.2835 3.28331C3.8835 2.68331 4.58905 2.20831 5.40016 1.85831C6.21127 1.50831 7.07794 1.33331 8.00016 1.33331C8.92238 1.33331 9.78905 1.50831 10.6002 1.85831C11.4113 2.20831 12.1168 2.68331 12.7168 3.28331C13.3168 3.88331 13.7918 4.58887 14.1418 5.39998C14.4918 6.21109 14.6668 7.07776 14.6668 7.99998C14.6668 8.9222 14.4918 9.78887 14.1418 10.6C13.7918 11.4111 13.3168 12.1166 12.7168 12.7166C12.1168 13.3166 11.4113 13.7916 10.6002 14.1416C9.78905 14.4916 8.92238 14.6666 8.00016 14.6666ZM8.00016 13.3333C9.48905 13.3333 10.7502 12.8166 11.7835 11.7833C12.8168 10.75 13.3335 9.48887 13.3335 7.99998C13.3335 6.51109 12.8168 5.24998 11.7835 4.21665C10.7502 3.18331 9.48905 2.66665 8.00016 2.66665C6.51127 2.66665 5.25016 3.18331 4.21683 4.21665C3.1835 5.24998 2.66683 6.51109 2.66683 7.99998C2.66683 9.48887 3.1835 10.75 4.21683 11.7833C5.25016 12.8166 6.51127 13.3333 8.00016 13.3333Z", "fill", "#A16800"], [1, "error-message"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"], ["type", "submit", 1, "login-btn", "mt-4", 3, "click"], [1, "text-center", "my-3"], ["type", "button", 1, "white-btn", 3, "click"], [1, "cursor-pointer", "fs-5", "fw-bold", 3, "click"], [1, "fas", "fa-arrow-left"], ["for", "name"], [1, "redstar"], ["type", "text", "id", "name", "formControlName", "name", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], ["for", "identityNumber", 1, "mt-3"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "placeholder", "Enter Your Identity No."], [1, "row"], ["class", "col-md-6", 4, "ngIf"], [1, "col-md-6"], ["for", "alternateEmail", 1, "mt-3"], ["type", "email", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter Email ID", "maxlength", "100"], ["type", "submit", 1, "login-btn", "my-3", "mt-4", 3, "disabled"], [1, "mt-3"], ["type", "text", "formControlName", "mobilenumber", "placeholder", "Enter Mobile Number", "maxlength", "10"], ["type", "email", "formControlName", "email", "placeholder", "Enter Email ID"], ["for", "FullName"], ["type", "text", "id", "FullName", "formControlName", "fullname", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], [1, "row", "mt-3"], ["for", "Cadre"], ["id", "Cadre", "aria-label", "Default select example", "formControlName", "cadre", 1, "form-select"], ["value", "0", "disabled", ""], [3, "value"], ["for", "allotmentyear"], ["type", "number", "id", "allotmentyear", "formControlName", "allotmentyear", "placeholder", "Enter Allotment Year", 1, "mb-3", 3, "input"], ["for", "Gender"], ["id", "Gender", "formControlName", "gender", 1, "form-select"], ["value", "", "disabled", ""], ["value", "Male"], ["value", "Female"], ["value", ""], ["for", "dob"], ["type", "date", "id", "dob", "formControlName", "dateofbirth", "placeholder", "Select Date of Birth", 1, "mb-3", 3, "max"], ["for", "mothertongue"], ["type", "text", "id", "mothertongue", "formControlName", "mothertongue", "placeholder", "Enter Language", "maxlength", "40", 1, "mb-3", 3, "keypress"], ["for", "retirementreason"], ["id", "retirementreason", "formControlName", "retirementreason", 1, "form-select"], ["value", "Serving"], ["value", "Superannuated"], ["for", "alternateEmail"], ["type", "text", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter your Email ID", "maxlength", "100", 1, "mb-1"], ["type", "submit", 1, "login-btn", "mt-4", 3, "disabled"], ["type", "text", "formControlName", "mobilenumber", "maxlength", "10", "placeholder", "Enter Your Number"], [1, "profile-pic-input", "mb-3", "row"], ["for", "profilePic"], ["type", "text", "id", "profilePic", "formControlName", "profilePic", "placeholder", "Click to upload", "readonly", "", 1, "form-control", "cursor-pointer", "bg-light", 3, "click"], ["class", "d-flex align-items-center justify-content-center h-100", 4, "ngIf"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "maxlength", "10", "placeholder", "Enter Your Identity No."], [1, "text-danger"], [1, "d-flex", "align-items-center", "justify-content-center", "h-100"], ["width", "80", "height", "80", "alt", "Preview", 1, "rounded-circle", "border", "preview-img", "mt-2", 3, "src"], [1, "detailscard", "shadow-sm", "border", "rounded-4"], [1, "d-flex", "align-items-center"], ["class", "rounded-circle me-4", "alt", "", "style", "width:80px; height:80px; object-fit:cover; object-position: center;", 3, "src", 4, "ngIf"], [1, "mb-3"], [1, "d-flex", "flex-wrap", "gap-2", "text-muted"], [1, "mx-2"], [1, "login-btn", "mt-4", 3, "click"], [1, "text-danger", "cursor-pointer", 3, "click"], ["alt", "", 1, "rounded-circle", "me-4", 2, "width", "80px", "height", "80px", "object-fit", "cover", "object-position", "center", 3, "src"], ["for", "newPassword"], [1, "password-wrapper", "my-1"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword", 1, "mt-3"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["type", "submit", 1, "login-btn", "mt-4"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], ["class", "mb-4", 4, "ngIf"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasSignupComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _IasSignupComponent, selectors: [["app-ias-signup"]], standalone: true, features: [\u0275\u0275ProvidersFeature([DatePipe]), \u0275\u0275StandaloneFeature], decls: 34, vars: 17, consts: [[4, "ngIf"], [1, "toast-container", "position-fixed", "top-0", "end-0", "p-3"], ["id", "liveToast", "role", "alert", "aria-live", "assertive", "aria-atomic", "true"], [1, "d-flex"], [1, "toast-body"], ["type", "button", "data-bs-dismiss", "toast", "aria-label", "Close", 1, "btn-close", "btn-close-white", "me-2", "m-auto"], ["id", "uploadModal", "tabindex", "-1", "aria-hidden", "true", 1, "modal", "fade"], [1, "modal-dialog", "modal-dialog-centered"], [1, "modal-content", "p-3"], [1, "modal-header"], [1, "modal-title"], ["type", "button", "data-bs-dismiss", "modal", 1, "btn-close"], [1, "modal-body"], ["type", "file", "accept", "image/*", 1, "form-control", "mb-3", 3, "change"], ["format", "png", 3, "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor", "imageCropped", 4, "ngIf"], [1, "modal-footer", "d-flex", "justify-content-between"], ["data-bs-dismiss", "modal", 1, "btn", "btn-secondary"], [1, "btn", "btn-dark", 3, "click", "disabled"], [1, "main-login-component", "d-flex", "align-items-center"], [1, "intro-image-div", "position-relative", 3, "routerLink"], [1, "login-form-div", "d-flex", "flex-column", "align-items-center", "px-5"], ["class", "stepcontainer", 4, "ngIf"], ["format", "png", 3, "imageCropped", "imageChangedEvent", "maintainAspectRatio", "aspectRatio", "resizeToWidth", "roundCropper", "backgroundColor"], [1, "stepcontainer"], [1, "mb-4"], [3, "ngSubmit", "formGroup"], ["for", "email"], ["type", "text", "id", "email", "formControlName", "email", "placeholder", "Enter Valid Email Id or Mobile Number", 1, "mb-1"], ["class", "error-message", 4, "ngIf"], ["type", "submit", 1, "login-btn", "my-4", 3, "disabled"], [1, "warning-box"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "viewBox", "0 0 16 16", "fill", "none"], ["d", "M7.3335 11.3333H8.66683V7.33331H7.3335V11.3333ZM8.00016 5.99998C8.18905 5.99998 8.34738 5.93609 8.47516 5.80831C8.60294 5.68053 8.66683 5.5222 8.66683 5.33331C8.66683 5.14442 8.60294 4.98609 8.47516 4.85831C8.34738 4.73054 8.18905 4.66665 8.00016 4.66665C7.81127 4.66665 7.65294 4.73054 7.52516 4.85831C7.39738 4.98609 7.3335 5.14442 7.3335 5.33331C7.3335 5.5222 7.39738 5.68053 7.52516 5.80831C7.65294 5.93609 7.81127 5.99998 8.00016 5.99998ZM8.00016 14.6666C7.07794 14.6666 6.21127 14.4916 5.40016 14.1416C4.58905 13.7916 3.8835 13.3166 3.2835 12.7166C2.6835 12.1166 2.2085 11.4111 1.8585 10.6C1.5085 9.78887 1.3335 8.9222 1.3335 7.99998C1.3335 7.07776 1.5085 6.21109 1.8585 5.39998C2.2085 4.58887 2.6835 3.88331 3.2835 3.28331C3.8835 2.68331 4.58905 2.20831 5.40016 1.85831C6.21127 1.50831 7.07794 1.33331 8.00016 1.33331C8.92238 1.33331 9.78905 1.50831 10.6002 1.85831C11.4113 2.20831 12.1168 2.68331 12.7168 3.28331C13.3168 3.88331 13.7918 4.58887 14.1418 5.39998C14.4918 6.21109 14.6668 7.07776 14.6668 7.99998C14.6668 8.9222 14.4918 9.78887 14.1418 10.6C13.7918 11.4111 13.3168 12.1166 12.7168 12.7166C12.1168 13.3166 11.4113 13.7916 10.6002 14.1416C9.78905 14.4916 8.92238 14.6666 8.00016 14.6666ZM8.00016 13.3333C9.48905 13.3333 10.7502 12.8166 11.7835 11.7833C12.8168 10.75 13.3335 9.48887 13.3335 7.99998C13.3335 6.51109 12.8168 5.24998 11.7835 4.21665C10.7502 3.18331 9.48905 2.66665 8.00016 2.66665C6.51127 2.66665 5.25016 3.18331 4.21683 4.21665C3.1835 5.24998 2.66683 6.51109 2.66683 7.99998C2.66683 9.48887 3.1835 10.75 4.21683 11.7833C5.25016 12.8166 6.51127 13.3333 8.00016 13.3333Z", "fill", "#A16800"], [1, "error-message"], [1, "otp-inputs"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "formControlName", "input", "keydown", 4, "ngFor", "ngForOf"], ["type", "submit", 1, "login-btn", 3, "disabled"], [1, "d-flex", "align-items-center", "gap-2", "mt-2"], [1, "m-0"], [1, "resend-text", 3, "click"], [1, "timer", "m-0"], ["type", "text", "maxlength", "1", "autocomplete", "off", 3, "input", "keydown", "formControlName"], ["type", "submit", 1, "login-btn", "mt-4", 3, "click"], [1, "text-center", "my-3"], ["type", "button", 1, "white-btn", 3, "click"], [1, "cursor-pointer", "fs-5", "fw-bold", 3, "click"], [1, "fas", "fa-arrow-left"], ["for", "name"], [1, "redstar"], ["type", "text", "id", "name", "formControlName", "name", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], ["for", "identityNumber", 1, "mt-3"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "placeholder", "Enter Your Identity No."], [1, "row"], ["class", "col-md-6", 4, "ngIf"], [1, "col-md-6"], ["for", "alternateEmail", 1, "mt-3"], ["type", "email", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter Email ID", "maxlength", "100"], ["type", "submit", 1, "login-btn", "my-3", "mt-4", 3, "disabled"], [1, "mt-3"], ["type", "text", "formControlName", "mobilenumber", "placeholder", "Enter Mobile Number", "maxlength", "10"], ["type", "email", "formControlName", "email", "placeholder", "Enter Email ID"], ["for", "FullName"], ["type", "text", "id", "FullName", "formControlName", "fullname", "maxlength", "80", "placeholder", "Enter Your Name", 3, "keypress"], [1, "row", "mt-3"], ["for", "Cadre"], ["id", "Cadre", "aria-label", "Default select example", "formControlName", "cadre", 1, "form-select"], ["value", "0", "disabled", ""], [3, "value"], ["for", "allotmentyear"], ["type", "number", "id", "allotmentyear", "formControlName", "allotmentyear", "placeholder", "Enter Allotment Year", 1, "mb-3", 3, "input"], ["for", "Gender"], ["id", "Gender", "formControlName", "gender", 1, "form-select"], ["value", "", "disabled", ""], ["value", "Male"], ["value", "Female"], ["value", ""], ["for", "dob"], ["type", "date", "id", "dob", "formControlName", "dateofbirth", "placeholder", "Select Date of Birth", 1, "mb-3", 3, "max"], ["for", "mothertongue"], ["type", "text", "id", "mothertongue", "formControlName", "mothertongue", "placeholder", "Enter Language", "maxlength", "40", 1, "mb-3", 3, "keypress"], ["for", "retirementreason"], ["id", "retirementreason", "formControlName", "retirementreason", 1, "form-select"], ["value", "Serving"], ["value", "Superannuated"], ["for", "alternateEmail"], ["type", "text", "id", "alternateEmail", "formControlName", "alternateEmail", "placeholder", "Enter your Email ID", "maxlength", "100", 1, "mb-1"], ["type", "submit", 1, "login-btn", "mt-4", 3, "disabled"], ["type", "text", "formControlName", "mobilenumber", "maxlength", "10", "placeholder", "Enter Your Number"], [1, "profile-pic-input", "mb-3", "row"], ["for", "profilePic"], ["type", "text", "id", "profilePic", "formControlName", "profilePic", "placeholder", "Click to upload", "readonly", "", 1, "form-control", "cursor-pointer", "bg-light", 3, "click"], ["class", "d-flex align-items-center justify-content-center h-100", 4, "ngIf"], ["type", "text", "id", "identityNumber", "formControlName", "identityNumber", "maxlength", "10", "placeholder", "Enter Your Identity No."], [1, "text-danger"], [1, "d-flex", "align-items-center", "justify-content-center", "h-100"], ["width", "80", "height", "80", "alt", "Preview", 1, "rounded-circle", "border", "preview-img", "mt-2", 3, "src"], [1, "detailscard", "shadow-sm", "border", "rounded-4"], [1, "d-flex", "align-items-center"], ["class", "rounded-circle me-4", "alt", "", "style", "width:80px; height:80px; object-fit:cover; object-position: center;", 3, "src", 4, "ngIf"], [1, "mb-3"], [1, "d-flex", "flex-wrap", "gap-2", "text-muted"], [1, "mx-2"], [1, "login-btn", "mt-4", 3, "click"], [1, "text-danger", "cursor-pointer", 3, "click"], ["alt", "", 1, "rounded-circle", "me-4", 2, "width", "80px", "height", "80px", "object-fit", "cover", "object-position", "center", 3, "src"], ["for", "newPassword"], [1, "password-wrapper", "my-1"], ["id", "newPassword", "formControlName", "newPassword", 3, "type"], ["type", "button", 1, "eye-btn", 3, "click"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none", 4, "ngIf"], ["for", "confirmPassword", 1, "mt-3"], ["id", "confirmPassword", "formControlName", "confirmPassword", 3, "type"], ["type", "submit", 1, "login-btn", "mt-4"], ["xmlns", "http://www.w3.org/2000/svg", "width", "19", "height", "19", "viewBox", "0 0 19 19", "fill", "none"], ["clip-path", "url(#clip0_50828_258)"], ["d", "M9.49996 4.75002C12.5004 4.75002 15.1762 6.43627 16.4825 9.10419C15.1762 11.7721 12.5004 13.4584 9.49996 13.4584C6.49954 13.4584 3.82371 11.7721 2.51746 9.10419C3.82371 6.43627 6.49954 4.75002 9.49996 4.75002ZM9.49996 3.16669C5.54163 3.16669 2.16121 5.62877 0.791626 9.10419C2.16121 12.5796 5.54163 15.0417 9.49996 15.0417C13.4583 15.0417 16.8387 12.5796 18.2083 9.10419C16.8387 5.62877 13.4583 3.16669 9.49996 3.16669ZM9.49996 7.12502C10.5925 7.12502 11.4791 8.01169 11.4791 9.10419C11.4791 10.1967 10.5925 11.0834 9.49996 11.0834C8.40746 11.0834 7.52079 10.1967 7.52079 9.10419C7.52079 8.01169 8.40746 7.12502 9.49996 7.12502ZM9.49996 5.54169C7.53663 5.54169 5.93746 7.14085 5.93746 9.10419C5.93746 11.0675 7.53663 12.6667 9.49996 12.6667C11.4633 12.6667 13.0625 11.0675 13.0625 9.10419C13.0625 7.14085 11.4633 5.54169 9.49996 5.54169Z", "fill", "#A9ACB1"], ["id", "clip0_50828_258"], ["width", "19", "height", "19", "fill", "white"], ["clip-path", "url(#clip0_50828_300)"], ["d", "M9.50008 4.74999C12.5005 4.74999 15.1763 6.43624 16.4826 9.10416C16.0155 10.07 15.3584 10.9012 14.5747 11.5742L15.6909 12.6904C16.7913 11.7167 17.6622 10.4975 18.2084 9.10416C16.8388 5.62874 13.4584 3.16666 9.50008 3.16666C8.49467 3.16666 7.52883 3.32499 6.61841 3.61791L7.92467 4.92416C8.43925 4.82124 8.96175 4.74999 9.50008 4.74999ZM8.653 5.65249L10.2917 7.29124C10.743 7.48916 11.1072 7.85333 11.3051 8.30458L12.9438 9.94333C13.0072 9.67416 13.0547 9.38916 13.0547 9.09624C13.0626 7.13291 11.4634 5.54166 9.50008 5.54166C9.20717 5.54166 8.93008 5.58124 8.653 5.65249ZM1.59133 3.06374L3.713 5.18541C2.42258 6.19874 1.40133 7.54458 0.791748 9.10416C2.16133 12.5796 5.54175 15.0417 9.50008 15.0417C10.7034 15.0417 11.8592 14.8121 12.9201 14.3925L15.6276 17.1L16.7438 15.9837L2.70758 1.93958L1.59133 3.06374ZM7.52883 9.00124L9.59508 11.0675C9.56342 11.0754 9.53175 11.0833 9.50008 11.0833C8.40758 11.0833 7.52092 10.1967 7.52092 9.10416C7.52092 9.06458 7.52883 9.04083 7.52883 9.00124ZM4.83717 6.30958L6.22258 7.69499C6.0405 8.13041 5.93758 8.60541 5.93758 9.10416C5.93758 11.0675 7.53675 12.6667 9.50008 12.6667C9.99883 12.6667 10.4738 12.5637 10.9013 12.3817L11.6772 13.1575C10.9805 13.3475 10.2522 13.4583 9.50008 13.4583C6.49967 13.4583 3.82383 11.7721 2.51758 9.10416C3.07175 7.97208 3.87925 7.03791 4.83717 6.30958Z", "fill", "#222222"], ["id", "clip0_50828_300"], ["xmlns", "http://www.w3.org/2000/svg", "width", "100", "height", "100", "viewBox", "0 0 100 100", "fill", "none"], ["cx", "50", "cy", "50", "r", "50", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "50", "cy", "50", "r", "45", "fill", "#4B9700", "fill-opacity", "0.3"], ["cx", "49.5", "cy", "49.5", "r", "39.5", "fill", "#4B9700"], ["d", "M30 51.5L40.2267 62.1713C40.9464 62.9223 42.1216 62.9963 42.9298 62.3414L70.5 40", "stroke", "white", "stroke-width", "5", "stroke-linecap", "round"], ["class", "mb-4", 4, "ngIf"], ["type", "button", 1, "login-btn", 3, "routerLink"]], template: function IasSignupComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275template(0, IasSignupComponent_app_ias_loader_0_Template, 1, 0, "app-ias-loader", 0);
         \u0275\u0275elementStart(1, "div", 1)(2, "div", 2)(3, "div", 3)(4, "div", 4);
@@ -3675,7 +3642,7 @@ var IasSignupComponent = class _IasSignupComponent {
         \u0275\u0275elementStart(22, "div", 18);
         \u0275\u0275element(23, "div", 19);
         \u0275\u0275elementStart(24, "div", 20);
-        \u0275\u0275template(25, IasSignupComponent_div_25_Template, 28, 3, "div", 21)(26, IasSignupComponent_div_26_Template, 19, 11, "div", 21)(27, IasSignupComponent_div_27_Template, 13, 0, "div", 21)(28, IasSignupComponent_div_28_Template, 30, 7, "div", 21)(29, IasSignupComponent_div_29_Template, 77, 6, "div", 21)(30, IasSignupComponent_div_30_Template, 57, 9, "div", 21)(31, IasSignupComponent_div_31_Template, 26, 4, "div", 21)(32, IasSignupComponent_div_32_Template, 22, 9, "div", 21)(33, IasSignupComponent_div_33_Template, 12, 3, "div", 21);
+        \u0275\u0275template(25, IasSignupComponent_div_25_Template, 16, 3, "div", 21)(26, IasSignupComponent_div_26_Template, 19, 11, "div", 21)(27, IasSignupComponent_div_27_Template, 13, 0, "div", 21)(28, IasSignupComponent_div_28_Template, 30, 7, "div", 21)(29, IasSignupComponent_div_29_Template, 77, 6, "div", 21)(30, IasSignupComponent_div_30_Template, 57, 9, "div", 21)(31, IasSignupComponent_div_31_Template, 26, 4, "div", 21)(32, IasSignupComponent_div_32_Template, 22, 9, "div", 21)(33, IasSignupComponent_div_33_Template, 12, 3, "div", 21);
         \u0275\u0275elementEnd()();
       }
       if (rf & 2) {
@@ -4880,7 +4847,7 @@ var routes = [
     path: "user-home",
     canActivate: [authGuard],
     data: { roles: ["user"], statuses: ["approved"] },
-    loadComponent: () => import("./chunk-4IMCTAZ4.mjs").then((m) => m.UserDashboardComponent),
+    loadComponent: () => import("./chunk-7IX6WK54.mjs").then((m) => m.UserDashboardComponent),
     children: [
       {
         path: "",
@@ -4913,6 +4880,14 @@ var routes = [
       {
         path: "payment-status",
         loadComponent: () => import("./chunk-5BJPGWTV.mjs").then((m) => m.PaymentStatusComponent)
+      },
+      {
+        path: "feedback-consultation",
+        loadComponent: () => import("./chunk-WJQSPENY.mjs").then((m) => m.ConsultationComponent)
+      },
+      {
+        path: "view-consultation",
+        loadComponent: () => import("./chunk-KM4PFJNG.mjs").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
@@ -5631,4 +5606,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-EJ3UMQSB.mjs.map
+//# sourceMappingURL=chunk-VHY3KIHI.mjs.map

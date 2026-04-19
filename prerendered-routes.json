@@ -45,6 +45,7 @@
     "/state-dashboard/state-news",
     "/state-dashboard/state-office-bearers",
     "/user-home",
+    "/user-home/feedback-consultation",
     "/user-home/my-donation",
     "/user-home/payment-status",
     "/user-home/user-events",
@@ -52,6 +53,7 @@
     "/user-home/user-membership",
     "/user-home/user-profile",
     "/user-home/user-transactions",
+    "/user-home/view-consultation",
     "/user-not-aproved"
   ]
 }
