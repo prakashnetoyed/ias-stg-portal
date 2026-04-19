@@ -1,24 +1,23 @@
-import './polyfills.server.mjs';
 import {
   RouterLink
-} from "./chunk-BE6K35NY.mjs";
+} from "./chunk-NZQ6EF6T.js";
 import {
   ToastService
-} from "./chunk-AE4AKEDV.mjs";
+} from "./chunk-KC2EVZ25.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
-import "./chunk-4YWQRQCE.mjs";
+} from "./chunk-WYW2S4QW.js";
+import "./chunk-7VYRPV2J.js";
 import {
   HttpClient
-} from "./chunk-HLCGF54J.mjs";
+} from "./chunk-SFG4SZVN.js";
 import {
   CommonModule,
   DatePipe,
   NgClass,
   NgForOf,
   NgIf
-} from "./chunk-G22F5CZJ.mjs";
+} from "./chunk-G2HLXPCJ.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -41,8 +40,8 @@ import {
   ɵɵtext,
   ɵɵtextInterpolate,
   ɵɵtextInterpolate1
-} from "./chunk-NA5KQ7PN.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-2RXJFVL4.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/user-portal/pages/consultation/consultation.component.ts
 var _c0 = (a0) => ({ id: a0 });
@@ -131,10 +130,10 @@ var ConsultationComponent = class _ConsultationComponent {
           endDate: event.endAt,
           hasDocument: event.hasDocument
         }));
-        this.toastService.showToast("Data retrived", "success");
+        this.toastService.showToast("Data retrieved", "success");
       },
       error: (err) => {
-        console.error("API Error:", err);
+        this.toastService.showToast(err, "danger");
       }
     });
   }
@@ -168,4 +167,4 @@ var ConsultationComponent = class _ConsultationComponent {
 export {
   ConsultationComponent
 };
-//# sourceMappingURL=chunk-WJQSPENY.mjs.map
+//# sourceMappingURL=chunk-LNHE6QYI.js.map

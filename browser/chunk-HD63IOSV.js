@@ -1,30 +1,29 @@
-import './polyfills.server.mjs';
-import {
-  ActivatedRoute
-} from "./chunk-BE6K35NY.mjs";
 import {
   CheckboxControlValueAccessor,
   DefaultValueAccessor,
   FormsModule,
   NgControlStatus,
   NgModel
-} from "./chunk-72SVRZB2.mjs";
+} from "./chunk-YRHWIA2M.js";
+import {
+  ActivatedRoute
+} from "./chunk-NZQ6EF6T.js";
 import {
   ToastService
-} from "./chunk-AE4AKEDV.mjs";
+} from "./chunk-KC2EVZ25.js";
 import {
   environment
-} from "./chunk-SJMEGSB4.mjs";
+} from "./chunk-WYW2S4QW.js";
 import {
   DomSanitizer
-} from "./chunk-4YWQRQCE.mjs";
+} from "./chunk-7VYRPV2J.js";
 import {
   HttpClient
-} from "./chunk-HLCGF54J.mjs";
+} from "./chunk-SFG4SZVN.js";
 import {
   CommonModule,
   NgIf
-} from "./chunk-G22F5CZJ.mjs";
+} from "./chunk-G2HLXPCJ.js";
 import {
   ɵsetClassDebugInfo,
   ɵɵStandaloneFeature,
@@ -32,7 +31,6 @@ import {
   ɵɵclassProp,
   ɵɵdefineComponent,
   ɵɵdirectiveInject,
-  ɵɵelement,
   ɵɵelementEnd,
   ɵɵelementStart,
   ɵɵgetCurrentView,
@@ -49,31 +47,47 @@ import {
   ɵɵtwoWayBindingSet,
   ɵɵtwoWayListener,
   ɵɵtwoWayProperty
-} from "./chunk-NA5KQ7PN.mjs";
-import "./chunk-24VIC3GD.mjs";
+} from "./chunk-2RXJFVL4.js";
+import "./chunk-ASLTLD6L.js";
 
 // src/app/user-portal/pages/view-consultation/view-consultation.component.ts
 function ViewConsultationComponent_iframe_4_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "iframe", 8);
+    const _r1 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "iframe", 8);
+    \u0275\u0275listener("load", function ViewConsultationComponent_iframe_4_Template_iframe_load_0_listener() {
+      \u0275\u0275restoreView(_r1);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.onDocumentLoad());
+    });
+    \u0275\u0275text(1, ' sandbox="allow-same-origin allow-scripts"> ');
+    \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r0 = \u0275\u0275nextContext();
-    \u0275\u0275property("src", ctx_r0.safeUrl, \u0275\u0275sanitizeResourceUrl);
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275property("src", ctx_r1.safeUrl, \u0275\u0275sanitizeResourceUrl);
   }
 }
 function ViewConsultationComponent_iframe_5_Template(rf, ctx) {
   if (rf & 1) {
-    \u0275\u0275element(0, "iframe", 9);
+    const _r3 = \u0275\u0275getCurrentView();
+    \u0275\u0275elementStart(0, "iframe", 9);
+    \u0275\u0275listener("load", function ViewConsultationComponent_iframe_5_Template_iframe_load_0_listener() {
+      \u0275\u0275restoreView(_r3);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.onDocumentLoad());
+    });
+    \u0275\u0275text(1, ' sandbox="allow-same-origin allow-scripts"> ');
+    \u0275\u0275elementEnd();
   }
   if (rf & 2) {
-    const ctx_r0 = \u0275\u0275nextContext();
-    \u0275\u0275property("src", ctx_r0.safeUrl, \u0275\u0275sanitizeResourceUrl);
+    const ctx_r1 = \u0275\u0275nextContext();
+    \u0275\u0275property("src", ctx_r1.safeUrl, \u0275\u0275sanitizeResourceUrl);
   }
 }
 function ViewConsultationComponent_div_7_Template(rf, ctx) {
   if (rf & 1) {
-    const _r2 = \u0275\u0275getCurrentView();
+    const _r4 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "div")(1, "div", 10)(2, "h5", 11);
     \u0275\u0275text(3, "Submit Your Feedback");
     \u0275\u0275elementEnd();
@@ -82,25 +96,25 @@ function ViewConsultationComponent_div_7_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(7, "div", 13)(8, "button", 14);
     \u0275\u0275listener("click", function ViewConsultationComponent_div_7_Template_button_click_8_listener() {
-      \u0275\u0275restoreView(_r2);
-      const ctx_r0 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r0.setStance("support"));
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.setStance("support"));
     });
     \u0275\u0275text(9, "Support");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(10, "button", 14);
     \u0275\u0275listener("click", function ViewConsultationComponent_div_7_Template_button_click_10_listener() {
-      \u0275\u0275restoreView(_r2);
-      const ctx_r0 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r0.setStance("oppose"));
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.setStance("oppose"));
     });
     \u0275\u0275text(11, "Oppose");
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(12, "button", 14);
     \u0275\u0275listener("click", function ViewConsultationComponent_div_7_Template_button_click_12_listener() {
-      \u0275\u0275restoreView(_r2);
-      const ctx_r0 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r0.setStance("abstain"));
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.setStance("abstain"));
     });
     \u0275\u0275text(13, "Abstain");
     \u0275\u0275elementEnd()()();
@@ -109,9 +123,9 @@ function ViewConsultationComponent_div_7_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(17, "textarea", 15);
     \u0275\u0275twoWayListener("ngModelChange", function ViewConsultationComponent_div_7_Template_textarea_ngModelChange_17_listener($event) {
-      \u0275\u0275restoreView(_r2);
-      const ctx_r0 = \u0275\u0275nextContext();
-      \u0275\u0275twoWayBindingSet(ctx_r0.overallRemarks, $event) || (ctx_r0.overallRemarks = $event);
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext();
+      \u0275\u0275twoWayBindingSet(ctx_r1.overallRemarks, $event) || (ctx_r1.overallRemarks = $event);
       return \u0275\u0275resetView($event);
     });
     \u0275\u0275elementEnd()();
@@ -120,17 +134,17 @@ function ViewConsultationComponent_div_7_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(21, "textarea", 15);
     \u0275\u0275twoWayListener("ngModelChange", function ViewConsultationComponent_div_7_Template_textarea_ngModelChange_21_listener($event) {
-      \u0275\u0275restoreView(_r2);
-      const ctx_r0 = \u0275\u0275nextContext();
-      \u0275\u0275twoWayBindingSet(ctx_r0.partSpecificRemarks, $event) || (ctx_r0.partSpecificRemarks = $event);
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext();
+      \u0275\u0275twoWayBindingSet(ctx_r1.partSpecificRemarks, $event) || (ctx_r1.partSpecificRemarks = $event);
       return \u0275\u0275resetView($event);
     });
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(22, "div", 16)(23, "input", 17);
     \u0275\u0275twoWayListener("ngModelChange", function ViewConsultationComponent_div_7_Template_input_ngModelChange_23_listener($event) {
-      \u0275\u0275restoreView(_r2);
-      const ctx_r0 = \u0275\u0275nextContext();
-      \u0275\u0275twoWayBindingSet(ctx_r0.isEcOnly, $event) || (ctx_r0.isEcOnly = $event);
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext();
+      \u0275\u0275twoWayBindingSet(ctx_r1.isEcOnly, $event) || (ctx_r1.isEcOnly = $event);
       return \u0275\u0275resetView($event);
     });
     \u0275\u0275elementEnd();
@@ -139,32 +153,32 @@ function ViewConsultationComponent_div_7_Template(rf, ctx) {
     \u0275\u0275elementEnd()();
     \u0275\u0275elementStart(26, "button", 18);
     \u0275\u0275listener("click", function ViewConsultationComponent_div_7_Template_button_click_26_listener() {
-      \u0275\u0275restoreView(_r2);
-      const ctx_r0 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r0.submitFeedback());
+      \u0275\u0275restoreView(_r4);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.submitFeedback());
     });
     \u0275\u0275text(27, " Submit feedback ");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
-    const ctx_r0 = \u0275\u0275nextContext();
+    const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(8);
-    \u0275\u0275classProp("active", ctx_r0.stance === "support");
+    \u0275\u0275classProp("active", ctx_r1.stance === "support");
     \u0275\u0275advance(2);
-    \u0275\u0275classProp("active", ctx_r0.stance === "oppose");
+    \u0275\u0275classProp("active", ctx_r1.stance === "oppose");
     \u0275\u0275advance(2);
-    \u0275\u0275classProp("active", ctx_r0.stance === "abstain");
+    \u0275\u0275classProp("active", ctx_r1.stance === "abstain");
     \u0275\u0275advance(5);
-    \u0275\u0275twoWayProperty("ngModel", ctx_r0.overallRemarks);
+    \u0275\u0275twoWayProperty("ngModel", ctx_r1.overallRemarks);
     \u0275\u0275advance(4);
-    \u0275\u0275twoWayProperty("ngModel", ctx_r0.partSpecificRemarks);
+    \u0275\u0275twoWayProperty("ngModel", ctx_r1.partSpecificRemarks);
     \u0275\u0275advance(2);
-    \u0275\u0275twoWayProperty("ngModel", ctx_r0.isEcOnly);
+    \u0275\u0275twoWayProperty("ngModel", ctx_r1.isEcOnly);
   }
 }
 function ViewConsultationComponent_div_8_Template(rf, ctx) {
   if (rf & 1) {
-    const _r3 = \u0275\u0275getCurrentView();
+    const _r5 = \u0275\u0275getCurrentView();
     \u0275\u0275elementStart(0, "div")(1, "div", 10)(2, "h5", 11);
     \u0275\u0275text(3, "Your Feedback");
     \u0275\u0275elementEnd();
@@ -192,23 +206,23 @@ function ViewConsultationComponent_div_8_Template(rf, ctx) {
     \u0275\u0275elementEnd();
     \u0275\u0275elementStart(22, "button", 19);
     \u0275\u0275listener("click", function ViewConsultationComponent_div_8_Template_button_click_22_listener() {
-      \u0275\u0275restoreView(_r3);
-      const ctx_r0 = \u0275\u0275nextContext();
-      return \u0275\u0275resetView(ctx_r0.enableEdit());
+      \u0275\u0275restoreView(_r5);
+      const ctx_r1 = \u0275\u0275nextContext();
+      return \u0275\u0275resetView(ctx_r1.enableEdit());
     });
     \u0275\u0275text(23, " Edit Feedback ");
     \u0275\u0275elementEnd()()();
   }
   if (rf & 2) {
-    const ctx_r0 = \u0275\u0275nextContext();
+    const ctx_r1 = \u0275\u0275nextContext();
     \u0275\u0275advance(7);
-    \u0275\u0275textInterpolate1(" ", ctx_r0.stance, "");
+    \u0275\u0275textInterpolate1(" ", ctx_r1.stance, "");
     \u0275\u0275advance(5);
-    \u0275\u0275textInterpolate(ctx_r0.overallRemarks);
+    \u0275\u0275textInterpolate(ctx_r1.overallRemarks);
     \u0275\u0275advance(5);
-    \u0275\u0275textInterpolate(ctx_r0.partSpecificRemarks);
+    \u0275\u0275textInterpolate(ctx_r1.partSpecificRemarks);
     \u0275\u0275advance(4);
-    \u0275\u0275textInterpolate1(" ", ctx_r0.isEcOnly ? "Yes" : "No", "");
+    \u0275\u0275textInterpolate1(" ", ctx_r1.isEcOnly ? "Yes" : "No", "");
   }
 }
 var ViewConsultationComponent = class _ViewConsultationComponent {
@@ -221,6 +235,7 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
     this.fileType = "pdf";
     this.isLoading = true;
     this.isLoaded = false;
+    this.documentLoadedOnce = false;
     this.stance = "";
     this.overallRemarks = "";
     this.partSpecificRemarks = "";
@@ -250,11 +265,13 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
         this.setViewer(fileUrl);
         this.isLoading = false;
         this.isLoaded = true;
+        this.toastService.showToast("Document is loading...", "info");
+        this.setViewer(fileUrl);
         this.loadFeedback();
       },
       error: (err) => {
         this.isLoading = false;
-        this.toastService.showToast("Failed to load consultation", "danger");
+        this.toastService.showToast(err, "danger");
       }
     });
   }
@@ -290,6 +307,12 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
       this.safeUrl = this.sanitizer.bypassSecurityTrustResourceUrl(`https://docs.google.com/gview?url=${encodeURIComponent(url)}&embedded=true`);
     }
   }
+  onDocumentLoad() {
+    if (this.documentLoadedOnce)
+      return;
+    this.documentLoadedOnce = true;
+    this.toastService.showToast("Document loaded successfully", "success");
+  }
   // 🔥 STANCE
   setStance(value) {
     this.stance = value;
@@ -324,8 +347,8 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
         this.hasFeedback = true;
         this.isEditMode = false;
       },
-      error: () => {
-        this.toastService.showToast("Something went wrong", "danger");
+      error: (err) => {
+        this.toastService.showToast(err, "danger");
       }
     });
   }
@@ -335,10 +358,10 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ViewConsultationComponent, selectors: [["app-view-consultation"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 9, vars: 4, consts: [[1, "container-fluid"], [1, "row", "g-4"], [1, "col-md-8"], [1, "doc-viewer", "position-relative"], ["width", "100%", "height", "700px", "sandbox", "allow-same-origin allow-scripts", 3, "src", 4, "ngIf"], ["width", "100%", "height", "700px", "class", "pointe", "sandbox", "allow-same-origin allow-scripts", 3, "src", 4, "ngIf"], [1, "col-md-4"], [4, "ngIf"], ["width", "100%", "height", "700px", "sandbox", "allow-same-origin allow-scripts", 3, "src"], ["width", "100%", "height", "700px", "sandbox", "allow-same-origin allow-scripts", 1, "pointe", 3, "src"], [1, "feedback-card"], [1, "title"], [1, "section"], [1, "stance-group"], [3, "click"], [3, "ngModelChange", "ngModel"], [1, "checkbox-row"], ["type", "checkbox", 3, "ngModelChange", "ngModel"], [1, "submit-btn", 3, "click"], [1, "submit-btn", "mt-3", 3, "click"]], template: function ViewConsultationComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ViewConsultationComponent, selectors: [["app-view-consultation"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 9, vars: 4, consts: [[1, "container-fluid"], [1, "row", "g-4"], [1, "col-md-8"], [1, "doc-viewer", "position-relative"], ["width", "100%", "height", "700px", 3, "src", "load", 4, "ngIf"], ["width", "100%", "height", "700px", "class", "pointe", 3, "src", "load", 4, "ngIf"], [1, "col-md-4"], [4, "ngIf"], ["width", "100%", "height", "700px", 3, "load", "src"], ["width", "100%", "height", "700px", 1, "pointe", 3, "load", "src"], [1, "feedback-card"], [1, "title"], [1, "section"], [1, "stance-group"], [3, "click"], [3, "ngModelChange", "ngModel"], [1, "checkbox-row"], ["type", "checkbox", 3, "ngModelChange", "ngModel"], [1, "submit-btn", 3, "click"], [1, "submit-btn", "mt-3", 3, "click"]], template: function ViewConsultationComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
-        \u0275\u0275template(4, ViewConsultationComponent_iframe_4_Template, 1, 1, "iframe", 4)(5, ViewConsultationComponent_iframe_5_Template, 1, 1, "iframe", 5);
+        \u0275\u0275template(4, ViewConsultationComponent_iframe_4_Template, 2, 1, "iframe", 4)(5, ViewConsultationComponent_iframe_5_Template, 2, 1, "iframe", 5);
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(6, "div", 6);
         \u0275\u0275template(7, ViewConsultationComponent_div_7_Template, 28, 9, "div", 7)(8, ViewConsultationComponent_div_8_Template, 24, 4, "div", 7);
@@ -363,4 +386,4 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
 export {
   ViewConsultationComponent
 };
-//# sourceMappingURL=chunk-KM4PFJNG.mjs.map
+//# sourceMappingURL=chunk-HD63IOSV.js.map

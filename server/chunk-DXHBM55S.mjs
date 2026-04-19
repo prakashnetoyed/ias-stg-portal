@@ -4650,7 +4650,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7DW5DXOA.mjs").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-HBAIP5CE.mjs").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4883,11 +4883,11 @@ var routes = [
       },
       {
         path: "feedback-consultation",
-        loadComponent: () => import("./chunk-WJQSPENY.mjs").then((m) => m.ConsultationComponent)
+        loadComponent: () => import("./chunk-H5ESUP52.mjs").then((m) => m.ConsultationComponent)
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-KM4PFJNG.mjs").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-LA24EZY5.mjs").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
@@ -5606,4 +5606,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-VHY3KIHI.mjs.map
+//# sourceMappingURL=chunk-DXHBM55S.mjs.map

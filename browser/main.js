@@ -4571,7 +4571,7 @@ var routes = [
       {
         path: "",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-F4HDJRGT.js").then((m) => m.IasHomepageComponent)
+        loadComponent: () => import("./chunk-O6SR35YH.js").then((m) => m.IasHomepageComponent)
       },
       {
         path: "about-us",
@@ -4804,11 +4804,11 @@ var routes = [
       },
       {
         path: "feedback-consultation",
-        loadComponent: () => import("./chunk-U45YWJLW.js").then((m) => m.ConsultationComponent)
+        loadComponent: () => import("./chunk-LNHE6QYI.js").then((m) => m.ConsultationComponent)
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-S2TWPMSI.js").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-HD63IOSV.js").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
