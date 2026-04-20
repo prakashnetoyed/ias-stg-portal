@@ -60,7 +60,6 @@ function ViewConsultationComponent_iframe_4_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onDocumentLoad());
     });
-    \u0275\u0275text(1, ' sandbox="allow-same-origin allow-scripts"> ');
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -77,7 +76,6 @@ function ViewConsultationComponent_iframe_5_Template(rf, ctx) {
       const ctx_r1 = \u0275\u0275nextContext();
       return \u0275\u0275resetView(ctx_r1.onDocumentLoad());
     });
-    \u0275\u0275text(1, ' sandbox="allow-same-origin allow-scripts"> ');
     \u0275\u0275elementEnd();
   }
   if (rf & 2) {
@@ -358,10 +356,10 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
     };
   }
   static {
-    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ViewConsultationComponent, selectors: [["app-view-consultation"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 9, vars: 4, consts: [[1, "container-fluid"], [1, "row", "g-4"], [1, "col-md-8"], [1, "doc-viewer", "position-relative"], ["width", "100%", "height", "700px", 3, "src", "load", 4, "ngIf"], ["width", "100%", "height", "700px", "class", "pointe", 3, "src", "load", 4, "ngIf"], [1, "col-md-4"], [4, "ngIf"], ["width", "100%", "height", "700px", 3, "load", "src"], ["width", "100%", "height", "700px", 1, "pointe", 3, "load", "src"], [1, "feedback-card"], [1, "title"], [1, "section"], [1, "stance-group"], [3, "click"], [3, "ngModelChange", "ngModel"], [1, "checkbox-row"], ["type", "checkbox", 3, "ngModelChange", "ngModel"], [1, "submit-btn", 3, "click"], [1, "submit-btn", "mt-3", 3, "click"]], template: function ViewConsultationComponent_Template(rf, ctx) {
+    this.\u0275cmp = /* @__PURE__ */ \u0275\u0275defineComponent({ type: _ViewConsultationComponent, selectors: [["app-view-consultation"]], standalone: true, features: [\u0275\u0275StandaloneFeature], decls: 9, vars: 4, consts: [[1, "container-fluid"], [1, "row", "g-4"], [1, "col-md-8"], [1, "doc-viewer", "position-relative"], ["width", "100%", "height", "700px", "sandbox", "allow-same-origin allow-scripts", 3, "src", "load", 4, "ngIf"], ["width", "100%", "height", "700px", "class", "pointe", "sandbox", "allow-same-origin allow-scripts", 3, "src", "load", 4, "ngIf"], [1, "col-md-4"], [4, "ngIf"], ["width", "100%", "height", "700px", "sandbox", "allow-same-origin allow-scripts", 3, "load", "src"], ["width", "100%", "height", "700px", "sandbox", "allow-same-origin allow-scripts", 1, "pointe", 3, "load", "src"], [1, "feedback-card"], [1, "title"], [1, "section"], [1, "stance-group"], [3, "click"], [3, "ngModelChange", "ngModel"], [1, "checkbox-row"], ["type", "checkbox", 3, "ngModelChange", "ngModel"], [1, "submit-btn", 3, "click"], [1, "submit-btn", "mt-3", 3, "click"]], template: function ViewConsultationComponent_Template(rf, ctx) {
       if (rf & 1) {
         \u0275\u0275elementStart(0, "div", 0)(1, "div", 1)(2, "div", 2)(3, "div", 3);
-        \u0275\u0275template(4, ViewConsultationComponent_iframe_4_Template, 2, 1, "iframe", 4)(5, ViewConsultationComponent_iframe_5_Template, 2, 1, "iframe", 5);
+        \u0275\u0275template(4, ViewConsultationComponent_iframe_4_Template, 1, 1, "iframe", 4)(5, ViewConsultationComponent_iframe_5_Template, 1, 1, "iframe", 5);
         \u0275\u0275elementEnd()();
         \u0275\u0275elementStart(6, "div", 6);
         \u0275\u0275template(7, ViewConsultationComponent_div_7_Template, 28, 9, "div", 7)(8, ViewConsultationComponent_div_8_Template, 24, 4, "div", 7);
@@ -386,4 +384,4 @@ var ViewConsultationComponent = class _ViewConsultationComponent {
 export {
   ViewConsultationComponent
 };
-//# sourceMappingURL=chunk-HD63IOSV.js.map
+//# sourceMappingURL=chunk-MAA5ROBU.js.map

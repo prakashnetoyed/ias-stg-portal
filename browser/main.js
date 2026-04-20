@@ -4808,7 +4808,7 @@ var routes = [
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-HD63IOSV.js").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-MAA5ROBU.js").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
