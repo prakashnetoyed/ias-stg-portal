@@ -1,9 +1,9 @@
 import {
-  IasLoaderComponent
-} from "./chunk-NFBHHRI6.js";
-import {
   ImageCropperComponent
 } from "./chunk-CMZTRR6R.js";
+import {
+  IasLoaderComponent
+} from "./chunk-NFBHHRI6.js";
 import {
   DefaultValueAccessor,
   FormBuilder,
@@ -4691,6 +4691,10 @@ var routes = [
     component: IasLoginComponent
   },
   {
+    path: "airpay-demo",
+    loadComponent: () => import("./chunk-4XF6JAZQ.js").then((m) => m.AirpayDemoComponent)
+  },
+  {
     path: "signup",
     canActivate: [noAuthGuard],
     component: IasSignupComponent
@@ -4740,7 +4744,7 @@ var routes = [
       },
       {
         path: "my-transaction",
-        loadComponent: () => import("./chunk-TK4OVZLL.js").then((m) => m.MyTransactionComponent)
+        loadComponent: () => import("./chunk-6UIXHDJI.js").then((m) => m.MyTransactionComponent)
       },
       {
         path: "approved-user",
@@ -4760,7 +4764,7 @@ var routes = [
       },
       {
         path: "donation",
-        loadComponent: () => import("./chunk-PZSE4326.js").then((m) => m.DonationsComponent)
+        loadComponent: () => import("./chunk-LCPRREUQ.js").then((m) => m.DonationsComponent)
       }
     ]
   },
@@ -4792,11 +4796,11 @@ var routes = [
       },
       {
         path: "user-transactions",
-        loadComponent: () => import("./chunk-OKQ5R6A4.js").then((m) => m.MyTransactionsComponent)
+        loadComponent: () => import("./chunk-NEUEY5XW.js").then((m) => m.MyTransactionsComponent)
       },
       {
         path: "my-donation",
-        loadComponent: () => import("./chunk-LLLPNOSL.js").then((m) => m.UserDonationsComponent)
+        loadComponent: () => import("./chunk-VJGLA6Y2.js").then((m) => m.UserDonationsComponent)
       },
       {
         path: "payment-status",

@@ -1,6 +1,7 @@
 {
   "routes": [
     "/",
+    "/airpay-demo",
     "/auth/callback",
     "/forget-password",
     "/home",

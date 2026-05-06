@@ -4770,6 +4770,10 @@ var routes = [
     component: IasLoginComponent
   },
   {
+    path: "airpay-demo",
+    loadComponent: () => import("./chunk-MYTE72SD.mjs").then((m) => m.AirpayDemoComponent)
+  },
+  {
     path: "signup",
     canActivate: [noAuthGuard],
     component: IasSignupComponent
@@ -5606,4 +5610,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-SGKHIZTY.mjs.map
+//# sourceMappingURL=chunk-2ESUFCER.mjs.map
