@@ -4663,11 +4663,6 @@ var routes = [
         loadComponent: () => import("./chunk-DZ5QRPDP.js").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
-        path: "Privacy-Policy",
-        // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-BITNC6IU.js").then((m) => m.PrivacyPolicyComponent)
-      },
-      {
         path: "coming-soon",
         // component:IasHomepageComponent,
         loadComponent: () => import("./chunk-XWV73RZZ.js").then((m) => m.ComingSoonComponent)
@@ -4703,6 +4698,11 @@ var routes = [
     path: "forget-password",
     canActivate: [noAuthGuard],
     component: IasForgotpasswordComponent
+  },
+  {
+    path: "Privacy-Policy",
+    canActivate: [noAuthGuard],
+    loadComponent: () => import("./chunk-BITNC6IU.js").then((m) => m.PrivacyPolicyComponent)
   },
   {
     path: "home",

@@ -4742,11 +4742,6 @@ var routes = [
         loadComponent: () => import("./chunk-KASHU57U.mjs").then((m) => m.RefundCancellationPolicyComponent)
       },
       {
-        path: "Privacy-Policy",
-        // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6Q6A46WG.mjs").then((m) => m.PrivacyPolicyComponent)
-      },
-      {
         path: "coming-soon",
         // component:IasHomepageComponent,
         loadComponent: () => import("./chunk-S75N2EMA.mjs").then((m) => m.ComingSoonComponent)
@@ -4782,6 +4777,11 @@ var routes = [
     path: "forget-password",
     canActivate: [noAuthGuard],
     component: IasForgotpasswordComponent
+  },
+  {
+    path: "Privacy-Policy",
+    canActivate: [noAuthGuard],
+    loadComponent: () => import("./chunk-6Q6A46WG.mjs").then((m) => m.PrivacyPolicyComponent)
   },
   {
     path: "home",
@@ -5610,4 +5610,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-2ESUFCER.mjs.map
+//# sourceMappingURL=chunk-INJKTOX2.mjs.map
