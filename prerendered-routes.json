@@ -1,7 +1,6 @@
 {
   "routes": [
     "/",
-    "/airpay-demo",
     "/auth/callback",
     "/forget-password",
     "/home",
@@ -35,7 +34,6 @@
     "/homepage/readmoreblogs",
     "/homepage/readmorenews",
     "/homepage/Refund-Cancellation-Policy",
-    "/homepage/Terms-Conditions",
     "/homepage/welfare-membership",
     "/microsite",
     "/Privacy-Policy",
@@ -45,6 +43,7 @@
     "/state-dashboard/state-gallery",
     "/state-dashboard/state-news",
     "/state-dashboard/state-office-bearers",
+    "/Terms-Conditions",
     "/user-home",
     "/user-home/feedback-consultation",
     "/user-home/my-donation",
