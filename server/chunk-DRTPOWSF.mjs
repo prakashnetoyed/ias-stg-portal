@@ -4760,6 +4760,10 @@ var routes = [
     component: IasLoginComponent
   },
   {
+    path: "airpay-demo",
+    loadComponent: () => import("./chunk-7HODO25L.mjs").then((m) => m.AirpayDemoComponent)
+  },
+  {
     path: "signup",
     canActivate: [noAuthGuard],
     component: IasSignupComponent
@@ -4877,7 +4881,7 @@ var routes = [
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-AA3OPUO4.mjs").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-CIN2FSX4.mjs").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
@@ -5604,4 +5608,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-QT5IUGBS.mjs.map
+//# sourceMappingURL=chunk-DRTPOWSF.mjs.map

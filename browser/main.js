@@ -4681,6 +4681,10 @@ var routes = [
     component: IasLoginComponent
   },
   {
+    path: "airpay-demo",
+    loadComponent: () => import("./chunk-LX6BAD5U.js").then((m) => m.AirpayDemoComponent)
+  },
+  {
     path: "signup",
     canActivate: [noAuthGuard],
     component: IasSignupComponent
@@ -4798,7 +4802,7 @@ var routes = [
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-MAA5ROBU.js").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-UZHEWJON.js").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
