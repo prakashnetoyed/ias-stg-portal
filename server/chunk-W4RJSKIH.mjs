@@ -4881,7 +4881,7 @@ var routes = [
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-CIN2FSX4.mjs").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-AA3OPUO4.mjs").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
@@ -5608,4 +5608,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-DRTPOWSF.mjs.map
+//# sourceMappingURL=chunk-W4RJSKIH.mjs.map
