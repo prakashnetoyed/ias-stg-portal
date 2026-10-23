@@ -74,23 +74,27 @@ var AllMembersComponent = class _AllMembersComponent {
     this.limit = 10;
     this.total = 0;
     this.loading = false;
+    this.allLoaded = false;
   }
   ngOnInit() {
     this.loadCadres();
   }
   loadCadres() {
-    if (this.loading)
-      return;
-    if (this.total && this.cadres.length >= this.total)
+    if (this.loading || this.allLoaded)
       return;
     this.loading = true;
-    this.http.get(`${environment.apiUrl}/admin/users?page=${this.page}&limit=${this.limit}&role=user&sortby=designation`).subscribe({
+    this.http.get(`${environment.apiUrl}/admin/users?page=${this.page}&limit=${this.limit}&role=user&sortby=designation&hasProfilePic=true`).subscribe({
       next: (res) => {
         const newData = res.data?.data || [];
         this.cadres = [...this.cadres, ...newData];
         this.total = +res.data?.pagination?.total || 0;
         this.page++;
+        this.allLoaded = newData.length === 0 || this.cadres.length >= this.total;
         this.loading = false;
+        setTimeout(() => {
+          if (this.isNearBottom())
+            this.loadCadres();
+        });
       },
       error: (err) => {
         console.error("Error fetching cadres:", err);
@@ -98,11 +102,14 @@ var AllMembersComponent = class _AllMembersComponent {
       }
     });
   }
-  // Trigger loading when near bottom
-  onScroll() {
+  isNearBottom() {
     const scrollPosition = window.innerHeight + window.scrollY;
     const threshold = document.body.offsetHeight - 100;
-    if (scrollPosition >= threshold) {
+    return scrollPosition >= threshold;
+  }
+  // Trigger loading when near bottom
+  onScroll() {
+    if (this.isNearBottom()) {
       this.loadCadres();
     }
   }
@@ -153,4 +160,4 @@ var AllMembersComponent = class _AllMembersComponent {
 export {
   AllMembersComponent
 };
-//# sourceMappingURL=chunk-TFUZ57KC.mjs.map
+//# sourceMappingURL=chunk-6HYM76NV.mjs.map

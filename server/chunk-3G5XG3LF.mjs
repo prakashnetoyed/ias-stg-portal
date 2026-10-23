@@ -4684,7 +4684,7 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-TFUZ57KC.mjs").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-6HYM76NV.mjs").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
@@ -4881,7 +4881,7 @@ var routes = [
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-AA3OPUO4.mjs").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-CIN2FSX4.mjs").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
@@ -5608,4 +5608,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-W4RJSKIH.mjs.map
+//# sourceMappingURL=chunk-3G5XG3LF.mjs.map

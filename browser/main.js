@@ -4605,7 +4605,7 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-V5QKN5UV.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-7UPUVNBH.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
@@ -4802,7 +4802,7 @@ var routes = [
       },
       {
         path: "view-consultation",
-        loadComponent: () => import("./chunk-MAA5ROBU.js").then((m) => m.ViewConsultationComponent)
+        loadComponent: () => import("./chunk-UZHEWJON.js").then((m) => m.ViewConsultationComponent)
       }
     ]
   },
