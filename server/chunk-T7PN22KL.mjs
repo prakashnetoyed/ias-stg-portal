@@ -4684,7 +4684,7 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-6HYM76NV.mjs").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-S24VSEFO.mjs").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",
@@ -5608,4 +5608,4 @@ export {
    * found in the LICENSE file at https://angular.io/license
    *)
 */
-//# sourceMappingURL=chunk-3G5XG3LF.mjs.map
+//# sourceMappingURL=chunk-T7PN22KL.mjs.map

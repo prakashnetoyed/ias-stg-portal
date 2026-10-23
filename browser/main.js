@@ -4605,7 +4605,7 @@ var routes = [
       {
         path: "all-members",
         // component:IasHomepageComponent,
-        loadComponent: () => import("./chunk-7UPUVNBH.js").then((m) => m.AllMembersComponent)
+        loadComponent: () => import("./chunk-UXXASIIT.js").then((m) => m.AllMembersComponent)
       },
       {
         path: "news-blogs",

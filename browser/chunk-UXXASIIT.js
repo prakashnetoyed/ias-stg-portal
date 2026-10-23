@@ -103,7 +103,7 @@ var AllMembersComponent = class _AllMembersComponent {
   }
   isNearBottom() {
     const scrollPosition = window.innerHeight + window.scrollY;
-    const threshold = document.body.offsetHeight - 100;
+    const threshold = document.documentElement.scrollHeight - 100;
     return scrollPosition >= threshold;
   }
   // Trigger loading when near bottom
@@ -159,4 +159,4 @@ var AllMembersComponent = class _AllMembersComponent {
 export {
   AllMembersComponent
 };
-//# sourceMappingURL=chunk-7UPUVNBH.js.map
+//# sourceMappingURL=chunk-UXXASIIT.js.map
